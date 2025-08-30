@@ -3340,6 +3340,168 @@
 			)
 			(embedded_fonts no)
 		)
+		(symbol "fs_4_schematic_library:TL3302AF180QJ"
+			(pin_numbers
+				(hide yes)
+			)
+			(pin_names
+				(offset 0.254)
+				(hide yes)
+			)
+			(exclude_from_sim no)
+			(in_bom yes)
+			(on_board yes)
+			(property "Reference" "SW"
+				(at 7.62 3.81 0)
+				(effects
+					(font
+						(size 1.524 1.524)
+					)
+				)
+			)
+			(property "Value" "TL3302AF180QJ"
+				(at 5.334 7.366 0)
+				(effects
+					(font
+						(size 1.524 1.524)
+					)
+				)
+			)
+			(property "Footprint" "SW_TL3302AF180QJ_EWI"
+				(at 3.81 10.668 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+						(italic yes)
+					)
+					(hide yes)
+				)
+			)
+			(property "Datasheet" "https://configured-product-images.s3.amazonaws.com/Datasheets/TL3302.pdf"
+				(at 3.302 17.78 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+						(italic yes)
+					)
+					(hide yes)
+				)
+			)
+			(property "Description" ""
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "ki_keywords" "TL3302AF180QJ"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "ki_fp_filters" "SW_TL3302AF180QJ_EWI SW_TL3302AF180QJ_EWI-M SW_TL3302AF180QJ_EWI-L"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(symbol "TL3302AF180QJ_0_1"
+				(circle
+					(center 5.588 -1.27)
+					(radius 0.508)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy 7.62 0) (xy 7.62 1.778)
+					)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(circle
+					(center 9.652 -1.27)
+					(radius 0.508)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy 10.16 0) (xy 5.08 0)
+					)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(pin passive line
+					(at 12.7 -1.27 180)
+					(length 2.54)
+					(name "2"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "2"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+			)
+			(symbol "TL3302AF180QJ_1_1"
+				(pin passive line
+					(at 2.54 -1.27 0)
+					(length 2.54)
+					(name "1"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "1"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+			)
+			(embedded_fonts no)
+		)
 		(symbol "power:+12V"
 			(power)
 			(pin_numbers
@@ -3968,7 +4130,7 @@
 	)
 	(text "Decoupling capacitors pairs need to be\nplaced as close to respective Vdd/Vss as\npossible (pins 16&17, 1&32, 14&15). Note\nthat VSS contains all VSS mcu pins for\neach VDD/VSS pair."
 		(exclude_from_sim no)
-		(at 83.82 35.56 0)
+		(at 83.82 29.21 0)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -4087,6 +4249,12 @@
 		(uuid "6f9f1e81-a18b-4c98-9f56-0eedaf4d2887")
 	)
 	(junction
+		(at 106.68 50.8)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "76ef3848-61a3-4526-8855-151954daecaa")
+	)
+	(junction
 		(at 118.11 55.88)
 		(diameter 0)
 		(color 0 0 0 0)
@@ -4141,6 +4309,12 @@
 		(uuid "d2d83423-7fe1-4f0b-80c5-3470e5d9969e")
 	)
 	(junction
+		(at 118.11 50.8)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "d4292823-4434-42a3-a17d-9e993fc047e9")
+	)
+	(junction
 		(at 210.82 35.56)
 		(diameter 0)
 		(color 0 0 0 0)
@@ -4183,10 +4357,6 @@
 		(uuid "3e3ce138-a69c-4d9e-af63-307fd75dba72")
 	)
 	(no_connect
-		(at 156.21 69.85)
-		(uuid "4a4f98e7-a10d-4e8b-bcbc-57b40e97d9a1")
-	)
-	(no_connect
 		(at 130.81 87.63)
 		(uuid "5a4d4a58-94a8-4500-aeed-32ca0dc167ed")
 	)
@@ -4203,8 +4373,8 @@
 		(uuid "98c3cda8-10b2-4a24-b67f-f1a6da9974b9")
 	)
 	(no_connect
-		(at 156.21 72.39)
-		(uuid "d9f4aec4-5410-4165-b25a-587ccb87b177")
+		(at 156.21 102.87)
+		(uuid "e790cd01-2758-4edc-81c4-5ccaa7ae092a")
 	)
 	(no_connect
 		(at 156.21 67.31)
@@ -4252,6 +4422,16 @@
 	)
 	(wire
 		(pts
+			(xy 118.11 45.72) (xy 118.11 50.8)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "14435809-72b4-453e-85ce-a70d8d0644ef")
+	)
+	(wire
+		(pts
 			(xy 156.21 82.55) (xy 167.64 82.55)
 		)
 		(stroke
@@ -4259,16 +4439,6 @@
 			(type default)
 		)
 		(uuid "14ba5bda-5db7-4e6f-be2e-b445271dca0e")
-	)
-	(wire
-		(pts
-			(xy 106.68 55.88) (xy 106.68 52.07)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "189d3248-69df-4aa1-9cd7-6d0575fb48cb")
 	)
 	(wire
 		(pts
@@ -4299,6 +4469,16 @@
 			(type default)
 		)
 		(uuid "21daeaec-eec1-4bb3-b8da-ca9b40e6cd72")
+	)
+	(wire
+		(pts
+			(xy 106.68 50.8) (xy 106.68 55.88)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "23026866-2b86-4cb1-80c0-1a982b286392")
 	)
 	(wire
 		(pts
@@ -4562,6 +4742,16 @@
 	)
 	(wire
 		(pts
+			(xy 106.68 45.72) (xy 106.68 50.8)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "5f55b5e5-c4af-4f16-b701-262c76ee4be6")
+	)
+	(wire
+		(pts
 			(xy 148.59 36.83) (xy 154.94 36.83)
 		)
 		(stroke
@@ -4632,16 +4822,6 @@
 	)
 	(wire
 		(pts
-			(xy 118.11 55.88) (xy 118.11 52.07)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "6d692680-9ca5-4968-9ffb-2b4566f4fa5a")
-	)
-	(wire
-		(pts
 			(xy 116.84 55.88) (xy 118.11 55.88)
 		)
 		(stroke
@@ -4682,7 +4862,7 @@
 	)
 	(wire
 		(pts
-			(xy 106.68 52.07) (xy 107.95 52.07)
+			(xy 106.68 50.8) (xy 107.95 50.8)
 		)
 		(stroke
 			(width 0)
@@ -4729,6 +4909,16 @@
 			(type default)
 		)
 		(uuid "8774c663-8d8b-44cb-a652-c5e72fc4d921")
+	)
+	(wire
+		(pts
+			(xy 156.21 69.85) (xy 167.64 69.85)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "888cf9ee-ab43-4eb5-a03b-6f8a50a6f62d")
 	)
 	(wire
 		(pts
@@ -5152,6 +5342,16 @@
 	)
 	(wire
 		(pts
+			(xy 118.11 50.8) (xy 118.11 55.88)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "dbab6cc0-b499-465c-9085-70c49fbafa17")
+	)
+	(wire
+		(pts
 			(xy 203.2 35.56) (xy 203.2 36.83)
 		)
 		(stroke
@@ -5262,6 +5462,16 @@
 	)
 	(wire
 		(pts
+			(xy 156.21 72.39) (xy 167.64 72.39)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "f23618b5-217f-4c06-a04b-29aba8d3dcf0")
+	)
+	(wire
+		(pts
 			(xy 123.19 55.88) (xy 118.11 55.88)
 		)
 		(stroke
@@ -5279,6 +5489,16 @@
 			(type default)
 		)
 		(uuid "f76672cc-520a-4707-aa64-6a1951a90dab")
+	)
+	(wire
+		(pts
+			(xy 107.95 45.72) (xy 106.68 45.72)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "fab906a3-6438-429b-a570-7dc64e04453b")
 	)
 	(wire
 		(pts
@@ -5419,6 +5639,16 @@
 			(justify right bottom)
 		)
 		(uuid "76bcd73d-327c-4281-a115-5fb066d7a6c2")
+	)
+	(label "UART_RX"
+		(at 167.64 72.39 180)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify right bottom)
+		)
+		(uuid "776a5f29-d32a-4fd4-97e9-a6fd5dba020d")
 	)
 	(label "SPI_MISO"
 		(at 66.04 82.55 180)
@@ -5579,6 +5809,16 @@
 			(justify right bottom)
 		)
 		(uuid "c84e4b2b-b6e3-439e-8555-7939128d4a81")
+	)
+	(label "UART_TX"
+		(at 167.64 69.85 180)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify right bottom)
+		)
+		(uuid "c91391bb-cdee-455b-9fc9-a0fbac030fa7")
 	)
 	(label "STLINK_SWO"
 		(at 110.49 80.01 0)
@@ -6288,6 +6528,75 @@
 			(project "stm32-test"
 				(path "/f1fb9b18-14c7-4eb6-8c96-349425b1ffb6"
 					(reference "#PWR012")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "fs_4_schematic_library:TL3302AF180QJ")
+		(at 105.41 44.45 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "2f267fa9-0407-4268-847c-dbcda9c981ad")
+		(property "Reference" "SW1"
+			(at 101.6 40.64 0)
+			(effects
+				(font
+					(size 1.524 1.524)
+				)
+			)
+		)
+		(property "Value" "TL3302AF180QJ"
+			(at 101.6 43.18 0)
+			(effects
+				(font
+					(size 1.524 1.524)
+				)
+			)
+		)
+		(property "Footprint" "SW_TL3302AF180QJ_EWI"
+			(at 109.22 33.782 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+					(italic yes)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "https://configured-product-images.s3.amazonaws.com/Datasheets/TL3302.pdf"
+			(at 112.776 30.734 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+					(italic yes)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" ""
+			(at 105.41 44.45 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "b66daae0-09fa-4758-8a63-146848b8c3f3")
+		)
+		(pin "2"
+			(uuid "037d4e0b-913f-402c-9ce5-a3b9e88fd96a")
+		)
+		(instances
+			(project ""
+				(path "/f1fb9b18-14c7-4eb6-8c96-349425b1ffb6"
+					(reference "SW1")
 					(unit 1)
 				)
 			)
@@ -8921,16 +9230,15 @@
 	)
 	(symbol
 		(lib_id "Switch:SW_Push")
-		(at 113.03 52.07 0)
+		(at 113.03 50.8 0)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
 		(on_board yes)
 		(dnp no)
-		(fields_autoplaced yes)
 		(uuid "c5cb4397-1179-41e5-8988-7df53d9a950f")
 		(property "Reference" "SW2"
-			(at 113.03 44.45 0)
+			(at 101.6 49.53 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -8938,15 +9246,15 @@
 			)
 		)
 		(property "Value" "SW_Push"
-			(at 113.03 46.99 0)
+			(at 101.6 52.07 0)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
 			)
 		)
-		(property "Footprint" "Button_Switch_SMD:SW_SPST_PTS647_Sx50"
-			(at 113.03 46.99 0)
+		(property "Footprint" "Button_Switch_SMD:SW_SPST_PTS647_Sx38"
+			(at 113.03 45.72 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -8955,7 +9263,7 @@
 			)
 		)
 		(property "Datasheet" "https://www.ckswitches.com/media/2567/pts647.pdf"
-			(at 113.03 46.99 0)
+			(at 113.03 45.72 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -8964,7 +9272,7 @@
 			)
 		)
 		(property "Description" "Push button switch, generic, two pins"
-			(at 113.03 52.07 0)
+			(at 113.03 50.8 0)
 			(effects
 				(font
 					(size 1.27 1.27)
