@@ -7,6 +7,14 @@
 3. Ensure the output directory is set to `./` and output mode is set to "Color"
 4. Click "*Plot ALl Pages*" in the bottom right
 
+## Schematic Standards
+- Point all power flags up
+- Point all gnd flags down
+- Wires should not cross blue boxes
+- Use dashed blue box for imported circuit blocks, and solid lines for internal containerization
+- Use net labels instead of net flags
+- Orient net labels so there is a "wire" beneath them, and it's visible (the "connection point" should be on the right side of the flag if the flag is on the right side of a component/net)
+
 # WIP Notes
 ## TODO
 This is a Non-Exhaustive list
