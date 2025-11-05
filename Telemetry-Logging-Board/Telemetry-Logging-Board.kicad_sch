@@ -1877,234 +1877,6 @@
 			)
 			(embedded_fonts no)
 		)
-		(symbol "Timer_RTC:PCF8523T"
-			(exclude_from_sim no)
-			(in_bom yes)
-			(on_board yes)
-			(property "Reference" "U"
-				(at -10.16 8.89 0)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-					(justify left)
-				)
-			)
-			(property "Value" "PCF8523T"
-				(at 3.81 8.89 0)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-					(justify left)
-				)
-			)
-			(property "Footprint" "Package_SO:SOIC-8_3.9x4.9mm_P1.27mm"
-				(at 20.32 -8.89 0)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-					(hide yes)
-				)
-			)
-			(property "Datasheet" "https://www.nxp.com/docs/en/data-sheet/PCF8523.pdf"
-				(at 0 0 0)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-					(hide yes)
-				)
-			)
-			(property "Description" "Realtime Clock/Calendar I2C Interface, SOIC-8"
-				(at 0 0 0)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-					(hide yes)
-				)
-			)
-			(property "ki_keywords" "I2C RTC Clock Calendar"
-				(at 0 0 0)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-					(hide yes)
-				)
-			)
-			(property "ki_fp_filters" "SOIC*3.9x4.9mm*P1.27mm*"
-				(at 0 0 0)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-					(hide yes)
-				)
-			)
-			(symbol "PCF8523T_0_1"
-				(rectangle
-					(start -10.16 7.62)
-					(end 10.16 -7.62)
-					(stroke
-						(width 0.254)
-						(type default)
-					)
-					(fill
-						(type background)
-					)
-				)
-			)
-			(symbol "PCF8523T_1_1"
-				(pin input line
-					(at -12.7 5.08 0)
-					(length 2.54)
-					(name "SCL"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-					(number "6"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-				)
-				(pin bidirectional line
-					(at -12.7 2.54 0)
-					(length 2.54)
-					(name "SDA"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-					(number "5"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-				)
-				(pin input line
-					(at -12.7 -2.54 0)
-					(length 2.54)
-					(name "OSCI"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-					(number "1"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-				)
-				(pin output line
-					(at -12.7 -5.08 0)
-					(length 2.54)
-					(name "OSCO"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-					(number "2"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-				)
-				(pin power_in line
-					(at -2.54 10.16 270)
-					(length 2.54)
-					(name "VDD"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-					(number "8"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-				)
-				(pin power_in line
-					(at 0 -10.16 90)
-					(length 2.54)
-					(name "VSS"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-					(number "4"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-				)
-				(pin power_in line
-					(at 2.54 10.16 270)
-					(length 2.54)
-					(name "VBAT"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-					(number "3"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-				)
-				(pin open_collector line
-					(at 12.7 0 180)
-					(length 2.54)
-					(name "~{INT1}/CLKOUT"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-					(number "7"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-				)
-			)
-			(embedded_fonts no)
-		)
 		(symbol "power:+12V"
 			(power)
 			(pin_numbers
@@ -2684,18 +2456,6 @@
 		)
 	)
 	(rectangle
-		(start 156.21 53.34)
-		(end 236.22 119.38)
-		(stroke
-			(width 0)
-			(type solid)
-		)
-		(fill
-			(type none)
-		)
-		(uuid 1ea134f5-297d-4f24-be68-a8789806f125)
-	)
-	(rectangle
 		(start 139.7 125.73)
 		(end 299.72 165.1)
 		(stroke
@@ -2782,16 +2542,6 @@
 			)
 		)
 		(uuid "d355f99f-cc99-419e-9cd2-9ab0a971c757")
-	)
-	(text "RTC"
-		(exclude_from_sim no)
-		(at 159.004 51.308 0)
-		(effects
-			(font
-				(size 2.54 2.54)
-			)
-		)
-		(uuid "d761b696-4e3f-4392-8da1-ef4b237c0879")
 	)
 	(text "CAN Interfaces"
 		(exclude_from_sim no)
@@ -6606,92 +6356,6 @@
 		)
 	)
 	(symbol
-		(lib_id "Timer_RTC:PCF8523T")
-		(at 193.04 87.63 0)
-		(unit 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(dnp no)
-		(fields_autoplaced yes)
-		(uuid "f0b8b9df-338a-476c-83b2-d72c7e785431")
-		(property "Reference" "U10"
-			(at 209.55 81.2098 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Value" "PCF8523T"
-			(at 209.55 83.7498 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Footprint" "Package_SO:SOIC-8_3.9x4.9mm_P1.27mm"
-			(at 213.36 96.52 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Datasheet" "https://www.nxp.com/docs/en/data-sheet/PCF8523.pdf"
-			(at 193.04 87.63 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Description" "Realtime Clock/Calendar I2C Interface, SOIC-8"
-			(at 193.04 87.63 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(pin "1"
-			(uuid "0b50e976-749a-4bde-b2d2-fd5521dcdc89")
-		)
-		(pin "4"
-			(uuid "26bed3c0-4203-4d87-a105-349c6c6e8d2b")
-		)
-		(pin "5"
-			(uuid "94ecff34-4386-4550-9d86-c19a068f2faf")
-		)
-		(pin "3"
-			(uuid "ed856e78-2a7f-49bb-bceb-db1d24dcc853")
-		)
-		(pin "2"
-			(uuid "953f936a-8f80-446b-8363-72c962d2fc54")
-		)
-		(pin "7"
-			(uuid "4062fe7d-6eb5-4202-a999-9f65988e029c")
-		)
-		(pin "6"
-			(uuid "d042e821-9fe2-4600-a4ce-1cdf6a2cd2bb")
-		)
-		(pin "8"
-			(uuid "6748a6b9-47e0-40f7-82a1-fb4654d11fc7")
-		)
-		(instances
-			(project "Telemetry-Logging-Board"
-				(path "/5c64cdbc-39cd-49c8-9a12-12e4867a5d0b"
-					(reference "U10")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
 		(lib_id "Device:C")
 		(at 254 30.48 0)
 		(unit 1)
@@ -7444,6 +7108,48 @@
 			(project "Telemetry-Logging-Board"
 				(path "/5c64cdbc-39cd-49c8-9a12-12e4867a5d0b"
 					(page "3")
+				)
+			)
+		)
+	)
+	(sheet
+		(at 165.1 60.96)
+		(size 46.99 36.83)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(stroke
+			(width 0.1524)
+			(type solid)
+		)
+		(fill
+			(color 0 0 0 0.0000)
+		)
+		(uuid "bd9cabbe-3167-4e4f-850e-3717a458b966")
+		(property "Sheetname" "RTC"
+			(at 165.1 60.2484 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left bottom)
+			)
+		)
+		(property "Sheetfile" "rtc.kicad_sch"
+			(at 165.1 98.3746 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left top)
+			)
+		)
+		(instances
+			(project "Telemetry-Logging-Board"
+				(path "/5c64cdbc-39cd-49c8-9a12-12e4867a5d0b"
+					(page "8")
 				)
 			)
 		)
