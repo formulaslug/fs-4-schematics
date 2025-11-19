@@ -9,20 +9,22 @@
 			(exclude_from_sim no)
 			(in_bom yes)
 			(on_board yes)
-			(property "Reference" "J"
-				(at -16.51 31.75 0)
+			(property "Reference" "J3"
+				(at 4.6833 -30.48 0)
 				(effects
 					(font
 						(size 1.27 1.27)
 					)
+					(justify left)
 				)
 			)
 			(property "Value" "Bus_PCI_Express_Mini"
-				(at 22.86 31.75 0)
+				(at 4.6833 -33.02 0)
 				(effects
 					(font
 						(size 1.27 1.27)
 					)
+					(justify left)
 				)
 			)
 			(property "Footprint" ""
@@ -70,20 +72,18 @@
 					(hide yes)
 				)
 			)
-			(symbol "Bus_PCI_Express_Mini_0_1"
+			(symbol "Bus_PCI_Express_Mini_1_1"
 				(rectangle
 					(start -15.24 30.48)
 					(end 15.24 -27.94)
 					(stroke
 						(width 0.254)
-						(type default)
+						(type solid)
 					)
 					(fill
 						(type background)
 					)
 				)
-			)
-			(symbol "Bus_PCI_Express_Mini_1_1"
 				(pin bidirectional line
 					(at -17.78 17.78 0)
 					(length 2.54)
@@ -213,7 +213,7 @@
 				(pin input line
 					(at -17.78 -5.08 0)
 					(length 2.54)
-					(name "REFCLK-"
+					(name "BUSY"
 						(effects
 							(font
 								(size 1.27 1.27)
@@ -267,7 +267,7 @@
 				(pin open_collector line
 					(at -17.78 -17.78 0)
 					(length 2.54)
-					(name "~{WAKE}"
+					(name "SPI_CS"
 						(effects
 							(font
 								(size 1.27 1.27)
@@ -285,7 +285,7 @@
 				(pin open_collector line
 					(at -17.78 -20.32 0)
 					(length 2.54)
-					(name "~{CLKREQ}"
+					(name "3V3"
 						(effects
 							(font
 								(size 1.27 1.27)
@@ -339,7 +339,7 @@
 				(pin power_in line
 					(at -10.16 33.02 270)
 					(length 2.54)
-					(name "+3V3AUX"
+					(name "SPI_MOSI"
 						(effects
 							(font
 								(size 1.27 1.27)
@@ -600,7 +600,7 @@
 				(pin power_in line
 					(at 0 -30.48 90)
 					(length 2.54)
-					(name "GND"
+					(name "SPI_CLK"
 						(effects
 							(font
 								(size 1.27 1.27)
@@ -712,7 +712,7 @@
 				(pin power_in line
 					(at 5.08 33.02 270)
 					(length 2.54)
-					(name "+1V5"
+					(name "+3V3"
 						(effects
 							(font
 								(size 1.27 1.27)
@@ -748,7 +748,7 @@
 				(pin power_in line
 					(at 10.16 33.02 270)
 					(length 2.54)
-					(name "+1V5"
+					(name "SPI_INT"
 						(effects
 							(font
 								(size 1.27 1.27)
@@ -802,7 +802,7 @@
 				(pin open_collector line
 					(at 17.78 15.24 180)
 					(length 2.54)
-					(name "~{LED_WWAN}"
+					(name "RESET_N"
 						(effects
 							(font
 								(size 1.27 1.27)
@@ -820,7 +820,7 @@
 				(pin passive line
 					(at 17.78 10.16 180)
 					(length 2.54)
-					(name "COEX1"
+					(name "SPI_MISO"
 						(effects
 							(font
 								(size 1.27 1.27)
@@ -838,7 +838,7 @@
 				(pin passive line
 					(at 17.78 7.62 180)
 					(length 2.54)
-					(name "COEX2"
+					(name "GND"
 						(effects
 							(font
 								(size 1.27 1.27)
@@ -964,7 +964,7 @@
 				(pin bidirectional line
 					(at 17.78 -15.24 180)
 					(length 2.54)
-					(name "UIM_DATA"
+					(name "WAKEUP_IN"
 						(effects
 							(font
 								(size 1.27 1.27)
@@ -2502,16 +2502,6 @@
 		)
 		(uuid "8b85fb50-3df6-4c9a-8fd8-4d8861913599")
 	)
-	(text "PCM_IN (12) -> PCM_OUT\nPCM_OUT (14) -> PCM_IN\nUART_RXD (22) -> UART_TXD\nUART_TXD (32) -> UART_RXD\nUART_CTS (34) -> UART_RTS\nPETp0 (35) -> PERp0\nUART_RTS (36) -> UART_CTS\nPETn0 (37) -> PERn0\nVENDOR_DEFINED (38) -> SPI_MOSI\nVENDOR_DEFINED (40) -> SPI_MISO\nPERp0 (41) -> PETp0\nVENDOR_DEFINED (42) -> SPI_SCK\nPERn0 (43) -> PETn0\nCOEX2 (46) -> SWDCLK / GPIO 11\nCOEX1 (48) -> SWDIO / GPIO 10\nW_DISABLE2 (54) -> MODE\nW_DISABLE1 (56) -> RESET\nI2C_DATA (58) -> I2C_SDA\nSPI_INT (62) -> ALERT\nRESERVED (64) -> SPI_CS\nRESERVED/PERp1 (65) -> VDDIO\n\nAdd 3.3V (72)\nAdd 3.3V (74)\nAdd 3.3V (4)\n\n\n"
-		(exclude_from_sim no)
-		(at 127.762 100.076 0)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-		)
-		(uuid "eab0a02b-14c7-4fc0-bf45-690a53a59992")
-	)
 	(text "Heltec HT-HC01P"
 		(exclude_from_sim no)
 		(at 164.592 36.068 0)
@@ -2534,109 +2524,38 @@
 	)
 	(wire
 		(pts
-			(xy 86.36 63.5) (xy 100.33 63.5)
+			(xy 223.52 91.44) (xy 223.52 93.98)
 		)
 		(stroke
 			(width 0)
 			(type default)
 		)
-		(uuid "8058f2cc-2a09-466d-abe1-8304e1883599")
+		(uuid "0c32cdfa-419f-4f59-b16d-3989df1cfc32")
 	)
 	(wire
 		(pts
-			(xy 86.36 60.96) (xy 100.33 60.96)
+			(xy 219.71 91.44) (xy 223.52 91.44)
 		)
 		(stroke
 			(width 0)
 			(type default)
 		)
-		(uuid "9a71f9e0-816f-471f-89f6-a52567c4bd28")
-	)
-	(wire
-		(pts
-			(xy 86.36 68.58) (xy 100.33 68.58)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "e8849775-1bc9-460c-a470-dad8c3f87dad")
-	)
-	(wire
-		(pts
-			(xy 86.36 66.04) (xy 100.33 66.04)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "ef89a13d-1e10-41e6-9356-b36dfc4ed1a8")
-	)
-	(label "RF_SPI_SCLK"
-		(at 86.36 60.96 0)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-			(justify left bottom)
-		)
-		(uuid "0a857cde-bac4-4fff-8c42-f0f28abfa853")
-	)
-	(label "RF_SPI_MOSI"
-		(at 86.36 66.04 0)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-			(justify left bottom)
-		)
-		(uuid "2e5f0ac9-b58f-4146-92b2-c11ebcb560a4")
-	)
-	(label "RF_SPI_~{CS}"
-		(at 86.36 68.58 0)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-			(justify left bottom)
-		)
-		(uuid "8241be1f-bc45-4438-8495-7e795790ed77")
-	)
-	(label "RF_SPI_MISO"
-		(at 86.36 63.5 0)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-			(justify left bottom)
-		)
-		(uuid "e41c6e0d-6d9e-4a51-9754-3897ea6c61ad")
+		(uuid "31ca772c-ef0a-4214-812d-5c5a7d4cd025")
 	)
 	(hierarchical_label "3v3"
 		(shape input)
-		(at 153.67 66.04 0)
+		(at 184.15 119.38 180)
 		(effects
 			(font
 				(size 1.27 1.27)
 			)
-			(justify left)
+			(justify right)
 		)
 		(uuid "27a43259-466c-4b31-92bf-d9483e0ca0a6")
 	)
-	(hierarchical_label "CLK"
-		(shape input)
-		(at 153.67 50.8 0)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-			(justify left)
-		)
-		(uuid "4e02086b-863e-4f44-a19e-eb83429c8450")
-	)
 	(hierarchical_label "MISO"
 		(shape input)
-		(at 153.67 55.88 0)
+		(at 219.71 88.9 0)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -2644,6 +2563,17 @@
 			(justify left)
 		)
 		(uuid "5cfbd4a7-5b8e-444b-9d4d-7a777556aca1")
+	)
+	(hierarchical_label "CLK"
+		(shape input)
+		(at 201.93 129.54 270)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify right)
+		)
+		(uuid "664a18d0-ae60-4f93-b9ae-3237d33af530")
 	)
 	(hierarchical_label "MOSI"
 		(shape input)
@@ -2658,18 +2588,29 @@
 	)
 	(hierarchical_label "~{CS}"
 		(shape input)
-		(at 153.67 71.12 0)
+		(at 184.15 116.84 180)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify right)
+		)
+		(uuid "70de2800-9cfe-4a2b-87f2-d4a857b52445")
+	)
+	(hierarchical_label "3v3"
+		(shape input)
+		(at 207.01 66.04 90)
 		(effects
 			(font
 				(size 1.27 1.27)
 			)
 			(justify left)
 		)
-		(uuid "70de2800-9cfe-4a2b-87f2-d4a857b52445")
+		(uuid "76247856-77f9-4f94-90ca-0ad6dc3dff8a")
 	)
 	(hierarchical_label "MOSI"
 		(shape input)
-		(at 153.67 60.96 0)
+		(at 191.77 66.04 90)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -2723,6 +2664,71 @@
 		(uuid "debc4067-dac2-4f3a-a744-6d482ece3740")
 	)
 	(symbol
+		(lib_id "power:GND")
+		(at 223.52 93.98 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "09fcf3c2-f29e-493b-af74-17e69e9d670e")
+		(property "Reference" "#PWR019"
+			(at 223.52 100.33 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Value" "GND"
+			(at 226.822 96.012 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" ""
+			(at 223.52 93.98 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" ""
+			(at 223.52 93.98 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
+			(at 223.52 93.98 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "04074188-26fd-40c1-9b66-83cc30a09515")
+		)
+		(instances
+			(project "Telemetry-Logging-Board"
+				(path "/5c64cdbc-39cd-49c8-9a12-12e4867a5d0b/d51a50e4-dfa0-462c-86b8-d46c2b4013b3"
+					(reference "#PWR019")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
 		(lib_id "Connector:Bus_PCI_Express_Mini")
 		(at 201.93 99.06 0)
 		(unit 1)
@@ -2730,10 +2736,9 @@
 		(in_bom yes)
 		(on_board yes)
 		(dnp no)
-		(fields_autoplaced yes)
 		(uuid "46d9ec57-463b-4122-8b40-28bbd0cc857a")
 		(property "Reference" "J3"
-			(at 206.6133 129.54 0)
+			(at 220.726 58.928 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -2741,8 +2746,8 @@
 				(justify left)
 			)
 		)
-		(property "Value" "Bus_PCI_Express_Mini"
-			(at 206.6133 132.08 0)
+		(property "Value" "Heltec HT-HC01P"
+			(at 220.726 61.468 0)
 			(effects
 				(font
 					(size 1.27 1.27)
