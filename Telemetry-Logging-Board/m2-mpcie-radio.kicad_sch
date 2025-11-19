@@ -2356,6 +2356,107 @@
 			)
 			(embedded_fonts no)
 		)
+		(symbol "power:GND"
+			(power)
+			(pin_numbers
+				(hide yes)
+			)
+			(pin_names
+				(offset 0)
+				(hide yes)
+			)
+			(exclude_from_sim no)
+			(in_bom yes)
+			(on_board yes)
+			(property "Reference" "#PWR"
+				(at 0 -6.35 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "Value" "GND"
+				(at 0 -3.81 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Footprint" ""
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "Datasheet" ""
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "ki_keywords" "global power"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(symbol "GND_0_1"
+				(polyline
+					(pts
+						(xy 0 0) (xy 0 -1.27) (xy 1.27 -1.27) (xy 0 -2.54) (xy -1.27 -1.27) (xy 0 -1.27)
+					)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+			)
+			(symbol "GND_1_1"
+				(pin power_in line
+					(at 0 0 270)
+					(length 0)
+					(name "~"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "1"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+			)
+			(embedded_fonts no)
+		)
 	)
 	(rectangle
 		(start 31.75 39.37)
@@ -2421,6 +2522,96 @@
 		)
 		(uuid "f1048fda-d004-4926-946f-e1175e5b9601")
 	)
+	(wire
+		(pts
+			(xy 71.12 171.45) (xy 71.12 173.99)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "0a334b2f-c93b-4f0b-8123-45207fa4c64e")
+	)
+	(wire
+		(pts
+			(xy 86.36 63.5) (xy 100.33 63.5)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "8058f2cc-2a09-466d-abe1-8304e1883599")
+	)
+	(wire
+		(pts
+			(xy 86.36 60.96) (xy 100.33 60.96)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "9a71f9e0-816f-471f-89f6-a52567c4bd28")
+	)
+	(wire
+		(pts
+			(xy 86.36 68.58) (xy 100.33 68.58)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "e8849775-1bc9-460c-a470-dad8c3f87dad")
+	)
+	(wire
+		(pts
+			(xy 86.36 66.04) (xy 100.33 66.04)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "ef89a13d-1e10-41e6-9356-b36dfc4ed1a8")
+	)
+	(label "RF_SPI_SCLK"
+		(at 86.36 60.96 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left bottom)
+		)
+		(uuid "0a857cde-bac4-4fff-8c42-f0f28abfa853")
+	)
+	(label "RF_SPI_MOSI"
+		(at 86.36 66.04 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left bottom)
+		)
+		(uuid "2e5f0ac9-b58f-4146-92b2-c11ebcb560a4")
+	)
+	(label "RF_SPI_~{CS}"
+		(at 86.36 68.58 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left bottom)
+		)
+		(uuid "8241be1f-bc45-4438-8495-7e795790ed77")
+	)
+	(label "RF_SPI_MISO"
+		(at 86.36 63.5 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left bottom)
+		)
+		(uuid "e41c6e0d-6d9e-4a51-9754-3897ea6c61ad")
+	)
 	(hierarchical_label "3v3"
 		(shape input)
 		(at 153.67 66.04 0)
@@ -2456,7 +2647,7 @@
 	)
 	(hierarchical_label "MOSI"
 		(shape input)
-		(at 43.18 69.85 0)
+		(at 96.52 85.09 0)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -2489,7 +2680,7 @@
 	)
 	(hierarchical_label "3v3"
 		(shape input)
-		(at 100.33 76.2 0)
+		(at 71.12 74.93 90)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -2500,7 +2691,7 @@
 	)
 	(hierarchical_label "~{CS}"
 		(shape input)
-		(at 100.33 81.28 0)
+		(at 96.52 80.01 0)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -2511,7 +2702,7 @@
 	)
 	(hierarchical_label "CLK"
 		(shape input)
-		(at 43.18 59.69 0)
+		(at 96.52 90.17 0)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -2522,7 +2713,7 @@
 	)
 	(hierarchical_label "MISO"
 		(shape input)
-		(at 43.18 64.77 0)
+		(at 96.52 87.63 0)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -2755,6 +2946,71 @@
 		)
 	)
 	(symbol
+		(lib_id "power:GND")
+		(at 71.12 173.99 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "bb6dd8dc-d74e-40e0-93ed-c8fd85feab26")
+		(property "Reference" "#PWR018"
+			(at 71.12 180.34 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Value" "GND"
+			(at 74.422 176.022 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" ""
+			(at 71.12 173.99 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" ""
+			(at 71.12 173.99 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
+			(at 71.12 173.99 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "8d583d60-a560-4ed4-8150-2188eab79717")
+		)
+		(instances
+			(project "Telemetry-Logging-Board"
+				(path "/5c64cdbc-39cd-49c8-9a12-12e4867a5d0b/d51a50e4-dfa0-462c-86b8-d46c2b4013b3"
+					(reference "#PWR018")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
 		(lib_id "formula_slug_symbol_library:Teledatics TD-Haloc")
 		(at 71.12 123.19 0)
 		(unit 1)
@@ -2762,10 +3018,9 @@
 		(in_bom yes)
 		(on_board yes)
 		(dnp no)
-		(fields_autoplaced yes)
 		(uuid "f61586f3-c3a3-46cd-a72e-133c8b13f6e5")
 		(property "Reference" "J9"
-			(at 73.2633 72.39 0)
+			(at 75.184 72.644 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -2774,7 +3029,7 @@
 			)
 		)
 		(property "Value" "Teledatics TD-Haloc"
-			(at 73.2633 74.93 0)
+			(at 75.184 75.184 0)
 			(effects
 				(font
 					(size 1.27 1.27)
