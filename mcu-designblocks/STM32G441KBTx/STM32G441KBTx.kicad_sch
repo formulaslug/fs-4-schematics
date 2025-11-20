@@ -2771,6 +2771,16 @@
 	)
 	(wire
 		(pts
+			(xy 92.71 113.03) (xy 109.22 113.03)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "2a4ae74b-000e-4061-95d1-5425a9624574")
+	)
+	(wire
+		(pts
 			(xy 184.15 53.34) (xy 184.15 52.07)
 		)
 		(stroke
@@ -3078,16 +3088,6 @@
 			(type default)
 		)
 		(uuid "bdd0104c-9faa-4a66-bac0-016729cfb1b4")
-	)
-	(wire
-		(pts
-			(xy 95.25 113.03) (xy 109.22 113.03)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "bf9950fd-9447-4dbc-ae72-a15f42b5fa45")
 	)
 	(wire
 		(pts
@@ -3887,6 +3887,71 @@
 			(project "peripheral-mcu"
 				(path "/c6f349be-f072-4c68-bea9-9d1d80db7efc"
 					(reference "#PWR?")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "power:GND")
+		(at 92.71 113.03 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "23ef32ac-aeed-48b0-bb73-631f3e2f9d32")
+		(property "Reference" "#PWR01"
+			(at 92.71 119.38 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Value" "GND"
+			(at 90.17 113.03 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" ""
+			(at 92.71 113.03 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" ""
+			(at 92.71 113.03 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
+			(at 92.71 113.03 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "e804c4b0-e916-4122-9ce9-6051979cd3ec")
+		)
+		(instances
+			(project "STM32G441KBTx"
+				(path "/c6f349be-f072-4c68-bea9-9d1d80db7efc"
+					(reference "#PWR01")
 					(unit 1)
 				)
 			)

@@ -2,7 +2,7 @@
 	(version 20250114)
 	(generator "eeschema")
 	(generator_version "9.0")
-	(uuid "503acab3-20c4-40b1-b387-e1e4a288f243")
+	(uuid "a6d1b8e8-33c7-461f-93a6-df37362d5875")
 	(paper "A4")
 	(lib_symbols
 		(symbol "Connector_Generic:Conn_02x07_Odd_Even"
@@ -3977,6 +3977,16 @@
 	)
 	(wire
 		(pts
+			(xy 96.52 151.13) (xy 113.03 151.13)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "6a0d0583-2556-49d8-95f8-464126d09a21")
+	)
+	(wire
+		(pts
 			(xy 157.48 49.53) (xy 160.02 49.53)
 		)
 		(stroke
@@ -4274,16 +4284,6 @@
 			(type default)
 		)
 		(uuid "e4da5f98-b0cc-4de3-b99d-a2bdc1e81c44")
-	)
-	(wire
-		(pts
-			(xy 99.06 151.13) (xy 113.03 151.13)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "e7c5fb3f-a4b7-4e50-80d8-9a7a33e1a674")
 	)
 	(wire
 		(pts
@@ -6905,6 +6905,71 @@
 			(project ""
 				(path "/be8abe95-fa0e-434f-bf97-73945cc728ef"
 					(reference "#PWR?")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "power:GND")
+		(at 96.52 151.13 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "f2cef463-616c-4ded-a7f6-192e38d12f20")
+		(property "Reference" "#PWR01"
+			(at 96.52 157.48 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Value" "GND"
+			(at 93.98 151.13 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" ""
+			(at 96.52 151.13 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" ""
+			(at 96.52 151.13 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
+			(at 96.52 151.13 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "7eec7676-a14b-4359-95d8-ca34d3ccd375")
+		)
+		(instances
+			(project "STM32G473RCTx"
+				(path "/be8abe95-fa0e-434f-bf97-73945cc728ef"
+					(reference "#PWR01")
 					(unit 1)
 				)
 			)
