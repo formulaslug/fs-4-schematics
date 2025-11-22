@@ -56,3 +56,11 @@ CS -> n     Write 11 Bits to Start Read     <65 Bits outputted over SPI     7 Bi
 ```
 
 So at 20mhz, each read transaction of one message takes $4.1\cdot10^{-6}$ seconds, and we can perform full FIFO reads at 7485khz, which is more than double what we need, and will allow us to run slower SPI speeds. I suspect by the time we consider that bus load should never be >50%, and that FS-3 full DAQ bus data rate (not bus clock speed) is only around 130kbps, we will be able to run 4mhz SPI without ever having a FIFO overflow.
+
+
+MCP2517, MCP2518, MCP 2515 pin compatibility
+- a migration sheet says the 2517 and 2518 are meant to be pin and functionally compatible
+- main difference between the two is the step-cut wettable flanks on the 2518FD and the dimpled ones on the 2517FD
+- additionally some dimensions of the QFN package differ by a few millimeters
+- ultimately they're most likely compatible
+- the 2515 has different pins numbers and names. it also doesn't support FD. so it's most likely incompatible
