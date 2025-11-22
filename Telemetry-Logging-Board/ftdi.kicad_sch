@@ -1935,6 +1935,16 @@
 	)
 	(wire
 		(pts
+			(xy 106.68 76.2) (xy 102.87 76.2)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "5afc77b8-bd1a-4b76-afd8-78045f8b7a7f")
+	)
+	(wire
+		(pts
 			(xy 102.87 88.9) (xy 109.22 88.9)
 		)
 		(stroke
@@ -2042,6 +2052,16 @@
 			(type default)
 		)
 		(uuid "b8490e0a-b8a4-44f2-81b9-f5aa2c7ad60e")
+	)
+	(wire
+		(pts
+			(xy 116.84 76.2) (xy 114.3 76.2)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "beae6547-9347-4d3a-b1a2-d0ae5a82801b")
 	)
 	(wire
 		(pts
@@ -2489,6 +2509,73 @@
 		)
 	)
 	(symbol
+		(lib_id "Device:R")
+		(at 110.49 76.2 90)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "38883b5d-310a-4358-83da-7c91d5c42c31")
+		(property "Reference" "R4"
+			(at 110.998 78.74 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "5.1kΩ"
+			(at 110.998 81.28 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" ""
+			(at 110.49 77.978 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 110.49 76.2 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Resistor"
+			(at 110.49 76.2 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "e0c28563-e1fa-4665-89ff-198caf9ad8d3")
+		)
+		(pin "2"
+			(uuid "2c9f95c5-528f-41aa-b856-0f18db21e220")
+		)
+		(instances
+			(project "Telemetry-Logging-Board"
+				(path "/5c64cdbc-39cd-49c8-9a12-12e4867a5d0b/09aa2675-e127-459f-bbca-5f705be2e41d"
+					(reference "R4")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
 		(lib_id "Device:FerriteBead")
 		(at 127 71.12 90)
 		(unit 1)
@@ -2818,6 +2905,72 @@
 			(project ""
 				(path "/5c64cdbc-39cd-49c8-9a12-12e4867a5d0b/09aa2675-e127-459f-bbca-5f705be2e41d"
 					(reference "#PWR012")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "power:GND")
+		(at 116.84 76.2 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "5a2cfc55-6226-4f99-8e41-fa710cea8469")
+		(property "Reference" "#PWR033"
+			(at 116.84 82.55 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Value" "GND"
+			(at 116.84 81.28 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" ""
+			(at 116.84 76.2 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" ""
+			(at 116.84 76.2 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
+			(at 116.84 76.2 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "d38e09f2-5e8d-436e-a036-71da30d1f4b1")
+		)
+		(instances
+			(project ""
+				(path "/5c64cdbc-39cd-49c8-9a12-12e4867a5d0b/09aa2675-e127-459f-bbca-5f705be2e41d"
+					(reference "#PWR033")
 					(unit 1)
 				)
 			)
