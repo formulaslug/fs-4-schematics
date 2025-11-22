@@ -881,6 +881,17 @@
 		)
 		(uuid "a25293a0-01b8-4497-affb-f68ad9b92bed")
 	)
+	(text "Balance Block"
+		(exclude_from_sim no)
+		(at 135.89 116.84 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left bottom)
+		)
+		(uuid "a25293a0-01b8-4497-affb-f68ad9b92bed")
+	)
 	(junction
 		(at 139.7 86.36)
 		(diameter 0)
@@ -935,6 +946,16 @@
 		)
 		(uuid "167a9066-a8a7-4bd4-94ac-1ecd5cd0916f")
 	)
+	(polyline
+		(pts
+			(xy 163.83 92.71) (xy 123.19 92.71)
+		)
+		(stroke
+			(width 0)
+			(type dash)
+		)
+		(uuid "167a9066-a8a7-4bd4-94ac-1ecd5cd0916f")
+	)
 	(wire
 		(pts
 			(xy 139.7 104.14) (xy 137.16 104.14)
@@ -964,6 +985,16 @@
 			(type default)
 		)
 		(uuid "318f9713-2fec-465b-880c-0c1767274f29")
+	)
+	(polyline
+		(pts
+			(xy 123.19 118.11) (xy 163.83 118.11)
+		)
+		(stroke
+			(width 0)
+			(type dash)
+		)
+		(uuid "3ec332ad-41f7-4ec2-97aa-a0431f4a9283")
 	)
 	(polyline
 		(pts
@@ -1005,6 +1036,16 @@
 		)
 		(uuid "5252914b-6ed0-4aad-8429-ec78e9e30281")
 	)
+	(polyline
+		(pts
+			(xy 123.19 92.71) (xy 123.19 118.11)
+		)
+		(stroke
+			(width 0)
+			(type dash)
+		)
+		(uuid "5252914b-6ed0-4aad-8429-ec78e9e30281")
+	)
 	(wire
 		(pts
 			(xy 127 104.14) (xy 127 105.41)
@@ -1034,6 +1075,16 @@
 			(type default)
 		)
 		(uuid "9dbbc0f7-dfa3-47c8-932a-942fe7eb4a6e")
+	)
+	(polyline
+		(pts
+			(xy 163.83 118.11) (xy 163.83 92.71)
+		)
+		(stroke
+			(width 0)
+			(type dash)
+		)
+		(uuid "a2717ee2-68cc-4792-9f29-a98b0bf0b9c0")
 	)
 	(polyline
 		(pts
@@ -1106,6 +1157,50 @@
 		)
 		(uuid "22ca1929-186b-4505-ba09-1fc7ce92ded0")
 	)
+	(hierarchical_label "C#+1"
+		(shape output)
+		(at 182.88 86.36 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left)
+		)
+		(uuid "3b9e417b-dab6-4406-a20b-9fe7429088ee")
+	)
+	(hierarchical_label "C#"
+		(shape output)
+		(at 182.88 106.68 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left)
+		)
+		(uuid "3ec0e793-3e70-42db-b30b-7edefd957392")
+	)
+	(hierarchical_label "B#"
+		(shape input)
+		(at 119.38 113.03 180)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify right)
+		)
+		(uuid "526a9373-8854-4af1-9dd0-6f22d69c8540")
+	)
+	(hierarchical_label "B#+1"
+		(shape input)
+		(at 119.38 86.36 180)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify right)
+		)
+		(uuid "8a645a9e-e023-4cbd-9309-753c4d8ca624")
+	)
 	(hierarchical_label "S#+1"
 		(shape output)
 		(at 154.94 99.06 0)
@@ -1149,6 +1244,17 @@
 			(justify right)
 		)
 		(uuid "edc96e93-db10-4064-b916-f2c72e28a75c")
+	)
+	(hierarchical_label "S#+1"
+		(shape output)
+		(at 154.94 99.06 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left)
+		)
+		(uuid "f88fa459-9c0c-446c-b913-543a404400c4")
 	)
 	(symbol
 		(lib_id "Transistor_FET:BSS84")
@@ -1217,7 +1323,7 @@
 			(uuid "ee1fb765-ef47-4535-83e6-d8edf96b48ce")
 		)
 		(instances
-			(project "newBMS"
+			(project "BMS"
 				(path "/dc0b64a3-156e-446d-a433-c56b0c761cf1/00000000-0000-0000-0000-00005f95bba1"
 					(reference "Q?")
 					(unit 1)
@@ -1304,7 +1410,7 @@
 			(uuid "88631ac9-b977-4b0f-85de-6402fd1b3ec8")
 		)
 		(instances
-			(project "newBMS"
+			(project "BMS"
 				(path "/dc0b64a3-156e-446d-a433-c56b0c761cf1/00000000-0000-0000-0000-00005f95bba1"
 					(reference "R?")
 					(unit 1)
@@ -1393,7 +1499,7 @@
 			(uuid "3efda2a6-6155-438f-ab40-e11a433047fe")
 		)
 		(instances
-			(project "newBMS"
+			(project "BMS"
 				(path "/dc0b64a3-156e-446d-a433-c56b0c761cf1/00000000-0000-0000-0000-00005f95bba1"
 					(reference "R?")
 					(unit 1)
@@ -1480,7 +1586,7 @@
 			(uuid "aab87986-2385-4d3f-8cf9-32575dfd8e84")
 		)
 		(instances
-			(project "newBMS"
+			(project "BMS"
 				(path "/dc0b64a3-156e-446d-a433-c56b0c761cf1/00000000-0000-0000-0000-00005f95bba1"
 					(reference "R?")
 					(unit 1)
@@ -1569,7 +1675,7 @@
 			(uuid "04afcd0f-3e04-4a84-9f5e-d1a3b1f7bb7b")
 		)
 		(instances
-			(project "newBMS"
+			(project "BMS"
 				(path "/dc0b64a3-156e-446d-a433-c56b0c761cf1/00000000-0000-0000-0000-00005f95bba1"
 					(reference "C?")
 					(unit 1)
@@ -1656,7 +1762,7 @@
 			(uuid "df962bfa-cf51-499b-aa5c-028602efb372")
 		)
 		(instances
-			(project "newBMS"
+			(project "BMS"
 				(path "/dc0b64a3-156e-446d-a433-c56b0c761cf1/00000000-0000-0000-0000-00005f95bba1"
 					(reference "D?")
 					(unit 1)
@@ -1743,7 +1849,628 @@
 			(uuid "836b6591-7263-4c07-8be3-d45340553c1d")
 		)
 		(instances
-			(project "newBMS"
+			(project "BMS"
+				(path "/dc0b64a3-156e-446d-a433-c56b0c761cf1/00000000-0000-0000-0000-00005f95bba1"
+					(reference "R?")
+					(unit 1)
+				)
+				(path "/dc0b64a3-156e-446d-a433-c56b0c761cf1/00000000-0000-0000-0000-00005f95bba8"
+					(reference "R?")
+					(unit 1)
+				)
+				(path "/dc0b64a3-156e-446d-a433-c56b0c761cf1/00000000-0000-0000-0000-00005f9a2363"
+					(reference "R?")
+					(unit 1)
+				)
+				(path "/dc0b64a3-156e-446d-a433-c56b0c761cf1/6f027dca-8315-4f5d-8fbc-38fa2ec270b5"
+					(reference "R?")
+					(unit 1)
+				)
+				(path "/dc0b64a3-156e-446d-a433-c56b0c761cf1/8a13ff47-9856-4e08-93e6-510a1f5baf09"
+					(reference "R?")
+					(unit 1)
+				)
+				(path "/dc0b64a3-156e-446d-a433-c56b0c761cf1/a3eaddb3-ad3f-4304-be91-79ec42000d12"
+					(reference "R?")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Device:R_Small")
+		(at 134.62 104.14 270)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "0c489cf9-bd34-4882-9690-b373adf04e8a")
+		(property "Reference" "R?"
+			(at 130.81 102.87 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "120"
+			(at 134.62 104.14 90)
+			(effects
+				(font
+					(size 0.9652 0.9652)
+				)
+			)
+		)
+		(property "Footprint" "Resistor_SMD:R_0805_2012Metric_Pad1.20x1.40mm_HandSolder"
+			(at 134.62 104.14 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 134.62 104.14 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" ""
+			(at 134.62 104.14 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "2"
+			(uuid "d6fdea24-5b71-46f4-aba3-1959ba1c10a5")
+		)
+		(pin "1"
+			(uuid "836b6591-7263-4c07-8be3-d45340553c1d")
+		)
+		(instances
+			(project "BMS"
+				(path "/dc0b64a3-156e-446d-a433-c56b0c761cf1/00000000-0000-0000-0000-00005f95bba1"
+					(reference "R?")
+					(unit 1)
+				)
+				(path "/dc0b64a3-156e-446d-a433-c56b0c761cf1/00000000-0000-0000-0000-00005f95bba8"
+					(reference "R?")
+					(unit 1)
+				)
+				(path "/dc0b64a3-156e-446d-a433-c56b0c761cf1/00000000-0000-0000-0000-00005f9a2363"
+					(reference "R?")
+					(unit 1)
+				)
+				(path "/dc0b64a3-156e-446d-a433-c56b0c761cf1/6f027dca-8315-4f5d-8fbc-38fa2ec270b5"
+					(reference "R?")
+					(unit 1)
+				)
+				(path "/dc0b64a3-156e-446d-a433-c56b0c761cf1/8a13ff47-9856-4e08-93e6-510a1f5baf09"
+					(reference "R?")
+					(unit 1)
+				)
+				(path "/dc0b64a3-156e-446d-a433-c56b0c761cf1/a3eaddb3-ad3f-4304-be91-79ec42000d12"
+					(reference "R?")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Transistor_FET:BSS84")
+		(at 142.24 99.06 180)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "12c5aa85-aa64-4aa5-be5e-28a95c0265b7")
+		(property "Reference" "Q?"
+			(at 137.0076 97.8916 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Value" "BSS308PE"
+			(at 137.0076 100.203 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Footprint" "Package_TO_SOT_SMD:SOT-23"
+			(at 137.16 97.155 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+					(italic yes)
+				)
+				(justify left)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "http://assets.nexperia.com/documents/data-sheet/BSS84.pdf"
+			(at 142.24 99.06 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+				(hide yes)
+			)
+		)
+		(property "Description" ""
+			(at 142.24 99.06 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "7e4a91b7-d739-4327-945d-ab70e9421d76")
+		)
+		(pin "3"
+			(uuid "231178db-597e-4bad-9785-418981c14b06")
+		)
+		(pin "2"
+			(uuid "ee1fb765-ef47-4535-83e6-d8edf96b48ce")
+		)
+		(instances
+			(project "BMS"
+				(path "/dc0b64a3-156e-446d-a433-c56b0c761cf1/00000000-0000-0000-0000-00005f95bba1"
+					(reference "Q?")
+					(unit 1)
+				)
+				(path "/dc0b64a3-156e-446d-a433-c56b0c761cf1/00000000-0000-0000-0000-00005f95bba8"
+					(reference "Q?")
+					(unit 1)
+				)
+				(path "/dc0b64a3-156e-446d-a433-c56b0c761cf1/00000000-0000-0000-0000-00005f9a2363"
+					(reference "Q?")
+					(unit 1)
+				)
+				(path "/dc0b64a3-156e-446d-a433-c56b0c761cf1/6f027dca-8315-4f5d-8fbc-38fa2ec270b5"
+					(reference "Q?")
+					(unit 1)
+				)
+				(path "/dc0b64a3-156e-446d-a433-c56b0c761cf1/8a13ff47-9856-4e08-93e6-510a1f5baf09"
+					(reference "Q?")
+					(unit 1)
+				)
+				(path "/dc0b64a3-156e-446d-a433-c56b0c761cf1/a3eaddb3-ad3f-4304-be91-79ec42000d12"
+					(reference "Q?")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Device:C")
+		(at 173.99 99.06 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "2191bf79-cc75-4122-bc40-13ec247be07f")
+		(property "Reference" "C?"
+			(at 176.911 97.8916 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Value" "10nF"
+			(at 176.911 100.203 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Footprint" "Capacitor_SMD:C_0805_2012Metric_Pad1.18x1.45mm_HandSolder"
+			(at 174.9552 102.87 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 173.99 99.06 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" ""
+			(at 173.99 99.06 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "2"
+			(uuid "55627202-a8f4-4b72-a059-c1a1642e5a26")
+		)
+		(pin "1"
+			(uuid "04afcd0f-3e04-4a84-9f5e-d1a3b1f7bb7b")
+		)
+		(instances
+			(project "BMS"
+				(path "/dc0b64a3-156e-446d-a433-c56b0c761cf1/00000000-0000-0000-0000-00005f95bba1"
+					(reference "C?")
+					(unit 1)
+				)
+				(path "/dc0b64a3-156e-446d-a433-c56b0c761cf1/00000000-0000-0000-0000-00005f95bba8"
+					(reference "C?")
+					(unit 1)
+				)
+				(path "/dc0b64a3-156e-446d-a433-c56b0c761cf1/00000000-0000-0000-0000-00005f9a2363"
+					(reference "C?")
+					(unit 1)
+				)
+				(path "/dc0b64a3-156e-446d-a433-c56b0c761cf1/6f027dca-8315-4f5d-8fbc-38fa2ec270b5"
+					(reference "C?")
+					(unit 1)
+				)
+				(path "/dc0b64a3-156e-446d-a433-c56b0c761cf1/8a13ff47-9856-4e08-93e6-510a1f5baf09"
+					(reference "C?")
+					(unit 1)
+				)
+				(path "/dc0b64a3-156e-446d-a433-c56b0c761cf1/a3eaddb3-ad3f-4304-be91-79ec42000d12"
+					(reference "C?")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Device:R")
+		(at 152.4 86.36 270)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "37b5cadb-96e0-42e0-a2ea-1047189dd358")
+		(property "Reference" "R?"
+			(at 152.4 83.82 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "100"
+			(at 152.4 86.36 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" "Resistor_SMD:R_0805_2012Metric_Pad1.20x1.40mm_HandSolder"
+			(at 152.4 84.582 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 152.4 86.36 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" ""
+			(at 152.4 86.36 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "c895f261-e2cf-48f6-87b8-323f90559918")
+		)
+		(pin "2"
+			(uuid "aab87986-2385-4d3f-8cf9-32575dfd8e84")
+		)
+		(instances
+			(project "BMS"
+				(path "/dc0b64a3-156e-446d-a433-c56b0c761cf1/00000000-0000-0000-0000-00005f95bba1"
+					(reference "R?")
+					(unit 1)
+				)
+				(path "/dc0b64a3-156e-446d-a433-c56b0c761cf1/00000000-0000-0000-0000-00005f95bba8"
+					(reference "R?")
+					(unit 1)
+				)
+				(path "/dc0b64a3-156e-446d-a433-c56b0c761cf1/00000000-0000-0000-0000-00005f9a2363"
+					(reference "R?")
+					(unit 1)
+				)
+				(path "/dc0b64a3-156e-446d-a433-c56b0c761cf1/6f027dca-8315-4f5d-8fbc-38fa2ec270b5"
+					(reference "R?")
+					(unit 1)
+				)
+				(path "/dc0b64a3-156e-446d-a433-c56b0c761cf1/8a13ff47-9856-4e08-93e6-510a1f5baf09"
+					(reference "R?")
+					(unit 1)
+				)
+				(path "/dc0b64a3-156e-446d-a433-c56b0c761cf1/a3eaddb3-ad3f-4304-be91-79ec42000d12"
+					(reference "R?")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Device:LED_Small")
+		(at 127 107.95 90)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "956e9097-6346-4336-bd8c-9cc6d72e918a")
+		(property "Reference" "D?"
+			(at 129.54 107.95 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "LH R974-LP-1"
+			(at 133.35 111.76 90)
+			(effects
+				(font
+					(size 0.9652 0.9652)
+				)
+			)
+		)
+		(property "Footprint" "LED_SMD:LED_0805_2012Metric_Pad1.15x1.40mm_HandSolder"
+			(at 127 107.95 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 127 107.95 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" ""
+			(at 127 107.95 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "2"
+			(uuid "a32eb29b-c836-429b-8721-9ecaf46c316d")
+		)
+		(pin "1"
+			(uuid "df962bfa-cf51-499b-aa5c-028602efb372")
+		)
+		(instances
+			(project "BMS"
+				(path "/dc0b64a3-156e-446d-a433-c56b0c761cf1/00000000-0000-0000-0000-00005f95bba1"
+					(reference "D?")
+					(unit 1)
+				)
+				(path "/dc0b64a3-156e-446d-a433-c56b0c761cf1/00000000-0000-0000-0000-00005f95bba8"
+					(reference "D?")
+					(unit 1)
+				)
+				(path "/dc0b64a3-156e-446d-a433-c56b0c761cf1/00000000-0000-0000-0000-00005f9a2363"
+					(reference "D?")
+					(unit 1)
+				)
+				(path "/dc0b64a3-156e-446d-a433-c56b0c761cf1/6f027dca-8315-4f5d-8fbc-38fa2ec270b5"
+					(reference "D?")
+					(unit 1)
+				)
+				(path "/dc0b64a3-156e-446d-a433-c56b0c761cf1/8a13ff47-9856-4e08-93e6-510a1f5baf09"
+					(reference "D?")
+					(unit 1)
+				)
+				(path "/dc0b64a3-156e-446d-a433-c56b0c761cf1/a3eaddb3-ad3f-4304-be91-79ec42000d12"
+					(reference "D?")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Device:R")
+		(at 139.7 107.95 180)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "9689c0cf-3091-4bf7-81e6-ad20b7fddda7")
+		(property "Reference" "R?"
+			(at 137.16 106.68 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Value" "33"
+			(at 139.7 106.68 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Footprint" "Resistor_SMD:R_2512_6332Metric_Pad1.40x3.35mm_HandSolder"
+			(at 141.478 107.95 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 139.7 107.95 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" ""
+			(at 139.7 107.95 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "2"
+			(uuid "18aa8d53-7e6e-462d-9906-2a5edc7a9584")
+		)
+		(pin "1"
+			(uuid "3efda2a6-6155-438f-ab40-e11a433047fe")
+		)
+		(instances
+			(project "BMS"
+				(path "/dc0b64a3-156e-446d-a433-c56b0c761cf1/00000000-0000-0000-0000-00005f95bba1"
+					(reference "R?")
+					(unit 1)
+				)
+				(path "/dc0b64a3-156e-446d-a433-c56b0c761cf1/00000000-0000-0000-0000-00005f95bba8"
+					(reference "R?")
+					(unit 1)
+				)
+				(path "/dc0b64a3-156e-446d-a433-c56b0c761cf1/00000000-0000-0000-0000-00005f9a2363"
+					(reference "R?")
+					(unit 1)
+				)
+				(path "/dc0b64a3-156e-446d-a433-c56b0c761cf1/6f027dca-8315-4f5d-8fbc-38fa2ec270b5"
+					(reference "R?")
+					(unit 1)
+				)
+				(path "/dc0b64a3-156e-446d-a433-c56b0c761cf1/8a13ff47-9856-4e08-93e6-510a1f5baf09"
+					(reference "R?")
+					(unit 1)
+				)
+				(path "/dc0b64a3-156e-446d-a433-c56b0c761cf1/a3eaddb3-ad3f-4304-be91-79ec42000d12"
+					(reference "R?")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Device:R")
+		(at 151.13 99.06 270)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "f4f58a2b-767a-47b9-9df1-7ef5c7280843")
+		(property "Reference" "R?"
+			(at 151.13 96.52 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "3.3k"
+			(at 151.13 99.06 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" "Resistor_SMD:R_0805_2012Metric_Pad1.20x1.40mm_HandSolder"
+			(at 151.13 97.282 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 151.13 99.06 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" ""
+			(at 151.13 99.06 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "6ea8876b-3bde-4fbc-8bb2-cd70eacae92d")
+		)
+		(pin "2"
+			(uuid "88631ac9-b977-4b0f-85de-6402fd1b3ec8")
+		)
+		(instances
+			(project "BMS"
 				(path "/dc0b64a3-156e-446d-a433-c56b0c761cf1/00000000-0000-0000-0000-00005f95bba1"
 					(reference "R?")
 					(unit 1)
