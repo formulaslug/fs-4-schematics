@@ -3442,12 +3442,6 @@
 		(uuid "67ab2b9e-7886-48b7-9567-64e2be123e0c")
 	)
 	(junction
-		(at 165.1 77.47)
-		(diameter 0)
-		(color 0 0 0 0)
-		(uuid "7cfbe014-7ea3-446a-a381-121ddf142fe3")
-	)
-	(junction
 		(at 328.93 30.48)
 		(diameter 0)
 		(color 0 0 0 0)
@@ -3524,16 +3518,6 @@
 			(type default)
 		)
 		(uuid "0162333a-5f3f-49ca-9f29-390226c1a08a")
-	)
-	(wire
-		(pts
-			(xy 165.1 77.47) (xy 170.18 77.47)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "037c8d22-86cc-4f28-b170-80d38377f2d5")
 	)
 	(wire
 		(pts
@@ -3657,6 +3641,16 @@
 	)
 	(wire
 		(pts
+			(xy 194.31 62.23) (xy 194.31 63.5)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "20f068b8-561b-4bac-81db-83b70b5d88df")
+	)
+	(wire
+		(pts
 			(xy 104.14 110.49) (xy 118.11 110.49)
 		)
 		(stroke
@@ -3714,16 +3708,6 @@
 			(type default)
 		)
 		(uuid "29106971-4e50-43ea-a412-31521c5af34d")
-	)
-	(wire
-		(pts
-			(xy 194.31 59.69) (xy 194.31 63.5)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "29b1f59c-d5a6-45f6-b894-6aad57e4db57")
 	)
 	(wire
 		(pts
@@ -3844,6 +3828,16 @@
 			(type default)
 		)
 		(uuid "4e765345-e8dc-4a61-b17d-888846136251")
+	)
+	(wire
+		(pts
+			(xy 184.15 62.23) (xy 194.31 62.23)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "514c97c7-63d2-42fa-acaf-97d216bf8ab2")
 	)
 	(wire
 		(pts
@@ -4257,7 +4251,7 @@
 	)
 	(wire
 		(pts
-			(xy 161.29 77.47) (xy 165.1 77.47)
+			(xy 161.29 77.47) (xy 170.18 77.47)
 		)
 		(stroke
 			(width 0)
@@ -4464,16 +4458,6 @@
 			(type default)
 		)
 		(uuid "c2409d17-a5e5-47cc-807f-829580756d05")
-	)
-	(wire
-		(pts
-			(xy 165.1 73.66) (xy 165.1 77.47)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "c686e7fb-98c0-4eea-b0ed-b690fb4a470c")
 	)
 	(wire
 		(pts
@@ -5115,6 +5099,16 @@
 		)
 		(uuid "8538e007-4ae0-4584-9033-8e24a6ef980e")
 	)
+	(label "SBC_3v3"
+		(at 184.15 62.23 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left bottom)
+		)
+		(uuid "8812f0d8-9ccc-45b1-8435-144f68d09833")
+	)
 	(label "CAN_SPI_MOSI"
 		(at 243.84 144.78 0)
 		(effects
@@ -5364,6 +5358,16 @@
 			(justify left bottom)
 		)
 		(uuid "f9458e03-13a2-4d53-9d6f-911284d49944")
+	)
+	(label "SBC_3v3"
+		(at 170.18 77.47 180)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify right bottom)
+		)
+		(uuid "f9cfb13a-f074-47fd-a864-69724e3195f7")
 	)
 	(label "CAN1_~{INT1}"
 		(at 193.04 156.21 0)
@@ -6176,72 +6180,6 @@
 		)
 	)
 	(symbol
-		(lib_id "power:+5V")
-		(at 194.31 59.69 0)
-		(unit 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(dnp no)
-		(fields_autoplaced yes)
-		(uuid "4922e145-65c1-48df-a02a-d035b749e97c")
-		(property "Reference" "#PWR06"
-			(at 194.31 63.5 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Value" "+5V"
-			(at 194.31 54.61 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Footprint" ""
-			(at 194.31 59.69 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Datasheet" ""
-			(at 194.31 59.69 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Description" "Power symbol creates a global label with name \"+5V\""
-			(at 194.31 59.69 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(pin "1"
-			(uuid "990494fa-c762-48a2-90da-0bada2026987")
-		)
-		(instances
-			(project "Telemetry-Logging-Board"
-				(path "/5c64cdbc-39cd-49c8-9a12-12e4867a5d0b"
-					(reference "#PWR06")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
 		(lib_id "Device:C")
 		(at 328.93 35.56 180)
 		(unit 1)
@@ -6899,72 +6837,6 @@
 		)
 	)
 	(symbol
-		(lib_id "power:+5V")
-		(at 165.1 73.66 0)
-		(unit 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(dnp no)
-		(fields_autoplaced yes)
-		(uuid "7d570ed3-02ba-4a30-9d91-c3503de1209f")
-		(property "Reference" "#PWR05"
-			(at 165.1 77.47 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Value" "+5V"
-			(at 165.1 68.58 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Footprint" ""
-			(at 165.1 73.66 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Datasheet" ""
-			(at 165.1 73.66 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Description" "Power symbol creates a global label with name \"+5V\""
-			(at 165.1 73.66 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(pin "1"
-			(uuid "c055b630-5948-4654-9782-e133bf033eb4")
-		)
-		(instances
-			(project "Telemetry-Logging-Board"
-				(path "/5c64cdbc-39cd-49c8-9a12-12e4867a5d0b"
-					(reference "#PWR05")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
 		(lib_id "Device:Battery_Cell")
 		(at 204.47 85.09 180)
 		(unit 1)
@@ -7429,7 +7301,7 @@
 				(justify right)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "Crystal:Crystal_SMD_3215-2Pin_3.2x1.5mm"
 			(at 177.8 107.95 0)
 			(effects
 				(font
