@@ -2540,6 +2540,16 @@
 		)
 		(uuid "31668e11-5b21-48b4-8801-c13e11860e10")
 	)
+	(text "VDDIO: 3.3v"
+		(exclude_from_sim no)
+		(at 54.864 134.874 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+		)
+		(uuid "5994bd7f-b8b4-412a-b087-f1d466b54b19")
+	)
 	(text "This is not the same pin->footprint mapping as the datasheet!!"
 		(exclude_from_sim no)
 		(at 208.28 53.086 0)
@@ -2623,6 +2633,28 @@
 		)
 		(uuid "27a43259-466c-4b31-92bf-d9483e0ca0a6")
 	)
+	(hierarchical_label "3v3"
+		(shape input)
+		(at 71.12 144.78 180)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify right)
+		)
+		(uuid "30a435be-9997-4a16-999e-8eb7835c0bb9")
+	)
+	(hierarchical_label "VDDIO"
+		(shape input)
+		(at 71.12 134.62 180)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify right)
+		)
+		(uuid "382eeb50-4827-4c6d-88d9-c4f18d5f0813")
+	)
 	(hierarchical_label "MOSI"
 		(shape input)
 		(at 96.52 99.06 0)
@@ -2655,6 +2687,17 @@
 			(justify right)
 		)
 		(uuid "664a18d0-ae60-4f93-b9ae-3237d33af530")
+	)
+	(hierarchical_label "IRQ"
+		(shape input)
+		(at 96.52 129.54 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left)
+		)
+		(uuid "6a474ccf-e2b7-449f-8973-78f111ae8663")
 	)
 	(hierarchical_label "~{CS}"
 		(shape input)
@@ -2689,6 +2732,28 @@
 		)
 		(uuid "88da77a4-2f52-4e90-b70c-0209ed90df65")
 	)
+	(hierarchical_label "3v3"
+		(shape input)
+		(at 96.52 63.5 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left)
+		)
+		(uuid "b362dd35-d21b-4daa-985f-fdeac8e5f864")
+	)
+	(hierarchical_label "3v3"
+		(shape input)
+		(at 96.52 144.78 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left)
+		)
+		(uuid "d1c83c62-569b-478b-b9ff-1a5121ffde58")
+	)
 	(hierarchical_label "MISO"
 		(shape input)
 		(at 96.52 101.6 0)
@@ -2710,6 +2775,71 @@
 			(justify right)
 		)
 		(uuid "ec962edb-36bd-4ef2-bbe4-97a565ddf0f5")
+	)
+	(symbol
+		(lib_id "power:GND")
+		(at 71.12 124.46 270)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "09272a37-fd1c-48ff-b12c-2259def82377")
+		(property "Reference" "#PWR054"
+			(at 64.77 124.46 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Value" "GND"
+			(at 66.04 124.46 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" ""
+			(at 71.12 124.46 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" ""
+			(at 71.12 124.46 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
+			(at 71.12 124.46 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "5d5bb5c0-5e80-4fe5-9295-71c9980a51b8")
+		)
+		(instances
+			(project "Telemetry-Logging-Board"
+				(path "/5c64cdbc-39cd-49c8-9a12-12e4867a5d0b/d51a50e4-dfa0-462c-86b8-d46c2b4013b3"
+					(reference "#PWR054")
+					(unit 1)
+				)
+			)
+		)
 	)
 	(symbol
 		(lib_id "power:GND")
@@ -2771,6 +2901,201 @@
 			(project "Telemetry-Logging-Board"
 				(path "/5c64cdbc-39cd-49c8-9a12-12e4867a5d0b/d51a50e4-dfa0-462c-86b8-d46c2b4013b3"
 					(reference "#PWR039")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "power:GND")
+		(at 71.12 68.58 270)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "1bc6374c-5947-421b-9eb9-aeb5db786cad")
+		(property "Reference" "#PWR05"
+			(at 64.77 68.58 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Value" "GND"
+			(at 66.04 68.58 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" ""
+			(at 71.12 68.58 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" ""
+			(at 71.12 68.58 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
+			(at 71.12 68.58 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "36ccf325-e112-499c-87d7-d1f77480e0a4")
+		)
+		(instances
+			(project "Telemetry-Logging-Board"
+				(path "/5c64cdbc-39cd-49c8-9a12-12e4867a5d0b/d51a50e4-dfa0-462c-86b8-d46c2b4013b3"
+					(reference "#PWR05")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "power:GND")
+		(at 71.12 116.84 270)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "2285ffa0-2f37-40c8-97a2-b381f4d6e702")
+		(property "Reference" "#PWR053"
+			(at 64.77 116.84 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Value" "GND"
+			(at 66.04 116.84 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" ""
+			(at 71.12 116.84 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" ""
+			(at 71.12 116.84 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
+			(at 71.12 116.84 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "e276dffa-9d96-46d9-8d27-50533008c790")
+		)
+		(instances
+			(project "Telemetry-Logging-Board"
+				(path "/5c64cdbc-39cd-49c8-9a12-12e4867a5d0b/d51a50e4-dfa0-462c-86b8-d46c2b4013b3"
+					(reference "#PWR053")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "power:GND")
+		(at 71.12 147.32 270)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "28d643ff-90c8-434d-af89-6dffdd731d8a")
+		(property "Reference" "#PWR057"
+			(at 64.77 147.32 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Value" "GND"
+			(at 66.04 147.32 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" ""
+			(at 71.12 147.32 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" ""
+			(at 71.12 147.32 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
+			(at 71.12 147.32 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "397d5860-e984-4d94-b044-58d2e1a3c501")
+		)
+		(instances
+			(project "Telemetry-Logging-Board"
+				(path "/5c64cdbc-39cd-49c8-9a12-12e4867a5d0b/d51a50e4-dfa0-462c-86b8-d46c2b4013b3"
+					(reference "#PWR057")
 					(unit 1)
 				)
 			)
@@ -2999,6 +3324,71 @@
 		)
 	)
 	(symbol
+		(lib_id "power:GND")
+		(at 71.12 139.7 270)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "7cf44bc0-bc89-430b-a81e-ff31dd816236")
+		(property "Reference" "#PWR056"
+			(at 64.77 139.7 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Value" "GND"
+			(at 66.04 139.7 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" ""
+			(at 71.12 139.7 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" ""
+			(at 71.12 139.7 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
+			(at 71.12 139.7 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "2916cb2c-a4b0-41b2-8cb4-0376f9c7fa99")
+		)
+		(instances
+			(project "Telemetry-Logging-Board"
+				(path "/5c64cdbc-39cd-49c8-9a12-12e4867a5d0b/d51a50e4-dfa0-462c-86b8-d46c2b4013b3"
+					(reference "#PWR056")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
 		(lib_id "formula_slug_symbol_library:21992304")
 		(at 83.82 106.68 0)
 		(unit 1)
@@ -3024,7 +3414,7 @@
 				)
 			)
 		)
-		(property "Footprint" "formula_slug_footprint_library:TE_21992304"
+		(property "Footprint" "formula_slug_footprint_library:CONN-SMD_AS0BC21-S48BE-7H"
 			(at 83.82 106.68 0)
 			(effects
 				(font
@@ -3310,6 +3700,136 @@
 	)
 	(symbol
 		(lib_id "power:GND")
+		(at 71.12 132.08 270)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "9a103490-1ea8-4ec7-a84c-41b6e5828439")
+		(property "Reference" "#PWR055"
+			(at 64.77 132.08 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Value" "GND"
+			(at 66.04 132.08 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" ""
+			(at 71.12 132.08 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" ""
+			(at 71.12 132.08 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
+			(at 71.12 132.08 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "e59a41e6-97ff-4e72-99ae-99a86d49afc6")
+		)
+		(instances
+			(project "Telemetry-Logging-Board"
+				(path "/5c64cdbc-39cd-49c8-9a12-12e4867a5d0b/d51a50e4-dfa0-462c-86b8-d46c2b4013b3"
+					(reference "#PWR055")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "power:GND")
+		(at 71.12 93.98 270)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "a775bba1-cb30-41e2-8644-5cddd6280b53")
+		(property "Reference" "#PWR06"
+			(at 64.77 93.98 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Value" "GND"
+			(at 66.04 93.98 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" ""
+			(at 71.12 93.98 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" ""
+			(at 71.12 93.98 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
+			(at 71.12 93.98 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "2331a2da-3e0d-4633-a255-d47d1f8e533d")
+		)
+		(instances
+			(project "Telemetry-Logging-Board"
+				(path "/5c64cdbc-39cd-49c8-9a12-12e4867a5d0b/d51a50e4-dfa0-462c-86b8-d46c2b4013b3"
+					(reference "#PWR06")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "power:GND")
 		(at 71.12 60.96 270)
 		(unit 1)
 		(exclude_from_sim no)
@@ -3368,6 +3888,136 @@
 			(project "Telemetry-Logging-Board"
 				(path "/5c64cdbc-39cd-49c8-9a12-12e4867a5d0b/d51a50e4-dfa0-462c-86b8-d46c2b4013b3"
 					(reference "#PWR038")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "power:GND")
+		(at 71.12 101.6 270)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "d8eb437e-452b-4705-91d4-e492c292c2d2")
+		(property "Reference" "#PWR045"
+			(at 64.77 101.6 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Value" "GND"
+			(at 66.04 101.6 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" ""
+			(at 71.12 101.6 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" ""
+			(at 71.12 101.6 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
+			(at 71.12 101.6 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "bdd43a26-338f-4fcb-a4a2-0479886cf0db")
+		)
+		(instances
+			(project "Telemetry-Logging-Board"
+				(path "/5c64cdbc-39cd-49c8-9a12-12e4867a5d0b/d51a50e4-dfa0-462c-86b8-d46c2b4013b3"
+					(reference "#PWR045")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "power:GND")
+		(at 71.12 109.22 270)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "fb36c12b-4670-43a9-b4de-b279aea41506")
+		(property "Reference" "#PWR046"
+			(at 64.77 109.22 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Value" "GND"
+			(at 66.04 109.22 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" ""
+			(at 71.12 109.22 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" ""
+			(at 71.12 109.22 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
+			(at 71.12 109.22 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "ed8bb981-84cc-4ff0-bdb9-519632b0d4d6")
+		)
+		(instances
+			(project "Telemetry-Logging-Board"
+				(path "/5c64cdbc-39cd-49c8-9a12-12e4867a5d0b/d51a50e4-dfa0-462c-86b8-d46c2b4013b3"
+					(reference "#PWR046")
 					(unit 1)
 				)
 			)
