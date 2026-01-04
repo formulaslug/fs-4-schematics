@@ -340,24 +340,6 @@
 					)
 				)
 				(pin input line
-					(at -2.54 -27.94 0)
-					(length 2.54)
-					(name "INT_N"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-					(number "11"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-				)
-				(pin input line
 					(at -2.54 -30.48 0)
 					(length 2.54)
 					(name "PD_N"
@@ -1383,6 +1365,24 @@
 						)
 					)
 				)
+				(pin output line
+					(at 64.77 -80.01 180)
+					(length 2.54)
+					(name "INT_N"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "11"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
 			)
 			(embedded_fonts no)
 		)
@@ -2257,16 +2257,6 @@
 	)
 	(wire
 		(pts
-			(xy 149.86 168.91) (xy 86.36 168.91)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "061a349a-7e1d-46c3-9b47-0e9bff0ab8b9")
-	)
-	(wire
-		(pts
 			(xy 217.17 158.75) (xy 248.92 158.75)
 		)
 		(stroke
@@ -3057,6 +3047,16 @@
 	)
 	(wire
 		(pts
+			(xy 217.17 220.98) (xy 270.51 220.98)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "d4f1eed0-ca00-4d93-a433-0b0c82c932cb")
+	)
+	(wire
+		(pts
 			(xy 217.17 173.99) (xy 250.19 173.99)
 		)
 		(stroke
@@ -3356,12 +3356,12 @@
 		(uuid "6f359ac8-e9cd-480a-92b4-30eb9f5a423c")
 	)
 	(label "Driver_Interrupt"
-		(at 107.95 168.91 0)
+		(at 236.22 220.98 180)
 		(effects
 			(font
 				(size 1.27 1.27)
 			)
-			(justify left bottom)
+			(justify right bottom)
 		)
 		(uuid "737d6428-400c-4de6-80bc-cd1affda4bd9")
 	)
@@ -3687,12 +3687,12 @@
 	)
 	(hierarchical_label "Driver_Interrupt"
 		(shape tri_state)
-		(at 86.36 168.91 180)
+		(at 270.51 220.98 0)
 		(effects
 			(font
 				(size 1.27 1.27)
 			)
-			(justify right)
+			(justify left)
 		)
 		(uuid "ef3918a0-6ce0-46f3-8c3e-d0ef1d0a4c8d")
 	)
