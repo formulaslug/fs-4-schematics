@@ -500,5 +500,39 @@
 		(solder_mask_margin 0.102)
 		(uuid "0ab94a2b-2a66-4dc4-9c71-cada907b405b")
 	)
+	(zone
+		(net 0)
+		(net_name "")
+		(layers "F.Cu" "F.SilkS")
+		(uuid "74bed475-b104-4790-95fb-e509c866e5a2")
+		(name "STLINK-V3MODS Keepout")
+		(hatch edge 0.5)
+		(connect_pads
+			(clearance 0)
+		)
+		(min_thickness 0.25)
+		(filled_areas_thickness no)
+		(keepout
+			(tracks not_allowed)
+			(vias not_allowed)
+			(pads not_allowed)
+			(copperpour not_allowed)
+			(footprints not_allowed)
+		)
+		(placement
+			(enabled no)
+			(sheetname "")
+		)
+		(fill
+			(thermal_gap 0.5)
+			(thermal_bridge_width 0.5)
+		)
+		(polygon
+			(pts
+				(xy -9 -1.5) (xy 9 -1.5) (xy 9 8.9948) (xy 6 8.9948) (xy 6 30) (xy 9 30) (xy 9 30.5) (xy -9 30.5)
+				(xy -9 30) (xy -6 29.972) (xy -6 9) (xy -9 9)
+			)
+		)
+	)
 	(embedded_fonts no)
 )
