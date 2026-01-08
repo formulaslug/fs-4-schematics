@@ -6,12 +6,11 @@
 	(paper "B")
 	(title_block
 		(title "Steering Wheel Board")
-		(date "2026-01-06")
+		(date "2026-01-07")
 		(rev "1.0")
 		(company "Formula Slug")
 		(comment 1 "Nova Mondal")
-		(comment 2 "[COLLABORATOR'S NAME HERE]")
-		(comment 3 "[ET CETRA]")
+		(comment 2 "Jesse Osteen, Brian Acosta")
 		(comment 6 "Block Diagram")
 	)
 	(lib_symbols
@@ -2062,6 +2061,26 @@
 	)
 	(wire
 		(pts
+			(xy 285.75 170.18) (xy 285.75 194.31)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "09db8281-e724-4018-80e5-5cd673bb666e")
+	)
+	(wire
+		(pts
+			(xy 278.13 170.18) (xy 285.75 170.18)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "1203e37b-2100-48b9-a24b-0b3704e0fc13")
+	)
+	(wire
+		(pts
 			(xy 227.33 31.75) (xy 232.41 31.75)
 		)
 		(stroke
@@ -2549,6 +2568,16 @@
 			(type default)
 		)
 		(uuid "d6d0db46-b647-48da-a5e8-46981f57d1ba")
+	)
+	(wire
+		(pts
+			(xy 285.75 194.31) (xy 289.56 194.31)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "d78ffbfe-1016-4b76-9705-6b74fae16c5e")
 	)
 	(wire
 		(pts
@@ -5362,6 +5391,78 @@
 				(path "/9d41e1f5-de27-446c-8a64-25407fbe48af"
 					(reference "L?")
 					(unit 1)
+				)
+			)
+		)
+	)
+	(sheet
+		(at 289.56 185.42)
+		(size 21.59 15.24)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(stroke
+			(width 0.1524)
+			(type solid)
+		)
+		(fill
+			(color 0 0 0 0.0000)
+		)
+		(uuid "716411d5-72b3-4007-ab7d-e5481623d0da")
+		(property "Sheetname" "Backlight_Driver"
+			(at 289.56 184.7084 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left bottom)
+			)
+		)
+		(property "Sheetfile" "backlight.kicad_sch"
+			(at 289.56 201.2446 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left top)
+			)
+		)
+		(pin "Backlight_PWM" input
+			(at 289.56 194.31 180)
+			(uuid "93957e17-35eb-4db0-b10a-da6423b0235b")
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(pin "LED_Low" output
+			(at 311.15 198.12 0)
+			(uuid "082babc2-564f-42c0-a44a-e24c5f1cbff6")
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+			)
+		)
+		(pin "LED_High" output
+			(at 311.15 190.5 0)
+			(uuid "829cdd59-c797-4e00-a7c4-c42bacdbde22")
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+			)
+		)
+		(instances
+			(project "steering_wheel"
+				(path "/553a23ec-442a-4f98-939d-2d5634a662f5"
+					(page "5")
 				)
 			)
 		)
