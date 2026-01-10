@@ -860,9 +860,9 @@
 			(embedded_fonts no)
 		)
 	)
-	(text "L value taken \nfrom AP3019A datasheet"
+	(text "L value taken \nfrom AP3019A datasheet\nPage 1 and 2"
 		(exclude_from_sim no)
-		(at 175.26 125.984 0)
+		(at 93.98 113.03 0)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -871,9 +871,9 @@
 		)
 		(uuid "0a70f1b9-ea96-41fd-b70d-d51ae2b3fa96")
 	)
-	(text "AP3019A datasheet application circuit specs\na  SUMIDA CDRH5D28R-220NC  inductor"
+	(text "AP3019A datasheet application circuit (page 2) specs\na  SUMIDA CDRH5D28R-220NC  inductor"
 		(exclude_from_sim no)
-		(at 133.096 134.112 0)
+		(at 89.916 129.032 0)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -893,9 +893,9 @@
 		)
 		(uuid "89b43934-7011-4b78-85e5-f60fb6c812fb")
 	)
-	(text "Feedback Resistor Calculation:\n\nFeedback bias voltage = 200mV\nBacklight current is specced to be 40mA by the \nTFT screen datasheet \n(https://www.crystalfontz.com/products/document/4905/CFAF800480H0-043SxTFTFamilyDatasheet.pdf)\n\nVfb = I*Rfb\nRfb = Vfb/I = 200mv/40ma = 5ohm\n\nPower = R*V^2\n= 5ohm * (200mV)^2 =  200mW\n\nShould rate to 1/2W  for safety factor and to account\nfor heating \n\nTolerance: 1% tolerance worst case  -> \n 4.95 Ohm -> I = 200mV/4.95ohm = 40.4 mA instead of 40 mA"
+	(text "Feedback Resistor Calculation:\n\nFeedback bias voltage = 200mV\nBacklight current is specced to be 40mA by the \nTFT screen datasheet, page 6\n(https://www.crystalfontz.com/products/document/4905/CFAF800480H0-043SxTFTFamilyDatasheet.pdf)\n\nVfb = I*Rfb\nRfb = Vfb/I = 200mv/40ma = 5ohm\n\nPower = R*V^2\n= 5ohm * (200mV)^2 =  200mW\n\nShould rate to 1/2W  for safety factor and to account\nfor heating \n\nTolerance: 1% tolerance worst case  -> \n 4.95 Ohm -> I = 200mV/4.95ohm = 40.4 mA instead of 40 mA"
 		(exclude_from_sim no)
-		(at 231.394 187.452 0)
+		(at 275.59 190.5 0)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -906,7 +906,7 @@
 	)
 	(text "C25: 20 V rating\nAutomotive 12V can be up to 14V while running \n14V/0.8 = 17.5 with 80% safety factor, round up to 20"
 		(exclude_from_sim no)
-		(at 227.33 124.714 0)
+		(at 277.876 127.508 0)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -915,9 +915,9 @@
 		)
 		(uuid "8fed515a-3498-4b9c-ac7e-108c34969a4a")
 	)
-	(text "C25 value comes from Cin\nin the AP3019A datasheet\n"
+	(text "C25 value comes from Cin\nin the AP3019A datasheet\npage 2"
 		(exclude_from_sim no)
-		(at 199.898 114.3 0)
+		(at 276.098 104.394 0)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -926,9 +926,9 @@
 		)
 		(uuid "c60660bc-be76-4731-bc01-06e397032922")
 	)
-	(text "C24 value comes from Cout in the application \ncircuit given in the AP3019A datasheet"
+	(text "C24 value comes from Cout in the application \ncircuit given in the AP3019A datasheet (page 2)"
 		(exclude_from_sim no)
-		(at 243.84 138.176 0)
+		(at 275.844 138.938 0)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -939,7 +939,7 @@
 	)
 	(text "C25, C24 should be X7R or X5R as\nspecified in the application circuit\non page 2 of the AP3019A datasheet\n"
 		(exclude_from_sim no)
-		(at 236.982 110.998 0)
+		(at 279.908 116.332 0)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -950,7 +950,7 @@
 	)
 	(text "C24 should be rated to >= 40V\nAP3019A OV is 30V, with 80% safety factor \n30/0.8 = 37.5 V, round up to 40V"
 		(exclude_from_sim no)
-		(at 245.364 145.034 0)
+		(at 277.368 145.796 0)
 		(effects
 			(font
 				(size 1.27 1.27)
