@@ -590,6 +590,113 @@
 			)
 			(embedded_fonts no)
 		)
+		(symbol "Connector:TestPoint"
+			(pin_numbers
+				(hide yes)
+			)
+			(pin_names
+				(offset 0.762)
+				(hide yes)
+			)
+			(exclude_from_sim no)
+			(in_bom yes)
+			(on_board yes)
+			(property "Reference" "TP"
+				(at 0 6.858 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Value" "TestPoint"
+				(at 0 5.08 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Footprint" ""
+				(at 5.08 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "Datasheet" "~"
+				(at 5.08 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "Description" "test point"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "ki_keywords" "test point tp"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "ki_fp_filters" "Pin* Test*"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(symbol "TestPoint_0_1"
+				(circle
+					(center 0 3.302)
+					(radius 0.762)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+			)
+			(symbol "TestPoint_1_1"
+				(pin passive line
+					(at 0 0 90)
+					(length 2.54)
+					(name "1"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "1"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+			)
+			(embedded_fonts no)
+		)
 		(symbol "Device:C"
 			(pin_numbers
 				(hide yes)
@@ -1024,322 +1131,6 @@
 			)
 			(embedded_fonts no)
 		)
-		(symbol "Simulation_SPICE:NMOS"
-			(pin_numbers
-				(hide yes)
-			)
-			(pin_names
-				(offset 0)
-			)
-			(exclude_from_sim no)
-			(in_bom yes)
-			(on_board yes)
-			(property "Reference" "Q"
-				(at 5.08 1.27 0)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-					(justify left)
-				)
-			)
-			(property "Value" "NMOS"
-				(at 5.08 -1.27 0)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-					(justify left)
-				)
-			)
-			(property "Footprint" ""
-				(at 5.08 2.54 0)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-					(hide yes)
-				)
-			)
-			(property "Datasheet" "https://ngspice.sourceforge.io/docs/ngspice-html-manual/manual.xhtml#cha_MOSFETs"
-				(at 0 -12.7 0)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-					(hide yes)
-				)
-			)
-			(property "Description" "N-MOSFET transistor, drain/source/gate"
-				(at 0 0 0)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-					(hide yes)
-				)
-			)
-			(property "Sim.Device" "NMOS"
-				(at 0 -17.145 0)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-					(hide yes)
-				)
-			)
-			(property "Sim.Type" "VDMOS"
-				(at 0 -19.05 0)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-					(hide yes)
-				)
-			)
-			(property "Sim.Pins" "1=D 2=G 3=S"
-				(at 0 -15.24 0)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-					(hide yes)
-				)
-			)
-			(property "ki_keywords" "transistor NMOS N-MOS N-MOSFET simulation"
-				(at 0 0 0)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-					(hide yes)
-				)
-			)
-			(symbol "NMOS_0_1"
-				(polyline
-					(pts
-						(xy 0.254 1.905) (xy 0.254 -1.905)
-					)
-					(stroke
-						(width 0.254)
-						(type default)
-					)
-					(fill
-						(type none)
-					)
-				)
-				(polyline
-					(pts
-						(xy 0.254 0) (xy -2.54 0)
-					)
-					(stroke
-						(width 0)
-						(type default)
-					)
-					(fill
-						(type none)
-					)
-				)
-				(polyline
-					(pts
-						(xy 0.762 2.286) (xy 0.762 1.27)
-					)
-					(stroke
-						(width 0.254)
-						(type default)
-					)
-					(fill
-						(type none)
-					)
-				)
-				(polyline
-					(pts
-						(xy 0.762 0.508) (xy 0.762 -0.508)
-					)
-					(stroke
-						(width 0.254)
-						(type default)
-					)
-					(fill
-						(type none)
-					)
-				)
-				(polyline
-					(pts
-						(xy 0.762 -1.27) (xy 0.762 -2.286)
-					)
-					(stroke
-						(width 0.254)
-						(type default)
-					)
-					(fill
-						(type none)
-					)
-				)
-				(polyline
-					(pts
-						(xy 0.762 -1.778) (xy 3.302 -1.778) (xy 3.302 1.778) (xy 0.762 1.778)
-					)
-					(stroke
-						(width 0)
-						(type default)
-					)
-					(fill
-						(type none)
-					)
-				)
-				(polyline
-					(pts
-						(xy 1.016 0) (xy 2.032 0.381) (xy 2.032 -0.381) (xy 1.016 0)
-					)
-					(stroke
-						(width 0)
-						(type default)
-					)
-					(fill
-						(type outline)
-					)
-				)
-				(circle
-					(center 1.651 0)
-					(radius 2.794)
-					(stroke
-						(width 0.254)
-						(type default)
-					)
-					(fill
-						(type none)
-					)
-				)
-				(polyline
-					(pts
-						(xy 2.54 2.54) (xy 2.54 1.778)
-					)
-					(stroke
-						(width 0)
-						(type default)
-					)
-					(fill
-						(type none)
-					)
-				)
-				(circle
-					(center 2.54 1.778)
-					(radius 0.254)
-					(stroke
-						(width 0)
-						(type default)
-					)
-					(fill
-						(type outline)
-					)
-				)
-				(circle
-					(center 2.54 -1.778)
-					(radius 0.254)
-					(stroke
-						(width 0)
-						(type default)
-					)
-					(fill
-						(type outline)
-					)
-				)
-				(polyline
-					(pts
-						(xy 2.54 -2.54) (xy 2.54 0) (xy 0.762 0)
-					)
-					(stroke
-						(width 0)
-						(type default)
-					)
-					(fill
-						(type none)
-					)
-				)
-				(polyline
-					(pts
-						(xy 2.794 0.508) (xy 2.921 0.381) (xy 3.683 0.381) (xy 3.81 0.254)
-					)
-					(stroke
-						(width 0)
-						(type default)
-					)
-					(fill
-						(type none)
-					)
-				)
-				(polyline
-					(pts
-						(xy 3.302 0.381) (xy 2.921 -0.254) (xy 3.683 -0.254) (xy 3.302 0.381)
-					)
-					(stroke
-						(width 0)
-						(type default)
-					)
-					(fill
-						(type none)
-					)
-				)
-			)
-			(symbol "NMOS_1_1"
-				(pin input line
-					(at -5.08 0 0)
-					(length 2.54)
-					(name "G"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-					(number "2"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-				)
-				(pin passive line
-					(at 2.54 5.08 270)
-					(length 2.54)
-					(name "D"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-					(number "1"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-				)
-				(pin passive line
-					(at 2.54 -5.08 90)
-					(length 2.54)
-					(name "S"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-					(number "3"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-				)
-			)
-			(embedded_fonts no)
-		)
 		(symbol "power:+5V"
 			(power)
 			(pin_numbers
@@ -1591,6 +1382,16 @@
 		)
 		(uuid df5905e5-0dd3-486d-8195-c71c37aecbf8)
 	)
+	(text "4V Input\n"
+		(exclude_from_sim no)
+		(at 214.884 119.888 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+		)
+		(uuid "539d01a7-2a53-4e2b-a4fb-945629b3ef69")
+	)
 	(text "Shutdown Circuit Node + Car Status"
 		(exclude_from_sim no)
 		(at 102.616 81.534 0)
@@ -1611,6 +1412,36 @@
 		)
 		(uuid "6aa43298-7615-45ef-8f59-2e56cd223b97")
 	)
+	(text "4V Input\n"
+		(exclude_from_sim no)
+		(at 104.14 198.882 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+		)
+		(uuid "ade6d716-afc1-4ed9-a953-0ebd69dcf098")
+	)
+	(text "4V Input\n"
+		(exclude_from_sim no)
+		(at 102.87 160.782 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+		)
+		(uuid "e2314cb3-0e8a-4f26-a6bd-6c36f8d0a8b7")
+	)
+	(text "4V Input\n"
+		(exclude_from_sim no)
+		(at 203.2 160.528 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+		)
+		(uuid "e7590849-bda3-4b94-8ff6-ecfb938360d7")
+	)
 	(junction
 		(at 220.98 119.38)
 		(diameter 0)
@@ -1624,10 +1455,22 @@
 		(uuid "2d5fdf4c-8905-4f82-9da5-6fa7fed30a2b")
 	)
 	(junction
+		(at 231.14 198.12)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "385df87a-d42d-493c-b848-87e692dbe02d")
+	)
+	(junction
 		(at 110.49 198.12)
 		(diameter 0)
 		(color 0 0 0 0)
 		(uuid "56d6ca87-5294-48dd-8fd8-6a95a9b32add")
+	)
+	(junction
+		(at 229.87 160.02)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "684b14f1-ab07-454a-bcd3-8aa5fbedc5a4")
 	)
 	(junction
 		(at 339.09 194.31)
@@ -1648,10 +1491,28 @@
 		(uuid "d6a72821-7268-4348-b799-17859598d8f8")
 	)
 	(junction
+		(at 241.3 119.38)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "f0f8b836-9772-4463-a852-938148235b4c")
+	)
+	(junction
+		(at 129.54 160.02)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "f49f5a9c-b3b3-44d9-b867-0b9e0d21979b")
+	)
+	(junction
 		(at 339.09 219.71)
 		(diameter 0)
 		(color 0 0 0 0)
 		(uuid "f4c12d03-b7dd-4c5f-9d33-d42a20fcc42c")
+	)
+	(junction
+		(at 129.54 198.12)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "fb0e04ab-1ddb-4809-90d3-2deae4ff8b0d")
 	)
 	(wire
 		(pts
@@ -1672,6 +1533,16 @@
 			(type default)
 		)
 		(uuid "17e78457-e435-4623-b938-cf9a5f92e10b")
+	)
+	(wire
+		(pts
+			(xy 129.54 149.86) (xy 129.54 160.02)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "1b53cf39-4914-4457-8c86-1b5d573b2a57")
 	)
 	(wire
 		(pts
@@ -1702,6 +1573,16 @@
 			(type default)
 		)
 		(uuid "2dfbbe4d-2b4d-4d0f-a252-48f22a05b449")
+	)
+	(wire
+		(pts
+			(xy 133.35 123.19) (xy 130.81 123.19)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "2fdd0a2d-4c66-4e39-93fc-28ecaab06caa")
 	)
 	(wire
 		(pts
@@ -1745,13 +1626,13 @@
 	)
 	(wire
 		(pts
-			(xy 130.81 113.03) (xy 139.7 113.03)
+			(xy 243.84 119.38) (xy 241.3 119.38)
 		)
 		(stroke
 			(width 0)
 			(type default)
 		)
-		(uuid "4e985325-6913-4a73-8178-54c1fabf6dc1")
+		(uuid "49f1ce04-28e8-4d14-ad8c-a74a3466659c")
 	)
 	(wire
 		(pts
@@ -1795,6 +1676,16 @@
 	)
 	(wire
 		(pts
+			(xy 241.3 109.22) (xy 241.3 119.38)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "6ed3a9d7-fd51-4311-a737-69d3fd9c4519")
+	)
+	(wire
+		(pts
 			(xy 187.96 149.86) (xy 209.55 149.86)
 		)
 		(stroke
@@ -1802,16 +1693,6 @@
 			(type default)
 		)
 		(uuid "6ee24c53-4066-4a8e-bc9e-b9427554e2c1")
-	)
-	(wire
-		(pts
-			(xy 130.81 128.27) (xy 130.81 130.81)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "7a834382-b3b4-4fd0-9d64-e73a97a72668")
 	)
 	(wire
 		(pts
@@ -1825,16 +1706,6 @@
 	)
 	(wire
 		(pts
-			(xy 130.81 118.11) (xy 147.32 118.11)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "7dbe7207-9b3e-4998-97f9-b91d9ddb18fc")
-	)
-	(wire
-		(pts
 			(xy 238.76 160.02) (xy 240.03 160.02)
 		)
 		(stroke
@@ -1845,7 +1716,7 @@
 	)
 	(wire
 		(pts
-			(xy 248.92 119.38) (xy 255.27 119.38)
+			(xy 251.46 119.38) (xy 255.27 119.38)
 		)
 		(stroke
 			(width 0)
@@ -1882,6 +1753,16 @@
 			(type default)
 		)
 		(uuid "9b7ca2f2-6156-4f2b-80d1-066209d2b03a")
+	)
+	(wire
+		(pts
+			(xy 231.14 187.96) (xy 231.14 198.12)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "a0284623-0828-4f95-883b-ed2ef16171a8")
 	)
 	(wire
 		(pts
@@ -1925,6 +1806,16 @@
 	)
 	(wire
 		(pts
+			(xy 229.87 149.86) (xy 229.87 160.02)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "bba923d2-54a4-42ab-955a-57dfefb223f3")
+	)
+	(wire
+		(pts
 			(xy 252.73 198.12) (xy 248.92 198.12)
 		)
 		(stroke
@@ -1945,6 +1836,16 @@
 	)
 	(wire
 		(pts
+			(xy 146.05 123.19) (xy 140.97 123.19)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "c1303662-8334-4445-9747-eaf457d73e48")
+	)
+	(wire
+		(pts
 			(xy 138.43 198.12) (xy 139.7 198.12)
 		)
 		(stroke
@@ -1952,6 +1853,16 @@
 			(type default)
 		)
 		(uuid "c7357932-6034-48aa-94cc-96cb5a3d52a6")
+	)
+	(wire
+		(pts
+			(xy 129.54 187.96) (xy 129.54 198.12)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "cae09461-7126-453c-b6c7-445db032f7fb")
 	)
 	(wire
 		(pts
@@ -1972,16 +1883,6 @@
 			(type default)
 		)
 		(uuid "d3fa986d-49b2-4cc6-b676-a0bea7bb6388")
-	)
-	(wire
-		(pts
-			(xy 147.32 113.03) (xy 147.32 118.11)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "dd76f793-9a8d-4023-b75e-9892f7fd1dc5")
 	)
 	(wire
 		(pts
@@ -2236,6 +2137,214 @@
 					(size 1.27 1.27)
 				)
 				(justify right)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Device:R")
+		(at 127 123.19 270)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "03b5ed37-1848-4ea8-b569-0ba8d1b9fea2")
+		(property "Reference" "R47"
+			(at 127 116.84 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "300"
+			(at 127 119.38 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" "Resistor_SMD:R_0603_1608Metric_Pad0.98x0.95mm_HandSolder"
+			(at 127 121.412 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "https://www.yageogroup.com/content/datasheet/asset/file/PYU-AC_51_ROHS_L"
+			(at 127 123.19 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Resistor"
+			(at 127 123.19 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Digi PN" "311-10KLDCT-ND"
+			(at 127 123.19 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Digi URL" "https://www.digikey.com/en/products/detail/yageo/AC0603FR-0710KL/2827814"
+			(at 127 123.19 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "MFG" "Yageo"
+			(at 127 123.19 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "MFG PN" "AC0603FR-0710KL"
+			(at 127 123.19 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "37df9884-b551-4b08-8f14-8dc5a42747fc")
+		)
+		(pin "2"
+			(uuid "52f86854-56df-4a23-bbb9-27731aa015be")
+		)
+		(instances
+			(project "VCU"
+				(path "/d46cfebc-cd32-4ec9-981b-3f67fe44510e/ea0f97b8-5615-4ab9-96ac-80fb820bd30b"
+					(reference "R47")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Device:R")
+		(at 236.22 198.12 270)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "09683bee-73e3-4cfb-9ac3-422c8569b17c")
+		(property "Reference" "R60"
+			(at 236.22 191.77 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "300"
+			(at 236.22 194.31 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" "Resistor_SMD:R_0603_1608Metric_Pad0.98x0.95mm_HandSolder"
+			(at 236.22 196.342 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "https://www.yageogroup.com/content/datasheet/asset/file/PYU-AC_51_ROHS_L"
+			(at 236.22 198.12 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Resistor"
+			(at 236.22 198.12 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Digi PN" "311-10KLDCT-ND"
+			(at 236.22 198.12 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Digi URL" "https://www.digikey.com/en/products/detail/yageo/AC0603FR-0710KL/2827814"
+			(at 236.22 198.12 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "MFG" "Yageo"
+			(at 236.22 198.12 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "MFG PN" "AC0603FR-0710KL"
+			(at 236.22 198.12 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "5873175a-7c08-4018-9379-49db5359892e")
+		)
+		(pin "2"
+			(uuid "294763f3-2742-4023-a7c0-689e6e631768")
+		)
+		(instances
+			(project "VCU"
+				(path "/d46cfebc-cd32-4ec9-981b-3f67fe44510e/ea0f97b8-5615-4ab9-96ac-80fb820bd30b"
+					(reference "R60")
+					(unit 1)
+				)
 			)
 		)
 	)
@@ -2863,6 +2972,110 @@
 	)
 	(symbol
 		(lib_id "Device:R")
+		(at 247.65 119.38 270)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "21632d29-99a2-4ec0-a418-cf2634d185dc")
+		(property "Reference" "R53"
+			(at 247.65 113.03 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "300"
+			(at 247.65 115.57 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" "Resistor_SMD:R_0603_1608Metric_Pad0.98x0.95mm_HandSolder"
+			(at 247.65 117.602 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "https://www.yageogroup.com/content/datasheet/asset/file/PYU-AC_51_ROHS_L"
+			(at 247.65 119.38 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Resistor"
+			(at 247.65 119.38 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Digi PN" "311-10KLDCT-ND"
+			(at 247.65 119.38 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Digi URL" "https://www.digikey.com/en/products/detail/yageo/AC0603FR-0710KL/2827814"
+			(at 247.65 119.38 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "MFG" "Yageo"
+			(at 247.65 119.38 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "MFG PN" "AC0603FR-0710KL"
+			(at 247.65 119.38 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "0ba830fe-8955-475e-bd55-0345529e84e8")
+		)
+		(pin "2"
+			(uuid "ad0fa231-89e5-4e93-ac06-b92931d3c113")
+		)
+		(instances
+			(project "VCU"
+				(path "/d46cfebc-cd32-4ec9-981b-3f67fe44510e/ea0f97b8-5615-4ab9-96ac-80fb820bd30b"
+					(reference "R53")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Device:R")
 		(at 134.62 160.02 270)
 		(unit 1)
 		(exclude_from_sim no)
@@ -2879,7 +3092,7 @@
 				)
 			)
 		)
-		(property "Value" "200"
+		(property "Value" "300"
 			(at 134.62 156.21 90)
 			(effects
 				(font
@@ -3174,110 +3387,6 @@
 		)
 	)
 	(symbol
-		(lib_id "Device:R")
-		(at 236.22 198.12 270)
-		(unit 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(dnp no)
-		(fields_autoplaced yes)
-		(uuid "2a5497ed-99fe-48ec-a4f0-5ee9d13ee14d")
-		(property "Reference" "R68"
-			(at 236.22 191.77 90)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Value" "200"
-			(at 236.22 194.31 90)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Footprint" "Resistor_SMD:R_0603_1608Metric_Pad0.98x0.95mm_HandSolder"
-			(at 236.22 196.342 90)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Datasheet" "https://www.yageogroup.com/content/datasheet/asset/file/PYU-AC_51_ROHS_L"
-			(at 236.22 198.12 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Description" "Resistor"
-			(at 236.22 198.12 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Digi PN" "311-10KLDCT-ND"
-			(at 236.22 198.12 90)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Digi URL" "https://www.digikey.com/en/products/detail/yageo/AC0603FR-0710KL/2827814"
-			(at 236.22 198.12 90)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "MFG" "Yageo"
-			(at 236.22 198.12 90)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "MFG PN" "AC0603FR-0710KL"
-			(at 236.22 198.12 90)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(pin "1"
-			(uuid "63a548a0-5e65-4b22-bc23-a535e2f84fa6")
-		)
-		(pin "2"
-			(uuid "7cac99ba-dd4b-4767-86cb-0b09d615ed1c")
-		)
-		(instances
-			(project "VCU"
-				(path "/d46cfebc-cd32-4ec9-981b-3f67fe44510e/ea0f97b8-5615-4ab9-96ac-80fb820bd30b"
-					(reference "R68")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
 		(lib_name "LED_1")
 		(lib_id "Device:LED")
 		(at 143.51 198.12 180)
@@ -3366,24 +3475,24 @@
 	)
 	(symbol
 		(lib_id "Device:R")
-		(at 245.11 119.38 270)
+		(at 134.62 198.12 270)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
 		(on_board yes)
 		(dnp no)
 		(fields_autoplaced yes)
-		(uuid "3df4aa65-c959-4962-971c-c552956bd4db")
-		(property "Reference" "R69"
-			(at 245.11 113.03 90)
+		(uuid "381a2652-a8fc-43ca-87bf-a89f890739d3")
+		(property "Reference" "R52"
+			(at 134.62 191.77 90)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
 			)
 		)
-		(property "Value" "200"
-			(at 245.11 115.57 90)
+		(property "Value" "300"
+			(at 134.62 194.31 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -3391,7 +3500,7 @@
 			)
 		)
 		(property "Footprint" "Resistor_SMD:R_0603_1608Metric_Pad0.98x0.95mm_HandSolder"
-			(at 245.11 117.602 90)
+			(at 134.62 196.342 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -3400,7 +3509,7 @@
 			)
 		)
 		(property "Datasheet" "https://www.yageogroup.com/content/datasheet/asset/file/PYU-AC_51_ROHS_L"
-			(at 245.11 119.38 0)
+			(at 134.62 198.12 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -3409,7 +3518,7 @@
 			)
 		)
 		(property "Description" "Resistor"
-			(at 245.11 119.38 0)
+			(at 134.62 198.12 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -3418,7 +3527,7 @@
 			)
 		)
 		(property "Digi PN" "311-10KLDCT-ND"
-			(at 245.11 119.38 90)
+			(at 134.62 198.12 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -3427,7 +3536,7 @@
 			)
 		)
 		(property "Digi URL" "https://www.digikey.com/en/products/detail/yageo/AC0603FR-0710KL/2827814"
-			(at 245.11 119.38 90)
+			(at 134.62 198.12 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -3436,7 +3545,7 @@
 			)
 		)
 		(property "MFG" "Yageo"
-			(at 245.11 119.38 90)
+			(at 134.62 198.12 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -3445,7 +3554,7 @@
 			)
 		)
 		(property "MFG PN" "AC0603FR-0710KL"
-			(at 245.11 119.38 90)
+			(at 134.62 198.12 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -3454,15 +3563,15 @@
 			)
 		)
 		(pin "1"
-			(uuid "7a20cd62-452d-4488-948c-032caa884e29")
+			(uuid "010869ae-1cb2-4924-96cb-c6a4bb55e609")
 		)
 		(pin "2"
-			(uuid "68255226-8562-43a4-83c9-a98bd067a776")
+			(uuid "7da1ea74-0434-47a2-8062-26e4f8c4cd88")
 		)
 		(instances
 			(project "VCU"
 				(path "/d46cfebc-cd32-4ec9-981b-3f67fe44510e/ea0f97b8-5615-4ab9-96ac-80fb820bd30b"
-					(reference "R69")
+					(reference "R52")
 					(unit 1)
 				)
 			)
@@ -3705,6 +3814,73 @@
 		)
 	)
 	(symbol
+		(lib_id "Connector:TestPoint")
+		(at 231.14 187.96 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "61d78bb9-9c30-4f6a-8ed5-6a1a9f9c3cc7")
+		(property "Reference" "TP6"
+			(at 233.68 183.3879 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Value" "TestPoint"
+			(at 233.68 185.9279 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Footprint" "TestPoint:TestPoint_Pad_1.5x1.5mm"
+			(at 236.22 187.96 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 236.22 187.96 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "test point"
+			(at 231.14 187.96 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "3a276917-b2dc-4081-99d5-739a8755e6a1")
+		)
+		(instances
+			(project "VCU"
+				(path "/d46cfebc-cd32-4ec9-981b-3f67fe44510e/ea0f97b8-5615-4ab9-96ac-80fb820bd30b"
+					(reference "TP6")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
 		(lib_name "LED_1")
 		(lib_id "Device:LED")
 		(at 143.51 160.02 180)
@@ -3792,33 +3968,16 @@
 		)
 	)
 	(symbol
-		(lib_id "Device:R")
-		(at 134.62 198.12 270)
+		(lib_id "power:GND")
+		(at 146.05 123.19 0)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
 		(on_board yes)
 		(dnp no)
-		(fields_autoplaced yes)
-		(uuid "629111ff-06fe-47c2-a011-a27bcb8a47a9")
-		(property "Reference" "R60"
-			(at 134.62 191.77 90)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Value" "200"
-			(at 134.62 194.31 90)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Footprint" "Resistor_SMD:R_0603_1608Metric_Pad0.98x0.95mm_HandSolder"
-			(at 134.62 196.342 90)
+		(uuid "68efa3e1-fa6b-4d9b-beec-1caaa553a896")
+		(property "Reference" "#PWR064"
+			(at 146.05 129.54 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -3826,8 +3985,16 @@
 				(hide yes)
 			)
 		)
-		(property "Datasheet" "https://www.yageogroup.com/content/datasheet/asset/file/PYU-AC_51_ROHS_L"
-			(at 134.62 198.12 0)
+		(property "Value" "GND"
+			(at 146.05 127.762 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" ""
+			(at 146.05 123.19 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -3835,8 +4002,8 @@
 				(hide yes)
 			)
 		)
-		(property "Description" "Resistor"
-			(at 134.62 198.12 0)
+		(property "Datasheet" ""
+			(at 146.05 123.19 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -3844,35 +4011,8 @@
 				(hide yes)
 			)
 		)
-		(property "Digi PN" "311-10KLDCT-ND"
-			(at 134.62 198.12 90)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Digi URL" "https://www.digikey.com/en/products/detail/yageo/AC0603FR-0710KL/2827814"
-			(at 134.62 198.12 90)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "MFG" "Yageo"
-			(at 134.62 198.12 90)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "MFG PN" "AC0603FR-0710KL"
-			(at 134.62 198.12 90)
+		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
+			(at 146.05 123.19 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -3881,121 +4021,12 @@
 			)
 		)
 		(pin "1"
-			(uuid "ab95f0db-9510-4f3c-ad78-d9ceee413e29")
-		)
-		(pin "2"
-			(uuid "23ac6dd7-694f-4a11-8355-3e3a41e5ad2d")
+			(uuid "d47ca540-a34d-4e23-8d61-b312fac17a51")
 		)
 		(instances
 			(project "VCU"
 				(path "/d46cfebc-cd32-4ec9-981b-3f67fe44510e/ea0f97b8-5615-4ab9-96ac-80fb820bd30b"
-					(reference "R60")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
-		(lib_id "Device:R")
-		(at 130.81 109.22 0)
-		(unit 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(dnp no)
-		(fields_autoplaced yes)
-		(uuid "63dc7617-2250-44f0-a0c3-5cbdf1b2fdca")
-		(property "Reference" "R58"
-			(at 133.35 107.9499 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-		)
-		(property "Value" "200"
-			(at 133.35 110.4899 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-		)
-		(property "Footprint" "Resistor_SMD:R_0603_1608Metric_Pad0.98x0.95mm_HandSolder"
-			(at 129.032 109.22 90)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Datasheet" "https://www.yageogroup.com/content/datasheet/asset/file/PYU-AC_51_ROHS_L"
-			(at 130.81 109.22 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Description" "Resistor"
-			(at 130.81 109.22 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Digi PN" "311-10KLDCT-ND"
-			(at 130.81 109.22 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Digi URL" "https://www.digikey.com/en/products/detail/yageo/AC0603FR-0710KL/2827814"
-			(at 130.81 109.22 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "MFG" "Yageo"
-			(at 130.81 109.22 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "MFG PN" "AC0603FR-0710KL"
-			(at 130.81 109.22 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(pin "1"
-			(uuid "eeaf4c22-5351-4ad7-a786-8dd53a137433")
-		)
-		(pin "2"
-			(uuid "b5533e26-2b74-4be3-b80c-48adfd5157a0")
-		)
-		(instances
-			(project "VCU"
-				(path "/d46cfebc-cd32-4ec9-981b-3f67fe44510e/ea0f97b8-5615-4ab9-96ac-80fb820bd30b"
-					(reference "R58")
+					(reference "#PWR064")
 					(unit 1)
 				)
 			)
@@ -4212,110 +4243,6 @@
 		)
 	)
 	(symbol
-		(lib_id "Device:R")
-		(at 234.95 160.02 270)
-		(unit 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(dnp no)
-		(fields_autoplaced yes)
-		(uuid "74c59939-0e4f-4c12-b1c8-c4200a7b4cbf")
-		(property "Reference" "R67"
-			(at 234.95 153.67 90)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Value" "200"
-			(at 234.95 156.21 90)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Footprint" "Resistor_SMD:R_0603_1608Metric_Pad0.98x0.95mm_HandSolder"
-			(at 234.95 158.242 90)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Datasheet" "https://www.yageogroup.com/content/datasheet/asset/file/PYU-AC_51_ROHS_L"
-			(at 234.95 160.02 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Description" "Resistor"
-			(at 234.95 160.02 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Digi PN" "311-10KLDCT-ND"
-			(at 234.95 160.02 90)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Digi URL" "https://www.digikey.com/en/products/detail/yageo/AC0603FR-0710KL/2827814"
-			(at 234.95 160.02 90)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "MFG" "Yageo"
-			(at 234.95 160.02 90)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "MFG PN" "AC0603FR-0710KL"
-			(at 234.95 160.02 90)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(pin "1"
-			(uuid "3ce07d91-3bb4-43f0-96e0-12314cf0d2ab")
-		)
-		(pin "2"
-			(uuid "2809b7b5-1321-4d81-9155-18c7f0d3f483")
-		)
-		(instances
-			(project "VCU"
-				(path "/d46cfebc-cd32-4ec9-981b-3f67fe44510e/ea0f97b8-5615-4ab9-96ac-80fb820bd30b"
-					(reference "R67")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
 		(lib_id "power:GND")
 		(at 152.4 198.12 0)
 		(unit 1)
@@ -4375,71 +4302,6 @@
 			(project "VCU"
 				(path "/d46cfebc-cd32-4ec9-981b-3f67fe44510e/ea0f97b8-5615-4ab9-96ac-80fb820bd30b"
 					(reference "#PWR066")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
-		(lib_id "power:+5V")
-		(at 130.81 105.41 0)
-		(unit 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(dnp no)
-		(uuid "78242072-2069-486e-953e-b2cf1590ba30")
-		(property "Reference" "#PWR064"
-			(at 130.81 109.22 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Value" "+5V"
-			(at 130.556 101.854 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Footprint" ""
-			(at 130.81 105.41 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Datasheet" ""
-			(at 130.81 105.41 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Description" "Power symbol creates a global label with name \"+5V\""
-			(at 130.81 105.41 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(pin "1"
-			(uuid "0bc8d55a-840e-4871-b6ad-11124a08995e")
-		)
-		(instances
-			(project "VCU"
-				(path "/d46cfebc-cd32-4ec9-981b-3f67fe44510e/ea0f97b8-5615-4ab9-96ac-80fb820bd30b"
-					(reference "#PWR064")
 					(unit 1)
 				)
 			)
@@ -4552,6 +4414,73 @@
 		)
 	)
 	(symbol
+		(lib_id "Connector:TestPoint")
+		(at 129.54 187.96 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "7d578680-2055-4573-8330-02cd4ce9945c")
+		(property "Reference" "TP5"
+			(at 132.08 183.3879 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Value" "TestPoint"
+			(at 132.08 185.9279 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Footprint" "TestPoint:TestPoint_Pad_1.5x1.5mm"
+			(at 134.62 187.96 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 134.62 187.96 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "test point"
+			(at 129.54 187.96 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "dd666f1d-4e6d-4891-abb6-86cc758a7d19")
+		)
+		(instances
+			(project "VCU"
+				(path "/d46cfebc-cd32-4ec9-981b-3f67fe44510e/ea0f97b8-5615-4ab9-96ac-80fb820bd30b"
+					(reference "TP5")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
 		(lib_id "power:GND")
 		(at 339.09 220.98 0)
 		(unit 1)
@@ -4620,7 +4549,7 @@
 	(symbol
 		(lib_name "LED_1")
 		(lib_id "Device:LED")
-		(at 143.51 113.03 180)
+		(at 137.16 123.19 180)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
@@ -4629,7 +4558,7 @@
 		(fields_autoplaced yes)
 		(uuid "841e5941-6f64-4334-9b3f-cd82fd115c7f")
 		(property "Reference" "D12"
-			(at 145.0975 105.41 0)
+			(at 138.7475 115.57 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -4637,7 +4566,7 @@
 			)
 		)
 		(property "Value" "LTST-S270KRKT"
-			(at 145.0975 107.95 0)
+			(at 138.7475 118.11 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -4645,7 +4574,7 @@
 			)
 		)
 		(property "Footprint" "LED_SMD:LED_0603_1608Metric_Pad1.05x0.95mm_HandSolder"
-			(at 143.51 113.03 0)
+			(at 137.16 123.19 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -4654,7 +4583,7 @@
 			)
 		)
 		(property "Datasheet" "https://www.qt-brightek.com/datasheet/QBLP631-R3A.pdf"
-			(at 143.51 113.03 0)
+			(at 137.16 123.19 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -4663,7 +4592,7 @@
 			)
 		)
 		(property "Description" "Light emitting diode"
-			(at 143.51 113.03 0)
+			(at 137.16 123.19 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -4672,7 +4601,7 @@
 			)
 		)
 		(property "Digikey Link" "https://www.digikey.com/en/products/detail/qt-brightek-qtb/QBLP631-R3A/23026406"
-			(at 143.51 113.03 0)
+			(at 137.16 123.19 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -4681,7 +4610,7 @@
 			)
 		)
 		(property "Part Name" "Leds"
-			(at 143.51 113.03 0)
+			(at 137.16 123.19 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -5169,7 +5098,7 @@
 				(hide yes)
 			)
 		)
-		(property "Datasheet" "https://www.yageogroup.com/download/specsheet/CC0603DRNPO9BN6R8"
+		(property "Datasheet" "https://www.yageogroup.com/content/datasheet/asset/file/UPY-GPHC_X7R_6_3V-TO-250V"
 			(at 326.39 207.01 0)
 			(effects
 				(font
@@ -5187,7 +5116,7 @@
 				(hide yes)
 			)
 		)
-		(property "Digi PN" "311-3874-1-ND"
+		(property "Digi PN" "311-3484-1-ND"
 			(at 326.39 207.01 0)
 			(effects
 				(font
@@ -5205,7 +5134,7 @@
 				(hide yes)
 			)
 		)
-		(property "MFG PN" "CC0603DRNPO9BN6R8"
+		(property "MFG PN" "CC0603JRX7R6BB105"
 			(at 326.39 207.01 0)
 			(effects
 				(font
@@ -5214,7 +5143,7 @@
 				(hide yes)
 			)
 		)
-		(property "Digi URL" "https://www.digikey.com/en/products/detail/yageo/CC0603DRNPO9BN6R8/3767594"
+		(property "Digi URL" "https://www.digikey.com/en/products/detail/yageo/CC0603JRX7R6BB105/7164368"
 			(at 326.39 207.01 0)
 			(effects
 				(font
@@ -5338,6 +5267,73 @@
 				(path "/d46cfebc-cd32-4ec9-981b-3f67fe44510e/ea0f97b8-5615-4ab9-96ac-80fb820bd30b"
 					(reference "U10")
 					(unit 3)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Connector:TestPoint")
+		(at 129.54 149.86 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "b07bf775-b557-4632-bafb-49900156118a")
+		(property "Reference" "TP3"
+			(at 132.08 145.2879 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Value" "TestPoint"
+			(at 132.08 147.8279 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Footprint" "TestPoint:TestPoint_Pad_1.5x1.5mm"
+			(at 134.62 149.86 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 134.62 149.86 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "test point"
+			(at 129.54 149.86 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "0e3e231d-a035-47e9-a1a6-ac6853ecf954")
+		)
+		(instances
+			(project "VCU"
+				(path "/d46cfebc-cd32-4ec9-981b-3f67fe44510e/ea0f97b8-5615-4ab9-96ac-80fb820bd30b"
+					(reference "TP3")
+					(unit 1)
 				)
 			)
 		)
@@ -5748,109 +5744,33 @@
 		)
 	)
 	(symbol
-		(lib_id "power:GND")
-		(at 130.81 130.81 0)
-		(unit 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(dnp no)
-		(uuid "cd6e8be6-e7ca-4996-998c-8fa402c7d022")
-		(property "Reference" "#PWR065"
-			(at 130.81 137.16 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Value" "GND"
-			(at 130.81 135.382 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Footprint" ""
-			(at 130.81 130.81 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Datasheet" ""
-			(at 130.81 130.81 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
-			(at 130.81 130.81 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(pin "1"
-			(uuid "02fc3049-52c6-4fae-bed1-ff79914c1916")
-		)
-		(instances
-			(project "VCU"
-				(path "/d46cfebc-cd32-4ec9-981b-3f67fe44510e/ea0f97b8-5615-4ab9-96ac-80fb820bd30b"
-					(reference "#PWR065")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
-		(lib_id "Simulation_SPICE:NMOS")
-		(at 128.27 123.19 0)
+		(lib_id "Device:R")
+		(at 234.95 160.02 270)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
 		(on_board yes)
 		(dnp no)
 		(fields_autoplaced yes)
-		(uuid "dd9f51c6-9407-4312-8e7a-c0a6e3eceb94")
-		(property "Reference" "Q12"
-			(at 134.62 121.9199 0)
+		(uuid "dce3a3ce-f3fd-499a-a14d-d3155cdfb1d6")
+		(property "Reference" "R58"
+			(at 234.95 153.67 90)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
-				(justify left)
 			)
 		)
-		(property "Value" "NMOS"
-			(at 134.62 124.4599 0)
+		(property "Value" "300"
+			(at 234.95 156.21 90)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
-				(justify left)
 			)
 		)
-		(property "Footprint" "Package_TO_SOT_SMD:SOT-23_Handsoldering"
-			(at 133.35 120.65 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Datasheet" "https://ngspice.sourceforge.io/docs/ngspice-html-manual/manual.xhtml#cha_MOSFETs"
-			(at 128.27 135.89 0)
+		(property "Footprint" "Resistor_SMD:R_0603_1608Metric_Pad0.98x0.95mm_HandSolder"
+			(at 234.95 158.242 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -5858,8 +5778,8 @@
 				(hide yes)
 			)
 		)
-		(property "Description" "N-MOSFET transistor, drain/source/gate"
-			(at 128.27 123.19 0)
+		(property "Datasheet" "https://www.yageogroup.com/content/datasheet/asset/file/PYU-AC_51_ROHS_L"
+			(at 234.95 160.02 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -5867,8 +5787,8 @@
 				(hide yes)
 			)
 		)
-		(property "Sim.Device" "NMOS"
-			(at 128.27 140.335 0)
+		(property "Description" "Resistor"
+			(at 234.95 160.02 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -5876,8 +5796,8 @@
 				(hide yes)
 			)
 		)
-		(property "Sim.Type" "VDMOS"
-			(at 128.27 142.24 0)
+		(property "Digi PN" "311-10KLDCT-ND"
+			(at 234.95 160.02 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -5885,8 +5805,8 @@
 				(hide yes)
 			)
 		)
-		(property "Sim.Pins" "1=D 2=G 3=S"
-			(at 128.27 138.43 0)
+		(property "Digi URL" "https://www.digikey.com/en/products/detail/yageo/AC0603FR-0710KL/2827814"
+			(at 234.95 160.02 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -5894,19 +5814,101 @@
 				(hide yes)
 			)
 		)
-		(pin "2"
-			(uuid "7f241354-30eb-4181-8895-3f27e77cf915")
+		(property "MFG" "Yageo"
+			(at 234.95 160.02 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "MFG PN" "AC0603FR-0710KL"
+			(at 234.95 160.02 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
 		)
 		(pin "1"
-			(uuid "a312439d-db5a-4e56-a7c8-a1e2b6ac3c7b")
+			(uuid "fb048677-0e38-4719-b5c4-df11fa362cca")
 		)
-		(pin "3"
-			(uuid "96bffdf5-a3cb-4a41-ba06-4a8164ff6e15")
+		(pin "2"
+			(uuid "7a2a2d26-cd31-470f-afbc-887cf4c07f22")
 		)
 		(instances
 			(project "VCU"
 				(path "/d46cfebc-cd32-4ec9-981b-3f67fe44510e/ea0f97b8-5615-4ab9-96ac-80fb820bd30b"
-					(reference "Q12")
+					(reference "R58")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Connector:TestPoint")
+		(at 241.3 109.22 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "e457d6f9-9bfe-41e5-a9c0-b449c692c49a")
+		(property "Reference" "TP4"
+			(at 243.84 104.6479 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Value" "TestPoint"
+			(at 243.84 107.1879 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Footprint" "TestPoint:TestPoint_Pad_1.5x1.5mm"
+			(at 246.38 109.22 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 246.38 109.22 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "test point"
+			(at 241.3 109.22 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "5ae0238e-7ad9-41c5-bf2d-b1b3784f9dc2")
+		)
+		(instances
+			(project "VCU"
+				(path "/d46cfebc-cd32-4ec9-981b-3f67fe44510e/ea0f97b8-5615-4ab9-96ac-80fb820bd30b"
+					(reference "TP4")
 					(unit 1)
 				)
 			)
@@ -6184,6 +6186,73 @@
 			(project "VCU"
 				(path "/d46cfebc-cd32-4ec9-981b-3f67fe44510e/ea0f97b8-5615-4ab9-96ac-80fb820bd30b"
 					(reference "#PWR063")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Connector:TestPoint")
+		(at 229.87 149.86 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "f9dcdd2f-1bf9-4e52-86f1-612feba2f47b")
+		(property "Reference" "TP7"
+			(at 232.41 145.2879 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Value" "TestPoint"
+			(at 232.41 147.8279 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Footprint" "TestPoint:TestPoint_Pad_1.5x1.5mm"
+			(at 234.95 149.86 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 234.95 149.86 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "test point"
+			(at 229.87 149.86 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "97cf0209-c9eb-4147-940a-b2b0bf718de4")
+		)
+		(instances
+			(project "VCU"
+				(path "/d46cfebc-cd32-4ec9-981b-3f67fe44510e/ea0f97b8-5615-4ab9-96ac-80fb820bd30b"
+					(reference "TP7")
 					(unit 1)
 				)
 			)

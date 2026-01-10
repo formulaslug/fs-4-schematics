@@ -897,6 +897,189 @@
 			)
 			(embedded_fonts no)
 		)
+		(symbol "Device:LED"
+			(pin_numbers
+				(hide yes)
+			)
+			(pin_names
+				(offset 1.016)
+				(hide yes)
+			)
+			(exclude_from_sim no)
+			(in_bom yes)
+			(on_board yes)
+			(property "Reference" "D"
+				(at 0 2.54 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Value" "LED"
+				(at 0 -2.54 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Footprint" ""
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "Datasheet" "~"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "Description" "Light emitting diode"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "Sim.Pins" "1=K 2=A"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "ki_keywords" "LED diode"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "ki_fp_filters" "LED* LED_SMD:* LED_THT:*"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(symbol "LED_0_1"
+				(polyline
+					(pts
+						(xy -3.048 -0.762) (xy -4.572 -2.286) (xy -3.81 -2.286) (xy -4.572 -2.286) (xy -4.572 -1.524)
+					)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy -1.778 -0.762) (xy -3.302 -2.286) (xy -2.54 -2.286) (xy -3.302 -2.286) (xy -3.302 -1.524)
+					)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy -1.27 0) (xy 1.27 0)
+					)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy -1.27 -1.27) (xy -1.27 1.27)
+					)
+					(stroke
+						(width 0.254)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy 1.27 -1.27) (xy 1.27 1.27) (xy -1.27 0) (xy 1.27 -1.27)
+					)
+					(stroke
+						(width 0.254)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+			)
+			(symbol "LED_1_1"
+				(pin passive line
+					(at -3.81 0 0)
+					(length 2.54)
+					(name "K"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "1"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin passive line
+					(at 3.81 0 180)
+					(length 2.54)
+					(name "A"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "2"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+			)
+			(embedded_fonts no)
+		)
 		(symbol "Device:R"
 			(pin_numbers
 				(hide yes)
@@ -2549,6 +2732,430 @@
 			)
 			(embedded_fonts no)
 		)
+		(symbol "Transistor_FET:AO3400A"
+			(pin_names
+				(offset 0)
+				(hide yes)
+			)
+			(exclude_from_sim no)
+			(in_bom yes)
+			(on_board yes)
+			(property "Reference" "Q"
+				(at 5.08 1.905 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(justify left)
+				)
+			)
+			(property "Value" "AO3400A"
+				(at 5.08 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(justify left)
+				)
+			)
+			(property "Footprint" "Package_TO_SOT_SMD:SOT-23"
+				(at 5.08 -1.905 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+						(italic yes)
+					)
+					(justify left)
+					(hide yes)
+				)
+			)
+			(property "Datasheet" "http://www.aosmd.com/pdfs/datasheet/AO3400A.pdf"
+				(at 5.08 -3.81 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(justify left)
+					(hide yes)
+				)
+			)
+			(property "Description" "30V Vds, 5.7A Id, N-Channel MOSFET, SOT-23"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "ki_keywords" "N-Channel MOSFET"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "ki_fp_filters" "SOT?23*"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(symbol "AO3400A_0_1"
+				(polyline
+					(pts
+						(xy 0.254 1.905) (xy 0.254 -1.905)
+					)
+					(stroke
+						(width 0.254)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy 0.254 0) (xy -2.54 0)
+					)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy 0.762 2.286) (xy 0.762 1.27)
+					)
+					(stroke
+						(width 0.254)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy 0.762 0.508) (xy 0.762 -0.508)
+					)
+					(stroke
+						(width 0.254)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy 0.762 -1.27) (xy 0.762 -2.286)
+					)
+					(stroke
+						(width 0.254)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy 0.762 -1.778) (xy 3.302 -1.778) (xy 3.302 1.778) (xy 0.762 1.778)
+					)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy 1.016 0) (xy 2.032 0.381) (xy 2.032 -0.381) (xy 1.016 0)
+					)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type outline)
+					)
+				)
+				(circle
+					(center 1.651 0)
+					(radius 2.794)
+					(stroke
+						(width 0.254)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy 2.54 2.54) (xy 2.54 1.778)
+					)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(circle
+					(center 2.54 1.778)
+					(radius 0.254)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type outline)
+					)
+				)
+				(circle
+					(center 2.54 -1.778)
+					(radius 0.254)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type outline)
+					)
+				)
+				(polyline
+					(pts
+						(xy 2.54 -2.54) (xy 2.54 0) (xy 0.762 0)
+					)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy 2.921 0.381) (xy 3.683 0.381)
+					)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy 3.302 0.381) (xy 2.921 -0.254) (xy 3.683 -0.254) (xy 3.302 0.381)
+					)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+			)
+			(symbol "AO3400A_1_1"
+				(pin input line
+					(at -5.08 0 0)
+					(length 2.54)
+					(name "G"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "1"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin passive line
+					(at 2.54 5.08 270)
+					(length 2.54)
+					(name "D"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "3"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin passive line
+					(at 2.54 -5.08 90)
+					(length 2.54)
+					(name "S"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "2"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+			)
+			(embedded_fonts no)
+		)
+		(symbol "power:+12V"
+			(power)
+			(pin_numbers
+				(hide yes)
+			)
+			(pin_names
+				(offset 0)
+				(hide yes)
+			)
+			(exclude_from_sim no)
+			(in_bom yes)
+			(on_board yes)
+			(property "Reference" "#PWR"
+				(at 0 -3.81 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "Value" "+12V"
+				(at 0 3.556 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Footprint" ""
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "Datasheet" ""
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "Description" "Power symbol creates a global label with name \"+12V\""
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "ki_keywords" "global power"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(symbol "+12V_0_1"
+				(polyline
+					(pts
+						(xy -0.762 1.27) (xy 0 2.54)
+					)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy 0 2.54) (xy 0.762 1.27)
+					)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy 0 0) (xy 0 2.54)
+					)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+			)
+			(symbol "+12V_1_1"
+				(pin power_in line
+					(at 0 0 90)
+					(length 0)
+					(name "~"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "1"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+			)
+			(embedded_fonts no)
+		)
 		(symbol "power:+5V"
 			(power)
 			(pin_numbers
@@ -3072,7 +3679,7 @@
 	)
 	(wire
 		(pts
-			(xy 80.01 111.76) (xy 68.58 111.76)
+			(xy 80.01 111.76) (xy 67.31 111.76)
 		)
 		(stroke
 			(width 0)
@@ -3352,7 +3959,7 @@
 	)
 	(wire
 		(pts
-			(xy 68.58 86.36) (xy 68.58 95.25)
+			(xy 67.31 86.36) (xy 67.31 95.25)
 		)
 		(stroke
 			(width 0)
@@ -3492,7 +4099,7 @@
 	)
 	(wire
 		(pts
-			(xy 80.01 86.36) (xy 68.58 86.36)
+			(xy 80.01 86.36) (xy 67.31 86.36)
 		)
 		(stroke
 			(width 0)
@@ -3782,7 +4389,7 @@
 	)
 	(wire
 		(pts
-			(xy 68.58 111.76) (xy 68.58 102.87)
+			(xy 67.31 111.76) (xy 67.31 102.87)
 		)
 		(stroke
 			(width 0)
@@ -4797,6 +5404,158 @@
 		)
 	)
 	(symbol
+		(lib_id "Transistor_FET:AO3400A")
+		(at 138.43 182.88 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "1634f63d-6ef1-43ed-900d-f8b9506328da")
+		(property "Reference" "Q12"
+			(at 144.78 181.6099 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Value" "AO3400A"
+			(at 144.78 184.1499 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Footprint" "Package_TO_SOT_SMD:SOT-23"
+			(at 143.51 184.785 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+					(italic yes)
+				)
+				(justify left)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "http://www.aosmd.com/pdfs/datasheet/AO3400A.pdf"
+			(at 143.51 186.69 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+				(hide yes)
+			)
+		)
+		(property "Description" "30V Vds, 5.7A Id, N-Channel MOSFET, SOT-23"
+			(at 138.43 182.88 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "0e4ddd8f-0b66-4ed9-84e3-aa0677358094")
+		)
+		(pin "3"
+			(uuid "8d26fc38-be02-4f62-a2a0-d89334a4ae01")
+		)
+		(pin "2"
+			(uuid "04316f6f-2dba-4169-a025-798730befc29")
+		)
+		(instances
+			(project ""
+				(path "/d46cfebc-cd32-4ec9-981b-3f67fe44510e/c0e3a50f-b7e7-4c20-a214-f82a0e3821e9"
+					(reference "Q12")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Transistor_FET:AO3400A")
+		(at 135.89 215.9 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "179873a3-33d9-4979-8534-6261d26a7d14")
+		(property "Reference" "Q3"
+			(at 142.24 214.6299 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Value" "AO3400A"
+			(at 142.24 217.1699 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Footprint" "Package_TO_SOT_SMD:SOT-23"
+			(at 140.97 217.805 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+					(italic yes)
+				)
+				(justify left)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "http://www.aosmd.com/pdfs/datasheet/AO3400A.pdf"
+			(at 140.97 219.71 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+				(hide yes)
+			)
+		)
+		(property "Description" "30V Vds, 5.7A Id, N-Channel MOSFET, SOT-23"
+			(at 135.89 215.9 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "3ac3762e-6c85-43db-b7f7-e1b53b14098d")
+		)
+		(pin "3"
+			(uuid "97415114-a9af-4007-9994-c6c1f7b5e65c")
+		)
+		(pin "2"
+			(uuid "27dcf931-b279-4fd2-96cb-d7a415d2f3e0")
+		)
+		(instances
+			(project "VCU"
+				(path "/d46cfebc-cd32-4ec9-981b-3f67fe44510e/c0e3a50f-b7e7-4c20-a214-f82a0e3821e9"
+					(reference "Q3")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
 		(lib_id "power:+5V")
 		(at 267.97 97.79 0)
 		(unit 1)
@@ -5031,17 +5790,17 @@
 		)
 	)
 	(symbol
-		(lib_id "Simulation_SPICE:NMOS")
-		(at 138.43 182.88 0)
+		(lib_id "Transistor_FET:AO3400A")
+		(at 350.52 115.57 0)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
 		(on_board yes)
 		(dnp no)
 		(fields_autoplaced yes)
-		(uuid "29fb8b6a-7f30-4b12-a828-d1a687c4b77d")
-		(property "Reference" "Q4"
-			(at 144.78 181.6099 0)
+		(uuid "2410604a-e36e-4799-ba17-41c2ce5d683a")
+		(property "Reference" "Q10"
+			(at 356.87 114.2999 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -5049,8 +5808,8 @@
 				(justify left)
 			)
 		)
-		(property "Value" "NMOS"
-			(at 144.78 184.1499 0)
+		(property "Value" "AO3400A"
+			(at 356.87 116.8399 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -5058,73 +5817,115 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" "Package_TO_SOT_SMD:SOT-23_Handsoldering"
-			(at 143.51 180.34 0)
+		(property "Footprint" "Package_TO_SOT_SMD:SOT-23"
+			(at 355.6 117.475 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+					(italic yes)
+				)
+				(justify left)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "http://www.aosmd.com/pdfs/datasheet/AO3400A.pdf"
+			(at 355.6 119.38 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+				(hide yes)
+			)
+		)
+		(property "Description" "30V Vds, 5.7A Id, N-Channel MOSFET, SOT-23"
+			(at 350.52 115.57 0)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
 				(hide yes)
 			)
-		)
-		(property "Datasheet" "https://ngspice.sourceforge.io/docs/ngspice-html-manual/manual.xhtml#cha_MOSFETs"
-			(at 138.43 195.58 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Description" "N-MOSFET transistor, drain/source/gate"
-			(at 138.43 182.88 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Sim.Device" "NMOS"
-			(at 138.43 200.025 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Sim.Type" "VDMOS"
-			(at 138.43 201.93 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Sim.Pins" "1=D 2=G 3=S"
-			(at 138.43 198.12 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(pin "2"
-			(uuid "970dda65-e1ab-4050-a610-015078e63829")
-		)
-		(pin "1"
-			(uuid "79dd3ecb-20a2-45e1-936c-29b639e624ed")
 		)
 		(pin "3"
-			(uuid "c0576190-debe-454c-8d25-0bffb457a8fa")
+			(uuid "30a43fcd-3fb0-464d-bcea-d1e0ae161ea0")
+		)
+		(pin "2"
+			(uuid "8fa22671-c306-4873-96eb-95fdbf5ed940")
+		)
+		(pin "1"
+			(uuid "0c5cb583-c5a1-48f3-9f51-3c672659a08a")
 		)
 		(instances
 			(project "VCU"
 				(path "/d46cfebc-cd32-4ec9-981b-3f67fe44510e/c0e3a50f-b7e7-4c20-a214-f82a0e3821e9"
-					(reference "Q4")
+					(reference "Q10")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "power:+12V")
+		(at 140.97 165.1 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "297497c8-c7c1-484f-bf5a-42eb35a8811d")
+		(property "Reference" "#PWR040"
+			(at 140.97 168.91 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Value" "+12V"
+			(at 140.97 160.02 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" ""
+			(at 140.97 165.1 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" ""
+			(at 140.97 165.1 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Power symbol creates a global label with name \"+12V\""
+			(at 140.97 165.1 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "b9f50947-57f0-45bc-a562-c5a22f3c8f3c")
+		)
+		(instances
+			(project "VCU"
+				(path "/d46cfebc-cd32-4ec9-981b-3f67fe44510e/c0e3a50f-b7e7-4c20-a214-f82a0e3821e9"
+					(reference "#PWR040")
 					(unit 1)
 				)
 			)
@@ -5167,7 +5968,7 @@
 				(hide yes)
 			)
 		)
-		(property "Datasheet" "https://www.yageogroup.com/download/specsheet/CC0603DRNPO9BN6R8"
+		(property "Datasheet" "https://www.yageogroup.com/content/datasheet/asset/file/UPY-GPHC_X7R_6_3V-TO-250V"
 			(at 121.92 113.03 0)
 			(effects
 				(font
@@ -5185,7 +5986,7 @@
 				(hide yes)
 			)
 		)
-		(property "Digi PN" "311-3874-1-ND"
+		(property "Digi PN" "311-1778-1-ND"
 			(at 121.92 113.03 0)
 			(effects
 				(font
@@ -5194,7 +5995,7 @@
 				(hide yes)
 			)
 		)
-		(property "Digi URL" "https://www.digikey.com/en/products/detail/yageo/CC0603DRNPO9BN6R8/3767594"
+		(property "Digi URL" "https://www.digikey.com/en/products/detail/yageo/CC0603JRX7R9BB103/5195187"
 			(at 121.92 113.03 0)
 			(effects
 				(font
@@ -5212,7 +6013,7 @@
 				(hide yes)
 			)
 		)
-		(property "MFG PN" "CC0603DRNPO9BN6R8"
+		(property "MFG PN" "CC0603JRX7R9BB103"
 			(at 121.92 113.03 0)
 			(effects
 				(font
@@ -5689,106 +6490,6 @@
 		)
 	)
 	(symbol
-		(lib_id "Simulation_SPICE:NMOS")
-		(at 278.13 203.2 0)
-		(unit 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(dnp no)
-		(fields_autoplaced yes)
-		(uuid "455f6e9a-50b7-4226-ac9d-ed29fb48c753")
-		(property "Reference" "Q9"
-			(at 284.48 201.9299 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-		)
-		(property "Value" "NMOS"
-			(at 284.48 204.4699 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-		)
-		(property "Footprint" "Package_TO_SOT_SMD:SOT-23_Handsoldering"
-			(at 283.21 200.66 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Datasheet" "https://ngspice.sourceforge.io/docs/ngspice-html-manual/manual.xhtml#cha_MOSFETs"
-			(at 278.13 215.9 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Description" "N-MOSFET transistor, drain/source/gate"
-			(at 278.13 203.2 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Sim.Device" "NMOS"
-			(at 278.13 220.345 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Sim.Type" "VDMOS"
-			(at 278.13 222.25 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Sim.Pins" "1=D 2=G 3=S"
-			(at 278.13 218.44 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(pin "2"
-			(uuid "dbe0cabe-91ea-4e03-b195-5a0da1e2d875")
-		)
-		(pin "1"
-			(uuid "a18a7488-90e9-4970-9243-9c7c23c43971")
-		)
-		(pin "3"
-			(uuid "8a903e41-d12f-412e-9b98-86c2c4ed3169")
-		)
-		(instances
-			(project "VCU"
-				(path "/d46cfebc-cd32-4ec9-981b-3f67fe44510e/c0e3a50f-b7e7-4c20-a214-f82a0e3821e9"
-					(reference "Q9")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
 		(lib_id "power:+5V")
 		(at 267.97 54.61 0)
 		(unit 1)
@@ -6084,6 +6785,148 @@
 			(project "VCU"
 				(path "/d46cfebc-cd32-4ec9-981b-3f67fe44510e/c0e3a50f-b7e7-4c20-a214-f82a0e3821e9"
 					(reference "#PWR058")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "power:+12V")
+		(at 138.43 198.12 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "59015fe6-bc30-476d-bac0-db97706453a9")
+		(property "Reference" "#PWR038"
+			(at 138.43 201.93 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Value" "+12V"
+			(at 138.43 193.04 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" ""
+			(at 138.43 198.12 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" ""
+			(at 138.43 198.12 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Power symbol creates a global label with name \"+12V\""
+			(at 138.43 198.12 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "139fba45-2eaf-446c-84e4-cce7fcc4668c")
+		)
+		(instances
+			(project ""
+				(path "/d46cfebc-cd32-4ec9-981b-3f67fe44510e/c0e3a50f-b7e7-4c20-a214-f82a0e3821e9"
+					(reference "#PWR038")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Transistor_FET:AO3400A")
+		(at 347.98 72.39 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "5a5af99f-f041-43fe-9bdb-be98bf6066c9")
+		(property "Reference" "Q11"
+			(at 354.33 71.1199 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Value" "AO3400A"
+			(at 354.33 73.6599 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Footprint" "Package_TO_SOT_SMD:SOT-23"
+			(at 353.06 74.295 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+					(italic yes)
+				)
+				(justify left)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "http://www.aosmd.com/pdfs/datasheet/AO3400A.pdf"
+			(at 353.06 76.2 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+				(hide yes)
+			)
+		)
+		(property "Description" "30V Vds, 5.7A Id, N-Channel MOSFET, SOT-23"
+			(at 347.98 72.39 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "3"
+			(uuid "0b6bfc62-22fd-4f6a-8c76-68e0812fdc5f")
+		)
+		(pin "2"
+			(uuid "a8e808a5-84cb-4996-ba25-2e1bb9c01c07")
+		)
+		(pin "1"
+			(uuid "c7278cd0-6087-4441-afa4-a8dddd595ced")
+		)
+		(instances
+			(project "VCU"
+				(path "/d46cfebc-cd32-4ec9-981b-3f67fe44510e/c0e3a50f-b7e7-4c20-a214-f82a0e3821e9"
+					(reference "Q11")
 					(unit 1)
 				)
 			)
@@ -6430,171 +7273,6 @@
 		)
 	)
 	(symbol
-		(lib_id "power:+5V")
-		(at 140.97 165.1 0)
-		(unit 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(dnp no)
-		(uuid "63bb5e04-a3f7-4134-afa6-66ae3784e9e5")
-		(property "Reference" "#PWR040"
-			(at 140.97 168.91 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Value" "+5V"
-			(at 140.716 161.544 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Footprint" ""
-			(at 140.97 165.1 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Datasheet" ""
-			(at 140.97 165.1 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Description" "Power symbol creates a global label with name \"+5V\""
-			(at 140.97 165.1 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(pin "1"
-			(uuid "a9c3a1c9-7d36-4493-bb59-5d29658e76d2")
-		)
-		(instances
-			(project "VCU"
-				(path "/d46cfebc-cd32-4ec9-981b-3f67fe44510e/c0e3a50f-b7e7-4c20-a214-f82a0e3821e9"
-					(reference "#PWR040")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
-		(lib_id "Simulation_SPICE:NMOS")
-		(at 265.43 72.39 0)
-		(unit 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(dnp no)
-		(fields_autoplaced yes)
-		(uuid "67225bc9-bd7b-4825-881c-864c49eab53b")
-		(property "Reference" "Q7"
-			(at 271.78 71.1199 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-		)
-		(property "Value" "NMOS"
-			(at 271.78 73.6599 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-		)
-		(property "Footprint" "Package_TO_SOT_SMD:SOT-23_Handsoldering"
-			(at 270.51 69.85 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Datasheet" "https://ngspice.sourceforge.io/docs/ngspice-html-manual/manual.xhtml#cha_MOSFETs"
-			(at 265.43 85.09 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Description" "N-MOSFET transistor, drain/source/gate"
-			(at 265.43 72.39 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Sim.Device" "NMOS"
-			(at 265.43 89.535 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Sim.Type" "VDMOS"
-			(at 265.43 91.44 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Sim.Pins" "1=D 2=G 3=S"
-			(at 265.43 87.63 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(pin "2"
-			(uuid "10c39853-834f-4a4e-8f49-421d52e3406b")
-		)
-		(pin "1"
-			(uuid "02180eec-c246-444f-8f52-9e9a1df053f4")
-		)
-		(pin "3"
-			(uuid "3c0b68aa-97d3-4599-9419-210a5aee18dd")
-		)
-		(instances
-			(project "VCU"
-				(path "/d46cfebc-cd32-4ec9-981b-3f67fe44510e/c0e3a50f-b7e7-4c20-a214-f82a0e3821e9"
-					(reference "Q7")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
 		(lib_id "Device:R")
 		(at 127 215.9 270)
 		(unit 1)
@@ -6717,7 +7395,7 @@
 				(justify right)
 			)
 		)
-		(property "Value" "200"
+		(property "Value" "300"
 			(at 140.97 203.1999 0)
 			(effects
 				(font
@@ -6799,106 +7477,6 @@
 			(project "VCU"
 				(path "/d46cfebc-cd32-4ec9-981b-3f67fe44510e/c0e3a50f-b7e7-4c20-a214-f82a0e3821e9"
 					(reference "R35")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
-		(lib_id "Simulation_SPICE:NMOS")
-		(at 135.89 215.9 0)
-		(unit 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(dnp no)
-		(fields_autoplaced yes)
-		(uuid "6fde2aac-4d60-46d8-bdd0-4f536dd8b596")
-		(property "Reference" "Q3"
-			(at 142.24 214.6299 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-		)
-		(property "Value" "NMOS"
-			(at 142.24 217.1699 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-		)
-		(property "Footprint" "Package_TO_SOT_SMD:SOT-23_Handsoldering"
-			(at 140.97 213.36 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Datasheet" "https://ngspice.sourceforge.io/docs/ngspice-html-manual/manual.xhtml#cha_MOSFETs"
-			(at 135.89 228.6 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Description" "N-MOSFET transistor, drain/source/gate"
-			(at 135.89 215.9 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Sim.Device" "NMOS"
-			(at 135.89 233.045 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Sim.Type" "VDMOS"
-			(at 135.89 234.95 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Sim.Pins" "1=D 2=G 3=S"
-			(at 135.89 231.14 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(pin "2"
-			(uuid "84441f8b-4b31-4de3-a157-99b5f5b1becf")
-		)
-		(pin "1"
-			(uuid "7978c376-1044-461c-b358-19c836d03500")
-		)
-		(pin "3"
-			(uuid "5702c200-b1c2-4342-9d9c-b56e0e9fb89d")
-		)
-		(instances
-			(project "VCU"
-				(path "/d46cfebc-cd32-4ec9-981b-3f67fe44510e/c0e3a50f-b7e7-4c20-a214-f82a0e3821e9"
-					(reference "Q3")
 					(unit 1)
 				)
 			)
@@ -7135,7 +7713,7 @@
 				(justify right)
 			)
 		)
-		(property "Value" "200"
+		(property "Value" "300"
 			(at 171.45 53.3399 0)
 			(effects
 				(font
@@ -7223,17 +7801,17 @@
 		)
 	)
 	(symbol
-		(lib_id "Simulation_SPICE:NMOS")
-		(at 347.98 72.39 0)
+		(lib_id "Transistor_FET:AO3400A")
+		(at 265.43 72.39 0)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
 		(on_board yes)
 		(dnp no)
 		(fields_autoplaced yes)
-		(uuid "76bf6493-ea9d-493e-b7b6-f4880775014c")
-		(property "Reference" "Q10"
-			(at 354.33 71.1199 0)
+		(uuid "78a17852-d713-42e3-aef4-4e5eb885dc41")
+		(property "Reference" "Q7"
+			(at 271.78 71.1199 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -7241,8 +7819,8 @@
 				(justify left)
 			)
 		)
-		(property "Value" "NMOS"
-			(at 354.33 73.6599 0)
+		(property "Value" "AO3400A"
+			(at 271.78 73.6599 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -7250,73 +7828,49 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" "Package_TO_SOT_SMD:SOT-23_Handsoldering"
-			(at 353.06 69.85 0)
+		(property "Footprint" "Package_TO_SOT_SMD:SOT-23"
+			(at 270.51 74.295 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+					(italic yes)
+				)
+				(justify left)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "http://www.aosmd.com/pdfs/datasheet/AO3400A.pdf"
+			(at 270.51 76.2 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+				(hide yes)
+			)
+		)
+		(property "Description" "30V Vds, 5.7A Id, N-Channel MOSFET, SOT-23"
+			(at 265.43 72.39 0)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
 				(hide yes)
 			)
-		)
-		(property "Datasheet" "https://ngspice.sourceforge.io/docs/ngspice-html-manual/manual.xhtml#cha_MOSFETs"
-			(at 347.98 85.09 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Description" "N-MOSFET transistor, drain/source/gate"
-			(at 347.98 72.39 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Sim.Device" "NMOS"
-			(at 347.98 89.535 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Sim.Type" "VDMOS"
-			(at 347.98 91.44 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Sim.Pins" "1=D 2=G 3=S"
-			(at 347.98 87.63 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(pin "2"
-			(uuid "3449ad0f-8a40-4242-9db7-276b695fe7bb")
-		)
-		(pin "1"
-			(uuid "398329e8-7a2d-49a6-bcb4-8d7fa8034bed")
 		)
 		(pin "3"
-			(uuid "2bf575d1-240d-4bbd-9fd5-694a2b1011af")
+			(uuid "66a4db97-14ec-4740-9749-8a70d009485d")
+		)
+		(pin "2"
+			(uuid "c72f9761-afdc-432d-beea-36fab0373b1c")
+		)
+		(pin "1"
+			(uuid "3165600f-80b4-44ca-a091-da2b9bf5396c")
 		)
 		(instances
-			(project "VCU"
+			(project ""
 				(path "/d46cfebc-cd32-4ec9-981b-3f67fe44510e/c0e3a50f-b7e7-4c20-a214-f82a0e3821e9"
-					(reference "Q10")
+					(reference "Q7")
 					(unit 1)
 				)
 			)
@@ -7407,7 +7961,7 @@
 				(justify right)
 			)
 		)
-		(property "Value" "330"
+		(property "Value" "300"
 			(at 283.21 190.4999 0)
 			(effects
 				(font
@@ -7766,25 +8320,26 @@
 		)
 	)
 	(symbol
-		(lib_id "power:+5V")
-		(at 138.43 198.12 0)
+		(lib_id "Device:LED")
+		(at 299.72 64.77 0)
+		(mirror y)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
-		(on_board yes)
-		(dnp no)
-		(uuid "87acc515-6d53-4310-b1d9-cfb60ce1f171")
-		(property "Reference" "#PWR038"
-			(at 138.43 201.93 0)
+		(on_board no)
+		(dnp yes)
+		(fields_autoplaced yes)
+		(uuid "85388b1f-3134-46e0-b2e8-3fbb8672f399")
+		(property "Reference" "D14"
+			(at 301.3075 58.42 0)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
-				(hide yes)
 			)
 		)
-		(property "Value" "+5V"
-			(at 138.176 194.564 0)
+		(property "Value" "1092QC1-125VAC"
+			(at 301.3075 60.96 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -7792,7 +8347,7 @@
 			)
 		)
 		(property "Footprint" ""
-			(at 138.43 198.12 0)
+			(at 299.72 64.77 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -7800,8 +8355,8 @@
 				(hide yes)
 			)
 		)
-		(property "Datasheet" ""
-			(at 138.43 198.12 0)
+		(property "Datasheet" "https://vcclite.com/wp-content/uploads/products/1092QA1-12V/datasheet/1092Q-Datasheet-Rev9.pdf"
+			(at 299.72 64.77 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -7809,8 +8364,53 @@
 				(hide yes)
 			)
 		)
-		(property "Description" "Power symbol creates a global label with name \"+5V\""
-			(at 138.43 198.12 0)
+		(property "Description" "Light emitting diode"
+			(at 299.72 64.77 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Sim.Pins" "1=K 2=A"
+			(at 299.72 64.77 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Digi PN" "1092QC1-125VAC-ND"
+			(at 299.72 64.77 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Digi URL" "https://www.digikey.com/en/products/detail/visual-communications-company-vcc/1092QC1-125VAC/6175239"
+			(at 299.72 64.77 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "MFG" "Visual Communications Company"
+			(at 299.72 64.77 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "MFG PN" "1092QC1-125VAC"
+			(at 299.72 64.77 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -7819,12 +8419,15 @@
 			)
 		)
 		(pin "1"
-			(uuid "f46a753c-4b8b-4d5a-ae51-3cfd73b7cae4")
+			(uuid "8fdd2208-9b24-43fa-90a4-5d6682cb5b4a")
+		)
+		(pin "2"
+			(uuid "4d00865b-4f0b-4204-bdda-7d4c64b161c3")
 		)
 		(instances
-			(project "VCU"
+			(project ""
 				(path "/d46cfebc-cd32-4ec9-981b-3f67fe44510e/c0e3a50f-b7e7-4c20-a214-f82a0e3821e9"
-					(reference "#PWR038")
+					(reference "D14")
 					(unit 1)
 				)
 			)
@@ -8907,106 +9510,6 @@
 		)
 	)
 	(symbol
-		(lib_id "Simulation_SPICE:NMOS")
-		(at 350.52 115.57 0)
-		(unit 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(dnp no)
-		(fields_autoplaced yes)
-		(uuid "b9f974bb-f9ea-467e-ac90-c37ec6deb860")
-		(property "Reference" "Q11"
-			(at 356.87 114.2999 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-		)
-		(property "Value" "NMOS"
-			(at 356.87 116.8399 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-		)
-		(property "Footprint" "Package_TO_SOT_SMD:SOT-23_Handsoldering"
-			(at 355.6 113.03 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Datasheet" "https://ngspice.sourceforge.io/docs/ngspice-html-manual/manual.xhtml#cha_MOSFETs"
-			(at 350.52 128.27 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Description" "N-MOSFET transistor, drain/source/gate"
-			(at 350.52 115.57 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Sim.Device" "NMOS"
-			(at 350.52 132.715 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Sim.Type" "VDMOS"
-			(at 350.52 134.62 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Sim.Pins" "1=D 2=G 3=S"
-			(at 350.52 130.81 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(pin "2"
-			(uuid "2d381325-7bf1-412b-ba84-d86ce3b98ac0")
-		)
-		(pin "1"
-			(uuid "74dac246-ba06-4c69-8e07-c3b05a84642b")
-		)
-		(pin "3"
-			(uuid "5640fa1c-866c-4378-8dd7-5d3ba525c887")
-		)
-		(instances
-			(project "VCU"
-				(path "/d46cfebc-cd32-4ec9-981b-3f67fe44510e/c0e3a50f-b7e7-4c20-a214-f82a0e3821e9"
-					(reference "Q11")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
 		(lib_id "power:GND")
 		(at 153.67 107.95 0)
 		(unit 1)
@@ -9090,7 +9593,7 @@
 				(justify left)
 			)
 		)
-		(property "Value" "10µF"
+		(property "Value" "10uF"
 			(at 104.902 111.252 0)
 			(effects
 				(font
@@ -9126,7 +9629,7 @@
 				(hide yes)
 			)
 		)
-		(property "Digi PN" "311-3874-1-ND"
+		(property "Digi PN" "311-3484-1-ND"
 			(at 107.95 110.49 0)
 			(effects
 				(font
@@ -9178,6 +9681,158 @@
 		)
 	)
 	(symbol
+		(lib_id "Transistor_FET:AO3400A")
+		(at 278.13 203.2 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "bf277851-9845-48e6-a63a-6d5247e85741")
+		(property "Reference" "Q4"
+			(at 284.48 201.9299 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Value" "AO3400A"
+			(at 284.48 204.4699 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Footprint" "Package_TO_SOT_SMD:SOT-23"
+			(at 283.21 205.105 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+					(italic yes)
+				)
+				(justify left)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "http://www.aosmd.com/pdfs/datasheet/AO3400A.pdf"
+			(at 283.21 207.01 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+				(hide yes)
+			)
+		)
+		(property "Description" "30V Vds, 5.7A Id, N-Channel MOSFET, SOT-23"
+			(at 278.13 203.2 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "6c30a19d-66a8-44ee-b213-e55887501bac")
+		)
+		(pin "3"
+			(uuid "dd655cbe-b59b-471a-b866-7273d834dcf0")
+		)
+		(pin "2"
+			(uuid "a410df8c-8d4e-431f-a42f-1041d758d325")
+		)
+		(instances
+			(project "VCU"
+				(path "/d46cfebc-cd32-4ec9-981b-3f67fe44510e/c0e3a50f-b7e7-4c20-a214-f82a0e3821e9"
+					(reference "Q4")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Transistor_FET:AO3400A")
+		(at 265.43 115.57 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "c226f885-dbd0-40aa-bcf2-2992352ca9ac")
+		(property "Reference" "Q8"
+			(at 271.78 114.2999 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Value" "AO3400A"
+			(at 271.78 116.8399 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Footprint" "Package_TO_SOT_SMD:SOT-23"
+			(at 270.51 117.475 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+					(italic yes)
+				)
+				(justify left)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "http://www.aosmd.com/pdfs/datasheet/AO3400A.pdf"
+			(at 270.51 119.38 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+				(hide yes)
+			)
+		)
+		(property "Description" "30V Vds, 5.7A Id, N-Channel MOSFET, SOT-23"
+			(at 265.43 115.57 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "3"
+			(uuid "124e8a72-535a-4bdd-9b96-c1fec873a342")
+		)
+		(pin "2"
+			(uuid "c65cfbb8-5220-457e-b5c5-f98d8241e411")
+		)
+		(pin "1"
+			(uuid "c166cf88-c420-410a-b88e-6ccafeec258a")
+		)
+		(instances
+			(project "VCU"
+				(path "/d46cfebc-cd32-4ec9-981b-3f67fe44510e/c0e3a50f-b7e7-4c20-a214-f82a0e3821e9"
+					(reference "Q8")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
 		(lib_id "Device:R")
 		(at 140.97 168.91 180)
 		(unit 1)
@@ -9196,7 +9851,7 @@
 				(justify right)
 			)
 		)
-		(property "Value" "200"
+		(property "Value" "300"
 			(at 143.51 170.1799 0)
 			(effects
 				(font
@@ -9285,7 +9940,7 @@
 	)
 	(symbol
 		(lib_id "Device:C")
-		(at 68.58 99.06 180)
+		(at 67.31 99.06 180)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
@@ -9293,7 +9948,7 @@
 		(dnp no)
 		(uuid "ca81cca5-668d-47dc-886e-a667f09ee3cc")
 		(property "Reference" "C32"
-			(at 71.12 97.79 0)
+			(at 69.85 97.79 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -9302,7 +9957,7 @@
 			)
 		)
 		(property "Value" "1uF"
-			(at 71.12 100.33 0)
+			(at 69.85 100.33 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -9311,7 +9966,7 @@
 			)
 		)
 		(property "Footprint" "Capacitor_SMD:C_0603_1608Metric_Pad1.08x0.95mm_HandSolder"
-			(at 67.6148 95.25 0)
+			(at 66.3448 95.25 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -9319,8 +9974,8 @@
 				(hide yes)
 			)
 		)
-		(property "Datasheet" "https://www.yageogroup.com/download/specsheet/CC0603DRNPO9BN6R8"
-			(at 68.58 99.06 0)
+		(property "Datasheet" "https://www.yageogroup.com/content/datasheet/asset/file/UPY-GPHC_X7R_6_3V-TO-250V"
+			(at 67.31 99.06 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -9329,7 +9984,7 @@
 			)
 		)
 		(property "Description" "Unpolarized capacitor"
-			(at 68.58 99.06 0)
+			(at 67.31 99.06 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -9337,8 +9992,8 @@
 				(hide yes)
 			)
 		)
-		(property "Digi PN" "311-3874-1-ND"
-			(at 68.58 99.06 0)
+		(property "Digi PN" "311-3484-1-ND"
+			(at 67.31 99.06 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -9347,7 +10002,7 @@
 			)
 		)
 		(property "MFG" "Yageo"
-			(at 68.58 99.06 0)
+			(at 67.31 99.06 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -9355,8 +10010,8 @@
 				(hide yes)
 			)
 		)
-		(property "MFG PN" "CC0603DRNPO9BN6R8"
-			(at 68.58 99.06 0)
+		(property "MFG PN" "CC0603JRX7R6BB105"
+			(at 67.31 99.06 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -9364,8 +10019,8 @@
 				(hide yes)
 			)
 		)
-		(property "Digi URL" "https://www.digikey.com/en/products/detail/yageo/CC0603DRNPO9BN6R8/3767594"
-			(at 68.58 99.06 0)
+		(property "Digi URL" "https://www.digikey.com/en/products/detail/yageo/CC0603JRX7R6BB105/7164368"
+			(at 67.31 99.06 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -9407,7 +10062,7 @@
 				(justify right)
 			)
 		)
-		(property "Value" "200"
+		(property "Value" "300"
 			(at 171.45 87.6299 0)
 			(effects
 				(font
@@ -9760,106 +10415,6 @@
 			(project "VCU"
 				(path "/d46cfebc-cd32-4ec9-981b-3f67fe44510e/c0e3a50f-b7e7-4c20-a214-f82a0e3821e9"
 					(reference "Q5")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
-		(lib_id "Simulation_SPICE:NMOS")
-		(at 265.43 115.57 0)
-		(unit 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(dnp no)
-		(fields_autoplaced yes)
-		(uuid "e2be020d-4e93-4e0a-a860-74eecc46a28d")
-		(property "Reference" "Q8"
-			(at 271.78 114.2999 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-		)
-		(property "Value" "NMOS"
-			(at 271.78 116.8399 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-		)
-		(property "Footprint" "Package_TO_SOT_SMD:SOT-23_Handsoldering"
-			(at 270.51 113.03 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Datasheet" "https://ngspice.sourceforge.io/docs/ngspice-html-manual/manual.xhtml#cha_MOSFETs"
-			(at 265.43 128.27 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Description" "N-MOSFET transistor, drain/source/gate"
-			(at 265.43 115.57 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Sim.Device" "NMOS"
-			(at 265.43 132.715 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Sim.Type" "VDMOS"
-			(at 265.43 134.62 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Sim.Pins" "1=D 2=G 3=S"
-			(at 265.43 130.81 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(pin "2"
-			(uuid "ab925e1c-005e-4f59-9cbd-3814ccf3d130")
-		)
-		(pin "1"
-			(uuid "09f2f5c0-1b33-41dd-abae-fd655af4a17b")
-		)
-		(pin "3"
-			(uuid "3aeb5a4b-168f-490e-aa1f-3e807c74c459")
-		)
-		(instances
-			(project "VCU"
-				(path "/d46cfebc-cd32-4ec9-981b-3f67fe44510e/c0e3a50f-b7e7-4c20-a214-f82a0e3821e9"
-					(reference "Q8")
 					(unit 1)
 				)
 			)
@@ -10637,7 +11192,7 @@
 				(hide yes)
 			)
 		)
-		(property "Datasheet" "https://www.yageogroup.com/download/specsheet/CC0603DRNPO9BN6R8"
+		(property "Datasheet" "https://www.yageogroup.com/content/datasheet/asset/file/UPY-GPHC_X7R_6_3V-TO-250V"
 			(at 346.71 203.2 0)
 			(effects
 				(font
@@ -10655,7 +11210,7 @@
 				(hide yes)
 			)
 		)
-		(property "Digi PN" "311-3874-1-ND"
+		(property "Digi PN" "311-3484-1-ND"
 			(at 346.71 203.2 0)
 			(effects
 				(font
@@ -10673,7 +11228,7 @@
 				(hide yes)
 			)
 		)
-		(property "MFG PN" "CC0603DRNPO9BN6R8"
+		(property "MFG PN" "CC0603JRX7R6BB105"
 			(at 346.71 203.2 0)
 			(effects
 				(font
@@ -10682,7 +11237,7 @@
 				(hide yes)
 			)
 		)
-		(property "Digi URL" "https://www.digikey.com/en/products/detail/yageo/CC0603DRNPO9BN6R8/3767594"
+		(property "Digi URL" "https://www.digikey.com/en/products/detail/yageo/CC0603JRX7R6BB105/7164368"
 			(at 346.71 203.2 0)
 			(effects
 				(font

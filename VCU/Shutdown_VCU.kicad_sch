@@ -4954,7 +4954,7 @@
 		)
 		(uuid bc8d7c39-59a8-4ff2-896a-1beba640c171)
 	)
-	(text "1/(2π*10000*1.6*10^-9) \n= 9.95 HZ\n\n\n"
+	(text "1/(2π*10000*.015*10^-6) \n= 106.10 HZ\n\n\n"
 		(exclude_from_sim no)
 		(at 37.338 88.9 0)
 		(effects
@@ -4994,7 +4994,7 @@
 		)
 		(uuid "170a81d6-dbf6-45ac-bbdd-856c4f63e20c")
 	)
-	(text "9.95 HZ Cutoff"
+	(text "106.10 HZ Cutoff\n"
 		(exclude_from_sim no)
 		(at 37.084 105.918 0)
 		(effects
@@ -5003,16 +5003,6 @@
 			)
 		)
 		(uuid "245e888b-5cad-4c15-90ef-866551739b58")
-	)
-	(text "9947.18 HZ Cutoff"
-		(exclude_from_sim no)
-		(at 35.814 44.45 0)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-		)
-		(uuid "33c81ac7-f1d1-45e4-aebe-328062bfec7d")
 	)
 	(text "Adjustable Reference\n"
 		(exclude_from_sim no)
@@ -5024,7 +5014,7 @@
 		)
 		(uuid "38e08467-20bd-4871-82e0-446cb0e5d173")
 	)
-	(text "1/(2π*10000*1.6*10^-9) \n= 9947.18 HZ"
+	(text "1/(2π*10000*1.8*10^-9) \n= 8841.94 HZ"
 		(exclude_from_sim no)
 		(at 36.322 48.514 0)
 		(effects
@@ -5034,7 +5024,17 @@
 		)
 		(uuid "39b53de3-86b3-40b6-8f0c-f676f176a847")
 	)
-	(text "9.95 HZ Cutoff\n"
+	(text "8841.94 HZ Cutoff\n"
+		(exclude_from_sim no)
+		(at 35.814 44.45 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+		)
+		(uuid "4a24549c-ce60-49c1-87c2-f364b86ff51b")
+	)
+	(text "106.10 HZ Cutoff\n"
 		(exclude_from_sim no)
 		(at 36.83 84.836 0)
 		(effects
@@ -5074,7 +5074,7 @@
 		)
 		(uuid "748e382c-0f00-49ca-b86d-a7303f8b276b")
 	)
-	(text "9947.18 HZ Cutoff\n"
+	(text "8841.94 HZ Cutoff\n"
 		(exclude_from_sim no)
 		(at 34.29 62.992 0)
 		(effects
@@ -6182,6 +6182,16 @@
 	)
 	(wire
 		(pts
+			(xy 67.31 102.87) (xy 68.58 102.87)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "5d6fc4cb-957e-44ba-8df1-134f3b59e8ad")
+	)
+	(wire
+		(pts
 			(xy 154.94 114.3) (xy 189.23 114.3)
 		)
 		(stroke
@@ -6309,6 +6319,16 @@
 			(type default)
 		)
 		(uuid "6ae06470-ff97-411d-b045-6ad6cd3d3c16")
+	)
+	(wire
+		(pts
+			(xy 67.31 81.28) (xy 68.58 81.28)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "6b2b3452-86c9-46fe-b2d8-d01902664273")
 	)
 	(wire
 		(pts
@@ -7252,7 +7272,7 @@
 	)
 	(wire
 		(pts
-			(xy 53.34 102.87) (xy 60.96 102.87)
+			(xy 53.34 102.87) (xy 59.69 102.87)
 		)
 		(stroke
 			(width 0)
@@ -7272,7 +7292,7 @@
 	)
 	(wire
 		(pts
-			(xy 53.34 81.28) (xy 60.96 81.28)
+			(xy 53.34 81.28) (xy 59.69 81.28)
 		)
 		(stroke
 			(width 0)
@@ -9063,7 +9083,7 @@
 				)
 			)
 		)
-		(property "Value" "330"
+		(property "Value" "300"
 			(at 312.42 41.91 90)
 			(effects
 				(font
@@ -9338,7 +9358,7 @@
 				(justify left)
 			)
 		)
-		(property "Value" "1.6nF"
+		(property "Value" "1.8nF"
 			(at 72.898 45.466 0)
 			(effects
 				(font
@@ -9356,7 +9376,7 @@
 				(hide yes)
 			)
 		)
-		(property "Datasheet" "https://www.yageogroup.com/download/specsheet/CC0603DRNPO9BN6R8"
+		(property "Datasheet" "https://www.yageogroup.com/download/specsheet/CC0603FRNPO9BN182"
 			(at 69.85 44.45 0)
 			(effects
 				(font
@@ -9374,7 +9394,7 @@
 				(hide yes)
 			)
 		)
-		(property "Digi PN" "311-3874-1-ND"
+		(property "Digi PN" "13-CC0603FRNPO9BN182CT-ND "
 			(at 69.85 44.45 0)
 			(effects
 				(font
@@ -9383,7 +9403,7 @@
 				(hide yes)
 			)
 		)
-		(property "Digi URL" "https://www.digikey.com/en/products/detail/yageo/CC0603DRNPO9BN6R8/3767594"
+		(property "Digi URL" "https://www.digikey.com/en/products/detail/yageo/CC0603FRNPO9BN182/16797985"
 			(at 69.85 44.45 0)
 			(effects
 				(font
@@ -9401,7 +9421,7 @@
 				(hide yes)
 			)
 		)
-		(property "MFG PN" "CC0603DRNPO9BN6R8"
+		(property "MFG PN" "CC0603FRNPO9BN182"
 			(at 69.85 44.45 0)
 			(effects
 				(font
@@ -9575,7 +9595,7 @@
 				)
 			)
 		)
-		(property "Value" "330"
+		(property "Value" "300"
 			(at 372.11 66.04 90)
 			(effects
 				(font
@@ -10290,7 +10310,7 @@
 				(justify right)
 			)
 		)
-		(property "Value" "330"
+		(property "Value" "300"
 			(at 310.388 64.77 90)
 			(effects
 				(font
@@ -10651,7 +10671,7 @@
 				)
 			)
 		)
-		(property "Value" "330"
+		(property "Value" "300"
 			(at 372.11 43.18 90)
 			(effects
 				(font
@@ -11111,6 +11131,112 @@
 				(path "/d46cfebc-cd32-4ec9-981b-3f67fe44510e/016e8690-8836-4a58-8538-04ec936182e1"
 					(reference "U2")
 					(unit 4)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Device:C")
+		(at 284.48 190.5 0)
+		(mirror x)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "38deba7d-5d7b-469d-a567-6481f6075eec")
+		(property "Reference" "C5"
+			(at 281.94 189.23 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+			)
+		)
+		(property "Value" "1uF"
+			(at 281.94 191.77 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+			)
+		)
+		(property "Footprint" "Capacitor_SMD:C_0603_1608Metric_Pad1.08x0.95mm_HandSolder"
+			(at 285.4452 186.69 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "https://www.yageogroup.com/content/datasheet/asset/file/UPY-GPHC_X7R_6_3V-TO-250V"
+			(at 284.48 190.5 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Unpolarized capacitor"
+			(at 284.48 190.5 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Digi PN" "311-3484-1-ND"
+			(at 284.48 190.5 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "MFG" "Yageo"
+			(at 284.48 190.5 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "MFG PN" "CC0603JRX7R6BB105"
+			(at 284.48 190.5 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Digi URL" "https://www.digikey.com/en/products/detail/yageo/CC0603JRX7R6BB105/7164368"
+			(at 284.48 190.5 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "2"
+			(uuid "83a8fb3b-0a9c-4f21-8c42-57abb0836e68")
+		)
+		(pin "1"
+			(uuid "76376afa-cd69-4e38-9b8a-358583baaec2")
+		)
+		(instances
+			(project "VCU"
+				(path "/d46cfebc-cd32-4ec9-981b-3f67fe44510e/016e8690-8836-4a58-8538-04ec936182e1"
+					(reference "C5")
+					(unit 1)
 				)
 			)
 		)
@@ -12239,7 +12365,7 @@
 				(hide yes)
 			)
 		)
-		(property "Datasheet" "https://www.yageogroup.com/download/specsheet/CC0603DRNPO9BN6R8"
+		(property "Datasheet" "https://www.yageogroup.com/content/datasheet/asset/file/UPY-GPHC_X7R_6_3V-TO-250V"
 			(at 232.41 246.38 0)
 			(effects
 				(font
@@ -12257,7 +12383,7 @@
 				(hide yes)
 			)
 		)
-		(property "Digi PN" "311-3874-1-ND"
+		(property "Digi PN" "311-3484-1-ND"
 			(at 232.41 246.38 0)
 			(effects
 				(font
@@ -12275,7 +12401,7 @@
 				(hide yes)
 			)
 		)
-		(property "MFG PN" "CC0603DRNPO9BN6R8"
+		(property "MFG PN" "CC0603JRX7R6BB105"
 			(at 232.41 246.38 0)
 			(effects
 				(font
@@ -12284,7 +12410,7 @@
 				(hide yes)
 			)
 		)
-		(property "Digi URL" "https://www.digikey.com/en/products/detail/yageo/CC0603DRNPO9BN6R8/3767594"
+		(property "Digi URL" "https://www.digikey.com/en/products/detail/yageo/CC0603JRX7R6BB105/7164368"
 			(at 232.41 246.38 0)
 			(effects
 				(font
@@ -12920,7 +13046,7 @@
 				(hide yes)
 			)
 		)
-		(property "Datasheet" "https://www.yageogroup.com/download/specsheet/CC0603DRNPO9BN6R8"
+		(property "Datasheet" "https://www.yageogroup.com/content/datasheet/asset/file/UPY-GPHC_X7R_6_3V-TO-250V"
 			(at 283.21 245.11 0)
 			(effects
 				(font
@@ -12938,7 +13064,7 @@
 				(hide yes)
 			)
 		)
-		(property "Digi PN" "311-3874-1-ND"
+		(property "Digi PN" "311-3484-1-ND"
 			(at 283.21 245.11 0)
 			(effects
 				(font
@@ -12956,7 +13082,7 @@
 				(hide yes)
 			)
 		)
-		(property "MFG PN" "CC0603DRNPO9BN6R8"
+		(property "MFG PN" "CC0603JRX7R6BB105"
 			(at 283.21 245.11 0)
 			(effects
 				(font
@@ -12965,7 +13091,7 @@
 				(hide yes)
 			)
 		)
-		(property "Digi URL" "https://www.digikey.com/en/products/detail/yageo/CC0603DRNPO9BN6R8/3767594"
+		(property "Digi URL" "https://www.digikey.com/en/products/detail/yageo/CC0603JRX7R6BB105/7164368"
 			(at 283.21 245.11 0)
 			(effects
 				(font
@@ -13302,7 +13428,7 @@
 				(hide yes)
 			)
 		)
-		(property "Datasheet" "https://www.yageogroup.com/download/specsheet/CC0603DRNPO9BN6R8"
+		(property "Datasheet" "https://www.yageogroup.com/content/datasheet/asset/file/UPY-GPHC_X7R_6_3V-TO-250V"
 			(at 210.82 246.38 0)
 			(effects
 				(font
@@ -13320,7 +13446,7 @@
 				(hide yes)
 			)
 		)
-		(property "Digi PN" "311-3874-1-ND"
+		(property "Digi PN" "311-3484-1-ND"
 			(at 210.82 246.38 0)
 			(effects
 				(font
@@ -13338,7 +13464,7 @@
 				(hide yes)
 			)
 		)
-		(property "MFG PN" "CC0603DRNPO9BN6R8"
+		(property "MFG PN" "CC0603JRX7R6BB105"
 			(at 210.82 246.38 0)
 			(effects
 				(font
@@ -13347,7 +13473,7 @@
 				(hide yes)
 			)
 		)
-		(property "Digi URL" "https://www.digikey.com/en/products/detail/yageo/CC0603DRNPO9BN6R8/3767594"
+		(property "Digi URL" "https://www.digikey.com/en/products/detail/yageo/CC0603JRX7R6BB105/7164368"
 			(at 210.82 246.38 0)
 			(effects
 				(font
@@ -13389,7 +13515,7 @@
 				)
 			)
 		)
-		(property "Value" "330"
+		(property "Value" "300"
 			(at 312.42 92.71 90)
 			(effects
 				(font
@@ -13470,111 +13596,6 @@
 			(project "VCU"
 				(path "/d46cfebc-cd32-4ec9-981b-3f67fe44510e/016e8690-8836-4a58-8538-04ec936182e1"
 					(reference "R25")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
-		(lib_id "Device:C")
-		(at 284.48 190.5 0)
-		(unit 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(dnp no)
-		(uuid "724052eb-73d2-4a0a-af4f-46136392f75b")
-		(property "Reference" "C5"
-			(at 281.178 192.786 0)
-			(effects
-				(font
-					(size 1.016 1.016)
-				)
-				(justify left)
-			)
-		)
-		(property "Value" "1.0μF"
-			(at 280.416 194.564 0)
-			(effects
-				(font
-					(size 0.889 0.889)
-				)
-				(justify left)
-			)
-		)
-		(property "Footprint" "Capacitor_SMD:C_0603_1608Metric_Pad1.08x0.95mm_HandSolder"
-			(at 285.4452 194.31 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Datasheet" "https://www.yageogroup.com/download/specsheet/CC0603DRNPO9BN6R8"
-			(at 284.48 190.5 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Description" "Unpolarized capacitor"
-			(at 284.48 190.5 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Digi PN" "311-3874-1-ND"
-			(at 284.48 190.5 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Digi URL" "https://www.digikey.com/en/products/detail/yageo/CC0603DRNPO9BN6R8/3767594"
-			(at 284.48 190.5 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "MFG" "Yageo"
-			(at 284.48 190.5 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "MFG PN" "CC0603DRNPO9BN6R8"
-			(at 284.48 190.5 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(pin "1"
-			(uuid "072bba1f-2d3a-42a4-b008-873ef5ca0de2")
-		)
-		(pin "2"
-			(uuid "c8d9730f-736f-4c3a-b83a-8adec32833b1")
-		)
-		(instances
-			(project "VCU"
-				(path "/d46cfebc-cd32-4ec9-981b-3f67fe44510e/016e8690-8836-4a58-8538-04ec936182e1"
-					(reference "C5")
 					(unit 1)
 				)
 			)
@@ -14025,7 +14046,7 @@
 				(justify left)
 			)
 		)
-		(property "Value" "1.6uF"
+		(property "Value" ".015uF"
 			(at 72.136 86.106 0)
 			(effects
 				(font
@@ -14393,7 +14414,7 @@
 				(justify left)
 			)
 		)
-		(property "Value" "1.6nF"
+		(property "Value" "1.8nF"
 			(at 73.152 64.6431 0)
 			(effects
 				(font
@@ -14411,7 +14432,7 @@
 				(hide yes)
 			)
 		)
-		(property "Datasheet" "https://www.yageogroup.com/download/specsheet/CC0603DRNPO9BN6R8"
+		(property "Datasheet" "https://www.yageogroup.com/download/specsheet/CC0603FRNPO9BN182"
 			(at 69.85 63.5 0)
 			(effects
 				(font
@@ -14429,7 +14450,7 @@
 				(hide yes)
 			)
 		)
-		(property "Digi PN" "311-3874-1-ND"
+		(property "Digi PN" "13-CC0603FRNPO9BN182CT-ND "
 			(at 69.85 63.5 0)
 			(effects
 				(font
@@ -14438,7 +14459,7 @@
 				(hide yes)
 			)
 		)
-		(property "Digi URL" "https://www.digikey.com/en/products/detail/yageo/CC0603DRNPO9BN6R8/3767594"
+		(property "Digi URL" "https://www.digikey.com/en/products/detail/yageo/CC0603FRNPO9BN182/16797985"
 			(at 69.85 63.5 0)
 			(effects
 				(font
@@ -14456,7 +14477,7 @@
 				(hide yes)
 			)
 		)
-		(property "MFG PN" "CC0603DRNPO9BN6R8"
+		(property "MFG PN" "CC0603FRNPO9BN182"
 			(at 69.85 63.5 0)
 			(effects
 				(font
@@ -15025,7 +15046,7 @@
 				(hide yes)
 			)
 		)
-		(property "Datasheet" "https://www.yageogroup.com/download/specsheet/CC0603DRNPO9BN6R8"
+		(property "Datasheet" "https://www.yageogroup.com/content/datasheet/asset/file/UPY-GPHC_X7R_6_3V-TO-250V"
 			(at 165.1 245.11 0)
 			(effects
 				(font
@@ -15043,7 +15064,7 @@
 				(hide yes)
 			)
 		)
-		(property "Digi PN" "311-3874-1-ND"
+		(property "Digi PN" "311-3484-1-ND"
 			(at 165.1 245.11 0)
 			(effects
 				(font
@@ -15061,7 +15082,7 @@
 				(hide yes)
 			)
 		)
-		(property "MFG PN" "CC0603DRNPO9BN6R8"
+		(property "MFG PN" "CC0603JRX7R6BB105"
 			(at 165.1 245.11 0)
 			(effects
 				(font
@@ -15070,7 +15091,7 @@
 				(hide yes)
 			)
 		)
-		(property "Digi URL" "https://www.digikey.com/en/products/detail/yageo/CC0603DRNPO9BN6R8/3767594"
+		(property "Digi URL" "https://www.digikey.com/en/products/detail/yageo/CC0603JRX7R6BB105/7164368"
 			(at 165.1 245.11 0)
 			(effects
 				(font
@@ -15931,7 +15952,7 @@
 	)
 	(symbol
 		(lib_id "Device:R")
-		(at 64.77 81.28 90)
+		(at 63.5 81.28 90)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
@@ -15939,15 +15960,15 @@
 		(dnp no)
 		(uuid "a9dfceee-2669-4ea9-ad9e-1b72d7736fa4")
 		(property "Reference" "R8"
-			(at 64.77 83.82 90)
+			(at 63.5 83.82 90)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
 			)
 		)
-		(property "Value" "10k"
-			(at 64.516 85.852 90)
+		(property "Value" "100k"
+			(at 63.246 85.852 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -15955,7 +15976,7 @@
 			)
 		)
 		(property "Footprint" "Resistor_SMD:R_0603_1608Metric_Pad0.98x0.95mm_HandSolder"
-			(at 64.77 83.058 90)
+			(at 63.5 83.058 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -15964,7 +15985,7 @@
 			)
 		)
 		(property "Datasheet" "https://www.yageogroup.com/content/datasheet/asset/file/PYU-AC_51_ROHS_L"
-			(at 64.77 81.28 0)
+			(at 63.5 81.28 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -15973,7 +15994,7 @@
 			)
 		)
 		(property "Description" "Resistor"
-			(at 64.77 81.28 0)
+			(at 63.5 81.28 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -15982,7 +16003,7 @@
 			)
 		)
 		(property "Digi PN" "311-10KLDCT-ND"
-			(at 64.77 81.28 90)
+			(at 63.5 81.28 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -15991,7 +16012,7 @@
 			)
 		)
 		(property "Digi URL" "https://www.digikey.com/en/products/detail/yageo/AC0603FR-0710KL/2827814"
-			(at 64.77 81.28 90)
+			(at 63.5 81.28 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -16000,7 +16021,7 @@
 			)
 		)
 		(property "MFG" "Yageo"
-			(at 64.77 81.28 90)
+			(at 63.5 81.28 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -16009,7 +16030,7 @@
 			)
 		)
 		(property "MFG PN" "AC0603FR-0710KL"
-			(at 64.77 81.28 90)
+			(at 63.5 81.28 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -17143,7 +17164,7 @@
 				(hide yes)
 			)
 		)
-		(property "Datasheet" "https://www.yageogroup.com/download/specsheet/CC0603DRNPO9BN6R8"
+		(property "Datasheet" "https://www.yageogroup.com/content/datasheet/asset/file/UPY-GPHC_X7R_6_3V-TO-250V"
 			(at 254 245.11 0)
 			(effects
 				(font
@@ -17161,7 +17182,7 @@
 				(hide yes)
 			)
 		)
-		(property "Digi PN" "311-3874-1-ND"
+		(property "Digi PN" "311-3484-1-ND"
 			(at 254 245.11 0)
 			(effects
 				(font
@@ -17179,7 +17200,7 @@
 				(hide yes)
 			)
 		)
-		(property "MFG PN" "CC0603DRNPO9BN6R8"
+		(property "MFG PN" "CC0603JRX7R6BB105"
 			(at 254 245.11 0)
 			(effects
 				(font
@@ -17188,7 +17209,7 @@
 				(hide yes)
 			)
 		)
-		(property "Digi URL" "https://www.digikey.com/en/products/detail/yageo/CC0603DRNPO9BN6R8/3767594"
+		(property "Digi URL" "https://www.digikey.com/en/products/detail/yageo/CC0603JRX7R6BB105/7164368"
 			(at 254 245.11 0)
 			(effects
 				(font
@@ -18224,7 +18245,7 @@
 				(hide yes)
 			)
 		)
-		(property "Datasheet" "https://www.yageogroup.com/download/specsheet/CC0603DRNPO9BN6R8"
+		(property "Datasheet" "https://www.yageogroup.com/content/datasheet/asset/file/UPY-GPHC_X7R_6_3V-TO-250V"
 			(at 189.23 245.11 0)
 			(effects
 				(font
@@ -18242,7 +18263,7 @@
 				(hide yes)
 			)
 		)
-		(property "Digi PN" "311-3874-1-ND"
+		(property "Digi PN" "311-3484-1-ND"
 			(at 189.23 245.11 0)
 			(effects
 				(font
@@ -18260,7 +18281,7 @@
 				(hide yes)
 			)
 		)
-		(property "MFG PN" "CC0603DRNPO9BN6R8"
+		(property "MFG PN" "CC0603JRX7R6BB105"
 			(at 189.23 245.11 0)
 			(effects
 				(font
@@ -18269,7 +18290,7 @@
 				(hide yes)
 			)
 		)
-		(property "Digi URL" "https://www.digikey.com/en/products/detail/yageo/CC0603DRNPO9BN6R8/3767594"
+		(property "Digi URL" "https://www.digikey.com/en/products/detail/yageo/CC0603JRX7R6BB105/7164368"
 			(at 189.23 245.11 0)
 			(effects
 				(font
@@ -18377,7 +18398,7 @@
 				(justify left)
 			)
 		)
-		(property "Value" "1.6uF"
+		(property "Value" ".015uF"
 			(at 71.882 107.188 0)
 			(effects
 				(font
@@ -19289,7 +19310,7 @@
 	)
 	(symbol
 		(lib_id "Device:R")
-		(at 64.77 102.87 270)
+		(at 63.5 102.87 270)
 		(mirror x)
 		(unit 1)
 		(exclude_from_sim no)
@@ -19298,15 +19319,15 @@
 		(dnp no)
 		(uuid "f6942468-ca01-4e28-95fb-0cdd962e1c0d")
 		(property "Reference" "R9"
-			(at 64.262 105.41 90)
+			(at 62.992 105.41 90)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
 			)
 		)
-		(property "Value" "10k"
-			(at 64.262 107.442 90)
+		(property "Value" "100k"
+			(at 62.992 107.442 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -19314,7 +19335,7 @@
 			)
 		)
 		(property "Footprint" "Resistor_SMD:R_0603_1608Metric_Pad0.98x0.95mm_HandSolder"
-			(at 64.77 104.648 90)
+			(at 63.5 104.648 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -19323,7 +19344,7 @@
 			)
 		)
 		(property "Datasheet" "https://www.yageogroup.com/content/datasheet/asset/file/PYU-AC_51_ROHS_L"
-			(at 64.77 102.87 0)
+			(at 63.5 102.87 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -19332,7 +19353,7 @@
 			)
 		)
 		(property "Description" "Resistor"
-			(at 64.77 102.87 0)
+			(at 63.5 102.87 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -19341,7 +19362,7 @@
 			)
 		)
 		(property "Digi PN" "311-10KLDCT-ND"
-			(at 64.77 102.87 90)
+			(at 63.5 102.87 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -19350,7 +19371,7 @@
 			)
 		)
 		(property "Digi URL" "https://www.digikey.com/en/products/detail/yageo/AC0603FR-0710KL/2827814"
-			(at 64.77 102.87 90)
+			(at 63.5 102.87 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -19359,7 +19380,7 @@
 			)
 		)
 		(property "MFG" "Yageo"
-			(at 64.77 102.87 90)
+			(at 63.5 102.87 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -19368,7 +19389,7 @@
 			)
 		)
 		(property "MFG PN" "AC0603FR-0710KL"
-			(at 64.77 102.87 90)
+			(at 63.5 102.87 90)
 			(effects
 				(font
 					(size 1.27 1.27)
