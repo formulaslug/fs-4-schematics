@@ -14,7 +14,7 @@
 		(comment 6 "Ribbon Cable Connector")
 	)
 	(lib_symbols
-		(symbol "Connector_Generic:Conn_01x40"
+		(symbol "Connector_Generic_MountingPin:Conn_01x40_MountingPin"
 			(pin_names
 				(offset 1.016)
 				(hide yes)
@@ -30,12 +30,13 @@
 					)
 				)
 			)
-			(property "Value" "Conn_01x40"
-				(at 0 -53.34 0)
+			(property "Value" "Conn_01x40_MountingPin"
+				(at 1.27 -53.34 0)
 				(effects
 					(font
 						(size 1.27 1.27)
 					)
+					(justify left)
 				)
 			)
 			(property "Footprint" ""
@@ -56,7 +57,7 @@
 					(hide yes)
 				)
 			)
-			(property "Description" "Generic connector, single row, 01x40, script generated (kicad-library-utils/schlib/autogen/connector/)"
+			(property "Description" "Generic connectable mounting pin connector, single row, 01x40, script generated (kicad-library-utils/schlib/autogen/connector/)"
 				(at 0 0 0)
 				(effects
 					(font
@@ -74,7 +75,7 @@
 					(hide yes)
 				)
 			)
-			(property "ki_fp_filters" "Connector*:*_1x??_*"
+			(property "ki_fp_filters" "Connector*:*_1x??-1MP*"
 				(at 0 0 0)
 				(effects
 					(font
@@ -83,7 +84,7 @@
 					(hide yes)
 				)
 			)
-			(symbol "Conn_01x40_1_1"
+			(symbol "Conn_01x40_MountingPin_1_1"
 				(rectangle
 					(start -1.27 49.53)
 					(end 1.27 -52.07)
@@ -533,6 +534,26 @@
 					)
 					(fill
 						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy -1.016 -52.832) (xy 1.016 -52.832)
+					)
+					(stroke
+						(width 0.1524)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(text "Mounting"
+					(at 0 -52.451 0)
+					(effects
+						(font
+							(size 0.381 0.381)
+						)
 					)
 				)
 				(pin passive line
@@ -1255,6 +1276,24 @@
 						)
 					)
 				)
+				(pin passive line
+					(at 0 -55.88 90)
+					(length 3.048)
+					(name "MountPin"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "MP"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
 			)
 			(embedded_fonts no)
 		)
@@ -1505,16 +1544,9 @@
 		)
 		(uuid "51d5b30a-2369-498a-b2e4-cdd266702795")
 	)
-	(text "TODO: add part number of \nspecific ribbon cable connector we'll use\nverify correct pitch, \ntry to get one with both top\nand bottom contacts to make assembly easier"
-		(exclude_from_sim no)
-		(at 223.012 136.652 0)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-			(justify left)
-		)
-		(uuid "773169eb-e606-4eb5-a086-27695162149b")
+	(no_connect
+		(at 217.17 213.36)
+		(uuid "2ae245c2-30c6-40fb-a106-667abb0d2ee4")
 	)
 	(no_connect
 		(at 212.09 200.66)
@@ -3108,7 +3140,7 @@
 		)
 	)
 	(symbol
-		(lib_id "Connector_Generic:Conn_01x40")
+		(lib_id "Connector_Generic_MountingPin:Conn_01x40_MountingPin")
 		(at 217.17 157.48 0)
 		(unit 1)
 		(exclude_from_sim no)
@@ -3118,7 +3150,7 @@
 		(fields_autoplaced yes)
 		(uuid "c761ca7f-9e9d-4e07-8d24-8f3968352e4e")
 		(property "Reference" "J3"
-			(at 219.71 157.4799 0)
+			(at 219.71 157.8355 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -3127,7 +3159,7 @@
 			)
 		)
 		(property "Value" "Conn_01x40"
-			(at 219.71 160.0199 0)
+			(at 219.71 160.3755 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -3135,7 +3167,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "FS_4_Footprint_Library:CONN_F32D-1A7Y1-21040_AMP"
 			(at 217.17 157.48 0)
 			(effects
 				(font
@@ -3153,7 +3185,43 @@
 				(hide yes)
 			)
 		)
-		(property "Description" "Generic connector, single row, 01x40, script generated (kicad-library-utils/schlib/autogen/connector/)"
+		(property "Description" "Generic connectable mounting pin connector, single row, 01x40, script generated (kicad-library-utils/schlib/autogen/connector/)"
+			(at 217.17 157.48 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Digikey Part Number" "609-F32D-1A7Y1-21040CT-ND"
+			(at 217.17 157.48 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Name" "F32D-1A7Y1-21040 40 Pin ZIF Connector"
+			(at 217.17 157.48 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Digikey Link" "https://www.digikey.com/en/products/detail/amphenol-cs-fci/F32D-1A7Y1-21040/11564657"
+			(at 217.17 157.48 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Manufacturer Part Number" "F32D-1A7Y1-21040"
 			(at 217.17 157.48 0)
 			(effects
 				(font
@@ -3281,6 +3349,9 @@
 		)
 		(pin "36"
 			(uuid "561d5651-363f-4b1f-82b4-296b4d51d720")
+		)
+		(pin "MP"
+			(uuid "7eadce28-1746-40af-9d6d-18d87e3f49c5")
 		)
 		(instances
 			(project "steering_wheel"
