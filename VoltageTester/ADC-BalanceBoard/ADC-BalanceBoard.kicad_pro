@@ -37,9 +37,9 @@
         "other_text_thickness": 0.15,
         "other_text_upright": false,
         "pads": {
-          "drill": 1.2,
-          "height": 1.7,
-          "width": 2.2
+          "drill": 1.35,
+          "height": 1.8,
+          "width": 1.8
         },
         "silk_line_width": 0.1,
         "silk_text_italic": false,
@@ -123,9 +123,9 @@
       },
       "rules": {
         "max_error": 0.005,
-        "min_clearance": 0.0,
+        "min_clearance": 0.1,
         "min_connection": 0.0,
-        "min_copper_edge_clearance": 0.25,
+        "min_copper_edge_clearance": 0.5,
         "min_groove_width": 0.0,
         "min_hole_clearance": 0.25,
         "min_hole_to_hole": 0.25,
@@ -136,7 +136,7 @@
         "min_text_height": 0.8,
         "min_text_thickness": 0.08,
         "min_through_hole_diameter": 0.3,
-        "min_track_width": 0.0,
+        "min_track_width": 0.1,
         "min_via_annular_width": 0.1,
         "min_via_diameter": 0.5,
         "solder_mask_to_copper_clearance": 0.0,
@@ -187,10 +187,7 @@
         }
       ],
       "track_widths": [
-        0.0,
-        0.0,
-        0.2,
-        0.254
+        0.0
       ],
       "tuning_pattern_settings": {
         "diff_pair_defaults": {
@@ -463,11 +460,16 @@
     }
   },
   "libraries": {
-    "pinned_footprint_libs": [],
-    "pinned_symbol_libs": []
+    "pinned_footprint_libs": [
+      "Package_DFN_QFN"
+    ],
+    "pinned_symbol_libs": [
+      "FS_4_Global_Symbol_Library",
+      "FS_3_Global_Symbol_Library"
+    ]
   },
   "meta": {
-    "filename": "TMPDev.kicad_pro",
+    "filename": "ADC-BalanceBoard.kicad_pro",
     "version": 3
   },
   "net_settings": {
@@ -485,7 +487,7 @@
         "pcb_color": "rgba(0, 0, 0, 0.000)",
         "priority": 2147483647,
         "schematic_color": "rgba(0, 0, 0, 0.000)",
-        "track_width": 0.127,
+        "track_width": 0.254,
         "via_diameter": 0.6,
         "via_drill": 0.3,
         "wire_width": 6
@@ -503,7 +505,7 @@
       "gencad": "",
       "idf": "",
       "netlist": "",
-      "plot": "",
+      "plot": "../../../../../Downloads/untitled folder/",
       "pos_files": "",
       "specctra_dsn": "",
       "step": "",
@@ -627,7 +629,7 @@
   },
   "sheets": [
     [
-      "b0623524-8cdb-4c88-bc4f-0ef41f06a22b",
+      "914098bf-f1c1-45e0-8eb6-01e2103b73fc",
       "Root"
     ]
   ],
