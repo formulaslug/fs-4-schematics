@@ -5,6 +5,113 @@
 	(uuid "cf081f0e-1bf3-4180-ad42-898e572d5275")
 	(paper "B")
 	(lib_symbols
+		(symbol "Connector:TestPoint"
+			(pin_numbers
+				(hide yes)
+			)
+			(pin_names
+				(offset 0.762)
+				(hide yes)
+			)
+			(exclude_from_sim no)
+			(in_bom yes)
+			(on_board yes)
+			(property "Reference" "TP"
+				(at 0 6.858 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Value" "TestPoint"
+				(at 0 5.08 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Footprint" ""
+				(at 5.08 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "Datasheet" "~"
+				(at 5.08 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "Description" "test point"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "ki_keywords" "test point tp"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "ki_fp_filters" "Pin* Test*"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(symbol "TestPoint_0_1"
+				(circle
+					(center 0 3.302)
+					(radius 0.762)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+			)
+			(symbol "TestPoint_1_1"
+				(pin passive line
+					(at 0 0 90)
+					(length 2.54)
+					(name "1"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "1"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+			)
+			(embedded_fonts no)
+		)
 		(symbol "Connector_Generic:Conn_01x02"
 			(pin_names
 				(offset 1.016)
@@ -1725,6 +1832,12 @@
 		(uuid "26d96d16-bc2a-430d-b317-3a5bd0f6b828")
 	)
 	(junction
+		(at 199.39 39.37)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "35b29648-43b0-40fa-9b9f-7705be71dace")
+	)
+	(junction
 		(at 76.2 54.61)
 		(diameter 0)
 		(color 0 0 0 0)
@@ -1784,6 +1897,12 @@
 		(color 0 0 0 0)
 		(uuid "fcf5e180-e01e-4a9e-ad47-3e677f788aa8")
 	)
+	(junction
+		(at 199.39 31.75)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "fe3221df-0c46-4bb3-a83e-24e2d3839d31")
+	)
 	(no_connect
 		(at 182.88 35.56)
 		(uuid "cbcf4d1f-43f1-4a37-acfc-e2e0aace5851")
@@ -1837,6 +1956,16 @@
 			(type default)
 		)
 		(uuid "0f65e2ac-b252-473d-b6a7-135797ad2c2e")
+	)
+	(wire
+		(pts
+			(xy 199.39 29.21) (xy 199.39 31.75)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "1e577f9e-914b-4844-80ff-198db7b5b542")
 	)
 	(wire
 		(pts
@@ -1910,6 +2039,16 @@
 	)
 	(wire
 		(pts
+			(xy 199.39 39.37) (xy 196.85 39.37)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "6a02c46e-e236-4cfc-863f-eb24edf49ecd")
+	)
+	(wire
+		(pts
 			(xy 182.88 31.75) (xy 186.69 31.75)
 		)
 		(stroke
@@ -1970,7 +2109,7 @@
 	)
 	(wire
 		(pts
-			(xy 196.85 36.83) (xy 196.85 39.37)
+			(xy 199.39 36.83) (xy 199.39 39.37)
 		)
 		(stroke
 			(width 0)
@@ -2150,13 +2289,33 @@
 	)
 	(wire
 		(pts
-			(xy 196.85 34.29) (xy 196.85 31.75)
+			(xy 199.39 34.29) (xy 199.39 31.75)
 		)
 		(stroke
 			(width 0)
 			(type default)
 		)
 		(uuid "d6e11e8c-559a-495a-9ac3-9a38584bcba4")
+	)
+	(wire
+		(pts
+			(xy 199.39 31.75) (xy 196.85 31.75)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "da42c4b7-9a7f-4bc5-a355-c8410f31be4f")
+	)
+	(wire
+		(pts
+			(xy 199.39 39.37) (xy 199.39 41.91)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "dd1a3f6f-2b2c-481f-ab02-4ace0c4246d0")
 	)
 	(wire
 		(pts
@@ -2552,6 +2711,73 @@
 			(project ""
 				(path "/ca333741-5826-495c-b860-5422aa5e17fc/d0e7048d-11f7-4907-9430-4ddb1cd2ad30"
 					(reference "R6")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Connector:TestPoint")
+		(at 199.39 29.21 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "1d2fe0b3-f47c-462b-a5d2-aa50181bdc15")
+		(property "Reference" "TP6"
+			(at 201.93 24.6379 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Value" "IsoSPI_P"
+			(at 201.93 27.1779 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Footprint" "TestPoint:TestPoint_Loop_D2.50mm_Drill1.0mm"
+			(at 204.47 29.21 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 204.47 29.21 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "test point"
+			(at 199.39 29.21 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "06894d40-ddbc-404e-b244-25a0f3a076d5")
+		)
+		(instances
+			(project "Tractive_Battery_Board"
+				(path "/ca333741-5826-495c-b860-5422aa5e17fc/d0e7048d-11f7-4907-9430-4ddb1cd2ad30"
+					(reference "TP6")
 					(unit 1)
 				)
 			)
@@ -2959,6 +3185,73 @@
 			(project ""
 				(path "/ca333741-5826-495c-b860-5422aa5e17fc/d0e7048d-11f7-4907-9430-4ddb1cd2ad30"
 					(reference "#PWR012")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Connector:TestPoint")
+		(at 199.39 41.91 180)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "7e2c6196-e0a9-4359-86d8-ec25e6e59b7e")
+		(property "Reference" "TP7"
+			(at 201.93 43.9419 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+			)
+		)
+		(property "Value" "IsoSPI_N"
+			(at 201.93 46.4819 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+			)
+		)
+		(property "Footprint" "TestPoint:TestPoint_Loop_D2.50mm_Drill1.0mm"
+			(at 194.31 41.91 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 194.31 41.91 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "test point"
+			(at 199.39 41.91 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "ace62fa7-f1a4-44b4-824d-1b12d2b0a2ae")
+		)
+		(instances
+			(project "Tractive_Battery_Board"
+				(path "/ca333741-5826-495c-b860-5422aa5e17fc/d0e7048d-11f7-4907-9430-4ddb1cd2ad30"
+					(reference "TP7")
 					(unit 1)
 				)
 			)
@@ -3650,7 +3943,7 @@
 	)
 	(symbol
 		(lib_id "Connector_Generic:Conn_01x02")
-		(at 201.93 36.83 0)
+		(at 204.47 36.83 0)
 		(mirror x)
 		(unit 1)
 		(exclude_from_sim no)
@@ -3659,7 +3952,7 @@
 		(dnp no)
 		(uuid "d6c55684-80b9-4e8f-ab5a-e67fbff0cae2")
 		(property "Reference" "J7"
-			(at 204.47 36.8301 0)
+			(at 207.01 36.8301 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -3668,7 +3961,7 @@
 			)
 		)
 		(property "Value" "Conn_01x02"
-			(at 204.47 34.2901 0)
+			(at 207.01 34.2901 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -3677,7 +3970,7 @@
 			)
 		)
 		(property "Footprint" ""
-			(at 201.93 36.83 0)
+			(at 204.47 36.83 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -3686,7 +3979,7 @@
 			)
 		)
 		(property "Datasheet" "~"
-			(at 201.93 36.83 0)
+			(at 204.47 36.83 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -3695,7 +3988,7 @@
 			)
 		)
 		(property "Description" "Generic connector, single row, 01x02, script generated (kicad-library-utils/schlib/autogen/connector/)"
-			(at 201.93 36.83 0)
+			(at 204.47 36.83 0)
 			(effects
 				(font
 					(size 1.27 1.27)
