@@ -1355,49 +1355,27 @@
 			)
 			(embedded_fonts no)
 		)
-		(symbol "Relay:Fujitsu_FTR-LYAA005x"
+		(symbol "FS_4_SCHEMATICS:J102K1CS324VDC.20"
 			(exclude_from_sim no)
 			(in_bom yes)
 			(on_board yes)
 			(property "Reference" "K"
-				(at 11.43 3.81 0)
+				(at 0 0 0)
 				(effects
 					(font
 						(size 1.27 1.27)
 					)
-					(justify left)
 				)
 			)
-			(property "Value" "Fujitsu_FTR-LYAA005x"
-				(at 11.43 1.27 0)
+			(property "Value" "J102K1CS324VDC.20"
+				(at 0 0 0)
 				(effects
 					(font
 						(size 1.27 1.27)
 					)
-					(justify left)
 				)
 			)
-			(property "Footprint" "Relay_THT:Relay_SPST-NO_Fujitsu_FTR-LYAA005x_FormA_Vertical"
-				(at 11.43 -1.27 0)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-					(justify left)
-					(hide yes)
-				)
-			)
-			(property "Datasheet" "https://www.fujitsu.com/sg/imagesgig5/ftr-ly.pdf"
-				(at 17.78 -3.81 0)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-					(justify left)
-					(hide yes)
-				)
-			)
-			(property "Description" "Relay, SPST Form A, vertical mount, 5-60V coil, 6A, 250VAC, 28 x 5 x 15mm"
+			(property "Footprint" "FS_4_SCHEMATICS:J102K1CS324VDC.20"
 				(at 0 0 0)
 				(effects
 					(font
@@ -1406,7 +1384,7 @@
 					(hide yes)
 				)
 			)
-			(property "ki_keywords" "6A SPST-NO Relay"
+			(property "Datasheet" "https://www.citrelay.com/wp-content/uploads/2025/05/Relay-J102.pdf"
 				(at 0 0 0)
 				(effects
 					(font
@@ -1415,7 +1393,7 @@
 					(hide yes)
 				)
 			)
-			(property "ki_fp_filters" "Relay*Fujitsu*FTR?LYA*"
+			(property "Description" "Precharge Relay"
 				(at 0 0 0)
 				(effects
 					(font
@@ -1424,7 +1402,43 @@
 					(hide yes)
 				)
 			)
-			(symbol "Fujitsu_FTR-LYAA005x_0_0"
+			(property "Digi PN" "2449-J102K1CS324VDC.20-ND"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "MFG" "CIT Relay and Switch"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "MFG PN" "J102K1CS324VDC.20"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "Digi URL" "https://www.digikey.com/en/products/detail/cit-relay-and-switch/J102K1CS324VDC-20/14001744"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(symbol "J102K1CS324VDC.20_0_0"
 				(polyline
 					(pts
 						(xy 7.62 5.08) (xy 7.62 2.54) (xy 6.985 3.175) (xy 7.62 3.81)
@@ -1438,7 +1452,7 @@
 					)
 				)
 			)
-			(symbol "Fujitsu_FTR-LYAA005x_0_1"
+			(symbol "J102K1CS324VDC.20_0_1"
 				(rectangle
 					(start -10.16 5.08)
 					(end 10.16 -5.08)
@@ -1547,6 +1561,18 @@
 				)
 				(polyline
 					(pts
+						(xy 2.54 5.08) (xy 2.54 2.54) (xy 3.175 3.175) (xy 2.54 3.81)
+					)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type outline)
+					)
+				)
+				(polyline
+					(pts
 						(xy 3.175 0) (xy 3.81 0)
 					)
 					(stroke
@@ -1582,27 +1608,9 @@
 					)
 				)
 			)
-			(symbol "Fujitsu_FTR-LYAA005x_1_1"
+			(symbol "J102K1CS324VDC.20_1_1"
 				(pin passive line
 					(at -5.08 7.62 270)
-					(length 2.54)
-					(name "~"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-					(number "A1"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-				)
-				(pin passive line
-					(at -5.08 -7.62 90)
 					(length 2.54)
 					(name "~"
 						(effects
@@ -1620,6 +1628,61 @@
 					)
 				)
 				(pin passive line
+					(at -5.08 -7.62 90)
+					(length 2.54)
+					(name "~"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "A1"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin passive line
+					(at 2.54 7.62 270)
+					(length 2.54)
+					(name "~"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "1"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin passive line
+					(at 5.08 -7.62 90)
+					(length 2.54)
+					(hide yes)
+					(name "~"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "2"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin passive line
 					(at 5.08 -7.62 90)
 					(length 2.54)
 					(name "~"
@@ -1629,7 +1692,7 @@
 							)
 						)
 					)
-					(number "13"
+					(number "3"
 						(effects
 							(font
 								(size 1.27 1.27)
@@ -1647,7 +1710,7 @@
 							)
 						)
 					)
-					(number "14"
+					(number "4"
 						(effects
 							(font
 								(size 1.27 1.27)
@@ -1778,6 +1841,10 @@
 		(color 0 0 0 0)
 		(uuid "d88da86e-f5df-496c-b872-14b1fa3a0f22")
 	)
+	(no_connect
+		(at 116.84 50.8)
+		(uuid "7a40e20c-e579-42a4-b730-44344e036f9d")
+	)
 	(wire
 		(pts
 			(xy 66.04 83.82) (xy 77.47 83.82)
@@ -1817,6 +1884,16 @@
 			(type default)
 		)
 		(uuid "2c12a176-31e3-48aa-8da3-380e95da4adc")
+	)
+	(wire
+		(pts
+			(xy 116.84 55.88) (xy 116.84 58.42)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "32d17885-6a44-4352-9aa9-b1d42bdad295")
 	)
 	(wire
 		(pts
@@ -1880,13 +1957,13 @@
 	)
 	(wire
 		(pts
-			(xy 101.6 60.96) (xy 101.6 53.34)
+			(xy 101.6 53.34) (xy 101.6 60.96)
 		)
 		(stroke
 			(width 0)
 			(type default)
 		)
-		(uuid "96a4eadb-4369-4319-afda-bc530acec9eb")
+		(uuid "949cd9f5-e5c8-4610-b325-e7acd8882c4c")
 	)
 	(wire
 		(pts
@@ -2017,16 +2094,6 @@
 			(type default)
 		)
 		(uuid "f66834c5-101e-44d1-af70-76bd9413fe25")
-	)
-	(wire
-		(pts
-			(xy 116.84 58.42) (xy 116.84 55.88)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "f77ac071-6d12-42ec-8f1a-db55dfbcd399")
 	)
 	(label "IR+_12V"
 		(at 60.96 88.9 0)
@@ -2735,7 +2802,7 @@
 		)
 	)
 	(symbol
-		(lib_id "Relay:Fujitsu_FTR-LYAA005x")
+		(lib_id "FS_4_SCHEMATICS:J102K1CS324VDC.20")
 		(at 109.22 48.26 270)
 		(unit 1)
 		(exclude_from_sim no)
@@ -2743,8 +2810,8 @@
 		(on_board yes)
 		(dnp no)
 		(fields_autoplaced yes)
-		(uuid "cfdea995-3e8a-4189-9f9c-bb260e1cd533")
-		(property "Reference" "K1"
+		(uuid "d5aa31de-8492-420d-8a80-0cdd38ba49c2")
+		(property "Reference" "K3"
 			(at 109.22 33.02 90)
 			(effects
 				(font
@@ -2752,7 +2819,7 @@
 				)
 			)
 		)
-		(property "Value" "G5PZ-1A-X DC12"
+		(property "Value" "J102K1CS324VDC.20"
 			(at 109.22 35.56 90)
 			(effects
 				(font
@@ -2760,27 +2827,7 @@
 				)
 			)
 		)
-		(property "Footprint" "Relay_THT:Relay_SPST-NO_Fujitsu_FTR-LYAA005x_FormA_Vertical"
-			(at 107.95 59.69 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-				(hide yes)
-			)
-		)
-		(property "Datasheet" "https://www.fujitsu.com/sg/imagesgig5/ftr-ly.pdf"
-			(at 105.41 66.04 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-				(hide yes)
-			)
-		)
-		(property "Description" "Relay, SPST Form A, vertical mount, 5-60V coil, 6A, 250VAC, 28 x 5 x 15mm"
+		(property "Footprint" "FS_4_SCHEMATICS:J102K1CS324VDC.20"
 			(at 109.22 48.26 0)
 			(effects
 				(font
@@ -2789,22 +2836,82 @@
 				(hide yes)
 			)
 		)
-		(pin "A2"
-			(uuid "aa14bc56-1fba-45a3-a471-96be31c9db3c")
+		(property "Datasheet" "https://www.citrelay.com/wp-content/uploads/2025/05/Relay-J102.pdf"
+			(at 109.22 48.26 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
 		)
-		(pin "14"
-			(uuid "3320eeb8-ac88-4387-a443-4f800b7e507e")
+		(property "Description" "Precharge Relay"
+			(at 109.22 48.26 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
 		)
-		(pin "13"
-			(uuid "f1216f0f-a00c-4118-817a-d2f35c607d88")
+		(property "Digi PN" "2449-J102K1CS324VDC.20-ND"
+			(at 109.22 48.26 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "MFG" "CIT Relay and Switch"
+			(at 109.22 48.26 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "MFG PN" "J102K1CS324VDC.20"
+			(at 109.22 48.26 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Digi URL" "https://www.digikey.com/en/products/detail/cit-relay-and-switch/J102K1CS324VDC-20/14001744"
+			(at 109.22 48.26 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "53e100ce-45a5-469e-a2d8-9746f8ffd079")
+		)
+		(pin "2"
+			(uuid "bafbf884-9229-4af6-94a4-07ac2aa3cd42")
+		)
+		(pin "4"
+			(uuid "02d1f41a-900a-4e37-bae4-d75c8f6a4130")
 		)
 		(pin "A1"
-			(uuid "c4dfe991-0557-4237-8a95-3889d7727474")
+			(uuid "ee62e945-7e8e-4a6f-a138-7e88fca9828c")
+		)
+		(pin "A2"
+			(uuid "9b5eecf2-459d-4db3-b842-b2a8f05431ab")
+		)
+		(pin "3"
+			(uuid "0bdeb4b8-580d-4ebb-a055-d31b20b24885")
 		)
 		(instances
 			(project ""
 				(path "/ca333741-5826-495c-b860-5422aa5e17fc/5f0a52d4-7acf-46dd-8438-fce2f3c5a578"
-					(reference "K1")
+					(reference "K3")
 					(unit 1)
 				)
 			)
