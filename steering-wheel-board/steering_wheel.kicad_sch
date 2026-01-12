@@ -6,7 +6,7 @@
 	(paper "B")
 	(title_block
 		(title "Steering Wheel Board")
-		(date "2026-01-07")
+		(date "2026-01-11")
 		(rev "1.0")
 		(company "Formula Slug")
 		(comment 1 "Nova Mondal")
@@ -2195,6 +2195,26 @@
 		)
 		(uuid 9670e4a1-9273-4885-a4ec-b56c24187ea8)
 	)
+	(text "TODO: maybe use a different connector\n"
+		(exclude_from_sim no)
+		(at 115.062 107.188 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+		)
+		(uuid "16835a38-61ec-436d-a2cd-31a70ee4987a")
+	)
+	(text "TODO: add option  to send CAN back\n"
+		(exclude_from_sim no)
+		(at 180.594 229.87 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+		)
+		(uuid "1aa53a49-8443-4761-9f7f-76c06731c3b1")
+	)
 	(text "Out"
 		(exclude_from_sim no)
 		(at 77.216 39.878 0)
@@ -2207,7 +2227,7 @@
 	)
 	(text "Regen Dial Connector\n"
 		(exclude_from_sim no)
-		(at 37.592 140.208 0)
+		(at 37.592 138.938 0)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -2377,6 +2397,16 @@
 		)
 		(uuid "c90b148c-ba28-48e9-8d8c-be2c5169e6a6")
 	)
+	(text "TODO: look into filtering lap and launch control"
+		(exclude_from_sim no)
+		(at 120.396 75.184 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+		)
+		(uuid "ea293b32-3d12-4620-a0a0-605a01aba34a")
+	)
 	(junction
 		(at 340.36 30.48)
 		(diameter 0)
@@ -2498,7 +2528,7 @@
 		(uuid "fd88ee0b-71d6-4dcc-baa4-df52931f9936")
 	)
 	(no_connect
-		(at 41.91 160.02)
+		(at 41.91 158.75)
 		(uuid "0687751a-a438-4bf8-be9d-0fcf5b277409")
 	)
 	(no_connect
@@ -2546,7 +2576,7 @@
 		(uuid "60bb56f1-cbc4-4878-9e58-a245c9860826")
 	)
 	(bus_entry
-		(at 58.42 152.4)
+		(at 58.42 151.13)
 		(size -2.54 2.54)
 		(stroke
 			(width 0)
@@ -2555,7 +2585,7 @@
 		(uuid "635e01c4-9d60-4835-9109-b393686c5b4a")
 	)
 	(bus_entry
-		(at 58.42 149.86)
+		(at 58.42 148.59)
 		(size -2.54 2.54)
 		(stroke
 			(width 0)
@@ -2582,7 +2612,7 @@
 		(uuid "786bf35a-c686-44ca-a3fe-1f7cc88a1f70")
 	)
 	(bus_entry
-		(at 58.42 154.94)
+		(at 58.42 153.67)
 		(size -2.54 2.54)
 		(stroke
 			(width 0)
@@ -2609,7 +2639,7 @@
 		(uuid "d612c85b-be9b-4357-ac44-fc800c5ee10a")
 	)
 	(bus_entry
-		(at 58.42 147.32)
+		(at 58.42 146.05)
 		(size -2.54 2.54)
 		(stroke
 			(width 0)
@@ -2639,7 +2669,7 @@
 	)
 	(bus
 		(pts
-			(xy 58.42 149.86) (xy 58.42 152.4)
+			(xy 58.42 148.59) (xy 58.42 151.13)
 		)
 		(stroke
 			(width 0)
@@ -2999,7 +3029,7 @@
 	)
 	(wire
 		(pts
-			(xy 41.91 149.86) (xy 55.88 149.86)
+			(xy 41.91 148.59) (xy 55.88 148.59)
 		)
 		(stroke
 			(width 0)
@@ -3089,7 +3119,7 @@
 	)
 	(bus
 		(pts
-			(xy 58.42 152.4) (xy 58.42 154.94)
+			(xy 58.42 151.13) (xy 58.42 153.67)
 		)
 		(stroke
 			(width 0)
@@ -3129,7 +3159,7 @@
 	)
 	(wire
 		(pts
-			(xy 41.91 154.94) (xy 55.88 154.94)
+			(xy 41.91 153.67) (xy 55.88 153.67)
 		)
 		(stroke
 			(width 0)
@@ -3139,17 +3169,7 @@
 	)
 	(bus
 		(pts
-			(xy 59.69 149.86) (xy 59.69 148.59)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "6a6b1665-bb98-4630-a29a-643a3baf2f22")
-	)
-	(bus
-		(pts
-			(xy 58.42 147.32) (xy 58.42 149.86)
+			(xy 58.42 146.05) (xy 58.42 148.59)
 		)
 		(stroke
 			(width 0)
@@ -3179,7 +3199,7 @@
 	)
 	(wire
 		(pts
-			(xy 41.91 152.4) (xy 55.88 152.4)
+			(xy 41.91 151.13) (xy 55.88 151.13)
 		)
 		(stroke
 			(width 0)
@@ -3256,6 +3276,16 @@
 			(type default)
 		)
 		(uuid "7f910379-c2d9-43e8-9265-3e5b16610606")
+	)
+	(wire
+		(pts
+			(xy 58.42 146.05) (xy 58.42 147.32)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "83df121a-bc43-45f4-92e4-04a1a847e782")
 	)
 	(wire
 		(pts
@@ -3359,7 +3389,7 @@
 	)
 	(wire
 		(pts
-			(xy 41.91 157.48) (xy 55.88 157.48)
+			(xy 41.91 156.21) (xy 55.88 156.21)
 		)
 		(stroke
 			(width 0)
@@ -3647,16 +3677,6 @@
 		)
 		(uuid "d1f2f0da-7aab-434b-b255-20e03b409659")
 	)
-	(bus
-		(pts
-			(xy 59.69 148.59) (xy 111.76 148.59)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "d3ea4d9c-285d-4743-8d8a-81b5fa19dcc7")
-	)
 	(wire
 		(pts
 			(xy 39.37 35.56) (xy 35.56 35.56)
@@ -3859,7 +3879,7 @@
 	)
 	(bus
 		(pts
-			(xy 58.42 149.86) (xy 59.69 149.86)
+			(xy 58.42 148.59) (xy 111.76 148.59)
 		)
 		(stroke
 			(width 0)
@@ -3899,7 +3919,7 @@
 	)
 	(wire
 		(pts
-			(xy 41.91 147.32) (xy 49.53 147.32)
+			(xy 41.91 146.05) (xy 49.53 146.05)
 		)
 		(stroke
 			(width 0)
@@ -3948,7 +3968,7 @@
 		(uuid "311cbacf-b7c7-4eac-bc70-694960b525d9")
 	)
 	(label "Regen_Dial[0..3]"
-		(at 58.42 147.32 0)
+		(at 58.42 146.05 0)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -3968,7 +3988,7 @@
 		(uuid "3b1cea88-038c-4258-acfe-aaf4e760a802")
 	)
 	(label "Regen_Dial2"
-		(at 43.18 154.94 0)
+		(at 43.18 153.67 0)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -4038,7 +4058,7 @@
 		(uuid "79f40fb3-90a6-424e-906c-c4242c6ada63")
 	)
 	(label "Regen_Dial3"
-		(at 43.18 157.48 0)
+		(at 43.18 156.21 0)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -4078,7 +4098,7 @@
 		(uuid "a848703c-a917-4f4d-bda7-25b70e422b51")
 	)
 	(label "Regen_Dial1"
-		(at 43.18 152.4 0)
+		(at 43.18 151.13 0)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -4088,7 +4108,7 @@
 		(uuid "a8d70224-d131-431c-b267-8054dcadca04")
 	)
 	(label "Regen_Dial0"
-		(at 43.18 149.86 0)
+		(at 43.18 148.59 0)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -4899,7 +4919,7 @@
 	)
 	(symbol
 		(lib_id "Connector:Conn_01x06_Pin")
-		(at 36.83 152.4 0)
+		(at 36.83 151.13 0)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
@@ -4908,7 +4928,7 @@
 		(fields_autoplaced yes)
 		(uuid "2ebb1ede-963b-4ae4-9811-8e7d4fb5fbf8")
 		(property "Reference" "J5"
-			(at 37.465 142.24 0)
+			(at 37.465 140.97 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -4916,7 +4936,7 @@
 			)
 		)
 		(property "Value" "2x3 Nanofit"
-			(at 37.465 144.78 0)
+			(at 37.465 143.51 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -4924,7 +4944,7 @@
 			)
 		)
 		(property "Footprint" ""
-			(at 36.83 152.4 0)
+			(at 36.83 151.13 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -4933,7 +4953,7 @@
 			)
 		)
 		(property "Datasheet" "~"
-			(at 36.83 152.4 0)
+			(at 36.83 151.13 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -4942,7 +4962,7 @@
 			)
 		)
 		(property "Description" "Generic connector, single row, 01x06, script generated"
-			(at 36.83 152.4 0)
+			(at 36.83 151.13 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -4951,7 +4971,7 @@
 			)
 		)
 		(property "Digikey Part Number" ""
-			(at 36.83 152.4 0)
+			(at 36.83 151.13 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -4960,7 +4980,7 @@
 			)
 		)
 		(property "Name" "Regen"
-			(at 36.83 152.4 0)
+			(at 36.83 151.13 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -4969,7 +4989,7 @@
 			)
 		)
 		(property "Digikey Link" ""
-			(at 36.83 152.4 0)
+			(at 36.83 151.13 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -4978,7 +4998,7 @@
 			)
 		)
 		(property "Manufacturer Part Number" ""
-			(at 36.83 152.4 0)
+			(at 36.83 151.13 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -6440,7 +6460,7 @@
 	)
 	(symbol
 		(lib_id "power:+3V3")
-		(at 49.53 147.32 0)
+		(at 49.53 146.05 0)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
@@ -6449,7 +6469,7 @@
 		(fields_autoplaced yes)
 		(uuid "90b6c683-411a-4455-ae59-facfcbfc22c4")
 		(property "Reference" "#PWR032"
-			(at 49.53 151.13 0)
+			(at 49.53 149.86 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -6458,7 +6478,7 @@
 			)
 		)
 		(property "Value" "+3V3"
-			(at 49.53 142.24 0)
+			(at 49.53 140.97 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -6466,7 +6486,7 @@
 			)
 		)
 		(property "Footprint" ""
-			(at 49.53 147.32 0)
+			(at 49.53 146.05 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -6475,7 +6495,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 49.53 147.32 0)
+			(at 49.53 146.05 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -6484,7 +6504,7 @@
 			)
 		)
 		(property "Description" "Power symbol creates a global label with name \"+3V3\""
-			(at 49.53 147.32 0)
+			(at 49.53 146.05 0)
 			(effects
 				(font
 					(size 1.27 1.27)
