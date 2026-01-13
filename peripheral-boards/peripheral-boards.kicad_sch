@@ -3964,6 +3964,7 @@
 							)
 						)
 					)
+					(alternate "" input line)
 					(alternate "ADC2_IN4" bidirectional line)
 					(alternate "COMP2_INP" bidirectional line)
 					(alternate "COMP2_OUT" bidirectional line)
@@ -5597,7 +5598,7 @@
 	)
 	(rectangle
 		(start 97.79 90.17)
-		(end 209.55 193.04)
+		(end 219.71 193.04)
 		(stroke
 			(width 0)
 			(type default)
@@ -5621,8 +5622,8 @@
 		(uuid c8479805-8850-4605-a60a-5f70f78a4dbc)
 	)
 	(rectangle
-		(start 308.61 72.39)
-		(end 415.29 132.08)
+		(start 294.64 69.85)
+		(end 420.37 132.08)
 		(stroke
 			(width 0)
 			(type default)
@@ -6072,7 +6073,7 @@
 		(uuid "d1a523e4-dcff-4eb0-ac8e-a7d43de4bce8")
 	)
 	(no_connect
-		(at 383.54 93.98)
+		(at 392.43 93.98)
 		(uuid "dfb265a4-f10b-48a1-8ed7-10df2a4bcbc5")
 	)
 	(wire
@@ -6747,6 +6748,16 @@
 	)
 	(wire
 		(pts
+			(xy 388.62 88.9) (xy 387.35 88.9)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "731842d1-8b80-4432-8db4-a239bd00e043")
+	)
+	(wire
+		(pts
 			(xy 378.46 153.67) (xy 381 153.67)
 		)
 		(stroke
@@ -7197,7 +7208,7 @@
 	)
 	(wire
 		(pts
-			(xy 337.82 85.09) (xy 349.25 85.09)
+			(xy 327.66 85.09) (xy 339.09 85.09)
 		)
 		(stroke
 			(width 0)
@@ -7687,7 +7698,7 @@
 		(uuid "49ca2003-c02a-4935-aed7-3d8ff6cbf46b")
 	)
 	(label "Shock position"
-		(at 349.25 85.09 180)
+		(at 339.09 85.09 180)
 		(effects
 			(font
 				(size 0.889 0.889)
@@ -7800,28 +7811,6 @@
 			)
 		)
 	)
-	(global_label "PB0"
-		(shape input)
-		(at 378.46 88.9 180)
-		(fields_autoplaced yes)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-			(justify right)
-		)
-		(uuid "118a435b-d3bd-4694-854a-acbd74459b64")
-		(property "Intersheetrefs" "${INTERSHEET_REFS}"
-			(at 371.7253 88.9 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify right)
-				(hide yes)
-			)
-		)
-	)
 	(global_label "PC1"
 		(shape input)
 		(at 358.14 29.21 0)
@@ -7866,6 +7855,28 @@
 			)
 		)
 	)
+	(global_label "1x1_TireTemp_Sensor_SCL"
+		(shape input)
+		(at 189.23 171.45 0)
+		(fields_autoplaced yes)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left)
+		)
+		(uuid "1df5a6eb-ff54-4d05-a18b-8eaaf449f3c4")
+		(property "Intersheetrefs" "${INTERSHEET_REFS}"
+			(at 216.8288 171.45 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+				(hide yes)
+			)
+		)
+	)
 	(global_label "PB1"
 		(shape input)
 		(at 375.92 24.13 0)
@@ -7906,6 +7917,28 @@
 					(size 1.27 1.27)
 				)
 				(justify left)
+				(hide yes)
+			)
+		)
+	)
+	(global_label "1x1_TireTemp_Sensor_SDA"
+		(shape input)
+		(at 387.35 86.36 180)
+		(fields_autoplaced yes)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify right)
+		)
+		(uuid "2c53103f-0566-4071-839d-3b6b4d71ce81")
+		(property "Intersheetrefs" "${INTERSHEET_REFS}"
+			(at 359.6907 86.36 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
 				(hide yes)
 			)
 		)
@@ -7972,6 +8005,28 @@
 					(size 1.27 1.27)
 				)
 				(justify left)
+				(hide yes)
+			)
+		)
+	)
+	(global_label "1x1_TireTemp_Sensor_SDA"
+		(shape input)
+		(at 163.83 153.67 180)
+		(fields_autoplaced yes)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify right)
+		)
+		(uuid "4d3daf2d-f6e1-496d-99e4-4a877cbef71d")
+		(property "Intersheetrefs" "${INTERSHEET_REFS}"
+			(at 136.1707 153.67 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
 				(hide yes)
 			)
 		)
@@ -8064,28 +8119,6 @@
 			)
 		)
 	)
-	(global_label "PB1"
-		(shape input)
-		(at 327.66 104.14 90)
-		(fields_autoplaced yes)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-			(justify left)
-		)
-		(uuid "6f817721-0a51-4450-93c4-078b9127f4b1")
-		(property "Intersheetrefs" "${INTERSHEET_REFS}"
-			(at 327.66 97.4053 90)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-				(hide yes)
-			)
-		)
-	)
 	(global_label "STLINK_SWO"
 		(shape output)
 		(at 161.29 148.59 180)
@@ -8099,6 +8132,28 @@
 		(uuid "72b938ab-be25-40d8-9efe-f2be5dbeb5de")
 		(property "Intersheetrefs" "${INTERSHEET_REFS}"
 			(at 146.9353 148.59 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+				(hide yes)
+			)
+		)
+	)
+	(global_label "1x8_TireTemp_Sensor_SDA"
+		(shape input)
+		(at 327.66 104.14 180)
+		(fields_autoplaced yes)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify right)
+		)
+		(uuid "77839638-d503-4702-8fec-84e11eeccf66")
+		(property "Intersheetrefs" "${INTERSHEET_REFS}"
+			(at 300.0007 104.14 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -8154,7 +8209,7 @@
 	)
 	(global_label "SUSPENSION "
 		(shape output)
-		(at 349.25 85.09 0)
+		(at 339.09 85.09 0)
 		(fields_autoplaced yes)
 		(effects
 			(font
@@ -8164,7 +8219,7 @@
 		)
 		(uuid "7c8f98b3-10cd-4879-a0e1-8927ea9b45fc")
 		(property "Intersheetrefs" "${INTERSHEET_REFS}"
-			(at 365.1771 85.09 0)
+			(at 355.0171 85.09 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -8394,28 +8449,6 @@
 			)
 		)
 	)
-	(global_label "PB1"
-		(shape input)
-		(at 378.46 86.36 180)
-		(fields_autoplaced yes)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-			(justify right)
-		)
-		(uuid "a1eb6a83-4cea-4e65-a490-0649d06ab7e1")
-		(property "Intersheetrefs" "${INTERSHEET_REFS}"
-			(at 371.7253 86.36 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify right)
-				(hide yes)
-			)
-		)
-	)
 	(global_label "CANH"
 		(shape input)
 		(at 386.08 57.15 180)
@@ -8482,6 +8515,28 @@
 			)
 		)
 	)
+	(global_label "1x8_TireTemp_Sensor_SCL"
+		(shape input)
+		(at 335.28 119.38 0)
+		(fields_autoplaced yes)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left)
+		)
+		(uuid "afcd308c-adbd-401b-8151-c8e6bd7913c7")
+		(property "Intersheetrefs" "${INTERSHEET_REFS}"
+			(at 362.8788 119.38 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+				(hide yes)
+			)
+		)
+	)
 	(global_label "VCP_UART_RX"
 		(shape input)
 		(at 191.77 140.97 0)
@@ -8495,6 +8550,50 @@
 		(uuid "b46cc284-e4f2-4e48-a657-69c5765c9dc3")
 		(property "Intersheetrefs" "${INTERSHEET_REFS}"
 			(at 207.4552 140.97 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+				(hide yes)
+			)
+		)
+	)
+	(global_label "1x8_TireTemp_Sensor_SCL"
+		(shape input)
+		(at 189.23 156.21 0)
+		(fields_autoplaced yes)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left)
+		)
+		(uuid "b630a968-6fd8-4227-8a47-11dcd9ff69cc")
+		(property "Intersheetrefs" "${INTERSHEET_REFS}"
+			(at 216.8288 156.21 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+				(hide yes)
+			)
+		)
+	)
+	(global_label "1x8_TireTemp_Sensor_SDA"
+		(shape input)
+		(at 189.23 153.67 0)
+		(fields_autoplaced yes)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left)
+		)
+		(uuid "b73e47dd-fedf-4e43-af0c-b0a02c4c2439")
+		(property "Intersheetrefs" "${INTERSHEET_REFS}"
+			(at 216.8893 153.67 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -8544,6 +8643,28 @@
 					(size 1.27 1.27)
 				)
 				(justify left)
+				(hide yes)
+			)
+		)
+	)
+	(global_label "1x1_TireTemp_Sensor_SCL"
+		(shape input)
+		(at 388.62 88.9 180)
+		(fields_autoplaced yes)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify right)
+		)
+		(uuid "c10ccd87-2780-4077-8a3b-bed4717f1582")
+		(property "Intersheetrefs" "${INTERSHEET_REFS}"
+			(at 361.0212 88.9 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
 				(hide yes)
 			)
 		)
@@ -8720,28 +8841,6 @@
 					(size 1.27 1.27)
 				)
 				(justify left)
-				(hide yes)
-			)
-		)
-	)
-	(global_label "PB0"
-		(shape input)
-		(at 335.28 119.38 270)
-		(fields_autoplaced yes)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-			(justify right)
-		)
-		(uuid "f59b3269-f9a7-4ecc-b03a-6be7e46fa80a")
-		(property "Intersheetrefs" "${INTERSHEET_REFS}"
-			(at 335.28 126.1147 90)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify right)
 				(hide yes)
 			)
 		)
@@ -9542,10 +9641,11 @@
 		)
 		(pin "18"
 			(uuid "b4aee0a8-6c85-40ce-b003-2361580f7263")
+			(alternate "I2C2_SDA")
 		)
 		(pin "12"
 			(uuid "e2ddf082-341f-47f6-91cf-a790d60f6d78")
-			(alternate "PA7")
+			(alternate "ADC2_IN4")
 		)
 		(pin "15"
 			(uuid "465e2a59-3e47-4065-9dbe-c35f22912af5")
@@ -9586,6 +9686,7 @@
 		)
 		(pin "19"
 			(uuid "823ff01a-d03f-4757-941d-cc0f5319b886")
+			(alternate "I2C2_SCL")
 		)
 		(instances
 			(project ""
@@ -12541,7 +12642,7 @@
 	)
 	(symbol
 		(lib_id "power:GND")
-		(at 337.82 87.63 90)
+		(at 327.66 87.63 90)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
@@ -12550,7 +12651,7 @@
 		(fields_autoplaced yes)
 		(uuid "9324d385-4471-469f-bcee-a844705962e2")
 		(property "Reference" "#PWR012"
-			(at 344.17 87.63 0)
+			(at 334.01 87.63 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -12559,7 +12660,7 @@
 			)
 		)
 		(property "Value" "GND"
-			(at 341.63 87.6299 90)
+			(at 331.47 87.6299 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -12568,7 +12669,7 @@
 			)
 		)
 		(property "Footprint" ""
-			(at 337.82 87.63 0)
+			(at 327.66 87.63 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -12577,7 +12678,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 337.82 87.63 0)
+			(at 327.66 87.63 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -12586,7 +12687,7 @@
 			)
 		)
 		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
-			(at 337.82 87.63 0)
+			(at 327.66 87.63 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -12609,7 +12710,7 @@
 	(symbol
 		(lib_name "Conn_01x04_MountingPin_1")
 		(lib_id "Connector_Generic_MountingPin:Conn_01x04_MountingPin")
-		(at 383.54 83.82 0)
+		(at 392.43 83.82 0)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
@@ -12618,7 +12719,7 @@
 		(fields_autoplaced yes)
 		(uuid "9339410d-6bd0-4e6a-8d7f-a648fae390d5")
 		(property "Reference" "J6"
-			(at 386.08 84.1755 0)
+			(at 394.97 84.1755 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -12627,7 +12728,7 @@
 			)
 		)
 		(property "Value" "1x1 Tire Air Temp Sensor"
-			(at 386.08 86.7155 0)
+			(at 394.97 86.7155 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -12636,7 +12737,7 @@
 			)
 		)
 		(property "Footprint" "Connector_Molex:Molex_Nano-Fit_105309-xx04_1x04_P2.50mm_Vertical"
-			(at 383.54 83.82 0)
+			(at 392.43 83.82 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -12645,7 +12746,7 @@
 			)
 		)
 		(property "Datasheet" "~"
-			(at 383.54 83.82 0)
+			(at 392.43 83.82 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -12654,7 +12755,7 @@
 			)
 		)
 		(property "Description" "Generic connectable mounting pin connector, single row, 01x04, script generated (kicad-library-utils/schlib/autogen/connector/)"
-			(at 383.54 83.82 0)
+			(at 392.43 83.82 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -13392,7 +13493,7 @@
 	)
 	(symbol
 		(lib_id "power:+5V")
-		(at 378.46 83.82 90)
+		(at 387.35 83.82 90)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
@@ -13401,7 +13502,7 @@
 		(fields_autoplaced yes)
 		(uuid "b5653281-0433-4c9c-ac06-8492d308682f")
 		(property "Reference" "#PWR048"
-			(at 382.27 83.82 0)
+			(at 391.16 83.82 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -13410,7 +13511,7 @@
 			)
 		)
 		(property "Value" "+5V"
-			(at 374.65 83.8199 90)
+			(at 383.54 83.8199 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -13419,7 +13520,7 @@
 			)
 		)
 		(property "Footprint" ""
-			(at 378.46 83.82 0)
+			(at 387.35 83.82 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -13428,7 +13529,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 378.46 83.82 0)
+			(at 387.35 83.82 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -13437,7 +13538,7 @@
 			)
 		)
 		(property "Description" "Power symbol creates a global label with name \"+5V\""
-			(at 378.46 83.82 0)
+			(at 387.35 83.82 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -13727,7 +13828,7 @@
 				(justify right)
 			)
 		)
-		(property "Value" ""
+		(property "Value" "~"
 			(at 97.79 31.7499 0)
 			(effects
 				(font
@@ -14861,7 +14962,7 @@
 	)
 	(symbol
 		(lib_id "Device:R_Potentiometer")
-		(at 334.01 86.36 0)
+		(at 323.85 86.36 0)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
@@ -14870,7 +14971,7 @@
 		(fields_autoplaced yes)
 		(uuid "e82d7312-2b1d-488c-be4b-31ab27af45c9")
 		(property "Reference" "J3"
-			(at 331.216 78.486 0)
+			(at 321.056 78.486 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -14879,7 +14980,7 @@
 			)
 		)
 		(property "Value" "Suspenison Travel Sensor"
-			(at 336.55 90.932 0)
+			(at 326.39 90.932 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -14888,7 +14989,7 @@
 			)
 		)
 		(property "Footprint" "Connector_Molex:Molex_Nano-Fit_105309-xx03_1x03_P2.50mm_Vertical"
-			(at 334.01 86.36 0)
+			(at 323.85 86.36 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -14897,7 +14998,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 334.01 86.36 0)
+			(at 323.85 86.36 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -14906,7 +15007,7 @@
 			)
 		)
 		(property "Description" "Potentiometer"
-			(at 345.186 94.234 0)
+			(at 335.026 94.234 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -14915,7 +15016,7 @@
 			)
 		)
 		(property "Digikey Part Number" ""
-			(at 334.01 86.36 0)
+			(at 323.85 86.36 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -14924,7 +15025,7 @@
 			)
 		)
 		(property "Name" ""
-			(at 334.01 86.36 0)
+			(at 323.85 86.36 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -14933,7 +15034,7 @@
 			)
 		)
 		(property "Digikey Link" ""
-			(at 334.01 86.36 0)
+			(at 323.85 86.36 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -14942,7 +15043,7 @@
 			)
 		)
 		(property "Manufacturer Part Number" ""
-			(at 334.01 86.36 0)
+			(at 323.85 86.36 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -15057,7 +15158,7 @@
 	)
 	(symbol
 		(lib_id "power:GND")
-		(at 378.46 81.28 270)
+		(at 387.35 81.28 270)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
@@ -15066,7 +15167,7 @@
 		(fields_autoplaced yes)
 		(uuid "f009e67c-fca5-49e4-b477-29e6e9710b60")
 		(property "Reference" "#PWR044"
-			(at 372.11 81.28 0)
+			(at 381 81.28 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -15075,7 +15176,7 @@
 			)
 		)
 		(property "Value" "GND"
-			(at 374.65 81.2799 90)
+			(at 383.54 81.2799 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -15084,7 +15185,7 @@
 			)
 		)
 		(property "Footprint" ""
-			(at 378.46 81.28 0)
+			(at 387.35 81.28 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -15093,7 +15194,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 378.46 81.28 0)
+			(at 387.35 81.28 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -15102,7 +15203,7 @@
 			)
 		)
 		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
-			(at 378.46 81.28 0)
+			(at 387.35 81.28 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -15338,7 +15439,7 @@
 	)
 	(symbol
 		(lib_id "power:+5V")
-		(at 337.82 82.55 270)
+		(at 327.66 82.55 270)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
@@ -15347,7 +15448,7 @@
 		(fields_autoplaced yes)
 		(uuid "f4fd6582-3a38-4b93-b8f6-81fe9c0e5105")
 		(property "Reference" "#PWR011"
-			(at 334.01 82.55 0)
+			(at 323.85 82.55 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -15356,7 +15457,7 @@
 			)
 		)
 		(property "Value" "+5V"
-			(at 341.63 82.5499 90)
+			(at 331.47 82.5499 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -15365,7 +15466,7 @@
 			)
 		)
 		(property "Footprint" ""
-			(at 337.82 82.55 0)
+			(at 327.66 82.55 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -15374,7 +15475,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 337.82 82.55 0)
+			(at 327.66 82.55 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -15383,7 +15484,7 @@
 			)
 		)
 		(property "Description" "Power symbol creates a global label with name \"+5V\""
-			(at 337.82 82.55 0)
+			(at 327.66 82.55 0)
 			(effects
 				(font
 					(size 1.27 1.27)
