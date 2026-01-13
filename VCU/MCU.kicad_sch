@@ -4782,6 +4782,16 @@
 	)
 	(text "(100k + 200k)/(2π*100k*200k*4.7*10^-9)\n= 507.94"
 		(exclude_from_sim no)
+		(at 107.442 34.798 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+		)
+		(uuid "0db888f1-18ea-49ec-a4a7-6c6c9fe15388")
+	)
+	(text "(100k + 200k)/(2π*100k*200k*4.7*10^-9)\n= 507.94"
+		(exclude_from_sim no)
 		(at 106.68 98.806 0)
 		(effects
 			(font
@@ -4822,7 +4832,7 @@
 	)
 	(text "1.67 V"
 		(exclude_from_sim no)
-		(at 61.468 37.846 0)
+		(at 61.976 68.326 0)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -4860,9 +4870,29 @@
 		)
 		(uuid "64272908-cc5f-4fab-978c-1a449b951a65")
 	)
+	(text "5V\n"
+		(exclude_from_sim no)
+		(at 37.084 28.448 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+		)
+		(uuid "7d0f46c4-35eb-454d-9409-06a5e3b6e1e5")
+	)
+	(text "5V\n"
+		(exclude_from_sim no)
+		(at 36.068 92.456 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+		)
+		(uuid "7df80cd5-0893-4e8f-a4cf-15f9977c7060")
+	)
 	(text "3.33 V"
 		(exclude_from_sim no)
-		(at 61.976 68.326 0)
+		(at 61.468 37.846 0)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -4920,6 +4950,16 @@
 			)
 		)
 		(uuid "b96ce371-43c2-41af-bac6-a6521dfc9f6c")
+	)
+	(text "5V\n"
+		(exclude_from_sim no)
+		(at 37.592 58.674 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+		)
+		(uuid "c08fdb44-d374-4fde-8d7b-82c06b225a08")
 	)
 	(text "APPS + BPPS Buffer + Filter"
 		(exclude_from_sim no)
@@ -6217,7 +6257,7 @@
 	)
 	(wire
 		(pts
-			(xy 222.25 181.61) (xy 251.46 181.61)
+			(xy 219.71 181.61) (xy 220.98 181.61)
 		)
 		(stroke
 			(width 0)
@@ -6477,7 +6517,7 @@
 	)
 	(wire
 		(pts
-			(xy 224.79 176.53) (xy 251.46 176.53)
+			(xy 240.03 176.53) (xy 251.46 176.53)
 		)
 		(stroke
 			(width 0)
@@ -6834,6 +6874,16 @@
 			(type default)
 		)
 		(uuid "b2fc7670-c9f7-456d-a1eb-2af0a1aae12c")
+	)
+	(wire
+		(pts
+			(xy 228.6 181.61) (xy 251.46 181.61)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "b3542729-47c0-45a0-aa4e-fe45d0dfb6a2")
 	)
 	(wire
 		(pts
@@ -7856,7 +7906,7 @@
 		(uuid "e72c4671-b004-4250-8228-ce9b2b99ce98")
 	)
 	(label "LED_Strip_Signal"
-		(at 224.79 181.61 0)
+		(at 228.6 181.61 0)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -9179,7 +9229,7 @@
 	)
 	(hierarchical_label "UART5_TX"
 		(shape output)
-		(at 224.79 176.53 180)
+		(at 240.03 176.53 180)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -9234,7 +9284,7 @@
 	)
 	(hierarchical_label "LED_Strip_Signal"
 		(shape output)
-		(at 222.25 181.61 180)
+		(at 219.71 181.61 180)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -13687,6 +13737,118 @@
 			(project "VCU"
 				(path "/d46cfebc-cd32-4ec9-981b-3f67fe44510e/77141324-8e12-4fa0-be8a-c003c15572fb"
 					(reference "C45")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Device:R")
+		(at 224.79 181.61 270)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "635713db-e2b3-45ba-9cc5-c8039a46f95f")
+		(property "Reference" "R36"
+			(at 225.044 177.292 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "300"
+			(at 225.044 179.324 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" "Resistor_SMD:R_0603_1608Metric_Pad0.98x0.95mm_HandSolder"
+			(at 224.79 179.832 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "https://www.yageogroup.com/content/datasheet/asset/file/PYU-AC_51_ROHS_L"
+			(at 224.79 181.61 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Resistor"
+			(at 224.79 181.61 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Digi PN" "YAG5330CT-ND"
+			(at 224.79 181.61 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Digi URL" "https://www.digikey.com/en/products/detail/yageo/AC0603FR-07300RL/5896018"
+			(at 224.79 181.61 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "MFG" "Yageo"
+			(at 224.79 181.61 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "MFG PN" "AC0603FR-07300RL"
+			(at 224.79 181.61 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "MANUFACTURER" ""
+			(at 224.79 181.61 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "0be3c116-7fe5-492d-a30f-33506e8bcb44")
+		)
+		(pin "2"
+			(uuid "6f2d9a05-6038-44a2-ba6f-cee2c199ba0a")
+		)
+		(instances
+			(project "VCU"
+				(path "/d46cfebc-cd32-4ec9-981b-3f67fe44510e/77141324-8e12-4fa0-be8a-c003c15572fb"
+					(reference "R36")
 					(unit 1)
 				)
 			)
