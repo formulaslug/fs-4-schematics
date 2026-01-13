@@ -6197,7 +6197,7 @@
 		(uuid "32d621f4-5c84-4d4c-a391-60a8a453f944")
 	)
 	(no_connect
-		(at 101.6 85.09)
+		(at 101.6 69.85)
 		(uuid "429d6e5d-6def-4fee-9495-a8ff90d87ef3")
 	)
 	(no_connect
@@ -6771,6 +6771,16 @@
 			(type default)
 		)
 		(uuid "4bb5eb73-4c5c-4c78-ad57-d31e8fa1bd88")
+	)
+	(wire
+		(pts
+			(xy 69.85 85.09) (xy 99.06 85.09)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "4bb98450-5bbd-4708-8f14-ef3f509defc3")
 	)
 	(wire
 		(pts
@@ -7614,16 +7624,6 @@
 	)
 	(wire
 		(pts
-			(xy 69.85 69.85) (xy 99.06 69.85)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "c6f55043-7a1d-49fd-8c14-446acbfdf6bf")
-	)
-	(wire
-		(pts
 			(xy 264.16 73.66) (xy 265.43 73.66)
 		)
 		(stroke
@@ -7671,16 +7671,6 @@
 			(type default)
 		)
 		(uuid "cde33e0a-1e05-4bfb-a746-2f4963a50719")
-	)
-	(wire
-		(pts
-			(xy 69.85 85.09) (xy 96.52 85.09)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "d075ec9e-3943-4ada-8ed6-dc5038df76d1")
 	)
 	(wire
 		(pts
@@ -7891,6 +7881,16 @@
 			(type default)
 		)
 		(uuid "e6a7bd7f-0461-4e6c-a01c-b64c9558cb4b")
+	)
+	(wire
+		(pts
+			(xy 69.85 69.85) (xy 96.52 69.85)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "e8a906ca-e5ce-4c3c-8065-974f80eca96c")
 	)
 	(wire
 		(pts
@@ -8314,7 +8314,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "013fc187-86ab-42b2-9d5e-8a0df844e2cf")
-		(property "Reference" "#FLG?"
+		(property "Reference" "#FLG0101"
 			(at 237.49 192.405 0)
 			(effects
 				(font
@@ -8372,7 +8372,7 @@
 			)
 			(project ""
 				(path "/89c18bc7-bebe-4d17-a6e8-3a2f210bf7f7"
-					(reference "#FLG?")
+					(reference "#FLG0101")
 					(unit 1)
 				)
 			)
@@ -10487,7 +10487,7 @@
 		(on_board yes)
 		(dnp no)
 		(uuid "7a7fa2e1-e848-412f-ae51-cb94c6d30779")
-		(property "Reference" "#PWR?"
+		(property "Reference" "#PWR0103"
 			(at 245.11 198.12 0)
 			(effects
 				(font
@@ -10544,7 +10544,7 @@
 			)
 			(project ""
 				(path "/89c18bc7-bebe-4d17-a6e8-3a2f210bf7f7"
-					(reference "#PWR?")
+					(reference "#PWR0103")
 					(unit 1)
 				)
 			)
@@ -11527,7 +11527,7 @@
 		(on_board yes)
 		(dnp no)
 		(uuid "a30747db-4cb2-48da-84c3-b5f0d7f66963")
-		(property "Reference" "#PWR?"
+		(property "Reference" "#PWR0102"
 			(at 186.69 198.12 0)
 			(effects
 				(font
@@ -11584,7 +11584,7 @@
 			)
 			(project ""
 				(path "/89c18bc7-bebe-4d17-a6e8-3a2f210bf7f7"
-					(reference "#PWR?")
+					(reference "#PWR0102")
 					(unit 1)
 				)
 			)
@@ -12170,7 +12170,8 @@
 	)
 	(symbol
 		(lib_id "Relay:G2RL-1")
-		(at 104.14 77.47 180)
+		(at 104.14 77.47 0)
+		(mirror y)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
@@ -12178,7 +12179,7 @@
 		(dnp no)
 		(uuid "c3b03b8a-3a85-40c9-aa72-c074e65bce40")
 		(property "Reference" "K4"
-			(at 76.2 75.438 0)
+			(at 76.2 79.502 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -12187,7 +12188,7 @@
 			)
 		)
 		(property "Value" "DS1E-ML-DC12V"
-			(at 76.2 77.978 0)
+			(at 76.2 76.962 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -12196,7 +12197,7 @@
 			)
 		)
 		(property "Footprint" "Library:DS1E-ML-DC12V"
-			(at 92.71 76.2 0)
+			(at 92.71 78.74 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -12782,7 +12783,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "e5c4dc2b-aaaa-4c4d-b013-9a881a955da4")
-		(property "Reference" "#PWR?"
+		(property "Reference" "#PWR0101"
 			(at 214.63 215.9 0)
 			(effects
 				(font
@@ -12838,7 +12839,7 @@
 			)
 			(project ""
 				(path "/89c18bc7-bebe-4d17-a6e8-3a2f210bf7f7"
-					(reference "#PWR?")
+					(reference "#PWR0101")
 					(unit 1)
 				)
 			)
