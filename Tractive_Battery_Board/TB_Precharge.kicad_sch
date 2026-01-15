@@ -843,11 +843,12 @@
 			)
 			(embedded_fonts no)
 		)
-		(symbol "Diode:1N4148WT"
+		(symbol "Device:D"
 			(pin_numbers
 				(hide yes)
 			)
 			(pin_names
+				(offset 1.016)
 				(hide yes)
 			)
 			(exclude_from_sim no)
@@ -861,7 +862,7 @@
 					)
 				)
 			)
-			(property "Value" "1N4148WT"
+			(property "Value" "D"
 				(at 0 -2.54 0)
 				(effects
 					(font
@@ -869,16 +870,7 @@
 					)
 				)
 			)
-			(property "Footprint" "Diode_SMD:D_SOD-523"
-				(at 0 -4.445 0)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-					(hide yes)
-				)
-			)
-			(property "Datasheet" "https://www.diodes.com/assets/Datasheets/ds30396.pdf"
+			(property "Footprint" ""
 				(at 0 0 0)
 				(effects
 					(font
@@ -887,7 +879,16 @@
 					(hide yes)
 				)
 			)
-			(property "Description" "75V 0.15A Fast switching Diode, SOD-523"
+			(property "Datasheet" "~"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "Description" "Diode"
 				(at 0 0 0)
 				(effects
 					(font
@@ -923,7 +924,7 @@
 					(hide yes)
 				)
 			)
-			(property "ki_fp_filters" "D*SOD?523*"
+			(property "ki_fp_filters" "TO-???* *_Diode_* *SingleDiode* D_*"
 				(at 0 0 0)
 				(effects
 					(font
@@ -932,7 +933,7 @@
 					(hide yes)
 				)
 			)
-			(symbol "1N4148WT_0_1"
+			(symbol "D_0_1"
 				(polyline
 					(pts
 						(xy -1.27 1.27) (xy -1.27 -1.27)
@@ -970,7 +971,7 @@
 					)
 				)
 			)
-			(symbol "1N4148WT_1_1"
+			(symbol "D_1_1"
 				(pin passive line
 					(at -3.81 0 0)
 					(length 2.54)
@@ -1736,92 +1737,6 @@
 		)
 	)
 	(symbol
-		(lib_id "Diode:1N4148WT")
-		(at 109.22 30.48 180)
-		(unit 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(dnp no)
-		(fields_autoplaced yes)
-		(uuid "1f61e6d2-b9c0-48d9-b597-359bb83e4e1a")
-		(property "Reference" "D2"
-			(at 109.22 24.13 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Value" "1N4148WT"
-			(at 109.22 26.67 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Footprint" "Diode_SMD:D_SOD-523"
-			(at 109.22 26.035 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Datasheet" "https://www.diodes.com/assets/Datasheets/ds30396.pdf"
-			(at 109.22 30.48 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Description" "75V 0.15A Fast switching Diode, SOD-523"
-			(at 109.22 30.48 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Sim.Device" "D"
-			(at 109.22 30.48 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Sim.Pins" "1=K 2=A"
-			(at 109.22 30.48 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(pin "1"
-			(uuid "448fcf62-7e4e-4d31-98cf-7a0e357a914d")
-		)
-		(pin "2"
-			(uuid "e9b52428-ad64-4146-ac90-17166b9b7cf0")
-		)
-		(instances
-			(project ""
-				(path "/ca333741-5826-495c-b860-5422aa5e17fc/5f0a52d4-7acf-46dd-8438-fce2f3c5a578"
-					(reference "D2")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
 		(lib_name "DN2540N3-G_1")
 		(lib_id "Transistor_FET_Other:DN2540N3-G")
 		(at 82.55 52.07 0)
@@ -2063,6 +1978,91 @@
 		)
 	)
 	(symbol
+		(lib_id "Device:D")
+		(at 109.22 30.48 180)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "b83f120a-2bd5-4a5e-940f-4eed13efdb6d")
+		(property "Reference" "D2"
+			(at 109.22 27.94 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "D"
+			(at 108.966 25.908 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" "Diode_SMD:D_2010_5025Metric_Pad1.52x2.65mm_HandSolder"
+			(at 109.22 30.48 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "https://www.comchiptech.com/admin/files/product/ACGRAT101L-HF%20Thru%20ACGRAT105L-HF%20RevB849012.pdf"
+			(at 109.22 30.48 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" ""
+			(at 109.22 30.48 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Sim.Device" "D"
+			(at 109.22 30.48 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Sim.Pins" "1=K 2=A"
+			(at 109.22 30.48 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "2"
+			(uuid "064bd73d-c329-48ed-8152-c502c70a34a0")
+		)
+		(pin "1"
+			(uuid "8b4b1d1a-97c3-4c3f-ab1e-cd8dc1ad0b7f")
+		)
+		(instances
+			(project "Tractive_Battery_Board"
+				(path "/ca333741-5826-495c-b860-5422aa5e17fc/5f0a52d4-7acf-46dd-8438-fce2f3c5a578"
+					(reference "D2")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
 		(lib_id "FS_4_SCHEMATICS:J102K1CS324VDC.20")
 		(at 109.22 48.26 270)
 		(unit 1)
@@ -2070,10 +2070,9 @@
 		(in_bom yes)
 		(on_board yes)
 		(dnp no)
-		(fields_autoplaced yes)
 		(uuid "d5aa31de-8492-420d-8a80-0cdd38ba49c2")
 		(property "Reference" "K3"
-			(at 109.22 33.02 90)
+			(at 109.22 33.528 90)
 			(effects
 				(font
 					(size 1.27 1.27)
