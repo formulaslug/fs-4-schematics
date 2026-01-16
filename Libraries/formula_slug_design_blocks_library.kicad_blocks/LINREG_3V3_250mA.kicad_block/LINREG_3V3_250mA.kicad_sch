@@ -2,7 +2,7 @@
 	(version 20250114)
 	(generator "eeschema")
 	(generator_version "9.0")
-	(uuid "a4cbfe0a-4e2b-40ee-89cc-b8e60803e2ea")
+	(uuid "16f7045d-2802-40b2-9959-2cc2525cade7")
 	(paper "A4")
 	(lib_symbols
 		(symbol "Device:C"
@@ -409,7 +409,7 @@
 			)
 			(embedded_fonts no)
 		)
-		(symbol "power:+5V"
+		(symbol "power:+3V3"
 			(power)
 			(pin_numbers
 				(hide yes)
@@ -430,7 +430,7 @@
 					(hide yes)
 				)
 			)
-			(property "Value" "+5V"
+			(property "Value" "+3V3"
 				(at 0 3.556 0)
 				(effects
 					(font
@@ -456,7 +456,7 @@
 					(hide yes)
 				)
 			)
-			(property "Description" "Power symbol creates a global label with name \"+5V\""
+			(property "Description" "Power symbol creates a global label with name \"+3V3\""
 				(at 0 0 0)
 				(effects
 					(font
@@ -474,7 +474,7 @@
 					(hide yes)
 				)
 			)
-			(symbol "+5V_0_1"
+			(symbol "+3V3_0_1"
 				(polyline
 					(pts
 						(xy -0.762 1.27) (xy 0 2.54)
@@ -512,7 +512,7 @@
 					)
 				)
 			)
-			(symbol "+5V_1_1"
+			(symbol "+3V3_1_1"
 				(pin power_in line
 					(at 0 0 90)
 					(length 0)
@@ -637,140 +637,74 @@
 		)
 	)
 	(junction
-		(at 27.94 34.29)
+		(at 99.06 35.56)
 		(diameter 0)
 		(color 0 0 0 0)
-		(uuid "368b7c9e-b9c3-476e-9e4d-81e47b14841c")
+		(uuid "0caaa0e1-015d-4014-a217-fe97f45664d3")
 	)
 	(junction
-		(at 58.42 34.29)
+		(at 68.58 35.56)
 		(diameter 0)
 		(color 0 0 0 0)
-		(uuid "b70a8716-0506-4926-bd8b-90b4b420e310")
+		(uuid "1ebbf31b-6f48-465f-b1bc-618eac861079")
 	)
 	(junction
-		(at 43.18 41.91)
+		(at 83.82 43.18)
 		(diameter 0)
 		(color 0 0 0 0)
-		(uuid "d7e0d336-524b-43a8-957b-f9a2bfee3b55")
+		(uuid "ed8bd265-96b5-4ed7-b193-afd5582c7028")
 	)
 	(wire
 		(pts
-			(xy 50.8 34.29) (xy 58.42 34.29)
+			(xy 68.58 35.56) (xy 76.2 35.56)
 		)
 		(stroke
 			(width 0)
 			(type default)
 		)
-		(uuid "a0f05250-de68-4fc5-bebf-b5e95fddd8ee")
+		(uuid "1ede7419-af31-4e64-895e-b99c48c7d8ce")
 	)
 	(wire
 		(pts
-			(xy 43.18 41.91) (xy 58.42 41.91)
+			(xy 68.58 43.18) (xy 83.82 43.18)
 		)
 		(stroke
 			(width 0)
 			(type default)
 		)
-		(uuid "a383ebe5-794f-45e0-a7f4-e573cde81233")
+		(uuid "6e5471dc-c89a-4876-aa7d-73b292681d91")
 	)
 	(wire
 		(pts
-			(xy 27.94 34.29) (xy 35.56 34.29)
+			(xy 91.44 35.56) (xy 99.06 35.56)
 		)
 		(stroke
 			(width 0)
 			(type default)
 		)
-		(uuid "aaf34ab6-f631-49df-acb1-6ba842bc8ceb")
+		(uuid "92375abf-0ac5-4f2b-b351-4a491883c497")
 	)
 	(wire
 		(pts
-			(xy 27.94 41.91) (xy 43.18 41.91)
+			(xy 83.82 43.18) (xy 99.06 43.18)
 		)
 		(stroke
 			(width 0)
 			(type default)
 		)
-		(uuid "cec27d86-e550-4ec6-8cdd-6b2eb213571a")
-	)
-	(symbol
-		(lib_id "power:+5V")
-		(at 58.42 34.29 0)
-		(unit 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(dnp no)
-		(fields_autoplaced yes)
-		(uuid "4ceef435-df21-40a1-b8d4-642062420ff5")
-		(property "Reference" "#PWR0101"
-			(at 58.42 38.1 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Value" "+5V"
-			(at 58.42 29.21 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Footprint" ""
-			(at 58.42 34.29 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Datasheet" ""
-			(at 58.42 34.29 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Description" "Power symbol creates a global label with name \"+5V\""
-			(at 58.42 34.29 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(pin "1"
-			(uuid "dff4ea32-dfbc-4f14-b590-ee94ddc54df5")
-		)
-		(instances
-			(project ""
-				(path "/942abb8d-7bd1-407c-87fc-44ff11dd12c5"
-					(reference "#PWR0101")
-					(unit 1)
-				)
-			)
-		)
+		(uuid "bcc10c4e-9308-4f49-a0b8-6cc0e2b57f3a")
 	)
 	(symbol
 		(lib_id "Device:C")
-		(at 27.94 38.1 180)
+		(at 99.06 39.37 180)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
 		(on_board yes)
 		(dnp no)
-		(uuid "73df64c5-e2ba-4282-a593-b9541a4afb02")
+		(uuid "02e25b09-b86f-4ce5-ba0e-ac2ae3052e0b")
 		(property "Reference" "C?"
-			(at 30.48 36.83 0)
+			(at 101.6 38.1 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -779,7 +713,7 @@
 			)
 		)
 		(property "Value" "1uF"
-			(at 30.48 39.37 0)
+			(at 101.6 40.64 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -788,7 +722,7 @@
 			)
 		)
 		(property "Footprint" "Capacitor_SMD:C_0603_1608Metric_Pad1.08x0.95mm_HandSolder"
-			(at 26.9748 34.29 0)
+			(at 98.0948 35.56 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -797,7 +731,7 @@
 			)
 		)
 		(property "Datasheet" "https://mm.digikey.com/Volume0/opasdata/d220001/medias/docus/3644/CL10B105KA8NNNC_spec.pdf"
-			(at 27.94 38.1 0)
+			(at 99.06 39.37 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -806,7 +740,7 @@
 			)
 		)
 		(property "Description" "Unpolarized capacitor"
-			(at 27.94 38.1 0)
+			(at 99.06 39.37 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -815,7 +749,7 @@
 			)
 		)
 		(property "Digi PN" "1276-1184-1-ND"
-			(at 27.94 38.1 0)
+			(at 99.06 39.37 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -824,7 +758,7 @@
 			)
 		)
 		(property "MFG" "Samsung"
-			(at 27.94 38.1 0)
+			(at 99.06 39.37 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -833,7 +767,7 @@
 			)
 		)
 		(property "MFG PN" "CL10B105KA8NNNC"
-			(at 27.94 38.1 0)
+			(at 99.06 39.37 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -842,13 +776,13 @@
 			)
 		)
 		(pin "2"
-			(uuid "cb7fd48b-59f0-4993-b96e-0adab25341b4")
+			(uuid "52989add-3bad-4e30-8e95-49981c683e97")
 		)
 		(pin "1"
-			(uuid "e8bf518e-882c-46cc-a945-5bc1ff5a8f9e")
+			(uuid "f0b4d638-2554-4d1d-8287-6692def17c85")
 		)
 		(instances
-			(project ""
+			(project "design-blocks-workshop"
 				(path "/942abb8d-7bd1-407c-87fc-44ff11dd12c5"
 					(reference "C?")
 					(unit 1)
@@ -858,15 +792,15 @@
 	)
 	(symbol
 		(lib_id "Device:C")
-		(at 58.42 38.1 180)
+		(at 68.58 39.37 180)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
 		(on_board yes)
 		(dnp no)
-		(uuid "892b574a-a26c-4222-b7c8-ffa12b456fb3")
+		(uuid "246614ad-96e4-4379-a119-1136e12e6465")
 		(property "Reference" "C?"
-			(at 60.96 36.83 0)
+			(at 71.12 38.1 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -875,7 +809,7 @@
 			)
 		)
 		(property "Value" "1uF"
-			(at 60.96 39.37 0)
+			(at 71.12 40.64 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -884,7 +818,7 @@
 			)
 		)
 		(property "Footprint" "Capacitor_SMD:C_0603_1608Metric_Pad1.08x0.95mm_HandSolder"
-			(at 57.4548 34.29 0)
+			(at 67.6148 35.56 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -893,7 +827,7 @@
 			)
 		)
 		(property "Datasheet" "https://mm.digikey.com/Volume0/opasdata/d220001/medias/docus/3644/CL10B105KA8NNNC_spec.pdf"
-			(at 58.42 38.1 0)
+			(at 68.58 39.37 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -902,7 +836,7 @@
 			)
 		)
 		(property "Description" "Unpolarized capacitor"
-			(at 58.42 38.1 0)
+			(at 68.58 39.37 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -911,7 +845,7 @@
 			)
 		)
 		(property "Digi PN" "1276-1184-1-ND"
-			(at 58.42 38.1 0)
+			(at 68.58 39.37 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -920,7 +854,7 @@
 			)
 		)
 		(property "MFG" "Samsung"
-			(at 58.42 38.1 0)
+			(at 68.58 39.37 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -929,7 +863,7 @@
 			)
 		)
 		(property "MFG PN" "CL10B105KA8NNNC"
-			(at 58.42 38.1 0)
+			(at 68.58 39.37 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -938,200 +872,15 @@
 			)
 		)
 		(pin "2"
-			(uuid "87df4be1-2102-482b-8bac-48251a18791f")
+			(uuid "4a3eb84c-54d8-4acd-a6cf-a1c7628e76b7")
 		)
 		(pin "1"
-			(uuid "3d880819-517d-428d-bfca-59785284ef3d")
+			(uuid "c49c9b5d-5916-47ec-8e99-6dcd03020a09")
 		)
 		(instances
-			(project ""
+			(project "design-blocks-workshop"
 				(path "/942abb8d-7bd1-407c-87fc-44ff11dd12c5"
 					(reference "C?")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
-		(lib_id "power:GND")
-		(at 43.18 41.91 0)
-		(unit 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(dnp no)
-		(fields_autoplaced yes)
-		(uuid "a4c44fec-ba02-430f-9357-8cdf0f0326c3")
-		(property "Reference" "#PWR01"
-			(at 43.18 48.26 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Value" "GND"
-			(at 43.18 46.99 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Footprint" ""
-			(at 43.18 41.91 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Datasheet" ""
-			(at 43.18 41.91 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
-			(at 43.18 41.91 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(pin "1"
-			(uuid "5a4f2380-b121-4c90-9ada-4e9b1a663e9d")
-		)
-		(instances
-			(project ""
-				(path "/316d607d-67d5-47e1-a1a4-776b06c14817"
-					(reference "#PWR01")
-					(unit 1)
-				)
-			)
-			(project ""
-				(path "/942abb8d-7bd1-407c-87fc-44ff11dd12c5"
-					(reference "#PWR0103")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
-		(lib_id "Regulator_Linear:MCP1703Ax-500xxTT")
-		(at 43.18 34.29 0)
-		(unit 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(dnp no)
-		(fields_autoplaced yes)
-		(uuid "e10199ba-a2be-4fa8-90ff-0aa995e8721c")
-		(property "Reference" "U?"
-			(at 43.18 27.94 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Value" "MCP1703AT-5002E/CB"
-			(at 43.18 30.48 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Footprint" "Package_TO_SOT_SMD:TSOT-23_HandSoldering"
-			(at 43.18 29.21 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Datasheet" "https://ww1.microchip.com/downloads/en/DeviceDoc/20005122B.pdf"
-			(at 43.18 35.56 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Description" "Low Quiescent Current LDO Regulator, 5.0V, 250mA, Vin<=16V, SOT-23"
-			(at 43.18 34.29 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Digi PN" "MCP1703AT-5002E/CBCT-ND"
-			(at 43.18 34.29 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "MFG" "Microchip Technology"
-			(at 43.18 34.29 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "MFG PN" "MCP1703AT-5002E/CB"
-			(at 43.18 34.29 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Digi URL" "https://www.digikey.com/en/products/detail/microchip-technology/MCP1703AT-5002E-CB/3131480"
-			(at 43.18 34.29 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(pin "3"
-			(uuid "0b954986-65df-43e7-9910-9ea366792655")
-		)
-		(pin "1"
-			(uuid "dcf96f6e-51d4-4b4d-9403-cffc852efa4d")
-		)
-		(pin "2"
-			(uuid "41774069-008e-4a0f-b052-64f67f0f8db4")
-		)
-		(instances
-			(project ""
-				(path "/316d607d-67d5-47e1-a1a4-776b06c14817"
-					(reference "U?")
-					(unit 1)
-				)
-			)
-			(project ""
-				(path "/942abb8d-7bd1-407c-87fc-44ff11dd12c5"
-					(reference "U?")
 					(unit 1)
 				)
 			)
@@ -1139,16 +888,16 @@
 	)
 	(symbol
 		(lib_id "power:+12V")
-		(at 27.94 34.29 0)
+		(at 68.58 35.56 0)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
 		(on_board yes)
 		(dnp no)
 		(fields_autoplaced yes)
-		(uuid "e4bd55c4-baf4-4323-a02e-88efda90ed17")
-		(property "Reference" "#PWR0102"
-			(at 27.94 38.1 0)
+		(uuid "2d91fe93-8ed0-403d-ba45-6fa24511349a")
+		(property "Reference" "#PWR04"
+			(at 68.58 39.37 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -1157,7 +906,7 @@
 			)
 		)
 		(property "Value" "+12V"
-			(at 27.94 29.21 0)
+			(at 68.58 30.48 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -1165,7 +914,7 @@
 			)
 		)
 		(property "Footprint" ""
-			(at 27.94 34.29 0)
+			(at 68.58 35.56 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -1174,7 +923,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 27.94 34.29 0)
+			(at 68.58 35.56 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -1183,7 +932,7 @@
 			)
 		)
 		(property "Description" "Power symbol creates a global label with name \"+12V\""
-			(at 27.94 34.29 0)
+			(at 68.58 35.56 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -1192,12 +941,251 @@
 			)
 		)
 		(pin "1"
-			(uuid "2ec10b95-f159-4481-b440-7520f3eb158c")
+			(uuid "ddbe0be8-db99-4be6-a094-609e8f39db62")
 		)
 		(instances
-			(project ""
+			(project "design-blocks-workshop"
 				(path "/942abb8d-7bd1-407c-87fc-44ff11dd12c5"
-					(reference "#PWR0102")
+					(reference "#PWR04")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Regulator_Linear:MCP1703Ax-500xxTT")
+		(at 83.82 35.56 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "8c527243-f53a-4857-8eb4-b600bc2c4516")
+		(property "Reference" "U?"
+			(at 83.82 29.21 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "MCP1703AT-3302E/CB"
+			(at 83.82 31.75 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" "Package_TO_SOT_SMD:TSOT-23_HandSoldering"
+			(at 83.82 30.48 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "https://ww1.microchip.com/downloads/en/DeviceDoc/20005122B.pdf"
+			(at 83.82 36.83 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Low Quiescent Current LDO Regulator, 5.0V, 250mA, Vin<=16V, SOT-23"
+			(at 83.82 35.56 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Digi PN" "MCP1703AT-3302E/CBCT-ND"
+			(at 83.82 35.56 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "MFG" "Microchip Technology"
+			(at 83.82 35.56 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "MFG PN" "MCP1703AT-3302E/CB"
+			(at 83.82 35.56 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Digi URL" "https://www.digikey.com/en/products/detail/microchip-technology/MCP1703AT-3302E-CB/3131472"
+			(at 83.82 35.56 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "3"
+			(uuid "c5dbaa7a-1112-43ae-a6e2-cd0d1fcb0210")
+		)
+		(pin "1"
+			(uuid "ac8c238b-2acf-4adb-8c3b-8ee96387d701")
+		)
+		(pin "2"
+			(uuid "64468141-b207-4514-ba2f-c5d8cd572422")
+		)
+		(instances
+			(project "design-blocks-workshop"
+				(path "/942abb8d-7bd1-407c-87fc-44ff11dd12c5"
+					(reference "U?")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "power:+3V3")
+		(at 99.06 35.56 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "b43d7bff-4be4-4110-bc6a-3736cf64bb7a")
+		(property "Reference" "#PWR06"
+			(at 99.06 39.37 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Value" "+3V3"
+			(at 99.06 30.48 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" ""
+			(at 99.06 35.56 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" ""
+			(at 99.06 35.56 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Power symbol creates a global label with name \"+3V3\""
+			(at 99.06 35.56 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "1d187559-bece-4150-bffa-33acc6fef770")
+		)
+		(instances
+			(project "design-blocks-workshop"
+				(path "/942abb8d-7bd1-407c-87fc-44ff11dd12c5"
+					(reference "#PWR06")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "power:GND")
+		(at 83.82 43.18 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "e9d8b808-b22c-4284-a686-75731d98f61c")
+		(property "Reference" "#PWR05"
+			(at 83.82 49.53 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Value" "GND"
+			(at 83.82 48.26 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" ""
+			(at 83.82 43.18 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" ""
+			(at 83.82 43.18 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
+			(at 83.82 43.18 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "6cf14094-e82d-4b22-ab81-07b09b752e67")
+		)
+		(instances
+			(project "design-blocks-workshop"
+				(path "/942abb8d-7bd1-407c-87fc-44ff11dd12c5"
+					(reference "#PWR05")
 					(unit 1)
 				)
 			)
