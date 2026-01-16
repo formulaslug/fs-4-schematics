@@ -3348,156 +3348,6 @@
 			)
 			(embedded_fonts no)
 		)
-		(symbol "Switch:SW_Push"
-			(pin_numbers
-				(hide yes)
-			)
-			(pin_names
-				(offset 1.016)
-				(hide yes)
-			)
-			(exclude_from_sim no)
-			(in_bom yes)
-			(on_board yes)
-			(property "Reference" "SW"
-				(at 1.27 2.54 0)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-					(justify left)
-				)
-			)
-			(property "Value" "SW_Push"
-				(at 0 -1.524 0)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-				)
-			)
-			(property "Footprint" ""
-				(at 0 5.08 0)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-					(hide yes)
-				)
-			)
-			(property "Datasheet" "~"
-				(at 0 5.08 0)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-					(hide yes)
-				)
-			)
-			(property "Description" "Push button switch, generic, two pins"
-				(at 0 0 0)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-					(hide yes)
-				)
-			)
-			(property "ki_keywords" "switch normally-open pushbutton push-button"
-				(at 0 0 0)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-					(hide yes)
-				)
-			)
-			(symbol "SW_Push_0_1"
-				(circle
-					(center -2.032 0)
-					(radius 0.508)
-					(stroke
-						(width 0)
-						(type default)
-					)
-					(fill
-						(type none)
-					)
-				)
-				(polyline
-					(pts
-						(xy 0 1.27) (xy 0 3.048)
-					)
-					(stroke
-						(width 0)
-						(type default)
-					)
-					(fill
-						(type none)
-					)
-				)
-				(circle
-					(center 2.032 0)
-					(radius 0.508)
-					(stroke
-						(width 0)
-						(type default)
-					)
-					(fill
-						(type none)
-					)
-				)
-				(polyline
-					(pts
-						(xy 2.54 1.27) (xy -2.54 1.27)
-					)
-					(stroke
-						(width 0)
-						(type default)
-					)
-					(fill
-						(type none)
-					)
-				)
-				(pin passive line
-					(at -5.08 0 0)
-					(length 2.54)
-					(name "1"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-					(number "1"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-				)
-				(pin passive line
-					(at 5.08 0 180)
-					(length 2.54)
-					(name "2"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-					(number "2"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-				)
-			)
-			(embedded_fonts no)
-		)
 		(symbol "power:+12V"
 			(power)
 			(pin_numbers
@@ -3852,7 +3702,7 @@
 	)
 	(text "Relay Driver Contains internal resistors\n"
 		(exclude_from_sim no)
-		(at 97.282 123.19 0)
+		(at 173.482 119.38 0)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -3862,7 +3712,7 @@
 	)
 	(text "IMD Delay\n"
 		(exclude_from_sim no)
-		(at 181.864 96.774 0)
+		(at 258.064 95.504 0)
 		(effects
 			(font
 				(size 2.54 2.54)
@@ -3872,7 +3722,7 @@
 	)
 	(text "15.2 Startup Second Delay\n"
 		(exclude_from_sim no)
-		(at 115.824 68.326 0)
+		(at 192.024 67.056 0)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -3880,9 +3730,19 @@
 		)
 		(uuid "769aa707-13bd-4765-9c4a-f2fbc988b136")
 	)
+	(text "confirm with cole\n|\nv\n\n"
+		(exclude_from_sim no)
+		(at 32.512 68.326 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+		)
+		(uuid "8638751f-0392-4373-89ab-0e3d3a04f57e")
+	)
 	(text "BMS_Relay\n"
 		(exclude_from_sim no)
-		(at 70.104 46.482 0)
+		(at 146.304 45.212 0)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -3892,7 +3752,17 @@
 	)
 	(text "Outputs Low When \nFault Detected From IMD"
 		(exclude_from_sim no)
-		(at 119.38 57.912 0)
+		(at 33.02 73.152 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+		)
+		(uuid "a3b8a7ba-15bb-49d9-850d-4eb4b2dc4a71")
+	)
+	(text "Outputs Low When \nFault Detected From IMD"
+		(exclude_from_sim no)
+		(at 195.58 56.642 0)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -3902,7 +3772,7 @@
 	)
 	(text "IMD Relay\n"
 		(exclude_from_sim no)
-		(at 243.078 44.196 0)
+		(at 319.278 42.926 0)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -3910,115 +3780,127 @@
 		)
 		(uuid "c8445524-ee10-4ddd-858f-57c3a537b182")
 	)
+	(text "IMD Delay\n"
+		(exclude_from_sim no)
+		(at 95.504 112.014 0)
+		(effects
+			(font
+				(size 2.54 2.54)
+			)
+		)
+		(uuid "df93ec0a-1fb3-402a-8988-495c368545d2")
+	)
 	(junction
-		(at 62.23 63.5)
+		(at 35.56 99.06)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "01e16c02-cd50-4e4c-aa4d-c4fac95999a0")
+	)
+	(junction
+		(at 138.43 62.23)
 		(diameter 0)
 		(color 0 0 0 0)
 		(uuid "0a2f3b0f-f837-488b-ad17-52632574fd3d")
 	)
 	(junction
-		(at 62.23 72.39)
+		(at 125.73 107.95)
 		(diameter 0)
 		(color 0 0 0 0)
-		(uuid "2098450b-3f61-440d-a515-c714edaba838")
+		(uuid "218b921c-d544-46bf-9184-00280ce30e16")
 	)
 	(junction
-		(at 80.01 72.39)
+		(at 78.74 99.06)
 		(diameter 0)
 		(color 0 0 0 0)
-		(uuid "4287fb02-1630-4b35-aac3-497aead90bfd")
+		(uuid "48c18674-61b6-428b-9c70-970767720871")
 	)
 	(junction
-		(at 205.74 92.71)
+		(at 281.94 91.44)
 		(diameter 0)
 		(color 0 0 0 0)
 		(uuid "55c13ddd-09aa-40f6-953d-763b6b44985f")
 	)
 	(junction
-		(at 114.3 83.82)
+		(at 104.14 82.55)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "58f15570-1438-4443-a84e-ecfce271730d")
+	)
+	(junction
+		(at 190.5 82.55)
 		(diameter 0)
 		(color 0 0 0 0)
 		(uuid "656d2434-84f9-4140-af32-cfd07e2eaf74")
 	)
 	(junction
-		(at 165.1 83.82)
+		(at 241.3 82.55)
 		(diameter 0)
 		(color 0 0 0 0)
 		(uuid "6658755e-8156-4e78-bc9c-a1bd22e895ea")
 	)
 	(junction
-		(at 271.78 48.26)
+		(at 347.98 46.99)
 		(diameter 0)
 		(color 0 0 0 0)
 		(uuid "6977e72f-3f18-4d26-81da-05b73af879b0")
 	)
 	(junction
-		(at 78.74 111.76)
+		(at 27.94 99.06)
 		(diameter 0)
 		(color 0 0 0 0)
-		(uuid "6dfd5d57-6b0d-4972-bc55-e2ea0549737b")
+		(uuid "8ae86200-b7ba-4f52-9a73-210df7572b1d")
 	)
 	(junction
-		(at 62.23 66.04)
+		(at 40.64 99.06)
 		(diameter 0)
 		(color 0 0 0 0)
-		(uuid "79d564b0-5ad2-4b58-86b3-b550ab9f83c4")
+		(uuid "904f41f6-573f-42db-a1a4-1eae07e0da52")
 	)
 	(junction
-		(at 132.08 88.9)
+		(at 208.28 87.63)
 		(diameter 0)
 		(color 0 0 0 0)
 		(uuid "94e59782-4962-4e2f-b1f8-1863c5119b63")
 	)
 	(junction
-		(at 96.52 50.8)
+		(at 172.72 49.53)
 		(diameter 0)
 		(color 0 0 0 0)
 		(uuid "c3927674-d735-4969-9004-208e725e640c")
 	)
 	(junction
-		(at 96.52 77.47)
-		(diameter 0)
-		(color 0 0 0 0)
-		(uuid "c9bfe534-9209-48dc-8c8c-79ace7c30203")
-	)
-	(junction
-		(at 127 83.82)
+		(at 203.2 82.55)
 		(diameter 0)
 		(color 0 0 0 0)
 		(uuid "d2bff4df-cdda-41de-8fb0-c86b3914f36c")
 	)
 	(junction
-		(at 190.5 67.31)
+		(at 45.72 104.14)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "db12f375-e5dd-4fcb-ae4b-0c85fd19f7b8")
+	)
+	(junction
+		(at 266.7 66.04)
 		(diameter 0)
 		(color 0 0 0 0)
 		(uuid "e3d080ef-e525-4683-a81f-c59babba63f9")
 	)
 	(junction
-		(at 121.92 83.82)
+		(at 198.12 82.55)
 		(diameter 0)
 		(color 0 0 0 0)
 		(uuid "f9a1e510-6878-4b1f-bbf1-f92a143ca7dd")
 	)
 	(junction
-		(at 234.95 60.96)
+		(at 311.15 59.69)
 		(diameter 0)
 		(color 0 0 0 0)
 		(uuid "fc75212a-693b-4fcb-9378-5097c9f15f96")
 	)
 	(wire
 		(pts
-			(xy 78.74 63.5) (xy 96.52 63.5)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "019a6a85-5128-44ce-98c0-eb45c7e8eb0f")
-	)
-	(wire
-		(pts
-			(xy 80.01 72.39) (xy 80.01 83.82)
+			(xy 156.21 64.77) (xy 156.21 74.93)
 		)
 		(stroke
 			(width 0)
@@ -4028,7 +3910,37 @@
 	)
 	(wire
 		(pts
-			(xy 107.95 83.82) (xy 114.3 83.82)
+			(xy 97.79 82.55) (xy 104.14 82.55)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "030fccae-15a7-4e0b-8cd8-2542106467dc")
+	)
+	(wire
+		(pts
+			(xy 104.14 82.55) (xy 104.14 85.09)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "0486c5b8-2ce9-400f-8d36-5ada7721a5c5")
+	)
+	(wire
+		(pts
+			(xy 78.74 107.95) (xy 125.73 107.95)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "05b6c982-0978-423d-a21f-1af45d7a8af5")
+	)
+	(wire
+		(pts
+			(xy 184.15 82.55) (xy 190.5 82.55)
 		)
 		(stroke
 			(width 0)
@@ -4038,7 +3950,17 @@
 	)
 	(wire
 		(pts
-			(xy 96.52 50.8) (xy 96.52 48.26)
+			(xy 27.94 90.17) (xy 27.94 99.06)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "0a2e864b-7c24-41e9-a29f-c817c2481cfc")
+	)
+	(wire
+		(pts
+			(xy 172.72 49.53) (xy 172.72 46.99)
 		)
 		(stroke
 			(width 0)
@@ -4058,7 +3980,7 @@
 	)
 	(wire
 		(pts
-			(xy 62.23 62.23) (xy 62.23 63.5)
+			(xy 138.43 60.96) (xy 138.43 62.23)
 		)
 		(stroke
 			(width 0)
@@ -4068,7 +3990,7 @@
 	)
 	(wire
 		(pts
-			(xy 121.92 83.82) (xy 121.92 91.44)
+			(xy 198.12 82.55) (xy 198.12 90.17)
 		)
 		(stroke
 			(width 0)
@@ -4078,7 +4000,17 @@
 	)
 	(wire
 		(pts
-			(xy 127 86.36) (xy 127 83.82)
+			(xy 44.45 77.47) (xy 63.5 77.47)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "11e089ca-436e-4889-96b0-a1999a5a9547")
+	)
+	(wire
+		(pts
+			(xy 203.2 85.09) (xy 203.2 82.55)
 		)
 		(stroke
 			(width 0)
@@ -4088,7 +4020,27 @@
 	)
 	(wire
 		(pts
-			(xy 132.08 81.28) (xy 132.08 88.9)
+			(xy 35.56 90.17) (xy 35.56 99.06)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "16ca925f-0dd0-41c0-a299-0968838816b4")
+	)
+	(wire
+		(pts
+			(xy 78.74 82.55) (xy 78.74 99.06)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "17fdc8bd-3649-452e-b366-8ad38dde7d60")
+	)
+	(wire
+		(pts
+			(xy 208.28 80.01) (xy 208.28 87.63)
 		)
 		(stroke
 			(width 0)
@@ -4098,7 +4050,7 @@
 	)
 	(wire
 		(pts
-			(xy 62.23 63.5) (xy 62.23 66.04)
+			(xy 138.43 62.23) (xy 138.43 64.77)
 		)
 		(stroke
 			(width 0)
@@ -4108,7 +4060,7 @@
 	)
 	(wire
 		(pts
-			(xy 190.5 67.31) (xy 190.5 69.85)
+			(xy 266.7 66.04) (xy 266.7 68.58)
 		)
 		(stroke
 			(width 0)
@@ -4118,17 +4070,27 @@
 	)
 	(wire
 		(pts
-			(xy 62.23 72.39) (xy 67.31 72.39)
+			(xy 125.73 110.49) (xy 125.73 107.95)
 		)
 		(stroke
 			(width 0)
 			(type default)
 		)
-		(uuid "1f7130bd-e102-4b8c-aec9-2b7e0cd5e853")
+		(uuid "1d613cfb-0a91-40e9-9a0a-2e037e3e5f77")
 	)
 	(wire
 		(pts
-			(xy 180.34 62.23) (xy 181.61 62.23)
+			(xy 154.94 62.23) (xy 158.75 62.23)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "24b8eb20-cf70-44fa-9e84-b481f21763c6")
+	)
+	(wire
+		(pts
+			(xy 256.54 60.96) (xy 271.78 60.96)
 		)
 		(stroke
 			(width 0)
@@ -4138,7 +4100,7 @@
 	)
 	(wire
 		(pts
-			(xy 251.46 68.58) (xy 251.46 63.5)
+			(xy 327.66 67.31) (xy 327.66 62.23)
 		)
 		(stroke
 			(width 0)
@@ -4148,27 +4110,37 @@
 	)
 	(wire
 		(pts
-			(xy 64.77 88.9) (xy 72.39 88.9)
+			(xy 104.14 82.55) (xy 119.38 82.55)
 		)
 		(stroke
 			(width 0)
 			(type default)
 		)
-		(uuid "30d60ac3-9681-4cf5-b359-c13aad76a3d3")
+		(uuid "38a74d78-59ec-4602-9ed2-d04b1b29c2e3")
 	)
 	(wire
 		(pts
-			(xy 62.23 72.39) (xy 62.23 77.47)
+			(xy 63.5 96.52) (xy 63.5 77.47)
 		)
 		(stroke
 			(width 0)
 			(type default)
 		)
-		(uuid "320ebcc7-3606-4c31-9fa1-bc7c446f5fb1")
+		(uuid "427b9e09-7fff-48aa-aef1-2f8bee79df9d")
 	)
 	(wire
 		(pts
-			(xy 190.5 67.31) (xy 195.58 67.31)
+			(xy 45.72 104.14) (xy 45.72 106.68)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "438ddedd-58ee-495a-bc53-e5c37af00085")
+	)
+	(wire
+		(pts
+			(xy 266.7 66.04) (xy 271.78 66.04)
 		)
 		(stroke
 			(width 0)
@@ -4178,7 +4150,7 @@
 	)
 	(wire
 		(pts
-			(xy 148.59 86.36) (xy 149.86 86.36)
+			(xy 224.79 85.09) (xy 226.06 85.09)
 		)
 		(stroke
 			(width 0)
@@ -4188,17 +4160,17 @@
 	)
 	(wire
 		(pts
-			(xy 96.52 63.5) (xy 96.52 77.47)
+			(xy 78.74 107.95) (xy 78.74 99.06)
 		)
 		(stroke
 			(width 0)
 			(type default)
 		)
-		(uuid "4b503ba8-8d4d-4c70-a6be-3a6f8c51687c")
+		(uuid "4d3c5e8e-99f2-4091-8175-63971569d82d")
 	)
 	(wire
 		(pts
-			(xy 210.82 73.66) (xy 236.22 73.66)
+			(xy 287.02 72.39) (xy 320.04 72.39)
 		)
 		(stroke
 			(width 0)
@@ -4208,7 +4180,7 @@
 	)
 	(wire
 		(pts
-			(xy 260.35 60.96) (xy 260.35 87.63)
+			(xy 330.2 59.69) (xy 330.2 86.36)
 		)
 		(stroke
 			(width 0)
@@ -4218,7 +4190,7 @@
 	)
 	(wire
 		(pts
-			(xy 165.1 92.71) (xy 165.1 83.82)
+			(xy 241.3 91.44) (xy 241.3 82.55)
 		)
 		(stroke
 			(width 0)
@@ -4228,7 +4200,7 @@
 	)
 	(wire
 		(pts
-			(xy 96.52 50.8) (xy 236.22 50.8)
+			(xy 172.72 49.53) (xy 312.42 49.53)
 		)
 		(stroke
 			(width 0)
@@ -4238,7 +4210,17 @@
 	)
 	(wire
 		(pts
-			(xy 78.74 66.04) (xy 80.01 66.04)
+			(xy 45.72 104.14) (xy 46.99 104.14)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "63e6d78f-cab9-4a44-853c-20133cdb8a5d")
+	)
+	(wire
+		(pts
+			(xy 154.94 64.77) (xy 156.21 64.77)
 		)
 		(stroke
 			(width 0)
@@ -4248,17 +4230,17 @@
 	)
 	(wire
 		(pts
-			(xy 74.93 77.47) (xy 96.52 77.47)
+			(xy 287.02 72.39) (xy 287.02 63.5)
 		)
 		(stroke
 			(width 0)
 			(type default)
 		)
-		(uuid "681dba80-0434-4df5-b216-090c4cb6731e")
+		(uuid "6d29ec66-553c-43ba-acbd-c51ed915aa11")
 	)
 	(wire
 		(pts
-			(xy 260.35 60.96) (xy 251.46 60.96)
+			(xy 330.2 59.69) (xy 327.66 59.69)
 		)
 		(stroke
 			(width 0)
@@ -4268,7 +4250,17 @@
 	)
 	(wire
 		(pts
-			(xy 149.86 81.28) (xy 149.86 62.23)
+			(xy 62.23 101.6) (xy 63.5 101.6)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "73055c00-0ad7-495b-85a9-63331d906ef3")
+	)
+	(wire
+		(pts
+			(xy 226.06 80.01) (xy 226.06 60.96)
 		)
 		(stroke
 			(width 0)
@@ -4278,7 +4270,27 @@
 	)
 	(wire
 		(pts
-			(xy 234.95 60.96) (xy 234.95 63.5)
+			(xy 45.72 96.52) (xy 45.72 104.14)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "7ae527e8-0d88-4365-9e56-5cf119546cb9")
+	)
+	(wire
+		(pts
+			(xy 35.56 99.06) (xy 35.56 106.68)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "81765723-292b-476d-9236-2fdc2361e1ae")
+	)
+	(wire
+		(pts
+			(xy 311.15 59.69) (xy 311.15 62.23)
 		)
 		(stroke
 			(width 0)
@@ -4288,7 +4300,17 @@
 	)
 	(wire
 		(pts
-			(xy 121.92 83.82) (xy 127 83.82)
+			(xy 40.64 101.6) (xy 40.64 99.06)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "82620516-3910-4e74-8b30-62ae61131cc0")
+	)
+	(wire
+		(pts
+			(xy 198.12 82.55) (xy 203.2 82.55)
 		)
 		(stroke
 			(width 0)
@@ -4298,7 +4320,7 @@
 	)
 	(wire
 		(pts
-			(xy 121.92 74.93) (xy 121.92 83.82)
+			(xy 198.12 73.66) (xy 198.12 82.55)
 		)
 		(stroke
 			(width 0)
@@ -4308,7 +4330,7 @@
 	)
 	(wire
 		(pts
-			(xy 132.08 88.9) (xy 132.08 91.44)
+			(xy 208.28 87.63) (xy 208.28 90.17)
 		)
 		(stroke
 			(width 0)
@@ -4318,7 +4340,7 @@
 	)
 	(wire
 		(pts
-			(xy 251.46 48.26) (xy 271.78 48.26)
+			(xy 327.66 46.99) (xy 347.98 46.99)
 		)
 		(stroke
 			(width 0)
@@ -4328,7 +4350,7 @@
 	)
 	(wire
 		(pts
-			(xy 297.18 48.26) (xy 316.23 48.26)
+			(xy 373.38 46.99) (xy 392.43 46.99)
 		)
 		(stroke
 			(width 0)
@@ -4338,7 +4360,7 @@
 	)
 	(wire
 		(pts
-			(xy 48.26 53.34) (xy 63.5 53.34)
+			(xy 124.46 52.07) (xy 139.7 52.07)
 		)
 		(stroke
 			(width 0)
@@ -4348,7 +4370,7 @@
 	)
 	(wire
 		(pts
-			(xy 205.74 92.71) (xy 205.74 95.25)
+			(xy 281.94 91.44) (xy 281.94 93.98)
 		)
 		(stroke
 			(width 0)
@@ -4358,7 +4380,7 @@
 	)
 	(wire
 		(pts
-			(xy 62.23 66.04) (xy 63.5 66.04)
+			(xy 138.43 64.77) (xy 139.7 64.77)
 		)
 		(stroke
 			(width 0)
@@ -4368,7 +4390,7 @@
 	)
 	(wire
 		(pts
-			(xy 114.3 74.93) (xy 114.3 83.82)
+			(xy 190.5 73.66) (xy 190.5 82.55)
 		)
 		(stroke
 			(width 0)
@@ -4378,7 +4400,7 @@
 	)
 	(wire
 		(pts
-			(xy 271.78 48.26) (xy 294.64 48.26)
+			(xy 347.98 46.99) (xy 370.84 46.99)
 		)
 		(stroke
 			(width 0)
@@ -4388,37 +4410,7 @@
 	)
 	(wire
 		(pts
-			(xy 243.84 68.58) (xy 251.46 68.58)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "a08cedda-615f-48c1-b1d8-8e76658de5c9")
-	)
-	(wire
-		(pts
-			(xy 62.23 77.47) (xy 67.31 77.47)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "a7fe76e9-263e-4104-85bb-35072a047655")
-	)
-	(wire
-		(pts
-			(xy 78.74 110.49) (xy 78.74 111.76)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "a97f85a8-0c26-43f2-ba5c-d42d12e67f26")
-	)
-	(wire
-		(pts
-			(xy 271.78 45.72) (xy 271.78 48.26)
+			(xy 347.98 44.45) (xy 347.98 46.99)
 		)
 		(stroke
 			(width 0)
@@ -4428,7 +4420,17 @@
 	)
 	(wire
 		(pts
-			(xy 78.74 50.8) (xy 96.52 50.8)
+			(xy 198.12 95.25) (xy 198.12 97.79)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "b10f7491-a47e-44bb-aca8-c8d4205e7f39")
+	)
+	(wire
+		(pts
+			(xy 154.94 49.53) (xy 172.72 49.53)
 		)
 		(stroke
 			(width 0)
@@ -4438,7 +4440,27 @@
 	)
 	(wire
 		(pts
-			(xy 132.08 88.9) (xy 133.35 88.9)
+			(xy 134.62 80.01) (xy 148.59 80.01)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "b5e06915-9319-4425-bcff-08a59b933c39")
+	)
+	(wire
+		(pts
+			(xy 82.55 82.55) (xy 78.74 82.55)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "b755527f-3b9d-41a8-81ea-0709c1d20d0d")
+	)
+	(wire
+		(pts
+			(xy 208.28 87.63) (xy 209.55 87.63)
 		)
 		(stroke
 			(width 0)
@@ -4448,17 +4470,7 @@
 	)
 	(wire
 		(pts
-			(xy 78.74 111.76) (xy 88.9 111.76)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "ba4f23ab-3589-479b-88b3-0e336ef5f9b1")
-	)
-	(wire
-		(pts
-			(xy 149.86 62.23) (xy 146.05 62.23)
+			(xy 226.06 60.96) (xy 222.25 60.96)
 		)
 		(stroke
 			(width 0)
@@ -4468,37 +4480,7 @@
 	)
 	(wire
 		(pts
-			(xy 210.82 64.77) (xy 210.82 73.66)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "c31226d2-4444-4f99-af11-0bafc5a6e900")
-	)
-	(wire
-		(pts
-			(xy 80.01 72.39) (xy 74.93 72.39)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "c334e10f-4158-4977-9bde-49e78f1bd61f")
-	)
-	(wire
-		(pts
-			(xy 195.58 62.23) (xy 191.77 62.23)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "caf072bf-2ae9-46c4-9b1e-e2b1eda7a92b")
-	)
-	(wire
-		(pts
-			(xy 127 83.82) (xy 133.35 83.82)
+			(xy 203.2 82.55) (xy 209.55 82.55)
 		)
 		(stroke
 			(width 0)
@@ -4508,7 +4490,7 @@
 	)
 	(wire
 		(pts
-			(xy 184.15 67.31) (xy 190.5 67.31)
+			(xy 260.35 66.04) (xy 266.7 66.04)
 		)
 		(stroke
 			(width 0)
@@ -4518,17 +4500,37 @@
 	)
 	(wire
 		(pts
-			(xy 80.01 66.04) (xy 80.01 72.39)
+			(xy 116.84 77.47) (xy 119.38 77.47)
 		)
 		(stroke
 			(width 0)
 			(type default)
 		)
-		(uuid "d4b43815-35e6-44e1-b3f8-0973b985d282")
+		(uuid "d72973c8-84bf-47ac-8a8a-f5181963e895")
 	)
 	(wire
 		(pts
-			(xy 234.95 63.5) (xy 236.22 63.5)
+			(xy 40.64 99.06) (xy 46.99 99.06)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "d8538d81-7a86-4505-a0af-fa8f217062a6")
+	)
+	(wire
+		(pts
+			(xy 21.59 99.06) (xy 27.94 99.06)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "d9871305-54ae-4401-baa8-23946f979df1")
+	)
+	(wire
+		(pts
+			(xy 311.15 62.23) (xy 312.42 62.23)
 		)
 		(stroke
 			(width 0)
@@ -4538,7 +4540,7 @@
 	)
 	(wire
 		(pts
-			(xy 62.23 63.5) (xy 63.5 63.5)
+			(xy 138.43 62.23) (xy 139.7 62.23)
 		)
 		(stroke
 			(width 0)
@@ -4548,7 +4550,7 @@
 	)
 	(wire
 		(pts
-			(xy 234.95 60.96) (xy 236.22 60.96)
+			(xy 311.15 59.69) (xy 312.42 59.69)
 		)
 		(stroke
 			(width 0)
@@ -4558,7 +4560,17 @@
 	)
 	(wire
 		(pts
-			(xy 168.91 67.31) (xy 165.1 67.31)
+			(xy 125.73 107.95) (xy 151.13 107.95)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "e38a9090-b3cb-4e46-afb4-81b71584870b")
+	)
+	(wire
+		(pts
+			(xy 245.11 66.04) (xy 241.3 66.04)
 		)
 		(stroke
 			(width 0)
@@ -4568,17 +4580,7 @@
 	)
 	(wire
 		(pts
-			(xy 74.93 111.76) (xy 78.74 111.76)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "f181f948-cbb0-42d0-8e2e-283922108206")
-	)
-	(wire
-		(pts
-			(xy 165.1 92.71) (xy 205.74 92.71)
+			(xy 241.3 91.44) (xy 281.94 91.44)
 		)
 		(stroke
 			(width 0)
@@ -4588,17 +4590,7 @@
 	)
 	(wire
 		(pts
-			(xy 62.23 72.39) (xy 62.23 66.04)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "f790bf8c-19ac-4f7c-940f-9034595aabcd")
-	)
-	(wire
-		(pts
-			(xy 96.52 77.47) (xy 96.52 106.68)
+			(xy 158.75 62.23) (xy 158.75 102.87)
 		)
 		(stroke
 			(width 0)
@@ -4608,7 +4600,17 @@
 	)
 	(wire
 		(pts
-			(xy 165.1 67.31) (xy 165.1 83.82)
+			(xy 35.56 99.06) (xy 40.64 99.06)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "fb2d2408-2a61-481c-9fbc-57637b33f6b6")
+	)
+	(wire
+		(pts
+			(xy 241.3 66.04) (xy 241.3 82.55)
 		)
 		(stroke
 			(width 0)
@@ -4618,7 +4620,7 @@
 	)
 	(wire
 		(pts
-			(xy 205.74 92.71) (xy 252.73 92.71)
+			(xy 281.94 91.44) (xy 322.58 91.44)
 		)
 		(stroke
 			(width 0)
@@ -4627,17 +4629,17 @@
 		(uuid "ffc955da-8e2c-4461-aad1-44e1b6d64a78")
 	)
 	(label "nIMD_Set"
-		(at 210.82 64.77 270)
+		(at 287.02 72.39 0)
 		(effects
 			(font
 				(size 1.143 1.143)
 			)
-			(justify right bottom)
+			(justify left bottom)
 		)
 		(uuid "2ad3f1e0-c600-4270-8edb-ea57f21ff420")
 	)
-	(label "IMD_pin8_5v_Inverted"
-		(at 149.86 62.23 0)
+	(label "nIMD_FAULT_INVERTED"
+		(at 226.06 60.96 0)
 		(effects
 			(font
 				(size 1.016 1.016)
@@ -4646,8 +4648,38 @@
 		)
 		(uuid "51aa3126-8235-40a4-a2c5-86683ca73c77")
 	)
+	(label "nBMS_Set"
+		(at 134.62 80.01 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left bottom)
+		)
+		(uuid "ade6174b-ee7b-40d2-b0d2-b31b05e1e219")
+	)
+	(label "SH_Reset"
+		(at 256.54 60.96 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left bottom)
+		)
+		(uuid "b44103be-b7e9-47a4-aede-d364da68ac4a")
+	)
+	(label "BMS_FAULT"
+		(at 104.14 107.95 180)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify right bottom)
+		)
+		(uuid "c12f01f1-98d3-4d82-b96c-0e10051c73f5")
+	)
 	(label "nIMD_Fault"
-		(at 184.15 67.31 0)
+		(at 260.35 66.04 0)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -4657,7 +4689,7 @@
 		(uuid "d5c3a7b9-97e8-4da1-8f55-8a7605dc64b5")
 	)
 	(label "IMD_Fault"
-		(at 190.5 92.71 180)
+		(at 266.7 91.44 180)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -4666,9 +4698,41 @@
 		)
 		(uuid "f844f6bd-b786-4ff6-aa21-3e8dfede7e36")
 	)
+	(label "nBMS_FAULT"
+		(at 97.79 82.55 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left bottom)
+		)
+		(uuid "fdcad68c-8fba-4285-b31e-586d002db4d3")
+	)
+	(hierarchical_label "SH_Reset"
+		(shape input)
+		(at 116.84 77.47 180)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify right)
+		)
+		(uuid "071e6c06-168f-4098-9b26-7e2464d3e645")
+	)
+	(hierarchical_label "BMS_FAULT_5V"
+		(shape input)
+		(at 44.45 77.47 180)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify right)
+		)
+		(uuid "52d1aac7-3df6-47a7-b934-86d248896519")
+	)
 	(hierarchical_label "Shutdown_TB_In"
 		(shape input)
-		(at 48.26 53.34 180)
+		(at 124.46 52.07 180)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -4677,20 +4741,9 @@
 		)
 		(uuid "5875505c-4701-4ff7-a48b-e72d5287bc22")
 	)
-	(hierarchical_label "BMS_FAULT_3.3V"
+	(hierarchical_label "nIMD_FAULT_5V"
 		(shape input)
-		(at 74.93 111.76 180)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-			(justify right)
-		)
-		(uuid "5a4503b5-4b25-4ff1-9b15-0ae36ab5a575")
-	)
-	(hierarchical_label "IMD_FAULT_3.3V"
-		(shape input)
-		(at 130.81 62.23 180)
+		(at 207.01 60.96 180)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -4699,20 +4752,9 @@
 		)
 		(uuid "7c4bea85-3b47-407f-a9a5-a9e6be820415")
 	)
-	(hierarchical_label "SH_Reset"
-		(shape input)
-		(at 64.77 88.9 180)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-			(justify right)
-		)
-		(uuid "bc101585-b657-4d5e-80e5-5da33309ca09")
-	)
 	(hierarchical_label "Shutdown_TB_Out"
 		(shape output)
-		(at 316.23 48.26 0)
+		(at 392.43 46.99 0)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -4723,15 +4765,15 @@
 	)
 	(symbol
 		(lib_id "Device:R")
-		(at 132.08 95.25 180)
+		(at 208.28 93.98 180)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
 		(on_board yes)
 		(dnp no)
 		(uuid "2197cda8-9ff8-4044-b574-c3c149e4e4fc")
-		(property "Reference" "R18"
-			(at 134.62 93.9799 0)
+		(property "Reference" "R11"
+			(at 210.82 92.7099 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -4740,7 +4782,7 @@
 			)
 		)
 		(property "Value" "10k"
-			(at 134.62 96.5199 0)
+			(at 210.82 95.2499 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -4749,7 +4791,7 @@
 			)
 		)
 		(property "Footprint" ""
-			(at 133.858 95.25 90)
+			(at 210.058 93.98 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -4758,7 +4800,7 @@
 			)
 		)
 		(property "Datasheet" "~"
-			(at 132.08 95.25 0)
+			(at 208.28 93.98 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -4767,7 +4809,7 @@
 			)
 		)
 		(property "Description" "Resistor"
-			(at 132.08 95.25 0)
+			(at 208.28 93.98 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -4776,15 +4818,15 @@
 			)
 		)
 		(pin "1"
-			(uuid "006a6fed-e70c-48bc-b9ec-a60b32cba430")
+			(uuid "60b5cd3a-24e5-4d53-a666-926e2f4f85c3")
 		)
 		(pin "2"
-			(uuid "bd972a89-ff69-49e0-95fb-fcd9f39a06b7")
+			(uuid "10b4c1f1-2454-4f14-a826-9d683cce704b")
 		)
 		(instances
 			(project "Tractive_Battery_Board"
-				(path "/ca333741-5826-495c-b860-5422aa5e17fc/38bd74f5-4693-424e-8d84-64453e3eadeb"
-					(reference "R18")
+				(path "/ca333741-5826-495c-b860-5422aa5e17fc/d5ae3636-6e9a-45ed-84fd-517f0c920a36"
+					(reference "R11")
 					(unit 1)
 				)
 			)
@@ -4792,15 +4834,15 @@
 	)
 	(symbol
 		(lib_id "74xx:74HC14")
-		(at 176.53 67.31 0)
+		(at 252.73 66.04 0)
 		(unit 3)
 		(exclude_from_sim no)
 		(in_bom yes)
 		(on_board yes)
 		(dnp no)
 		(uuid "22055acd-6b17-45be-a70b-9352026cd31b")
-		(property "Reference" "U5"
-			(at 179.324 70.358 0)
+		(property "Reference" "U2"
+			(at 255.524 69.088 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -4808,7 +4850,7 @@
 			)
 		)
 		(property "Value" "74HC14"
-			(at 179.324 72.898 0)
+			(at 255.524 71.628 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -4816,7 +4858,7 @@
 			)
 		)
 		(property "Footprint" ""
-			(at 176.53 67.31 0)
+			(at 252.73 66.04 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -4825,7 +4867,7 @@
 			)
 		)
 		(property "Datasheet" "http://www.ti.com/lit/gpn/sn74HC14"
-			(at 176.53 67.31 0)
+			(at 252.73 66.04 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -4834,7 +4876,7 @@
 			)
 		)
 		(property "Description" "Hex inverter schmitt trigger"
-			(at 176.53 67.31 0)
+			(at 252.73 66.04 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -4861,7 +4903,7 @@
 			(uuid "b192e8c3-a72c-443a-9111-3e74e409da8a")
 		)
 		(pin "5"
-			(uuid "2e2a4651-a396-42d1-983b-b14a18321f59")
+			(uuid "4b3d0826-da49-4732-bdb4-a35db2df6f54")
 		)
 		(pin "10"
 			(uuid "1b340001-5003-4a79-b06c-257bbcfcf730")
@@ -4879,15 +4921,15 @@
 			(uuid "40e6cd36-22d5-4619-a7b3-2b482c28fd34")
 		)
 		(pin "6"
-			(uuid "42ec8c5e-2c4e-41d4-98cc-8ff49244cb8c")
+			(uuid "e6181a72-da60-4c89-b0ac-ff630be05eba")
 		)
 		(pin "9"
 			(uuid "dd098547-317f-4590-9e42-9a388229a157")
 		)
 		(instances
 			(project "Tractive_Battery_Board"
-				(path "/ca333741-5826-495c-b860-5422aa5e17fc/38bd74f5-4693-424e-8d84-64453e3eadeb"
-					(reference "U5")
+				(path "/ca333741-5826-495c-b860-5422aa5e17fc/d5ae3636-6e9a-45ed-84fd-517f0c920a36"
+					(reference "U2")
 					(unit 3)
 				)
 			)
@@ -4895,7 +4937,7 @@
 	)
 	(symbol
 		(lib_id "Connector:TestPoint")
-		(at 271.78 45.72 0)
+		(at 347.98 44.45 0)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
@@ -4903,8 +4945,8 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "2435420e-8a49-46c4-a952-348ddfbc65b3")
-		(property "Reference" "TP3"
-			(at 274.32 41.1479 0)
+		(property "Reference" "TP8"
+			(at 350.52 39.8779 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -4913,7 +4955,7 @@
 			)
 		)
 		(property "Value" "Post_IMD_TP"
-			(at 274.32 43.6879 0)
+			(at 350.52 42.4179 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -4922,7 +4964,7 @@
 			)
 		)
 		(property "Footprint" "TestPoint:TestPoint_Loop_D2.50mm_Drill1.0mm"
-			(at 276.86 45.72 0)
+			(at 353.06 44.45 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -4931,7 +4973,7 @@
 			)
 		)
 		(property "Datasheet" "~"
-			(at 276.86 45.72 0)
+			(at 353.06 44.45 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -4940,7 +4982,7 @@
 			)
 		)
 		(property "Description" "test point"
-			(at 271.78 45.72 0)
+			(at 347.98 44.45 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -4949,12 +4991,12 @@
 			)
 		)
 		(pin "1"
-			(uuid "c2118f17-1c85-45cf-bd6d-10767c9cde4d")
+			(uuid "b9250bf7-09df-4c95-863b-06c284c2282c")
 		)
 		(instances
 			(project "Tractive_Battery_Board"
-				(path "/ca333741-5826-495c-b860-5422aa5e17fc/38bd74f5-4693-424e-8d84-64453e3eadeb"
-					(reference "TP3")
+				(path "/ca333741-5826-495c-b860-5422aa5e17fc/d5ae3636-6e9a-45ed-84fd-517f0c920a36"
+					(reference "TP8")
 					(unit 1)
 				)
 			)
@@ -4962,7 +5004,7 @@
 	)
 	(symbol
 		(lib_id "1FS_2_Global_Symbol_Library:G6BK-1114P-US")
-		(at 71.12 54.61 0)
+		(at 147.32 53.34 0)
 		(mirror x)
 		(unit 1)
 		(exclude_from_sim no)
@@ -4970,8 +5012,8 @@
 		(on_board yes)
 		(dnp no)
 		(uuid "289b4868-bd87-4173-8bfd-cbd04b10bfb9")
-		(property "Reference" "K2"
-			(at 78.486 57.658 0)
+		(property "Reference" "K1"
+			(at 154.686 56.388 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -4979,7 +5021,7 @@
 			)
 		)
 		(property "Value" "G6BK-1114P-US"
-			(at 85.852 59.69 0)
+			(at 162.052 58.42 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -4987,7 +5029,7 @@
 			)
 		)
 		(property "Footprint" "FS_3_Global_Footprint_Library:RELAY_G6BK-1114P-US_OMR"
-			(at 104.775 53.34 0)
+			(at 180.975 52.07 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -4996,7 +5038,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 71.12 58.42 90)
+			(at 147.32 57.15 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -5005,7 +5047,7 @@
 			)
 		)
 		(property "Description" "Omron G6BK-1114P-US Latching Relay."
-			(at 71.12 54.61 0)
+			(at 147.32 53.34 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -5014,27 +5056,27 @@
 			)
 		)
 		(pin "3"
-			(uuid "56112eb9-1d57-4781-89e0-41f73809b731")
+			(uuid "6f7ffdd5-5021-4749-b9ed-72943ebc430b")
 		)
 		(pin "6"
-			(uuid "486c7935-653a-416e-aa5e-695260498aa2")
+			(uuid "058bbe0c-02a7-4c49-b61b-dbef5bfcbc43")
 		)
 		(pin "2"
-			(uuid "2661b9d0-0b34-41c4-b1ef-4e9380ffbec2")
+			(uuid "8f286a5c-cfbf-4fdc-9d47-b911880e37c0")
 		)
 		(pin "1"
-			(uuid "8c55a50d-f576-47f5-8464-a85ce1d0b19d")
+			(uuid "590cec28-396a-4397-b18d-2a90facff83a")
 		)
 		(pin "5"
-			(uuid "10d033ab-e430-40c9-9f96-4e76d842dd6d")
+			(uuid "0af34876-2757-443a-8ad6-68b839d95fda")
 		)
 		(pin "4"
-			(uuid "0c111a47-eef6-478f-b1a1-2c2ac43cfaf7")
+			(uuid "1b6d2455-6e9d-40be-8971-52698f27fb2c")
 		)
 		(instances
 			(project "Tractive_Battery_Board"
-				(path "/ca333741-5826-495c-b860-5422aa5e17fc/38bd74f5-4693-424e-8d84-64453e3eadeb"
-					(reference "K2")
+				(path "/ca333741-5826-495c-b860-5422aa5e17fc/d5ae3636-6e9a-45ed-84fd-517f0c920a36"
+					(reference "K1")
 					(unit 1)
 				)
 			)
@@ -5042,7 +5084,7 @@
 	)
 	(symbol
 		(lib_id "power:GND")
-		(at 260.35 97.79 0)
+		(at 330.2 96.52 0)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
@@ -5050,8 +5092,8 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "2a4ac60b-4e9d-46c0-ba3e-3dbc3c58fd9a")
-		(property "Reference" "#PWR031"
-			(at 260.35 104.14 0)
+		(property "Reference" "#PWR036"
+			(at 330.2 102.87 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -5060,7 +5102,7 @@
 			)
 		)
 		(property "Value" "GND"
-			(at 260.35 102.87 0)
+			(at 330.2 101.6 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -5068,7 +5110,7 @@
 			)
 		)
 		(property "Footprint" ""
-			(at 260.35 97.79 0)
+			(at 330.2 96.52 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -5077,7 +5119,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 260.35 97.79 0)
+			(at 330.2 96.52 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -5086,7 +5128,7 @@
 			)
 		)
 		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
-			(at 260.35 97.79 0)
+			(at 330.2 96.52 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -5095,12 +5137,12 @@
 			)
 		)
 		(pin "1"
-			(uuid "db3f19ac-c181-48aa-80a2-727b4601028a")
+			(uuid "e166824b-e9b6-4feb-ba2a-ca946b26c805")
 		)
 		(instances
 			(project "Tractive_Battery_Board"
-				(path "/ca333741-5826-495c-b860-5422aa5e17fc/38bd74f5-4693-424e-8d84-64453e3eadeb"
-					(reference "#PWR031")
+				(path "/ca333741-5826-495c-b860-5422aa5e17fc/d5ae3636-6e9a-45ed-84fd-517f0c920a36"
+					(reference "#PWR036")
 					(unit 1)
 				)
 			)
@@ -5108,15 +5150,15 @@
 	)
 	(symbol
 		(lib_id "Amplifier_Operational:MCP6004")
-		(at 140.97 86.36 0)
+		(at 217.17 85.09 0)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
 		(on_board yes)
 		(dnp no)
 		(uuid "32d7e8f9-050a-422b-b629-85cc7124ecb6")
-		(property "Reference" "U6"
-			(at 144.526 79.502 0)
+		(property "Reference" "U5"
+			(at 220.726 78.232 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -5124,7 +5166,7 @@
 			)
 		)
 		(property "Value" "MCP6004"
-			(at 144.526 82.042 0)
+			(at 220.726 80.772 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -5132,7 +5174,7 @@
 			)
 		)
 		(property "Footprint" ""
-			(at 139.7 83.82 0)
+			(at 215.9 82.55 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -5141,7 +5183,7 @@
 			)
 		)
 		(property "Datasheet" "http://ww1.microchip.com/downloads/en/DeviceDoc/21733j.pdf"
-			(at 142.24 81.28 0)
+			(at 218.44 80.01 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -5150,7 +5192,7 @@
 			)
 		)
 		(property "Description" "1MHz, Low-Power Op Amp, DIP-14/SOIC-14/TSSOP-14"
-			(at 140.97 86.36 0)
+			(at 217.17 85.09 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -5159,13 +5201,13 @@
 			)
 		)
 		(pin "3"
-			(uuid "ac7a26b3-51ce-4255-af27-43f8bf8a0835")
+			(uuid "2cd526a4-4371-4981-b0db-024ddcdfbc51")
 		)
 		(pin "2"
-			(uuid "46973b2e-8b53-4997-b61d-ac169dec48af")
+			(uuid "537d804d-f38c-46ae-9194-1bc748fe82f4")
 		)
 		(pin "1"
-			(uuid "d6ef03e6-9b39-4da3-b812-c12b75dad17b")
+			(uuid "fad0d64f-6ad6-4322-a41a-daeb39d1b4b4")
 		)
 		(pin "5"
 			(uuid "e985afdd-bf88-4693-acdf-41f36a2c3bfa")
@@ -5202,8 +5244,8 @@
 		)
 		(instances
 			(project "Tractive_Battery_Board"
-				(path "/ca333741-5826-495c-b860-5422aa5e17fc/38bd74f5-4693-424e-8d84-64453e3eadeb"
-					(reference "U6")
+				(path "/ca333741-5826-495c-b860-5422aa5e17fc/d5ae3636-6e9a-45ed-84fd-517f0c920a36"
+					(reference "U5")
 					(unit 1)
 				)
 			)
@@ -5211,7 +5253,7 @@
 	)
 	(symbol
 		(lib_id "power:+5V")
-		(at 107.95 83.82 0)
+		(at 184.15 82.55 0)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
@@ -5219,8 +5261,8 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "37c280da-c895-406a-a0a1-67b920a04ee2")
-		(property "Reference" "#PWR036"
-			(at 107.95 87.63 0)
+		(property "Reference" "#PWR024"
+			(at 184.15 86.36 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -5229,7 +5271,7 @@
 			)
 		)
 		(property "Value" "+5V"
-			(at 107.95 78.74 0)
+			(at 184.15 77.47 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -5237,7 +5279,7 @@
 			)
 		)
 		(property "Footprint" ""
-			(at 107.95 83.82 0)
+			(at 184.15 82.55 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -5246,7 +5288,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 107.95 83.82 0)
+			(at 184.15 82.55 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -5255,7 +5297,7 @@
 			)
 		)
 		(property "Description" "Power symbol creates a global label with name \"+5V\""
-			(at 107.95 83.82 0)
+			(at 184.15 82.55 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -5264,12 +5306,12 @@
 			)
 		)
 		(pin "1"
-			(uuid "26bbc887-28c3-497a-9cdc-cae6d52ce026")
+			(uuid "82fdff3f-4f36-432d-b54e-408efd4e1897")
 		)
 		(instances
 			(project "Tractive_Battery_Board"
-				(path "/ca333741-5826-495c-b860-5422aa5e17fc/38bd74f5-4693-424e-8d84-64453e3eadeb"
-					(reference "#PWR036")
+				(path "/ca333741-5826-495c-b860-5422aa5e17fc/d5ae3636-6e9a-45ed-84fd-517f0c920a36"
+					(reference "#PWR024")
 					(unit 1)
 				)
 			)
@@ -5277,798 +5319,15 @@
 	)
 	(symbol
 		(lib_id "FS_4_SCHEMATICS:SZNUD3124LT1G")
-		(at 242.57 73.66 0)
+		(at 326.39 72.39 0)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
 		(on_board yes)
 		(dnp no)
 		(uuid "39a02a38-0587-4f6d-9c9e-001cc8e9f318")
-		(property "Reference" "SZNUD3124LT1G4"
-			(at 246.634 72.644 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-		)
-		(property "Value" "Q1"
-			(at 247.65 74.9299 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-		)
-		(property "Footprint" "Package_TO_SOT_SMD:TSOT-23_HandSoldering"
-			(at 242.57 73.66 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Datasheet" "https://www.onsemi.com/pdf/datasheet/nud3124-d.pdf"
-			(at 242.57 73.66 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Description" ""
-			(at 242.57 73.66 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Digi PN" "SZNUD3124LT1GOSCT-ND"
-			(at 242.57 73.66 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "MFG" "onsemi"
-			(at 242.57 73.66 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "MFG PN" "SZNUD3124LT1G"
-			(at 242.57 73.66 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Digi URL" "https://www.digikey.com/en/products/detail/onsemi/SZNUD3124LT1G/3063416"
-			(at 242.57 73.66 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(pin "2"
-			(uuid "7b6910b0-4541-41b8-bc40-f8108974c769")
-		)
-		(pin "1"
-			(uuid "d0e9749f-4399-48e1-861b-7d154538aca7")
-		)
-		(pin "3"
-			(uuid "d7c3fe81-9c3c-49c2-a3d8-5296f0ebcff9")
-		)
-		(instances
-			(project "Tractive_Battery_Board"
-				(path "/ca333741-5826-495c-b860-5422aa5e17fc/38bd74f5-4693-424e-8d84-64453e3eadeb"
-					(reference "SZNUD3124LT1G4")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
-		(lib_id "power:GND")
-		(at 243.84 78.74 0)
-		(unit 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(dnp no)
-		(fields_autoplaced yes)
-		(uuid "43986898-d9c3-4874-9407-7e388ec873ed")
-		(property "Reference" "#PWR032"
-			(at 243.84 85.09 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Value" "GND"
-			(at 243.84 83.82 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Footprint" ""
-			(at 243.84 78.74 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Datasheet" ""
-			(at 243.84 78.74 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
-			(at 243.84 78.74 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(pin "1"
-			(uuid "4fdd2f71-77e2-4a41-820c-a190b49da8dd")
-		)
-		(instances
-			(project "Tractive_Battery_Board"
-				(path "/ca333741-5826-495c-b860-5422aa5e17fc/38bd74f5-4693-424e-8d84-64453e3eadeb"
-					(reference "#PWR032")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
-		(lib_id "power:+5V")
-		(at 132.08 73.66 0)
-		(unit 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(dnp no)
-		(fields_autoplaced yes)
-		(uuid "4e78b9f3-dda8-4328-b256-6a0d026dec17")
-		(property "Reference" "#PWR038"
-			(at 132.08 77.47 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Value" "+5V"
-			(at 132.08 68.58 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Footprint" ""
-			(at 132.08 73.66 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Datasheet" ""
-			(at 132.08 73.66 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Description" "Power symbol creates a global label with name \"+5V\""
-			(at 132.08 73.66 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(pin "1"
-			(uuid "09da5ea9-86b7-4948-a2bb-a970ed8e07cc")
-		)
-		(instances
-			(project "Tractive_Battery_Board"
-				(path "/ca333741-5826-495c-b860-5422aa5e17fc/38bd74f5-4693-424e-8d84-64453e3eadeb"
-					(reference "#PWR038")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
-		(lib_id "Connector:TestPoint")
-		(at 205.74 95.25 180)
-		(unit 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(dnp no)
-		(fields_autoplaced yes)
-		(uuid "55239d0b-eaba-4b0d-a48a-7337954df119")
-		(property "Reference" "TP4"
-			(at 208.28 97.2819 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify right)
-			)
-		)
-		(property "Value" "IMD_FAULT_TP"
-			(at 208.28 99.8219 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify right)
-			)
-		)
-		(property "Footprint" "TestPoint:TestPoint_Loop_D2.50mm_Drill1.0mm"
-			(at 200.66 95.25 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Datasheet" "~"
-			(at 200.66 95.25 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Description" "test point"
-			(at 205.74 95.25 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(pin "1"
-			(uuid "4b1d565a-5e7c-4df3-a6c3-4871d31ada35")
-		)
-		(instances
-			(project "Tractive_Battery_Board"
-				(path "/ca333741-5826-495c-b860-5422aa5e17fc/38bd74f5-4693-424e-8d84-64453e3eadeb"
-					(reference "TP4")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
-		(lib_id "Device:D")
-		(at 71.12 77.47 0)
-		(unit 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(dnp no)
-		(uuid "552e5bc1-c78c-4895-a5e2-2185ca10d8f0")
-		(property "Reference" "D4"
-			(at 71.12 80.01 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Value" "D"
-			(at 71.374 82.042 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Footprint" "Diode_SMD:D_2010_5025Metric_Pad1.52x2.65mm_HandSolder"
-			(at 71.12 77.47 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Datasheet" "https://www.comchiptech.com/admin/files/product/ACGRAT101L-HF%20Thru%20ACGRAT105L-HF%20RevB849012.pdf"
-			(at 71.12 77.47 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Description" ""
-			(at 71.12 77.47 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Sim.Device" "D"
-			(at 71.12 77.47 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Sim.Pins" "1=K 2=A"
-			(at 71.12 77.47 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(pin "2"
-			(uuid "87ecdb2c-9980-424f-9ec6-a43db60ff57a")
-		)
-		(pin "1"
-			(uuid "5a334bbc-46c5-4c4b-8163-fb8b16395a06")
-		)
-		(instances
-			(project "Tractive_Battery_Board"
-				(path "/ca333741-5826-495c-b860-5422aa5e17fc/38bd74f5-4693-424e-8d84-64453e3eadeb"
-					(reference "D4")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
-		(lib_id "Device:D")
-		(at 71.12 72.39 0)
-		(unit 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(dnp no)
-		(uuid "5b02e993-e2be-4eb5-9040-3439b00485cc")
-		(property "Reference" "D3"
-			(at 71.12 74.93 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Value" "D"
-			(at 71.12 69.85 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Footprint" "Diode_SMD:D_2010_5025Metric_Pad1.52x2.65mm_HandSolder"
-			(at 71.12 72.39 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Datasheet" "https://www.comchiptech.com/admin/files/product/ACGRAT101L-HF%20Thru%20ACGRAT105L-HF%20RevB849012.pdf"
-			(at 71.12 72.39 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Description" ""
-			(at 71.12 72.39 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Sim.Device" "D"
-			(at 71.12 72.39 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Sim.Pins" "1=K 2=A"
-			(at 71.12 72.39 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(pin "2"
-			(uuid "850db177-e1b0-40f5-b5b4-fb81e29cdfa2")
-		)
-		(pin "1"
-			(uuid "c4f8ef2e-b164-4120-ad6a-4a3ca3556547")
-		)
-		(instances
-			(project "Tractive_Battery_Board"
-				(path "/ca333741-5826-495c-b860-5422aa5e17fc/38bd74f5-4693-424e-8d84-64453e3eadeb"
-					(reference "D3")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
-		(lib_id "Connector:TestPoint")
-		(at 78.74 110.49 0)
-		(unit 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(dnp no)
-		(uuid "624514df-1068-4371-a06f-bfbc8c04ff96")
-		(property "Reference" "TP1"
-			(at 80.518 103.632 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-		)
-		(property "Value" "BMS_FAULT_TP"
-			(at 80.518 106.172 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-		)
-		(property "Footprint" "TestPoint:TestPoint_Loop_D2.50mm_Drill1.0mm"
-			(at 83.82 110.49 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Datasheet" "~"
-			(at 83.82 110.49 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Description" "test point"
-			(at 78.74 110.49 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(pin "1"
-			(uuid "b2a5852d-3491-46a6-9a48-96207893dfad")
-		)
-		(instances
-			(project "Tractive_Battery_Board"
-				(path "/ca333741-5826-495c-b860-5422aa5e17fc/38bd74f5-4693-424e-8d84-64453e3eadeb"
-					(reference "TP1")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
-		(lib_id "power:GND")
-		(at 121.92 99.06 0)
-		(unit 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(dnp no)
-		(fields_autoplaced yes)
-		(uuid "63d71329-7d5b-4d45-a10e-1ba628751e16")
-		(property "Reference" "#PWR037"
-			(at 121.92 105.41 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Value" "GND"
-			(at 121.92 104.14 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Footprint" ""
-			(at 121.92 99.06 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Datasheet" ""
-			(at 121.92 99.06 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
-			(at 121.92 99.06 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(pin "1"
-			(uuid "0a45d4ce-0666-4ee8-b1b2-939d43fe28df")
-		)
-		(instances
-			(project "Tractive_Battery_Board"
-				(path "/ca333741-5826-495c-b860-5422aa5e17fc/38bd74f5-4693-424e-8d84-64453e3eadeb"
-					(reference "#PWR037")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
-		(lib_id "Connector:TestPoint")
-		(at 127 86.36 180)
-		(unit 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(dnp no)
-		(uuid "64fc976e-99e0-431d-9408-e12772739a9f")
-		(property "Reference" "TP5"
-			(at 129.54 90.678 90)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-		)
-		(property "Value" "IMD_DELAY_TP"
-			(at 127 90.678 90)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-		)
-		(property "Footprint" "TestPoint:TestPoint_Loop_D2.50mm_Drill1.0mm"
-			(at 121.92 86.36 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Datasheet" "~"
-			(at 121.92 86.36 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Description" "test point"
-			(at 127 86.36 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(pin "1"
-			(uuid "327c3be3-4811-407d-8c21-d3e1f64556c2")
-		)
-		(instances
-			(project "Tractive_Battery_Board"
-				(path "/ca333741-5826-495c-b860-5422aa5e17fc/38bd74f5-4693-424e-8d84-64453e3eadeb"
-					(reference "TP5")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
-		(lib_id "FS_4_SCHEMATICS:SZNUD3124LT1G")
-		(at 95.25 111.76 0)
-		(unit 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(dnp no)
-		(uuid "6dbdad6a-0b41-4383-96ab-d6bff75368c3")
-		(property "Reference" "SZNUD3124LT1G1"
-			(at 99.314 110.744 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-		)
-		(property "Value" "Q3"
-			(at 100.33 113.0299 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-		)
-		(property "Footprint" "Package_TO_SOT_SMD:TSOT-23_HandSoldering"
-			(at 95.25 111.76 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Datasheet" "https://www.onsemi.com/pdf/datasheet/nud3124-d.pdf"
-			(at 95.25 111.76 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Description" ""
-			(at 95.25 111.76 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Digi PN" "SZNUD3124LT1GOSCT-ND"
-			(at 95.25 111.76 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "MFG" "onsemi"
-			(at 95.25 111.76 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "MFG PN" "SZNUD3124LT1G"
-			(at 95.25 111.76 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Digi URL" "https://www.digikey.com/en/products/detail/onsemi/SZNUD3124LT1G/3063416"
-			(at 95.25 111.76 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(pin "2"
-			(uuid "1ee0f2ec-27d3-40fc-8ca4-abf8dc80fa68")
-		)
-		(pin "1"
-			(uuid "4a05ddb0-1ccc-4998-9de4-0449853111c6")
-		)
-		(pin "3"
-			(uuid "16d86e1a-5f5f-4f86-a7b3-279753152245")
-		)
-		(instances
-			(project ""
-				(path "/ca333741-5826-495c-b860-5422aa5e17fc/38bd74f5-4693-424e-8d84-64453e3eadeb"
-					(reference "SZNUD3124LT1G1")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
-		(lib_id "FS_4_SCHEMATICS:SZNUD3124LT1G")
-		(at 259.08 92.71 0)
-		(unit 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(dnp no)
-		(uuid "7143e84e-2c14-4d94-b344-73d71b6eaa23")
 		(property "Reference" "SZNUD3124LT1G3"
-			(at 263.144 91.694 0)
+			(at 330.454 71.374 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -6076,8 +5335,8 @@
 				(justify left)
 			)
 		)
-		(property "Value" "Q1"
-			(at 264.16 93.9799 0)
+		(property "Value" "U13"
+			(at 331.47 73.6599 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -6086,7 +5345,7 @@
 			)
 		)
 		(property "Footprint" "Package_TO_SOT_SMD:TSOT-23_HandSoldering"
-			(at 259.08 92.71 0)
+			(at 326.39 72.39 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -6095,7 +5354,7 @@
 			)
 		)
 		(property "Datasheet" "https://www.onsemi.com/pdf/datasheet/nud3124-d.pdf"
-			(at 259.08 92.71 0)
+			(at 326.39 72.39 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -6104,7 +5363,7 @@
 			)
 		)
 		(property "Description" ""
-			(at 259.08 92.71 0)
+			(at 326.39 72.39 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -6113,7 +5372,7 @@
 			)
 		)
 		(property "Digi PN" "SZNUD3124LT1GOSCT-ND"
-			(at 259.08 92.71 0)
+			(at 326.39 72.39 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -6122,7 +5381,7 @@
 			)
 		)
 		(property "MFG" "onsemi"
-			(at 259.08 92.71 0)
+			(at 326.39 72.39 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -6131,7 +5390,7 @@
 			)
 		)
 		(property "MFG PN" "SZNUD3124LT1G"
-			(at 259.08 92.71 0)
+			(at 326.39 72.39 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -6140,7 +5399,7 @@
 			)
 		)
 		(property "Digi URL" "https://www.digikey.com/en/products/detail/onsemi/SZNUD3124LT1G/3063416"
-			(at 259.08 92.71 0)
+			(at 326.39 72.39 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -6149,17 +5408,17 @@
 			)
 		)
 		(pin "2"
-			(uuid "9233a3a7-ec73-4d22-b851-c5903051b30f")
+			(uuid "b0efaee4-0b23-45cf-98c3-f95bcdb3ccfe")
 		)
 		(pin "1"
-			(uuid "c46c2a74-5154-4472-ab40-b663bcc4a84b")
+			(uuid "54ae6baf-3776-486d-bb4e-6e3fd2ba10cb")
 		)
 		(pin "3"
-			(uuid "9a71cea5-4a24-42f6-bc39-5a57e0f50312")
+			(uuid "3f48c39b-2bd5-483f-92a1-b26dd919e2c5")
 		)
 		(instances
 			(project "Tractive_Battery_Board"
-				(path "/ca333741-5826-495c-b860-5422aa5e17fc/38bd74f5-4693-424e-8d84-64453e3eadeb"
+				(path "/ca333741-5826-495c-b860-5422aa5e17fc/d5ae3636-6e9a-45ed-84fd-517f0c920a36"
 					(reference "SZNUD3124LT1G3")
 					(unit 1)
 				)
@@ -6168,16 +5427,16 @@
 	)
 	(symbol
 		(lib_id "FS_3_Global_Symbol_Library:SN74HCS08DR")
-		(at 157.48 83.82 0)
+		(at 71.12 99.06 0)
 		(unit 3)
 		(exclude_from_sim no)
 		(in_bom yes)
 		(on_board yes)
 		(dnp no)
 		(fields_autoplaced yes)
-		(uuid "7b36702c-2603-4235-b417-26349d63acf8")
-		(property "Reference" "U7"
-			(at 157.4717 74.93 0)
+		(uuid "3c7ef901-5eda-4d04-b20f-b4fa8488880c")
+		(property "Reference" "U14"
+			(at 71.1117 90.17 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -6185,7 +5444,7 @@
 			)
 		)
 		(property "Value" "SN74HCS08DR"
-			(at 157.4717 77.47 0)
+			(at 71.1117 92.71 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -6193,7 +5452,7 @@
 			)
 		)
 		(property "Footprint" "Package_SO:SOIC-14_3.9x8.7mm_P1.27mm"
-			(at 157.48 83.82 0)
+			(at 71.12 99.06 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -6202,7 +5461,7 @@
 			)
 		)
 		(property "Datasheet" "http://www.ti.com/lit/gpn/sn74hc00"
-			(at 157.226 78.232 0)
+			(at 70.866 93.472 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -6211,7 +5470,7 @@
 			)
 		)
 		(property "Description" "quad 2-input AND gate"
-			(at 155.702 90.678 0)
+			(at 69.342 105.918 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -6238,13 +5497,13 @@
 			(uuid "d5cf1993-3d28-4c64-8ff2-fe7b7838720e")
 		)
 		(pin "9"
-			(uuid "791c9253-7418-4532-ab7e-dbe6329b0aa7")
+			(uuid "74537468-8f3d-4590-95ba-9455bcfbf6ef")
 		)
 		(pin "10"
-			(uuid "7f848b0b-e042-4cbe-847b-fe718e247af2")
+			(uuid "b3b34b0f-e95f-4659-b2d5-3fcc9342a76e")
 		)
 		(pin "8"
-			(uuid "374425af-04d8-4932-93bf-fe83057623a6")
+			(uuid "b2887d08-e674-409d-9baf-2b1644e75eaa")
 		)
 		(pin "12"
 			(uuid "807c3eaf-543d-45d2-9658-4457147bba5b")
@@ -6263,43 +5522,42 @@
 		)
 		(instances
 			(project "Tractive_Battery_Board"
-				(path "/ca333741-5826-495c-b860-5422aa5e17fc/38bd74f5-4693-424e-8d84-64453e3eadeb"
-					(reference "U7")
+				(path "/ca333741-5826-495c-b860-5422aa5e17fc/d5ae3636-6e9a-45ed-84fd-517f0c920a36"
+					(reference "U14")
 					(unit 3)
 				)
 			)
 		)
 	)
 	(symbol
-		(lib_id "Device:R")
-		(at 132.08 77.47 180)
+		(lib_id "Device:C")
+		(at 35.56 110.49 0)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
 		(on_board yes)
 		(dnp no)
-		(fields_autoplaced yes)
-		(uuid "819f765d-5f8b-47d0-8233-f6c5118ec151")
-		(property "Reference" "R17"
-			(at 134.62 76.1999 0)
+		(uuid "3fc90a79-013f-4b03-8e72-1dbab994da50")
+		(property "Reference" "C7"
+			(at 30.48 105.918 0)
 			(effects
 				(font
-					(size 1.27 1.27)
+					(size 1.016 1.016)
 				)
-				(justify right)
+				(justify left)
 			)
 		)
-		(property "Value" "4.99k"
-			(at 134.62 78.7399 0)
+		(property "Value" "33uF"
+			(at 30.48 108.458 0)
 			(effects
 				(font
-					(size 1.27 1.27)
+					(size 0.889 0.889)
 				)
-				(justify right)
+				(justify left)
 			)
 		)
 		(property "Footprint" ""
-			(at 133.858 77.47 90)
+			(at 36.5252 114.3 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -6308,7 +5566,7 @@
 			)
 		)
 		(property "Datasheet" "~"
-			(at 132.08 77.47 0)
+			(at 35.56 110.49 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -6316,8 +5574,8 @@
 				(hide yes)
 			)
 		)
-		(property "Description" "Resistor"
-			(at 132.08 77.47 0)
+		(property "Description" "Unpolarized capacitor"
+			(at 35.56 110.49 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -6326,181 +5584,15 @@
 			)
 		)
 		(pin "1"
-			(uuid "f864fa6e-741c-4c46-ba39-3a6f6b82931c")
+			(uuid "36bc6f05-caab-47f4-b0bd-969e3c3f35e4")
 		)
 		(pin "2"
-			(uuid "01e7f18f-884d-4702-a763-e82d353f1668")
+			(uuid "d010b793-3223-46dd-b322-fb4f4669cbf6")
 		)
 		(instances
 			(project "Tractive_Battery_Board"
-				(path "/ca333741-5826-495c-b860-5422aa5e17fc/38bd74f5-4693-424e-8d84-64453e3eadeb"
-					(reference "R17")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
-		(lib_id "Device:D")
-		(at 118.11 74.93 0)
-		(mirror x)
-		(unit 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(dnp no)
-		(uuid "81b483fb-2f00-4c52-b4a3-064a69bed9a6")
-		(property "Reference" "D5"
-			(at 118.11 72.39 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Value" "D"
-			(at 118.364 70.358 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Footprint" "Diode_SMD:D_2010_5025Metric_Pad1.52x2.65mm_HandSolder"
-			(at 118.11 74.93 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Datasheet" "https://www.comchiptech.com/admin/files/product/ACGRAT101L-HF%20Thru%20ACGRAT105L-HF%20RevB849012.pdf"
-			(at 118.11 74.93 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Description" ""
-			(at 118.11 74.93 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Sim.Device" "D"
-			(at 118.11 74.93 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Sim.Pins" "1=K 2=A"
-			(at 118.11 74.93 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(pin "2"
-			(uuid "14bd7d57-4ca2-4ebc-83a2-b34d1b0a15fe")
-		)
-		(pin "1"
-			(uuid "0789c322-5ce5-4c88-bb31-9e02448849b1")
-		)
-		(instances
-			(project "Tractive_Battery_Board"
-				(path "/ca333741-5826-495c-b860-5422aa5e17fc/38bd74f5-4693-424e-8d84-64453e3eadeb"
-					(reference "D5")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
-		(lib_id "1FS_2_Global_Symbol_Library:G6BK-1114P-US")
-		(at 243.84 52.07 0)
-		(mirror x)
-		(unit 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(dnp no)
-		(uuid "86d2c8c7-ad37-4d98-9b4f-b7b2c64a0f28")
-		(property "Reference" "K4"
-			(at 251.206 55.118 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Value" "G6BK-1114P-US"
-			(at 258.572 57.15 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Footprint" "FS_3_Global_Footprint_Library:RELAY_G6BK-1114P-US_OMR"
-			(at 277.495 50.8 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Datasheet" ""
-			(at 243.84 55.88 90)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Description" "Omron G6BK-1114P-US Latching Relay."
-			(at 243.84 52.07 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(pin "3"
-			(uuid "46bc8c2d-b544-4c2b-ad83-f6bdb9c02239")
-		)
-		(pin "6"
-			(uuid "d9f1b813-2cc3-4c71-8814-937951fbab95")
-		)
-		(pin "2"
-			(uuid "bd0fb3a9-d1e8-4650-8f4e-8907b33b85be")
-		)
-		(pin "1"
-			(uuid "4857a22b-98d9-488e-a083-730cf21f303b")
-		)
-		(pin "5"
-			(uuid "b9befdff-6e26-4872-8712-9717f2bd85a9")
-		)
-		(pin "4"
-			(uuid "9ef85177-f955-4f6f-8600-77267781faec")
-		)
-		(instances
-			(project "Tractive_Battery_Board"
-				(path "/ca333741-5826-495c-b860-5422aa5e17fc/38bd74f5-4693-424e-8d84-64453e3eadeb"
-					(reference "K4")
+				(path "/ca333741-5826-495c-b860-5422aa5e17fc/d5ae3636-6e9a-45ed-84fd-517f0c920a36"
+					(reference "C7")
 					(unit 1)
 				)
 			)
@@ -6508,16 +5600,16 @@
 	)
 	(symbol
 		(lib_id "power:GND")
-		(at 80.01 93.98 0)
+		(at 327.66 77.47 0)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
 		(on_board yes)
 		(dnp no)
 		(fields_autoplaced yes)
-		(uuid "8870a71e-274f-48f0-a95c-dbe2f49ca870")
-		(property "Reference" "#PWR030"
-			(at 80.01 100.33 0)
+		(uuid "43986898-d9c3-4874-9407-7e388ec873ed")
+		(property "Reference" "#PWR032"
+			(at 327.66 83.82 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -6526,7 +5618,7 @@
 			)
 		)
 		(property "Value" "GND"
-			(at 80.01 99.06 0)
+			(at 327.66 82.55 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -6534,7 +5626,7 @@
 			)
 		)
 		(property "Footprint" ""
-			(at 80.01 93.98 0)
+			(at 327.66 77.47 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -6543,7 +5635,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 80.01 93.98 0)
+			(at 327.66 77.47 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -6552,7 +5644,7 @@
 			)
 		)
 		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
-			(at 80.01 93.98 0)
+			(at 327.66 77.47 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -6561,28 +5653,247 @@
 			)
 		)
 		(pin "1"
-			(uuid "54c700d5-d237-4f66-8084-cc2261366f89")
+			(uuid "550a82b0-46b9-4202-94a7-a028bb1fb629")
 		)
 		(instances
 			(project "Tractive_Battery_Board"
-				(path "/ca333741-5826-495c-b860-5422aa5e17fc/38bd74f5-4693-424e-8d84-64453e3eadeb"
-					(reference "#PWR030")
+				(path "/ca333741-5826-495c-b860-5422aa5e17fc/d5ae3636-6e9a-45ed-84fd-517f0c920a36"
+					(reference "#PWR032")
 					(unit 1)
 				)
 			)
 		)
 	)
 	(symbol
-		(lib_id "74xx:74HC14")
-		(at 138.43 62.23 0)
+		(lib_id "Device:D")
+		(at 31.75 90.17 0)
+		(mirror x)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
 		(on_board yes)
 		(dnp no)
-		(uuid "8a2faf6f-cd65-4007-b359-1ace55dc4750")
-		(property "Reference" "U5"
-			(at 140.97 53.34 90)
+		(uuid "491bb724-01e9-4148-9753-98653a5e2362")
+		(property "Reference" "D2"
+			(at 31.75 87.63 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "D"
+			(at 32.004 85.598 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" "Diode_SMD:D_2010_5025Metric_Pad1.52x2.65mm_HandSolder"
+			(at 31.75 90.17 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "https://www.comchiptech.com/admin/files/product/ACGRAT101L-HF%20Thru%20ACGRAT105L-HF%20RevB849012.pdf"
+			(at 31.75 90.17 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" ""
+			(at 31.75 90.17 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Sim.Device" "D"
+			(at 31.75 90.17 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Sim.Pins" "1=K 2=A"
+			(at 31.75 90.17 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "2"
+			(uuid "9f6525a2-d913-4213-87a7-a12b358b96c5")
+		)
+		(pin "1"
+			(uuid "f0e10435-3193-4709-88d4-d74ff83fb7fc")
+		)
+		(instances
+			(project "Tractive_Battery_Board"
+				(path "/ca333741-5826-495c-b860-5422aa5e17fc/d5ae3636-6e9a-45ed-84fd-517f0c920a36"
+					(reference "D2")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "power:GND")
+		(at 45.72 114.3 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "4cdbc97a-9f55-4c3d-bf7a-547a18c41f97")
+		(property "Reference" "#PWR068"
+			(at 45.72 120.65 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Value" "GND"
+			(at 45.72 119.38 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" ""
+			(at 45.72 114.3 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" ""
+			(at 45.72 114.3 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
+			(at 45.72 114.3 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "8c89cb1d-b7a8-499c-ac15-e10dc9b68c3d")
+		)
+		(instances
+			(project "Tractive_Battery_Board"
+				(path "/ca333741-5826-495c-b860-5422aa5e17fc/d5ae3636-6e9a-45ed-84fd-517f0c920a36"
+					(reference "#PWR068")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "power:+5V")
+		(at 208.28 72.39 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "4e78b9f3-dda8-4328-b256-6a0d026dec17")
+		(property "Reference" "#PWR028"
+			(at 208.28 76.2 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Value" "+5V"
+			(at 208.28 67.31 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" ""
+			(at 208.28 72.39 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" ""
+			(at 208.28 72.39 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Power symbol creates a global label with name \"+5V\""
+			(at 208.28 72.39 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "ced480ba-3b56-47e7-a755-76240cac2a61")
+		)
+		(instances
+			(project "Tractive_Battery_Board"
+				(path "/ca333741-5826-495c-b860-5422aa5e17fc/d5ae3636-6e9a-45ed-84fd-517f0c920a36"
+					(reference "#PWR028")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Connector:TestPoint")
+		(at 281.94 93.98 180)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "55239d0b-eaba-4b0d-a48a-7337954df119")
+		(property "Reference" "TP5"
+			(at 284.48 96.0119 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -6590,8 +5901,594 @@
 				(justify right)
 			)
 		)
-		(property "Value" "74HC14"
-			(at 138.43 51.816 90)
+		(property "Value" "IMD_FAULT_TP"
+			(at 284.48 98.5519 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+			)
+		)
+		(property "Footprint" "TestPoint:TestPoint_Loop_D2.50mm_Drill1.0mm"
+			(at 276.86 93.98 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 276.86 93.98 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "test point"
+			(at 281.94 93.98 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "1e1b6259-76f5-4713-be88-4bdcc2708a76")
+		)
+		(instances
+			(project "Tractive_Battery_Board"
+				(path "/ca333741-5826-495c-b860-5422aa5e17fc/d5ae3636-6e9a-45ed-84fd-517f0c920a36"
+					(reference "TP5")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Connector:TestPoint")
+		(at 125.73 110.49 0)
+		(mirror x)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "624514df-1068-4371-a06f-bfbc8c04ff96")
+		(property "Reference" "TP1"
+			(at 127.508 117.348 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Value" "BMS_FAULT_TP"
+			(at 127.508 114.808 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Footprint" "TestPoint:TestPoint_Loop_D2.50mm_Drill1.0mm"
+			(at 130.81 110.49 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 130.81 110.49 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "test point"
+			(at 125.73 110.49 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "e22035d2-79ab-4811-bb55-0e55d98ce749")
+		)
+		(instances
+			(project "Tractive_Battery_Board"
+				(path "/ca333741-5826-495c-b860-5422aa5e17fc/d5ae3636-6e9a-45ed-84fd-517f0c920a36"
+					(reference "TP1")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "power:GND")
+		(at 198.12 95.25 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "63d71329-7d5b-4d45-a10e-1ba628751e16")
+		(property "Reference" "#PWR027"
+			(at 198.12 101.6 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Value" "GND"
+			(at 198.12 100.33 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" ""
+			(at 198.12 95.25 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" ""
+			(at 198.12 95.25 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
+			(at 198.12 95.25 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "554369ff-3523-4841-ab14-41d18313f0dd")
+		)
+		(instances
+			(project "Tractive_Battery_Board"
+				(path "/ca333741-5826-495c-b860-5422aa5e17fc/d5ae3636-6e9a-45ed-84fd-517f0c920a36"
+					(reference "#PWR027")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Connector:TestPoint")
+		(at 203.2 85.09 180)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "64fc976e-99e0-431d-9408-e12772739a9f")
+		(property "Reference" "TP3"
+			(at 205.74 89.408 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Value" "IMD_DELAY_TP"
+			(at 203.2 89.408 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Footprint" "TestPoint:TestPoint_Loop_D2.50mm_Drill1.0mm"
+			(at 198.12 85.09 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 198.12 85.09 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "test point"
+			(at 203.2 85.09 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "b0c2d4f3-e0d7-472d-89ed-bdd13384a066")
+		)
+		(instances
+			(project "Tractive_Battery_Board"
+				(path "/ca333741-5826-495c-b860-5422aa5e17fc/d5ae3636-6e9a-45ed-84fd-517f0c920a36"
+					(reference "TP3")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "FS_4_SCHEMATICS:SZNUD3124LT1G")
+		(at 157.48 107.95 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "6dbdad6a-0b41-4383-96ab-d6bff75368c3")
+		(property "Reference" "SZNUD3124LT1G2"
+			(at 161.544 106.934 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Value" "U12"
+			(at 162.56 109.2199 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Footprint" "Package_TO_SOT_SMD:TSOT-23_HandSoldering"
+			(at 157.48 107.95 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "https://www.onsemi.com/pdf/datasheet/nud3124-d.pdf"
+			(at 157.48 107.95 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" ""
+			(at 157.48 107.95 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Digi PN" "SZNUD3124LT1GOSCT-ND"
+			(at 157.48 107.95 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "MFG" "onsemi"
+			(at 157.48 107.95 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "MFG PN" "SZNUD3124LT1G"
+			(at 157.48 107.95 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Digi URL" "https://www.digikey.com/en/products/detail/onsemi/SZNUD3124LT1G/3063416"
+			(at 157.48 107.95 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "2"
+			(uuid "3bf8eac3-c6c7-4c8e-ad27-e28016f33c06")
+		)
+		(pin "1"
+			(uuid "4edca71f-98b9-4e46-8b2f-2e58850d04c6")
+		)
+		(pin "3"
+			(uuid "3ec19936-af17-4d58-8c38-9e28f691aa83")
+		)
+		(instances
+			(project "Tractive_Battery_Board"
+				(path "/ca333741-5826-495c-b860-5422aa5e17fc/d5ae3636-6e9a-45ed-84fd-517f0c920a36"
+					(reference "SZNUD3124LT1G2")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "FS_4_SCHEMATICS:SZNUD3124LT1G")
+		(at 328.93 91.44 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "7143e84e-2c14-4d94-b344-73d71b6eaa23")
+		(property "Reference" "SZNUD3124LT1G4"
+			(at 332.994 90.424 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Value" "U14"
+			(at 334.01 92.7099 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Footprint" "Package_TO_SOT_SMD:TSOT-23_HandSoldering"
+			(at 328.93 91.44 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "https://www.onsemi.com/pdf/datasheet/nud3124-d.pdf"
+			(at 328.93 91.44 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" ""
+			(at 328.93 91.44 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Digi PN" "SZNUD3124LT1GOSCT-ND"
+			(at 328.93 91.44 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "MFG" "onsemi"
+			(at 328.93 91.44 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "MFG PN" "SZNUD3124LT1G"
+			(at 328.93 91.44 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Digi URL" "https://www.digikey.com/en/products/detail/onsemi/SZNUD3124LT1G/3063416"
+			(at 328.93 91.44 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "2"
+			(uuid "225b3bf2-e016-4fdb-b687-8f9c43613a73")
+		)
+		(pin "1"
+			(uuid "b3384354-6a07-4912-8c94-df4de29f8cc9")
+		)
+		(pin "3"
+			(uuid "9128d156-485b-4dd3-824f-44782a11b5bf")
+		)
+		(instances
+			(project "Tractive_Battery_Board"
+				(path "/ca333741-5826-495c-b860-5422aa5e17fc/d5ae3636-6e9a-45ed-84fd-517f0c920a36"
+					(reference "SZNUD3124LT1G4")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "FS_3_Global_Symbol_Library:SN74HCS08DR")
+		(at 233.68 82.55 0)
+		(unit 3)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "7b36702c-2603-4235-b417-26349d63acf8")
+		(property "Reference" "U6"
+			(at 233.6717 73.66 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "SN74HCS08DR"
+			(at 233.6717 76.2 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" "Package_SO:SOIC-14_3.9x8.7mm_P1.27mm"
+			(at 233.68 82.55 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "http://www.ti.com/lit/gpn/sn74hc00"
+			(at 233.426 76.962 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "quad 2-input AND gate"
+			(at 231.902 89.408 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "108328b1-34d6-4d62-a359-986ab3b05799")
+		)
+		(pin "2"
+			(uuid "2c3fcf68-f3ec-43db-b430-855b5c70140e")
+		)
+		(pin "3"
+			(uuid "a94781c9-d5df-4eee-beae-4e59557d1f79")
+		)
+		(pin "4"
+			(uuid "64721fb9-78ce-4e6b-9300-4999bfb8475a")
+		)
+		(pin "5"
+			(uuid "14c7d2df-2fae-4108-9e5f-26db259c3b64")
+		)
+		(pin "6"
+			(uuid "d5cf1993-3d28-4c64-8ff2-fe7b7838720e")
+		)
+		(pin "9"
+			(uuid "615c8e21-399c-4442-b49d-02ca6e6ceeec")
+		)
+		(pin "10"
+			(uuid "253da783-ce60-4d42-8a53-e0e0c1d2f54e")
+		)
+		(pin "8"
+			(uuid "4ba012d9-4c68-428a-ad91-4558613a201c")
+		)
+		(pin "12"
+			(uuid "807c3eaf-543d-45d2-9658-4457147bba5b")
+		)
+		(pin "13"
+			(uuid "758551bd-479d-4d7c-ba0b-a99639c648f7")
+		)
+		(pin "11"
+			(uuid "5b2ba142-9fcf-4371-bf0b-5af997bc2c5a")
+		)
+		(pin "14"
+			(uuid "27b53e38-f782-4abf-bae2-1bfa6ade18a8")
+		)
+		(pin "7"
+			(uuid "113f0d9c-61c6-45d9-bd60-ea8643aa8883")
+		)
+		(instances
+			(project "Tractive_Battery_Board"
+				(path "/ca333741-5826-495c-b860-5422aa5e17fc/d5ae3636-6e9a-45ed-84fd-517f0c920a36"
+					(reference "U6")
+					(unit 3)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Device:R")
+		(at 208.28 76.2 180)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "819f765d-5f8b-47d0-8233-f6c5118ec151")
+		(property "Reference" "R10"
+			(at 210.82 74.9299 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+			)
+		)
+		(property "Value" "4.99k"
+			(at 210.82 77.4699 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -6600,7 +6497,308 @@
 			)
 		)
 		(property "Footprint" ""
-			(at 138.43 62.23 0)
+			(at 210.058 76.2 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 208.28 76.2 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Resistor"
+			(at 208.28 76.2 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "67da16b5-d34e-47e3-acfe-bcffb53cb038")
+		)
+		(pin "2"
+			(uuid "914c2bc3-47d7-4b4b-bcc4-9cf158a5220d")
+		)
+		(instances
+			(project "Tractive_Battery_Board"
+				(path "/ca333741-5826-495c-b860-5422aa5e17fc/d5ae3636-6e9a-45ed-84fd-517f0c920a36"
+					(reference "R10")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Device:D")
+		(at 194.31 73.66 0)
+		(mirror x)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "81b483fb-2f00-4c52-b4a3-064a69bed9a6")
+		(property "Reference" "D4"
+			(at 194.31 71.12 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "D"
+			(at 194.564 69.088 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" "Diode_SMD:D_2010_5025Metric_Pad1.52x2.65mm_HandSolder"
+			(at 194.31 73.66 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "https://www.comchiptech.com/admin/files/product/ACGRAT101L-HF%20Thru%20ACGRAT105L-HF%20RevB849012.pdf"
+			(at 194.31 73.66 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" ""
+			(at 194.31 73.66 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Sim.Device" "D"
+			(at 194.31 73.66 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Sim.Pins" "1=K 2=A"
+			(at 194.31 73.66 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "2"
+			(uuid "3a445664-d1a0-45df-abdc-c51318a078fd")
+		)
+		(pin "1"
+			(uuid "1eb92d5b-0af4-4989-9e89-cf5a2271a3d3")
+		)
+		(instances
+			(project "Tractive_Battery_Board"
+				(path "/ca333741-5826-495c-b860-5422aa5e17fc/d5ae3636-6e9a-45ed-84fd-517f0c920a36"
+					(reference "D4")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "1FS_2_Global_Symbol_Library:G6BK-1114P-US")
+		(at 320.04 50.8 0)
+		(mirror x)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "86d2c8c7-ad37-4d98-9b4f-b7b2c64a0f28")
+		(property "Reference" "K2"
+			(at 327.406 53.848 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "G6BK-1114P-US"
+			(at 334.772 55.88 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" "FS_3_Global_Footprint_Library:RELAY_G6BK-1114P-US_OMR"
+			(at 353.695 49.53 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" ""
+			(at 320.04 54.61 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Omron G6BK-1114P-US Latching Relay."
+			(at 320.04 50.8 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "3"
+			(uuid "6964b69d-ef97-485c-a92d-fece08257efe")
+		)
+		(pin "6"
+			(uuid "6677cd95-dac0-411b-bba2-8aabe86f7682")
+		)
+		(pin "2"
+			(uuid "3f4965d9-e0a2-45fd-b590-44f85cf9a85d")
+		)
+		(pin "1"
+			(uuid "e4a909d6-a909-4441-9bb3-10bfa5098ddf")
+		)
+		(pin "5"
+			(uuid "7da105b0-81aa-49fd-b404-159bd27d9f6c")
+		)
+		(pin "4"
+			(uuid "d69f5eeb-c6c9-4099-9d38-c94c0c244d31")
+		)
+		(instances
+			(project "Tractive_Battery_Board"
+				(path "/ca333741-5826-495c-b860-5422aa5e17fc/d5ae3636-6e9a-45ed-84fd-517f0c920a36"
+					(reference "K2")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "power:GND")
+		(at 156.21 85.09 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "8870a71e-274f-48f0-a95c-dbe2f49ca870")
+		(property "Reference" "#PWR022"
+			(at 156.21 91.44 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Value" "GND"
+			(at 156.21 90.17 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" ""
+			(at 156.21 85.09 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" ""
+			(at 156.21 85.09 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
+			(at 156.21 85.09 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "fdf6aeb0-36b9-4a9c-b4a0-004d3dd4ab29")
+		)
+		(instances
+			(project "Tractive_Battery_Board"
+				(path "/ca333741-5826-495c-b860-5422aa5e17fc/d5ae3636-6e9a-45ed-84fd-517f0c920a36"
+					(reference "#PWR022")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "74xx:74HC14")
+		(at 214.63 60.96 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "8a2faf6f-cd65-4007-b359-1ace55dc4750")
+		(property "Reference" "U2"
+			(at 217.17 52.07 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+			)
+		)
+		(property "Value" "74HC14"
+			(at 214.63 50.546 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+			)
+		)
+		(property "Footprint" ""
+			(at 214.63 60.96 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -6609,7 +6807,7 @@
 			)
 		)
 		(property "Datasheet" "http://www.ti.com/lit/gpn/sn74HC14"
-			(at 138.43 62.23 0)
+			(at 214.63 60.96 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -6618,7 +6816,7 @@
 			)
 		)
 		(property "Description" "Hex inverter schmitt trigger"
-			(at 138.43 62.23 0)
+			(at 214.63 60.96 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -6633,10 +6831,10 @@
 			(uuid "c955e7dd-d2a4-4d1b-b18e-ce01c5b3a7fd")
 		)
 		(pin "1"
-			(uuid "4e69e489-488a-4e89-ab3f-8213e87ad494")
+			(uuid "846ed4c9-6074-4053-ab4a-12348ec2d598")
 		)
 		(pin "2"
-			(uuid "4cc0cdcf-b388-42c5-bee4-0f1d303cdbfe")
+			(uuid "870712f6-81cb-48c6-9b5b-108dc14c3655")
 		)
 		(pin "3"
 			(uuid "5c505063-e29b-43d9-9e37-1a1e8013656b")
@@ -6670,8 +6868,8 @@
 		)
 		(instances
 			(project "Tractive_Battery_Board"
-				(path "/ca333741-5826-495c-b860-5422aa5e17fc/38bd74f5-4693-424e-8d84-64453e3eadeb"
-					(reference "U5")
+				(path "/ca333741-5826-495c-b860-5422aa5e17fc/d5ae3636-6e9a-45ed-84fd-517f0c920a36"
+					(reference "U2")
 					(unit 1)
 				)
 			)
@@ -6679,15 +6877,15 @@
 	)
 	(symbol
 		(lib_id "Device:R")
-		(at 118.11 83.82 90)
+		(at 194.31 82.55 90)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
 		(on_board yes)
 		(dnp no)
 		(uuid "8a6af7d4-08ac-4203-920b-2a6b465df5be")
-		(property "Reference" "R16"
-			(at 118.11 78.486 90)
+		(property "Reference" "R1"
+			(at 194.31 77.216 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -6695,7 +6893,7 @@
 			)
 		)
 		(property "Value" "422k"
-			(at 118.11 81.026 90)
+			(at 194.31 79.756 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -6703,7 +6901,7 @@
 			)
 		)
 		(property "Footprint" ""
-			(at 118.11 85.598 90)
+			(at 194.31 84.328 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -6712,7 +6910,7 @@
 			)
 		)
 		(property "Datasheet" "~"
-			(at 118.11 83.82 0)
+			(at 194.31 82.55 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -6721,7 +6919,7 @@
 			)
 		)
 		(property "Description" "Resistor"
-			(at 118.11 83.82 0)
+			(at 194.31 82.55 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -6730,50 +6928,50 @@
 			)
 		)
 		(pin "1"
-			(uuid "6c957c90-75fd-4f43-a482-fe4b688e4106")
+			(uuid "4457b685-be05-4f54-a7e5-72aedb0cf88e")
 		)
 		(pin "2"
-			(uuid "b1216eb5-66ae-4687-abba-2c916d509bcc")
+			(uuid "c6fffc66-d3cf-4846-b590-63104b073bfb")
 		)
 		(instances
 			(project "Tractive_Battery_Board"
-				(path "/ca333741-5826-495c-b860-5422aa5e17fc/38bd74f5-4693-424e-8d84-64453e3eadeb"
-					(reference "R16")
+				(path "/ca333741-5826-495c-b860-5422aa5e17fc/d5ae3636-6e9a-45ed-84fd-517f0c920a36"
+					(reference "R1")
 					(unit 1)
 				)
 			)
 		)
 	)
 	(symbol
-		(lib_id "Connector:TestPoint")
-		(at 96.52 48.26 0)
+		(lib_id "Device:R")
+		(at 45.72 92.71 180)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
 		(on_board yes)
 		(dnp no)
 		(fields_autoplaced yes)
-		(uuid "928b273b-ef5d-48f6-9672-b1513d53fa79")
-		(property "Reference" "TP2"
-			(at 99.06 43.6879 0)
+		(uuid "8b53c4c9-7c72-457c-8940-312ad3261663")
+		(property "Reference" "R14"
+			(at 48.26 91.4399 0)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
-				(justify left)
+				(justify right)
 			)
 		)
-		(property "Value" "Post_BSM_TP"
-			(at 99.06 46.2279 0)
+		(property "Value" "4.99k"
+			(at 48.26 93.9799 0)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
-				(justify left)
+				(justify right)
 			)
 		)
-		(property "Footprint" "TestPoint:TestPoint_Loop_D2.50mm_Drill1.0mm"
-			(at 101.6 48.26 0)
+		(property "Footprint" ""
+			(at 47.498 92.71 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -6782,7 +6980,77 @@
 			)
 		)
 		(property "Datasheet" "~"
-			(at 101.6 48.26 0)
+			(at 45.72 92.71 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Resistor"
+			(at 45.72 92.71 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "be346636-91d5-451a-b27e-b7194e03e40a")
+		)
+		(pin "2"
+			(uuid "274c95ea-b7f0-4da4-ac82-cf8814da71bb")
+		)
+		(instances
+			(project "Tractive_Battery_Board"
+				(path "/ca333741-5826-495c-b860-5422aa5e17fc/d5ae3636-6e9a-45ed-84fd-517f0c920a36"
+					(reference "R14")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Connector:TestPoint")
+		(at 172.72 46.99 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "928b273b-ef5d-48f6-9672-b1513d53fa79")
+		(property "Reference" "TP2"
+			(at 175.26 42.4179 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Value" "Post_BSM_TP"
+			(at 175.26 44.9579 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Footprint" "TestPoint:TestPoint_Loop_D2.50mm_Drill1.0mm"
+			(at 177.8 46.99 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 177.8 46.99 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -6791,7 +7059,7 @@
 			)
 		)
 		(property "Description" "test point"
-			(at 96.52 48.26 0)
+			(at 172.72 46.99 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -6800,11 +7068,11 @@
 			)
 		)
 		(pin "1"
-			(uuid "0b711480-34f7-4e18-a77d-74ff8beffe45")
+			(uuid "eadcbe75-e97e-4b7b-8504-560ca499de9a")
 		)
 		(instances
 			(project "Tractive_Battery_Board"
-				(path "/ca333741-5826-495c-b860-5422aa5e17fc/38bd74f5-4693-424e-8d84-64453e3eadeb"
+				(path "/ca333741-5826-495c-b860-5422aa5e17fc/d5ae3636-6e9a-45ed-84fd-517f0c920a36"
 					(reference "TP2")
 					(unit 1)
 				)
@@ -6812,82 +7080,17 @@
 		)
 	)
 	(symbol
-		(lib_id "power:+12V")
-		(at 62.23 62.23 0)
-		(unit 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(dnp no)
-		(uuid "9c409c80-fef4-48fa-95b6-956c8dc933df")
-		(property "Reference" "#PWR028"
-			(at 62.23 66.04 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Value" "+12V"
-			(at 62.23 58.166 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Footprint" ""
-			(at 62.23 62.23 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Datasheet" ""
-			(at 62.23 62.23 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Description" "Power symbol creates a global label with name \"+12V\""
-			(at 62.23 62.23 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(pin "1"
-			(uuid "f77e2e73-3c73-4216-bd54-5b8bed9c6ae6")
-		)
-		(instances
-			(project ""
-				(path "/ca333741-5826-495c-b860-5422aa5e17fc/38bd74f5-4693-424e-8d84-64453e3eadeb"
-					(reference "#PWR028")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
 		(lib_id "power:GND")
-		(at 132.08 99.06 0)
+		(at 35.56 114.3 0)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
 		(on_board yes)
 		(dnp no)
 		(fields_autoplaced yes)
-		(uuid "ba89820a-1663-4776-8b59-f591c12770e6")
-		(property "Reference" "#PWR039"
-			(at 132.08 105.41 0)
+		(uuid "9ab3bef2-44dc-4efe-b1a1-b10127a50e3a")
+		(property "Reference" "#PWR066"
+			(at 35.56 120.65 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -6896,7 +7099,7 @@
 			)
 		)
 		(property "Value" "GND"
-			(at 132.08 104.14 0)
+			(at 35.56 119.38 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -6904,7 +7107,7 @@
 			)
 		)
 		(property "Footprint" ""
-			(at 132.08 99.06 0)
+			(at 35.56 114.3 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -6913,7 +7116,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 132.08 99.06 0)
+			(at 35.56 114.3 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -6922,7 +7125,7 @@
 			)
 		)
 		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
-			(at 132.08 99.06 0)
+			(at 35.56 114.3 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -6931,12 +7134,481 @@
 			)
 		)
 		(pin "1"
-			(uuid "06785b6f-cf97-4e3b-b723-c2c53a76a59f")
+			(uuid "664f40f3-068d-4a62-a828-5dec96f927ce")
 		)
 		(instances
 			(project "Tractive_Battery_Board"
-				(path "/ca333741-5826-495c-b860-5422aa5e17fc/38bd74f5-4693-424e-8d84-64453e3eadeb"
-					(reference "#PWR039")
+				(path "/ca333741-5826-495c-b860-5422aa5e17fc/d5ae3636-6e9a-45ed-84fd-517f0c920a36"
+					(reference "#PWR066")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "power:+12V")
+		(at 138.43 60.96 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "9c409c80-fef4-48fa-95b6-956c8dc933df")
+		(property "Reference" "#PWR09"
+			(at 138.43 64.77 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Value" "+12V"
+			(at 138.43 56.896 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" ""
+			(at 138.43 60.96 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" ""
+			(at 138.43 60.96 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Power symbol creates a global label with name \"+12V\""
+			(at 138.43 60.96 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "377e1785-482b-47c8-9b43-18844ecac25e")
+		)
+		(instances
+			(project "Tractive_Battery_Board"
+				(path "/ca333741-5826-495c-b860-5422aa5e17fc/d5ae3636-6e9a-45ed-84fd-517f0c920a36"
+					(reference "#PWR09")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Connector:TestPoint")
+		(at 40.64 101.6 180)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "a376ecdd-c18c-47b6-8c0b-e3765bc421de")
+		(property "Reference" "TP9"
+			(at 43.18 105.918 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Value" "IMD_DELAY_TP"
+			(at 40.64 105.918 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Footprint" "TestPoint:TestPoint_Loop_D2.50mm_Drill1.0mm"
+			(at 35.56 101.6 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 35.56 101.6 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "test point"
+			(at 40.64 101.6 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "c69867ed-6b8e-4e99-aa21-d4d89aa6334a")
+		)
+		(instances
+			(project "Tractive_Battery_Board"
+				(path "/ca333741-5826-495c-b860-5422aa5e17fc/d5ae3636-6e9a-45ed-84fd-517f0c920a36"
+					(reference "TP9")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Amplifier_Operational:MCP6004")
+		(at 54.61 101.6 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "a720b662-fb5b-4e79-83d5-ce7a6885aa34")
+		(property "Reference" "U13"
+			(at 58.166 94.742 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "MCP6004"
+			(at 58.166 97.282 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" ""
+			(at 53.34 99.06 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "http://ww1.microchip.com/downloads/en/DeviceDoc/21733j.pdf"
+			(at 55.88 96.52 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "1MHz, Low-Power Op Amp, DIP-14/SOIC-14/TSSOP-14"
+			(at 54.61 101.6 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "3"
+			(uuid "ca9ad882-652b-491f-8d30-74011a53435f")
+		)
+		(pin "2"
+			(uuid "07bb95fb-9225-4d4c-8229-7eb52bb084d3")
+		)
+		(pin "1"
+			(uuid "acffab15-ee4b-4611-97b7-eb776c3150ec")
+		)
+		(pin "5"
+			(uuid "e985afdd-bf88-4693-acdf-41f36a2c3bfa")
+		)
+		(pin "6"
+			(uuid "0ed24ef1-b970-4bc6-8fd8-8fa31446a03e")
+		)
+		(pin "7"
+			(uuid "737cc04d-c088-4b97-9760-df49bc04c022")
+		)
+		(pin "10"
+			(uuid "9ba3aa67-b55a-46de-bf0c-a2c637e25a94")
+		)
+		(pin "9"
+			(uuid "0b4208bb-9675-4a6f-a57d-b72a702371aa")
+		)
+		(pin "8"
+			(uuid "3c8de69d-5e70-4f21-bc73-dbae8fe06f50")
+		)
+		(pin "12"
+			(uuid "57f7d497-858d-4cd1-8777-d5d293ce57e7")
+		)
+		(pin "13"
+			(uuid "d6ea30d9-9d8c-4134-a543-41fb71af7e48")
+		)
+		(pin "14"
+			(uuid "0c961e4a-ea36-41bc-a7dd-af63b463d3f7")
+		)
+		(pin "4"
+			(uuid "bb2b872a-71b4-4256-b551-9525bd9e3e27")
+		)
+		(pin "11"
+			(uuid "e8f55e80-70aa-4e4d-935b-5aa33b6005c0")
+		)
+		(instances
+			(project "Tractive_Battery_Board"
+				(path "/ca333741-5826-495c-b860-5422aa5e17fc/d5ae3636-6e9a-45ed-84fd-517f0c920a36"
+					(reference "U13")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "74xx:74HC14")
+		(at 90.17 82.55 0)
+		(unit 3)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "b264d300-3b94-474e-b867-09d8c93fb5eb")
+		(property "Reference" "U8"
+			(at 92.964 85.598 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "74HC14"
+			(at 92.964 88.138 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" ""
+			(at 90.17 82.55 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "http://www.ti.com/lit/gpn/sn74HC14"
+			(at 90.17 82.55 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Hex inverter schmitt trigger"
+			(at 90.17 82.55 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "8"
+			(uuid "5da0f1f3-caee-463b-8229-e327bca1c4a8")
+		)
+		(pin "11"
+			(uuid "c955e7dd-d2a4-4d1b-b18e-ce01c5b3a801")
+		)
+		(pin "1"
+			(uuid "bd33f52c-0418-4bae-9d81-c2d63c0d22aa")
+		)
+		(pin "2"
+			(uuid "7eaa1464-7249-485e-8505-0f14449f5f7d")
+		)
+		(pin "3"
+			(uuid "5c505063-e29b-43d9-9e37-1a1e8013656f")
+		)
+		(pin "4"
+			(uuid "b192e8c3-a72c-443a-9111-3e74e409da8a")
+		)
+		(pin "5"
+			(uuid "60b3b627-7238-4c33-ac04-9456c3ced488")
+		)
+		(pin "10"
+			(uuid "1b340001-5003-4a79-b06c-257bbcfcf730")
+		)
+		(pin "13"
+			(uuid "d696bbc7-9c79-4707-a611-9bf63dc9a347")
+		)
+		(pin "12"
+			(uuid "1ffcd01f-285a-4787-a328-51f94aea5c8a")
+		)
+		(pin "14"
+			(uuid "5fd03a00-f82e-49a6-9ee3-93dc01a786c9")
+		)
+		(pin "7"
+			(uuid "40e6cd36-22d5-4619-a7b3-2b482c28fd34")
+		)
+		(pin "6"
+			(uuid "2bba49cc-1cef-4706-8210-2dfc44de912a")
+		)
+		(pin "9"
+			(uuid "dd098547-317f-4590-9e42-9a388229a157")
+		)
+		(instances
+			(project "Tractive_Battery_Board"
+				(path "/ca333741-5826-495c-b860-5422aa5e17fc/d5ae3636-6e9a-45ed-84fd-517f0c920a36"
+					(reference "U8")
+					(unit 3)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "power:+5V")
+		(at 45.72 88.9 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "b772b15b-76cc-40a4-81c4-714a19086467")
+		(property "Reference" "#PWR067"
+			(at 45.72 92.71 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Value" "+5V"
+			(at 45.72 83.82 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" ""
+			(at 45.72 88.9 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" ""
+			(at 45.72 88.9 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Power symbol creates a global label with name \"+5V\""
+			(at 45.72 88.9 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "8b2e55b2-d2a0-40b6-b278-b5377fe4cb38")
+		)
+		(instances
+			(project "Tractive_Battery_Board"
+				(path "/ca333741-5826-495c-b860-5422aa5e17fc/d5ae3636-6e9a-45ed-84fd-517f0c920a36"
+					(reference "#PWR067")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "power:GND")
+		(at 208.28 97.79 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "ba89820a-1663-4776-8b59-f591c12770e6")
+		(property "Reference" "#PWR030"
+			(at 208.28 104.14 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Value" "GND"
+			(at 208.28 102.87 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" ""
+			(at 208.28 97.79 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" ""
+			(at 208.28 97.79 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
+			(at 208.28 97.79 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "48759ce7-db0f-460a-88ca-e377cf7b576a")
+		)
+		(instances
+			(project "Tractive_Battery_Board"
+				(path "/ca333741-5826-495c-b860-5422aa5e17fc/d5ae3636-6e9a-45ed-84fd-517f0c920a36"
+					(reference "#PWR030")
 					(unit 1)
 				)
 			)
@@ -6944,7 +7616,7 @@
 	)
 	(symbol
 		(lib_id "FS_3_Global_Symbol_Library:SN74HCS08DR")
-		(at 203.2 64.77 0)
+		(at 279.4 63.5 0)
 		(unit 2)
 		(exclude_from_sim no)
 		(in_bom yes)
@@ -6952,8 +7624,8 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "bc39d8b4-88bc-4bdb-97f2-acafe5cf8da1")
-		(property "Reference" "U7"
-			(at 203.1917 55.88 0)
+		(property "Reference" "U6"
+			(at 279.3917 54.61 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -6961,7 +7633,7 @@
 			)
 		)
 		(property "Value" "SN74HCS08DR"
-			(at 203.1917 58.42 0)
+			(at 279.3917 57.15 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -6969,7 +7641,7 @@
 			)
 		)
 		(property "Footprint" "Package_SO:SOIC-14_3.9x8.7mm_P1.27mm"
-			(at 203.2 64.77 0)
+			(at 279.4 63.5 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -6978,7 +7650,7 @@
 			)
 		)
 		(property "Datasheet" "http://www.ti.com/lit/gpn/sn74hc00"
-			(at 202.946 59.182 0)
+			(at 279.146 57.912 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -6987,7 +7659,7 @@
 			)
 		)
 		(property "Description" "quad 2-input AND gate"
-			(at 201.422 71.628 0)
+			(at 277.622 70.358 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -7005,13 +7677,13 @@
 			(uuid "d22600eb-bbfd-40fa-a694-2f9576b1ce00")
 		)
 		(pin "4"
-			(uuid "f244cb90-2906-40e0-be25-a7e96a0b3202")
+			(uuid "cc2eb5b6-cebd-4cd6-a3d4-fd6ae3f6ea41")
 		)
 		(pin "5"
-			(uuid "c306d638-f755-482e-9ca3-ee03f0eadcb1")
+			(uuid "20336827-9160-42e6-8744-3aaccb27d209")
 		)
 		(pin "6"
-			(uuid "814b1e8e-4606-4e52-9c56-f4c755faaa87")
+			(uuid "2c175314-712a-45c5-bc28-4853af20ee6b")
 		)
 		(pin "9"
 			(uuid "26ae003a-d3ac-411b-a33f-429f09f9e36e")
@@ -7039,24 +7711,159 @@
 		)
 		(instances
 			(project "Tractive_Battery_Board"
-				(path "/ca333741-5826-495c-b860-5422aa5e17fc/38bd74f5-4693-424e-8d84-64453e3eadeb"
-					(reference "U7")
+				(path "/ca333741-5826-495c-b860-5422aa5e17fc/d5ae3636-6e9a-45ed-84fd-517f0c920a36"
+					(reference "U6")
 					(unit 2)
 				)
 			)
 		)
 	)
 	(symbol
+		(lib_id "Device:R")
+		(at 45.72 110.49 180)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "bdbe34f6-a077-41f0-9ffe-ae92c5bbac69")
+		(property "Reference" "R16"
+			(at 48.26 109.2199 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+			)
+		)
+		(property "Value" "10k"
+			(at 48.26 111.7599 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+			)
+		)
+		(property "Footprint" ""
+			(at 47.498 110.49 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 45.72 110.49 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Resistor"
+			(at 45.72 110.49 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "86113134-f444-4dac-8797-02088f0cc808")
+		)
+		(pin "2"
+			(uuid "a19f0f87-3909-459d-862c-8b33beb7b5d9")
+		)
+		(instances
+			(project "Tractive_Battery_Board"
+				(path "/ca333741-5826-495c-b860-5422aa5e17fc/d5ae3636-6e9a-45ed-84fd-517f0c920a36"
+					(reference "R16")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "power:+5V")
+		(at 21.59 99.06 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "c9b96a3e-4af8-46f4-81ff-8e9f7303d6d9")
+		(property "Reference" "#PWR065"
+			(at 21.59 102.87 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Value" "+5V"
+			(at 21.59 93.98 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" ""
+			(at 21.59 99.06 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" ""
+			(at 21.59 99.06 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Power symbol creates a global label with name \"+5V\""
+			(at 21.59 99.06 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "7f95599c-8f61-4280-85db-11d68fdb9fec")
+		)
+		(instances
+			(project "Tractive_Battery_Board"
+				(path "/ca333741-5826-495c-b860-5422aa5e17fc/d5ae3636-6e9a-45ed-84fd-517f0c920a36"
+					(reference "#PWR065")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
 		(lib_id "power:GND")
-		(at 96.52 116.84 0)
+		(at 158.75 113.03 0)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
 		(on_board yes)
 		(dnp no)
 		(uuid "cb2c99f4-096b-4a07-ad4f-298fd5085402")
-		(property "Reference" "#PWR027"
-			(at 96.52 123.19 0)
+		(property "Reference" "#PWR023"
+			(at 158.75 119.38 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -7065,7 +7872,7 @@
 			)
 		)
 		(property "Value" "GND"
-			(at 96.266 121.412 0)
+			(at 158.496 117.602 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -7073,7 +7880,7 @@
 			)
 		)
 		(property "Footprint" ""
-			(at 96.52 116.84 0)
+			(at 158.75 113.03 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -7082,7 +7889,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 96.52 116.84 0)
+			(at 158.75 113.03 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -7091,7 +7898,7 @@
 			)
 		)
 		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
-			(at 96.52 116.84 0)
+			(at 158.75 113.03 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -7100,12 +7907,183 @@
 			)
 		)
 		(pin "1"
-			(uuid "4a7d2a0c-b122-4c27-a097-5eb8a47c1d98")
+			(uuid "5a1e43d6-519c-48d6-96a8-e48439021056")
 		)
 		(instances
-			(project ""
-				(path "/ca333741-5826-495c-b860-5422aa5e17fc/38bd74f5-4693-424e-8d84-64453e3eadeb"
-					(reference "#PWR027")
+			(project "Tractive_Battery_Board"
+				(path "/ca333741-5826-495c-b860-5422aa5e17fc/d5ae3636-6e9a-45ed-84fd-517f0c920a36"
+					(reference "#PWR023")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "FS_3_Global_Symbol_Library:SN74HCS08DR")
+		(at 127 80.01 0)
+		(unit 2)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "cb8e90c1-6e19-4f7f-aaaf-5d224e66369d")
+		(property "Reference" "U14"
+			(at 126.9917 71.12 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "SN74HCS08DR"
+			(at 126.9917 73.66 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" "Package_SO:SOIC-14_3.9x8.7mm_P1.27mm"
+			(at 127 80.01 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "http://www.ti.com/lit/gpn/sn74hc00"
+			(at 126.746 74.422 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "quad 2-input AND gate"
+			(at 125.222 86.868 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "6806ca51-e981-45ec-97d5-2d5177557723")
+		)
+		(pin "2"
+			(uuid "9cf4f074-fe75-4fd8-9ce9-353ab0ef961d")
+		)
+		(pin "3"
+			(uuid "d22600eb-bbfd-40fa-a694-2f9576b1ce00")
+		)
+		(pin "4"
+			(uuid "3e2c2326-5b22-4945-8487-bc74166dd196")
+		)
+		(pin "5"
+			(uuid "eb4485e1-b96d-4b82-8d37-993e38b32d34")
+		)
+		(pin "6"
+			(uuid "706f81b3-db84-44d5-aee2-5f184da7dd87")
+		)
+		(pin "9"
+			(uuid "26ae003a-d3ac-411b-a33f-429f09f9e36e")
+		)
+		(pin "10"
+			(uuid "65bc36c3-b8fa-44c2-a6db-c773adce418c")
+		)
+		(pin "8"
+			(uuid "bbddcb30-4095-4fb5-93ec-764aeae3bb19")
+		)
+		(pin "12"
+			(uuid "f36fb2bc-a209-4e32-a0d1-ecebcc4c0db9")
+		)
+		(pin "13"
+			(uuid "e86226b2-0583-4c94-8d16-f343bfecac2e")
+		)
+		(pin "11"
+			(uuid "19a57134-502e-413b-a446-67db1837ae76")
+		)
+		(pin "14"
+			(uuid "27b53e38-f782-4abf-bae2-1bfa6ade18ae")
+		)
+		(pin "7"
+			(uuid "113f0d9c-61c6-45d9-bd60-ea8643aa8889")
+		)
+		(instances
+			(project "Tractive_Battery_Board"
+				(path "/ca333741-5826-495c-b860-5422aa5e17fc/d5ae3636-6e9a-45ed-84fd-517f0c920a36"
+					(reference "U14")
+					(unit 2)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Device:R")
+		(at 31.75 99.06 90)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "d1d1bb63-e765-409d-b606-e2903e0ff963")
+		(property "Reference" "R9"
+			(at 31.75 93.726 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "422k"
+			(at 31.75 96.266 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" ""
+			(at 31.75 100.838 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 31.75 99.06 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Resistor"
+			(at 31.75 99.06 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "6e3c5173-1bcf-4572-b28b-735a576b3d3d")
+		)
+		(pin "2"
+			(uuid "e61ef939-5093-4b40-98d2-f36497a60090")
+		)
+		(instances
+			(project "Tractive_Battery_Board"
+				(path "/ca333741-5826-495c-b860-5422aa5e17fc/d5ae3636-6e9a-45ed-84fd-517f0c920a36"
+					(reference "R9")
 					(unit 1)
 				)
 			)
@@ -7113,7 +8091,7 @@
 	)
 	(symbol
 		(lib_id "Device:C")
-		(at 121.92 95.25 0)
+		(at 198.12 93.98 0)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
@@ -7121,7 +8099,7 @@
 		(dnp no)
 		(uuid "dd488522-3581-41e1-8011-3123130e318c")
 		(property "Reference" "C9"
-			(at 116.84 90.678 0)
+			(at 193.04 89.408 0)
 			(effects
 				(font
 					(size 1.016 1.016)
@@ -7130,7 +8108,7 @@
 			)
 		)
 		(property "Value" "33uF"
-			(at 116.84 93.218 0)
+			(at 193.04 91.948 0)
 			(effects
 				(font
 					(size 0.889 0.889)
@@ -7139,7 +8117,7 @@
 			)
 		)
 		(property "Footprint" ""
-			(at 122.8852 99.06 0)
+			(at 199.0852 97.79 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -7148,7 +8126,7 @@
 			)
 		)
 		(property "Datasheet" "~"
-			(at 121.92 95.25 0)
+			(at 198.12 93.98 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -7157,7 +8135,7 @@
 			)
 		)
 		(property "Description" "Unpolarized capacitor"
-			(at 121.92 95.25 0)
+			(at 198.12 93.98 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -7166,14 +8144,14 @@
 			)
 		)
 		(pin "1"
-			(uuid "b7bcc58d-af81-413b-b870-02b698951ced")
+			(uuid "30660a4a-cb96-4b6f-af28-f36d68e39aae")
 		)
 		(pin "2"
-			(uuid "a6f65c71-d94f-40b7-a1c2-d1c8ac0d10e8")
+			(uuid "6d371113-0682-4dc4-b6d6-63104815313f")
 		)
 		(instances
 			(project "Tractive_Battery_Board"
-				(path "/ca333741-5826-495c-b860-5422aa5e17fc/38bd74f5-4693-424e-8d84-64453e3eadeb"
+				(path "/ca333741-5826-495c-b860-5422aa5e17fc/d5ae3636-6e9a-45ed-84fd-517f0c920a36"
 					(reference "C9")
 					(unit 1)
 				)
@@ -7181,74 +8159,8 @@
 		)
 	)
 	(symbol
-		(lib_id "power:+12V")
-		(at 180.34 62.23 0)
-		(mirror y)
-		(unit 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(dnp no)
-		(uuid "dfcd03e4-ab28-4439-9ba0-4d215f7c5e82")
-		(property "Reference" "#PWR042"
-			(at 180.34 66.04 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Value" "+12V"
-			(at 180.086 58.42 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Footprint" ""
-			(at 180.34 62.23 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Datasheet" ""
-			(at 180.34 62.23 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Description" "Power symbol creates a global label with name \"+12V\""
-			(at 180.34 62.23 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(pin "1"
-			(uuid "d72c6bf5-930b-4258-9790-543a909fee30")
-		)
-		(instances
-			(project "Tractive_Battery_Board"
-				(path "/ca333741-5826-495c-b860-5422aa5e17fc/38bd74f5-4693-424e-8d84-64453e3eadeb"
-					(reference "#PWR042")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
 		(lib_id "Connector_Generic:Conn_01x02")
-		(at 294.64 53.34 90)
+		(at 370.84 52.07 90)
 		(mirror x)
 		(unit 1)
 		(exclude_from_sim no)
@@ -7256,8 +8168,8 @@
 		(on_board yes)
 		(dnp no)
 		(uuid "e861e57f-81f6-4174-9584-22aaf20e8626")
-		(property "Reference" "J10"
-			(at 292.1 52.0699 90)
+		(property "Reference" "J8"
+			(at 368.3 50.7999 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -7266,7 +8178,7 @@
 			)
 		)
 		(property "Value" "Shutdown IL"
-			(at 292.1 54.6099 90)
+			(at 368.3 53.3399 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -7275,7 +8187,7 @@
 			)
 		)
 		(property "Footprint" ""
-			(at 294.64 53.34 0)
+			(at 370.84 52.07 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -7284,7 +8196,7 @@
 			)
 		)
 		(property "Datasheet" "~"
-			(at 294.64 53.34 0)
+			(at 370.84 52.07 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -7293,7 +8205,7 @@
 			)
 		)
 		(property "Description" "Generic connector, single row, 01x02, script generated (kicad-library-utils/schlib/autogen/connector/)"
-			(at 294.64 53.34 0)
+			(at 370.84 52.07 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -7302,15 +8214,15 @@
 			)
 		)
 		(pin "2"
-			(uuid "d8835653-00aa-428b-9f8d-95f75dfa33c1")
+			(uuid "3603c188-f2b2-4baa-998c-d1453ba73430")
 		)
 		(pin "1"
-			(uuid "99887d6c-46d1-4db3-8418-aaeb46535b3f")
+			(uuid "db182cc0-9316-45a3-ba2b-076b31e3a985")
 		)
 		(instances
-			(project ""
-				(path "/ca333741-5826-495c-b860-5422aa5e17fc/38bd74f5-4693-424e-8d84-64453e3eadeb"
-					(reference "J10")
+			(project "Tractive_Battery_Board"
+				(path "/ca333741-5826-495c-b860-5422aa5e17fc/d5ae3636-6e9a-45ed-84fd-517f0c920a36"
+					(reference "J8")
 					(unit 1)
 				)
 			)
@@ -7318,15 +8230,15 @@
 	)
 	(symbol
 		(lib_id "FS_4_SCHEMATICS:SZNUD3124LT1G")
-		(at 78.74 88.9 0)
+		(at 154.94 80.01 0)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
 		(on_board yes)
 		(dnp no)
 		(uuid "ea7408ed-e4e9-4cb7-94e2-c29ddf8b2d75")
-		(property "Reference" "SZNUD3124LT1G2"
-			(at 82.804 87.884 0)
+		(property "Reference" "SZNUD3124LT1G1"
+			(at 159.004 78.994 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -7334,8 +8246,8 @@
 				(justify left)
 			)
 		)
-		(property "Value" "Q4"
-			(at 83.82 90.1699 0)
+		(property "Value" "U11"
+			(at 160.02 81.2799 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -7344,7 +8256,7 @@
 			)
 		)
 		(property "Footprint" "Package_TO_SOT_SMD:TSOT-23_HandSoldering"
-			(at 78.74 88.9 0)
+			(at 154.94 80.01 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -7353,7 +8265,7 @@
 			)
 		)
 		(property "Datasheet" "https://www.onsemi.com/pdf/datasheet/nud3124-d.pdf"
-			(at 78.74 88.9 0)
+			(at 154.94 80.01 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -7362,7 +8274,7 @@
 			)
 		)
 		(property "Description" ""
-			(at 78.74 88.9 0)
+			(at 154.94 80.01 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -7371,7 +8283,7 @@
 			)
 		)
 		(property "Digi PN" "SZNUD3124LT1GOSCT-ND"
-			(at 78.74 88.9 0)
+			(at 154.94 80.01 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -7380,7 +8292,7 @@
 			)
 		)
 		(property "MFG" "onsemi"
-			(at 78.74 88.9 0)
+			(at 154.94 80.01 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -7389,7 +8301,7 @@
 			)
 		)
 		(property "MFG PN" "SZNUD3124LT1G"
-			(at 78.74 88.9 0)
+			(at 154.94 80.01 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -7398,7 +8310,7 @@
 			)
 		)
 		(property "Digi URL" "https://www.digikey.com/en/products/detail/onsemi/SZNUD3124LT1G/3063416"
-			(at 78.74 88.9 0)
+			(at 154.94 80.01 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -7407,86 +8319,18 @@
 			)
 		)
 		(pin "2"
-			(uuid "7f95eb4c-fde2-4524-be98-6b1f4620685f")
+			(uuid "7a4f1e02-1bcd-48c4-b7a6-07932d7d7ba7")
 		)
 		(pin "1"
-			(uuid "352b0bac-5561-46ba-be28-a8a200f75ce1")
+			(uuid "949caf0a-1cff-489d-9cc0-cd27e2880a18")
 		)
 		(pin "3"
-			(uuid "598f6866-e852-473d-bfcc-2f6d14738496")
+			(uuid "ae29e8f4-5bf6-47f6-bdaf-aba55d59fb70")
 		)
 		(instances
 			(project "Tractive_Battery_Board"
-				(path "/ca333741-5826-495c-b860-5422aa5e17fc/38bd74f5-4693-424e-8d84-64453e3eadeb"
-					(reference "SZNUD3124LT1G2")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
-		(lib_id "Switch:SW_Push")
-		(at 186.69 62.23 0)
-		(mirror y)
-		(unit 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(dnp no)
-		(uuid "f1ccee64-f39c-4fc3-bb24-efb229db9d24")
-		(property "Reference" "SW8"
-			(at 187.198 54.864 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Value" "SW_Push"
-			(at 187.198 57.404 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Footprint" ""
-			(at 186.69 57.15 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Datasheet" "~"
-			(at 186.69 57.15 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Description" "Push button switch, generic, two pins"
-			(at 186.69 62.23 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(pin "1"
-			(uuid "26c8ad08-96da-4091-8106-c078ff1ca865")
-		)
-		(pin "2"
-			(uuid "e220a247-9091-44bb-a270-ce97d56d5fb2")
-		)
-		(instances
-			(project "Tractive_Battery_Board"
-				(path "/ca333741-5826-495c-b860-5422aa5e17fc/38bd74f5-4693-424e-8d84-64453e3eadeb"
-					(reference "SW8")
+				(path "/ca333741-5826-495c-b860-5422aa5e17fc/d5ae3636-6e9a-45ed-84fd-517f0c920a36"
+					(reference "SZNUD3124LT1G1")
 					(unit 1)
 				)
 			)
@@ -7494,16 +8338,16 @@
 	)
 	(symbol
 		(lib_id "Connector:TestPoint")
-		(at 190.5 69.85 180)
+		(at 104.14 85.09 180)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
 		(on_board yes)
 		(dnp no)
 		(fields_autoplaced yes)
-		(uuid "f65065e6-e03e-45a2-b240-00aea5a6ce55")
-		(property "Reference" "TP8"
-			(at 193.04 71.8819 0)
+		(uuid "ece162a1-e1c9-410d-bfda-63dbcec095fd")
+		(property "Reference" "TP10"
+			(at 106.68 87.1219 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -7511,8 +8355,8 @@
 				(justify right)
 			)
 		)
-		(property "Value" "nIMD_FAULT_TP"
-			(at 193.04 74.4219 0)
+		(property "Value" "nBMS_FAULT_TP"
+			(at 106.68 89.6619 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -7521,7 +8365,7 @@
 			)
 		)
 		(property "Footprint" "TestPoint:TestPoint_Loop_D2.50mm_Drill1.0mm"
-			(at 185.42 69.85 0)
+			(at 99.06 85.09 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -7530,7 +8374,7 @@
 			)
 		)
 		(property "Datasheet" "~"
-			(at 185.42 69.85 0)
+			(at 99.06 85.09 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -7539,7 +8383,7 @@
 			)
 		)
 		(property "Description" "test point"
-			(at 190.5 69.85 0)
+			(at 104.14 85.09 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -7548,12 +8392,79 @@
 			)
 		)
 		(pin "1"
-			(uuid "cc6ede6a-922a-4325-898f-06b5d39df12a")
+			(uuid "7b775cea-1d87-415c-a3a1-8dd17adf0645")
 		)
 		(instances
 			(project "Tractive_Battery_Board"
-				(path "/ca333741-5826-495c-b860-5422aa5e17fc/38bd74f5-4693-424e-8d84-64453e3eadeb"
-					(reference "TP8")
+				(path "/ca333741-5826-495c-b860-5422aa5e17fc/d5ae3636-6e9a-45ed-84fd-517f0c920a36"
+					(reference "TP10")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Connector:TestPoint")
+		(at 266.7 68.58 180)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "f65065e6-e03e-45a2-b240-00aea5a6ce55")
+		(property "Reference" "TP4"
+			(at 269.24 70.6119 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+			)
+		)
+		(property "Value" "nIMD_FAULT_TP"
+			(at 269.24 73.1519 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+			)
+		)
+		(property "Footprint" "TestPoint:TestPoint_Loop_D2.50mm_Drill1.0mm"
+			(at 261.62 68.58 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 261.62 68.58 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "test point"
+			(at 266.7 68.58 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "a16bcc73-c91b-49ef-8fcb-61dc8c6b093a")
+		)
+		(instances
+			(project "Tractive_Battery_Board"
+				(path "/ca333741-5826-495c-b860-5422aa5e17fc/d5ae3636-6e9a-45ed-84fd-517f0c920a36"
+					(reference "TP4")
 					(unit 1)
 				)
 			)
@@ -7561,7 +8472,7 @@
 	)
 	(symbol
 		(lib_id "power:+12V")
-		(at 234.95 60.96 0)
+		(at 311.15 59.69 0)
 		(mirror y)
 		(unit 1)
 		(exclude_from_sim no)
@@ -7570,8 +8481,8 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "f7e3c00e-1be1-4f0d-83f2-584481ed4c9f")
-		(property "Reference" "#PWR043"
-			(at 234.95 64.77 0)
+		(property "Reference" "#PWR031"
+			(at 311.15 63.5 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -7580,7 +8491,7 @@
 			)
 		)
 		(property "Value" "+12V"
-			(at 234.95 55.88 0)
+			(at 311.15 54.61 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -7588,7 +8499,7 @@
 			)
 		)
 		(property "Footprint" ""
-			(at 234.95 60.96 0)
+			(at 311.15 59.69 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -7597,7 +8508,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 234.95 60.96 0)
+			(at 311.15 59.69 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -7606,7 +8517,7 @@
 			)
 		)
 		(property "Description" "Power symbol creates a global label with name \"+12V\""
-			(at 234.95 60.96 0)
+			(at 311.15 59.69 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -7615,12 +8526,12 @@
 			)
 		)
 		(pin "1"
-			(uuid "6125dd10-94a0-45ea-b06c-0bac528f077d")
+			(uuid "e6d00d9a-6bb0-4be4-8705-12148cfcdc3c")
 		)
 		(instances
 			(project "Tractive_Battery_Board"
-				(path "/ca333741-5826-495c-b860-5422aa5e17fc/38bd74f5-4693-424e-8d84-64453e3eadeb"
-					(reference "#PWR043")
+				(path "/ca333741-5826-495c-b860-5422aa5e17fc/d5ae3636-6e9a-45ed-84fd-517f0c920a36"
+					(reference "#PWR031")
 					(unit 1)
 				)
 			)
