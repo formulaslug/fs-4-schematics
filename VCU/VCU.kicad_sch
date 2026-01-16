@@ -2491,7 +2491,7 @@
 	)
 	(text "Pedal Box\n"
 		(exclude_from_sim no)
-		(at 36.322 183.388 0)
+		(at 32.258 182.118 0)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -2659,6 +2659,16 @@
 	)
 	(wire
 		(pts
+			(xy 275.59 100.33) (xy 294.64 100.33)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "08247f49-dd0e-4f79-8d42-6423bd0766bf")
+	)
+	(wire
+		(pts
 			(xy 44.45 176.53) (xy 82.55 176.53)
 		)
 		(stroke
@@ -2739,16 +2749,6 @@
 	)
 	(wire
 		(pts
-			(xy 278.13 102.87) (xy 294.64 102.87)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "13c6e971-3ddc-4211-b709-68beec7e180b")
-	)
-	(wire
-		(pts
 			(xy 58.42 167.64) (xy 149.86 167.64)
 		)
 		(stroke
@@ -2766,6 +2766,16 @@
 			(type default)
 		)
 		(uuid "18e1a813-9d2d-47fe-aa30-f08b78abc939")
+	)
+	(wire
+		(pts
+			(xy 66.04 162.56) (xy 149.86 162.56)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "1a5c5b37-5acc-43b1-a848-d74f48a982a9")
 	)
 	(wire
 		(pts
@@ -3109,7 +3119,7 @@
 	)
 	(wire
 		(pts
-			(xy 278.13 100.33) (xy 294.64 100.33)
+			(xy 271.78 105.41) (xy 275.59 105.41)
 		)
 		(stroke
 			(width 0)
@@ -3339,7 +3349,7 @@
 	)
 	(wire
 		(pts
-			(xy 247.65 102.87) (xy 257.81 102.87)
+			(xy 247.65 102.87) (xy 250.19 102.87)
 		)
 		(stroke
 			(width 0)
@@ -3386,6 +3396,16 @@
 			(type default)
 		)
 		(uuid "6e3b19ad-308c-4952-b7d3-648563be4711")
+	)
+	(wire
+		(pts
+			(xy 278.13 102.87) (xy 294.64 102.87)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "6e93435f-4d0e-4358-9ad3-20103e8ec54a")
 	)
 	(wire
 		(pts
@@ -3489,7 +3509,7 @@
 	)
 	(wire
 		(pts
-			(xy 257.81 102.87) (xy 257.81 104.14)
+			(xy 250.19 102.87) (xy 250.19 104.14)
 		)
 		(stroke
 			(width 0)
@@ -3909,16 +3929,6 @@
 	)
 	(wire
 		(pts
-			(xy 149.86 162.56) (xy 66.04 162.56)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "b9076d73-d88f-43d0-8de9-34297b82d42d")
-	)
-	(wire
-		(pts
 			(xy 66.04 162.56) (xy 66.04 99.06)
 		)
 		(stroke
@@ -3926,6 +3936,16 @@
 			(type default)
 		)
 		(uuid "bc59912c-b8cd-457e-9cdc-6a6cb9a5d6a7")
+	)
+	(wire
+		(pts
+			(xy 275.59 105.41) (xy 275.59 100.33)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "bf064aca-82db-486d-9e41-c57b6e365ba6")
 	)
 	(wire
 		(pts
@@ -4036,6 +4056,16 @@
 			(type default)
 		)
 		(uuid "c5332431-9f36-41d4-8a82-89cab4e13780")
+	)
+	(wire
+		(pts
+			(xy 278.13 107.95) (xy 278.13 102.87)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "c6b2e349-860c-494e-9ee4-0d0510a8c480")
 	)
 	(wire
 		(pts
@@ -4169,7 +4199,7 @@
 	)
 	(wire
 		(pts
-			(xy 257.81 104.14) (xy 259.08 104.14)
+			(xy 250.19 104.14) (xy 259.08 104.14)
 		)
 		(stroke
 			(width 0)
@@ -4397,7 +4427,7 @@
 		)
 		(uuid "0600dfd9-1d0f-4644-bf11-ffcab2b87d9e")
 	)
-	(label "LED_Strip_Signal"
+	(label "Status_Indicator_Strip"
 		(at 237.49 146.05 0)
 		(effects
 			(font
@@ -4677,13 +4707,13 @@
 		)
 		(uuid "886352ff-d3c2-4f06-bf64-8dd9407a700d")
 	)
-	(label "LED_Strip_5V"
-		(at 280.67 102.87 0)
+	(label "Status_Indicator_Strip_5V"
+		(at 294.64 100.33 180)
 		(effects
 			(font
 				(size 1.27 1.27)
 			)
-			(justify left bottom)
+			(justify right bottom)
 		)
 		(uuid "8b3da430-0338-4f0e-a529-7793afae585a")
 	)
@@ -4697,7 +4727,7 @@
 		)
 		(uuid "90bb8328-ca38-47b2-81ef-bda47d024bad")
 	)
-	(label "Driver_Start_Button_Pos"
+	(label "RTD_Button_Pos"
 		(at 259.08 148.59 180)
 		(effects
 			(font
@@ -4787,7 +4817,7 @@
 		)
 		(uuid "ada00bf9-dbab-496b-bc08-911e462b19df")
 	)
-	(label "Driver_Start_Button_Neg"
+	(label "RTD_Button_Neg"
 		(at 259.08 151.13 180)
 		(effects
 			(font
@@ -5047,16 +5077,15 @@
 	)
 	(symbol
 		(lib_id "power:GND")
-		(at 278.13 100.33 270)
+		(at 278.13 107.95 0)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
 		(on_board yes)
 		(dnp no)
-		(fields_autoplaced yes)
 		(uuid "0265fcc2-6882-4250-b8dd-61b1198439fc")
 		(property "Reference" "#PWR020"
-			(at 271.78 100.33 0)
+			(at 278.13 114.3 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -5065,16 +5094,15 @@
 			)
 		)
 		(property "Value" "GND"
-			(at 274.32 100.3299 90)
+			(at 277.876 112.014 0)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
-				(justify right)
 			)
 		)
 		(property "Footprint" ""
-			(at 278.13 100.33 0)
+			(at 278.13 107.95 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -5083,7 +5111,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 278.13 100.33 0)
+			(at 278.13 107.95 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -5092,7 +5120,7 @@
 			)
 		)
 		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
-			(at 278.13 100.33 0)
+			(at 278.13 107.95 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -5508,7 +5536,7 @@
 	)
 	(symbol
 		(lib_id "power:+5V")
-		(at 278.13 102.87 90)
+		(at 271.78 105.41 0)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
@@ -5516,7 +5544,7 @@
 		(dnp no)
 		(uuid "2cd74a69-2d41-4627-884b-cefa05764fb8")
 		(property "Reference" "#PWR021"
-			(at 281.94 102.87 0)
+			(at 271.78 109.22 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -5525,7 +5553,7 @@
 			)
 		)
 		(property "Value" "+5V"
-			(at 274.32 102.8699 90)
+			(at 266.7 103.886 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -5534,7 +5562,7 @@
 			)
 		)
 		(property "Footprint" ""
-			(at 278.13 102.87 0)
+			(at 271.78 105.41 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -5543,7 +5571,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 278.13 102.87 0)
+			(at 271.78 105.41 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -5552,7 +5580,7 @@
 			)
 		)
 		(property "Description" "Power symbol creates a global label with name \"+5V\""
-			(at 278.13 102.87 0)
+			(at 271.78 105.41 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -8516,16 +8544,6 @@
 				(justify left)
 			)
 		)
-		(pin "BSPD_Shutdown_Out" output
-			(at 148.59 99.06 180)
-			(uuid "aacd5745-8e5e-480f-ab31-e399d040abb2")
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-		)
 		(pin "Rear_Brake_Buff_Filtered" output
 			(at 148.59 118.11 180)
 			(uuid "24cd4449-3eb8-4f9e-a05d-2f31e80a493e")
@@ -8549,6 +8567,16 @@
 		(pin "BSPD_Fault" output
 			(at 148.59 113.03 180)
 			(uuid "babb9f0c-90fb-455b-8e38-63f2df5a1bb2")
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(pin "BSPD_Shutdown_Out" output
+			(at 148.59 99.06 180)
+			(uuid "ff5e643b-0ac8-4d57-a17f-000b2dc6d901")
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -8677,26 +8705,6 @@
 				(justify left)
 			)
 		)
-		(pin "Driver_Start_Button_Pos" output
-			(at 218.44 148.59 0)
-			(uuid "1de0bdcd-60be-40c4-b1dc-9fd963d81800")
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify right)
-			)
-		)
-		(pin "Driver_Start_Button_Neg" input
-			(at 218.44 151.13 0)
-			(uuid "3b8c9842-fe80-41c8-9264-b7caaa6a0102")
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify right)
-			)
-		)
 		(pin "BPPS_1_Raw" input
 			(at 149.86 195.58 180)
 			(uuid "de48656d-ce55-4c60-b177-b331cab87075")
@@ -8707,7 +8715,7 @@
 				(justify left)
 			)
 		)
-		(pin "LED_Strip_Signal" output
+		(pin "Status_Indicator_Strip" output
 			(at 218.44 146.05 0)
 			(uuid "d1da6942-79ea-4009-a316-32d5ecbdc6ef")
 			(effects
@@ -8840,6 +8848,26 @@
 		(pin "RTD_LED_Cathode" input
 			(at 218.44 156.21 0)
 			(uuid "b609a3a1-2f1c-4629-bbe1-d975d8b34270")
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+			)
+		)
+		(pin "RTD_Button_Pos" output
+			(at 218.44 148.59 0)
+			(uuid "25798278-bafd-47e0-9589-41297c1f2c0b")
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+			)
+		)
+		(pin "RTD_Button_Neg" input
+			(at 218.44 151.13 0)
+			(uuid "b4d95c30-5550-4b16-a628-8f651c8ee580")
 			(effects
 				(font
 					(size 1.27 1.27)
