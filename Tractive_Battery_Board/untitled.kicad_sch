@@ -1456,26 +1456,6 @@
 			(embedded_fonts no)
 		)
 	)
-	(text "Ask Wesley if we want the raw signal\n"
-		(exclude_from_sim no)
-		(at 49.276 30.226 0)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-		)
-		(uuid "2cbc7be5-8f41-4467-9ab8-83f5067968a8")
-	)
-	(text "Ask Wesley if we want the raw signal\n"
-		(exclude_from_sim no)
-		(at 37.084 84.836 0)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-		)
-		(uuid "381dc743-7c84-41e0-b623-9c4d5cf387f3")
-	)
 	(text "Document all the maffs"
 		(exclude_from_sim no)
 		(at 154.432 51.308 0)
@@ -1496,7 +1476,27 @@
 		)
 		(uuid "968aa0e7-804c-4f6a-a0e0-131b94bdfdcf")
 	)
-	(text "A = gain = V_out/(V_ref-V_curr_out) = 3.3 / 1.875 = 1.76\nV_out = 0 < V < 3.3V\nV_curr_out = 2.5V + (0.625 * 900A/300A) = 4.375V OR  2.5V + (0.625 * -900A/300A) = 0.625V\nV_ref = 2.5V + (0.625 * 0A/300A) = 2.5V\n\n"
+	(text "Document and ideal gain. \nnote down theoretical resistor error\n\n+- 1% Resistors or BOTH 100k and 178k resistors\n\n"
+		(exclude_from_sim no)
+		(at 176.784 159.004 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+		)
+		(uuid "a86ec500-9a02-4fd8-8513-3deaf1df1bc7")
+	)
+	(text "10x R, C/10"
+		(exclude_from_sim no)
+		(at 65.786 43.18 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+		)
+		(uuid "b4e6b36a-6c1c-4f68-9c1f-951d6152d832")
+	)
+	(text "A = gain = V_out/(V_ref-V_curr_out) = 3.3 / 1.875 = 1.76 (minimum current)\nV_out = 0 < V < 3.3V\nV_curr_out = 2.5V + (0.625 * 900A/300A) = 4.375V OR  2.5V + (0.625 * -900A/300A) = 0.625V\nV_ref = 2.5V + (0.625 * 0A/300A) = 2.5V\n\n"
 		(exclude_from_sim no)
 		(at 179.578 138.43 0)
 		(effects
@@ -1561,12 +1561,6 @@
 		(uuid "55c7d338-53bb-4e24-8374-4454340ed0ae")
 	)
 	(junction
-		(at 38.1 76.2)
-		(diameter 0)
-		(color 0 0 0 0)
-		(uuid "61641e60-721a-402b-a2df-49ca70b91fbe")
-	)
-	(junction
 		(at 99.06 73.66)
 		(diameter 0)
 		(color 0 0 0 0)
@@ -1583,12 +1577,6 @@
 		(diameter 0)
 		(color 0 0 0 0)
 		(uuid "86425020-4cb9-4002-ac49-57f1116e895c")
-	)
-	(junction
-		(at 49.53 50.8)
-		(diameter 0)
-		(color 0 0 0 0)
-		(uuid "a39d52ca-a51e-4f53-bb5c-ff9261676c6c")
 	)
 	(junction
 		(at 143.51 111.76)
@@ -1624,7 +1612,7 @@
 	)
 	(wire
 		(pts
-			(xy 43.18 50.8) (xy 49.53 50.8)
+			(xy 43.18 50.8) (xy 58.42 50.8)
 		)
 		(stroke
 			(width 0)
@@ -1814,16 +1802,6 @@
 	)
 	(wire
 		(pts
-			(xy 49.53 33.02) (xy 49.53 50.8)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "4996add9-f268-4a74-91e6-c24beb45d2de")
-	)
-	(wire
-		(pts
 			(xy 43.18 50.8) (xy 43.18 52.07)
 		)
 		(stroke
@@ -1914,16 +1892,6 @@
 	)
 	(wire
 		(pts
-			(xy 49.53 50.8) (xy 58.42 50.8)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "85392f2e-db85-4f32-9c7b-4f1254a1a840")
-	)
-	(wire
-		(pts
 			(xy 170.18 71.12) (xy 170.18 60.96)
 		)
 		(stroke
@@ -1961,16 +1929,6 @@
 			(type default)
 		)
 		(uuid "9654103d-caaf-4a6f-8ab4-31eba3c84db0")
-	)
-	(wire
-		(pts
-			(xy 38.1 76.2) (xy 38.1 86.36)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "9a7f5143-2565-4c7a-b193-8e42446e6e59")
 	)
 	(wire
 		(pts
@@ -2784,7 +2742,7 @@
 				)
 			)
 		)
-		(property "Value" "176k"
+		(property "Value" "178k"
 			(at 162.56 95.25 90)
 			(effects
 				(font
@@ -3507,7 +3465,7 @@
 				(justify right)
 			)
 		)
-		(property "Value" "176k"
+		(property "Value" "178k"
 			(at 146.05 120.6499 0)
 			(effects
 				(font
@@ -3576,7 +3534,7 @@
 				)
 			)
 		)
-		(property "Value" "176k"
+		(property "Value" "178k"
 			(at 158.75 57.15 90)
 			(effects
 				(font
