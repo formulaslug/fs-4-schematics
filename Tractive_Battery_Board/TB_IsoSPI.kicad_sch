@@ -1820,12 +1820,6 @@
 		(uuid "0fbf7221-7480-466e-a7d9-b7582f63a7a0")
 	)
 	(junction
-		(at 44.45 49.53)
-		(diameter 0)
-		(color 0 0 0 0)
-		(uuid "1ad89381-87dc-41c3-bb61-b618f94b45f6")
-	)
-	(junction
 		(at 36.83 41.91)
 		(diameter 0)
 		(color 0 0 0 0)
@@ -1848,6 +1842,12 @@
 		(diameter 0)
 		(color 0 0 0 0)
 		(uuid "51fecc14-0935-4110-bbb9-2492342f5c1e")
+	)
+	(junction
+		(at 44.45 49.53)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "6969d22a-eb66-4302-8038-a4b2bb280007")
 	)
 	(junction
 		(at 143.51 27.94)
@@ -1929,6 +1929,16 @@
 	)
 	(wire
 		(pts
+			(xy 44.45 49.53) (xy 50.8 49.53)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "0a79476e-7240-4071-843c-b34b6aaf612b")
+	)
+	(wire
+		(pts
 			(xy 71.12 41.91) (xy 73.66 41.91)
 		)
 		(stroke
@@ -1936,16 +1946,6 @@
 			(type default)
 		)
 		(uuid "0cdcc040-8b38-4285-97cc-083328d6c00a")
-	)
-	(wire
-		(pts
-			(xy 44.45 49.53) (xy 36.83 49.53)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "0d357f83-d3ee-486b-b17f-c5fe7cfd0765")
 	)
 	(wire
 		(pts
@@ -1979,7 +1979,7 @@
 	)
 	(wire
 		(pts
-			(xy 50.8 49.53) (xy 44.45 49.53)
+			(xy 36.83 49.53) (xy 44.45 49.53)
 		)
 		(stroke
 			(width 0)
@@ -2785,6 +2785,76 @@
 	)
 	(symbol
 		(lib_id "Device:C")
+		(at 44.45 53.34 0)
+		(mirror y)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "2a25f2cc-07e4-4b99-9e27-9cb1fb3abce0")
+		(property "Reference" "C8"
+			(at 40.64 52.0699 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Value" "100nF"
+			(at 40.64 54.6099 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Footprint" ""
+			(at 43.4848 57.15 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 44.45 53.34 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Unpolarized capacitor"
+			(at 44.45 53.34 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "d9e83b32-f1d3-4733-bc7c-0cdb6270fd77")
+		)
+		(pin "2"
+			(uuid "343163d6-69bb-4745-b972-5c3dbaae719b")
+		)
+		(instances
+			(project "Tractive_Battery_Board"
+				(path "/ca333741-5826-495c-b860-5422aa5e17fc/7647dac7-c4f0-4da8-9b50-d60bb9a5b142"
+					(reference "C8")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Device:C")
 		(at 157.48 48.26 0)
 		(unit 1)
 		(exclude_from_sim no)
@@ -3258,76 +3328,6 @@
 		)
 	)
 	(symbol
-		(lib_id "Device:C")
-		(at 44.45 53.34 0)
-		(mirror y)
-		(unit 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(dnp no)
-		(uuid "88316160-ddfe-41dd-9821-ce6fc421227a")
-		(property "Reference" "C3"
-			(at 40.64 52.0699 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-		)
-		(property "Value" "100nF"
-			(at 40.64 54.6099 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-		)
-		(property "Footprint" ""
-			(at 43.4848 57.15 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Datasheet" "~"
-			(at 44.45 53.34 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Description" "Unpolarized capacitor"
-			(at 44.45 53.34 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(pin "2"
-			(uuid "6876873c-7022-4685-9e70-05aaffdf12f3")
-		)
-		(pin "1"
-			(uuid "54e8386a-cf6a-4f29-ad55-627adeb9051f")
-		)
-		(instances
-			(project "Tractive_Battery_Board"
-				(path "/ca333741-5826-495c-b860-5422aa5e17fc/7647dac7-c4f0-4da8-9b50-d60bb9a5b142"
-					(reference "C3")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
 		(lib_id "power:GND")
 		(at 118.11 26.67 0)
 		(unit 1)
@@ -3394,76 +3394,6 @@
 		)
 	)
 	(symbol
-		(lib_id "Device:C")
-		(at 76.2 59.69 0)
-		(unit 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(dnp no)
-		(fields_autoplaced yes)
-		(uuid "8e12fd7f-68e2-42cb-96f1-729ee5d05f9a")
-		(property "Reference" "C4"
-			(at 80.01 58.4199 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-		)
-		(property "Value" "100nF"
-			(at 80.01 60.9599 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-		)
-		(property "Footprint" ""
-			(at 77.1652 63.5 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Datasheet" "~"
-			(at 76.2 59.69 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Description" "Unpolarized capacitor"
-			(at 76.2 59.69 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(pin "1"
-			(uuid "13c53c6a-346b-4478-97b3-235541e6bec9")
-		)
-		(pin "2"
-			(uuid "a5685001-110c-41c0-96b1-acb5a988dfab")
-		)
-		(instances
-			(project "Tractive_Battery_Board"
-				(path "/ca333741-5826-495c-b860-5422aa5e17fc/7647dac7-c4f0-4da8-9b50-d60bb9a5b142"
-					(reference "C4")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
 		(lib_id "power:+3.3V")
 		(at 82.55 54.61 0)
 		(unit 1)
@@ -3472,7 +3402,7 @@
 		(on_board yes)
 		(dnp no)
 		(uuid "a3e3b1fb-8ca8-43b7-9c8d-ca1a71930a0a")
-		(property "Reference" "#PWR021"
+		(property "Reference" "#PWR0108"
 			(at 82.55 58.42 0)
 			(effects
 				(font
@@ -3522,7 +3452,7 @@
 		(instances
 			(project "Tractive_Battery_Board"
 				(path "/ca333741-5826-495c-b860-5422aa5e17fc/7647dac7-c4f0-4da8-9b50-d60bb9a5b142"
-					(reference "#PWR021")
+					(reference "#PWR0108")
 					(unit 1)
 				)
 			)
@@ -3655,6 +3585,76 @@
 			(project "Tractive_Battery_Board"
 				(path "/ca333741-5826-495c-b860-5422aa5e17fc/7647dac7-c4f0-4da8-9b50-d60bb9a5b142"
 					(reference "#PWR040")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Device:C")
+		(at 76.2 59.69 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "a98323c2-79db-4914-9667-912617fa6428")
+		(property "Reference" "C10"
+			(at 80.01 58.4199 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Value" "100nF"
+			(at 80.01 60.9599 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Footprint" ""
+			(at 77.1652 63.5 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 76.2 59.69 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Unpolarized capacitor"
+			(at 76.2 59.69 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "54027a5a-c881-4a31-b60b-ee8f3dc39d45")
+		)
+		(pin "2"
+			(uuid "adfc1127-1e11-4c3e-a953-ae4de4232d2f")
+		)
+		(instances
+			(project "Tractive_Battery_Board"
+				(path "/ca333741-5826-495c-b860-5422aa5e17fc/7647dac7-c4f0-4da8-9b50-d60bb9a5b142"
+					(reference "C10")
 					(unit 1)
 				)
 			)
@@ -3806,7 +3806,7 @@
 		(on_board yes)
 		(dnp no)
 		(uuid "cea5ce80-7509-4069-a4d7-38a088187170")
-		(property "Reference" "#PWR020"
+		(property "Reference" "#PWR0109"
 			(at 80.01 50.8 0)
 			(effects
 				(font
@@ -3856,7 +3856,7 @@
 		(instances
 			(project "Tractive_Battery_Board"
 				(path "/ca333741-5826-495c-b860-5422aa5e17fc/7647dac7-c4f0-4da8-9b50-d60bb9a5b142"
-					(reference "#PWR020")
+					(reference "#PWR0109")
 					(unit 1)
 				)
 			)

@@ -12572,7 +12572,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "013fc187-86ab-42b2-9d5e-8a0df844e2cf")
-		(property "Reference" "#FLG?"
+		(property "Reference" "#FLG0101"
 			(at 69.85 61.595 0)
 			(effects
 				(font
@@ -12636,7 +12636,7 @@
 			)
 			(project ""
 				(path "/ca333741-5826-495c-b860-5422aa5e17fc"
-					(reference "#FLG?")
+					(reference "#FLG0101")
 					(unit 1)
 				)
 			)
@@ -15621,7 +15621,7 @@
 		(on_board yes)
 		(dnp no)
 		(uuid "63ffd4b8-1ed9-461b-8b87-d35e0ccc841b")
-		(property "Reference" "#PWR042"
+		(property "Reference" "#PWR0101"
 			(at 27.94 227.33 0)
 			(effects
 				(font
@@ -15671,7 +15671,7 @@
 		(instances
 			(project "Tractive_Battery_Board"
 				(path "/ca333741-5826-495c-b860-5422aa5e17fc"
-					(reference "#PWR042")
+					(reference "#PWR0101")
 					(unit 1)
 				)
 			)
@@ -16566,7 +16566,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "7a7fa2e1-e848-412f-ae51-cb94c6d30779")
-		(property "Reference" "#PWR?"
+		(property "Reference" "#PWR0104"
 			(at 77.47 67.31 0)
 			(effects
 				(font
@@ -16628,7 +16628,7 @@
 			)
 			(project ""
 				(path "/ca333741-5826-495c-b860-5422aa5e17fc"
-					(reference "#PWR?")
+					(reference "#PWR0104")
 					(unit 1)
 				)
 			)
@@ -16796,6 +16796,73 @@
 			(project "Tractive_Battery_Board"
 				(path "/ca333741-5826-495c-b860-5422aa5e17fc"
 					(reference "J3")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Device:R")
+		(at 228.6 49.53 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "7c086cf5-9e3f-41f6-a28b-fbbce0ffd309")
+		(property "Reference" "R41"
+			(at 231.648 48.768 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "120"
+			(at 231.902 50.546 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" ""
+			(at 226.822 49.53 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 228.6 49.53 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Resistor"
+			(at 228.6 49.53 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "2"
+			(uuid "111a993f-0d0d-4030-b924-050f60ff7718")
+		)
+		(pin "1"
+			(uuid "35098ce8-88f6-4f1a-b325-d722a5d22294")
+		)
+		(instances
+			(project "Tractive_Battery_Board"
+				(path "/ca333741-5826-495c-b860-5422aa5e17fc"
+					(reference "R41")
 					(unit 1)
 				)
 			)
@@ -17957,7 +18024,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "91a9ed2f-321a-4ab4-bb28-8b613d83038d")
-		(property "Reference" "#PWR?"
+		(property "Reference" "#PWR0106"
 			(at 46.99 49.53 0)
 			(effects
 				(font
@@ -18019,74 +18086,7 @@
 			)
 			(project ""
 				(path "/ca333741-5826-495c-b860-5422aa5e17fc"
-					(reference "#PWR?")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
-		(lib_id "Device:R")
-		(at 228.6 49.53 0)
-		(unit 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(dnp no)
-		(uuid "9296a9a2-04d5-4df2-a3d4-1d9b9bf3de15")
-		(property "Reference" "R2"
-			(at 231.648 48.768 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Value" "120"
-			(at 231.902 50.546 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Footprint" ""
-			(at 226.822 49.53 90)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Datasheet" "~"
-			(at 228.6 49.53 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Description" "Resistor"
-			(at 228.6 49.53 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(pin "2"
-			(uuid "b213501c-d1c2-4fc1-ba48-290982c40867")
-		)
-		(pin "1"
-			(uuid "fed92bc8-53df-4969-bb0b-7fffefda9b43")
-		)
-		(instances
-			(project "Tractive_Battery_Board"
-				(path "/ca333741-5826-495c-b860-5422aa5e17fc"
-					(reference "R2")
+					(reference "#PWR0106")
 					(unit 1)
 				)
 			)
@@ -18362,7 +18362,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "a30747db-4cb2-48da-84c3-b5f0d7f66963")
-		(property "Reference" "#PWR?"
+		(property "Reference" "#PWR0103"
 			(at 27.94 67.31 0)
 			(effects
 				(font
@@ -18424,7 +18424,7 @@
 			)
 			(project ""
 				(path "/ca333741-5826-495c-b860-5422aa5e17fc"
-					(reference "#PWR?")
+					(reference "#PWR0103")
 					(unit 1)
 				)
 			)
@@ -19284,7 +19284,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "c473c5e7-73af-49d3-814f-aa94928deb44")
-		(property "Reference" "#PWR?"
+		(property "Reference" "#PWR0107"
 			(at 59.69 36.83 0)
 			(effects
 				(font
@@ -19346,7 +19346,7 @@
 			)
 			(project ""
 				(path "/ca333741-5826-495c-b860-5422aa5e17fc"
-					(reference "#PWR?")
+					(reference "#PWR0107")
 					(unit 1)
 				)
 			)
@@ -20199,7 +20199,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "e5c4dc2b-aaaa-4c4d-b013-9a881a955da4")
-		(property "Reference" "#PWR?"
+		(property "Reference" "#PWR0102"
 			(at 46.99 85.09 0)
 			(effects
 				(font
@@ -20261,7 +20261,7 @@
 			)
 			(project ""
 				(path "/ca333741-5826-495c-b860-5422aa5e17fc"
-					(reference "#PWR?")
+					(reference "#PWR0102")
 					(unit 1)
 				)
 			)
@@ -20549,7 +20549,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "f188207f-ab87-4d64-8c2e-a500a881dbb5")
-		(property "Reference" "#PWR?"
+		(property "Reference" "#PWR0105"
 			(at 27.94 36.83 0)
 			(effects
 				(font
@@ -20611,7 +20611,7 @@
 			)
 			(project ""
 				(path "/ca333741-5826-495c-b860-5422aa5e17fc"
-					(reference "#PWR?")
+					(reference "#PWR0105")
 					(unit 1)
 				)
 			)
