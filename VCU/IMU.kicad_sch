@@ -1568,7 +1568,7 @@
 						)
 					)
 				)
-				(pin power_out line
+				(pin power_in line
 					(at 26.67 -8.89 180)
 					(length 7.62)
 					(name "GND"
@@ -1586,7 +1586,7 @@
 						)
 					)
 				)
-				(pin power_out line
+				(pin power_in line
 					(at 26.67 -11.43 180)
 					(length 7.62)
 					(name "GND"
@@ -1604,7 +1604,7 @@
 						)
 					)
 				)
-				(pin power_in line
+				(pin passive line
 					(at 26.67 -16.51 180)
 					(length 7.62)
 					(name "CAP"
@@ -1909,6 +1909,12 @@
 		(uuid "5383ffa1-c9c3-4c01-b00b-17cee8935c6f")
 	)
 	(junction
+		(at 208.28 162.56)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "58ecaeab-731e-49fc-a1d5-0dfa95d8d96f")
+	)
+	(junction
 		(at 252.73 130.81)
 		(diameter 0)
 		(color 0 0 0 0)
@@ -1927,12 +1933,6 @@
 		(uuid "9292a21f-06b5-444c-8c3e-aa5a4f8b5792")
 	)
 	(junction
-		(at 246.38 130.81)
-		(diameter 0)
-		(color 0 0 0 0)
-		(uuid "a5785e0e-54b6-40d7-a5f9-11de52199762")
-	)
-	(junction
 		(at 241.3 123.19)
 		(diameter 0)
 		(color 0 0 0 0)
@@ -1949,6 +1949,12 @@
 		(diameter 0)
 		(color 0 0 0 0)
 		(uuid "d22f5b02-45aa-4f2e-8c0f-37bd1955050f")
+	)
+	(junction
+		(at 203.2 162.56)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "d762539d-1513-4231-8573-bdcac00cded0")
 	)
 	(junction
 		(at 222.25 162.56)
@@ -2015,16 +2021,6 @@
 			(type default)
 		)
 		(uuid "2295de46-cfcc-44b7-9b14-d74be5183692")
-	)
-	(wire
-		(pts
-			(xy 246.38 130.81) (xy 252.73 130.81)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "271a6884-8f6e-44cd-ab6a-042c9e1a6853")
 	)
 	(wire
 		(pts
@@ -2135,6 +2131,16 @@
 			(type default)
 		)
 		(uuid "647dca8b-ccc0-4448-8465-257d65e5785f")
+	)
+	(wire
+		(pts
+			(xy 203.2 162.56) (xy 208.28 162.56)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "70667e1c-f43a-4880-8bbd-1938569cda90")
 	)
 	(wire
 		(pts
@@ -2328,7 +2334,7 @@
 	)
 	(wire
 		(pts
-			(xy 246.38 130.81) (xy 241.3 130.81)
+			(xy 241.3 130.81) (xy 252.73 130.81)
 		)
 		(stroke
 			(width 0)
@@ -3588,16 +3594,15 @@
 	)
 	(symbol
 		(lib_id "power:GND")
-		(at 246.38 130.81 0)
+		(at 252.73 130.81 0)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
 		(on_board yes)
 		(dnp no)
-		(fields_autoplaced yes)
 		(uuid "56c9d16a-4bdc-43d5-9140-4e972cdbd074")
 		(property "Reference" "#PWR0159"
-			(at 246.38 137.16 0)
+			(at 252.73 137.16 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -3606,7 +3611,7 @@
 			)
 		)
 		(property "Value" "GND"
-			(at 246.38 135.89 0)
+			(at 252.73 134.874 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -3614,7 +3619,7 @@
 			)
 		)
 		(property "Footprint" ""
-			(at 246.38 130.81 0)
+			(at 252.73 130.81 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -3623,7 +3628,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 246.38 130.81 0)
+			(at 252.73 130.81 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -3632,7 +3637,7 @@
 			)
 		)
 		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
-			(at 246.38 130.81 0)
+			(at 252.73 130.81 0)
 			(effects
 				(font
 					(size 1.27 1.27)
