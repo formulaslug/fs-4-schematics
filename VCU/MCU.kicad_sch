@@ -8207,16 +8207,6 @@
 	)
 	(wire
 		(pts
-			(xy 203.2 77.47) (xy 201.93 77.47)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "4440072f-20d2-4be4-9af7-cd70b8989af1")
-	)
-	(wire
-		(pts
 			(xy 373.38 199.39) (xy 373.38 203.2)
 		)
 		(stroke
@@ -17418,7 +17408,7 @@
 	)
 	(symbol
 		(lib_id "power:GND")
-		(at 203.2 77.47 0)
+		(at 201.93 77.47 0)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
@@ -17427,7 +17417,7 @@
 		(fields_autoplaced yes)
 		(uuid "54e0ac66-863e-4319-9558-f7056289d997")
 		(property "Reference" "#PWR088"
-			(at 203.2 83.82 0)
+			(at 201.93 83.82 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -17436,7 +17426,7 @@
 			)
 		)
 		(property "Value" "GND"
-			(at 203.2 82.55 0)
+			(at 201.93 82.55 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -17444,7 +17434,7 @@
 			)
 		)
 		(property "Footprint" ""
-			(at 203.2 77.47 0)
+			(at 201.93 77.47 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -17453,7 +17443,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 203.2 77.47 0)
+			(at 201.93 77.47 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -17462,7 +17452,7 @@
 			)
 		)
 		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
-			(at 203.2 77.47 0)
+			(at 201.93 77.47 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -18000,6 +17990,140 @@
 			(project "VCU"
 				(path "/d46cfebc-cd32-4ec9-981b-3f67fe44510e/77141324-8e12-4fa0-be8a-c003c15572fb"
 					(reference "Q1")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Device:LED")
+		(at 311.15 26.67 270)
+		(mirror x)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board no)
+		(dnp yes)
+		(fields_autoplaced yes)
+		(uuid "5c9cc4d6-02b0-42cf-a202-c6e68b3e392e")
+		(property "Reference" "D4"
+			(at 313.69 26.9874 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Value" "1092QD1-12V-ND"
+			(at 313.69 29.5274 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Footprint" ""
+			(at 311.15 26.67 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "https://vcclite.com/wp-content/uploads/products/1092QA1-12V/datasheet/1092Q-Datasheet-Rev9.pdf"
+			(at 311.15 26.67 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Light emitting diode"
+			(at 311.15 26.67 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Sim.Pins" "1=K 2=A"
+			(at 311.15 26.67 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Digi PN" "1092QD1-12V-ND"
+			(at 311.15 26.67 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Digi URL" "https://www.digikey.com/en/products/detail/visual-communications-company-vcc/1092QD1-12V/5965087"
+			(at 311.15 26.67 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "MFG" "Visual Communications Company"
+			(at 311.15 26.67 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "MFG PN" "1092QD1-12V"
+			(at 311.15 26.67 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "MANUFACTURER" ""
+			(at 311.15 26.67 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Sim.Type" ""
+			(at 311.15 26.67 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "ee890470-5d6c-4dff-a8f0-e7af954d5eb6")
+		)
+		(pin "2"
+			(uuid "9e59808a-4fa6-4127-a850-c9d051a77b98")
+		)
+		(instances
+			(project "VCU"
+				(path "/d46cfebc-cd32-4ec9-981b-3f67fe44510e/77141324-8e12-4fa0-be8a-c003c15572fb"
+					(reference "D4")
 					(unit 1)
 				)
 			)
@@ -22790,131 +22914,6 @@
 			(project "VCU"
 				(path "/d46cfebc-cd32-4ec9-981b-3f67fe44510e/77141324-8e12-4fa0-be8a-c003c15572fb"
 					(reference "SW2")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
-		(lib_id "Device:LED")
-		(at 311.15 26.67 270)
-		(mirror x)
-		(unit 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board no)
-		(dnp yes)
-		(fields_autoplaced yes)
-		(uuid "9c19a8c8-546f-4bb1-812d-827d7a25fc2e")
-		(property "Reference" "D4"
-			(at 313.69 26.9874 90)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-		)
-		(property "Value" "1092QC1-125VAC"
-			(at 313.69 29.5274 90)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-		)
-		(property "Footprint" ""
-			(at 311.15 26.67 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Datasheet" "https://www.inspiredled.com/wp-content/uploads/2018/09/12V-SB-Colored-Flex-Spec-2.2.pdf"
-			(at 311.15 26.67 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Description" "Brake Light LED Strip"
-			(at 311.15 26.67 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Sim.Pins" ""
-			(at 311.15 26.67 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Digi PN" "1647-12V-SB-RED-12MCT-ND"
-			(at 311.15 26.67 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Digi URL" "https://www.digikey.com/en/products/detail/inspired-led-llc/12V-SB-RED-12M/5866478"
-			(at 311.15 26.67 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "MFG" "Inspired LED"
-			(at 311.15 26.67 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "MFG PN" "12V-SB-RED-12M"
-			(at 311.15 26.67 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Sim.Type" ""
-			(at 311.15 26.67 90)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(pin "1"
-			(uuid "20f5acab-1a71-4120-a634-3e6ebb0c37e6")
-		)
-		(pin "2"
-			(uuid "1a3523a6-c9c5-47bf-8a3c-c292271f97db")
-		)
-		(instances
-			(project "VCU"
-				(path "/d46cfebc-cd32-4ec9-981b-3f67fe44510e/77141324-8e12-4fa0-be8a-c003c15572fb"
-					(reference "D4")
 					(unit 1)
 				)
 			)
