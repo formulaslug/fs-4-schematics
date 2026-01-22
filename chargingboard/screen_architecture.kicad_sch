@@ -6536,16 +6536,6 @@
 		)
 		(uuid "1f74d25e-807d-40bf-8be2-ec1dbe0b94d8")
 	)
-	(label "Driver_Power"
-		(at 80.01 128.27 0)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-			(justify left bottom)
-		)
-		(uuid "2571cc79-6d13-41ec-92d7-f1d7a2a2ef5d")
-	)
 	(label "RGB_G3"
 		(at 195.58 128.27 0)
 		(effects
@@ -6856,16 +6846,6 @@
 		)
 		(uuid "a0d4f7df-cc28-4bb4-aaa4-ceab807a4ed3")
 	)
-	(label "Backlight_PWM"
-		(at 195.58 173.99 0)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-			(justify left bottom)
-		)
-		(uuid "a8a21f7c-d6aa-4973-bb36-311855c81401")
-	)
 	(label "RGB_B6"
 		(at 195.58 156.21 0)
 		(effects
@@ -7086,16 +7066,6 @@
 		)
 		(uuid "f2d7b272-8ba5-4de4-8481-73fdcc2fdbfe")
 	)
-	(label "Backlight_PWM"
-		(at 55.88 236.22 0)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-			(justify left bottom)
-		)
-		(uuid "f4287ac9-aa25-4e7f-8910-370b6d08b4dd")
-	)
 	(label "LCD_Data_Enable"
 		(at 316.23 166.37 0)
 		(effects
@@ -7136,38 +7106,93 @@
 		)
 		(uuid "ff70f8d4-607c-4499-a48a-553680913095")
 	)
-	(hierarchical_label "Backlight_PWM"
-		(shape input)
-		(at 232.41 173.99 0)
+	(global_label "driver_power_pin"
+		(shape output)
+		(at 40.64 128.27 0)
+		(fields_autoplaced yes)
 		(effects
 			(font
 				(size 1.27 1.27)
 			)
 			(justify left)
 		)
-		(uuid "10c4c0e3-bd53-4f6c-9b4f-d0e8e3cc86bc")
+		(uuid "0a19a589-ce27-46b3-80bf-46582c7f2aa7")
+		(property "Intersheetrefs" "${INTERSHEET_REFS}"
+			(at 56.0228 128.27 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+				(hide yes)
+			)
+		)
 	)
-	(hierarchical_label "Backlight_PWM"
+	(global_label "SPI(MOSI,MISO,CLK,CS)"
+		(shape input)
+		(at 62.23 104.14 180)
+		(fields_autoplaced yes)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify right)
+		)
+		(uuid "1cf8345d-c81c-427c-9577-5f76c814b150")
+		(property "Intersheetrefs" "${INTERSHEET_REFS}"
+			(at 38.2594 104.14 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+				(hide yes)
+			)
+		)
+	)
+	(global_label "Backlight_PWM"
 		(shape input)
 		(at 44.45 236.22 180)
+		(fields_autoplaced yes)
 		(effects
 			(font
 				(size 1.27 1.27)
 			)
 			(justify right)
 		)
-		(uuid "26f148cc-7a8b-4238-ad42-03c20a353ce1")
+		(uuid "307e3b07-b248-425a-8fd5-3f0e9801261e")
+		(property "Intersheetrefs" "${INTERSHEET_REFS}"
+			(at 27.495 236.22 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+				(hide yes)
+			)
+		)
 	)
-	(hierarchical_label "Driver_Power"
+	(global_label "Backlight_PWM"
 		(shape input)
-		(at 58.42 128.27 180)
+		(at 232.41 173.99 0)
+		(fields_autoplaced yes)
 		(effects
 			(font
 				(size 1.27 1.27)
 			)
-			(justify right)
+			(justify left)
 		)
-		(uuid "3b45f14c-e2c2-4e70-9eef-233078227765")
+		(uuid "9894bf2f-ed74-4fe3-acd9-dfe7e34b1d93")
+		(property "Intersheetrefs" "${INTERSHEET_REFS}"
+			(at 249.365 173.99 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+				(hide yes)
+			)
+		)
 	)
 	(symbol
 		(lib_id "Device:C")
