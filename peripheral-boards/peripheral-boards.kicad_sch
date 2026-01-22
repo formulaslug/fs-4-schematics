@@ -4915,6 +4915,146 @@
 			)
 			(embedded_fonts no)
 		)
+		(symbol "Regulator_Linear:MCP1703Ax-330xxMB"
+			(pin_names
+				(offset 0.254)
+			)
+			(exclude_from_sim no)
+			(in_bom yes)
+			(on_board yes)
+			(property "Reference" "U"
+				(at -3.81 3.175 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Value" "MCP1703Ax-330xxMB"
+				(at 0 3.175 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(justify left)
+				)
+			)
+			(property "Footprint" "Package_TO_SOT_SMD:SOT-89-3"
+				(at 0 5.08 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "Datasheet" "http://ww1.microchip.com/downloads/en/DeviceDoc/20005122B.pdf"
+				(at 0 -1.27 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "Description" "Low Quiescent Current LDO Regulator, 3.3V, 250mA, Vin<=16V, SOT-89"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "ki_keywords" "REGULATOR LDO"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "ki_fp_filters" "SOT?89*"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(symbol "MCP1703Ax-330xxMB_0_1"
+				(rectangle
+					(start -5.08 -5.08)
+					(end 5.08 1.905)
+					(stroke
+						(width 0.254)
+						(type default)
+					)
+					(fill
+						(type background)
+					)
+				)
+			)
+			(symbol "MCP1703Ax-330xxMB_1_1"
+				(pin power_in line
+					(at -7.62 0 0)
+					(length 2.54)
+					(name "VI"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "2"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin power_in line
+					(at 0 -7.62 90)
+					(length 2.54)
+					(name "GND"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "1"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin power_out line
+					(at 7.62 0 180)
+					(length 2.54)
+					(name "VO"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "3"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+			)
+			(embedded_fonts no)
+		)
 		(symbol "Regulator_Switching:AP63205WU"
 			(exclude_from_sim no)
 			(in_bom yes)
@@ -5931,6 +6071,18 @@
 		)
 		(uuid c8479805-8850-4605-a60a-5f70f78a4dbc)
 	)
+	(rectangle
+		(start 194.31 140.97)
+		(end 254 171.45)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(fill
+			(type none)
+		)
+		(uuid dd09afa6-fbd8-461d-95b1-fee70dd78ab4)
+	)
 	(text "make sure it can work at 3.3 or you might have to change it"
 		(exclude_from_sim no)
 		(at 73.914 116.078 0)
@@ -6035,7 +6187,7 @@
 		)
 		(uuid "66d6daaf-33c2-4c2e-a26b-fc89ae7c9140")
 	)
-	(text "pick a resistance(pretty high) 5 or 3.3 and pick resistnace \nthat gives 2.2"
+	(text "pick a resistance(pretty high) 5 or 3.3 and pick resistance \nthat gives 2.2"
 		(exclude_from_sim no)
 		(at 380.492 136.144 0)
 		(effects
@@ -6075,6 +6227,16 @@
 		)
 		(uuid "77a7a4b2-436f-4a54-ba49-38f23eecf004")
 	)
+	(text "to do:\nwhat is the deal with wheel speed sensor\ntire temp sensors cannot be changed from 5 V to 3.3V (not in range)\ninstrumentation amplifier cannot be changed from 5V to 3.3V (not in range)\nlinear regulators go where?\nwhy did we want to get rid of the buck converter? "
+		(exclude_from_sim no)
+		(at 179.832 63.246 0)
+		(effects
+			(font
+				(size 2.54 2.54)
+			)
+		)
+		(uuid "77cf8efe-4635-4017-b35e-6acf947bad9f")
+	)
 	(text "Not on board"
 		(exclude_from_sim no)
 		(at 305.308 133.35 0)
@@ -6107,15 +6269,15 @@
 		)
 		(uuid "90fd7fc6-a373-4ba8-8937-2bd584ad64ee")
 	)
-	(text "put in sensor block"
+	(text "linear regulators (power supplies)"
 		(exclude_from_sim no)
-		(at 357.632 174.752 0)
+		(at 212.344 139.192 0)
 		(effects
 			(font
 				(size 1.27 1.27)
 			)
 		)
-		(uuid "9f1ec164-09f8-46ac-ac59-55a9d44d47dd")
+		(uuid "a24f6204-b804-4760-869a-637399cab262")
 	)
 	(text "Sensors"
 		(exclude_from_sim no)
@@ -6222,7 +6384,7 @@
 	)
 	(text "change most 5 to 3.3V"
 		(exclude_from_sim no)
-		(at 156.972 54.356 0)
+		(at 142.24 25.908 0)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -9456,7 +9618,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "013fc187-86ab-42b2-9d5e-8a0df844e2cf")
-		(property "Reference" "#FLG"
+		(property "Reference" "#FLG?"
 			(at 318.77 27.305 0)
 			(effects
 				(font
@@ -9509,6 +9671,12 @@
 			(project "dcdc-regulator-test"
 				(path "/1eaf6089-efbb-4c23-ad74-83bc24c8d4ef"
 					(reference "#FLG03")
+					(unit 1)
+				)
+			)
+			(project "peripheral-boards"
+				(path "/3ffe4db1-2415-46df-8a68-5537f544061f"
+					(reference "#FLG?")
 					(unit 1)
 				)
 			)
@@ -11547,7 +11715,7 @@
 				(hide yes)
 			)
 		)
-		(property "Datasheet" ""
+		(property "Datasheet" "https://www.ti.com/lit/ds/symlink/ina125.pdf?HQS=dis-dk-null-digikeymode-dsf-pf-null-wwe&ts=1769101242397&ref_url=https%253A%252F%252Fwww.ti.com%252Fgeneral%252Fdocs%252Fsuppproductinfo.tsp%253FdistId%253D10%2526gotoUrl%253Dhttps%253A%252F%252Fwww.ti.com%252Flit%252Fgpn%252Fina125"
 			(at 21.59 71.12 0)
 			(effects
 				(font
@@ -11558,6 +11726,42 @@
 			)
 		)
 		(property "Description" ""
+			(at 21.59 71.12 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Digikey Part Number" ""
+			(at 21.59 71.12 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Name" ""
+			(at 21.59 71.12 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Digikey Link" ""
+			(at 21.59 71.12 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Manufacturer Part Number" ""
 			(at 21.59 71.12 0)
 			(effects
 				(font
@@ -11852,6 +12056,77 @@
 			(project "FS4 peripheral baords"
 				(path "/3ffe4db1-2415-46df-8a68-5537f544061f"
 					(reference "J4")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Regulator_Linear:MCP1703Ax-330xxMB")
+		(at 212.09 153.67 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "5ea09b7c-a9d8-4087-ab7e-efb2a3f790f6")
+		(property "Reference" "U6"
+			(at 212.09 147.32 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "MCP1703Ax-330xxMB"
+			(at 212.09 149.86 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" "Package_TO_SOT_SMD:SOT-89-3"
+			(at 212.09 148.59 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "http://ww1.microchip.com/downloads/en/DeviceDoc/20005122B.pdf"
+			(at 212.09 154.94 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Low Quiescent Current LDO Regulator, 3.3V, 250mA, Vin<=16V, SOT-89"
+			(at 212.09 153.67 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "2"
+			(uuid "253612d7-dc47-4259-afd0-61f5013e0eda")
+		)
+		(pin "1"
+			(uuid "66eb3f28-dd91-48f0-9250-8beaa8987bdc")
+		)
+		(pin "3"
+			(uuid "86120913-03ff-4a89-bbdb-47219eb04c17")
+		)
+		(instances
+			(project ""
+				(path "/3ffe4db1-2415-46df-8a68-5537f544061f"
+					(reference "U6")
 					(unit 1)
 				)
 			)
@@ -12283,7 +12558,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "7a7fa2e1-e848-412f-ae51-cb94c6d30779")
-		(property "Reference" "#PWR"
+		(property "Reference" "#PWR?"
 			(at 326.39 33.02 0)
 			(effects
 				(font
@@ -12334,6 +12609,12 @@
 			(project "dcdc-regulator-test"
 				(path "/1eaf6089-efbb-4c23-ad74-83bc24c8d4ef"
 					(reference "#PWR06")
+					(unit 1)
+				)
+			)
+			(project "peripheral-boards"
+				(path "/3ffe4db1-2415-46df-8a68-5537f544061f"
+					(reference "#PWR?")
 					(unit 1)
 				)
 			)
@@ -13755,7 +14036,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "a30747db-4cb2-48da-84c3-b5f0d7f66963")
-		(property "Reference" "#PWR"
+		(property "Reference" "#PWR?"
 			(at 276.86 33.02 0)
 			(effects
 				(font
@@ -13806,6 +14087,12 @@
 			(project "dcdc-regulator-test"
 				(path "/1eaf6089-efbb-4c23-ad74-83bc24c8d4ef"
 					(reference "#PWR04")
+					(unit 1)
+				)
+			)
+			(project "peripheral-boards"
+				(path "/3ffe4db1-2415-46df-8a68-5537f544061f"
+					(reference "#PWR?")
 					(unit 1)
 				)
 			)
@@ -15294,6 +15581,77 @@
 		)
 	)
 	(symbol
+		(lib_id "Regulator_Linear:MCP1703Ax-330xxMB")
+		(at 236.22 153.67 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "d79a9cc5-4146-437a-b0f3-9bdc57e96cb2")
+		(property "Reference" "U7"
+			(at 236.22 147.32 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "MCP1703Ax-330xxMB"
+			(at 236.22 149.86 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" "Package_TO_SOT_SMD:SOT-89-3"
+			(at 236.22 148.59 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "http://ww1.microchip.com/downloads/en/DeviceDoc/20005122B.pdf"
+			(at 236.22 154.94 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Low Quiescent Current LDO Regulator, 3.3V, 250mA, Vin<=16V, SOT-89"
+			(at 236.22 153.67 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "2"
+			(uuid "3e885048-2cac-477e-bda2-e0db21f7cd2d")
+		)
+		(pin "1"
+			(uuid "7385ce40-8550-4267-9fee-7cf98f15c5e6")
+		)
+		(pin "3"
+			(uuid "710fddc1-b577-410f-9e47-7944894938b6")
+		)
+		(instances
+			(project "peripheral-boards"
+				(path "/3ffe4db1-2415-46df-8a68-5537f544061f"
+					(reference "U7")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
 		(lib_id "Connector:Conn_01x03_Pin")
 		(at 336.55 156.21 0)
 		(unit 1)
@@ -15512,7 +15870,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "e5c4dc2b-aaaa-4c4d-b013-9a881a955da4")
-		(property "Reference" "#PWR"
+		(property "Reference" "#PWR?"
 			(at 295.91 50.8 0)
 			(effects
 				(font
@@ -15563,6 +15921,12 @@
 			(project "dcdc-regulator-test"
 				(path "/1eaf6089-efbb-4c23-ad74-83bc24c8d4ef"
 					(reference "#PWR05")
+					(unit 1)
+				)
+			)
+			(project "peripheral-boards"
+				(path "/3ffe4db1-2415-46df-8a68-5537f544061f"
+					(reference "#PWR?")
 					(unit 1)
 				)
 			)
