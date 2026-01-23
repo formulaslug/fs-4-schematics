@@ -430,7 +430,7 @@
       "no_connect_dangling": "warning",
       "pin_not_connected": "error",
       "pin_not_driven": "error",
-      "pin_to_pin": "warning",
+      "pin_to_pin": "error",
       "power_pin_not_driven": "error",
       "same_local_global_label": "warning",
       "similar_label_and_power": "warning",
@@ -477,6 +477,12 @@
       {
         "name": "+12V",
         "pcb_color": "rgba(0, 0, 0, 0.000)",
+        "priority": 1,
+        "schematic_color": "rgba(0, 0, 0, 0.000)"
+      },
+      {
+        "name": "+3V3",
+        "pcb_color": "rgba(0, 0, 0, 0.000)",
         "priority": 0,
         "schematic_color": "rgba(0, 0, 0, 0.000)"
       }
@@ -488,20 +494,12 @@
     "netclass_assignments": null,
     "netclass_patterns": [
       {
-        "netclass": "Default",
-        "pattern": "/CANH"
-      },
-      {
-        "netclass": "Default",
-        "pattern": "SPI.CLK"
-      },
-      {
-        "netclass": "Default",
-        "pattern": "+12V"
-      },
-      {
         "netclass": "+12V",
         "pattern": "+12V"
+      },
+      {
+        "netclass": "+3V3",
+        "pattern": "+3V3"
       }
     ]
   },
