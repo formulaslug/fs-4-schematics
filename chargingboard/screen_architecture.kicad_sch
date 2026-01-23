@@ -3621,6 +3621,107 @@
 			)
 			(embedded_fonts no)
 		)
+		(symbol "power:PWR_FLAG"
+			(power)
+			(pin_numbers
+				(hide yes)
+			)
+			(pin_names
+				(offset 0)
+				(hide yes)
+			)
+			(exclude_from_sim no)
+			(in_bom yes)
+			(on_board yes)
+			(property "Reference" "#FLG"
+				(at 0 1.905 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "Value" "PWR_FLAG"
+				(at 0 3.81 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Footprint" ""
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "Datasheet" "~"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "Description" "Special symbol for telling ERC where power comes from"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "ki_keywords" "flag power"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(symbol "PWR_FLAG_0_0"
+				(pin power_out line
+					(at 0 0 90)
+					(length 0)
+					(name "~"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "1"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+			)
+			(symbol "PWR_FLAG_0_1"
+				(polyline
+					(pts
+						(xy 0 0) (xy 0 1.27) (xy -1.016 1.905) (xy 0 2.54) (xy 1.016 1.905) (xy 0 1.27)
+					)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+			)
+			(embedded_fonts no)
+		)
 	)
 	(rectangle
 		(start 27.94 20.32)
@@ -7396,16 +7497,17 @@
 		)
 	)
 	(symbol
-		(lib_id "power:GND")
-		(at 110.49 82.55 0)
+		(lib_id "power:PWR_FLAG")
+		(at 182.88 85.09 180)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
 		(on_board yes)
 		(dnp no)
-		(uuid "10ec29d1-8db0-4d8d-a1e9-92b3ede55a80")
-		(property "Reference" "#PWR016"
-			(at 110.49 88.9 0)
+		(fields_autoplaced yes)
+		(uuid "1071e499-94b4-4af6-a113-6b1ab0aa6f58")
+		(property "Reference" "#FLG020"
+			(at 182.88 86.995 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -7414,7 +7516,7 @@
 			)
 		)
 		(property "Value" "GND"
-			(at 110.49 86.106 0)
+			(at 182.88 90.17 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -7422,7 +7524,7 @@
 			)
 		)
 		(property "Footprint" ""
-			(at 110.49 82.55 0)
+			(at 182.88 85.09 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -7430,8 +7532,8 @@
 				(hide yes)
 			)
 		)
-		(property "Datasheet" ""
-			(at 110.49 82.55 0)
+		(property "Datasheet" "~"
+			(at 182.88 85.09 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -7439,8 +7541,8 @@
 				(hide yes)
 			)
 		)
-		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
-			(at 110.49 82.55 0)
+		(property "Description" "Special symbol for telling ERC where power comes from"
+			(at 182.88 85.09 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -7449,12 +7551,12 @@
 			)
 		)
 		(pin "1"
-			(uuid "b9b1d3db-2c5f-4d10-bb6d-695bc216a376")
+			(uuid "bad382a7-2ccb-4043-ad34-d1f6ac50ede9")
 		)
 		(instances
 			(project "chargingboard"
 				(path "/3b7f9d0d-fe78-4ddc-a74a-12564d0be65c/1fb407b6-2fa5-4dbf-a434-4b5bd0ba4814"
-					(reference "#PWR016")
+					(reference "#FLG020")
 					(unit 1)
 				)
 			)
@@ -7530,17 +7632,17 @@
 		)
 	)
 	(symbol
-		(lib_id "power:GND")
-		(at 152.4 80.01 0)
-		(mirror y)
+		(lib_id "power:PWR_FLAG")
+		(at 152.4 80.01 180)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
 		(on_board yes)
 		(dnp no)
-		(uuid "19f918a2-93b9-4573-a3c8-7edb9243e236")
-		(property "Reference" "#PWR050"
-			(at 152.4 86.36 0)
+		(fields_autoplaced yes)
+		(uuid "18d085cd-3ff2-48e4-8c5f-6b5ad4b3b488")
+		(property "Reference" "#FLG017"
+			(at 152.4 81.915 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -7549,7 +7651,7 @@
 			)
 		)
 		(property "Value" "GND"
-			(at 152.4 84.074 0)
+			(at 152.4 85.09 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -7565,7 +7667,7 @@
 				(hide yes)
 			)
 		)
-		(property "Datasheet" ""
+		(property "Datasheet" "~"
 			(at 152.4 80.01 0)
 			(effects
 				(font
@@ -7574,7 +7676,7 @@
 				(hide yes)
 			)
 		)
-		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
+		(property "Description" "Special symbol for telling ERC where power comes from"
 			(at 152.4 80.01 0)
 			(effects
 				(font
@@ -7584,77 +7686,12 @@
 			)
 		)
 		(pin "1"
-			(uuid "7ab3f88e-525b-4f30-b300-f89f43768822")
+			(uuid "3a93fe26-722b-48b1-b904-c2be82ea3cb1")
 		)
 		(instances
-			(project "chargingboard"
+			(project ""
 				(path "/3b7f9d0d-fe78-4ddc-a74a-12564d0be65c/1fb407b6-2fa5-4dbf-a434-4b5bd0ba4814"
-					(reference "#PWR050")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
-		(lib_id "power:GND")
-		(at 137.16 82.55 0)
-		(unit 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(dnp no)
-		(uuid "248c9f8d-968d-4762-b834-061dc38cbde6")
-		(property "Reference" "#PWR022"
-			(at 137.16 88.9 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Value" "GND"
-			(at 137.16 86.106 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Footprint" ""
-			(at 137.16 82.55 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Datasheet" ""
-			(at 137.16 82.55 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
-			(at 137.16 82.55 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(pin "1"
-			(uuid "85dc3683-7370-46b0-b425-05f7fcddc15c")
-		)
-		(instances
-			(project "chargingboard"
-				(path "/3b7f9d0d-fe78-4ddc-a74a-12564d0be65c/1fb407b6-2fa5-4dbf-a434-4b5bd0ba4814"
-					(reference "#PWR022")
+					(reference "#FLG017")
 					(unit 1)
 				)
 			)
@@ -7720,71 +7757,6 @@
 			(project "chargingboard"
 				(path "/3b7f9d0d-fe78-4ddc-a74a-12564d0be65c/1fb407b6-2fa5-4dbf-a434-4b5bd0ba4814"
 					(reference "#PWR051")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
-		(lib_id "power:GND")
-		(at 124.46 81.28 0)
-		(unit 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(dnp no)
-		(uuid "327cc6e1-94f1-4886-a4f1-e4696c062f83")
-		(property "Reference" "#PWR019"
-			(at 124.46 87.63 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Value" "GND"
-			(at 124.46 84.836 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Footprint" ""
-			(at 124.46 81.28 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Datasheet" ""
-			(at 124.46 81.28 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
-			(at 124.46 81.28 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(pin "1"
-			(uuid "f0abb164-7f85-40e7-99e1-bbfb8fcdd9f8")
-		)
-		(instances
-			(project "chargingboard"
-				(path "/3b7f9d0d-fe78-4ddc-a74a-12564d0be65c/1fb407b6-2fa5-4dbf-a434-4b5bd0ba4814"
-					(reference "#PWR019")
 					(unit 1)
 				)
 			)
@@ -8214,6 +8186,72 @@
 			(project "chargingboard"
 				(path "/3b7f9d0d-fe78-4ddc-a74a-12564d0be65c/1fb407b6-2fa5-4dbf-a434-4b5bd0ba4814"
 					(reference "U1")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "power:PWR_FLAG")
+		(at 124.46 81.28 180)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "3c44dd91-ead8-4a73-b6be-5908d9c07afd")
+		(property "Reference" "#FLG015"
+			(at 124.46 83.185 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Value" "GND"
+			(at 124.46 86.36 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" ""
+			(at 124.46 81.28 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 124.46 81.28 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Special symbol for telling ERC where power comes from"
+			(at 124.46 81.28 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "7623108a-745a-4816-b85c-a8fd7682bae7")
+		)
+		(instances
+			(project "chargingboard"
+				(path "/3b7f9d0d-fe78-4ddc-a74a-12564d0be65c/1fb407b6-2fa5-4dbf-a434-4b5bd0ba4814"
+					(reference "#FLG015")
 					(unit 1)
 				)
 			)
@@ -8805,72 +8843,6 @@
 		)
 	)
 	(symbol
-		(lib_id "power:GND")
-		(at 168.91 73.66 0)
-		(mirror y)
-		(unit 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(dnp no)
-		(uuid "75d3afb0-e0c6-4ac0-83f9-2fe571ffc642")
-		(property "Reference" "#PWR057"
-			(at 168.91 80.01 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Value" "GND"
-			(at 171.196 76.962 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Footprint" ""
-			(at 168.91 73.66 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Datasheet" ""
-			(at 168.91 73.66 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
-			(at 168.91 73.66 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(pin "1"
-			(uuid "813e8158-526d-4e9c-9e73-2645ef0f914e")
-		)
-		(instances
-			(project "chargingboard"
-				(path "/3b7f9d0d-fe78-4ddc-a74a-12564d0be65c/1fb407b6-2fa5-4dbf-a434-4b5bd0ba4814"
-					(reference "#PWR057")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
 		(lib_id "power:+3V3")
 		(at 128.27 73.66 0)
 		(unit 1)
@@ -9361,6 +9333,72 @@
 		)
 	)
 	(symbol
+		(lib_id "power:PWR_FLAG")
+		(at 137.16 82.55 180)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "9073e177-245a-479b-840f-ae16377587c1")
+		(property "Reference" "#FLG016"
+			(at 137.16 84.455 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Value" "GND"
+			(at 137.16 87.63 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" ""
+			(at 137.16 82.55 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 137.16 82.55 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Special symbol for telling ERC where power comes from"
+			(at 137.16 82.55 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "8d32a811-d63e-4ae2-8f32-70a3da04a28d")
+		)
+		(instances
+			(project ""
+				(path "/3b7f9d0d-fe78-4ddc-a74a-12564d0be65c/1fb407b6-2fa5-4dbf-a434-4b5bd0ba4814"
+					(reference "#FLG016")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
 		(lib_id "power:GND")
 		(at 100.33 251.46 0)
 		(unit 1)
@@ -9565,6 +9603,72 @@
 		)
 	)
 	(symbol
+		(lib_id "power:PWR_FLAG")
+		(at 95.25 83.82 180)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "9d8d62ec-f311-4510-bd57-ccc5786fb71a")
+		(property "Reference" "#FLG013"
+			(at 95.25 85.725 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Value" "GND"
+			(at 95.25 88.9 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" ""
+			(at 95.25 83.82 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 95.25 83.82 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Special symbol for telling ERC where power comes from"
+			(at 95.25 83.82 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "82eabae5-6024-4c3c-b9f7-76e30d512faf")
+		)
+		(instances
+			(project ""
+				(path "/3b7f9d0d-fe78-4ddc-a74a-12564d0be65c/1fb407b6-2fa5-4dbf-a434-4b5bd0ba4814"
+					(reference "#FLG013")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
 		(lib_id "power:+12V")
 		(at 82.55 209.55 0)
 		(unit 1)
@@ -9690,72 +9794,6 @@
 			(project "chargingboard"
 				(path "/3b7f9d0d-fe78-4ddc-a74a-12564d0be65c/1fb407b6-2fa5-4dbf-a434-4b5bd0ba4814"
 					(reference "#PWR069")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
-		(lib_id "power:GND")
-		(at 182.88 85.09 0)
-		(unit 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(dnp no)
-		(fields_autoplaced yes)
-		(uuid "a598d125-b4c8-4785-b4fd-adfc03d19bc5")
-		(property "Reference" "#PWR060"
-			(at 182.88 91.44 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Value" "GND"
-			(at 182.88 90.17 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Footprint" ""
-			(at 182.88 85.09 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Datasheet" ""
-			(at 182.88 85.09 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
-			(at 182.88 85.09 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(pin "1"
-			(uuid "1925d7ed-b308-4a10-afc6-fdd4236eca8e")
-		)
-		(instances
-			(project "chargingboard"
-				(path "/3b7f9d0d-fe78-4ddc-a74a-12564d0be65c/1fb407b6-2fa5-4dbf-a434-4b5bd0ba4814"
-					(reference "#PWR060")
 					(unit 1)
 				)
 			)
@@ -9893,17 +9931,16 @@
 		)
 	)
 	(symbol
-		(lib_id "power:GND")
-		(at 168.91 86.36 0)
-		(mirror y)
+		(lib_id "power:PWR_FLAG")
+		(at 168.91 73.66 180)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
 		(on_board yes)
 		(dnp no)
-		(uuid "c1e8cefe-b9db-459a-a2a6-6732412aa70a")
-		(property "Reference" "#PWR058"
-			(at 168.91 92.71 0)
+		(uuid "bcc6b350-88a9-4b12-9aba-97dfe11acdf8")
+		(property "Reference" "#FLG019"
+			(at 168.91 75.565 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -9912,7 +9949,7 @@
 			)
 		)
 		(property "Value" "GND"
-			(at 168.656 90.678 0)
+			(at 172.72 76.2 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -9920,7 +9957,7 @@
 			)
 		)
 		(property "Footprint" ""
-			(at 168.91 86.36 0)
+			(at 168.91 73.66 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -9928,8 +9965,8 @@
 				(hide yes)
 			)
 		)
-		(property "Datasheet" ""
-			(at 168.91 86.36 0)
+		(property "Datasheet" "~"
+			(at 168.91 73.66 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -9937,8 +9974,8 @@
 				(hide yes)
 			)
 		)
-		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
-			(at 168.91 86.36 0)
+		(property "Description" "Special symbol for telling ERC where power comes from"
+			(at 168.91 73.66 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -9947,12 +9984,12 @@
 			)
 		)
 		(pin "1"
-			(uuid "5235d2bc-c528-4c82-b57c-c8a16524b751")
+			(uuid "490730b7-cebb-4e78-8433-2caa9236a8c0")
 		)
 		(instances
-			(project "chargingboard"
+			(project ""
 				(path "/3b7f9d0d-fe78-4ddc-a74a-12564d0be65c/1fb407b6-2fa5-4dbf-a434-4b5bd0ba4814"
-					(reference "#PWR058")
+					(reference "#FLG019")
 					(unit 1)
 				)
 			)
@@ -10164,16 +10201,17 @@
 		)
 	)
 	(symbol
-		(lib_id "power:GND")
-		(at 95.25 83.82 0)
+		(lib_id "power:PWR_FLAG")
+		(at 110.49 82.55 180)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
 		(on_board yes)
 		(dnp no)
-		(uuid "ed9bfb77-3f0d-4b67-a514-e855db066692")
-		(property "Reference" "#PWR014"
-			(at 95.25 90.17 0)
+		(fields_autoplaced yes)
+		(uuid "d4724a14-f39a-46c4-b212-5239edf3a77c")
+		(property "Reference" "#FLG014"
+			(at 110.49 84.455 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -10182,7 +10220,7 @@
 			)
 		)
 		(property "Value" "GND"
-			(at 95.25 87.376 0)
+			(at 110.49 87.63 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -10190,7 +10228,7 @@
 			)
 		)
 		(property "Footprint" ""
-			(at 95.25 83.82 0)
+			(at 110.49 82.55 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -10198,8 +10236,8 @@
 				(hide yes)
 			)
 		)
-		(property "Datasheet" ""
-			(at 95.25 83.82 0)
+		(property "Datasheet" "~"
+			(at 110.49 82.55 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -10207,8 +10245,8 @@
 				(hide yes)
 			)
 		)
-		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
-			(at 95.25 83.82 0)
+		(property "Description" "Special symbol for telling ERC where power comes from"
+			(at 110.49 82.55 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -10217,12 +10255,78 @@
 			)
 		)
 		(pin "1"
-			(uuid "b46f06fd-5a5a-4a49-be60-4b889e6d7a23")
+			(uuid "3c5ce922-13b8-453c-a901-4f1f4bc6e147")
 		)
 		(instances
-			(project "chargingboard"
+			(project ""
 				(path "/3b7f9d0d-fe78-4ddc-a74a-12564d0be65c/1fb407b6-2fa5-4dbf-a434-4b5bd0ba4814"
-					(reference "#PWR014")
+					(reference "#FLG014")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "power:PWR_FLAG")
+		(at 168.91 86.36 180)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "f58a7971-6e77-4161-9155-f0bb77645caf")
+		(property "Reference" "#FLG018"
+			(at 168.91 88.265 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Value" "GND"
+			(at 168.91 91.44 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" ""
+			(at 168.91 86.36 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 168.91 86.36 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Special symbol for telling ERC where power comes from"
+			(at 168.91 86.36 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "1e76b6d0-de42-4d5b-be67-548f673ee86b")
+		)
+		(instances
+			(project ""
+				(path "/3b7f9d0d-fe78-4ddc-a74a-12564d0be65c/1fb407b6-2fa5-4dbf-a434-4b5bd0ba4814"
+					(reference "#FLG018")
 					(unit 1)
 				)
 			)
