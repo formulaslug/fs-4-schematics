@@ -631,7 +631,7 @@
       "exclude_dnp": false,
       "fields_ordered": [
         {
-          "group_by": false,
+          "group_by": true,
           "label": "Reference",
           "name": "Reference",
           "show": true
@@ -646,7 +646,7 @@
           "group_by": false,
           "label": "Datasheet",
           "name": "Datasheet",
-          "show": true
+          "show": false
         },
         {
           "group_by": true,
@@ -658,13 +658,13 @@
           "group_by": false,
           "label": "Qty",
           "name": "${QUANTITY}",
-          "show": true
+          "show": false
         },
         {
-          "group_by": true,
+          "group_by": false,
           "label": "DNP",
           "name": "${DNP}",
-          "show": true
+          "show": false
         },
         {
           "group_by": false,
@@ -688,13 +688,13 @@
           "group_by": false,
           "label": "Digikey Part Number",
           "name": "Digikey Part Number",
-          "show": false
+          "show": true
         },
         {
           "group_by": false,
           "label": "Manufacturer Part Number",
           "name": "Manufacturer Part Number",
-          "show": false
+          "show": true
         },
         {
           "group_by": false,
@@ -712,12 +712,96 @@
           "group_by": false,
           "label": "Digikey Link",
           "name": "Digikey Link",
-          "show": false
+          "show": true
         },
         {
           "group_by": false,
           "label": "Exclude from BOM",
           "name": "${EXCLUDE_FROM_BOM}",
+          "show": false
+        },
+        {
+          "group_by": false,
+          "label": "MFG PN",
+          "name": "MFG PN",
+          "show": false
+        },
+        {
+          "group_by": false,
+          "label": "Manufacturer",
+          "name": "Manufacturer",
+          "show": true
+        },
+        {
+          "group_by": false,
+          "label": "Digi URL",
+          "name": "Digi URL",
+          "show": false
+        },
+        {
+          "group_by": false,
+          "label": "Manufacturer_Name",
+          "name": "Manufacturer_Name",
+          "show": false
+        },
+        {
+          "group_by": false,
+          "label": "Manufacturer_Part_Number",
+          "name": "Manufacturer_Part_Number",
+          "show": false
+        },
+        {
+          "group_by": false,
+          "label": "Mouser Part Number",
+          "name": "Mouser Part Number",
+          "show": false
+        },
+        {
+          "group_by": false,
+          "label": "Mouser Price/Stock",
+          "name": "Mouser Price/Stock",
+          "show": false
+        },
+        {
+          "group_by": false,
+          "label": "Arrow Price/Stock",
+          "name": "Arrow Price/Stock",
+          "show": false
+        },
+        {
+          "group_by": false,
+          "label": "Note",
+          "name": "Note",
+          "show": false
+        },
+        {
+          "group_by": false,
+          "label": "PN",
+          "name": "PN",
+          "show": false
+        },
+        {
+          "group_by": false,
+          "label": "Height",
+          "name": "Height",
+          "show": false
+        },
+        {
+          "group_by": false,
+          "label": "Digi PN",
+          "name": "Digi PN",
+          "show": false
+        },
+        {
+          "group_by": false,
+          "label": "Arrow Part Number",
+          "name": "Arrow Part Number",
+          "show": false
+        },
+        {
+          "group_by": false,
+          "label": "MFG",
+          "name": "MFG",
           "show": false
         }
       ],
@@ -741,17 +825,17 @@
           "visible": false
         },
         {
-          "name": "Name",
-          "url": false,
-          "visible": false
-        },
-        {
           "name": "Digikey Link",
           "url": true,
           "visible": false
         },
         {
           "name": "Manufacturer Part Number",
+          "url": false,
+          "visible": false
+        },
+        {
+          "name": "Manufacturer",
           "url": false,
           "visible": false
         }
