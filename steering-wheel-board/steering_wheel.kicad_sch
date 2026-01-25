@@ -14,7 +14,7 @@
 		(comment 6 "Block Diagram")
 	)
 	(lib_symbols
-		(symbol "Connector_Generic:Conn_01x02"
+		(symbol "Connector_Generic_MountingPin:Conn_01x02_MountingPin"
 			(pin_names
 				(offset 1.016)
 				(hide yes)
@@ -30,12 +30,13 @@
 					)
 				)
 			)
-			(property "Value" "Conn_01x02"
-				(at 0 -5.08 0)
+			(property "Value" "Conn_01x02_MountingPin"
+				(at 1.27 -5.08 0)
 				(effects
 					(font
 						(size 1.27 1.27)
 					)
+					(justify left)
 				)
 			)
 			(property "Footprint" ""
@@ -56,7 +57,7 @@
 					(hide yes)
 				)
 			)
-			(property "Description" "Generic connector, single row, 01x02, script generated (kicad-library-utils/schlib/autogen/connector/)"
+			(property "Description" "Generic connectable mounting pin connector, single row, 01x02, script generated (kicad-library-utils/schlib/autogen/connector/)"
 				(at 0 0 0)
 				(effects
 					(font
@@ -74,7 +75,7 @@
 					(hide yes)
 				)
 			)
-			(property "ki_fp_filters" "Connector*:*_1x??_*"
+			(property "ki_fp_filters" "Connector*:*_1x??-1MP*"
 				(at 0 0 0)
 				(effects
 					(font
@@ -83,7 +84,7 @@
 					(hide yes)
 				)
 			)
-			(symbol "Conn_01x02_1_1"
+			(symbol "Conn_01x02_MountingPin_1_1"
 				(rectangle
 					(start -1.27 1.27)
 					(end 1.27 -3.81)
@@ -117,6 +118,26 @@
 						(type none)
 					)
 				)
+				(polyline
+					(pts
+						(xy -1.016 -4.572) (xy 1.016 -4.572)
+					)
+					(stroke
+						(width 0.1524)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(text "Mounting"
+					(at 0 -4.191 0)
+					(effects
+						(font
+							(size 0.381 0.381)
+						)
+					)
+				)
 				(pin passive line
 					(at -5.08 0 0)
 					(length 3.81)
@@ -146,6 +167,24 @@
 						)
 					)
 					(number "2"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin passive line
+					(at 0 -7.62 90)
+					(length 3.048)
+					(name "MountPin"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "MP"
 						(effects
 							(font
 								(size 1.27 1.27)
@@ -1877,8 +1916,8 @@
 		)
 	)
 	(rectangle
-		(start 72.39 78.74)
-		(end 121.92 130.81)
+		(start 72.39 77.47)
+		(end 121.92 134.62)
 		(stroke
 			(width 0)
 			(type default)
@@ -1914,7 +1953,7 @@
 	)
 	(text "in\n"
 		(exclude_from_sim no)
-		(at 112.776 125.984 0)
+		(at 112.776 124.714 0)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -1987,7 +2026,7 @@
 	)
 	(text "in\n"
 		(exclude_from_sim no)
-		(at 103.378 110.998 0)
+		(at 103.378 109.728 0)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -1997,7 +2036,7 @@
 	)
 	(text "Button Connectors"
 		(exclude_from_sim no)
-		(at 82.804 81.534 0)
+		(at 82.804 80.264 0)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -2118,6 +2157,14 @@
 		(uuid "31588303-a6c8-4d84-ab7a-4f52e83764fd")
 	)
 	(no_connect
+		(at 90.17 130.81)
+		(uuid "408ebd8a-fd19-4962-b927-63483b7e625c")
+	)
+	(no_connect
+		(at 90.17 115.57)
+		(uuid "715119a4-5931-416e-a251-0e1044b9348f")
+	)
+	(no_connect
 		(at 91.44 177.8)
 		(uuid "734635a3-a435-4f4a-935b-c8899a468065")
 	)
@@ -2128,6 +2175,10 @@
 	(no_connect
 		(at 93.98 177.8)
 		(uuid "892fbe10-5608-4345-bfb5-712bbb2e4cb8")
+	)
+	(no_connect
+		(at 90.17 99.06)
+		(uuid "edde4309-6688-451d-a741-ea81cc4feb1f")
 	)
 	(wire
 		(pts
@@ -2141,7 +2192,7 @@
 	)
 	(wire
 		(pts
-			(xy 111.76 111.76) (xy 123.19 111.76)
+			(xy 111.76 110.49) (xy 113.03 110.49)
 		)
 		(stroke
 			(width 0)
@@ -2191,7 +2242,7 @@
 	)
 	(wire
 		(pts
-			(xy 111.76 95.25) (xy 111.76 111.76)
+			(xy 111.76 93.98) (xy 111.76 110.49)
 		)
 		(stroke
 			(width 0)
@@ -2201,7 +2252,7 @@
 	)
 	(wire
 		(pts
-			(xy 119.38 114.3) (xy 119.38 133.35)
+			(xy 119.38 113.03) (xy 119.38 132.08)
 		)
 		(stroke
 			(width 0)
@@ -2231,7 +2282,7 @@
 	)
 	(wire
 		(pts
-			(xy 107.95 109.22) (xy 95.25 109.22)
+			(xy 107.95 107.95) (xy 95.25 107.95)
 		)
 		(stroke
 			(width 0)
@@ -2241,7 +2292,7 @@
 	)
 	(wire
 		(pts
-			(xy 95.25 124.46) (xy 107.95 124.46)
+			(xy 95.25 123.19) (xy 107.95 123.19)
 		)
 		(stroke
 			(width 0)
@@ -2281,7 +2332,7 @@
 	)
 	(wire
 		(pts
-			(xy 95.25 127) (xy 116.84 127)
+			(xy 95.25 125.73) (xy 116.84 125.73)
 		)
 		(stroke
 			(width 0)
@@ -2331,7 +2382,7 @@
 	)
 	(wire
 		(pts
-			(xy 116.84 134.62) (xy 116.84 127)
+			(xy 116.84 133.35) (xy 116.84 125.73)
 		)
 		(stroke
 			(width 0)
@@ -2461,7 +2512,7 @@
 	)
 	(wire
 		(pts
-			(xy 170.18 133.35) (xy 170.18 123.19)
+			(xy 170.18 132.08) (xy 170.18 123.19)
 		)
 		(stroke
 			(width 0)
@@ -2511,7 +2562,7 @@
 	)
 	(wire
 		(pts
-			(xy 116.84 134.62) (xy 172.72 134.62)
+			(xy 116.84 133.35) (xy 172.72 133.35)
 		)
 		(stroke
 			(width 0)
@@ -2561,7 +2612,7 @@
 	)
 	(wire
 		(pts
-			(xy 95.25 95.25) (xy 111.76 95.25)
+			(xy 95.25 93.98) (xy 111.76 93.98)
 		)
 		(stroke
 			(width 0)
@@ -2601,7 +2652,7 @@
 	)
 	(wire
 		(pts
-			(xy 172.72 134.62) (xy 172.72 127)
+			(xy 172.72 133.35) (xy 172.72 127)
 		)
 		(stroke
 			(width 0)
@@ -2661,6 +2712,16 @@
 	)
 	(wire
 		(pts
+			(xy 113.03 110.49) (xy 113.03 111.76)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "88732eec-6d54-4baa-b044-265f96ab4ee4")
+	)
+	(wire
+		(pts
 			(xy 111.76 167.64) (xy 107.95 167.64)
 		)
 		(stroke
@@ -2671,7 +2732,7 @@
 	)
 	(wire
 		(pts
-			(xy 95.25 92.71) (xy 106.68 92.71)
+			(xy 95.25 91.44) (xy 106.68 91.44)
 		)
 		(stroke
 			(width 0)
@@ -2771,7 +2832,7 @@
 	)
 	(wire
 		(pts
-			(xy 105.41 114.3) (xy 119.38 114.3)
+			(xy 105.41 113.03) (xy 119.38 113.03)
 		)
 		(stroke
 			(width 0)
@@ -2781,7 +2842,7 @@
 	)
 	(wire
 		(pts
-			(xy 105.41 111.76) (xy 105.41 114.3)
+			(xy 105.41 110.49) (xy 105.41 113.03)
 		)
 		(stroke
 			(width 0)
@@ -2831,7 +2892,7 @@
 	)
 	(wire
 		(pts
-			(xy 119.38 133.35) (xy 170.18 133.35)
+			(xy 119.38 132.08) (xy 170.18 132.08)
 		)
 		(stroke
 			(width 0)
@@ -2881,7 +2942,7 @@
 	)
 	(wire
 		(pts
-			(xy 95.25 111.76) (xy 105.41 111.76)
+			(xy 95.25 110.49) (xy 105.41 110.49)
 		)
 		(stroke
 			(width 0)
@@ -3051,6 +3112,16 @@
 	)
 	(wire
 		(pts
+			(xy 113.03 111.76) (xy 123.19 111.76)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "f49e8ffd-bb17-41e5-965c-152a5ff385dc")
+	)
+	(wire
+		(pts
 			(xy 185.42 142.24) (xy 223.52 142.24)
 		)
 		(stroke
@@ -3110,7 +3181,7 @@
 		(uuid "346baf44-985f-4809-85ac-14feaa4fe89f")
 	)
 	(label "Lap"
-		(at 97.79 111.76 0)
+		(at 97.79 110.49 0)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -3120,7 +3191,7 @@
 		(uuid "373cc3ed-11e3-4624-a968-52364b9f72b4")
 	)
 	(label "Launch_Control"
-		(at 96.52 127 0)
+		(at 96.52 125.73 0)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -3180,7 +3251,7 @@
 		(uuid "8878776e-4a64-4d81-8b18-ebac4afa9a07")
 	)
 	(label "Layout_Cycle_Unfiltered"
-		(at 96.52 95.25 0)
+		(at 96.52 93.98 0)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -3472,7 +3543,7 @@
 	)
 	(symbol
 		(lib_id "power:+3V3")
-		(at 106.68 92.71 0)
+		(at 106.68 91.44 0)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
@@ -3481,7 +3552,7 @@
 		(fields_autoplaced yes)
 		(uuid "14256af4-e768-4061-a87a-c6b8cfa73819")
 		(property "Reference" "#PWR026"
-			(at 106.68 96.52 0)
+			(at 106.68 95.25 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -3490,7 +3561,7 @@
 			)
 		)
 		(property "Value" "+3V3"
-			(at 106.68 87.63 0)
+			(at 106.68 86.36 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -3498,7 +3569,7 @@
 			)
 		)
 		(property "Footprint" ""
-			(at 106.68 92.71 0)
+			(at 106.68 91.44 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -3507,7 +3578,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 106.68 92.71 0)
+			(at 106.68 91.44 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -3516,7 +3587,7 @@
 			)
 		)
 		(property "Description" "Power symbol creates a global label with name \"+3V3\""
-			(at 106.68 92.71 0)
+			(at 106.68 91.44 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -3537,8 +3608,8 @@
 		)
 	)
 	(symbol
-		(lib_id "Connector_Generic:Conn_01x02")
-		(at 90.17 124.46 0)
+		(lib_id "Connector_Generic_MountingPin:Conn_01x02_MountingPin")
+		(at 90.17 123.19 0)
 		(mirror y)
 		(unit 1)
 		(exclude_from_sim no)
@@ -3547,7 +3618,7 @@
 		(dnp no)
 		(uuid "1ba0108f-8dfd-4800-997d-231579165d9a")
 		(property "Reference" "J6"
-			(at 90.17 118.11 0)
+			(at 89.916 117.602 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -3555,7 +3626,7 @@
 			)
 		)
 		(property "Value" "Nanofit 01x02 Right Angle"
-			(at 90.17 120.65 0)
+			(at 89.916 120.142 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -3563,7 +3634,7 @@
 			)
 		)
 		(property "Footprint" "Connector_Molex:Molex_Nano-Fit_105313-xx02_1x02_P2.50mm_Horizontal"
-			(at 90.17 124.46 0)
+			(at 90.17 123.19 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -3571,8 +3642,8 @@
 				(hide yes)
 			)
 		)
-		(property "Datasheet" "https://tools.molex.com/pdm_docs/ps/PS-105300-100-001.pdf"
-			(at 90.17 124.46 0)
+		(property "Datasheet" "~"
+			(at 90.17 123.19 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -3580,8 +3651,8 @@
 				(hide yes)
 			)
 		)
-		(property "Description" "Generic connector, single row, 01x02, script generated (kicad-library-utils/schlib/autogen/connector/)"
-			(at 90.17 124.46 0)
+		(property "Description" "Generic connectable mounting pin connector, single row, 01x02, script generated (kicad-library-utils/schlib/autogen/connector/)"
+			(at 90.17 123.19 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -3590,7 +3661,7 @@
 			)
 		)
 		(property "Digi PN" "WM16893-ND"
-			(at 90.17 124.46 0)
+			(at 90.17 123.19 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -3599,7 +3670,7 @@
 			)
 		)
 		(property "Digi URL" "https://www.digikey.com/en/products/detail/molex/1053131102/7693174"
-			(at 90.17 124.46 0)
+			(at 90.17 123.19 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -3608,7 +3679,7 @@
 			)
 		)
 		(property "MFG PN" "1053131102"
-			(at 90.17 124.46 0)
+			(at 90.17 123.19 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -3617,7 +3688,7 @@
 			)
 		)
 		(property "MFG" "Molex"
-			(at 90.17 124.46 0)
+			(at 90.17 123.19 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -3626,7 +3697,7 @@
 			)
 		)
 		(property "Name" "Launch Control Button"
-			(at 90.17 115.57 0)
+			(at 76.454 123.952 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -3638,6 +3709,9 @@
 		)
 		(pin "2"
 			(uuid "f1d39e49-bcba-4ef2-8adc-bfe092fa0785")
+		)
+		(pin "MP"
+			(uuid "c8b2f6fa-7a06-4ab7-a6c3-0c7b027ae80a")
 		)
 		(instances
 			(project "steering_wheel"
@@ -4173,7 +4247,7 @@
 	)
 	(symbol
 		(lib_id "power:+3V3")
-		(at 107.95 109.22 0)
+		(at 107.95 107.95 0)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
@@ -4182,7 +4256,7 @@
 		(fields_autoplaced yes)
 		(uuid "66e362b8-bae8-443a-afc0-47d329e8730c")
 		(property "Reference" "#PWR027"
-			(at 107.95 113.03 0)
+			(at 107.95 111.76 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -4191,7 +4265,7 @@
 			)
 		)
 		(property "Value" "+3V3"
-			(at 107.95 104.14 0)
+			(at 107.95 102.87 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -4199,7 +4273,7 @@
 			)
 		)
 		(property "Footprint" ""
-			(at 107.95 109.22 0)
+			(at 107.95 107.95 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -4208,7 +4282,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 107.95 109.22 0)
+			(at 107.95 107.95 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -4217,7 +4291,7 @@
 			)
 		)
 		(property "Description" "Power symbol creates a global label with name \"+3V3\""
-			(at 107.95 109.22 0)
+			(at 107.95 107.95 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -4665,8 +4739,8 @@
 		)
 	)
 	(symbol
-		(lib_id "Connector_Generic:Conn_01x02")
-		(at 90.17 109.22 0)
+		(lib_id "Connector_Generic_MountingPin:Conn_01x02_MountingPin")
+		(at 90.17 107.95 0)
 		(mirror y)
 		(unit 1)
 		(exclude_from_sim no)
@@ -4675,7 +4749,7 @@
 		(dnp no)
 		(uuid "b4923bca-7a81-4f88-8666-62d15c8baeef")
 		(property "Reference" "J5"
-			(at 90.17 102.87 0)
+			(at 90.17 101.6 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -4683,7 +4757,7 @@
 			)
 		)
 		(property "Value" "Nanofit 01x02 Right Angle"
-			(at 90.17 105.41 0)
+			(at 90.17 104.14 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -4691,7 +4765,7 @@
 			)
 		)
 		(property "Footprint" "Connector_Molex:Molex_Nano-Fit_105313-xx02_1x02_P2.50mm_Horizontal"
-			(at 90.17 109.22 0)
+			(at 90.17 107.95 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -4699,8 +4773,8 @@
 				(hide yes)
 			)
 		)
-		(property "Datasheet" "https://tools.molex.com/pdm_docs/ps/PS-105300-100-001.pdf"
-			(at 90.17 109.22 0)
+		(property "Datasheet" "~"
+			(at 90.17 107.95 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -4708,8 +4782,8 @@
 				(hide yes)
 			)
 		)
-		(property "Description" "Generic connector, single row, 01x02, script generated (kicad-library-utils/schlib/autogen/connector/)"
-			(at 90.17 109.22 0)
+		(property "Description" "Generic connectable mounting pin connector, single row, 01x02, script generated (kicad-library-utils/schlib/autogen/connector/)"
+			(at 90.17 107.95 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -4718,7 +4792,7 @@
 			)
 		)
 		(property "Digi PN" "WM16893-ND"
-			(at 90.17 109.22 0)
+			(at 90.17 107.95 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -4727,7 +4801,7 @@
 			)
 		)
 		(property "Digi URL" "https://www.digikey.com/en/products/detail/molex/1053131102/7693174"
-			(at 90.17 109.22 0)
+			(at 90.17 107.95 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -4736,7 +4810,7 @@
 			)
 		)
 		(property "MFG PN" "1053131102"
-			(at 90.17 109.22 0)
+			(at 90.17 107.95 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -4745,7 +4819,7 @@
 			)
 		)
 		(property "MFG" "Molex"
-			(at 90.17 109.22 0)
+			(at 90.17 107.95 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -4754,7 +4828,7 @@
 			)
 		)
 		(property "Name" "Lap Button"
-			(at 90.17 100.584 0)
+			(at 98.044 101.6 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -4766,6 +4840,9 @@
 		)
 		(pin "2"
 			(uuid "0897d7af-02cd-4dcb-8254-aacb7c13a362")
+		)
+		(pin "MP"
+			(uuid "2c33a477-cd25-44aa-8db1-fe586549a61f")
 		)
 		(instances
 			(project "steering_wheel"
@@ -5096,8 +5173,8 @@
 		)
 	)
 	(symbol
-		(lib_id "Connector_Generic:Conn_01x02")
-		(at 90.17 92.71 0)
+		(lib_id "Connector_Generic_MountingPin:Conn_01x02_MountingPin")
+		(at 90.17 91.44 0)
 		(mirror y)
 		(unit 1)
 		(exclude_from_sim no)
@@ -5106,7 +5183,7 @@
 		(dnp no)
 		(uuid "ccd2a09e-8e2c-45ac-9897-dd1973302bc0")
 		(property "Reference" "J3"
-			(at 90.17 86.36 0)
+			(at 90.17 85.09 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -5114,24 +5191,15 @@
 			)
 		)
 		(property "Value" "Nanofit 01x02 Right Angle"
-			(at 90.17 88.9 0)
+			(at 90.17 87.63 0)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
 			)
 		)
-		(property "Footprint" "Connector_Molex:Molex_Nano-Fit_105313-xx02_1x02_P2.50mm_Horizontal"
-			(at 90.17 92.71 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Datasheet" "https://tools.molex.com/pdm_docs/ps/PS-105300-100-001.pdf"
-			(at 90.17 92.71 0)
+		(property "Footprint" "FS_4_Global_Footprint_Library:Nanofit-1054301202-1x2SMD90Deg"
+			(at 90.17 91.44 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -5139,8 +5207,17 @@
 				(hide yes)
 			)
 		)
-		(property "Description" "Generic connector, single row, 01x02, script generated (kicad-library-utils/schlib/autogen/connector/)"
-			(at 90.17 92.71 0)
+		(property "Datasheet" "~"
+			(at 90.17 91.44 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Generic connectable mounting pin connector, single row, 01x02, script generated (kicad-library-utils/schlib/autogen/connector/)"
+			(at 90.17 91.44 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -5149,7 +5226,7 @@
 			)
 		)
 		(property "Digi PN" "WM16893-ND"
-			(at 90.17 92.71 0)
+			(at 90.17 91.44 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -5158,7 +5235,7 @@
 			)
 		)
 		(property "Digi URL" "https://www.digikey.com/en/products/detail/molex/1053131102/7693174"
-			(at 90.17 92.71 0)
+			(at 90.17 91.44 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -5167,7 +5244,7 @@
 			)
 		)
 		(property "MFG PN" "1053131102"
-			(at 90.17 92.71 0)
+			(at 90.17 91.44 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -5176,7 +5253,7 @@
 			)
 		)
 		(property "MFG" "Molex"
-			(at 90.17 92.71 0)
+			(at 90.17 91.44 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -5185,7 +5262,7 @@
 			)
 		)
 		(property "Name" "Layout Switch Button"
-			(at 90.17 84.074 0)
+			(at 90.17 82.804 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -5198,6 +5275,9 @@
 		(pin "2"
 			(uuid "b2dc1d6e-c898-4e51-ace6-704714760565")
 		)
+		(pin "MP"
+			(uuid "3fddcfb1-68d3-4d0c-97bc-f703b4a6ec32")
+		)
 		(instances
 			(project ""
 				(path "/553a23ec-442a-4f98-939d-2d5634a662f5"
@@ -5209,7 +5289,7 @@
 	)
 	(symbol
 		(lib_id "power:+3V3")
-		(at 107.95 124.46 0)
+		(at 107.95 123.19 0)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
@@ -5218,7 +5298,7 @@
 		(fields_autoplaced yes)
 		(uuid "d2d1e5cb-e24f-4465-88a1-5a9aa14f8925")
 		(property "Reference" "#PWR028"
-			(at 107.95 128.27 0)
+			(at 107.95 127 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -5227,7 +5307,7 @@
 			)
 		)
 		(property "Value" "+3V3"
-			(at 107.95 119.38 0)
+			(at 107.95 118.11 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -5235,7 +5315,7 @@
 			)
 		)
 		(property "Footprint" ""
-			(at 107.95 124.46 0)
+			(at 107.95 123.19 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -5244,7 +5324,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 107.95 124.46 0)
+			(at 107.95 123.19 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -5253,7 +5333,7 @@
 			)
 		)
 		(property "Description" "Power symbol creates a global label with name \"+3V3\""
-			(at 107.95 124.46 0)
+			(at 107.95 123.19 0)
 			(effects
 				(font
 					(size 1.27 1.27)
