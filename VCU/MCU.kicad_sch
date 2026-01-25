@@ -6682,16 +6682,6 @@
 		)
 		(uuid "0a98afe5-9ed1-4a23-99b2-4abbdf55ef9e")
 	)
-	(text "3.3V Zener Diode\nGain: 1/2\nVoltage Drop: 2.25 V\nVoltage Output: 2.25V"
-		(exclude_from_sim no)
-		(at 390.906 97.536 0)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-		)
-		(uuid "0dab8acb-ae12-4598-a17e-ad7bd13f9cb5")
-	)
 	(text "(120k + 200k)/(2π*120k*200k*4.7*10^-9)\n= 544.119 HZ"
 		(exclude_from_sim no)
 		(at 117.602 98.044 0)
@@ -6802,6 +6792,16 @@
 		)
 		(uuid "75884e89-e6a5-4aed-a372-03672eda3da0")
 	)
+	(text "4.5 V\n"
+		(exclude_from_sim no)
+		(at 384.81 111.506 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+		)
+		(uuid "7b636026-5b6a-4e33-8047-b4ec7e4b6028")
+	)
 	(text "5V Max\n"
 		(exclude_from_sim no)
 		(at 45.974 25.908 0)
@@ -6822,7 +6822,7 @@
 		)
 		(uuid "7df80cd5-0893-4e8f-a4cf-15f9977c7060")
 	)
-	(text "0-2.25 V Analog"
+	(text "0-3.0 V Analog"
 		(exclude_from_sim no)
 		(at 341.376 122.174 0)
 		(effects
@@ -6851,6 +6851,16 @@
 			)
 		)
 		(uuid "82783e50-d5ee-4c8a-986c-a1adb811f761")
+	)
+	(text "4.5 V\n"
+		(exclude_from_sim no)
+		(at 368.3 100.33 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+		)
+		(uuid "8f4cb884-e372-4f6b-aaf1-e328e571085a")
 	)
 	(text "(120k + 200k)/(2π*120k*200k*4.7*10^-9)\n= 544.119 HZ"
 		(exclude_from_sim no)
@@ -6963,9 +6973,9 @@
 		)
 		(uuid "c65cc014-0043-4887-a1ec-693ee2c772a2")
 	)
-	(text "5V\n"
+	(text "5 V\n"
 		(exclude_from_sim no)
-		(at 389.382 118.364 0)
+		(at 397.002 118.872 0)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -7146,6 +7156,12 @@
 		(uuid "31e619c3-a098-4140-8209-8eda40a2a104")
 	)
 	(junction
+		(at 346.71 102.87)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "329a56c9-de0a-4586-a73b-c65b98e13e0f")
+	)
+	(junction
 		(at 96.52 39.37)
 		(diameter 0)
 		(color 0 0 0 0)
@@ -7162,12 +7178,6 @@
 		(diameter 0)
 		(color 0 0 0 0)
 		(uuid "3c6e7c66-7bad-4921-90e4-e3bae1e2972d")
-	)
-	(junction
-		(at 346.71 91.44)
-		(diameter 0)
-		(color 0 0 0 0)
-		(uuid "3caf3d01-d675-4be8-adbd-af6e0e1a8c29")
 	)
 	(junction
 		(at 102.87 104.14)
@@ -7488,12 +7498,6 @@
 		(uuid "e8620a4e-8e6f-4c4c-bd9f-001578111324")
 	)
 	(junction
-		(at 361.95 106.68)
-		(diameter 0)
-		(color 0 0 0 0)
-		(uuid "e8f320f6-7b55-4687-aff2-b05dbf2d55a3")
-	)
-	(junction
 		(at 285.75 24.13)
 		(diameter 0)
 		(color 0 0 0 0)
@@ -7504,6 +7508,12 @@
 		(diameter 0)
 		(color 0 0 0 0)
 		(uuid "f06f6e8f-2b6e-4030-b0e8-8b35ab5ddcf5")
+	)
+	(junction
+		(at 361.95 114.3)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "f188b6a6-a196-4dc5-9295-3085e5482814")
 	)
 	(junction
 		(at 57.15 92.71)
@@ -8257,7 +8267,7 @@
 	)
 	(wire
 		(pts
-			(xy 353.06 106.68) (xy 361.95 106.68)
+			(xy 353.06 114.3) (xy 361.95 114.3)
 		)
 		(stroke
 			(width 0)
@@ -8314,6 +8324,16 @@
 			(type default)
 		)
 		(uuid "3446d2aa-8f32-44e6-b58d-7dc65fa918dc")
+	)
+	(wire
+		(pts
+			(xy 369.57 114.3) (xy 377.19 114.3)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "38cf9cec-6339-4ca6-8251-8afc080e4361")
 	)
 	(wire
 		(pts
@@ -8404,16 +8424,6 @@
 			(type default)
 		)
 		(uuid "41cedb6b-f69f-4363-bfc0-7d27e8030c36")
-	)
-	(wire
-		(pts
-			(xy 361.95 106.68) (xy 369.57 106.68)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "4220859c-391f-4b17-b0fb-21c0032ade57")
 	)
 	(wire
 		(pts
@@ -9827,7 +9837,7 @@
 	)
 	(wire
 		(pts
-			(xy 356.87 91.44) (xy 354.33 91.44)
+			(xy 356.87 102.87) (xy 354.33 102.87)
 		)
 		(stroke
 			(width 0)
@@ -10277,7 +10287,7 @@
 	)
 	(wire
 		(pts
-			(xy 353.06 125.73) (xy 353.06 106.68)
+			(xy 353.06 125.73) (xy 353.06 114.3)
 		)
 		(stroke
 			(width 0)
@@ -10517,7 +10527,7 @@
 	)
 	(wire
 		(pts
-			(xy 331.47 91.44) (xy 331.47 123.19)
+			(xy 331.47 102.87) (xy 331.47 123.19)
 		)
 		(stroke
 			(width 0)
@@ -10577,7 +10587,7 @@
 	)
 	(wire
 		(pts
-			(xy 331.47 91.44) (xy 346.71 91.44)
+			(xy 331.47 102.87) (xy 346.71 102.87)
 		)
 		(stroke
 			(width 0)
@@ -11065,7 +11075,7 @@
 		)
 		(uuid "5d05c0b0-df84-4a29-9586-fe2acb1532be")
 	)
-	(label "Front_Brake_Buff_Filtered_2.25V"
+	(label "Front_Brake_Buff_Filtered_3V"
 		(at 322.58 125.73 180)
 		(effects
 			(font
@@ -11105,7 +11115,7 @@
 		)
 		(uuid "c041c0b7-da33-4923-a245-9525202b2730")
 	)
-	(label "Rear_Brake_Buff_Filtered_2.25V"
+	(label "Rear_Brake_Buff_Filtered_3V"
 		(at 322.58 123.19 180)
 		(effects
 			(font
@@ -12542,7 +12552,7 @@
 	)
 	(hierarchical_label "Front_Brake_Buff_Filtered"
 		(shape input)
-		(at 377.19 106.68 0)
+		(at 377.19 114.3 0)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -12817,7 +12827,7 @@
 	)
 	(hierarchical_label "Rear_Brake_Buff_Filtered"
 		(shape input)
-		(at 356.87 91.44 0)
+		(at 356.87 102.87 0)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -12971,112 +12981,6 @@
 			(project "VCU"
 				(path "/d46cfebc-cd32-4ec9-981b-3f67fe44510e/77141324-8e12-4fa0-be8a-c003c15572fb"
 					(reference "D20")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
-		(lib_id "Diode:BZV55C3V3")
-		(at 361.95 118.11 270)
-		(unit 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(dnp no)
-		(fields_autoplaced yes)
-		(uuid "033ffa73-d1f7-4669-941e-2b80dcfb1ec5")
-		(property "Reference" "D26"
-			(at 364.49 116.8399 90)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-		)
-		(property "Value" "CMOZ3L3 TR PBFREE"
-			(at 364.49 119.3799 90)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-		)
-		(property "Footprint" "Diode_SMD:D_SOD-523"
-			(at 357.505 118.11 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Datasheet" "https://www.mouser.com/datasheet/3/312/1/CMOZ2L4_SERIES.PDF"
-			(at 361.95 118.11 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Description" "Zener Diode 3.3 V 250 mW ±5% Surface Mount SOD-523"
-			(at 361.95 118.11 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "MFG" "Central Semiconductor Corp"
-			(at 361.95 118.11 90)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "MFG PN" "CMOZ3L3 TR PBFREE"
-			(at 361.95 118.11 90)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Digi URL" "https://www.digikey.com/en/products/detail/central-semiconductor-corp/CMOZ3L3-TR-PBFREE/4807517"
-			(at 361.95 118.11 90)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Digi PN" "1514-CMOZ3L3TRPBFREECT-ND"
-			(at 361.95 118.11 90)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(pin "1"
-			(uuid "8054afbd-b557-405d-9c4e-e369b907219b")
-		)
-		(pin "2"
-			(uuid "79f99992-d80b-44ab-bd39-a40ba606aeea")
-		)
-		(instances
-			(project "VCU"
-				(path "/d46cfebc-cd32-4ec9-981b-3f67fe44510e/77141324-8e12-4fa0-be8a-c003c15572fb"
-					(reference "D26")
 					(unit 1)
 				)
 			)
@@ -14879,127 +14783,6 @@
 		)
 	)
 	(symbol
-		(lib_id "Device:R")
-		(at 350.52 91.44 90)
-		(unit 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(dnp no)
-		(uuid "1c28b8b5-4f67-4faa-bea4-ad3a96e05361")
-		(property "Reference" "R86"
-			(at 350.774 86.868 90)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Value" "10k"
-			(at 350.774 89.408 90)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Footprint" "Resistor_SMD:R_0603_1608Metric_Pad0.98x0.95mm_HandSolder"
-			(at 350.52 93.218 90)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Datasheet" "https://www.yageogroup.com/content/datasheet/asset/file/PYU-AC_51_ROHS_L"
-			(at 350.52 91.44 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Description" "Resistor"
-			(at 350.52 91.44 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Digi PN" "13-AC0603FR-1010KLCT-ND"
-			(at 350.52 91.44 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "MFG" "Yageo"
-			(at 350.52 91.44 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "MFG PN" "AC0603FR-1010KL"
-			(at 350.52 91.44 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Digi URL" "https://www.digikey.com/en/products/detail/yageo/AC0603FR-1010KL/13694182"
-			(at 350.52 91.44 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "MANUFACTURER" ""
-			(at 350.52 91.44 90)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Sim.Type" ""
-			(at 350.52 91.44 90)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(pin "2"
-			(uuid "941f20de-2f8d-4f38-a310-ae83a792b010")
-		)
-		(pin "1"
-			(uuid "af2f2bca-71e2-4cf0-bef4-40582dd1bcd4")
-		)
-		(instances
-			(project "VCU"
-				(path "/d46cfebc-cd32-4ec9-981b-3f67fe44510e/77141324-8e12-4fa0-be8a-c003c15572fb"
-					(reference "R86")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
 		(lib_id "Diode:BZV55C3V3")
 		(at 104.14 73.66 270)
 		(unit 1)
@@ -15469,7 +15252,7 @@
 	)
 	(symbol
 		(lib_id "power:GND")
-		(at 346.71 106.68 0)
+		(at 346.71 110.49 0)
 		(mirror y)
 		(unit 1)
 		(exclude_from_sim no)
@@ -15478,7 +15261,7 @@
 		(dnp no)
 		(uuid "240ea3b7-95e3-4166-be38-3e2c5699a4a7")
 		(property "Reference" "#PWR0167"
-			(at 346.71 113.03 0)
+			(at 346.71 116.84 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -15487,7 +15270,7 @@
 			)
 		)
 		(property "Value" "GND"
-			(at 346.71 110.49 0)
+			(at 346.71 114.3 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -15495,7 +15278,7 @@
 			)
 		)
 		(property "Footprint" ""
-			(at 346.71 106.68 0)
+			(at 346.71 110.49 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -15504,7 +15287,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 346.71 106.68 0)
+			(at 346.71 110.49 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -15513,7 +15296,7 @@
 			)
 		)
 		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
-			(at 346.71 106.68 0)
+			(at 346.71 110.49 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -15771,127 +15554,6 @@
 			(project "VCU"
 				(path "/d46cfebc-cd32-4ec9-981b-3f67fe44510e/77141324-8e12-4fa0-be8a-c003c15572fb"
 					(reference "R63")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
-		(lib_id "Device:R")
-		(at 361.95 110.49 180)
-		(unit 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(dnp no)
-		(uuid "282097c4-0b8c-415f-a9d8-bd7fed5beca7")
-		(property "Reference" "R88"
-			(at 357.378 110.236 90)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Value" "10k"
-			(at 359.918 110.236 90)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Footprint" "Resistor_SMD:R_0603_1608Metric_Pad0.98x0.95mm_HandSolder"
-			(at 363.728 110.49 90)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Datasheet" "https://www.yageogroup.com/content/datasheet/asset/file/PYU-AC_51_ROHS_L"
-			(at 361.95 110.49 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Description" "Resistor"
-			(at 361.95 110.49 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Digi PN" "13-AC0603FR-1010KLCT-ND"
-			(at 361.95 110.49 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "MFG" "Yageo"
-			(at 361.95 110.49 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "MFG PN" "AC0603FR-1010KL"
-			(at 361.95 110.49 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Digi URL" "https://www.digikey.com/en/products/detail/yageo/AC0603FR-1010KL/13694182"
-			(at 361.95 110.49 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "MANUFACTURER" ""
-			(at 361.95 110.49 90)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Sim.Type" ""
-			(at 361.95 110.49 90)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(pin "2"
-			(uuid "e8150187-79ac-499b-9b28-f253ae34c8b8")
-		)
-		(pin "1"
-			(uuid "5d140687-5789-48b6-b1a4-8017c2ff0352")
-		)
-		(instances
-			(project "VCU"
-				(path "/d46cfebc-cd32-4ec9-981b-3f67fe44510e/77141324-8e12-4fa0-be8a-c003c15572fb"
-					(reference "R88")
 					(unit 1)
 				)
 			)
@@ -18033,6 +17695,127 @@
 			(project "VCU"
 				(path "/d46cfebc-cd32-4ec9-981b-3f67fe44510e/77141324-8e12-4fa0-be8a-c003c15572fb"
 					(reference "#PWR0152")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Device:R")
+		(at 350.52 102.87 270)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "3b728164-0044-4a56-a620-5868c028fbf1")
+		(property "Reference" "R84"
+			(at 350.774 100.33 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "100k"
+			(at 350.774 97.79 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" "Resistor_SMD:R_0603_1608Metric_Pad0.98x0.95mm_HandSolder"
+			(at 350.52 101.092 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "https://www.yageogroup.com/content/datasheet/asset/file/PYU-AC_51_ROHS_L"
+			(at 350.52 102.87 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Resistor"
+			(at 350.52 102.87 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Digi PN" "13-AC0603FR-13100KLCT-ND"
+			(at 350.52 102.87 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Digi URL" "https://www.digikey.com/en/products/detail/yageo/AC0603FR-13100KL/13694122"
+			(at 350.52 102.87 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "MFG" "Yageo"
+			(at 350.52 102.87 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "MFG PN" "AC0603FR-13100KL"
+			(at 350.52 102.87 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "MANUFACTURER" ""
+			(at 350.52 102.87 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Sim.Type" ""
+			(at 350.52 102.87 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "961a2391-048f-437c-86aa-73001c761e8b")
+		)
+		(pin "2"
+			(uuid "6acffa9f-76be-4add-a6f1-d51b64044445")
+		)
+		(instances
+			(project "VCU"
+				(path "/d46cfebc-cd32-4ec9-981b-3f67fe44510e/77141324-8e12-4fa0-be8a-c003c15572fb"
+					(reference "R84")
 					(unit 1)
 				)
 			)
@@ -23820,127 +23603,6 @@
 		)
 	)
 	(symbol
-		(lib_id "Device:R")
-		(at 346.71 95.25 180)
-		(unit 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(dnp no)
-		(uuid "8765b8cd-c8bf-48e6-9900-c36296ce7ded")
-		(property "Reference" "R84"
-			(at 342.138 94.996 90)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Value" "10k"
-			(at 344.678 94.996 90)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Footprint" "Resistor_SMD:R_0603_1608Metric_Pad0.98x0.95mm_HandSolder"
-			(at 348.488 95.25 90)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Datasheet" "https://www.yageogroup.com/content/datasheet/asset/file/PYU-AC_51_ROHS_L"
-			(at 346.71 95.25 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Description" "Resistor"
-			(at 346.71 95.25 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Digi PN" "13-AC0603FR-1010KLCT-ND"
-			(at 346.71 95.25 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "MFG" "Yageo"
-			(at 346.71 95.25 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "MFG PN" "AC0603FR-1010KL"
-			(at 346.71 95.25 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Digi URL" "https://www.digikey.com/en/products/detail/yageo/AC0603FR-1010KL/13694182"
-			(at 346.71 95.25 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "MANUFACTURER" ""
-			(at 346.71 95.25 90)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Sim.Type" ""
-			(at 346.71 95.25 90)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(pin "2"
-			(uuid "cdd15a6c-322d-46ee-a082-64812921d53e")
-		)
-		(pin "1"
-			(uuid "45ef1327-cd7e-4ee1-a07a-ca07d85c6c7a")
-		)
-		(instances
-			(project "VCU"
-				(path "/d46cfebc-cd32-4ec9-981b-3f67fe44510e/77141324-8e12-4fa0-be8a-c003c15572fb"
-					(reference "R84")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
 		(lib_id "power:GND")
 		(at 64.77 74.93 0)
 		(unit 1)
@@ -24067,6 +23729,127 @@
 			(project "VCU"
 				(path "/d46cfebc-cd32-4ec9-981b-3f67fe44510e/77141324-8e12-4fa0-be8a-c003c15572fb"
 					(reference "#PWR0115")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Device:R")
+		(at 365.76 114.3 270)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "892114c3-51d1-44b4-a389-bb76005c70af")
+		(property "Reference" "R88"
+			(at 366.014 111.76 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "100k"
+			(at 366.014 109.22 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" "Resistor_SMD:R_0603_1608Metric_Pad0.98x0.95mm_HandSolder"
+			(at 365.76 112.522 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "https://www.yageogroup.com/content/datasheet/asset/file/PYU-AC_51_ROHS_L"
+			(at 365.76 114.3 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Resistor"
+			(at 365.76 114.3 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Digi PN" "13-AC0603FR-13100KLCT-ND"
+			(at 365.76 114.3 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Digi URL" "https://www.digikey.com/en/products/detail/yageo/AC0603FR-13100KL/13694122"
+			(at 365.76 114.3 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "MFG" "Yageo"
+			(at 365.76 114.3 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "MFG PN" "AC0603FR-13100KL"
+			(at 365.76 114.3 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "MANUFACTURER" ""
+			(at 365.76 114.3 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Sim.Type" ""
+			(at 365.76 114.3 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "50d2d975-e0c7-4195-a578-07ab8e8f9ed2")
+		)
+		(pin "2"
+			(uuid "1285bd56-058b-4a24-be6c-96521d02a3c8")
+		)
+		(instances
+			(project "VCU"
+				(path "/d46cfebc-cd32-4ec9-981b-3f67fe44510e/77141324-8e12-4fa0-be8a-c003c15572fb"
+					(reference "R88")
 					(unit 1)
 				)
 			)
@@ -25499,112 +25282,6 @@
 			(project "VCU"
 				(path "/d46cfebc-cd32-4ec9-981b-3f67fe44510e/77141324-8e12-4fa0-be8a-c003c15572fb"
 					(reference "C31")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
-		(lib_id "Diode:BZV55C3V3")
-		(at 346.71 102.87 270)
-		(unit 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(dnp no)
-		(fields_autoplaced yes)
-		(uuid "9a795644-df58-4912-bebe-d15d05d05b40")
-		(property "Reference" "D25"
-			(at 349.25 101.5999 90)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-		)
-		(property "Value" "CMOZ3L3 TR PBFREE"
-			(at 349.25 104.1399 90)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-		)
-		(property "Footprint" "Diode_SMD:D_SOD-523"
-			(at 342.265 102.87 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Datasheet" "https://www.mouser.com/datasheet/3/312/1/CMOZ2L4_SERIES.PDF"
-			(at 346.71 102.87 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Description" "Zener Diode 3.3 V 250 mW ±5% Surface Mount SOD-523"
-			(at 346.71 102.87 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "MFG" "Central Semiconductor Corp"
-			(at 346.71 102.87 90)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "MFG PN" "CMOZ3L3 TR PBFREE"
-			(at 346.71 102.87 90)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Digi URL" "https://www.digikey.com/en/products/detail/central-semiconductor-corp/CMOZ3L3-TR-PBFREE/4807517"
-			(at 346.71 102.87 90)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Digi PN" "1514-CMOZ3L3TRPBFREECT-ND"
-			(at 346.71 102.87 90)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(pin "1"
-			(uuid "f1ff99fc-b9c5-4e01-8ca0-eaa1bd822c22")
-		)
-		(pin "2"
-			(uuid "b8588b79-0560-4ea7-93d3-e67023a8e781")
-		)
-		(instances
-			(project "VCU"
-				(path "/d46cfebc-cd32-4ec9-981b-3f67fe44510e/77141324-8e12-4fa0-be8a-c003c15572fb"
-					(reference "D25")
 					(unit 1)
 				)
 			)
@@ -27698,127 +27375,6 @@
 		)
 	)
 	(symbol
-		(lib_id "Device:R")
-		(at 373.38 106.68 90)
-		(unit 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(dnp no)
-		(uuid "b62a3348-6f81-4bd1-9a3a-aebd2cf0b7cd")
-		(property "Reference" "R89"
-			(at 373.634 102.108 90)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Value" "10k"
-			(at 373.634 104.648 90)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Footprint" "Resistor_SMD:R_0603_1608Metric_Pad0.98x0.95mm_HandSolder"
-			(at 373.38 108.458 90)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Datasheet" "https://www.yageogroup.com/content/datasheet/asset/file/PYU-AC_51_ROHS_L"
-			(at 373.38 106.68 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Description" "Resistor"
-			(at 373.38 106.68 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Digi PN" "13-AC0603FR-1010KLCT-ND"
-			(at 373.38 106.68 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "MFG" "Yageo"
-			(at 373.38 106.68 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "MFG PN" "AC0603FR-1010KL"
-			(at 373.38 106.68 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Digi URL" "https://www.digikey.com/en/products/detail/yageo/AC0603FR-1010KL/13694182"
-			(at 373.38 106.68 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "MANUFACTURER" ""
-			(at 373.38 106.68 90)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Sim.Type" ""
-			(at 373.38 106.68 90)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(pin "2"
-			(uuid "7a167284-5fa0-4b57-baaf-b012c6fdf162")
-		)
-		(pin "1"
-			(uuid "801070c2-b051-4866-8279-bd27132be640")
-		)
-		(instances
-			(project "VCU"
-				(path "/d46cfebc-cd32-4ec9-981b-3f67fe44510e/77141324-8e12-4fa0-be8a-c003c15572fb"
-					(reference "R89")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
 		(lib_id "power:GND")
 		(at 346.71 138.43 0)
 		(mirror y)
@@ -28803,6 +28359,127 @@
 			(project "VCU"
 				(path "/d46cfebc-cd32-4ec9-981b-3f67fe44510e/77141324-8e12-4fa0-be8a-c003c15572fb"
 					(reference "R85")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Device:R")
+		(at 361.95 118.11 180)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "c74945cf-d8d3-42a6-af09-faf6b80b3d77")
+		(property "Reference" "R86"
+			(at 358.4575 117.2845 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "200k"
+			(at 358.4575 119.0625 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" "Resistor_SMD:R_0603_1608Metric_Pad0.98x0.95mm_HandSolder"
+			(at 363.728 118.11 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "https://www.yageogroup.com/content/datasheet/asset/file/PYU-AC_51_ROHS_L"
+			(at 361.95 118.11 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Resistor"
+			(at 361.95 118.11 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Digi PN" "YAG3575CT-ND"
+			(at 361.95 118.11 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Digi URL" "https://www.digikey.com/en/products/detail/yageo/AC0603FR-07200KL/5895902"
+			(at 361.95 118.11 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "MFG" "Yageo"
+			(at 361.95 118.11 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "MFG PN" "AC0603FR-07200KL"
+			(at 361.95 118.11 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "MANUFACTURER" ""
+			(at 361.95 118.11 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Sim.Type" ""
+			(at 361.95 118.11 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "d3bf62e9-f4d0-43bb-9274-109e54a7b8d9")
+		)
+		(pin "2"
+			(uuid "cc56ec48-8ccb-4769-8222-55fada22ad6a")
+		)
+		(instances
+			(project "VCU"
+				(path "/d46cfebc-cd32-4ec9-981b-3f67fe44510e/77141324-8e12-4fa0-be8a-c003c15572fb"
+					(reference "R86")
 					(unit 1)
 				)
 			)
@@ -31271,6 +30948,127 @@
 			(project "VCU"
 				(path "/d46cfebc-cd32-4ec9-981b-3f67fe44510e/77141324-8e12-4fa0-be8a-c003c15572fb"
 					(reference "Y1")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Device:R")
+		(at 346.71 106.68 180)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "ff5bdd6c-5d95-45af-99d2-4c988b017ca3")
+		(property "Reference" "R84"
+			(at 343.2175 105.8545 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "200k"
+			(at 343.2175 107.6325 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" "Resistor_SMD:R_0603_1608Metric_Pad0.98x0.95mm_HandSolder"
+			(at 348.488 106.68 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "https://www.yageogroup.com/content/datasheet/asset/file/PYU-AC_51_ROHS_L"
+			(at 346.71 106.68 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Resistor"
+			(at 346.71 106.68 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Digi PN" "YAG3575CT-ND"
+			(at 346.71 106.68 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Digi URL" "https://www.digikey.com/en/products/detail/yageo/AC0603FR-07200KL/5895902"
+			(at 346.71 106.68 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "MFG" "Yageo"
+			(at 346.71 106.68 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "MFG PN" "AC0603FR-07200KL"
+			(at 346.71 106.68 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "MANUFACTURER" ""
+			(at 346.71 106.68 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Sim.Type" ""
+			(at 346.71 106.68 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "70e8a4a0-9ab1-48fa-b50d-73a2f1ce6e45")
+		)
+		(pin "2"
+			(uuid "1eb6c4e0-3aaf-4ef1-8baf-1f8fe15f71ca")
+		)
+		(instances
+			(project "VCU"
+				(path "/d46cfebc-cd32-4ec9-981b-3f67fe44510e/77141324-8e12-4fa0-be8a-c003c15572fb"
+					(reference "R84")
 					(unit 1)
 				)
 			)
