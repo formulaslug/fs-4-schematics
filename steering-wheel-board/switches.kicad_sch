@@ -510,24 +510,28 @@
 			)
 			(embedded_fonts no)
 		)
-		(symbol "Switch:SW_SPST"
+		(symbol "Switch:SW_Push"
+			(pin_numbers
+				(hide yes)
+			)
 			(pin_names
-				(offset 0)
+				(offset 1.016)
 				(hide yes)
 			)
 			(exclude_from_sim no)
 			(in_bom yes)
 			(on_board yes)
 			(property "Reference" "SW"
-				(at 0 3.175 0)
+				(at 1.27 2.54 0)
 				(effects
 					(font
 						(size 1.27 1.27)
 					)
+					(justify left)
 				)
 			)
-			(property "Value" "SW_SPST"
-				(at 0 -2.54 0)
+			(property "Value" "SW_Push"
+				(at 0 -1.524 0)
 				(effects
 					(font
 						(size 1.27 1.27)
@@ -535,7 +539,7 @@
 				)
 			)
 			(property "Footprint" ""
-				(at 0 0 0)
+				(at 0 5.08 0)
 				(effects
 					(font
 						(size 1.27 1.27)
@@ -544,6 +548,15 @@
 				)
 			)
 			(property "Datasheet" "~"
+				(at 0 5.08 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "Description" "Push button switch, generic, two pins"
 				(at 0 0 0)
 				(effects
 					(font
@@ -552,7 +565,7 @@
 					(hide yes)
 				)
 			)
-			(property "Description" "Single Pole Single Throw (SPST) switch"
+			(property "ki_keywords" "switch normally-open pushbutton push-button"
 				(at 0 0 0)
 				(effects
 					(font
@@ -561,16 +574,7 @@
 					(hide yes)
 				)
 			)
-			(property "ki_keywords" "switch lever"
-				(at 0 0 0)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-					(hide yes)
-				)
-			)
-			(symbol "SW_SPST_0_0"
+			(symbol "SW_Push_0_1"
 				(circle
 					(center -2.032 0)
 					(radius 0.508)
@@ -584,7 +588,7 @@
 				)
 				(polyline
 					(pts
-						(xy -1.524 0.254) (xy 1.524 1.778)
+						(xy 0 1.27) (xy 0 3.048)
 					)
 					(stroke
 						(width 0)
@@ -605,12 +609,22 @@
 						(type none)
 					)
 				)
-			)
-			(symbol "SW_SPST_1_1"
+				(polyline
+					(pts
+						(xy 2.54 1.27) (xy -2.54 1.27)
+					)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
 				(pin passive line
 					(at -5.08 0 0)
 					(length 2.54)
-					(name "A"
+					(name "1"
 						(effects
 							(font
 								(size 1.27 1.27)
@@ -628,7 +642,7 @@
 				(pin passive line
 					(at 5.08 0 180)
 					(length 2.54)
-					(name "B"
+					(name "2"
 						(effects
 							(font
 								(size 1.27 1.27)
@@ -911,7 +925,7 @@
 	)
 	(text "Buttons are panel mount and connect to the board\nexternally"
 		(exclude_from_sim no)
-		(at 166.116 207.772 0)
+		(at 95.504 150.876 0)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -929,17 +943,6 @@
 			)
 		)
 		(uuid "06d665bd-f744-4c03-8bd5-72724b07b911")
-	)
-	(text "Layout cycle button \nexact part TBD\nsome sort of board mount normally open button"
-		(exclude_from_sim no)
-		(at 98.806 152.908 0)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-			(justify left)
-		)
-		(uuid "0baf0a89-621a-47fa-abe6-83b5edbd4488")
 	)
 	(text "RC Low-Pass Filter\n"
 		(exclude_from_sim no)
@@ -1056,28 +1059,6 @@
 			(justify left bottom)
 		)
 		(uuid "84946b5a-5016-4b02-a17c-d740349d049d")
-	)
-	(text "Lap button\npart TBD\nnormally open board mount momentary on"
-		(exclude_from_sim no)
-		(at 125.476 193.548 0)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-			(justify left)
-		)
-		(uuid "87fa3b90-7e2a-4986-b2aa-ae74eddf04d2")
-	)
-	(text "Launch control button\npart TBD\nnormally open board mount momentary on"
-		(exclude_from_sim no)
-		(at 122.682 219.964 0)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-			(justify left)
-		)
-		(uuid "94ca336d-32b0-4add-b6bb-cc1fbf519e29")
 	)
 	(text "V = (1/3)*3.3 = 1.1V"
 		(exclude_from_sim no)
@@ -2014,17 +1995,17 @@
 		(uuid "f2e4a970-e6ec-48ab-a02b-feb63bc6ef8c")
 	)
 	(symbol
-		(lib_id "Switch:SW_SPST")
+		(lib_id "Switch:SW_Push")
 		(at 110.49 163.83 0)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
-		(on_board yes)
+		(on_board no)
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "048f11bf-d941-48cb-bb89-ecd0d55f22e5")
 		(property "Reference" "SW2"
-			(at 110.49 157.48 0)
+			(at 110.49 156.21 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -2032,7 +2013,7 @@
 			)
 		)
 		(property "Value" "SW_SPST"
-			(at 110.49 160.02 0)
+			(at 110.49 158.75 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -2040,6 +2021,24 @@
 			)
 		)
 		(property "Footprint" ""
+			(at 110.49 158.75 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "https://mm.digikey.com/Volume0/opasdata/d220001/medias/docus/6479/E_Switch_PS1024-1165682%20DS.pdf"
+			(at 110.49 158.75 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Push button switch, generic, two pins"
 			(at 110.49 163.83 0)
 			(effects
 				(font
@@ -2048,7 +2047,7 @@
 				(hide yes)
 			)
 		)
-		(property "Datasheet" "~"
+		(property "Digi PN" "EG2025-ND"
 			(at 110.49 163.83 0)
 			(effects
 				(font
@@ -2057,7 +2056,7 @@
 				(hide yes)
 			)
 		)
-		(property "Description" "Single Pole Single Throw (SPST) switch"
+		(property "Digi URL" "https://www.digikey.com/en/products/detail/e-switch/ps1024alred/81539"
 			(at 110.49 163.83 0)
 			(effects
 				(font
@@ -2066,7 +2065,7 @@
 				(hide yes)
 			)
 		)
-		(property "Digi PN" ""
+		(property "MFG" "E-Switch"
 			(at 110.49 163.83 0)
 			(effects
 				(font
@@ -2075,34 +2074,7 @@
 				(hide yes)
 			)
 		)
-		(property "Digi URL" ""
-			(at 110.49 163.83 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Height" ""
-			(at 110.49 163.83 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "MFG" ""
-			(at 110.49 163.83 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Note" ""
+		(property "MFG PN" "PS1024ALRED"
 			(at 110.49 163.83 0)
 			(effects
 				(font
@@ -3176,155 +3148,6 @@
 		)
 	)
 	(symbol
-		(lib_id "Switch:SW_SPST")
-		(at 109.22 189.23 0)
-		(unit 1)
-		(exclude_from_sim no)
-		(in_bom no)
-		(on_board no)
-		(dnp no)
-		(fields_autoplaced yes)
-		(uuid "64dfbcb7-9227-46dd-86e1-1ba02fa57e2f")
-		(property "Reference" "SW3"
-			(at 109.22 182.88 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Value" "SW_SPST"
-			(at 109.22 185.42 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Footprint" ""
-			(at 109.22 189.23 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Datasheet" "~"
-			(at 109.22 189.23 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Description" "Single Pole Single Throw (SPST) switch"
-			(at 109.22 189.23 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Digi PN" ""
-			(at 109.22 189.23 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Digi URL" ""
-			(at 109.22 189.23 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Height" ""
-			(at 109.22 189.23 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "MFG" ""
-			(at 109.22 189.23 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Note" ""
-			(at 109.22 189.23 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Digi PN" ""
-			(at 109.22 189.23 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Digi URL" ""
-			(at 109.22 189.23 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "MFG PN" ""
-			(at 109.22 189.23 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "MFG" ""
-			(at 109.22 189.23 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(pin "2"
-			(uuid "5ff7b3a5-3617-4012-a91d-9f920746a507")
-		)
-		(pin "1"
-			(uuid "b8924d75-cf84-4fb5-9de2-54ac212e56cf")
-		)
-		(instances
-			(project ""
-				(path "/553a23ec-442a-4f98-939d-2d5634a662f5/bd0f64cc-5703-4638-a4e2-f6fb8baa3fa1"
-					(reference "SW3")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
 		(lib_id "power:+3V3")
 		(at 168.91 74.93 0)
 		(unit 1)
@@ -3636,17 +3459,17 @@
 		)
 	)
 	(symbol
-		(lib_id "Switch:SW_SPST")
-		(at 109.22 214.63 0)
+		(lib_id "Switch:SW_Push")
+		(at 109.22 189.23 0)
 		(unit 1)
 		(exclude_from_sim no)
-		(in_bom no)
+		(in_bom yes)
 		(on_board no)
 		(dnp no)
 		(fields_autoplaced yes)
-		(uuid "a76a1312-d9de-4b1a-9760-a48b1d241b30")
-		(property "Reference" "SW4"
-			(at 109.22 208.28 0)
+		(uuid "a40609d5-7843-4ec4-bb95-410516dcb225")
+		(property "Reference" "SW3"
+			(at 109.22 181.61 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -3654,7 +3477,7 @@
 			)
 		)
 		(property "Value" "SW_SPST"
-			(at 109.22 210.82 0)
+			(at 109.22 184.15 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -3662,7 +3485,7 @@
 			)
 		)
 		(property "Footprint" ""
-			(at 109.22 214.63 0)
+			(at 109.22 184.15 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -3670,8 +3493,8 @@
 				(hide yes)
 			)
 		)
-		(property "Datasheet" "~"
-			(at 109.22 214.63 0)
+		(property "Datasheet" "https://mm.digikey.com/Volume0/opasdata/d220001/medias/docus/6479/E_Switch_PS1024-1165682%20DS.pdf"
+			(at 109.22 184.15 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -3679,8 +3502,8 @@
 				(hide yes)
 			)
 		)
-		(property "Description" "Single Pole Single Throw (SPST) switch"
-			(at 109.22 214.63 0)
+		(property "Description" "Push button switch, generic, two pins"
+			(at 109.22 189.23 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -3688,8 +3511,8 @@
 				(hide yes)
 			)
 		)
-		(property "Digi PN" ""
-			(at 109.22 214.63 0)
+		(property "Digi PN" "EG2025-ND"
+			(at 109.22 189.23 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -3697,8 +3520,8 @@
 				(hide yes)
 			)
 		)
-		(property "Digi URL" ""
-			(at 109.22 214.63 0)
+		(property "Digi URL" "https://www.digikey.com/en/products/detail/e-switch/ps1024alred/81539"
+			(at 109.22 189.23 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -3706,8 +3529,8 @@
 				(hide yes)
 			)
 		)
-		(property "Height" ""
-			(at 109.22 214.63 0)
+		(property "MFG" "E-Switch"
+			(at 109.22 189.23 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -3715,70 +3538,25 @@
 				(hide yes)
 			)
 		)
-		(property "MFG" ""
-			(at 109.22 214.63 0)
+		(property "MFG PN" "PS1024ALRED"
+			(at 109.22 189.23 0)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
 				(hide yes)
 			)
-		)
-		(property "Note" ""
-			(at 109.22 214.63 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Digi PN" ""
-			(at 109.22 214.63 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Digi URL" ""
-			(at 109.22 214.63 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "MFG PN" ""
-			(at 109.22 214.63 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "MFG" ""
-			(at 109.22 214.63 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(pin "2"
-			(uuid "490b36d7-dd60-46e5-b062-519339743865")
 		)
 		(pin "1"
-			(uuid "2021c341-571e-4d0c-bf2b-42432b1ff1df")
+			(uuid "e977df22-49bf-403e-bb6c-591426403aaf")
+		)
+		(pin "2"
+			(uuid "9b98077f-603b-4a27-8434-f5efb9ece5b2")
 		)
 		(instances
 			(project "steering_wheel"
 				(path "/553a23ec-442a-4f98-939d-2d5634a662f5/bd0f64cc-5703-4638-a4e2-f6fb8baa3fa1"
-					(reference "SW4")
+					(reference "SW3")
 					(unit 1)
 				)
 			)
@@ -4279,6 +4057,110 @@
 			(project "steering_wheel"
 				(path "/553a23ec-442a-4f98-939d-2d5634a662f5/bd0f64cc-5703-4638-a4e2-f6fb8baa3fa1"
 					(reference "#PWR039")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Switch:SW_Push")
+		(at 109.22 214.63 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board no)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "e9af490f-552f-4d30-8e57-81fc1caa0bb8")
+		(property "Reference" "SW4"
+			(at 109.22 207.01 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "SW_SPST"
+			(at 109.22 209.55 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" ""
+			(at 109.22 209.55 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "https://mm.digikey.com/Volume0/opasdata/d220001/medias/docus/6479/E_Switch_PS1024-1165682%20DS.pdf"
+			(at 109.22 209.55 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Push button switch, generic, two pins"
+			(at 109.22 214.63 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Digi PN" "EG2025-ND"
+			(at 109.22 214.63 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Digi URL" "https://www.digikey.com/en/products/detail/e-switch/ps1024alred/81539"
+			(at 109.22 214.63 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "MFG" "E-Switch"
+			(at 109.22 214.63 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "MFG PN" "PS1024ALRED"
+			(at 109.22 214.63 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "428542aa-552d-43b2-9dc6-12610a67b21b")
+		)
+		(pin "2"
+			(uuid "807283e2-a700-4cfa-8f9f-4e45b4d96abc")
+		)
+		(instances
+			(project "steering_wheel"
+				(path "/553a23ec-442a-4f98-939d-2d5634a662f5/bd0f64cc-5703-4638-a4e2-f6fb8baa3fa1"
+					(reference "SW4")
 					(unit 1)
 				)
 			)
