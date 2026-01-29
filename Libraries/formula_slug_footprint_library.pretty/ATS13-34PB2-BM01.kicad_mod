@@ -1,4 +1,4 @@
-(footprint "ATS13-34P-BM01"
+(footprint "ATS13-34PB2-BM01"
 	(version 20241229)
 	(generator "pcbnew")
 	(generator_version "9.0")
@@ -15,7 +15,7 @@
 			)
 		)
 	)
-	(property "Value" "ATS13-34P-BM01"
+	(property "Value" "ATS13-34PB2-BM01"
 		(at 0 -13.54 0)
 		(unlocked yes)
 		(layer "F.Fab")
@@ -108,8 +108,8 @@
 	)
 	(fp_poly
 		(pts
-			(xy -16.51 -8.24) (xy 16.51 -8.24) (xy 16.51 6) (xy 25.25 6) (xy 25.25 17.1) (xy 17.5 17.1) (xy 17.5 29.5)
-			(xy -17.5 29.5) (xy -17.5 17.1) (xy -25.25 17.1) (xy -25.25 6) (xy -16.51 6)
+			(xy -16.51 -8.24) (xy 16.51 -8.24) (xy 16.51 6) (xy 25.25 6) (xy 25.25 18.1) (xy 17.5 18.1) (xy 17.5 29.5)
+			(xy -17.5 29.5) (xy -17.5 18.1) (xy -25.25 18.1) (xy -25.25 6) (xy -16.51 6)
 		)
 		(stroke
 			(width 0.05)
@@ -119,9 +119,39 @@
 		(layer "F.CrtYd")
 		(uuid "544d131d-479d-4e7b-8392-832abf98382b")
 	)
+	(fp_line
+		(start -17.5 29.5)
+		(end -17.5 18.1)
+		(stroke
+			(width 0.1)
+			(type default)
+		)
+		(layer "F.Fab")
+		(uuid "fb9bf6d9-c5e3-4279-bf99-2229c0d03b15")
+	)
+	(fp_line
+		(start 17.5 18.1)
+		(end 17.5 29.5)
+		(stroke
+			(width 0.1)
+			(type default)
+		)
+		(layer "F.Fab")
+		(uuid "e9e997af-1043-413c-ac0a-1113e9622e9a")
+	)
+	(fp_line
+		(start 17.5 29.5)
+		(end -17.5 29.5)
+		(stroke
+			(width 0.1)
+			(type default)
+		)
+		(layer "F.Fab")
+		(uuid "569ccc55-d36f-4ea2-883d-8702c6209ff2")
+	)
 	(fp_rect
 		(start -25.25 6)
-		(end 25.25 17.1)
+		(end 25.25 18.1)
 		(stroke
 			(width 0.1)
 			(type solid)
@@ -129,17 +159,6 @@
 		(fill no)
 		(layer "F.Fab")
 		(uuid "10e603ca-7e6f-46c6-97e4-aa1a1e19a042")
-	)
-	(fp_rect
-		(start -17.5 17.1)
-		(end 17.5 29.5)
-		(stroke
-			(width 0.1)
-			(type solid)
-		)
-		(fill no)
-		(layer "F.Fab")
-		(uuid "2053183d-9f66-4cb4-9fbd-38061d6210f6")
 	)
 	(fp_rect
 		(start -14 -7)
@@ -271,11 +290,11 @@
 	(dimension
 		(type orthogonal)
 		(layer "F.Fab")
-		(uuid "c0155d6d-4de6-47fb-ab43-a1d72e5154a5")
+		(uuid "d38b917d-3a94-411a-aa86-49e77e29ddca")
 		(pts
-			(xy -17.5 17.1) (xy -17.5 29.5)
+			(xy -14.1 18.1) (xy -14.1 29.5)
 		)
-		(height 7)
+		(height 0)
 		(orientation 1)
 		(format
 			(prefix "")
@@ -294,10 +313,10 @@
 			(extension_offset 0.5)
 			(keep_text_aligned yes)
 		)
-		(gr_text "488.189"
-			(at -11.65 23.3 90)
+		(gr_text "448.8189"
+			(at -15.25 23.8 90)
 			(layer "F.Fab")
-			(uuid "c0155d6d-4de6-47fb-ab43-a1d72e5154a5")
+			(uuid "d38b917d-3a94-411a-aa86-49e77e29ddca")
 			(effects
 				(font
 					(size 1 1)
@@ -349,7 +368,7 @@
 		(layer "F.Fab")
 		(uuid "f48a09b9-5b61-4162-b0b2-ceaa0bf82149")
 		(pts
-			(xy -17.5 5.996) (xy -17.5 17.1)
+			(xy -17.5 5.996) (xy -17.5 18.1)
 		)
 		(height 0)
 		(orientation 1)
@@ -370,8 +389,8 @@
 			(extension_offset 0.5)
 			(keep_text_aligned yes)
 		)
-		(gr_text "437.1654"
-			(at -18.65 11.548 90)
+		(gr_text "476.5354"
+			(at -18.65 12.048 90)
 			(layer "F.Fab")
 			(uuid "f48a09b9-5b61-4162-b0b2-ceaa0bf82149")
 			(effects
@@ -655,4 +674,15 @@
 		(uuid "84284cc4-1fcd-446a-9f4d-a7f352eee815")
 	)
 	(embedded_fonts no)
+	(model "${FS_4_SCHEMATICS}/Libraries/3d_models/C-ATS13-34PB2-BM01-3D.stp"
+		(offset
+			(xyz 0 -17.526 10.668)
+		)
+		(scale
+			(xyz 1 1 1)
+		)
+		(rotate
+			(xyz -180 -0 -0)
+		)
+	)
 )
