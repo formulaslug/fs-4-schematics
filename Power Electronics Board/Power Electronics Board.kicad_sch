@@ -821,7 +821,7 @@
 			)
 			(embedded_fonts no)
 		)
-		(symbol "Connector_Generic:Conn_01x05"
+		(symbol "Connector_Generic:Conn_01x06"
 			(pin_names
 				(offset 1.016)
 				(hide yes)
@@ -837,8 +837,8 @@
 					)
 				)
 			)
-			(property "Value" "Conn_01x05"
-				(at 0 -7.62 0)
+			(property "Value" "Conn_01x06"
+				(at 0 -10.16 0)
 				(effects
 					(font
 						(size 1.27 1.27)
@@ -863,7 +863,7 @@
 					(hide yes)
 				)
 			)
-			(property "Description" "Generic connector, single row, 01x05, script generated (kicad-library-utils/schlib/autogen/connector/)"
+			(property "Description" "Generic connector, single row, 01x06, script generated (kicad-library-utils/schlib/autogen/connector/)"
 				(at 0 0 0)
 				(effects
 					(font
@@ -890,10 +890,10 @@
 					(hide yes)
 				)
 			)
-			(symbol "Conn_01x05_1_1"
+			(symbol "Conn_01x06_1_1"
 				(rectangle
 					(start -1.27 6.35)
-					(end 1.27 -6.35)
+					(end 1.27 -8.89)
 					(stroke
 						(width 0.254)
 						(type default)
@@ -949,6 +949,17 @@
 				(rectangle
 					(start -1.27 -4.953)
 					(end 0 -5.207)
+					(stroke
+						(width 0.1524)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(rectangle
+					(start -1.27 -7.493)
+					(end 0 -7.747)
 					(stroke
 						(width 0.1524)
 						(type default)
@@ -1040,6 +1051,24 @@
 						)
 					)
 					(number "5"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin passive line
+					(at -5.08 -7.62 0)
+					(length 3.81)
+					(name "Pin_6"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "6"
 						(effects
 							(font
 								(size 1.27 1.27)
@@ -6322,8 +6351,8 @@
 		(uuid b0fde152-c7ae-452d-a2be-ca5d8ac01305)
 	)
 	(rectangle
-		(start 90.805 63.5)
-		(end 146.685 95.25)
+		(start 90.805 62.23)
+		(end 146.685 94.615)
 		(stroke
 			(width 0.254)
 			(type dot)
@@ -6359,8 +6388,8 @@
 		(uuid f20c85f7-43ef-431d-b4b9-ecb3ebc91d83)
 	)
 	(rectangle
-		(start 30.48 63.5)
-		(end 86.36 95.25)
+		(start 30.48 62.23)
+		(end 86.36 94.615)
 		(stroke
 			(width 0.254)
 			(type dot)
@@ -6414,13 +6443,23 @@
 	)
 	(text "5k From ESF\n"
 		(exclude_from_sim no)
-		(at 58.42 156.21 0)
+		(at 55.88 143.764 0)
 		(effects
 			(font
 				(size 1.27 1.27)
 			)
 		)
 		(uuid "2dadef7a-490d-4aaa-af12-d0f6333cc6e2")
+	)
+	(text "change diode\n"
+		(exclude_from_sim no)
+		(at 349.351 72.898 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+		)
+		(uuid "310df030-5cb7-49e2-a82e-e8e3fad4fa37")
 	)
 	(text "RTML Logic\n"
 		(exclude_from_sim no)
@@ -6432,16 +6471,6 @@
 			)
 		)
 		(uuid "35281903-1bea-4048-91c5-17cbfee80001")
-	)
-	(text "TS Ready\n"
-		(exclude_from_sim no)
-		(at 181.356 82.55 0)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-		)
-		(uuid "39fb68da-8b1e-4f14-a8d0-4fe5279a446a")
 	)
 	(text "mini BLADE 40A Fuse"
 		(exclude_from_sim no)
@@ -6455,23 +6484,13 @@
 	)
 	(text "High Current"
 		(exclude_from_sim no)
-		(at 391.16 151.384 0)
+		(at 391.16 152.654 0)
 		(effects
 			(font
 				(size 1.27 1.27)
 			)
 		)
 		(uuid "419f9568-61ed-4c84-98c0-fef75eb26f56")
-	)
-	(text "126V * 10k/(115k*2 + 10k)=5.25V\n60V * 10k(115k*2 + 10k)=2.5V\n\nEarly Trigger: 2.5=V*(10.1k/(227.7k + 10.1k)), V=58.9V\nLate Trigger: 2.5=V*(9.9k/(232.3k + 9.9k)), V=61.1V\n"
-		(exclude_from_sim no)
-		(at 98.298 122.428 0)
-		(effects
-			(font
-				(size 0.635 0.635)
-			)
-		)
-		(uuid "42994939-a2f8-487d-9790-8bae55db4646")
 	)
 	(text "TS-"
 		(exclude_from_sim no)
@@ -6504,6 +6523,16 @@
 		)
 		(uuid "552cb8b4-4a80-4268-a219-7df62c6a2226")
 	)
+	(text "change diode\n"
+		(exclude_from_sim no)
+		(at 191.008 179.324 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+		)
+		(uuid "56757135-f2b4-40ee-8bd7-3cb5a06a4a34")
+	)
 	(text "Output Connector\n"
 		(exclude_from_sim no)
 		(at 366.014 116.332 0)
@@ -6516,7 +6545,7 @@
 	)
 	(text "12V After\nFuse Box\n"
 		(exclude_from_sim no)
-		(at 397.51 127.254 0)
+		(at 397.51 125.984 0)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -6526,7 +6555,7 @@
 	)
 	(text "Unused Pins"
 		(exclude_from_sim no)
-		(at 44.196 66.802 0)
+		(at 44.196 65.532 0)
 		(effects
 			(font
 				(size 2.54 2.54)
@@ -6544,6 +6573,16 @@
 			)
 		)
 		(uuid "78903638-458b-4392-93f2-8664b7e9d34c")
+	)
+	(text "TS Ready\n"
+		(exclude_from_sim no)
+		(at 397.764 138.684 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+		)
+		(uuid "7a3025b6-7cab-4864-95b9-e43b46d2f95c")
 	)
 	(text "GLV Fuse (ev 6.6.1)"
 		(exclude_from_sim no)
@@ -6564,6 +6603,16 @@
 			)
 		)
 		(uuid "7f0c8a00-2c51-4854-b4ca-4e9bcfc8eeb8")
+	)
+	(text "150(10/145+145+10) = 5V\n60(10/145+145+10) = 2V"
+		(exclude_from_sim no)
+		(at 100.076 122.682 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+		)
+		(uuid "8c790cba-4771-4179-8557-5cc4a96fffd8")
 	)
 	(text "5V Linear Regulator\n"
 		(exclude_from_sim no)
@@ -6630,7 +6679,7 @@
 	)
 	(text "TSMP-\n"
 		(exclude_from_sim no)
-		(at 36.83 148.844 0)
+		(at 36.83 156.464 0)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -6661,9 +6710,9 @@
 		)
 		(uuid "d4155942-3043-41e7-b06d-15c021248965")
 	)
-	(text "2.5V Ref\n"
+	(text "2V Ref\n"
 		(exclude_from_sim no)
-		(at 100.838 67.056 0)
+		(at 99.06 65.786 0)
 		(effects
 			(font
 				(size 2.54 2.54)
@@ -6695,7 +6744,7 @@
 	)
 	(text "TSMP+\n"
 		(exclude_from_sim no)
-		(at 36.83 143.51 0)
+		(at 36.83 151.13 0)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -6703,6 +6752,16 @@
 			)
 		)
 		(uuid "e668e2ee-b0b5-4d75-9b1c-44bea1995b6c")
+	)
+	(text "5(10k/(10k+15k)) = 2V"
+		(exclude_from_sim no)
+		(at 128.524 76.2 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+		)
+		(uuid "f45d9ab7-2cef-42b4-9cb5-3236547e6172")
 	)
 	(junction
 		(at 359.41 58.42)
@@ -6723,7 +6782,7 @@
 		(uuid "06798866-7e04-43d2-8f3f-aac140075bd7")
 	)
 	(junction
-		(at 374.65 127)
+		(at 374.65 125.73)
 		(diameter 0)
 		(color 0 0 0 0)
 		(uuid "0aa19260-e513-4772-bb5f-8a2125b08f56")
@@ -6735,22 +6794,16 @@
 		(uuid "0e8012d4-e5f0-412a-a5a6-8bf54322fd10")
 	)
 	(junction
-		(at 220.98 69.85)
+		(at 200.66 96.52)
 		(diameter 0)
 		(color 0 0 0 0)
-		(uuid "15dc01ff-67db-4a12-b9a9-7460120aef85")
+		(uuid "14e5f540-023c-40df-80ac-4b40ec770203")
 	)
 	(junction
 		(at 247.65 123.19)
 		(diameter 0)
 		(color 0 0 0 0)
 		(uuid "16688323-030d-4c84-a208-2231b66a0fe7")
-	)
-	(junction
-		(at 62.23 118.11)
-		(diameter 0)
-		(color 0 0 0 0)
-		(uuid "1837edc0-3190-4125-8ae5-c4093ed01fe0")
 	)
 	(junction
 		(at 372.11 95.25)
@@ -6768,13 +6821,7 @@
 		(at 82.55 132.08)
 		(diameter 0)
 		(color 0 0 0 0)
-		(uuid "25314925-a1f4-42fd-b4ff-15a41202d920")
-	)
-	(junction
-		(at 220.98 87.63)
-		(diameter 0)
-		(color 0 0 0 0)
-		(uuid "2e48874d-f036-400c-b1f3-12e2a19a5b47")
+		(uuid "2c519b08-3256-4fec-964b-3d4521bbe189")
 	)
 	(junction
 		(at 198.12 142.24)
@@ -6819,12 +6866,6 @@
 		(uuid "4ec02db9-31ec-4c4b-bc99-ca9f1e590a49")
 	)
 	(junction
-		(at 203.2 96.52)
-		(diameter 0)
-		(color 0 0 0 0)
-		(uuid "4fa1b329-5ebc-44e0-9966-8e79b414915f")
-	)
-	(junction
 		(at 308.61 132.08)
 		(diameter 0)
 		(color 0 0 0 0)
@@ -6835,6 +6876,12 @@
 		(diameter 0)
 		(color 0 0 0 0)
 		(uuid "73ad2228-1635-4637-a812-b84a5c111c4a")
+	)
+	(junction
+		(at 134.62 208.28)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "863a53a9-6a44-43e6-955e-6dee79b4f5d8")
 	)
 	(junction
 		(at 303.53 71.12)
@@ -6921,18 +6968,6 @@
 		(uuid "d9c8bd3e-78d3-45d6-829c-731d79087c84")
 	)
 	(junction
-		(at 64.77 123.19)
-		(diameter 0)
-		(color 0 0 0 0)
-		(uuid "da0cab55-cda1-45d1-9f7c-bb0eb0c0f421")
-	)
-	(junction
-		(at 130.81 208.28)
-		(diameter 0)
-		(color 0 0 0 0)
-		(uuid "daa9f947-5ce0-4cd2-9109-4b460711b43f")
-	)
-	(junction
 		(at 354.33 82.55)
 		(diameter 0)
 		(color 0 0 0 0)
@@ -6957,7 +6992,7 @@
 		(uuid "ddf62b94-b12a-486d-8b86-03de0b4890d2")
 	)
 	(junction
-		(at 377.19 152.4)
+		(at 377.19 153.67)
 		(diameter 0)
 		(color 0 0 0 0)
 		(uuid "e108bba7-c50d-47c4-b329-acd65cd9ae4c")
@@ -6987,13 +7022,13 @@
 		(uuid "edfdd5b0-3fba-4c3e-8a83-e928b5dd3f4a")
 	)
 	(junction
-		(at 367.03 137.16)
+		(at 367.03 135.89)
 		(diameter 0)
 		(color 0 0 0 0)
 		(uuid "f3139ce7-2f9e-4dd3-bf37-e9b64840b622")
 	)
 	(junction
-		(at 113.03 81.28)
+		(at 104.14 81.28)
 		(diameter 0)
 		(color 0 0 0 0)
 		(uuid "f6032092-be9c-417b-9b2f-52c71f9a1eb5")
@@ -7033,7 +7068,7 @@
 		(uuid "2e303f34-ef38-48fe-afd5-cef6b9b36484")
 	)
 	(no_connect
-		(at 82.55 78.74)
+		(at 82.55 77.47)
 		(uuid "4f6e79e3-4423-4308-aefe-436a69f4174f")
 	)
 	(no_connect
@@ -7041,11 +7076,11 @@
 		(uuid "5159571d-bf00-416e-9df8-3ca1f9903cd4")
 	)
 	(no_connect
-		(at 50.8 76.2)
+		(at 50.8 74.93)
 		(uuid "5c325b15-2e57-4a9f-b86f-96f91f712167")
 	)
 	(no_connect
-		(at 46.99 146.05)
+		(at 46.99 153.67)
 		(uuid "61449e84-badd-47ed-9c8e-692f17f1b8b1")
 	)
 	(no_connect
@@ -7061,7 +7096,7 @@
 		(uuid "683fd5c0-bb5c-4b76-890f-6b127536a5ff")
 	)
 	(no_connect
-		(at 66.04 78.74)
+		(at 66.04 77.47)
 		(uuid "6a87248f-3cb4-4407-917c-736cdd46e04f")
 	)
 	(no_connect
@@ -7073,7 +7108,7 @@
 		(uuid "8f3a7f2d-a3ec-411b-a17a-1b914903dfec")
 	)
 	(no_connect
-		(at 67.31 81.28)
+		(at 67.31 80.01)
 		(uuid "9ad54df8-83a3-4c8c-83cf-f92269a44532")
 	)
 	(no_connect
@@ -7081,15 +7116,15 @@
 		(uuid "a23a1740-7bf0-4b1a-92f2-21231c6a16ba")
 	)
 	(no_connect
-		(at 34.29 76.2)
+		(at 34.29 74.93)
 		(uuid "a44aa18c-ea9d-4c3d-8de1-17084f1a66e9")
 	)
 	(no_connect
-		(at 49.53 78.74)
+		(at 49.53 77.47)
 		(uuid "ac996016-74c7-4d60-b2b1-da9dec33652c")
 	)
 	(no_connect
-		(at 50.8 81.28)
+		(at 50.8 80.01)
 		(uuid "bd855bf8-4317-4a12-a238-1e5b41048801")
 	)
 	(no_connect
@@ -7097,11 +7132,11 @@
 		(uuid "c61e0672-5cb0-41be-b4de-7bcd04216beb")
 	)
 	(no_connect
-		(at 34.29 81.28)
+		(at 34.29 80.01)
 		(uuid "c853b1a0-d828-4622-8655-1569073cf80d")
 	)
 	(no_connect
-		(at 67.31 76.2)
+		(at 67.31 74.93)
 		(uuid "d7477fdc-3fc5-474e-a927-5945baac8968")
 	)
 	(no_connect
@@ -7134,7 +7169,7 @@
 	)
 	(wire
 		(pts
-			(xy 377.19 147.32) (xy 377.19 152.4)
+			(xy 377.19 148.59) (xy 377.19 153.67)
 		)
 		(stroke
 			(width 0)
@@ -7144,7 +7179,7 @@
 	)
 	(wire
 		(pts
-			(xy 379.73 132.08) (xy 386.08 132.08)
+			(xy 379.73 130.81) (xy 386.08 130.81)
 		)
 		(stroke
 			(width 0)
@@ -7154,7 +7189,7 @@
 	)
 	(wire
 		(pts
-			(xy 377.19 152.4) (xy 377.19 156.21)
+			(xy 377.19 153.67) (xy 377.19 157.48)
 		)
 		(stroke
 			(width 0)
@@ -7174,7 +7209,7 @@
 	)
 	(wire
 		(pts
-			(xy 50.8 144.78) (xy 54.61 144.78)
+			(xy 50.8 152.4) (xy 52.07 152.4)
 		)
 		(stroke
 			(width 0)
@@ -7214,16 +7249,6 @@
 	)
 	(wire
 		(pts
-			(xy 62.23 118.11) (xy 73.66 118.11)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "06926e99-7ab9-410a-bfad-97d0bd58c942")
-	)
-	(wire
-		(pts
 			(xy 105.41 137.16) (xy 118.11 137.16)
 		)
 		(stroke
@@ -7234,7 +7259,7 @@
 	)
 	(wire
 		(pts
-			(xy 194.31 80.01) (xy 194.31 104.14)
+			(xy 193.04 80.01) (xy 193.04 86.36)
 		)
 		(stroke
 			(width 0)
@@ -7244,7 +7269,7 @@
 	)
 	(wire
 		(pts
-			(xy 367.03 137.16) (xy 386.08 137.16)
+			(xy 367.03 135.89) (xy 386.08 135.89)
 		)
 		(stroke
 			(width 0)
@@ -7264,6 +7289,16 @@
 	)
 	(wire
 		(pts
+			(xy 82.55 132.08) (xy 118.11 132.08)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "0b8864c9-d957-49c6-a439-e6a45368d782")
+	)
+	(wire
+		(pts
 			(xy 387.35 95.25) (xy 394.97 95.25)
 		)
 		(stroke
@@ -7274,7 +7309,7 @@
 	)
 	(wire
 		(pts
-			(xy 369.57 152.4) (xy 377.19 152.4)
+			(xy 369.57 153.67) (xy 377.19 153.67)
 		)
 		(stroke
 			(width 0)
@@ -7324,7 +7359,7 @@
 	)
 	(wire
 		(pts
-			(xy 384.81 142.24) (xy 384.81 144.78)
+			(xy 384.81 143.51) (xy 384.81 146.05)
 		)
 		(stroke
 			(width 0)
@@ -7344,7 +7379,7 @@
 	)
 	(wire
 		(pts
-			(xy 379.73 129.54) (xy 386.08 129.54)
+			(xy 379.73 128.27) (xy 386.08 128.27)
 		)
 		(stroke
 			(width 0)
@@ -7454,16 +7489,6 @@
 	)
 	(wire
 		(pts
-			(xy 64.77 123.19) (xy 67.31 123.19)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "29bd099c-8684-4050-9a5c-64dfc8e3e491")
-	)
-	(wire
-		(pts
 			(xy 354.33 58.42) (xy 354.33 71.12)
 		)
 		(stroke
@@ -7524,16 +7549,6 @@
 	)
 	(wire
 		(pts
-			(xy 203.2 96.52) (xy 208.28 96.52)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "30bce85a-5c73-4d1c-b62c-83ec36df092a")
-	)
-	(wire
-		(pts
 			(xy 125.73 218.44) (xy 148.59 218.44)
 		)
 		(stroke
@@ -7564,17 +7579,7 @@
 	)
 	(wire
 		(pts
-			(xy 62.23 118.11) (xy 62.23 144.78)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "3620d898-9894-464b-b44d-820b76b26641")
-	)
-	(wire
-		(pts
-			(xy 367.03 137.16) (xy 365.76 137.16)
+			(xy 367.03 135.89) (xy 365.76 135.89)
 		)
 		(stroke
 			(width 0)
@@ -7584,27 +7589,27 @@
 	)
 	(wire
 		(pts
-			(xy 196.85 96.52) (xy 203.2 96.52)
+			(xy 218.44 68.58) (xy 218.44 71.12)
 		)
 		(stroke
 			(width 0)
 			(type default)
 		)
-		(uuid "372a5c96-e335-4624-80a4-4d18a8b6a094")
+		(uuid "3635d00e-5959-4ed8-bd56-d16f90d46974")
 	)
 	(wire
 		(pts
-			(xy 82.55 132.08) (xy 118.11 132.08)
+			(xy 218.44 86.36) (xy 218.44 88.9)
 		)
 		(stroke
 			(width 0)
 			(type default)
 		)
-		(uuid "38f6860d-9448-4f6d-b2b3-6b26c9c0de59")
+		(uuid "3bdfd8fa-0d58-48d0-99c8-c2502d175cc4")
 	)
 	(wire
 		(pts
-			(xy 233.68 95.25) (xy 372.11 95.25)
+			(xy 231.14 95.25) (xy 372.11 95.25)
 		)
 		(stroke
 			(width 0)
@@ -7694,6 +7699,16 @@
 	)
 	(wire
 		(pts
+			(xy 191.77 96.52) (xy 200.66 96.52)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "4c623b85-74b7-4961-ae53-85c923c6c41f")
+	)
+	(wire
+		(pts
 			(xy 290.83 137.16) (xy 290.83 138.43)
 		)
 		(stroke
@@ -7724,16 +7739,6 @@
 	)
 	(wire
 		(pts
-			(xy 64.77 123.19) (xy 64.77 147.32)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "53254548-7a4d-4096-8619-2ac4360a79ca")
-	)
-	(wire
-		(pts
 			(xy 247.65 146.05) (xy 247.65 153.67)
 		)
 		(stroke
@@ -7744,7 +7749,7 @@
 	)
 	(wire
 		(pts
-			(xy 368.3 125.73) (xy 368.3 127)
+			(xy 368.3 124.46) (xy 368.3 125.73)
 		)
 		(stroke
 			(width 0)
@@ -7764,7 +7769,7 @@
 	)
 	(wire
 		(pts
-			(xy 368.3 127) (xy 374.65 127)
+			(xy 368.3 125.73) (xy 374.65 125.73)
 		)
 		(stroke
 			(width 0)
@@ -7824,7 +7829,7 @@
 	)
 	(wire
 		(pts
-			(xy 113.03 80.01) (xy 113.03 81.28)
+			(xy 104.14 80.01) (xy 104.14 81.28)
 		)
 		(stroke
 			(width 0)
@@ -7884,6 +7889,16 @@
 	)
 	(wire
 		(pts
+			(xy 200.66 96.52) (xy 205.74 96.52)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "61022ec4-08a4-4a38-b68f-352006dacc24")
+	)
+	(wire
+		(pts
 			(xy 284.48 83.82) (xy 298.45 83.82)
 		)
 		(stroke
@@ -7924,13 +7939,13 @@
 	)
 	(wire
 		(pts
-			(xy 212.09 87.63) (xy 220.98 87.63)
+			(xy 134.62 208.28) (xy 148.59 208.28)
 		)
 		(stroke
 			(width 0)
 			(type default)
 		)
-		(uuid "67b2e386-f75b-4c33-8126-c91803faa83d")
+		(uuid "6706cd13-e1bd-4ab1-977e-489015d6e7ef")
 	)
 	(wire
 		(pts
@@ -8094,7 +8109,7 @@
 	)
 	(wire
 		(pts
-			(xy 231.14 60.96) (xy 231.14 71.12)
+			(xy 228.6 60.96) (xy 228.6 71.12)
 		)
 		(stroke
 			(width 0)
@@ -8124,17 +8139,7 @@
 	)
 	(wire
 		(pts
-			(xy 130.81 208.28) (xy 148.59 208.28)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "7b468c4c-3ac5-4af4-8089-735433f5fa2a")
-	)
-	(wire
-		(pts
-			(xy 233.68 86.36) (xy 233.68 95.25)
+			(xy 231.14 86.36) (xy 231.14 95.25)
 		)
 		(stroke
 			(width 0)
@@ -8174,7 +8179,7 @@
 	)
 	(wire
 		(pts
-			(xy 381 142.24) (xy 384.81 142.24)
+			(xy 381 143.51) (xy 384.81 143.51)
 		)
 		(stroke
 			(width 0)
@@ -8184,7 +8189,7 @@
 	)
 	(wire
 		(pts
-			(xy 50.8 148.59) (xy 46.99 148.59)
+			(xy 50.8 156.21) (xy 46.99 156.21)
 		)
 		(stroke
 			(width 0)
@@ -8204,7 +8209,7 @@
 	)
 	(wire
 		(pts
-			(xy 113.03 81.28) (xy 113.03 82.55)
+			(xy 104.14 81.28) (xy 104.14 82.55)
 		)
 		(stroke
 			(width 0)
@@ -8251,16 +8256,6 @@
 			(type default)
 		)
 		(uuid "8d0ab89c-6d88-460f-b8ae-6de55a3707fe")
-	)
-	(wire
-		(pts
-			(xy 220.98 68.58) (xy 220.98 69.85)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "8d763b98-261c-4ba0-abbc-e7d61822bdde")
 	)
 	(wire
 		(pts
@@ -8314,7 +8309,7 @@
 	)
 	(wire
 		(pts
-			(xy 125.73 208.28) (xy 130.81 208.28)
+			(xy 125.73 208.28) (xy 134.62 208.28)
 		)
 		(stroke
 			(width 0)
@@ -8324,7 +8319,7 @@
 	)
 	(wire
 		(pts
-			(xy 50.8 144.78) (xy 50.8 143.51)
+			(xy 50.8 152.4) (xy 50.8 151.13)
 		)
 		(stroke
 			(width 0)
@@ -8344,7 +8339,7 @@
 	)
 	(wire
 		(pts
-			(xy 374.65 127) (xy 386.08 127)
+			(xy 374.65 125.73) (xy 386.08 125.73)
 		)
 		(stroke
 			(width 0)
@@ -8424,6 +8419,16 @@
 	)
 	(wire
 		(pts
+			(xy 59.69 152.4) (xy 66.04 152.4)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "a200e82a-3483-405e-80b9-d206af0b458e")
+	)
+	(wire
+		(pts
 			(xy 309.88 195.58) (xy 325.12 195.58)
 		)
 		(stroke
@@ -8494,7 +8499,7 @@
 	)
 	(wire
 		(pts
-			(xy 113.03 81.28) (xy 125.73 81.28)
+			(xy 104.14 81.28) (xy 116.84 81.28)
 		)
 		(stroke
 			(width 0)
@@ -8514,7 +8519,7 @@
 	)
 	(wire
 		(pts
-			(xy 367.03 135.89) (xy 367.03 137.16)
+			(xy 367.03 134.62) (xy 367.03 135.89)
 		)
 		(stroke
 			(width 0)
@@ -8544,16 +8549,6 @@
 	)
 	(wire
 		(pts
-			(xy 196.85 82.55) (xy 196.85 96.52)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "b0d2c5c8-68ce-489d-9b5e-5f7923f1ed42")
-	)
-	(wire
-		(pts
 			(xy 87.63 147.32) (xy 123.19 147.32)
 		)
 		(stroke
@@ -8574,7 +8569,7 @@
 	)
 	(wire
 		(pts
-			(xy 196.85 60.96) (xy 231.14 60.96)
+			(xy 196.85 60.96) (xy 228.6 60.96)
 		)
 		(stroke
 			(width 0)
@@ -8614,17 +8609,7 @@
 	)
 	(wire
 		(pts
-			(xy 212.09 69.85) (xy 212.09 74.93)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "baf61b08-db39-49a5-b3ef-c5817081f0b3")
-	)
-	(wire
-		(pts
-			(xy 383.54 134.62) (xy 386.08 134.62)
+			(xy 383.54 133.35) (xy 386.08 133.35)
 		)
 		(stroke
 			(width 0)
@@ -8674,17 +8659,7 @@
 	)
 	(wire
 		(pts
-			(xy 220.98 69.85) (xy 220.98 71.12)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "bf22d50f-6e55-4539-aff6-23ad1f573f02")
-	)
-	(wire
-		(pts
-			(xy 384.81 144.78) (xy 386.08 144.78)
+			(xy 384.81 146.05) (xy 386.08 146.05)
 		)
 		(stroke
 			(width 0)
@@ -8701,16 +8676,6 @@
 			(type default)
 		)
 		(uuid "bf5904a6-1884-42e2-a029-ab8e89d398ca")
-	)
-	(wire
-		(pts
-			(xy 193.04 82.55) (xy 196.85 82.55)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "bf6669c3-94b7-4191-9a2f-c0f7c3ef67d2")
 	)
 	(wire
 		(pts
@@ -8734,7 +8699,7 @@
 	)
 	(wire
 		(pts
-			(xy 50.8 143.51) (xy 46.99 143.51)
+			(xy 50.8 151.13) (xy 46.99 151.13)
 		)
 		(stroke
 			(width 0)
@@ -8814,17 +8779,7 @@
 	)
 	(wire
 		(pts
-			(xy 220.98 69.85) (xy 212.09 69.85)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "ccfdb428-086c-4a8f-8f9a-0608faf96b50")
-	)
-	(wire
-		(pts
-			(xy 62.23 147.32) (xy 64.77 147.32)
+			(xy 59.69 154.94) (xy 66.04 154.94)
 		)
 		(stroke
 			(width 0)
@@ -8894,16 +8849,6 @@
 	)
 	(wire
 		(pts
-			(xy 220.98 86.36) (xy 220.98 87.63)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "d5f71317-7aa6-43c5-bc33-5af2cd2b5431")
-	)
-	(wire
-		(pts
 			(xy 247.65 153.67) (xy 275.59 153.67)
 		)
 		(stroke
@@ -8924,7 +8869,7 @@
 	)
 	(wire
 		(pts
-			(xy 377.19 147.32) (xy 386.08 147.32)
+			(xy 377.19 148.59) (xy 386.08 148.59)
 		)
 		(stroke
 			(width 0)
@@ -8941,16 +8886,6 @@
 			(type default)
 		)
 		(uuid "db76cf6f-d0cf-4bcd-af4b-5dd93709e547")
-	)
-	(wire
-		(pts
-			(xy 212.09 82.55) (xy 212.09 87.63)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "dc7827aa-a57b-4fd6-a974-8ce4298de2bb")
 	)
 	(wire
 		(pts
@@ -9014,6 +8949,16 @@
 	)
 	(wire
 		(pts
+			(xy 104.14 71.12) (xy 104.14 72.39)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "e43a3234-de2e-45a2-9495-5d1accb875ac")
+	)
+	(wire
+		(pts
 			(xy 73.66 134.62) (xy 73.66 135.89)
 		)
 		(stroke
@@ -9024,17 +8969,7 @@
 	)
 	(wire
 		(pts
-			(xy 46.99 118.11) (xy 62.23 118.11)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "e5fe1e00-04a2-4c3f-837b-7cce97eeb4dc")
-	)
-	(wire
-		(pts
-			(xy 50.8 147.32) (xy 50.8 148.59)
+			(xy 50.8 154.94) (xy 50.8 156.21)
 		)
 		(stroke
 			(width 0)
@@ -9114,16 +9049,6 @@
 	)
 	(wire
 		(pts
-			(xy 193.04 80.01) (xy 194.31 80.01)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "f2ee69e5-eae8-409f-88cd-d692ef314dca")
-	)
-	(wire
-		(pts
 			(xy 246.38 67.31) (xy 246.38 68.58)
 		)
 		(stroke
@@ -9131,6 +9056,16 @@
 			(type default)
 		)
 		(uuid "f490af5c-4f5a-47bc-9f1c-19a1a9e51fd2")
+	)
+	(wire
+		(pts
+			(xy 46.99 118.11) (xy 73.66 118.11)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "f61cff4a-400f-468b-adc4-f3eabaa56073")
 	)
 	(wire
 		(pts
@@ -9144,7 +9079,17 @@
 	)
 	(wire
 		(pts
-			(xy 46.99 123.19) (xy 64.77 123.19)
+			(xy 379.73 138.43) (xy 386.08 138.43)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "f78290d6-ee3e-4633-867b-50c4c6a172dc")
+	)
+	(wire
+		(pts
+			(xy 46.99 123.19) (xy 67.31 123.19)
 		)
 		(stroke
 			(width 0)
@@ -9204,7 +9149,7 @@
 	)
 	(wire
 		(pts
-			(xy 50.8 147.32) (xy 54.61 147.32)
+			(xy 50.8 154.94) (xy 52.07 154.94)
 		)
 		(stroke
 			(width 0)
@@ -9212,19 +9157,49 @@
 		)
 		(uuid "fe7188a6-514a-4898-a942-3d77e7e619b1")
 	)
-	(wire
-		(pts
-			(xy 220.98 87.63) (xy 220.98 88.9)
+	(label "TSMP-"
+		(at 60.96 123.19 180)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify right bottom)
 		)
-		(stroke
-			(width 0)
-			(type default)
+		(uuid "03ca28d8-9f8e-43c0-80f1-f850b1528d07")
+	)
+	(label "TSMP-"
+		(at 66.04 154.94 180)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify right bottom)
 		)
-		(uuid "ff8983dd-09c7-4bc4-98d1-a26d7d512b78")
+		(uuid "139e8d33-4330-42f6-8f52-b3bdf1e1dc76")
+	)
+	(label "TSMP+"
+		(at 54.61 118.11 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left bottom)
+		)
+		(uuid "887dc4be-a0b4-4064-aa0c-3ba65d29611a")
+	)
+	(label "TSMP+"
+		(at 66.04 152.4 180)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify right bottom)
+		)
+		(uuid "8c497300-4e36-4d3a-8bfa-20b62d3e6adf")
 	)
 	(global_label "RTM_In"
 		(shape output)
-		(at 379.73 132.08 180)
+		(at 379.73 130.81 180)
 		(fields_autoplaced yes)
 		(effects
 			(font
@@ -9234,7 +9209,7 @@
 		)
 		(uuid "08e873bc-5f85-4f00-8084-ddf2e5b5d4c4")
 		(property "Intersheetrefs" "${INTERSHEET_REFS}"
-			(at 370.3344 132.08 0)
+			(at 370.3344 130.81 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -9266,9 +9241,31 @@
 			)
 		)
 	)
+	(global_label "TS Ready"
+		(shape input)
+		(at 191.77 96.52 180)
+		(fields_autoplaced yes)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify right)
+		)
+		(uuid "3b304b72-9b74-4666-b252-b49327af6690")
+		(property "Intersheetrefs" "${INTERSHEET_REFS}"
+			(at 180.0159 96.52 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+				(hide yes)
+			)
+		)
+	)
 	(global_label "RTM_Out"
 		(shape input)
-		(at 379.73 129.54 180)
+		(at 379.73 128.27 180)
 		(fields_autoplaced yes)
 		(effects
 			(font
@@ -9278,7 +9275,7 @@
 		)
 		(uuid "5356b34e-8f9b-4b1a-b898-17953f82814c")
 		(property "Intersheetrefs" "${INTERSHEET_REFS}"
-			(at 368.883 129.54 0)
+			(at 368.883 128.27 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -9290,7 +9287,7 @@
 	)
 	(global_label "GLVMS"
 		(shape input)
-		(at 381 142.24 180)
+		(at 381 143.51 180)
 		(fields_autoplaced yes)
 		(effects
 			(font
@@ -9300,7 +9297,7 @@
 		)
 		(uuid "5fabbc25-52bf-4d77-bac6-f4c073815dfc")
 		(property "Intersheetrefs" "${INTERSHEET_REFS}"
-			(at 371.9672 142.24 0)
+			(at 371.9672 143.51 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -9310,7 +9307,7 @@
 			)
 		)
 	)
-	(global_label "2.5V Ref"
+	(global_label "2V Ref"
 		(shape input)
 		(at 105.41 137.16 180)
 		(fields_autoplaced yes)
@@ -9322,7 +9319,7 @@
 		)
 		(uuid "7ede9e07-3fba-4a2c-9e56-68b48c4f03fd")
 		(property "Intersheetrefs" "${INTERSHEET_REFS}"
-			(at 94.2605 137.16 0)
+			(at 96.0748 137.16 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -9400,7 +9397,7 @@
 	)
 	(global_label "Shutdown Final"
 		(shape output)
-		(at 365.76 137.16 180)
+		(at 365.76 135.89 180)
 		(fields_autoplaced yes)
 		(effects
 			(font
@@ -9410,7 +9407,7 @@
 		)
 		(uuid "abe68bd6-4b35-487c-8692-1ee335049ced")
 		(property "Intersheetrefs" "${INTERSHEET_REFS}"
-			(at 348.1399 137.16 0)
+			(at 348.1399 135.89 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -9486,9 +9483,9 @@
 			)
 		)
 	)
-	(global_label "2.5V Ref"
+	(global_label "2V Ref"
 		(shape output)
-		(at 125.73 81.28 0)
+		(at 116.84 81.28 0)
 		(fields_autoplaced yes)
 		(effects
 			(font
@@ -9498,7 +9495,7 @@
 		)
 		(uuid "d4ef805b-927d-478d-bebd-46a6c2a218c2")
 		(property "Intersheetrefs" "${INTERSHEET_REFS}"
-			(at 136.8795 81.28 0)
+			(at 126.1752 81.28 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -9508,9 +9505,31 @@
 			)
 		)
 	)
+	(global_label "TS Ready"
+		(shape output)
+		(at 379.73 138.43 180)
+		(fields_autoplaced yes)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify right)
+		)
+		(uuid "dcd55a1a-d42a-4772-ac5c-d0c7bd74c138")
+		(property "Intersheetrefs" "${INTERSHEET_REFS}"
+			(at 367.9759 138.43 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+				(hide yes)
+			)
+		)
+	)
 	(global_label "Reset Button"
 		(shape output)
-		(at 383.54 134.62 180)
+		(at 383.54 133.35 180)
 		(fields_autoplaced yes)
 		(effects
 			(font
@@ -9520,7 +9539,7 @@
 		)
 		(uuid "e4b59145-28b0-430c-b693-f4a697071ed9")
 		(property "Intersheetrefs" "${INTERSHEET_REFS}"
-			(at 368.2178 134.62 0)
+			(at 368.2178 133.35 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -9803,7 +9822,7 @@
 				(hide yes)
 			)
 		)
-		(property "Mouser PN" "538-42820-2223 "
+		(property "Digikey PN" "WM11250-ND"
 			(at 187.96 52.07 0)
 			(effects
 				(font
@@ -9812,7 +9831,7 @@
 				(hide yes)
 			)
 		)
-		(property "Mouser URL" "https://www.mouser.com/ProductDetail/Molex/42820-2223?qs=ZGcr3cVYdJB0iag60bP9bg%3D%3D"
+		(property "Digikey URL" "https://www.digikey.com/en/products/detail/molex/0428202223/3310054"
 			(at 187.96 52.07 0)
 			(effects
 				(font
@@ -9884,15 +9903,6 @@
 				(hide yes)
 			)
 		)
-		(property "NOTE: " ""
-			(at 187.96 52.07 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
 		(property "On Line Components Part Number" ""
 			(at 187.96 52.07 0)
 			(effects
@@ -9912,15 +9922,6 @@
 			)
 		)
 		(property "PN" ""
-			(at 187.96 52.07 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Tolerance " ""
 			(at 187.96 52.07 0)
 			(effects
 				(font
@@ -10078,15 +10079,6 @@
 				(hide yes)
 			)
 		)
-		(property "NOTE: " ""
-			(at 41.91 120.65 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
 		(property "On Line Components Part Number" ""
 			(at 41.91 120.65 0)
 			(effects
@@ -10106,15 +10098,6 @@
 			)
 		)
 		(property "PN" ""
-			(at 41.91 120.65 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Tolerance " ""
 			(at 41.91 120.65 0)
 			(effects
 				(font
@@ -10143,7 +10126,7 @@
 	)
 	(symbol
 		(lib_id "Device:R")
-		(at 113.03 86.36 180)
+		(at 104.14 76.2 180)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
@@ -10151,7 +10134,7 @@
 		(dnp no)
 		(uuid "06fc352a-60e5-4287-bd77-a36d22d8e587")
 		(property "Reference" "R13"
-			(at 115.57 85.0899 0)
+			(at 106.68 74.9299 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -10159,8 +10142,8 @@
 				(justify right)
 			)
 		)
-		(property "Value" "10k"
-			(at 115.57 87.6299 0)
+		(property "Value" "15k"
+			(at 106.68 77.4699 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -10169,7 +10152,7 @@
 			)
 		)
 		(property "Footprint" "Resistor_SMD:R_0603_1608Metric_Pad0.98x0.95mm_HandSolder"
-			(at 114.808 86.36 90)
+			(at 105.918 76.2 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -10178,7 +10161,7 @@
 			)
 		)
 		(property "Datasheet" "https://yageogroup.com/content/datasheet/asset/file/PYU-RC_GROUP_51_ROHS_L"
-			(at 113.03 86.36 0)
+			(at 104.14 76.2 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -10187,7 +10170,7 @@
 			)
 		)
 		(property "Description" "Resistor"
-			(at 113.03 86.36 0)
+			(at 104.14 76.2 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -10195,8 +10178,8 @@
 				(hide yes)
 			)
 		)
-		(property "Digi PN" "311-10.0KHRTR-ND - Tape & Reel (TR)"
-			(at 113.03 86.36 0)
+		(property "Digikey PN" "311-15.0KHRTR-ND"
+			(at 104.14 76.2 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -10204,8 +10187,8 @@
 				(hide yes)
 			)
 		)
-		(property "Digikey URL" "https://www.digikey.com/en/products/detail/yageo/RC0603FR-0710KL/726880"
-			(at 113.03 86.36 0)
+		(property "Digikey URL" "https://www.digikey.com/en/products/detail/yageo/RC0603FR-0715KL/726953"
+			(at 104.14 76.2 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -10213,8 +10196,8 @@
 				(hide yes)
 			)
 		)
-		(property "MFG PN" "RC0603FR-0710KL"
-			(at 113.03 86.36 0)
+		(property "MFG PN" "RC0603FR-0715KL"
+			(at 104.14 76.2 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -10223,7 +10206,7 @@
 			)
 		)
 		(property "MFG Name" "YAGEO"
-			(at 113.03 86.36 0)
+			(at 104.14 76.2 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -10232,7 +10215,7 @@
 			)
 		)
 		(property "Datasheet #2" ""
-			(at 113.03 86.36 0)
+			(at 104.14 76.2 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -10241,7 +10224,7 @@
 			)
 		)
 		(property "Description_1" ""
-			(at 113.03 86.36 0)
+			(at 104.14 76.2 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -10250,7 +10233,7 @@
 			)
 		)
 		(property "Manufacturer" ""
-			(at 113.03 86.36 0)
+			(at 104.14 76.2 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -10259,7 +10242,7 @@
 			)
 		)
 		(property "Manufacturer_Name" ""
-			(at 113.03 86.36 0)
+			(at 104.14 76.2 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -10268,16 +10251,7 @@
 			)
 		)
 		(property "Manufacturer_Part_Number" ""
-			(at 113.03 86.36 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "NOTE: " ""
-			(at 113.03 86.36 0)
+			(at 104.14 76.2 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -10286,7 +10260,7 @@
 			)
 		)
 		(property "On Line Components Part Number" ""
-			(at 113.03 86.36 0)
+			(at 104.14 76.2 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -10295,7 +10269,7 @@
 			)
 		)
 		(property "On Line Components Price/Stock" ""
-			(at 113.03 86.36 0)
+			(at 104.14 76.2 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -10304,16 +10278,7 @@
 			)
 		)
 		(property "PN" ""
-			(at 113.03 86.36 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Tolerance " ""
-			(at 113.03 86.36 0)
+			(at 104.14 76.2 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -10403,7 +10368,7 @@
 	)
 	(symbol
 		(lib_id "Device:R")
-		(at 58.42 147.32 270)
+		(at 55.88 154.94 270)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
@@ -10411,7 +10376,7 @@
 		(dnp no)
 		(uuid "0772ccde-9fa2-4794-a6e9-d447fc88bb4f")
 		(property "Reference" "R7"
-			(at 58.42 153.67 90)
+			(at 55.88 160.02 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -10419,7 +10384,7 @@
 			)
 		)
 		(property "Value" "5k"
-			(at 58.42 151.13 90)
+			(at 55.88 157.48 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -10427,7 +10392,7 @@
 			)
 		)
 		(property "Footprint" "Resistor_THT:R_Axial_Power_L20.0mm_W6.4mm_P22.40mm"
-			(at 58.42 145.542 90)
+			(at 55.88 153.162 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -10436,7 +10401,7 @@
 			)
 		)
 		(property "Datasheet" "https://www.bourns.com/docs/Product-Datasheets/UB.pdf"
-			(at 58.42 147.32 0)
+			(at 55.88 154.94 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -10445,7 +10410,7 @@
 			)
 		)
 		(property "Description" "Resistor"
-			(at 58.42 147.32 0)
+			(at 55.88 154.94 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -10454,7 +10419,7 @@
 			)
 		)
 		(property "Digikey PN" "696-1085-ND"
-			(at 58.42 147.32 90)
+			(at 55.88 154.94 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -10463,7 +10428,7 @@
 			)
 		)
 		(property "Digikey URL" "https://www.digikey.com/en/products/detail/riedon-products-by-bourns/UB5C-5KF1/2176663"
-			(at 58.42 147.32 90)
+			(at 55.88 154.94 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -10472,7 +10437,7 @@
 			)
 		)
 		(property "MFG PN" "UB5C-5KF1"
-			(at 58.42 147.32 90)
+			(at 55.88 154.94 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -10481,7 +10446,7 @@
 			)
 		)
 		(property "MFG Name" "Riedon products by Bourns"
-			(at 58.42 147.32 90)
+			(at 55.88 154.94 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -10490,7 +10455,7 @@
 			)
 		)
 		(property "Datasheet #2" ""
-			(at 58.42 147.32 90)
+			(at 55.88 154.94 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -10499,7 +10464,7 @@
 			)
 		)
 		(property "Description_1" ""
-			(at 58.42 147.32 90)
+			(at 55.88 154.94 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -10508,7 +10473,7 @@
 			)
 		)
 		(property "Manufacturer" ""
-			(at 58.42 147.32 90)
+			(at 55.88 154.94 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -10517,7 +10482,7 @@
 			)
 		)
 		(property "Manufacturer_Name" ""
-			(at 58.42 147.32 90)
+			(at 55.88 154.94 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -10526,16 +10491,7 @@
 			)
 		)
 		(property "Manufacturer_Part_Number" ""
-			(at 58.42 147.32 90)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "NOTE: " ""
-			(at 58.42 147.32 90)
+			(at 55.88 154.94 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -10544,7 +10500,7 @@
 			)
 		)
 		(property "On Line Components Part Number" ""
-			(at 58.42 147.32 90)
+			(at 55.88 154.94 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -10553,7 +10509,7 @@
 			)
 		)
 		(property "On Line Components Price/Stock" ""
-			(at 58.42 147.32 90)
+			(at 55.88 154.94 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -10562,16 +10518,7 @@
 			)
 		)
 		(property "PN" ""
-			(at 58.42 147.32 90)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Tolerance " ""
-			(at 58.42 147.32 90)
+			(at 55.88 154.94 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -10595,202 +10542,6 @@
 		)
 	)
 	(symbol
-		(lib_id "Connector_Generic:Conn_01x02")
-		(at 391.16 144.78 0)
-		(unit 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(dnp no)
-		(fields_autoplaced yes)
-		(uuid "085dc2c2-67af-431a-a0ef-e29fd86bafec")
-		(property "Reference" "J6"
-			(at 393.7 144.7799 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-		)
-		(property "Value" "42820-2223"
-			(at 393.7 147.3199 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-		)
-		(property "Footprint" "FS_4_Global_Footprint_Library:CONN_SDA-42820-0002_02_RC_MOL (42820-2223)"
-			(at 391.16 144.78 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Datasheet" "https://www.molex.com/en-us/products/part-detail-pdf/428202223?display=pdf"
-			(at 391.16 144.78 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Description" "Generic connector, single row, 01x02, script generated (kicad-library-utils/schlib/autogen/connector/)"
-			(at 391.16 144.78 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Mouser PN" "538-42820-2223 "
-			(at 391.16 144.78 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Mouser URL" "https://www.mouser.com/ProductDetail/Molex/42820-2223?qs=ZGcr3cVYdJB0iag60bP9bg%3D%3D"
-			(at 391.16 144.78 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "MFG PN" "42820-2223 "
-			(at 391.16 144.78 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "MFG Name" "Molex"
-			(at 391.16 144.78 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Datasheet #2" ""
-			(at 391.16 144.78 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Description_1" ""
-			(at 391.16 144.78 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Manufacturer" ""
-			(at 391.16 144.78 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Manufacturer_Name" ""
-			(at 391.16 144.78 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Manufacturer_Part_Number" ""
-			(at 391.16 144.78 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "NOTE: " ""
-			(at 391.16 144.78 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "On Line Components Part Number" ""
-			(at 391.16 144.78 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "On Line Components Price/Stock" ""
-			(at 391.16 144.78 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "PN" ""
-			(at 391.16 144.78 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Tolerance " ""
-			(at 391.16 144.78 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(pin "1"
-			(uuid "f05f7784-b137-4724-b947-6fb5d866ebc3")
-		)
-		(pin "2"
-			(uuid "a6b36c5b-b52b-4934-8471-c8fe52b37b36")
-		)
-		(instances
-			(project "Power Electronics Board"
-				(path "/89c18bc7-bebe-4d17-a6e8-3a2f210bf7f7"
-					(reference "J6")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
 		(lib_id "Connector:TestPoint")
 		(at 82.55 132.08 0)
 		(unit 1)
@@ -10808,8 +10559,8 @@
 				(justify left)
 			)
 		)
-		(property "Value" "5.25V @TS 126V ~ 2.5V @TS 60V"
-			(at 85.09 130.048 0)
+		(property "Value" "5V @TS 150V ~ 2V @TS 60V"
+			(at 85.344 130.048 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -10889,15 +10640,6 @@
 				(hide yes)
 			)
 		)
-		(property "NOTE: " ""
-			(at 82.55 132.08 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
 		(property "On Line Components Part Number" ""
 			(at 82.55 132.08 0)
 			(effects
@@ -10917,15 +10659,6 @@
 			)
 		)
 		(property "PN" ""
-			(at 82.55 132.08 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Tolerance " ""
 			(at 82.55 132.08 0)
 			(effects
 				(font
@@ -11045,15 +10778,6 @@
 				(hide yes)
 			)
 		)
-		(property "NOTE: " ""
-			(at 325.12 187.96 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
 		(property "On Line Components Part Number" ""
 			(at 325.12 187.96 0)
 			(effects
@@ -11073,15 +10797,6 @@
 			)
 		)
 		(property "PN" ""
-			(at 325.12 187.96 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Tolerance " ""
 			(at 325.12 187.96 0)
 			(effects
 				(font
@@ -11237,15 +10952,6 @@
 				(hide yes)
 			)
 		)
-		(property "NOTE: " ""
-			(at 290.83 142.24 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
 		(property "On Line Components Part Number" ""
 			(at 290.83 142.24 0)
 			(effects
@@ -11265,15 +10971,6 @@
 			)
 		)
 		(property "PN" ""
-			(at 290.83 142.24 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Tolerance " ""
 			(at 290.83 142.24 0)
 			(effects
 				(font
@@ -11299,7 +10996,7 @@
 	)
 	(symbol
 		(lib_id "Amplifier_Operational:MCP6004")
-		(at 41.91 78.74 0)
+		(at 41.91 77.47 0)
 		(unit 2)
 		(exclude_from_sim no)
 		(in_bom yes)
@@ -11307,7 +11004,7 @@
 		(dnp no)
 		(uuid "0f02baba-b3ae-4024-8aea-6c081a2544c6")
 		(property "Reference" "U6"
-			(at 45.72 81.534 0)
+			(at 45.72 80.264 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -11315,15 +11012,15 @@
 			)
 		)
 		(property "Value" "MCP6004"
-			(at 45.72 84.074 0)
+			(at 45.72 82.804 0)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
 			)
 		)
-		(property "Footprint" "Package_TO_SOT_SMD:SOT-23_Handsoldering"
-			(at 40.64 76.2 0)
+		(property "Footprint" "Package_SO:SOIC-14_3.9x8.7mm_P1.27mm"
+			(at 40.64 74.93 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -11332,7 +11029,7 @@
 			)
 		)
 		(property "Datasheet" "https://ww1.microchip.com/downloads/en/DeviceDoc/MCP6001-1R-1U-2-4-1-MHz-Low-Power-Op-Amp-DS20001733L.pdf"
-			(at 43.18 73.66 0)
+			(at 43.18 72.39 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -11341,7 +11038,7 @@
 			)
 		)
 		(property "Description" "1MHz, Low-Power Op Amp, DIP-14/SOIC-14/TSSOP-14"
-			(at 41.91 78.74 0)
+			(at 41.91 77.47 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -11350,7 +11047,7 @@
 			)
 		)
 		(property "Digikey PN" "MCP6004-I/SL-ND"
-			(at 41.91 78.74 0)
+			(at 41.91 77.47 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -11359,7 +11056,7 @@
 			)
 		)
 		(property "Digikey URL" "https://www.digikey.com/en/products/detail/microchip-technology/MCP6004-I-SL/523061?gclsrc=aw.ds&gad_source=1&gad_campaignid=17922795960&gbraid=0AAAAADrbLlirMt8CnwTpqopm1INQzq2TO&gclid=Cj0KCQiAvtzLBhCPARIsALwhxdquhsBlAg_bKJq5CGOPXtiGSHN9oTmcxlIwgH0Oo6MGXvgyCW9ozEQaAsWSEALw_wcB"
-			(at 41.91 78.74 0)
+			(at 41.91 77.47 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -11368,7 +11065,7 @@
 			)
 		)
 		(property "MFG PN" "MCP6004-I/SL"
-			(at 41.91 78.74 0)
+			(at 41.91 77.47 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -11377,7 +11074,7 @@
 			)
 		)
 		(property "MFG Name" "Microchip Technology"
-			(at 41.91 78.74 0)
+			(at 41.91 77.47 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -11386,7 +11083,7 @@
 			)
 		)
 		(property "Datasheet #2" ""
-			(at 41.91 78.74 0)
+			(at 41.91 77.47 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -11395,7 +11092,7 @@
 			)
 		)
 		(property "Description_1" ""
-			(at 41.91 78.74 0)
+			(at 41.91 77.47 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -11404,7 +11101,7 @@
 			)
 		)
 		(property "Manufacturer" ""
-			(at 41.91 78.74 0)
+			(at 41.91 77.47 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -11413,7 +11110,7 @@
 			)
 		)
 		(property "Manufacturer_Name" ""
-			(at 41.91 78.74 0)
+			(at 41.91 77.47 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -11422,16 +11119,7 @@
 			)
 		)
 		(property "Manufacturer_Part_Number" ""
-			(at 41.91 78.74 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "NOTE: " ""
-			(at 41.91 78.74 0)
+			(at 41.91 77.47 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -11440,7 +11128,7 @@
 			)
 		)
 		(property "On Line Components Part Number" ""
-			(at 41.91 78.74 0)
+			(at 41.91 77.47 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -11449,7 +11137,7 @@
 			)
 		)
 		(property "On Line Components Price/Stock" ""
-			(at 41.91 78.74 0)
+			(at 41.91 77.47 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -11458,16 +11146,7 @@
 			)
 		)
 		(property "PN" ""
-			(at 41.91 78.74 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Tolerance " ""
-			(at 41.91 78.74 0)
+			(at 41.91 77.47 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -11730,15 +11409,6 @@
 				(hide yes)
 			)
 		)
-		(property "NOTE: " ""
-			(at 328.93 63.5 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
 		(property "On Line Components Part Number" ""
 			(at 328.93 63.5 0)
 			(effects
@@ -11758,15 +11428,6 @@
 			)
 		)
 		(property "PN" ""
-			(at 328.93 63.5 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Tolerance " ""
 			(at 328.93 63.5 0)
 			(effects
 				(font
@@ -11927,15 +11588,6 @@
 				(hide yes)
 			)
 		)
-		(property "NOTE: " ""
-			(at 308.61 71.12 90)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
 		(property "On Line Components Part Number" ""
 			(at 308.61 71.12 90)
 			(effects
@@ -11955,15 +11607,6 @@
 			)
 		)
 		(property "PN" ""
-			(at 308.61 71.12 90)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Tolerance " ""
 			(at 308.61 71.12 90)
 			(effects
 				(font
@@ -12086,15 +11729,6 @@
 				(hide yes)
 			)
 		)
-		(property "NOTE: " ""
-			(at 262.89 68.58 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
 		(property "On Line Components Part Number" ""
 			(at 262.89 68.58 0)
 			(effects
@@ -12114,15 +11748,6 @@
 			)
 		)
 		(property "PN" ""
-			(at 262.89 68.58 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Tolerance " ""
 			(at 262.89 68.58 0)
 			(effects
 				(font
@@ -12276,15 +11901,6 @@
 				(hide yes)
 			)
 		)
-		(property "NOTE: " ""
-			(at 44.45 177.8 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
 		(property "On Line Components Part Number" ""
 			(at 44.45 177.8 0)
 			(effects
@@ -12304,15 +11920,6 @@
 			)
 		)
 		(property "PN" ""
-			(at 44.45 177.8 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Tolerance " ""
 			(at 44.45 177.8 0)
 			(effects
 				(font
@@ -12478,15 +12085,6 @@
 				(hide yes)
 			)
 		)
-		(property "NOTE: " ""
-			(at 306.07 137.16 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
 		(property "On Line Components Part Number" ""
 			(at 306.07 137.16 0)
 			(effects
@@ -12506,15 +12104,6 @@
 			)
 		)
 		(property "PN" ""
-			(at 306.07 137.16 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Tolerance " ""
 			(at 306.07 137.16 0)
 			(effects
 				(font
@@ -12677,15 +12266,6 @@
 				(hide yes)
 			)
 		)
-		(property "NOTE: " ""
-			(at 275.59 149.86 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
 		(property "On Line Components Part Number" ""
 			(at 275.59 149.86 0)
 			(effects
@@ -12705,15 +12285,6 @@
 			)
 		)
 		(property "PN" ""
-			(at 275.59 149.86 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Tolerance " ""
 			(at 275.59 149.86 0)
 			(effects
 				(font
@@ -12983,15 +12554,6 @@
 				(hide yes)
 			)
 		)
-		(property "NOTE: " ""
-			(at 354.33 74.93 90)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
 		(property "On Line Components Part Number" ""
 			(at 354.33 74.93 90)
 			(effects
@@ -13011,15 +12573,6 @@
 			)
 		)
 		(property "PN" ""
-			(at 354.33 74.93 90)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Tolerance " ""
 			(at 354.33 74.93 90)
 			(effects
 				(font
@@ -13179,15 +12732,6 @@
 				(hide yes)
 			)
 		)
-		(property "NOTE: " ""
-			(at 275.59 128.27 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
 		(property "On Line Components Part Number" ""
 			(at 275.59 128.27 0)
 			(effects
@@ -13207,15 +12751,6 @@
 			)
 		)
 		(property "PN" ""
-			(at 275.59 128.27 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Tolerance " ""
 			(at 275.59 128.27 0)
 			(effects
 				(font
@@ -13299,6 +12834,182 @@
 			(project "Power Electronics Board"
 				(path "/89c18bc7-bebe-4d17-a6e8-3a2f210bf7f7"
 					(reference "#PWR022")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Connector_Generic:Conn_01x02")
+		(at 187.96 80.01 180)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "3176303c-feee-4928-82dd-f3bb98601a67")
+		(property "Reference" "J2"
+			(at 187.96 71.12 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "42820-2223"
+			(at 187.96 73.66 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" "FS_4_Global_Footprint_Library:CONN_SDA-42820-0002_02_RC_MOL (42820-2223)"
+			(at 187.96 80.01 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "https://www.molex.com/en-us/products/part-detail-pdf/428202223?display=pdf"
+			(at 187.96 80.01 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Generic connector, single row, 01x02, script generated (kicad-library-utils/schlib/autogen/connector/)"
+			(at 187.96 80.01 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Digikey PN" "WM11250-ND"
+			(at 187.96 80.01 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Digikey URL" "https://www.digikey.com/en/products/detail/molex/0428202223/3310054"
+			(at 187.96 80.01 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "MFG PN" "42820-2223 "
+			(at 187.96 80.01 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "MFG Name" "Molex"
+			(at 187.96 80.01 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet #2" ""
+			(at 187.96 80.01 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description_1" ""
+			(at 187.96 80.01 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Manufacturer" ""
+			(at 187.96 80.01 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Manufacturer_Name" ""
+			(at 187.96 80.01 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Manufacturer_Part_Number" ""
+			(at 187.96 80.01 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "On Line Components Part Number" ""
+			(at 187.96 80.01 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "On Line Components Price/Stock" ""
+			(at 187.96 80.01 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "PN" ""
+			(at 187.96 80.01 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "a191358e-9b97-4040-b1b9-52a34ec7ff14")
+		)
+		(pin "2"
+			(uuid "2c0bdbed-ce85-4501-bdb9-b87350628a66")
+		)
+		(instances
+			(project "Power Electronics Board"
+				(path "/89c18bc7-bebe-4d17-a6e8-3a2f210bf7f7"
+					(reference "J2")
 					(unit 1)
 				)
 			)
@@ -13439,15 +13150,6 @@
 				(hide yes)
 			)
 		)
-		(property "NOTE: " ""
-			(at 73.66 142.24 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
 		(property "On Line Components Part Number" ""
 			(at 73.66 142.24 0)
 			(effects
@@ -13467,15 +13169,6 @@
 			)
 		)
 		(property "PN" ""
-			(at 73.66 142.24 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Tolerance " ""
 			(at 73.66 142.24 0)
 			(effects
 				(font
@@ -13500,42 +13193,35 @@
 		)
 	)
 	(symbol
-		(lib_id "Connector_Generic:Conn_01x03")
-		(at 187.96 80.01 180)
+		(lib_id "Device:R")
+		(at 73.66 130.81 180)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
 		(on_board yes)
 		(dnp no)
 		(fields_autoplaced yes)
-		(uuid "34781bad-37ed-4d7b-a2bf-c8bd67ba886d")
-		(property "Reference" "J2"
-			(at 187.96 71.12 0)
+		(uuid "3418ae1f-695b-4fbe-8ecb-cc47565cfec0")
+		(property "Reference" "R6"
+			(at 76.2 129.5399 0)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
+				(justify right)
 			)
 		)
-		(property "Value" "42820-3212"
-			(at 187.96 73.66 0)
+		(property "Value" "145k"
+			(at 76.2 132.0799 0)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
+				(justify right)
 			)
 		)
-		(property "Footprint" "FS_4_Global_Footprint_Library:CONN_SDA-42820-0002_03_RC_MOL (42820-3212)"
-			(at 187.96 80.01 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Datasheet" "https://www.molex.com/en-us/products/part-detail-pdf/428203212?display=pdf"
-			(at 187.96 80.01 0)
+		(property "Footprint" "Resistor_SMD:R_0603_1608Metric_Pad0.98x0.95mm_HandSolder"
+			(at 75.438 130.81 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -13543,8 +13229,8 @@
 				(hide yes)
 			)
 		)
-		(property "Description" "Generic connector, single row, 01x03, script generated (kicad-library-utils/schlib/autogen/connector/)"
-			(at 187.96 80.01 0)
+		(property "Datasheet" "https://www.koaspeer.com/pdfs/RN73H.pdf"
+			(at 73.66 130.81 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -13552,8 +13238,8 @@
 				(hide yes)
 			)
 		)
-		(property "Mouser PN" "538-42820-3212"
-			(at 187.96 80.01 0)
+		(property "Description" "Resistor"
+			(at 73.66 130.81 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -13561,8 +13247,8 @@
 				(hide yes)
 			)
 		)
-		(property "Mouser URL" "https://www.mouser.com/ProductDetail/Molex/42820-3212?qs=sEyrqrY3Qg9j82pC94XnZA%3D%3D&srsltid=AfmBOorLw9JgUBtFfxE7X7D5_PG7ErBLaWs_iBBWjbk1WhfalpkuEMS4"
-			(at 187.96 80.01 0)
+		(property "Digi PN" "2019-RN73H1JTTD1453F100TR-ND"
+			(at 73.66 130.81 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -13570,8 +13256,8 @@
 				(hide yes)
 			)
 		)
-		(property "MFG PN" "42820-3212 "
-			(at 187.96 80.01 0)
+		(property "Digikey URL" "https://www.digikey.com/en/products/detail/koa-speer-electronics-inc/RN73H1JTTD1453F100/10685457"
+			(at 73.66 130.81 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -13579,8 +13265,17 @@
 				(hide yes)
 			)
 		)
-		(property "MFG Name" "Molex"
-			(at 187.96 80.01 0)
+		(property "MFG PN" "RN73H1JTTD1453F100"
+			(at 73.66 130.81 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "MFG Name" "KOA Speer Electronics, Inc."
+			(at 73.66 130.81 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -13589,7 +13284,7 @@
 			)
 		)
 		(property "Datasheet #2" ""
-			(at 187.96 80.01 0)
+			(at 73.66 130.81 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -13598,7 +13293,7 @@
 			)
 		)
 		(property "Description_1" ""
-			(at 187.96 80.01 0)
+			(at 73.66 130.81 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -13607,7 +13302,7 @@
 			)
 		)
 		(property "Manufacturer" ""
-			(at 187.96 80.01 0)
+			(at 73.66 130.81 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -13616,7 +13311,7 @@
 			)
 		)
 		(property "Manufacturer_Name" ""
-			(at 187.96 80.01 0)
+			(at 73.66 130.81 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -13625,16 +13320,7 @@
 			)
 		)
 		(property "Manufacturer_Part_Number" ""
-			(at 187.96 80.01 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "NOTE: " ""
-			(at 187.96 80.01 0)
+			(at 73.66 130.81 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -13643,7 +13329,7 @@
 			)
 		)
 		(property "On Line Components Part Number" ""
-			(at 187.96 80.01 0)
+			(at 73.66 130.81 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -13652,7 +13338,7 @@
 			)
 		)
 		(property "On Line Components Price/Stock" ""
-			(at 187.96 80.01 0)
+			(at 73.66 130.81 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -13661,16 +13347,7 @@
 			)
 		)
 		(property "PN" ""
-			(at 187.96 80.01 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Tolerance " ""
-			(at 187.96 80.01 0)
+			(at 73.66 130.81 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -13679,18 +13356,15 @@
 			)
 		)
 		(pin "1"
-			(uuid "dbe5368f-4f80-47ae-8c42-abcaedf19e4e")
+			(uuid "69c2344d-62de-46ca-a697-01277b618ef9")
 		)
 		(pin "2"
-			(uuid "54c6df57-e7d2-48e4-87b3-f29d621a1777")
-		)
-		(pin "3"
-			(uuid "a17473c8-b06b-40ec-897b-7069d774393a")
+			(uuid "f185e725-bc76-455c-9ecc-c004fca095fd")
 		)
 		(instances
 			(project "Power Electronics Board"
 				(path "/89c18bc7-bebe-4d17-a6e8-3a2f210bf7f7"
-					(reference "J2")
+					(reference "R6")
 					(unit 1)
 				)
 			)
@@ -13897,15 +13571,6 @@
 				(hide yes)
 			)
 		)
-		(property "NOTE: " ""
-			(at 275.59 140.97 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
 		(property "On Line Components Part Number" ""
 			(at 275.59 140.97 0)
 			(effects
@@ -13925,15 +13590,6 @@
 			)
 		)
 		(property "PN" ""
-			(at 275.59 140.97 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Tolerance " ""
 			(at 275.59 140.97 0)
 			(effects
 				(font
@@ -14164,15 +13820,6 @@
 				(hide yes)
 			)
 		)
-		(property "NOTE: " ""
-			(at 198.12 148.59 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
 		(property "On Line Components Part Number" ""
 			(at 198.12 148.59 0)
 			(effects
@@ -14192,15 +13839,6 @@
 			)
 		)
 		(property "PN" ""
-			(at 198.12 148.59 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Tolerance " ""
 			(at 198.12 148.59 0)
 			(effects
 				(font
@@ -14359,15 +13997,6 @@
 				(hide yes)
 			)
 		)
-		(property "NOTE: " ""
-			(at 138.43 138.43 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
 		(property "On Line Components Part Number" ""
 			(at 138.43 138.43 0)
 			(effects
@@ -14387,15 +14016,6 @@
 			)
 		)
 		(property "PN" ""
-			(at 138.43 138.43 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Tolerance " ""
 			(at 138.43 138.43 0)
 			(effects
 				(font
@@ -14555,15 +14175,6 @@
 				(hide yes)
 			)
 		)
-		(property "NOTE: " ""
-			(at 246.38 63.5 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
 		(property "On Line Components Part Number" ""
 			(at 246.38 63.5 0)
 			(effects
@@ -14583,15 +14194,6 @@
 			)
 		)
 		(property "PN" ""
-			(at 246.38 63.5 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Tolerance " ""
 			(at 246.38 63.5 0)
 			(effects
 				(font
@@ -14741,15 +14343,6 @@
 				(hide yes)
 			)
 		)
-		(property "NOTE: " ""
-			(at 298.45 77.47 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
 		(property "On Line Components Part Number" ""
 			(at 298.45 77.47 0)
 			(effects
@@ -14769,15 +14362,6 @@
 			)
 		)
 		(property "PN" ""
-			(at 298.45 77.47 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Tolerance " ""
 			(at 298.45 77.47 0)
 			(effects
 				(font
@@ -14803,7 +14387,7 @@
 	)
 	(symbol
 		(lib_id "Connector:TestPoint")
-		(at 374.65 127 0)
+		(at 374.65 125.73 0)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
@@ -14811,7 +14395,7 @@
 		(dnp no)
 		(uuid "5c25c55d-a895-40b9-ac8b-41ed68d9ccfd")
 		(property "Reference" "TP2"
-			(at 377.19 122.4279 0)
+			(at 377.19 121.1579 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -14820,7 +14404,7 @@
 			)
 		)
 		(property "Value" "12V"
-			(at 377.19 124.9679 0)
+			(at 377.19 123.6979 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -14829,7 +14413,7 @@
 			)
 		)
 		(property "Footprint" ""
-			(at 379.73 127 0)
+			(at 379.73 125.73 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -14838,7 +14422,7 @@
 			)
 		)
 		(property "Datasheet" "~"
-			(at 379.73 127 0)
+			(at 379.73 125.73 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -14847,7 +14431,7 @@
 			)
 		)
 		(property "Description" "test point"
-			(at 374.65 127 0)
+			(at 374.65 125.73 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -14856,7 +14440,7 @@
 			)
 		)
 		(property "Datasheet #2" ""
-			(at 374.65 127 0)
+			(at 374.65 125.73 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -14865,7 +14449,7 @@
 			)
 		)
 		(property "Description_1" ""
-			(at 374.65 127 0)
+			(at 374.65 125.73 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -14874,7 +14458,7 @@
 			)
 		)
 		(property "Manufacturer" ""
-			(at 374.65 127 0)
+			(at 374.65 125.73 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -14883,7 +14467,7 @@
 			)
 		)
 		(property "Manufacturer_Name" ""
-			(at 374.65 127 0)
+			(at 374.65 125.73 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -14892,16 +14476,7 @@
 			)
 		)
 		(property "Manufacturer_Part_Number" ""
-			(at 374.65 127 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "NOTE: " ""
-			(at 374.65 127 0)
+			(at 374.65 125.73 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -14910,7 +14485,7 @@
 			)
 		)
 		(property "On Line Components Part Number" ""
-			(at 374.65 127 0)
+			(at 374.65 125.73 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -14919,7 +14494,7 @@
 			)
 		)
 		(property "On Line Components Price/Stock" ""
-			(at 374.65 127 0)
+			(at 374.65 125.73 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -14928,16 +14503,7 @@
 			)
 		)
 		(property "PN" ""
-			(at 374.65 127 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Tolerance " ""
-			(at 374.65 127 0)
+			(at 374.65 125.73 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -14959,7 +14525,7 @@
 	)
 	(symbol
 		(lib_id "power:GND")
-		(at 220.98 104.14 0)
+		(at 218.44 104.14 0)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
@@ -14967,7 +14533,7 @@
 		(dnp no)
 		(uuid "5c4a951d-61cb-46dd-b657-cfc377c00bd8")
 		(property "Reference" "#PWR017"
-			(at 220.98 110.49 0)
+			(at 218.44 110.49 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -14976,7 +14542,7 @@
 			)
 		)
 		(property "Value" "GND"
-			(at 225.044 105.918 0)
+			(at 222.504 105.918 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -14984,7 +14550,7 @@
 			)
 		)
 		(property "Footprint" ""
-			(at 220.98 104.14 0)
+			(at 218.44 104.14 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -14993,7 +14559,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 220.98 104.14 0)
+			(at 218.44 104.14 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -15002,7 +14568,7 @@
 			)
 		)
 		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
-			(at 220.98 104.14 0)
+			(at 218.44 104.14 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -15024,7 +14590,7 @@
 	)
 	(symbol
 		(lib_id "Connector:TestPoint")
-		(at 369.57 152.4 0)
+		(at 369.57 153.67 0)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
@@ -15033,7 +14599,7 @@
 		(fields_autoplaced yes)
 		(uuid "5c795f94-b1b8-4f65-a4e4-46d49e0bfbff")
 		(property "Reference" "TP13"
-			(at 372.11 147.8279 0)
+			(at 372.11 149.0979 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -15042,7 +14608,7 @@
 			)
 		)
 		(property "Value" "GND"
-			(at 372.11 150.3679 0)
+			(at 372.11 151.6379 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -15051,7 +14617,7 @@
 			)
 		)
 		(property "Footprint" ""
-			(at 374.65 152.4 0)
+			(at 374.65 153.67 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -15060,7 +14626,7 @@
 			)
 		)
 		(property "Datasheet" "~"
-			(at 374.65 152.4 0)
+			(at 374.65 153.67 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -15069,7 +14635,7 @@
 			)
 		)
 		(property "Description" "test point"
-			(at 369.57 152.4 0)
+			(at 369.57 153.67 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -15078,7 +14644,7 @@
 			)
 		)
 		(property "Datasheet #2" ""
-			(at 369.57 152.4 0)
+			(at 369.57 153.67 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -15087,7 +14653,7 @@
 			)
 		)
 		(property "Description_1" ""
-			(at 369.57 152.4 0)
+			(at 369.57 153.67 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -15096,7 +14662,7 @@
 			)
 		)
 		(property "Manufacturer" ""
-			(at 369.57 152.4 0)
+			(at 369.57 153.67 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -15105,7 +14671,7 @@
 			)
 		)
 		(property "Manufacturer_Name" ""
-			(at 369.57 152.4 0)
+			(at 369.57 153.67 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -15114,16 +14680,7 @@
 			)
 		)
 		(property "Manufacturer_Part_Number" ""
-			(at 369.57 152.4 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "NOTE: " ""
-			(at 369.57 152.4 0)
+			(at 369.57 153.67 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -15132,7 +14689,7 @@
 			)
 		)
 		(property "On Line Components Part Number" ""
-			(at 369.57 152.4 0)
+			(at 369.57 153.67 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -15141,7 +14698,7 @@
 			)
 		)
 		(property "On Line Components Price/Stock" ""
-			(at 369.57 152.4 0)
+			(at 369.57 153.67 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -15150,16 +14707,7 @@
 			)
 		)
 		(property "PN" ""
-			(at 369.57 152.4 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Tolerance " ""
-			(at 369.57 152.4 0)
+			(at 369.57 153.67 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -15342,15 +14890,6 @@
 				(hide yes)
 			)
 		)
-		(property "NOTE: " ""
-			(at 125.73 134.62 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
 		(property "On Line Components Part Number" ""
 			(at 125.73 134.62 0)
 			(effects
@@ -15370,15 +14909,6 @@
 			)
 		)
 		(property "PN" ""
-			(at 125.73 134.62 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Tolerance " ""
 			(at 125.73 134.62 0)
 			(effects
 				(font
@@ -15505,8 +15035,186 @@
 		)
 	)
 	(symbol
+		(lib_id "Connector_Generic:Conn_01x02")
+		(at 391.16 146.05 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "6452f762-8fcc-4829-aa55-b0327b9aa4c3")
+		(property "Reference" "J6"
+			(at 393.7 146.0499 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Value" "42820-2223"
+			(at 393.7 148.5899 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Footprint" "FS_4_Global_Footprint_Library:CONN_SDA-42820-0002_02_RC_MOL (42820-2223)"
+			(at 391.16 146.05 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "https://www.molex.com/en-us/products/part-detail-pdf/428202223?display=pdf"
+			(at 391.16 146.05 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Generic connector, single row, 01x02, script generated (kicad-library-utils/schlib/autogen/connector/)"
+			(at 391.16 146.05 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Digikey PN" "WM11250-ND"
+			(at 391.16 146.05 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Digikey URL" "https://www.digikey.com/en/products/detail/molex/0428202223/3310054"
+			(at 391.16 146.05 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "MFG PN" "42820-2223 "
+			(at 391.16 146.05 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "MFG Name" "Molex"
+			(at 391.16 146.05 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet #2" ""
+			(at 391.16 146.05 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description_1" ""
+			(at 391.16 146.05 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Manufacturer" ""
+			(at 391.16 146.05 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Manufacturer_Name" ""
+			(at 391.16 146.05 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Manufacturer_Part_Number" ""
+			(at 391.16 146.05 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "On Line Components Part Number" ""
+			(at 391.16 146.05 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "On Line Components Price/Stock" ""
+			(at 391.16 146.05 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "PN" ""
+			(at 391.16 146.05 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "ba4f208d-19cf-4ded-a99e-8b07a856d8a1")
+		)
+		(pin "2"
+			(uuid "ccbea51b-28bb-4e0c-aefb-bdb5e237cea8")
+		)
+		(instances
+			(project "Power Electronics Board"
+				(path "/89c18bc7-bebe-4d17-a6e8-3a2f210bf7f7"
+					(reference "J6")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
 		(lib_id "power:+12V")
-		(at 368.3 125.73 0)
+		(at 368.3 124.46 0)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
@@ -15514,7 +15222,7 @@
 		(dnp no)
 		(uuid "654521db-f14a-4587-ae73-8555fdafca1d")
 		(property "Reference" "#PWR08"
-			(at 368.3 129.54 0)
+			(at 368.3 128.27 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -15523,7 +15231,7 @@
 			)
 		)
 		(property "Value" "+12V_Switched"
-			(at 368.3 120.904 0)
+			(at 368.3 119.634 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -15531,7 +15239,7 @@
 			)
 		)
 		(property "Footprint" ""
-			(at 368.3 125.73 0)
+			(at 368.3 124.46 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -15540,7 +15248,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 368.3 125.73 0)
+			(at 368.3 124.46 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -15549,7 +15257,7 @@
 			)
 		)
 		(property "Description" "Power symbol creates a global label with name \"+12V\""
-			(at 368.3 125.73 0)
+			(at 368.3 124.46 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -15720,15 +15428,6 @@
 				(hide yes)
 			)
 		)
-		(property "NOTE: " ""
-			(at 354.33 69.85 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
 		(property "On Line Components Part Number" ""
 			(at 354.33 69.85 0)
 			(effects
@@ -15748,15 +15447,6 @@
 			)
 		)
 		(property "PN" ""
-			(at 354.33 69.85 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Tolerance " ""
 			(at 354.33 69.85 0)
 			(effects
 				(font
@@ -15803,7 +15493,7 @@
 	)
 	(symbol
 		(lib_id "Connector_Generic:Conn_01x03")
-		(at 41.91 146.05 180)
+		(at 41.91 153.67 180)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
@@ -15812,7 +15502,7 @@
 		(fields_autoplaced yes)
 		(uuid "6e292118-bed2-45d4-9853-4e84440cdea9")
 		(property "Reference" "J5"
-			(at 41.91 137.16 0)
+			(at 41.91 144.78 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -15820,7 +15510,7 @@
 			)
 		)
 		(property "Value" "1053131103"
-			(at 41.91 139.7 0)
+			(at 41.91 147.32 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -15828,7 +15518,7 @@
 			)
 		)
 		(property "Footprint" "Connector_Molex:Molex_Nano-Fit_105313-xx03_1x03_P2.50mm_Horizontal"
-			(at 41.91 146.05 0)
+			(at 41.91 153.67 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -15837,7 +15527,7 @@
 			)
 		)
 		(property "Datasheet" "https://www.literature.molex.com/SQLImages/kelmscott/Molex/PDF_Images/987651-1223.PDF"
-			(at 41.91 146.05 0)
+			(at 41.91 153.67 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -15846,7 +15536,7 @@
 			)
 		)
 		(property "Description" "Generic connector, single row, 01x03, script generated (kicad-library-utils/schlib/autogen/connector/)"
-			(at 41.91 146.05 0)
+			(at 41.91 153.67 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -15855,7 +15545,7 @@
 			)
 		)
 		(property "Digi PN" "WM16894-ND"
-			(at 41.91 146.05 0)
+			(at 41.91 153.67 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -15864,7 +15554,7 @@
 			)
 		)
 		(property "Digikey URL" "https://www.digikey.com/en/products/detail/molex/1053131103/7693175"
-			(at 41.91 146.05 0)
+			(at 41.91 153.67 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -15873,7 +15563,7 @@
 			)
 		)
 		(property "MFG PN" "1053131103"
-			(at 41.91 146.05 0)
+			(at 41.91 153.67 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -15882,7 +15572,7 @@
 			)
 		)
 		(property "MFG Name" "Molex"
-			(at 41.91 146.05 0)
+			(at 41.91 153.67 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -15891,7 +15581,7 @@
 			)
 		)
 		(property "Datasheet #2" ""
-			(at 41.91 146.05 0)
+			(at 41.91 153.67 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -15900,7 +15590,7 @@
 			)
 		)
 		(property "Description_1" ""
-			(at 41.91 146.05 0)
+			(at 41.91 153.67 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -15909,7 +15599,7 @@
 			)
 		)
 		(property "Manufacturer" ""
-			(at 41.91 146.05 0)
+			(at 41.91 153.67 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -15918,7 +15608,7 @@
 			)
 		)
 		(property "Manufacturer_Name" ""
-			(at 41.91 146.05 0)
+			(at 41.91 153.67 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -15927,16 +15617,7 @@
 			)
 		)
 		(property "Manufacturer_Part_Number" ""
-			(at 41.91 146.05 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "NOTE: " ""
-			(at 41.91 146.05 0)
+			(at 41.91 153.67 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -15945,7 +15626,7 @@
 			)
 		)
 		(property "On Line Components Part Number" ""
-			(at 41.91 146.05 0)
+			(at 41.91 153.67 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -15954,7 +15635,7 @@
 			)
 		)
 		(property "On Line Components Price/Stock" ""
-			(at 41.91 146.05 0)
+			(at 41.91 153.67 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -15963,16 +15644,7 @@
 			)
 		)
 		(property "PN" ""
-			(at 41.91 146.05 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Tolerance " ""
-			(at 41.91 146.05 0)
+			(at 41.91 153.67 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -16000,7 +15672,7 @@
 	)
 	(symbol
 		(lib_id "Amplifier_Operational:MCP6004")
-		(at 58.42 78.74 0)
+		(at 58.42 77.47 0)
 		(unit 3)
 		(exclude_from_sim no)
 		(in_bom yes)
@@ -16008,7 +15680,7 @@
 		(dnp no)
 		(uuid "6eb49974-8c1c-4546-8fd3-0df2b1b48f48")
 		(property "Reference" "U6"
-			(at 62.23 81.534 0)
+			(at 62.23 80.264 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -16016,15 +15688,15 @@
 			)
 		)
 		(property "Value" "MCP6004"
-			(at 62.23 84.074 0)
+			(at 62.23 82.804 0)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
 			)
 		)
-		(property "Footprint" "Package_TO_SOT_SMD:SOT-23_Handsoldering"
-			(at 57.15 76.2 0)
+		(property "Footprint" "Package_SO:SOIC-14_3.9x8.7mm_P1.27mm"
+			(at 57.15 74.93 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -16033,7 +15705,7 @@
 			)
 		)
 		(property "Datasheet" "https://ww1.microchip.com/downloads/en/DeviceDoc/MCP6001-1R-1U-2-4-1-MHz-Low-Power-Op-Amp-DS20001733L.pdf"
-			(at 59.69 73.66 0)
+			(at 59.69 72.39 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -16042,7 +15714,7 @@
 			)
 		)
 		(property "Description" "1MHz, Low-Power Op Amp, DIP-14/SOIC-14/TSSOP-14"
-			(at 58.42 78.74 0)
+			(at 58.42 77.47 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -16051,7 +15723,7 @@
 			)
 		)
 		(property "Digikey PN" "MCP6004-I/SL-ND"
-			(at 58.42 78.74 0)
+			(at 58.42 77.47 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -16060,7 +15732,7 @@
 			)
 		)
 		(property "Digikey URL" "https://www.digikey.com/en/products/detail/microchip-technology/MCP6004-I-SL/523061?gclsrc=aw.ds&gad_source=1&gad_campaignid=17922795960&gbraid=0AAAAADrbLlirMt8CnwTpqopm1INQzq2TO&gclid=Cj0KCQiAvtzLBhCPARIsALwhxdquhsBlAg_bKJq5CGOPXtiGSHN9oTmcxlIwgH0Oo6MGXvgyCW9ozEQaAsWSEALw_wcB"
-			(at 58.42 78.74 0)
+			(at 58.42 77.47 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -16069,7 +15741,7 @@
 			)
 		)
 		(property "MFG PN" "MCP6004-I/SL"
-			(at 58.42 78.74 0)
+			(at 58.42 77.47 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -16078,7 +15750,7 @@
 			)
 		)
 		(property "MFG Name" "Microchip Technology"
-			(at 58.42 78.74 0)
+			(at 58.42 77.47 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -16087,7 +15759,7 @@
 			)
 		)
 		(property "Datasheet #2" ""
-			(at 58.42 78.74 0)
+			(at 58.42 77.47 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -16096,7 +15768,7 @@
 			)
 		)
 		(property "Description_1" ""
-			(at 58.42 78.74 0)
+			(at 58.42 77.47 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -16105,7 +15777,7 @@
 			)
 		)
 		(property "Manufacturer" ""
-			(at 58.42 78.74 0)
+			(at 58.42 77.47 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -16114,7 +15786,7 @@
 			)
 		)
 		(property "Manufacturer_Name" ""
-			(at 58.42 78.74 0)
+			(at 58.42 77.47 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -16123,16 +15795,7 @@
 			)
 		)
 		(property "Manufacturer_Part_Number" ""
-			(at 58.42 78.74 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "NOTE: " ""
-			(at 58.42 78.74 0)
+			(at 58.42 77.47 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -16141,7 +15804,7 @@
 			)
 		)
 		(property "On Line Components Part Number" ""
-			(at 58.42 78.74 0)
+			(at 58.42 77.47 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -16150,7 +15813,7 @@
 			)
 		)
 		(property "On Line Components Price/Stock" ""
-			(at 58.42 78.74 0)
+			(at 58.42 77.47 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -16159,16 +15822,7 @@
 			)
 		)
 		(property "PN" ""
-			(at 58.42 78.74 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Tolerance " ""
-			(at 58.42 78.74 0)
+			(at 58.42 77.47 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -16353,15 +16007,6 @@
 				(hide yes)
 			)
 		)
-		(property "NOTE: " ""
-			(at 154.94 132.08 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
 		(property "On Line Components Part Number" ""
 			(at 154.94 132.08 0)
 			(effects
@@ -16381,15 +16026,6 @@
 			)
 		)
 		(property "PN" ""
-			(at 154.94 132.08 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Tolerance " ""
 			(at 154.94 132.08 0)
 			(effects
 				(font
@@ -16414,202 +16050,6 @@
 			(project ""
 				(path "/89c18bc7-bebe-4d17-a6e8-3a2f210bf7f7"
 					(reference "U5")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
-		(lib_id "Device:R")
-		(at 73.66 130.81 180)
-		(unit 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(dnp no)
-		(fields_autoplaced yes)
-		(uuid "722ee015-cff8-4958-87c0-dd45d11db526")
-		(property "Reference" "R6"
-			(at 76.2 129.5399 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify right)
-			)
-		)
-		(property "Value" "115k"
-			(at 76.2 132.0799 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify right)
-			)
-		)
-		(property "Footprint" "Resistor_SMD:R_0603_1608Metric_Pad0.98x0.95mm_HandSolder"
-			(at 75.438 130.81 90)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Datasheet" "https://yageogroup.com/content/datasheet/asset/file/PYU-RC_GROUP_51_ROHS_L"
-			(at 73.66 130.81 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Description" "Resistor"
-			(at 73.66 130.81 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Digi PN" "311-115KHRTR-ND"
-			(at 73.66 130.81 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Digikey URL" "https://www.digikey.com/en/products/detail/yageo/RC0603FR-07115KL/726909"
-			(at 73.66 130.81 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "MFG PN" "RC0603FR-07115KL"
-			(at 73.66 130.81 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "MFG Name" "Yaego"
-			(at 73.66 130.81 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Datasheet #2" ""
-			(at 73.66 130.81 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Description_1" ""
-			(at 73.66 130.81 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Manufacturer" ""
-			(at 73.66 130.81 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Manufacturer_Name" ""
-			(at 73.66 130.81 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Manufacturer_Part_Number" ""
-			(at 73.66 130.81 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "NOTE: " ""
-			(at 73.66 130.81 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "On Line Components Part Number" ""
-			(at 73.66 130.81 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "On Line Components Price/Stock" ""
-			(at 73.66 130.81 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "PN" ""
-			(at 73.66 130.81 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Tolerance " ""
-			(at 73.66 130.81 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(pin "1"
-			(uuid "81e071bd-aaf0-4c35-81d3-4d6da9802d1e")
-		)
-		(pin "2"
-			(uuid "42b1f058-0624-49d4-b050-88e4c98ba80b")
-		)
-		(instances
-			(project "Power Electronics Board"
-				(path "/89c18bc7-bebe-4d17-a6e8-3a2f210bf7f7"
-					(reference "R6")
 					(unit 1)
 				)
 			)
@@ -16749,15 +16189,6 @@
 				(hide yes)
 			)
 		)
-		(property "NOTE: " ""
-			(at 147.32 134.62 90)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
 		(property "On Line Components Part Number" ""
 			(at 147.32 134.62 90)
 			(effects
@@ -16777,15 +16208,6 @@
 			)
 		)
 		(property "PN" ""
-			(at 147.32 134.62 90)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Tolerance " ""
 			(at 147.32 134.62 90)
 			(effects
 				(font
@@ -16804,211 +16226,6 @@
 			(project ""
 				(path "/89c18bc7-bebe-4d17-a6e8-3a2f210bf7f7"
 					(reference "R14")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
-		(lib_id "Connector_Generic:Conn_01x05")
-		(at 391.16 132.08 0)
-		(unit 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(dnp no)
-		(fields_autoplaced yes)
-		(uuid "73d18409-f8e9-496f-a722-a8e5a8871fa3")
-		(property "Reference" "J7"
-			(at 393.7 130.8099 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-		)
-		(property "Value" "1053131205"
-			(at 393.7 133.3499 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-		)
-		(property "Footprint" "Connector_Molex:Molex_Nano-Fit_105313-xx05_1x05_P2.50mm_Horizontal"
-			(at 391.16 132.08 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Datasheet" "https://www.literature.molex.com/SQLImages/kelmscott/Molex/PDF_Images/987651-1223.PDF"
-			(at 391.16 132.08 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Description" "Generic connector, single row, 01x05, script generated (kicad-library-utils/schlib/autogen/connector/)"
-			(at 391.16 132.08 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Digikey PN" "WM15138-ND"
-			(at 391.16 132.08 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Digikey URL" "https://www.digikey.com/en/products/detail/molex/1053131205/6164227"
-			(at 391.16 132.08 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "MFG PN" "1053131205"
-			(at 391.16 132.08 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "MFG Name" "Molex"
-			(at 391.16 132.08 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Datasheet #2" ""
-			(at 391.16 132.08 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Description_1" ""
-			(at 391.16 132.08 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Manufacturer" ""
-			(at 391.16 132.08 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Manufacturer_Name" ""
-			(at 391.16 132.08 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Manufacturer_Part_Number" ""
-			(at 391.16 132.08 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "NOTE: " ""
-			(at 391.16 132.08 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "On Line Components Part Number" ""
-			(at 391.16 132.08 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "On Line Components Price/Stock" ""
-			(at 391.16 132.08 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "PN" ""
-			(at 391.16 132.08 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Tolerance " ""
-			(at 391.16 132.08 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(pin "3"
-			(uuid "7cce42c6-3e42-4cff-a7c1-eb0e6b6f69e3")
-		)
-		(pin "4"
-			(uuid "208eafaa-fdf5-4a5d-8824-40b3cf41cc36")
-		)
-		(pin "2"
-			(uuid "9d71390f-1740-4440-8e00-d3d3ca6a9b97")
-		)
-		(pin "5"
-			(uuid "eb37b21b-363e-4940-94d9-dd9b08ed6976")
-		)
-		(pin "1"
-			(uuid "7c73952a-3ada-4e67-8db6-d7ed826a280b")
-		)
-		(instances
-			(project ""
-				(path "/89c18bc7-bebe-4d17-a6e8-3a2f210bf7f7"
-					(reference "J7")
 					(unit 1)
 				)
 			)
@@ -17212,15 +16429,6 @@
 				(hide yes)
 			)
 		)
-		(property "NOTE: " ""
-			(at 294.64 191.77 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
 		(property "On Line Components Part Number" ""
 			(at 294.64 191.77 0)
 			(effects
@@ -17240,15 +16448,6 @@
 			)
 		)
 		(property "PN" ""
-			(at 294.64 191.77 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Tolerance " ""
 			(at 294.64 191.77 0)
 			(effects
 				(font
@@ -17351,7 +16550,7 @@
 	)
 	(symbol
 		(lib_id "Connector:TestPoint")
-		(at 130.81 208.28 0)
+		(at 134.62 208.28 0)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
@@ -17359,7 +16558,7 @@
 		(dnp no)
 		(uuid "79a2e843-fe87-45d1-9837-819054fdad93")
 		(property "Reference" "TP7"
-			(at 134.366 202.438 0)
+			(at 138.176 202.438 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -17367,7 +16566,7 @@
 			)
 		)
 		(property "Value" "5V Isolated"
-			(at 137.922 204.47 0)
+			(at 141.732 204.47 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -17375,7 +16574,7 @@
 			)
 		)
 		(property "Footprint" ""
-			(at 135.89 208.28 0)
+			(at 139.7 208.28 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -17384,7 +16583,7 @@
 			)
 		)
 		(property "Datasheet" "~"
-			(at 135.89 208.28 0)
+			(at 139.7 208.28 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -17393,7 +16592,7 @@
 			)
 		)
 		(property "Description" "test point"
-			(at 130.81 208.28 0)
+			(at 134.62 208.28 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -17402,7 +16601,7 @@
 			)
 		)
 		(property "Datasheet #2" ""
-			(at 130.81 208.28 0)
+			(at 134.62 208.28 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -17411,7 +16610,7 @@
 			)
 		)
 		(property "Description_1" ""
-			(at 130.81 208.28 0)
+			(at 134.62 208.28 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -17420,7 +16619,7 @@
 			)
 		)
 		(property "Manufacturer" ""
-			(at 130.81 208.28 0)
+			(at 134.62 208.28 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -17429,7 +16628,7 @@
 			)
 		)
 		(property "Manufacturer_Name" ""
-			(at 130.81 208.28 0)
+			(at 134.62 208.28 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -17438,16 +16637,7 @@
 			)
 		)
 		(property "Manufacturer_Part_Number" ""
-			(at 130.81 208.28 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "NOTE: " ""
-			(at 130.81 208.28 0)
+			(at 134.62 208.28 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -17456,7 +16646,7 @@
 			)
 		)
 		(property "On Line Components Part Number" ""
-			(at 130.81 208.28 0)
+			(at 134.62 208.28 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -17465,7 +16655,7 @@
 			)
 		)
 		(property "On Line Components Price/Stock" ""
-			(at 130.81 208.28 0)
+			(at 134.62 208.28 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -17474,16 +16664,7 @@
 			)
 		)
 		(property "PN" ""
-			(at 130.81 208.28 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Tolerance " ""
-			(at 130.81 208.28 0)
+			(at 134.62 208.28 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -17767,15 +16948,6 @@
 				(hide yes)
 			)
 		)
-		(property "NOTE: " ""
-			(at 262.89 76.2 90)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
 		(property "On Line Components Part Number" ""
 			(at 262.89 76.2 90)
 			(effects
@@ -17803,15 +16975,6 @@
 				(hide yes)
 			)
 		)
-		(property "Tolerance " ""
-			(at 262.89 76.2 90)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
 		(pin "1"
 			(uuid "89d37798-e9ea-4195-adb9-ce4fc20e7a08")
 		)
@@ -17829,7 +16992,7 @@
 	)
 	(symbol
 		(lib_id "power:GND")
-		(at 194.31 104.14 0)
+		(at 193.04 86.36 0)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
@@ -17837,7 +17000,7 @@
 		(dnp no)
 		(uuid "84d85b67-6c88-4624-980b-f43c7d90e298")
 		(property "Reference" "#PWR023"
-			(at 194.31 110.49 0)
+			(at 193.04 92.71 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -17846,7 +17009,7 @@
 			)
 		)
 		(property "Value" "GND"
-			(at 198.374 105.918 0)
+			(at 197.104 88.138 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -17854,7 +17017,7 @@
 			)
 		)
 		(property "Footprint" ""
-			(at 194.31 104.14 0)
+			(at 193.04 86.36 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -17863,7 +17026,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 194.31 104.14 0)
+			(at 193.04 86.36 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -17872,7 +17035,7 @@
 			)
 		)
 		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
-			(at 194.31 104.14 0)
+			(at 193.04 86.36 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -18034,15 +17197,6 @@
 				(hide yes)
 			)
 		)
-		(property "NOTE: " ""
-			(at 383.54 95.25 90)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
 		(property "On Line Components Part Number" ""
 			(at 383.54 95.25 90)
 			(effects
@@ -18070,15 +17224,6 @@
 				(hide yes)
 			)
 		)
-		(property "Tolerance " ""
-			(at 383.54 95.25 90)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
 		(pin "1"
 			(uuid "323e43c1-5799-4420-83ec-73b4111a3433")
 		)
@@ -18096,7 +17241,7 @@
 	)
 	(symbol
 		(lib_id "power:+12V")
-		(at 220.98 68.58 0)
+		(at 218.44 68.58 0)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
@@ -18104,7 +17249,7 @@
 		(dnp no)
 		(uuid "877a172c-a974-498d-9b07-41d898275ff9")
 		(property "Reference" "#PWR018"
-			(at 220.98 72.39 0)
+			(at 218.44 72.39 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -18113,7 +17258,7 @@
 			)
 		)
 		(property "Value" "+12V_LV"
-			(at 220.98 63.5 0)
+			(at 218.44 63.5 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -18121,7 +17266,7 @@
 			)
 		)
 		(property "Footprint" ""
-			(at 220.98 68.58 0)
+			(at 218.44 68.58 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -18130,7 +17275,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 220.98 68.58 0)
+			(at 218.44 68.58 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -18139,7 +17284,7 @@
 			)
 		)
 		(property "Description" "Power symbol creates a global label with name \"+12V\""
-			(at 220.98 68.58 0)
+			(at 218.44 68.58 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -18357,15 +17502,6 @@
 				(hide yes)
 			)
 		)
-		(property "NOTE: " ""
-			(at 325.12 191.77 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
 		(property "On Line Components Part Number" ""
 			(at 325.12 191.77 0)
 			(effects
@@ -18385,15 +17521,6 @@
 			)
 		)
 		(property "PN" ""
-			(at 325.12 191.77 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Tolerance " ""
 			(at 325.12 191.77 0)
 			(effects
 				(font
@@ -18565,15 +17692,6 @@
 				(hide yes)
 			)
 		)
-		(property "NOTE: " ""
-			(at 246.38 76.2 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
 		(property "On Line Components Part Number" ""
 			(at 246.38 76.2 0)
 			(effects
@@ -18593,15 +17711,6 @@
 			)
 		)
 		(property "PN" ""
-			(at 246.38 76.2 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Tolerance " ""
 			(at 246.38 76.2 0)
 			(effects
 				(font
@@ -18808,15 +17917,6 @@
 				(hide yes)
 			)
 		)
-		(property "NOTE: " ""
-			(at 199.39 179.07 90)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
 		(property "On Line Components Part Number" ""
 			(at 199.39 179.07 90)
 			(effects
@@ -18836,15 +17936,6 @@
 			)
 		)
 		(property "PN" ""
-			(at 199.39 179.07 90)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Tolerance " ""
 			(at 199.39 179.07 90)
 			(effects
 				(font
@@ -19003,15 +18094,6 @@
 				(hide yes)
 			)
 		)
-		(property "NOTE: " ""
-			(at 273.05 80.01 90)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
 		(property "On Line Components Part Number" ""
 			(at 273.05 80.01 90)
 			(effects
@@ -19031,15 +18113,6 @@
 			)
 		)
 		(property "PN" ""
-			(at 273.05 80.01 90)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Tolerance " ""
 			(at 273.05 80.01 90)
 			(effects
 				(font
@@ -19201,15 +18274,6 @@
 				(hide yes)
 			)
 		)
-		(property "NOTE: " ""
-			(at 321.31 58.42 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
 		(property "On Line Components Part Number" ""
 			(at 321.31 58.42 0)
 			(effects
@@ -19229,15 +18293,6 @@
 			)
 		)
 		(property "PN" ""
-			(at 321.31 58.42 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Tolerance " ""
 			(at 321.31 58.42 0)
 			(effects
 				(font
@@ -19396,15 +18451,6 @@
 				(hide yes)
 			)
 		)
-		(property "NOTE: " ""
-			(at 247.65 135.89 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
 		(property "On Line Components Part Number" ""
 			(at 247.65 135.89 0)
 			(effects
@@ -19424,15 +18470,6 @@
 			)
 		)
 		(property "PN" ""
-			(at 247.65 135.89 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Tolerance " ""
 			(at 247.65 135.89 0)
 			(effects
 				(font
@@ -19476,7 +18513,7 @@
 	)
 	(symbol
 		(lib_id "Connector:TestPoint")
-		(at 203.2 96.52 0)
+		(at 200.66 96.52 0)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
@@ -19484,25 +18521,23 @@
 		(dnp no)
 		(uuid "998c65c1-0436-466b-b3d9-b47bcd380dfe")
 		(property "Reference" "TP10"
-			(at 199.644 87.884 0)
+			(at 200.66 98.552 0)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
-				(justify left)
 			)
 		)
 		(property "Value" "TS Ready"
-			(at 199.644 90.424 0)
+			(at 200.66 101.092 0)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
-				(justify left)
 			)
 		)
 		(property "Footprint" ""
-			(at 208.28 96.52 0)
+			(at 205.74 96.52 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -19511,7 +18546,7 @@
 			)
 		)
 		(property "Datasheet" "~"
-			(at 208.28 96.52 0)
+			(at 205.74 96.52 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -19520,7 +18555,7 @@
 			)
 		)
 		(property "Description" "test point"
-			(at 203.2 96.52 0)
+			(at 200.66 96.52 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -19529,7 +18564,7 @@
 			)
 		)
 		(property "Datasheet #2" ""
-			(at 203.2 96.52 0)
+			(at 200.66 96.52 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -19538,7 +18573,7 @@
 			)
 		)
 		(property "Description_1" ""
-			(at 203.2 96.52 0)
+			(at 200.66 96.52 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -19547,7 +18582,7 @@
 			)
 		)
 		(property "Manufacturer" ""
-			(at 203.2 96.52 0)
+			(at 200.66 96.52 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -19556,7 +18591,7 @@
 			)
 		)
 		(property "Manufacturer_Name" ""
-			(at 203.2 96.52 0)
+			(at 200.66 96.52 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -19565,16 +18600,7 @@
 			)
 		)
 		(property "Manufacturer_Part_Number" ""
-			(at 203.2 96.52 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "NOTE: " ""
-			(at 203.2 96.52 0)
+			(at 200.66 96.52 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -19583,7 +18609,7 @@
 			)
 		)
 		(property "On Line Components Part Number" ""
-			(at 203.2 96.52 0)
+			(at 200.66 96.52 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -19592,7 +18618,7 @@
 			)
 		)
 		(property "On Line Components Price/Stock" ""
-			(at 203.2 96.52 0)
+			(at 200.66 96.52 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -19601,16 +18627,7 @@
 			)
 		)
 		(property "PN" ""
-			(at 203.2 96.52 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Tolerance " ""
-			(at 203.2 96.52 0)
+			(at 200.66 96.52 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -19632,7 +18649,7 @@
 	)
 	(symbol
 		(lib_id "Connector:TestPoint")
-		(at 367.03 135.89 0)
+		(at 367.03 134.62 0)
 		(mirror y)
 		(unit 1)
 		(exclude_from_sim no)
@@ -19641,7 +18658,7 @@
 		(dnp no)
 		(uuid "9fefe154-0e48-4c16-bfb1-61092a6049a4")
 		(property "Reference" "TP4"
-			(at 364.49 131.3179 0)
+			(at 364.49 130.0479 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -19650,7 +18667,7 @@
 			)
 		)
 		(property "Value" "Shutdown Final"
-			(at 364.49 133.8579 0)
+			(at 364.49 132.5879 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -19659,7 +18676,7 @@
 			)
 		)
 		(property "Footprint" ""
-			(at 361.95 135.89 0)
+			(at 361.95 134.62 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -19668,7 +18685,7 @@
 			)
 		)
 		(property "Datasheet" "~"
-			(at 361.95 135.89 0)
+			(at 361.95 134.62 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -19677,7 +18694,7 @@
 			)
 		)
 		(property "Description" "test point"
-			(at 367.03 135.89 0)
+			(at 367.03 134.62 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -19686,7 +18703,7 @@
 			)
 		)
 		(property "Datasheet #2" ""
-			(at 367.03 135.89 0)
+			(at 367.03 134.62 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -19695,7 +18712,7 @@
 			)
 		)
 		(property "Description_1" ""
-			(at 367.03 135.89 0)
+			(at 367.03 134.62 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -19704,7 +18721,7 @@
 			)
 		)
 		(property "Manufacturer" ""
-			(at 367.03 135.89 0)
+			(at 367.03 134.62 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -19713,7 +18730,7 @@
 			)
 		)
 		(property "Manufacturer_Name" ""
-			(at 367.03 135.89 0)
+			(at 367.03 134.62 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -19722,16 +18739,7 @@
 			)
 		)
 		(property "Manufacturer_Part_Number" ""
-			(at 367.03 135.89 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "NOTE: " ""
-			(at 367.03 135.89 0)
+			(at 367.03 134.62 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -19740,7 +18748,7 @@
 			)
 		)
 		(property "On Line Components Part Number" ""
-			(at 367.03 135.89 0)
+			(at 367.03 134.62 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -19749,7 +18757,7 @@
 			)
 		)
 		(property "On Line Components Price/Stock" ""
-			(at 367.03 135.89 0)
+			(at 367.03 134.62 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -19758,16 +18766,7 @@
 			)
 		)
 		(property "PN" ""
-			(at 367.03 135.89 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Tolerance " ""
-			(at 367.03 135.89 0)
+			(at 367.03 134.62 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -19886,15 +18885,6 @@
 				(hide yes)
 			)
 		)
-		(property "NOTE: " ""
-			(at 283.21 133.35 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
 		(property "On Line Components Part Number" ""
 			(at 283.21 133.35 0)
 			(effects
@@ -19914,15 +18904,6 @@
 			)
 		)
 		(property "PN" ""
-			(at 283.21 133.35 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Tolerance " ""
 			(at 283.21 133.35 0)
 			(effects
 				(font
@@ -20022,186 +19003,8 @@
 		)
 	)
 	(symbol
-		(lib_id "Diode:1N4007")
-		(at 212.09 78.74 90)
-		(mirror x)
-		(unit 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(dnp no)
-		(uuid "a72dc98e-5cd2-4e39-9567-c738d2c400a4")
-		(property "Reference" "D2"
-			(at 209.55 77.4699 90)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-		)
-		(property "Value" "1N4007"
-			(at 209.55 80.0099 90)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-		)
-		(property "Footprint" "Diode_THT:D_DO-41_SOD81_P10.16mm_Horizontal"
-			(at 216.535 78.74 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Datasheet" "http://www.vishay.com/docs/88503/1n4001.pdf"
-			(at 212.09 78.74 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Description" "1000V 1A General Purpose Rectifier Diode, DO-41"
-			(at 212.09 78.74 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Sim.Device" "D"
-			(at 212.09 78.74 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Sim.Pins" "1=K 2=A"
-			(at 212.09 78.74 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Datasheet #2" ""
-			(at 212.09 78.74 90)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Description_1" ""
-			(at 212.09 78.74 90)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Manufacturer" ""
-			(at 212.09 78.74 90)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Manufacturer_Name" ""
-			(at 212.09 78.74 90)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Manufacturer_Part_Number" ""
-			(at 212.09 78.74 90)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "NOTE: " ""
-			(at 212.09 78.74 90)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "On Line Components Part Number" ""
-			(at 212.09 78.74 90)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "On Line Components Price/Stock" ""
-			(at 212.09 78.74 90)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "PN" ""
-			(at 212.09 78.74 90)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Tolerance " ""
-			(at 212.09 78.74 90)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(pin "1"
-			(uuid "82a4cb76-3cc8-4b25-9c5a-5c2ae07adb0b")
-		)
-		(pin "2"
-			(uuid "4831deb3-dda3-441a-8b59-57efdc00e1e1")
-		)
-		(instances
-			(project "Power Electronics Board"
-				(path "/89c18bc7-bebe-4d17-a6e8-3a2f210bf7f7"
-					(reference "D2")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
 		(lib_id "Relay:Relay_SPST-NO")
-		(at 226.06 78.74 0)
+		(at 223.52 78.74 0)
 		(mirror x)
 		(unit 1)
 		(exclude_from_sim no)
@@ -20210,7 +19013,7 @@
 		(dnp no)
 		(uuid "ae9876eb-2c0e-4b3e-8cef-6155481e3f85")
 		(property "Reference" "K2"
-			(at 236.474 89.408 0)
+			(at 233.934 89.408 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -20218,7 +19021,7 @@
 			)
 		)
 		(property "Value" "AZ2150-1A-12DEF"
-			(at 244.348 86.868 0)
+			(at 241.808 86.868 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -20226,7 +19029,7 @@
 			)
 		)
 		(property "Footprint" "Library:AZ2150_AMZ"
-			(at 237.49 77.47 0)
+			(at 234.95 77.47 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -20236,7 +19039,7 @@
 			)
 		)
 		(property "Datasheet" "https://www.azettler.com/pdfs/AZ2150.pdf"
-			(at 226.06 78.74 0)
+			(at 223.52 78.74 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -20245,7 +19048,7 @@
 			)
 		)
 		(property "Description" "Relay SPST, normally open, EN50005"
-			(at 226.06 78.74 0)
+			(at 223.52 78.74 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -20254,7 +19057,7 @@
 			)
 		)
 		(property "Digikey PN" "3385-AZ2150-1A-24DEF-ND"
-			(at 226.06 78.74 0)
+			(at 223.52 78.74 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -20263,7 +19066,7 @@
 			)
 		)
 		(property "Digikey URL" "https://www.digikey.com/en/products/detail/american-zettler/AZ2150-1A-24DEF/12171627"
-			(at 226.06 78.74 0)
+			(at 223.52 78.74 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -20272,7 +19075,7 @@
 			)
 		)
 		(property "MFG PN" "AZ2150-1A-24DEF"
-			(at 226.06 78.74 0)
+			(at 223.52 78.74 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -20281,7 +19084,7 @@
 			)
 		)
 		(property "MFG Name" "American Zettler"
-			(at 226.06 78.74 0)
+			(at 223.52 78.74 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -20290,7 +19093,7 @@
 			)
 		)
 		(property "Datasheet #2" ""
-			(at 226.06 78.74 0)
+			(at 223.52 78.74 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -20299,7 +19102,7 @@
 			)
 		)
 		(property "Description_1" ""
-			(at 226.06 78.74 0)
+			(at 223.52 78.74 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -20308,7 +19111,7 @@
 			)
 		)
 		(property "Manufacturer" ""
-			(at 226.06 78.74 0)
+			(at 223.52 78.74 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -20317,7 +19120,7 @@
 			)
 		)
 		(property "Manufacturer_Name" ""
-			(at 226.06 78.74 0)
+			(at 223.52 78.74 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -20326,16 +19129,7 @@
 			)
 		)
 		(property "Manufacturer_Part_Number" ""
-			(at 226.06 78.74 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "NOTE: " ""
-			(at 226.06 78.74 0)
+			(at 223.52 78.74 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -20344,7 +19138,7 @@
 			)
 		)
 		(property "On Line Components Part Number" ""
-			(at 226.06 78.74 0)
+			(at 223.52 78.74 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -20353,7 +19147,7 @@
 			)
 		)
 		(property "On Line Components Price/Stock" ""
-			(at 226.06 78.74 0)
+			(at 223.52 78.74 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -20362,16 +19156,7 @@
 			)
 		)
 		(property "PN" ""
-			(at 226.06 78.74 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Tolerance " ""
-			(at 226.06 78.74 0)
+			(at 223.52 78.74 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -20429,7 +19214,7 @@
 				(hide yes)
 			)
 		)
-		(property "Footprint" "Package_TO_SOT_SMD:SOT-23_Handsoldering"
+		(property "Footprint" "Package_SO:SOIC-14_3.9x8.7mm_P1.27mm"
 			(at 285.75 68.58 0)
 			(effects
 				(font
@@ -20537,15 +19322,6 @@
 				(hide yes)
 			)
 		)
-		(property "NOTE: " ""
-			(at 287.02 71.12 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
 		(property "On Line Components Part Number" ""
 			(at 287.02 71.12 0)
 			(effects
@@ -20565,15 +19341,6 @@
 			)
 		)
 		(property "PN" ""
-			(at 287.02 71.12 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Tolerance " ""
 			(at 287.02 71.12 0)
 			(effects
 				(font
@@ -20658,7 +19425,7 @@
 				)
 			)
 		)
-		(property "Footprint" "Package_TO_SOT_SMD:SOT-23_Handsoldering"
+		(property "Footprint" "Package_SO:SOIC-14_3.9x8.7mm_P1.27mm"
 			(at 285.75 68.58 0)
 			(effects
 				(font
@@ -20766,15 +19533,6 @@
 				(hide yes)
 			)
 		)
-		(property "NOTE: " ""
-			(at 287.02 71.12 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
 		(property "On Line Components Part Number" ""
 			(at 287.02 71.12 0)
 			(effects
@@ -20794,15 +19552,6 @@
 			)
 		)
 		(property "PN" ""
-			(at 287.02 71.12 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Tolerance " ""
 			(at 287.02 71.12 0)
 			(effects
 				(font
@@ -20888,7 +19637,7 @@
 				)
 			)
 		)
-		(property "Footprint" "Package_TO_SOT_SMD:SOT-23_Handsoldering"
+		(property "Footprint" "Package_SO:SOIC-14_3.9x8.7mm_P1.27mm"
 			(at 242.57 180.34 0)
 			(effects
 				(font
@@ -20996,15 +19745,6 @@
 				(hide yes)
 			)
 		)
-		(property "NOTE: " ""
-			(at 243.84 182.88 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
 		(property "On Line Components Part Number" ""
 			(at 243.84 182.88 0)
 			(effects
@@ -21024,15 +19764,6 @@
 			)
 		)
 		(property "PN" ""
-			(at 243.84 182.88 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Tolerance " ""
 			(at 243.84 182.88 0)
 			(effects
 				(font
@@ -21118,7 +19849,7 @@
 				)
 			)
 		)
-		(property "Footprint" "Package_TO_SOT_SMD:SOT-23_Handsoldering"
+		(property "Footprint" "Package_SO:SOIC-14_3.9x8.7mm_P1.27mm"
 			(at 226.06 180.34 0)
 			(effects
 				(font
@@ -21226,15 +19957,6 @@
 				(hide yes)
 			)
 		)
-		(property "NOTE: " ""
-			(at 227.33 182.88 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
 		(property "On Line Components Part Number" ""
 			(at 227.33 182.88 0)
 			(effects
@@ -21254,15 +19976,6 @@
 			)
 		)
 		(property "PN" ""
-			(at 227.33 182.88 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Tolerance " ""
 			(at 227.33 182.88 0)
 			(effects
 				(font
@@ -21348,7 +20061,7 @@
 				)
 			)
 		)
-		(property "Footprint" "Package_TO_SOT_SMD:SOT-23_Handsoldering"
+		(property "Footprint" "Package_SO:SOIC-14_3.9x8.7mm_P1.27mm"
 			(at 259.08 180.34 0)
 			(effects
 				(font
@@ -21456,15 +20169,6 @@
 				(hide yes)
 			)
 		)
-		(property "NOTE: " ""
-			(at 260.35 182.88 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
 		(property "On Line Components Part Number" ""
 			(at 260.35 182.88 0)
 			(effects
@@ -21484,15 +20188,6 @@
 			)
 		)
 		(property "PN" ""
-			(at 260.35 182.88 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Tolerance " ""
 			(at 260.35 182.88 0)
 			(effects
 				(font
@@ -21554,7 +20249,7 @@
 	)
 	(symbol
 		(lib_id "power:GND")
-		(at 377.19 156.21 0)
+		(at 377.19 157.48 0)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
@@ -21562,7 +20257,7 @@
 		(dnp no)
 		(uuid "bacc4aec-fe22-4724-b256-90f88db8f477")
 		(property "Reference" "#PWR029"
-			(at 377.19 162.56 0)
+			(at 377.19 163.83 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -21571,7 +20266,7 @@
 			)
 		)
 		(property "Value" "GND"
-			(at 372.872 157.734 0)
+			(at 372.872 159.004 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -21579,7 +20274,7 @@
 			)
 		)
 		(property "Footprint" ""
-			(at 377.19 156.21 0)
+			(at 377.19 157.48 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -21588,7 +20283,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 377.19 156.21 0)
+			(at 377.19 157.48 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -21597,7 +20292,7 @@
 			)
 		)
 		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
-			(at 377.19 156.21 0)
+			(at 377.19 157.48 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -21780,15 +20475,6 @@
 				(hide yes)
 			)
 		)
-		(property "NOTE: " ""
-			(at 298.45 71.12 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
 		(property "On Line Components Part Number" ""
 			(at 298.45 71.12 0)
 			(effects
@@ -21808,15 +20494,6 @@
 			)
 		)
 		(property "PN" ""
-			(at 298.45 71.12 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Tolerance " ""
 			(at 298.45 71.12 0)
 			(effects
 				(font
@@ -21971,7 +20648,7 @@
 	)
 	(symbol
 		(lib_id "Amplifier_Operational:MCP6004")
-		(at 74.93 78.74 0)
+		(at 74.93 77.47 0)
 		(unit 4)
 		(exclude_from_sim no)
 		(in_bom yes)
@@ -21979,7 +20656,7 @@
 		(dnp no)
 		(uuid "bf646173-23a3-407a-8121-161727f3ff78")
 		(property "Reference" "U6"
-			(at 78.74 81.534 0)
+			(at 78.74 80.264 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -21987,15 +20664,15 @@
 			)
 		)
 		(property "Value" "MCP6004"
-			(at 78.74 84.074 0)
+			(at 78.74 82.804 0)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
 			)
 		)
-		(property "Footprint" "Package_TO_SOT_SMD:SOT-23_Handsoldering"
-			(at 73.66 76.2 0)
+		(property "Footprint" "Package_SO:SOIC-14_3.9x8.7mm_P1.27mm"
+			(at 73.66 74.93 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -22004,7 +20681,7 @@
 			)
 		)
 		(property "Datasheet" "https://ww1.microchip.com/downloads/en/DeviceDoc/MCP6001-1R-1U-2-4-1-MHz-Low-Power-Op-Amp-DS20001733L.pdf"
-			(at 76.2 73.66 0)
+			(at 76.2 72.39 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -22013,7 +20690,7 @@
 			)
 		)
 		(property "Description" "1MHz, Low-Power Op Amp, DIP-14/SOIC-14/TSSOP-14"
-			(at 74.93 78.74 0)
+			(at 74.93 77.47 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -22022,7 +20699,7 @@
 			)
 		)
 		(property "Digikey PN" "MCP6004-I/SL-ND"
-			(at 74.93 78.74 0)
+			(at 74.93 77.47 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -22031,7 +20708,7 @@
 			)
 		)
 		(property "Digikey URL" "https://www.digikey.com/en/products/detail/microchip-technology/MCP6004-I-SL/523061?gclsrc=aw.ds&gad_source=1&gad_campaignid=17922795960&gbraid=0AAAAADrbLlirMt8CnwTpqopm1INQzq2TO&gclid=Cj0KCQiAvtzLBhCPARIsALwhxdquhsBlAg_bKJq5CGOPXtiGSHN9oTmcxlIwgH0Oo6MGXvgyCW9ozEQaAsWSEALw_wcB"
-			(at 74.93 78.74 0)
+			(at 74.93 77.47 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -22040,7 +20717,7 @@
 			)
 		)
 		(property "MFG PN" "MCP6004-I/SL"
-			(at 74.93 78.74 0)
+			(at 74.93 77.47 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -22049,7 +20726,7 @@
 			)
 		)
 		(property "MFG Name" "Microchip Technology"
-			(at 74.93 78.74 0)
+			(at 74.93 77.47 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -22058,7 +20735,7 @@
 			)
 		)
 		(property "Datasheet #2" ""
-			(at 74.93 78.74 0)
+			(at 74.93 77.47 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -22067,7 +20744,7 @@
 			)
 		)
 		(property "Description_1" ""
-			(at 74.93 78.74 0)
+			(at 74.93 77.47 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -22076,7 +20753,7 @@
 			)
 		)
 		(property "Manufacturer" ""
-			(at 74.93 78.74 0)
+			(at 74.93 77.47 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -22085,7 +20762,7 @@
 			)
 		)
 		(property "Manufacturer_Name" ""
-			(at 74.93 78.74 0)
+			(at 74.93 77.47 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -22094,16 +20771,7 @@
 			)
 		)
 		(property "Manufacturer_Part_Number" ""
-			(at 74.93 78.74 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "NOTE: " ""
-			(at 74.93 78.74 0)
+			(at 74.93 77.47 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -22112,7 +20780,7 @@
 			)
 		)
 		(property "On Line Components Part Number" ""
-			(at 74.93 78.74 0)
+			(at 74.93 77.47 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -22121,7 +20789,7 @@
 			)
 		)
 		(property "On Line Components Price/Stock" ""
-			(at 74.93 78.74 0)
+			(at 74.93 77.47 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -22130,16 +20798,7 @@
 			)
 		)
 		(property "PN" ""
-			(at 74.93 78.74 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Tolerance " ""
-			(at 74.93 78.74 0)
+			(at 74.93 77.47 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -22333,15 +20992,6 @@
 				(hide yes)
 			)
 		)
-		(property "NOTE: " ""
-			(at 303.53 78.74 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
 		(property "On Line Components Part Number" ""
 			(at 303.53 78.74 0)
 			(effects
@@ -22361,15 +21011,6 @@
 			)
 		)
 		(property "PN" ""
-			(at 303.53 78.74 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Tolerance " ""
 			(at 303.53 78.74 0)
 			(effects
 				(font
@@ -22530,15 +21171,6 @@
 				(hide yes)
 			)
 		)
-		(property "NOTE: " ""
-			(at 162.56 179.07 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
 		(property "On Line Components Part Number" ""
 			(at 162.56 179.07 0)
 			(effects
@@ -22558,15 +21190,6 @@
 			)
 		)
 		(property "PN" ""
-			(at 162.56 179.07 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Tolerance " ""
 			(at 162.56 179.07 0)
 			(effects
 				(font
@@ -22625,7 +21248,7 @@
 				)
 			)
 		)
-		(property "Footprint" "FS_4_Global_Footprint_Library:CC1R5-XXXXXR-E__SMD_TYPE_"
+		(property "Footprint" "FS_4_Global_Footprint_Library:CC1R5-1205SR-E"
 			(at 161.29 223.52 0)
 			(effects
 				(font
@@ -22652,7 +21275,7 @@
 				(hide yes)
 			)
 		)
-		(property "Mouser PN" "967-CC1R5-1205SR-E "
+		(property "Digikey PN" "445-2453-ND"
 			(at 161.29 213.36 0)
 			(effects
 				(font
@@ -22661,7 +21284,7 @@
 				(hide yes)
 			)
 		)
-		(property "Mouser URL" "https://www.mouser.com/ProductDetail/TDK-Lambda/CC1R5-1205SR-E?qs=sGAEpiMZZMsc0tfZmXiUnaAQiSjsy8VALxF8KZIHTAc%3D"
+		(property "Digikey URL" "https://www.digikey.com/en/products/detail/tdk-lambda/CC1R5-1205SR-E/920413"
 			(at 161.29 213.36 0)
 			(effects
 				(font
@@ -22670,7 +21293,7 @@
 				(hide yes)
 			)
 		)
-		(property "MFG PN" "CC1R5-1205SR-E "
+		(property "MFG PN" "CC1R5-1205SR-E"
 			(at 161.29 213.36 0)
 			(effects
 				(font
@@ -22733,15 +21356,6 @@
 				(hide yes)
 			)
 		)
-		(property "NOTE: " ""
-			(at 161.29 213.36 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
 		(property "On Line Components Part Number" ""
 			(at 161.29 213.36 0)
 			(effects
@@ -22761,15 +21375,6 @@
 			)
 		)
 		(property "PN" ""
-			(at 161.29 213.36 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Tolerance " ""
 			(at 161.29 213.36 0)
 			(effects
 				(font
@@ -22872,7 +21477,7 @@
 	)
 	(symbol
 		(lib_id "Device:R")
-		(at 58.42 144.78 90)
+		(at 55.88 152.4 90)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
@@ -22881,7 +21486,7 @@
 		(fields_autoplaced yes)
 		(uuid "c9d0ccf2-a8e4-4566-a188-6d4e80f1c62b")
 		(property "Reference" "R4"
-			(at 58.42 138.43 90)
+			(at 55.88 146.05 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -22889,7 +21494,7 @@
 			)
 		)
 		(property "Value" "5k"
-			(at 58.42 140.97 90)
+			(at 55.88 148.59 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -22897,7 +21502,7 @@
 			)
 		)
 		(property "Footprint" "Resistor_THT:R_Axial_Power_L20.0mm_W6.4mm_P22.40mm"
-			(at 58.42 146.558 90)
+			(at 55.88 154.178 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -22906,7 +21511,7 @@
 			)
 		)
 		(property "Datasheet" "https://www.bourns.com/docs/Product-Datasheets/UB.pdf"
-			(at 58.42 144.78 0)
+			(at 55.88 152.4 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -22915,7 +21520,7 @@
 			)
 		)
 		(property "Description" "Resistor"
-			(at 58.42 144.78 0)
+			(at 55.88 152.4 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -22924,7 +21529,7 @@
 			)
 		)
 		(property "Digikey PN" "696-1085-ND"
-			(at 58.42 144.78 90)
+			(at 55.88 152.4 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -22933,7 +21538,7 @@
 			)
 		)
 		(property "Digikey URL" "https://www.digikey.com/en/products/detail/riedon-products-by-bourns/UB5C-5KF1/2176663"
-			(at 58.42 144.78 90)
+			(at 55.88 152.4 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -22942,7 +21547,7 @@
 			)
 		)
 		(property "MFG PN" "UB5C-5KF1"
-			(at 58.42 144.78 90)
+			(at 55.88 152.4 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -22951,7 +21556,7 @@
 			)
 		)
 		(property "MFG Name" "Riedon products by Bourns"
-			(at 58.42 144.78 90)
+			(at 55.88 152.4 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -22960,7 +21565,7 @@
 			)
 		)
 		(property "Datasheet #2" ""
-			(at 58.42 144.78 90)
+			(at 55.88 152.4 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -22969,7 +21574,7 @@
 			)
 		)
 		(property "Description_1" ""
-			(at 58.42 144.78 90)
+			(at 55.88 152.4 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -22978,7 +21583,7 @@
 			)
 		)
 		(property "Manufacturer" ""
-			(at 58.42 144.78 90)
+			(at 55.88 152.4 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -22987,7 +21592,7 @@
 			)
 		)
 		(property "Manufacturer_Name" ""
-			(at 58.42 144.78 90)
+			(at 55.88 152.4 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -22996,16 +21601,7 @@
 			)
 		)
 		(property "Manufacturer_Part_Number" ""
-			(at 58.42 144.78 90)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "NOTE: " ""
-			(at 58.42 144.78 90)
+			(at 55.88 152.4 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -23014,7 +21610,7 @@
 			)
 		)
 		(property "On Line Components Part Number" ""
-			(at 58.42 144.78 90)
+			(at 55.88 152.4 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -23023,7 +21619,7 @@
 			)
 		)
 		(property "On Line Components Price/Stock" ""
-			(at 58.42 144.78 90)
+			(at 55.88 152.4 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -23032,16 +21628,7 @@
 			)
 		)
 		(property "PN" ""
-			(at 58.42 144.78 90)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Tolerance " ""
-			(at 58.42 144.78 90)
+			(at 55.88 152.4 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -23131,7 +21718,7 @@
 	)
 	(symbol
 		(lib_id "power:GNDD")
-		(at 113.03 90.17 0)
+		(at 104.14 90.17 0)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
@@ -23139,7 +21726,7 @@
 		(dnp no)
 		(uuid "cd2723e2-a18a-4772-91ea-8ad2dd7b6ca1")
 		(property "Reference" "#PWR026"
-			(at 113.03 96.52 0)
+			(at 104.14 96.52 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -23148,7 +21735,7 @@
 			)
 		)
 		(property "Value" "TS-"
-			(at 117.602 92.202 0)
+			(at 108.712 92.202 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -23156,7 +21743,7 @@
 			)
 		)
 		(property "Footprint" ""
-			(at 113.03 90.17 0)
+			(at 104.14 90.17 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -23165,7 +21752,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 113.03 90.17 0)
+			(at 104.14 90.17 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -23174,7 +21761,7 @@
 			)
 		)
 		(property "Description" "Power symbol creates a global label with name \"GNDD\" , digital ground"
-			(at 113.03 90.17 0)
+			(at 104.14 90.17 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -23196,7 +21783,7 @@
 	)
 	(symbol
 		(lib_id "Device:R")
-		(at 113.03 76.2 180)
+		(at 104.14 86.36 180)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
@@ -23204,7 +21791,7 @@
 		(dnp no)
 		(uuid "d4068086-3706-45cb-9fb7-70c93109cb98")
 		(property "Reference" "R10"
-			(at 115.57 74.9299 0)
+			(at 106.68 85.0899 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -23213,7 +21800,7 @@
 			)
 		)
 		(property "Value" "10k"
-			(at 115.57 77.4699 0)
+			(at 106.68 87.6299 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -23222,7 +21809,7 @@
 			)
 		)
 		(property "Footprint" "Resistor_SMD:R_0603_1608Metric_Pad0.98x0.95mm_HandSolder"
-			(at 114.808 76.2 90)
+			(at 105.918 86.36 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -23231,7 +21818,7 @@
 			)
 		)
 		(property "Datasheet" "https://yageogroup.com/content/datasheet/asset/file/PYU-RC_GROUP_51_ROHS_L"
-			(at 113.03 76.2 0)
+			(at 104.14 86.36 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -23240,7 +21827,7 @@
 			)
 		)
 		(property "Description" "Resistor"
-			(at 113.03 76.2 0)
+			(at 104.14 86.36 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -23249,7 +21836,7 @@
 			)
 		)
 		(property "Digi PN" "311-10.0KHRTR-ND - Tape & Reel (TR)"
-			(at 113.03 76.2 0)
+			(at 104.14 86.36 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -23258,7 +21845,7 @@
 			)
 		)
 		(property "Digikey URL" "https://www.digikey.com/en/products/detail/yageo/RC0603FR-0710KL/726880"
-			(at 113.03 76.2 0)
+			(at 104.14 86.36 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -23267,7 +21854,7 @@
 			)
 		)
 		(property "MFG PN" "RC0603FR-0710KL"
-			(at 113.03 76.2 0)
+			(at 104.14 86.36 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -23276,7 +21863,7 @@
 			)
 		)
 		(property "MFG Name" "YAGEO"
-			(at 113.03 76.2 0)
+			(at 104.14 86.36 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -23285,7 +21872,7 @@
 			)
 		)
 		(property "Datasheet #2" ""
-			(at 113.03 76.2 0)
+			(at 104.14 86.36 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -23294,7 +21881,7 @@
 			)
 		)
 		(property "Description_1" ""
-			(at 113.03 76.2 0)
+			(at 104.14 86.36 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -23303,7 +21890,7 @@
 			)
 		)
 		(property "Manufacturer" ""
-			(at 113.03 76.2 0)
+			(at 104.14 86.36 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -23312,7 +21899,7 @@
 			)
 		)
 		(property "Manufacturer_Name" ""
-			(at 113.03 76.2 0)
+			(at 104.14 86.36 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -23321,16 +21908,7 @@
 			)
 		)
 		(property "Manufacturer_Part_Number" ""
-			(at 113.03 76.2 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "NOTE: " ""
-			(at 113.03 76.2 0)
+			(at 104.14 86.36 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -23339,7 +21917,7 @@
 			)
 		)
 		(property "On Line Components Part Number" ""
-			(at 113.03 76.2 0)
+			(at 104.14 86.36 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -23348,7 +21926,7 @@
 			)
 		)
 		(property "On Line Components Price/Stock" ""
-			(at 113.03 76.2 0)
+			(at 104.14 86.36 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -23357,16 +21935,7 @@
 			)
 		)
 		(property "PN" ""
-			(at 113.03 76.2 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Tolerance " ""
-			(at 113.03 76.2 0)
+			(at 104.14 86.36 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -23528,15 +22097,6 @@
 				(hide yes)
 			)
 		)
-		(property "NOTE: " ""
-			(at 318.77 71.12 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
 		(property "On Line Components Part Number" ""
 			(at 318.77 71.12 0)
 			(effects
@@ -23556,15 +22116,6 @@
 			)
 		)
 		(property "PN" ""
-			(at 318.77 71.12 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Tolerance " ""
 			(at 318.77 71.12 0)
 			(effects
 				(font
@@ -23690,15 +22241,6 @@
 				(hide yes)
 			)
 		)
-		(property "NOTE: " ""
-			(at 205.74 49.53 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
 		(property "On Line Components Part Number" ""
 			(at 205.74 49.53 0)
 			(effects
@@ -23718,15 +22260,6 @@
 			)
 		)
 		(property "PN" ""
-			(at 205.74 49.53 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Tolerance " ""
 			(at 205.74 49.53 0)
 			(effects
 				(font
@@ -23844,15 +22377,6 @@
 				(hide yes)
 			)
 		)
-		(property "NOTE: " ""
-			(at 138.43 134.62 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
 		(property "On Line Components Part Number" ""
 			(at 138.43 134.62 0)
 			(effects
@@ -23872,15 +22396,6 @@
 			)
 		)
 		(property "PN" ""
-			(at 138.43 134.62 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Tolerance " ""
 			(at 138.43 134.62 0)
 			(effects
 				(font
@@ -24009,15 +22524,6 @@
 				(hide yes)
 			)
 		)
-		(property "NOTE: " ""
-			(at 308.61 125.73 90)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
 		(property "On Line Components Part Number" ""
 			(at 308.61 125.73 90)
 			(effects
@@ -24037,15 +22543,6 @@
 			)
 		)
 		(property "PN" ""
-			(at 308.61 125.73 90)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Tolerance " ""
 			(at 308.61 125.73 90)
 			(effects
 				(font
@@ -24185,15 +22682,6 @@
 				(hide yes)
 			)
 		)
-		(property "NOTE: " ""
-			(at 346.71 74.93 90)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
 		(property "On Line Components Part Number" ""
 			(at 346.71 74.93 90)
 			(effects
@@ -24213,15 +22701,6 @@
 			)
 		)
 		(property "PN" ""
-			(at 346.71 74.93 90)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Tolerance " ""
 			(at 346.71 74.93 90)
 			(effects
 				(font
@@ -24379,15 +22858,6 @@
 				(hide yes)
 			)
 		)
-		(property "NOTE: " ""
-			(at 295.91 137.16 90)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
 		(property "On Line Components Part Number" ""
 			(at 295.91 137.16 90)
 			(effects
@@ -24407,15 +22877,6 @@
 			)
 		)
 		(property "PN" ""
-			(at 295.91 137.16 90)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Tolerance " ""
 			(at 295.91 137.16 90)
 			(effects
 				(font
@@ -24506,7 +22967,7 @@
 	)
 	(symbol
 		(lib_id "FS_4_Global_Symbol_Library:SZNUD3124LT1G")
-		(at 220.98 96.52 0)
+		(at 218.44 96.52 0)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
@@ -24515,7 +22976,7 @@
 		(fields_autoplaced yes)
 		(uuid "dbfb4c1f-ee7b-4ec7-878c-895339898047")
 		(property "Reference" "U8"
-			(at 223.7925 95.2499 0)
+			(at 221.2525 95.2499 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -24524,7 +22985,7 @@
 			)
 		)
 		(property "Value" "SZNUD3124LT1G"
-			(at 223.7925 97.7899 0)
+			(at 221.2525 97.7899 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -24533,7 +22994,7 @@
 			)
 		)
 		(property "Footprint" "Package_TO_SOT_SMD:TSOT-23_HandSoldering"
-			(at 247.904 80.518 0)
+			(at 245.364 80.518 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -24543,7 +23004,7 @@
 			)
 		)
 		(property "Datasheet" "https://www.onsemi.com/pdf/datasheet/nud3124-d.pdf"
-			(at 253.238 85.598 0)
+			(at 250.698 85.598 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -24553,7 +23014,7 @@
 			)
 		)
 		(property "Description" "Relay Driver"
-			(at 231.648 77.978 0)
+			(at 229.108 77.978 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -24562,7 +23023,7 @@
 			)
 		)
 		(property "Digi PN" "SZNUD3124LT1GOSCT-ND"
-			(at 238.252 75.438 0)
+			(at 235.712 75.438 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -24571,7 +23032,7 @@
 			)
 		)
 		(property "Digi URL" "https://www.digikey.com/en/products/detail/onsemi/SZNUD3124LT1G/3063416"
-			(at 264.922 83.058 0)
+			(at 262.382 83.058 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -24580,7 +23041,7 @@
 			)
 		)
 		(property "MFG" "onsemi"
-			(at 229.362 88.138 0)
+			(at 226.822 88.138 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -24589,7 +23050,7 @@
 			)
 		)
 		(property "MFG PN" "SZNUD3124LT1G"
-			(at 233.68 72.898 0)
+			(at 231.14 72.898 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -24598,7 +23059,7 @@
 			)
 		)
 		(property "Datasheet #2" ""
-			(at 220.98 96.52 0)
+			(at 218.44 96.52 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -24607,7 +23068,7 @@
 			)
 		)
 		(property "Description_1" ""
-			(at 220.98 96.52 0)
+			(at 218.44 96.52 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -24616,7 +23077,7 @@
 			)
 		)
 		(property "Manufacturer" ""
-			(at 220.98 96.52 0)
+			(at 218.44 96.52 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -24625,7 +23086,7 @@
 			)
 		)
 		(property "Manufacturer_Name" ""
-			(at 220.98 96.52 0)
+			(at 218.44 96.52 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -24634,16 +23095,7 @@
 			)
 		)
 		(property "Manufacturer_Part_Number" ""
-			(at 220.98 96.52 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "NOTE: " ""
-			(at 220.98 96.52 0)
+			(at 218.44 96.52 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -24652,7 +23104,7 @@
 			)
 		)
 		(property "On Line Components Part Number" ""
-			(at 220.98 96.52 0)
+			(at 218.44 96.52 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -24661,7 +23113,7 @@
 			)
 		)
 		(property "On Line Components Price/Stock" ""
-			(at 220.98 96.52 0)
+			(at 218.44 96.52 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -24670,16 +23122,7 @@
 			)
 		)
 		(property "PN" ""
-			(at 220.98 96.52 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Tolerance " ""
-			(at 220.98 96.52 0)
+			(at 218.44 96.52 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -24730,7 +23173,7 @@
 				)
 			)
 		)
-		(property "Footprint" "Package_TO_SOT_SMD:SOT-23_Handsoldering"
+		(property "Footprint" "Package_SO:SOIC-14_3.9x8.7mm_P1.27mm"
 			(at 124.46 132.08 0)
 			(effects
 				(font
@@ -24838,15 +23281,6 @@
 				(hide yes)
 			)
 		)
-		(property "NOTE: " ""
-			(at 125.73 134.62 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
 		(property "On Line Components Part Number" ""
 			(at 125.73 134.62 0)
 			(effects
@@ -24866,15 +23300,6 @@
 			)
 		)
 		(property "PN" ""
-			(at 125.73 134.62 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Tolerance " ""
 			(at 125.73 134.62 0)
 			(effects
 				(font
@@ -24953,7 +23378,7 @@
 				(justify right)
 			)
 		)
-		(property "Value" "115k"
+		(property "Value" "145k"
 			(at 76.2 123.1899 0)
 			(effects
 				(font
@@ -24971,7 +23396,7 @@
 				(hide yes)
 			)
 		)
-		(property "Datasheet" "https://yageogroup.com/content/datasheet/asset/file/PYU-RC_GROUP_51_ROHS_L"
+		(property "Datasheet" "https://www.koaspeer.com/pdfs/RN73H.pdf"
 			(at 73.66 121.92 0)
 			(effects
 				(font
@@ -24989,7 +23414,7 @@
 				(hide yes)
 			)
 		)
-		(property "Digi PN" "311-115KHRTR-ND"
+		(property "Digi PN" "2019-RN73H1JTTD1453F100TR-ND"
 			(at 73.66 121.92 0)
 			(effects
 				(font
@@ -24998,7 +23423,7 @@
 				(hide yes)
 			)
 		)
-		(property "Digikey URL" "https://www.digikey.com/en/products/detail/yageo/RC0603FR-07115KL/726909"
+		(property "Digikey URL" "https://www.digikey.com/en/products/detail/koa-speer-electronics-inc/RN73H1JTTD1453F100/10685457"
 			(at 73.66 121.92 0)
 			(effects
 				(font
@@ -25007,7 +23432,7 @@
 				(hide yes)
 			)
 		)
-		(property "MFG PN" "RC0603FR-07115KL"
+		(property "MFG PN" "RN73H1JTTD1453F100"
 			(at 73.66 121.92 0)
 			(effects
 				(font
@@ -25016,7 +23441,7 @@
 				(hide yes)
 			)
 		)
-		(property "MFG Name" "Yaego"
+		(property "MFG Name" "KOA Speer Electronics, Inc."
 			(at 73.66 121.92 0)
 			(effects
 				(font
@@ -25070,15 +23495,6 @@
 				(hide yes)
 			)
 		)
-		(property "NOTE: " ""
-			(at 73.66 121.92 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
 		(property "On Line Components Part Number" ""
 			(at 73.66 121.92 0)
 			(effects
@@ -25098,15 +23514,6 @@
 			)
 		)
 		(property "PN" ""
-			(at 73.66 121.92 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Tolerance " ""
 			(at 73.66 121.92 0)
 			(effects
 				(font
@@ -25327,15 +23734,6 @@
 				(hide yes)
 			)
 		)
-		(property "NOTE: " ""
-			(at 309.88 187.96 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
 		(property "On Line Components Part Number" ""
 			(at 309.88 187.96 0)
 			(effects
@@ -25355,15 +23753,6 @@
 			)
 		)
 		(property "PN" ""
-			(at 309.88 187.96 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Tolerance " ""
 			(at 309.88 187.96 0)
 			(effects
 				(font
@@ -25475,7 +23864,7 @@
 	)
 	(symbol
 		(lib_id "power:+5V")
-		(at 113.03 72.39 0)
+		(at 104.14 71.12 0)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
@@ -25483,7 +23872,7 @@
 		(dnp no)
 		(uuid "ebb87896-83e6-4c44-bdc2-c242b62ce4ef")
 		(property "Reference" "#PWR019"
-			(at 113.03 76.2 0)
+			(at 104.14 74.93 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -25492,7 +23881,7 @@
 			)
 		)
 		(property "Value" "+5V_Isolated"
-			(at 122.174 70.612 0)
+			(at 113.284 69.342 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -25500,7 +23889,7 @@
 			)
 		)
 		(property "Footprint" ""
-			(at 113.03 72.39 0)
+			(at 104.14 71.12 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -25509,7 +23898,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 113.03 72.39 0)
+			(at 104.14 71.12 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -25518,7 +23907,7 @@
 			)
 		)
 		(property "Description" "Power symbol creates a global label with name \"+5V\""
-			(at 113.03 72.39 0)
+			(at 104.14 71.12 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -25739,15 +24128,6 @@
 				(hide yes)
 			)
 		)
-		(property "NOTE: " ""
-			(at 231.14 138.43 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
 		(property "On Line Components Part Number" ""
 			(at 231.14 138.43 0)
 			(effects
@@ -25767,15 +24147,6 @@
 			)
 		)
 		(property "PN" ""
-			(at 231.14 138.43 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Tolerance " ""
 			(at 231.14 138.43 0)
 			(effects
 				(font
@@ -25990,6 +24361,124 @@
 			(project "Power Electronics Board"
 				(path "/89c18bc7-bebe-4d17-a6e8-3a2f210bf7f7"
 					(reference "#PWR06")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Connector_Generic:Conn_01x06")
+		(at 391.16 130.81 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "fe5e5b94-2209-4207-b5ba-a95b7208607c")
+		(property "Reference" "J7"
+			(at 393.7 130.8099 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Value" "Conn_01x06"
+			(at 393.7 133.3499 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Footprint" "Connector_Molex:Molex_Nano-Fit_105309-xx06_1x06_P2.50mm_Vertical"
+			(at 391.16 130.81 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "https://www.literature.molex.com/SQLImages/kelmscott/Molex/PDF_Images/987651-1223.PDF"
+			(at 391.16 130.81 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Generic connector, single row, 01x06, script generated (kicad-library-utils/schlib/autogen/connector/)"
+			(at 391.16 130.81 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Digikey PN" "WM16908-ND"
+			(at 391.16 130.81 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Digikey URL" "https://www.digikey.com/en/products/detail/molex/1053141106/7693189?gclsrc=aw.ds&gad_source=1&gad_campaignid=17336967819&gbraid=0AAAAADrbLlhSqQa5UJuaqzrBrQiJfsaES&gclid=Cj0KCQiAvtzLBhCPARIsALwhxdqndSs_1uv6Cp4i1siAetqH_a9rvjCcnV5KA2A5t7MwSSZg0zQUo9QaAmj-EALw_wcB"
+			(at 391.16 130.81 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "MFG PN" "1053141106"
+			(at 391.16 130.81 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "MFG" "Molex"
+			(at 391.16 130.81 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "3"
+			(uuid "286ca604-c8c5-48ac-b66d-ace6d885e980")
+		)
+		(pin "1"
+			(uuid "b9fd82fb-9494-409d-9336-32ee783be2cf")
+		)
+		(pin "2"
+			(uuid "e857c36b-1e83-4bcc-ba2d-a1c79f6f848b")
+		)
+		(pin "4"
+			(uuid "e37e016b-89ba-4d55-80d3-f9bcc798c4cc")
+		)
+		(pin "5"
+			(uuid "aeaf38a6-50cb-45af-871d-e77f07d3a728")
+		)
+		(pin "6"
+			(uuid "5cfc62f5-a6d3-4007-ae8c-af5da0f45b74")
+		)
+		(instances
+			(project ""
+				(path "/89c18bc7-bebe-4d17-a6e8-3a2f210bf7f7"
+					(reference "J7")
 					(unit 1)
 				)
 			)
