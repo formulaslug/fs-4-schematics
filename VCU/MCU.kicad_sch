@@ -7485,6 +7485,10 @@
 		(uuid "0d351e2e-46a8-4546-9148-8c787f992236")
 	)
 	(no_connect
+		(at 251.46 161.29)
+		(uuid "0f624237-4f97-4fdd-950f-e6f7d76ac74a")
+	)
+	(no_connect
 		(at 190.5 105.41)
 		(uuid "11b2ee66-47df-48c5-aecf-093d8302792a")
 	)
@@ -7539,10 +7543,6 @@
 	(no_connect
 		(at 223.52 55.88)
 		(uuid "5f5ee0a9-9dc9-47aa-ae03-d555842f5f18")
-	)
-	(no_connect
-		(at 292.1 196.85)
-		(uuid "6f38d4bc-0fac-439c-a93a-12b3ff8bd497")
 	)
 	(no_connect
 		(at 223.52 43.18)
@@ -7627,6 +7627,10 @@
 	(no_connect
 		(at 27.94 102.87)
 		(uuid "fd9037aa-7635-4ec1-8fbb-efbce61f8511")
+	)
+	(no_connect
+		(at 292.1 166.37)
+		(uuid "fdd439b2-baf0-4caa-ab72-d22088dd2b7b")
 	)
 	(no_connect
 		(at 175.26 50.8)
@@ -8934,16 +8938,6 @@
 	)
 	(wire
 		(pts
-			(xy 241.3 161.29) (xy 251.46 161.29)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "66dc6d50-ed46-407c-9f2e-66a73a26a261")
-	)
-	(wire
-		(pts
 			(xy 48.26 73.66) (xy 57.15 73.66)
 		)
 		(stroke
@@ -9964,7 +9958,7 @@
 	)
 	(wire
 		(pts
-			(xy 292.1 166.37) (xy 295.91 166.37)
+			(xy 292.1 196.85) (xy 295.91 196.85)
 		)
 		(stroke
 			(width 0)
@@ -11222,7 +11216,7 @@
 	)
 	(global_label "RTD_Button_3V3"
 		(shape input)
-		(at 247.65 146.05 180)
+		(at 247.65 184.15 180)
 		(fields_autoplaced yes)
 		(effects
 			(font
@@ -11232,7 +11226,7 @@
 		)
 		(uuid "286535ab-280f-4a0b-bcad-d0ad47297aa8")
 		(property "Intersheetrefs" "${INTERSHEET_REFS}"
-			(at 229.546 146.05 0)
+			(at 236.7425 184.15 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -11516,7 +11510,7 @@
 	)
 	(global_label "INT1_3V3"
 		(shape input)
-		(at 295.91 166.37 0)
+		(at 295.91 196.85 0)
 		(fields_autoplaced yes)
 		(effects
 			(font
@@ -11526,7 +11520,7 @@
 		)
 		(uuid "538c4b9a-c8f4-4145-9640-7538af548278")
 		(property "Intersheetrefs" "${INTERSHEET_REFS}"
-			(at 307.4828 166.37 0)
+			(at 307.4828 196.85 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -11999,7 +11993,7 @@
 	)
 	(global_label "RTD_LED"
 		(shape output)
-		(at 247.65 184.15 180)
+		(at 247.65 146.05 180)
 		(fields_autoplaced yes)
 		(effects
 			(font
@@ -12009,7 +12003,7 @@
 		)
 		(uuid "acf4f312-ad4d-4ef9-9287-50227206b3a8")
 		(property "Intersheetrefs" "${INTERSHEET_REFS}"
-			(at 236.7425 184.15 0)
+			(at 229.546 146.05 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -12758,7 +12752,7 @@
 		(dnp no)
 		(uuid "0141460c-9abc-4383-8f5a-6d5f858531e4")
 		(property "Reference" "C41"
-			(at 233.426 187.452 90)
+			(at 237.49 195.58 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -12766,7 +12760,7 @@
 			)
 		)
 		(property "Value" "4.7uF"
-			(at 233.426 184.912 90)
+			(at 237.49 193.04 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -24322,127 +24316,6 @@
 			(project "VCU"
 				(path "/d46cfebc-cd32-4ec9-981b-3f67fe44510e/77141324-8e12-4fa0-be8a-c003c15572fb"
 					(reference "#PWR0116")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
-		(lib_id "Connector:TestPoint")
-		(at 241.3 161.29 90)
-		(mirror x)
-		(unit 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(dnp no)
-		(uuid "8a6d78b2-6fa0-40a8-b96f-e10dbd0d4be0")
-		(property "Reference" "TP11"
-			(at 236.982 159.766 90)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-		)
-		(property "Value" "TestPoint"
-			(at 236.982 161.29 90)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-		)
-		(property "Footprint" "TestPoint:TestPoint_Pad_D1.0mm"
-			(at 241.3 166.37 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Datasheet" "~"
-			(at 241.3 166.37 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Description" "test point"
-			(at 241.3 161.29 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "MANUFACTURER" ""
-			(at 241.3 161.29 90)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Sim.Type" ""
-			(at 241.3 161.29 90)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Digikey Link" ""
-			(at 241.3 161.29 90)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "MFP PN" ""
-			(at 241.3 161.29 90)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Manufacturer" ""
-			(at 241.3 161.29 90)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Part Name" ""
-			(at 241.3 161.29 90)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(pin "1"
-			(uuid "1540e8a0-f71e-4146-8907-0d97299aa920")
-		)
-		(instances
-			(project "VCU"
-				(path "/d46cfebc-cd32-4ec9-981b-3f67fe44510e/77141324-8e12-4fa0-be8a-c003c15572fb"
-					(reference "TP11")
 					(unit 1)
 				)
 			)
