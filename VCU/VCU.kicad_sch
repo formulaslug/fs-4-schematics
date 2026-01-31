@@ -4298,6 +4298,10 @@
 		(uuid "3c8f0735-a27a-4986-9a5c-b54981789ecf")
 	)
 	(no_connect
+		(at 95.25 203.2)
+		(uuid "55ccb646-c5fd-432f-92d8-6296facc2858")
+	)
+	(no_connect
 		(at 45.72 142.24)
 		(uuid "5af0c57c-78ae-4d89-9d8b-657cbd7d2dc6")
 	)
@@ -4467,16 +4471,6 @@
 	)
 	(wire
 		(pts
-			(xy 95.25 203.2) (xy 149.86 203.2)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "2187b802-7258-42e8-a111-f04e4fd61317")
-	)
-	(wire
-		(pts
 			(xy 255.27 242.57) (xy 255.27 237.49)
 		)
 		(stroke
@@ -4544,16 +4538,6 @@
 			(type default)
 		)
 		(uuid "2cdb9500-3db3-4b78-a20a-259676e987c8")
-	)
-	(wire
-		(pts
-			(xy 95.25 200.66) (xy 149.86 200.66)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "2d84f888-b95e-4ccd-a559-68ee612fbaea")
 	)
 	(wire
 		(pts
@@ -5137,16 +5121,6 @@
 	)
 	(wire
 		(pts
-			(xy 95.25 198.12) (xy 149.86 198.12)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "8150b57b-68ac-4d93-b4bc-b91dc84d86d1")
-	)
-	(wire
-		(pts
 			(xy 62.23 62.23) (xy 62.23 64.77)
 		)
 		(stroke
@@ -5384,6 +5358,16 @@
 			(type default)
 		)
 		(uuid "a9a2dedd-336f-40eb-a7de-7cab44e249f7")
+	)
+	(wire
+		(pts
+			(xy 95.25 200.66) (xy 99.06 200.66)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "aa6455b0-7801-4475-b72d-424a7fe68697")
 	)
 	(wire
 		(pts
@@ -5664,6 +5648,16 @@
 			(type default)
 		)
 		(uuid "d0aad9d3-0010-42d9-b666-08d19de14301")
+	)
+	(wire
+		(pts
+			(xy 95.25 198.12) (xy 99.06 198.12)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "d3ed5579-57a7-41e9-a3e6-d17742c3df7e")
 	)
 	(wire
 		(pts
@@ -5975,16 +5969,6 @@
 		)
 		(uuid "2f08c134-735a-49b0-bcce-efa9fb4ea04c")
 	)
-	(label "CAN_Dash_L"
-		(at 97.79 200.66 0)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-			(justify left bottom)
-		)
-		(uuid "31bb053d-a72c-47b5-ba25-9802c7e4e8e9")
-	)
 	(label "RTD_Buzzer_Neg"
 		(at 76.2 127 0)
 		(effects
@@ -6275,16 +6259,6 @@
 		)
 		(uuid "cb93e1e7-af7a-4ea3-8d41-f205ed5b8fa7")
 	)
-	(label "CAN_Dash_H"
-		(at 97.79 198.12 0)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-			(justify left bottom)
-		)
-		(uuid "cd8532ed-4b9f-4de3-a5fc-3d703b6af177")
-	)
 	(label "nIMD_Fault"
 		(at 90.17 96.52 180)
 		(effects
@@ -6334,16 +6308,6 @@
 			(justify right bottom)
 		)
 		(uuid "db92cd03-f365-4984-a82f-225a2bdc8d2c")
-	)
-	(label "Aux_CAN_CTLR_Jumper"
-		(at 97.79 203.2 0)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-			(justify left bottom)
-		)
-		(uuid "e18e0376-db1a-4b2d-abdc-803f9fccba1f")
 	)
 	(label "CAN_Powertrain_L"
 		(at 92.71 116.84 180)
@@ -6414,6 +6378,48 @@
 			(justify left bottom)
 		)
 		(uuid "fe500744-309d-476f-8b03-8db531579bb9")
+	)
+	(global_label "CAN_Data_L"
+		(shape bidirectional)
+		(at 99.06 200.66 0)
+		(fields_autoplaced yes)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left)
+		)
+		(uuid "660a4dc5-ade2-4288-8816-494f6ce6d80c")
+		(property "Intersheetrefs" "${INTERSHEET_REFS}"
+			(at 114.1026 200.66 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+	)
+	(global_label "CAN_Data_H"
+		(shape bidirectional)
+		(at 99.06 198.12 0)
+		(fields_autoplaced yes)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left)
+		)
+		(uuid "c07b5a52-bdd3-4dbc-94b8-909d6c101a32")
+		(property "Intersheetrefs" "${INTERSHEET_REFS}"
+			(at 114.405 198.12 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
 	)
 	(symbol
 		(lib_id "power:GND")
@@ -10910,36 +10916,6 @@
 					(size 1.27 1.27)
 				)
 				(justify right)
-			)
-		)
-		(pin "CAN_Dash_L" bidirectional
-			(at 149.86 200.66 180)
-			(uuid "869ce014-3431-4ad0-bdf1-32c3dd9ca4fc")
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-		)
-		(pin "CAN_Dash_H" bidirectional
-			(at 149.86 198.12 180)
-			(uuid "8fc7ad1b-8589-491f-8fc0-8d6331cbe7a6")
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-		)
-		(pin "Aux_CAN_CTRL_Jumper" input
-			(at 149.86 203.2 180)
-			(uuid "7e799f48-16b8-4712-8ed9-895784ad4d7a")
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
 			)
 		)
 		(instances
