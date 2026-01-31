@@ -6201,6 +6201,16 @@
 		)
 		(uuid "469b6fc2-4fcd-489c-8507-f69f2322c363")
 	)
+	(text "3V Zener"
+		(exclude_from_sim no)
+		(at 273.05 74.422 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+		)
+		(uuid "4b24d2b8-d2fa-458d-86d3-c2ec5ef5772c")
+	)
 	(text "RTML Flashing Logic"
 		(exclude_from_sim no)
 		(at 191.516 116.078 0)
@@ -6365,6 +6375,16 @@
 		)
 		(uuid "b7d1ac89-b115-40e6-a761-3cbaa31fb79f")
 	)
+	(text "12(10/10+24.9) = 3.438V\n10.47(10/10+24.9) = 3V\n"
+		(exclude_from_sim no)
+		(at 266.7 59.944 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+		)
+		(uuid "c69c06fa-237b-4f8a-a8c7-d88a6e6c7c27")
+	)
 	(text "TSMP-\n"
 		(exclude_from_sim no)
 		(at 36.83 156.464 0)
@@ -6486,12 +6506,6 @@
 		(uuid "0e8012d4-e5f0-412a-a5a6-8bf54322fd10")
 	)
 	(junction
-		(at 252.73 68.58)
-		(diameter 0)
-		(color 0 0 0 0)
-		(uuid "1299f2fd-8f19-4b37-bde5-a618f3339ff0")
-	)
-	(junction
 		(at 200.66 96.52)
 		(diameter 0)
 		(color 0 0 0 0)
@@ -6538,6 +6552,12 @@
 		(diameter 0)
 		(color 0 0 0 0)
 		(uuid "241e590c-5ed5-4927-a570-85ef7328fbdf")
+	)
+	(junction
+		(at 251.46 68.58)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "2c4212a6-3816-4ae2-9b34-ea44ad0836e8")
 	)
 	(junction
 		(at 294.64 181.61)
@@ -6995,7 +7015,7 @@
 	)
 	(wire
 		(pts
-			(xy 132.08 134.62) (xy 138.43 134.62)
+			(xy 133.35 134.62) (xy 138.43 134.62)
 		)
 		(stroke
 			(width 0)
@@ -7565,7 +7585,7 @@
 	)
 	(wire
 		(pts
-			(xy 116.84 137.16) (xy 105.41 137.16)
+			(xy 118.11 137.16) (xy 105.41 137.16)
 		)
 		(stroke
 			(width 0)
@@ -8215,7 +8235,7 @@
 	)
 	(wire
 		(pts
-			(xy 116.84 132.08) (xy 85.09 132.08)
+			(xy 118.11 132.08) (xy 85.09 132.08)
 		)
 		(stroke
 			(width 0)
@@ -8375,16 +8395,6 @@
 	)
 	(wire
 		(pts
-			(xy 252.73 68.58) (xy 279.4 68.58)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "b3aee652-509b-411e-8ee2-49294c31d3ac")
-	)
-	(wire
-		(pts
 			(xy 138.43 142.24) (xy 133.35 142.24)
 		)
 		(stroke
@@ -8452,6 +8462,16 @@
 			(type default)
 		)
 		(uuid "bbe63ea2-c06d-400c-95aa-55e4ac1da5eb")
+	)
+	(wire
+		(pts
+			(xy 251.46 68.58) (xy 279.4 68.58)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "bc901c15-6b14-487c-819d-d3a4d25fb788")
 	)
 	(wire
 		(pts
@@ -8595,7 +8615,7 @@
 	)
 	(wire
 		(pts
-			(xy 241.3 68.58) (xy 252.73 68.58)
+			(xy 241.3 68.58) (xy 251.46 68.58)
 		)
 		(stroke
 			(width 0)
@@ -9628,24 +9648,6 @@
 				(hide yes)
 			)
 		)
-		(property "Digikey PN" "WM11250-ND"
-			(at 187.96 52.07 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Digikey URL" "https://www.digikey.com/en/products/detail/molex/0428202223/3310054"
-			(at 187.96 52.07 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
 		(property "MFG PN" "42820-2223 "
 			(at 187.96 52.07 0)
 			(effects
@@ -9655,7 +9657,7 @@
 				(hide yes)
 			)
 		)
-		(property "MFG Name" "Molex"
+		(property "Digi PN" "WM11250-ND"
 			(at 187.96 52.07 0)
 			(effects
 				(font
@@ -9664,7 +9666,7 @@
 				(hide yes)
 			)
 		)
-		(property "Datasheet #2" ""
+		(property "Digi URL" "https://www.digikey.com/en/products/detail/molex/0428202223/3310054"
 			(at 187.96 52.07 0)
 			(effects
 				(font
@@ -9673,79 +9675,7 @@
 				(hide yes)
 			)
 		)
-		(property "Description_1" ""
-			(at 187.96 52.07 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Manufacturer" ""
-			(at 187.96 52.07 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Manufacturer_Name" ""
-			(at 187.96 52.07 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Manufacturer_Part_Number" ""
-			(at 187.96 52.07 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "On Line Components Part Number" ""
-			(at 187.96 52.07 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "On Line Components Price/Stock" ""
-			(at 187.96 52.07 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "PN" ""
-			(at 187.96 52.07 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Mouser PN" ""
-			(at 187.96 52.07 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Mouser URL" ""
+		(property "MFG" "Molex"
 			(at 187.96 52.07 0)
 			(effects
 				(font
@@ -9831,15 +9761,6 @@
 				(hide yes)
 			)
 		)
-		(property "Digikey URL" "https://www.digikey.com/en/products/detail/molex/1054301103/9959377"
-			(at 41.91 120.65 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
 		(property "MFG PN" "1054301103"
 			(at 41.91 120.65 0)
 			(effects
@@ -9849,7 +9770,7 @@
 				(hide yes)
 			)
 		)
-		(property "MFG Name" "Molex"
+		(property "Digi URL" "https://www.digikey.com/en/products/detail/molex/1054301103/9959377"
 			(at 41.91 120.65 0)
 			(effects
 				(font
@@ -9858,88 +9779,7 @@
 				(hide yes)
 			)
 		)
-		(property "Datasheet #2" ""
-			(at 41.91 120.65 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Description_1" ""
-			(at 41.91 120.65 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Manufacturer" ""
-			(at 41.91 120.65 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Manufacturer_Name" ""
-			(at 41.91 120.65 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Manufacturer_Part_Number" ""
-			(at 41.91 120.65 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "On Line Components Part Number" ""
-			(at 41.91 120.65 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "On Line Components Price/Stock" ""
-			(at 41.91 120.65 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "PN" ""
-			(at 41.91 120.65 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Mouser PN" ""
-			(at 41.91 120.65 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Mouser URL" ""
+		(property "MFG" "Molex"
 			(at 41.91 120.65 0)
 			(effects
 				(font
@@ -10020,24 +9860,6 @@
 				(hide yes)
 			)
 		)
-		(property "Digikey PN" "311-15.0KHRCT-ND"
-			(at 104.14 76.2 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Digikey URL" "https://www.digikey.com/en/products/detail/yageo/RC0603FR-0715KL/726953"
-			(at 104.14 76.2 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
 		(property "MFG PN" "RC0603FR-0715KL"
 			(at 104.14 76.2 0)
 			(effects
@@ -10047,7 +9869,7 @@
 				(hide yes)
 			)
 		)
-		(property "MFG Name" "YAGEO"
+		(property "Digi PN" "311-15.0KHRCT-ND"
 			(at 104.14 76.2 0)
 			(effects
 				(font
@@ -10056,7 +9878,7 @@
 				(hide yes)
 			)
 		)
-		(property "Datasheet #2" ""
+		(property "Digi URL" "https://www.digikey.com/en/products/detail/yageo/RC0603FR-0715KL/726953"
 			(at 104.14 76.2 0)
 			(effects
 				(font
@@ -10065,79 +9887,7 @@
 				(hide yes)
 			)
 		)
-		(property "Description_1" ""
-			(at 104.14 76.2 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Manufacturer" ""
-			(at 104.14 76.2 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Manufacturer_Name" ""
-			(at 104.14 76.2 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Manufacturer_Part_Number" ""
-			(at 104.14 76.2 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "On Line Components Part Number" ""
-			(at 104.14 76.2 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "On Line Components Price/Stock" ""
-			(at 104.14 76.2 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "PN" ""
-			(at 104.14 76.2 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Mouser PN" ""
-			(at 104.14 76.2 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Mouser URL" ""
+		(property "MFG" "YAGEO"
 			(at 104.14 76.2 0)
 			(effects
 				(font
@@ -10278,24 +10028,6 @@
 				(hide yes)
 			)
 		)
-		(property "Digikey PN" "696-1085-ND"
-			(at 55.88 154.94 90)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Digikey URL" "https://www.digikey.com/en/products/detail/riedon-products-by-bourns/UB5C-5KF1/2176663"
-			(at 55.88 154.94 90)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
 		(property "MFG PN" "UB5C-5KF1"
 			(at 55.88 154.94 90)
 			(effects
@@ -10305,7 +10037,7 @@
 				(hide yes)
 			)
 		)
-		(property "MFG Name" "Riedon products by Bourns"
+		(property "Digi PN" "696-1085-ND"
 			(at 55.88 154.94 90)
 			(effects
 				(font
@@ -10314,7 +10046,7 @@
 				(hide yes)
 			)
 		)
-		(property "Datasheet #2" ""
+		(property "Digi URL" "https://www.digikey.com/en/products/detail/riedon-products-by-bourns/UB5C-5KF1/2176663"
 			(at 55.88 154.94 90)
 			(effects
 				(font
@@ -10323,79 +10055,7 @@
 				(hide yes)
 			)
 		)
-		(property "Description_1" ""
-			(at 55.88 154.94 90)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Manufacturer" ""
-			(at 55.88 154.94 90)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Manufacturer_Name" ""
-			(at 55.88 154.94 90)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Manufacturer_Part_Number" ""
-			(at 55.88 154.94 90)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "On Line Components Part Number" ""
-			(at 55.88 154.94 90)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "On Line Components Price/Stock" ""
-			(at 55.88 154.94 90)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "PN" ""
-			(at 55.88 154.94 90)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Mouser PN" ""
-			(at 55.88 154.94 90)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Mouser URL" ""
+		(property "MFG" "Riedon products by Bourns"
 			(at 55.88 154.94 90)
 			(effects
 				(font
@@ -10482,15 +10142,6 @@
 				(hide yes)
 			)
 		)
-		(property "Digikey URL" "https://www.digikey.com/en/products/detail/yageo/RC0603FR-0710KL/726880"
-			(at 241.3 76.2 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
 		(property "MFG PN" "RC0603FR-0710KL"
 			(at 241.3 76.2 0)
 			(effects
@@ -10500,7 +10151,7 @@
 				(hide yes)
 			)
 		)
-		(property "MFG Name" "YAGEO"
+		(property "Digi URL" "https://www.digikey.com/en/products/detail/yageo/RC0603FR-0710KL/726880"
 			(at 241.3 76.2 0)
 			(effects
 				(font
@@ -10509,88 +10160,7 @@
 				(hide yes)
 			)
 		)
-		(property "Datasheet #2" ""
-			(at 241.3 76.2 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Description_1" ""
-			(at 241.3 76.2 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Manufacturer" ""
-			(at 241.3 76.2 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Manufacturer_Name" ""
-			(at 241.3 76.2 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Manufacturer_Part_Number" ""
-			(at 241.3 76.2 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "On Line Components Part Number" ""
-			(at 241.3 76.2 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "On Line Components Price/Stock" ""
-			(at 241.3 76.2 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "PN" ""
-			(at 241.3 76.2 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Mouser PN" ""
-			(at 241.3 76.2 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Mouser URL" ""
+		(property "MFG" "YAGEO"
 			(at 241.3 76.2 0)
 			(effects
 				(font
@@ -10619,7 +10189,7 @@
 		(at 85.09 132.08 0)
 		(unit 1)
 		(exclude_from_sim no)
-		(in_bom yes)
+		(in_bom no)
 		(on_board yes)
 		(dnp no)
 		(uuid "0a5a965c-21fa-4882-9a75-5cc366999ff3")
@@ -10668,96 +10238,6 @@
 				(hide yes)
 			)
 		)
-		(property "Datasheet #2" ""
-			(at 85.09 132.08 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Description_1" ""
-			(at 85.09 132.08 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Manufacturer" ""
-			(at 85.09 132.08 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Manufacturer_Name" ""
-			(at 85.09 132.08 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Manufacturer_Part_Number" ""
-			(at 85.09 132.08 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "On Line Components Part Number" ""
-			(at 85.09 132.08 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "On Line Components Price/Stock" ""
-			(at 85.09 132.08 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "PN" ""
-			(at 85.09 132.08 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Mouser PN" ""
-			(at 85.09 132.08 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Mouser URL" ""
-			(at 85.09 132.08 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
 		(pin "1"
 			(uuid "23286951-cfe2-4131-b2a9-191367e0e906")
 		)
@@ -10775,7 +10255,7 @@
 		(at 325.12 181.61 0)
 		(unit 1)
 		(exclude_from_sim no)
-		(in_bom yes)
+		(in_bom no)
 		(on_board yes)
 		(dnp no)
 		(uuid "0c60ad87-e70d-416b-97b5-8967a0fec8e5")
@@ -10816,96 +10296,6 @@
 			)
 		)
 		(property "Description" "test point"
-			(at 325.12 181.61 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Datasheet #2" ""
-			(at 325.12 181.61 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Description_1" ""
-			(at 325.12 181.61 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Manufacturer" ""
-			(at 325.12 181.61 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Manufacturer_Name" ""
-			(at 325.12 181.61 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Manufacturer_Part_Number" ""
-			(at 325.12 181.61 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "On Line Components Part Number" ""
-			(at 325.12 181.61 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "On Line Components Price/Stock" ""
-			(at 325.12 181.61 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "PN" ""
-			(at 325.12 181.61 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Mouser PN" ""
-			(at 325.12 181.61 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Mouser URL" ""
 			(at 325.12 181.61 0)
 			(effects
 				(font
@@ -10987,15 +10377,6 @@
 				(hide yes)
 			)
 		)
-		(property "Digikey URL" "https://www.digikey.com/en/products/detail/molex/1054301103/9959377"
-			(at 44.45 177.8 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
 		(property "MFG PN" "1054301103"
 			(at 44.45 177.8 0)
 			(effects
@@ -11005,7 +10386,7 @@
 				(hide yes)
 			)
 		)
-		(property "MFG Name" "Molex"
+		(property "Digi URL" "https://www.digikey.com/en/products/detail/molex/1054301103/9959377"
 			(at 44.45 177.8 0)
 			(effects
 				(font
@@ -11014,88 +10395,7 @@
 				(hide yes)
 			)
 		)
-		(property "Datasheet #2" ""
-			(at 44.45 177.8 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Description_1" ""
-			(at 44.45 177.8 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Manufacturer" ""
-			(at 44.45 177.8 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Manufacturer_Name" ""
-			(at 44.45 177.8 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Manufacturer_Part_Number" ""
-			(at 44.45 177.8 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "On Line Components Part Number" ""
-			(at 44.45 177.8 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "On Line Components Price/Stock" ""
-			(at 44.45 177.8 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "PN" ""
-			(at 44.45 177.8 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Mouser PN" ""
-			(at 44.45 177.8 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Mouser URL" ""
+		(property "MFG" "Molex"
 			(at 44.45 177.8 0)
 			(effects
 				(font
@@ -11174,24 +10474,6 @@
 				(hide yes)
 			)
 		)
-		(property "Digikey PN" "MCP6004-I/SL-ND"
-			(at 41.91 77.47 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Digikey URL" "https://www.digikey.com/en/products/detail/microchip-technology/MCP6004-I-SL/523061?gclsrc=aw.ds&gad_source=1&gad_campaignid=17922795960&gbraid=0AAAAADrbLlirMt8CnwTpqopm1INQzq2TO&gclid=Cj0KCQiAvtzLBhCPARIsALwhxdquhsBlAg_bKJq5CGOPXtiGSHN9oTmcxlIwgH0Oo6MGXvgyCW9ozEQaAsWSEALw_wcB"
-			(at 41.91 77.47 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
 		(property "MFG PN" "MCP6004-I/SL"
 			(at 41.91 77.47 0)
 			(effects
@@ -11201,7 +10483,7 @@
 				(hide yes)
 			)
 		)
-		(property "MFG Name" "Microchip Technology"
+		(property "Digi PN" "MCP6004-I/SL-ND"
 			(at 41.91 77.47 0)
 			(effects
 				(font
@@ -11210,7 +10492,7 @@
 				(hide yes)
 			)
 		)
-		(property "Datasheet #2" ""
+		(property "Digi URL" "https://www.digikey.com/en/products/detail/microchip-technology/MCP6004-I-SL/523061?gclsrc=aw.ds&gad_source=1&gad_campaignid=17922795960&gbraid=0AAAAADrbLlirMt8CnwTpqopm1INQzq2TO&gclid=Cj0KCQiAvtzLBhCPARIsALwhxdquhsBlAg_bKJq5CGOPXtiGSHN9oTmcxlIwgH0Oo6MGXvgyCW9ozEQaAsWSEALw_wcB"
 			(at 41.91 77.47 0)
 			(effects
 				(font
@@ -11219,79 +10501,7 @@
 				(hide yes)
 			)
 		)
-		(property "Description_1" ""
-			(at 41.91 77.47 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Manufacturer" ""
-			(at 41.91 77.47 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Manufacturer_Name" ""
-			(at 41.91 77.47 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Manufacturer_Part_Number" ""
-			(at 41.91 77.47 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "On Line Components Part Number" ""
-			(at 41.91 77.47 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "On Line Components Price/Stock" ""
-			(at 41.91 77.47 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "PN" ""
-			(at 41.91 77.47 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Mouser PN" ""
-			(at 41.91 77.47 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Mouser URL" ""
+		(property "MFG" "Microchip Technology"
 			(at 41.91 77.47 0)
 			(effects
 				(font
@@ -11474,24 +10684,6 @@
 				(hide yes)
 			)
 		)
-		(property "Digikey PN" "31-DMG2301L-13CT-ND"
-			(at 328.93 63.5 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Digikey URL" "https://www.digikey.com/en/products/detail/diodes-incorporated/DMG2301L-13/5768496"
-			(at 328.93 63.5 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
 		(property "MFG PN" "DMG2301L-13"
 			(at 328.93 63.5 0)
 			(effects
@@ -11501,7 +10693,7 @@
 				(hide yes)
 			)
 		)
-		(property "MFG Name" "Diodes Incorporated"
+		(property "Digi PN" "31-DMG2301L-13CT-ND"
 			(at 328.93 63.5 0)
 			(effects
 				(font
@@ -11510,7 +10702,7 @@
 				(hide yes)
 			)
 		)
-		(property "Datasheet #2" ""
+		(property "Digi URL" "https://www.digikey.com/en/products/detail/diodes-incorporated/DMG2301L-13/5768496"
 			(at 328.93 63.5 0)
 			(effects
 				(font
@@ -11519,79 +10711,7 @@
 				(hide yes)
 			)
 		)
-		(property "Description_1" ""
-			(at 328.93 63.5 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Manufacturer" ""
-			(at 328.93 63.5 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Manufacturer_Name" ""
-			(at 328.93 63.5 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Manufacturer_Part_Number" ""
-			(at 328.93 63.5 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "On Line Components Part Number" ""
-			(at 328.93 63.5 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "On Line Components Price/Stock" ""
-			(at 328.93 63.5 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "PN" ""
-			(at 328.93 63.5 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Mouser PN" ""
-			(at 328.93 63.5 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Mouser URL" ""
+		(property "MFG" "Diodes Incorporated"
 			(at 328.93 63.5 0)
 			(effects
 				(font
@@ -11671,24 +10791,6 @@
 				(hide yes)
 			)
 		)
-		(property "Digikey PN" "RMCF0603FT1K00CT-ND"
-			(at 308.61 71.12 90)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Digikey URL" "https://www.digikey.com/en/products/detail/stackpole-electronics-inc/RMCF0603FT1K00/1761077"
-			(at 308.61 71.12 90)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
 		(property "MFG PN" "RMCF0603FT1K00"
 			(at 308.61 71.12 90)
 			(effects
@@ -11698,7 +10800,7 @@
 				(hide yes)
 			)
 		)
-		(property "MFG Name" "Stackpole Electronics Inc"
+		(property "Digi PN" "RMCF0603FT1K00CT-ND"
 			(at 308.61 71.12 90)
 			(effects
 				(font
@@ -11707,7 +10809,7 @@
 				(hide yes)
 			)
 		)
-		(property "Datasheet #2" ""
+		(property "Digi URL" "https://www.digikey.com/en/products/detail/stackpole-electronics-inc/RMCF0603FT1K00/1761077"
 			(at 308.61 71.12 90)
 			(effects
 				(font
@@ -11716,79 +10818,7 @@
 				(hide yes)
 			)
 		)
-		(property "Description_1" ""
-			(at 308.61 71.12 90)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Manufacturer" ""
-			(at 308.61 71.12 90)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Manufacturer_Name" ""
-			(at 308.61 71.12 90)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Manufacturer_Part_Number" ""
-			(at 308.61 71.12 90)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "On Line Components Part Number" ""
-			(at 308.61 71.12 90)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "On Line Components Price/Stock" ""
-			(at 308.61 71.12 90)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "PN" ""
-			(at 308.61 71.12 90)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Mouser PN" ""
-			(at 308.61 71.12 90)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Mouser URL" ""
+		(property "MFG" "Stackpole Electronics Inc"
 			(at 308.61 71.12 90)
 			(effects
 				(font
@@ -11814,15 +10844,15 @@
 	)
 	(symbol
 		(lib_id "Connector:TestPoint")
-		(at 252.73 68.58 0)
+		(at 251.46 68.58 0)
 		(unit 1)
 		(exclude_from_sim no)
-		(in_bom yes)
+		(in_bom no)
 		(on_board yes)
 		(dnp no)
 		(uuid "18cbfc65-8cfd-4abe-91b4-fc89a920e017")
 		(property "Reference" "TP6"
-			(at 254.254 64.008 0)
+			(at 252.984 64.008 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -11830,8 +10860,8 @@
 				(justify left)
 			)
 		)
-		(property "Value" "3.4V @ 12V ~ 3V @ 10.5V"
-			(at 254.254 66.548 0)
+		(property "Value" "3.4V @ 12V ~ 3V @ 10.47V"
+			(at 252.984 66.548 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -11840,7 +10870,7 @@
 			)
 		)
 		(property "Footprint" "TestPoint:TestPoint_Pad_1.0x1.0mm"
-			(at 257.81 68.58 0)
+			(at 256.54 68.58 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -11849,7 +10879,7 @@
 			)
 		)
 		(property "Datasheet" "~"
-			(at 257.81 68.58 0)
+			(at 256.54 68.58 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -11858,97 +10888,7 @@
 			)
 		)
 		(property "Description" "test point"
-			(at 252.73 68.58 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Datasheet #2" ""
-			(at 252.73 68.58 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Description_1" ""
-			(at 252.73 68.58 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Manufacturer" ""
-			(at 252.73 68.58 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Manufacturer_Name" ""
-			(at 252.73 68.58 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Manufacturer_Part_Number" ""
-			(at 252.73 68.58 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "On Line Components Part Number" ""
-			(at 252.73 68.58 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "On Line Components Price/Stock" ""
-			(at 252.73 68.58 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "PN" ""
-			(at 252.73 68.58 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Mouser PN" ""
-			(at 252.73 68.58 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Mouser URL" ""
-			(at 252.73 68.58 0)
+			(at 251.46 68.58 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -12088,24 +11028,6 @@
 				(hide yes)
 			)
 		)
-		(property "Digikey PN" "1276-1184-1-ND"
-			(at 275.59 151.13 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Digikey URL" "https://www.digikey.com/en/products/detail/samsung-electro-mechanics/CL10B105KA8NNNC/3886842"
-			(at 275.59 151.13 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
 		(property "MFG PN" "CL10B105KA8NNNC"
 			(at 275.59 151.13 0)
 			(effects
@@ -12115,7 +11037,7 @@
 				(hide yes)
 			)
 		)
-		(property "MFG Name" "Samsung Electro-Mechanics"
+		(property "Digi PN" "1276-1184-1-ND"
 			(at 275.59 151.13 0)
 			(effects
 				(font
@@ -12124,7 +11046,7 @@
 				(hide yes)
 			)
 		)
-		(property "Datasheet #2" ""
+		(property "Digi URL" "https://www.digikey.com/en/products/detail/samsung-electro-mechanics/CL10B105KA8NNNC/3886842"
 			(at 275.59 151.13 0)
 			(effects
 				(font
@@ -12133,79 +11055,7 @@
 				(hide yes)
 			)
 		)
-		(property "Description_1" ""
-			(at 275.59 151.13 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Manufacturer" ""
-			(at 275.59 151.13 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Manufacturer_Name" ""
-			(at 275.59 151.13 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Manufacturer_Part_Number" ""
-			(at 275.59 151.13 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "On Line Components Part Number" ""
-			(at 275.59 151.13 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "On Line Components Price/Stock" ""
-			(at 275.59 151.13 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "PN" ""
-			(at 275.59 151.13 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Mouser PN" ""
-			(at 275.59 151.13 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Mouser URL" ""
+		(property "MFG" "Samsung Electro-Mechanics"
 			(at 275.59 151.13 0)
 			(effects
 				(font
@@ -12477,24 +11327,6 @@
 				(hide yes)
 			)
 		)
-		(property "Digikey PN" "WM11250-ND"
-			(at 187.96 80.01 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Digikey URL" "https://www.digikey.com/en/products/detail/molex/0428202223/3310054"
-			(at 187.96 80.01 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
 		(property "MFG PN" "42820-2223 "
 			(at 187.96 80.01 0)
 			(effects
@@ -12504,7 +11336,7 @@
 				(hide yes)
 			)
 		)
-		(property "MFG Name" "Molex"
+		(property "Digi PN" "WM11250-ND"
 			(at 187.96 80.01 0)
 			(effects
 				(font
@@ -12513,7 +11345,7 @@
 				(hide yes)
 			)
 		)
-		(property "Datasheet #2" ""
+		(property "Digi URL" "https://www.digikey.com/en/products/detail/molex/0428202223/3310054"
 			(at 187.96 80.01 0)
 			(effects
 				(font
@@ -12522,79 +11354,7 @@
 				(hide yes)
 			)
 		)
-		(property "Description_1" ""
-			(at 187.96 80.01 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Manufacturer" ""
-			(at 187.96 80.01 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Manufacturer_Name" ""
-			(at 187.96 80.01 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Manufacturer_Part_Number" ""
-			(at 187.96 80.01 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "On Line Components Part Number" ""
-			(at 187.96 80.01 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "On Line Components Price/Stock" ""
-			(at 187.96 80.01 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "PN" ""
-			(at 187.96 80.01 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Mouser PN" ""
-			(at 187.96 80.01 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Mouser URL" ""
+		(property "MFG" "Molex"
 			(at 187.96 80.01 0)
 			(effects
 				(font
@@ -12738,24 +11498,6 @@
 				(hide yes)
 			)
 		)
-		(property "Digikey PN" "P200KDBCT-ND"
-			(at 275.59 142.24 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Digikey URL" "https://www.digikey.com/en/products/detail/panasonic-electronic-components/ERA-3AEB204V/1465909"
-			(at 275.59 142.24 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
 		(property "MFG PN" "ERA-3AEB204V"
 			(at 275.59 142.24 0)
 			(effects
@@ -12765,7 +11507,7 @@
 				(hide yes)
 			)
 		)
-		(property "MFG Name" "Panasonic Electronic Components"
+		(property "Digi PN" "P200KDBCT-ND"
 			(at 275.59 142.24 0)
 			(effects
 				(font
@@ -12774,7 +11516,7 @@
 				(hide yes)
 			)
 		)
-		(property "Datasheet #2" ""
+		(property "Digi URL" "https://www.digikey.com/en/products/detail/panasonic-electronic-components/ERA-3AEB204V/1465909"
 			(at 275.59 142.24 0)
 			(effects
 				(font
@@ -12783,79 +11525,7 @@
 				(hide yes)
 			)
 		)
-		(property "Description_1" ""
-			(at 275.59 142.24 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Manufacturer" ""
-			(at 275.59 142.24 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Manufacturer_Name" ""
-			(at 275.59 142.24 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Manufacturer_Part_Number" ""
-			(at 275.59 142.24 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "On Line Components Part Number" ""
-			(at 275.59 142.24 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "On Line Components Price/Stock" ""
-			(at 275.59 142.24 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "PN" ""
-			(at 275.59 142.24 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Mouser PN" ""
-			(at 275.59 142.24 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Mouser URL" ""
+		(property "MFG" "Panasonic Electronic Components"
 			(at 275.59 142.24 0)
 			(effects
 				(font
@@ -12934,24 +11604,6 @@
 				(hide yes)
 			)
 		)
-		(property "Digikey PN" "CD0603-B0340RCT-ND"
-			(at 346.71 78.74 90)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Digikey URL" "https://www.digikey.com/en/products/detail/bourns-inc/CD0603-B0340R/7796828"
-			(at 346.71 78.74 90)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
 		(property "MFG PN" "CD0603-B0340R"
 			(at 346.71 78.74 90)
 			(effects
@@ -12981,6 +11633,24 @@
 		)
 		(property "Sim.Pins" "1=K 2=A"
 			(at 346.71 78.74 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Digi PN" "CD0603-B0340RCT-ND"
+			(at 346.71 78.74 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Digi URL" "https://www.digikey.com/en/products/detail/bourns-inc/CD0603-B0340R/7796828"
+			(at 346.71 78.74 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -13066,15 +11736,6 @@
 				(hide yes)
 			)
 		)
-		(property "Digikey URL" "https://www.digikey.com/en/products/detail/yageo/RC0603FR-0710KL/726880"
-			(at 73.66 142.24 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
 		(property "MFG PN" "RC0603FR-0710KL"
 			(at 73.66 142.24 0)
 			(effects
@@ -13084,7 +11745,7 @@
 				(hide yes)
 			)
 		)
-		(property "MFG Name" "YAGEO"
+		(property "Digi URL" "https://www.digikey.com/en/products/detail/yageo/RC0603FR-0710KL/726880"
 			(at 73.66 142.24 0)
 			(effects
 				(font
@@ -13093,88 +11754,7 @@
 				(hide yes)
 			)
 		)
-		(property "Datasheet #2" ""
-			(at 73.66 142.24 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Description_1" ""
-			(at 73.66 142.24 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Manufacturer" ""
-			(at 73.66 142.24 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Manufacturer_Name" ""
-			(at 73.66 142.24 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Manufacturer_Part_Number" ""
-			(at 73.66 142.24 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "On Line Components Part Number" ""
-			(at 73.66 142.24 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "On Line Components Price/Stock" ""
-			(at 73.66 142.24 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "PN" ""
-			(at 73.66 142.24 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Mouser PN" ""
-			(at 73.66 142.24 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Mouser URL" ""
+		(property "MFG" "YAGEO"
 			(at 73.66 142.24 0)
 			(effects
 				(font
@@ -13390,24 +11970,6 @@
 				(hide yes)
 			)
 		)
-		(property "Digikey PN" "399-C0603C104K5RACTUCT-ND"
-			(at 138.43 138.43 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Digikey URL" "https://www.digikey.com/en/products/detail/kemet/C0603C104K5RACTU/1465594"
-			(at 138.43 138.43 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
 		(property "MFG PN" "C0603C104K5RACTU"
 			(at 138.43 138.43 0)
 			(effects
@@ -13426,7 +11988,7 @@
 				(hide yes)
 			)
 		)
-		(property "Datasheet #2" ""
+		(property "Digi PN" "399-C0603C104K5RACTUCT-ND"
 			(at 138.43 138.43 0)
 			(effects
 				(font
@@ -13435,79 +11997,7 @@
 				(hide yes)
 			)
 		)
-		(property "Description_1" ""
-			(at 138.43 138.43 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Manufacturer" ""
-			(at 138.43 138.43 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Manufacturer_Name" ""
-			(at 138.43 138.43 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Manufacturer_Part_Number" ""
-			(at 138.43 138.43 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "On Line Components Part Number" ""
-			(at 138.43 138.43 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "On Line Components Price/Stock" ""
-			(at 138.43 138.43 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "PN" ""
-			(at 138.43 138.43 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Mouser PN" ""
-			(at 138.43 138.43 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Mouser URL" ""
+		(property "Digi URL" "https://www.digikey.com/en/products/detail/kemet/C0603C104K5RACTU/1465594"
 			(at 138.43 138.43 0)
 			(effects
 				(font
@@ -13586,24 +12076,6 @@
 				(hide yes)
 			)
 		)
-		(property "Digikey PN" "311-24.9KHRCT-ND"
-			(at 241.3 62.23 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Digikey URL" "https://www.digikey.com/en/products/detail/yageo/RC0603FR-0724K9L/727080"
-			(at 241.3 62.23 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
 		(property "MFG PN" "RC0603FR-0724K9L"
 			(at 241.3 62.23 0)
 			(effects
@@ -13613,7 +12085,7 @@
 				(hide yes)
 			)
 		)
-		(property "MFG Name" "YAGEO"
+		(property "Digi PN" "311-24.9KHRCT-ND"
 			(at 241.3 62.23 0)
 			(effects
 				(font
@@ -13622,7 +12094,7 @@
 				(hide yes)
 			)
 		)
-		(property "Datasheet #2" ""
+		(property "Digi URL" "https://www.digikey.com/en/products/detail/yageo/RC0603FR-0724K9L/727080"
 			(at 241.3 62.23 0)
 			(effects
 				(font
@@ -13631,79 +12103,7 @@
 				(hide yes)
 			)
 		)
-		(property "Description_1" ""
-			(at 241.3 62.23 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Manufacturer" ""
-			(at 241.3 62.23 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Manufacturer_Name" ""
-			(at 241.3 62.23 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Manufacturer_Part_Number" ""
-			(at 241.3 62.23 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "On Line Components Part Number" ""
-			(at 241.3 62.23 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "On Line Components Price/Stock" ""
-			(at 241.3 62.23 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "PN" ""
-			(at 241.3 62.23 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Mouser PN" ""
-			(at 241.3 62.23 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Mouser URL" ""
+		(property "MFG" "YAGEO"
 			(at 241.3 62.23 0)
 			(effects
 				(font
@@ -13789,15 +12189,6 @@
 				(hide yes)
 			)
 		)
-		(property "Digikey URL" "https://www.digikey.com/en/products/detail/molex/1054301103/9959377"
-			(at 41.91 153.67 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
 		(property "MFG PN" "1054301103"
 			(at 41.91 153.67 0)
 			(effects
@@ -13807,7 +12198,7 @@
 				(hide yes)
 			)
 		)
-		(property "MFG Name" "Molex"
+		(property "Digi URL" "https://www.digikey.com/en/products/detail/molex/1054301103/9959377"
 			(at 41.91 153.67 0)
 			(effects
 				(font
@@ -13816,88 +12207,7 @@
 				(hide yes)
 			)
 		)
-		(property "Datasheet #2" ""
-			(at 41.91 153.67 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Description_1" ""
-			(at 41.91 153.67 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Manufacturer" ""
-			(at 41.91 153.67 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Manufacturer_Name" ""
-			(at 41.91 153.67 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Manufacturer_Part_Number" ""
-			(at 41.91 153.67 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "On Line Components Part Number" ""
-			(at 41.91 153.67 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "On Line Components Price/Stock" ""
-			(at 41.91 153.67 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "PN" ""
-			(at 41.91 153.67 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Mouser PN" ""
-			(at 41.91 153.67 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Mouser URL" ""
+		(property "MFG" "Molex"
 			(at 41.91 153.67 0)
 			(effects
 				(font
@@ -13978,24 +12288,6 @@
 				(hide yes)
 			)
 		)
-		(property "Digikey PN" "399-C0603C104K5RACTUCT-ND"
-			(at 298.45 77.47 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Digikey URL" "https://www.digikey.com/en/products/detail/kemet/C0603C104K5RACTU/1465594"
-			(at 298.45 77.47 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
 		(property "MFG PN" "C0603C104K5RACTU"
 			(at 298.45 77.47 0)
 			(effects
@@ -14005,7 +12297,7 @@
 				(hide yes)
 			)
 		)
-		(property "Datasheet #2" ""
+		(property "Digi PN" "399-C0603C104K5RACTUCT-ND"
 			(at 298.45 77.47 0)
 			(effects
 				(font
@@ -14014,7 +12306,7 @@
 				(hide yes)
 			)
 		)
-		(property "Description_1" ""
+		(property "Digi URL" "https://www.digikey.com/en/products/detail/kemet/C0603C104K5RACTU/1465594"
 			(at 298.45 77.47 0)
 			(effects
 				(font
@@ -14023,70 +12315,7 @@
 				(hide yes)
 			)
 		)
-		(property "Manufacturer" ""
-			(at 298.45 77.47 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Manufacturer_Name" ""
-			(at 298.45 77.47 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Manufacturer_Part_Number" ""
-			(at 298.45 77.47 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "On Line Components Part Number" ""
-			(at 298.45 77.47 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "On Line Components Price/Stock" ""
-			(at 298.45 77.47 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "PN" ""
-			(at 298.45 77.47 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Mouser PN" ""
-			(at 298.45 77.47 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Mouser URL" ""
+		(property "MFG" "KEMET"
 			(at 298.45 77.47 0)
 			(effects
 				(font
@@ -14115,7 +12344,7 @@
 		(at 372.11 125.73 0)
 		(unit 1)
 		(exclude_from_sim no)
-		(in_bom yes)
+		(in_bom no)
 		(on_board yes)
 		(dnp no)
 		(uuid "5c25c55d-a895-40b9-ac8b-41ed68d9ccfd")
@@ -14156,96 +12385,6 @@
 			)
 		)
 		(property "Description" "test point"
-			(at 372.11 125.73 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Datasheet #2" ""
-			(at 372.11 125.73 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Description_1" ""
-			(at 372.11 125.73 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Manufacturer" ""
-			(at 372.11 125.73 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Manufacturer_Name" ""
-			(at 372.11 125.73 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Manufacturer_Part_Number" ""
-			(at 372.11 125.73 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "On Line Components Part Number" ""
-			(at 372.11 125.73 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "On Line Components Price/Stock" ""
-			(at 372.11 125.73 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "PN" ""
-			(at 372.11 125.73 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Mouser PN" ""
-			(at 372.11 125.73 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Mouser URL" ""
 			(at 372.11 125.73 0)
 			(effects
 				(font
@@ -14336,7 +12475,7 @@
 		(at 369.57 153.67 0)
 		(unit 1)
 		(exclude_from_sim no)
-		(in_bom yes)
+		(in_bom no)
 		(on_board yes)
 		(dnp no)
 		(fields_autoplaced yes)
@@ -14378,96 +12517,6 @@
 			)
 		)
 		(property "Description" "test point"
-			(at 369.57 153.67 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Datasheet #2" ""
-			(at 369.57 153.67 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Description_1" ""
-			(at 369.57 153.67 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Manufacturer" ""
-			(at 369.57 153.67 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Manufacturer_Name" ""
-			(at 369.57 153.67 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Manufacturer_Part_Number" ""
-			(at 369.57 153.67 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "On Line Components Part Number" ""
-			(at 369.57 153.67 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "On Line Components Price/Stock" ""
-			(at 369.57 153.67 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "PN" ""
-			(at 369.57 153.67 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Mouser PN" ""
-			(at 369.57 153.67 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Mouser URL" ""
 			(at 369.57 153.67 0)
 			(effects
 				(font
@@ -14540,24 +12589,6 @@
 				(hide yes)
 			)
 		)
-		(property "Digikey PN" "RMCF0603FT1K00CT-ND"
-			(at 295.91 137.16 90)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Digikey URL" "https://www.digikey.com/en/products/detail/stackpole-electronics-inc/RMCF0603FT1K00/1761077"
-			(at 295.91 137.16 90)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
 		(property "MFG PN" "RMCF0603FT1K00"
 			(at 295.91 137.16 90)
 			(effects
@@ -14567,7 +12598,7 @@
 				(hide yes)
 			)
 		)
-		(property "MFG Name" "Stackpole Electronics Inc"
+		(property "Digi PN" "RMCF0603FT1K00CT-ND"
 			(at 295.91 137.16 90)
 			(effects
 				(font
@@ -14576,7 +12607,7 @@
 				(hide yes)
 			)
 		)
-		(property "Datasheet #2" ""
+		(property "Digi URL" "https://www.digikey.com/en/products/detail/stackpole-electronics-inc/RMCF0603FT1K00/1761077"
 			(at 295.91 137.16 90)
 			(effects
 				(font
@@ -14585,79 +12616,7 @@
 				(hide yes)
 			)
 		)
-		(property "Description_1" ""
-			(at 295.91 137.16 90)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Manufacturer" ""
-			(at 295.91 137.16 90)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Manufacturer_Name" ""
-			(at 295.91 137.16 90)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Manufacturer_Part_Number" ""
-			(at 295.91 137.16 90)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "On Line Components Part Number" ""
-			(at 295.91 137.16 90)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "On Line Components Price/Stock" ""
-			(at 295.91 137.16 90)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "PN" ""
-			(at 295.91 137.16 90)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Mouser PN" ""
-			(at 295.91 137.16 90)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Mouser URL" ""
+		(property "MFG" "Stackpole Electronics Inc"
 			(at 295.91 137.16 90)
 			(effects
 				(font
@@ -14867,24 +12826,6 @@
 				(hide yes)
 			)
 		)
-		(property "Digikey PN" "WM11250-ND"
-			(at 391.16 146.05 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Digikey URL" "https://www.digikey.com/en/products/detail/molex/0428202223/3310054"
-			(at 391.16 146.05 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
 		(property "MFG PN" "42820-2223 "
 			(at 391.16 146.05 0)
 			(effects
@@ -14894,7 +12835,7 @@
 				(hide yes)
 			)
 		)
-		(property "MFG Name" "Molex"
+		(property "Digi PN" "WM11250-ND"
 			(at 391.16 146.05 0)
 			(effects
 				(font
@@ -14903,7 +12844,7 @@
 				(hide yes)
 			)
 		)
-		(property "Datasheet #2" ""
+		(property "Digi URL" "https://www.digikey.com/en/products/detail/molex/0428202223/3310054"
 			(at 391.16 146.05 0)
 			(effects
 				(font
@@ -14912,79 +12853,7 @@
 				(hide yes)
 			)
 		)
-		(property "Description_1" ""
-			(at 391.16 146.05 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Manufacturer" ""
-			(at 391.16 146.05 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Manufacturer_Name" ""
-			(at 391.16 146.05 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Manufacturer_Part_Number" ""
-			(at 391.16 146.05 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "On Line Components Part Number" ""
-			(at 391.16 146.05 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "On Line Components Price/Stock" ""
-			(at 391.16 146.05 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "PN" ""
-			(at 391.16 146.05 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Mouser PN" ""
-			(at 391.16 146.05 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Mouser URL" ""
+		(property "MFG" "Molex"
 			(at 391.16 146.05 0)
 			(effects
 				(font
@@ -15128,24 +12997,6 @@
 				(hide yes)
 			)
 		)
-		(property "Digikey PN" "1276-1184-1-ND"
-			(at 294.64 185.42 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Digikey URL" "https://www.digikey.com/en/products/detail/samsung-electro-mechanics/CL10B105KA8NNNC/3886842"
-			(at 294.64 185.42 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
 		(property "MFG PN" "CL10B105KA8NNNC"
 			(at 294.64 185.42 0)
 			(effects
@@ -15155,7 +13006,7 @@
 				(hide yes)
 			)
 		)
-		(property "MFG Name" "Samsung Electro-Mechanics"
+		(property "Digi PN" "1276-1184-1-ND"
 			(at 294.64 185.42 0)
 			(effects
 				(font
@@ -15164,7 +13015,7 @@
 				(hide yes)
 			)
 		)
-		(property "Datasheet #2" ""
+		(property "Digi URL" "https://www.digikey.com/en/products/detail/samsung-electro-mechanics/CL10B105KA8NNNC/3886842"
 			(at 294.64 185.42 0)
 			(effects
 				(font
@@ -15173,79 +13024,7 @@
 				(hide yes)
 			)
 		)
-		(property "Description_1" ""
-			(at 294.64 185.42 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Manufacturer" ""
-			(at 294.64 185.42 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Manufacturer_Name" ""
-			(at 294.64 185.42 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Manufacturer_Part_Number" ""
-			(at 294.64 185.42 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "On Line Components Part Number" ""
-			(at 294.64 185.42 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "On Line Components Price/Stock" ""
-			(at 294.64 185.42 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "PN" ""
-			(at 294.64 185.42 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Mouser PN" ""
-			(at 294.64 185.42 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Mouser URL" ""
+		(property "MFG" "Samsung Electro-Mechanics"
 			(at 294.64 185.42 0)
 			(effects
 				(font
@@ -15326,35 +13105,6 @@
 				(hide yes)
 			)
 		)
-		(property "Digikey PN" "PB2135-ND"
-			(at 381 77.47 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-				(hide yes)
-			)
-		)
-		(property "Digikey URL" "https://www.digikey.com/en/products/detail/te-connectivity-potter-brumfield-relays/EW60-1A3-CL12D04-00000/6021840"
-			(at 354.33 69.85 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "MFG Name" "TE Connectivity"
-			(at 381 82.55 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-				(hide yes)
-			)
-		)
 		(property "MFG PN" "EW60-1A3-CL12D04,00000"
 			(at 381 85.09 0)
 			(effects
@@ -15365,17 +13115,7 @@
 				(hide yes)
 			)
 		)
-		(property "Height" "30.4"
-			(at 381 74.93 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-				(hide yes)
-			)
-		)
-		(property "Datasheet #2" ""
+		(property "Digi PN" "PB2135-ND"
 			(at 354.33 69.85 0)
 			(effects
 				(font
@@ -15384,7 +13124,7 @@
 				(hide yes)
 			)
 		)
-		(property "Description_1" ""
+		(property "Digi URL" "https://www.digikey.com/en/products/detail/te-connectivity-potter-brumfield-relays/EW60-1A3-CL12D04-00000/6021840"
 			(at 354.33 69.85 0)
 			(effects
 				(font
@@ -15393,70 +13133,7 @@
 				(hide yes)
 			)
 		)
-		(property "Manufacturer" ""
-			(at 354.33 69.85 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Manufacturer_Name" ""
-			(at 354.33 69.85 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Manufacturer_Part_Number" ""
-			(at 354.33 69.85 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "On Line Components Part Number" ""
-			(at 354.33 69.85 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "On Line Components Price/Stock" ""
-			(at 354.33 69.85 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "PN" ""
-			(at 354.33 69.85 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Mouser PN" ""
-			(at 354.33 69.85 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Mouser URL" ""
+		(property "MFG" "TE Connectivity"
 			(at 354.33 69.85 0)
 			(effects
 				(font
@@ -15553,24 +13230,6 @@
 				(hide yes)
 			)
 		)
-		(property "Digikey PN" "MCP6004-I/SL-ND"
-			(at 58.42 77.47 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Digikey URL" "https://www.digikey.com/en/products/detail/microchip-technology/MCP6004-I-SL/523061?gclsrc=aw.ds&gad_source=1&gad_campaignid=17922795960&gbraid=0AAAAADrbLlirMt8CnwTpqopm1INQzq2TO&gclid=Cj0KCQiAvtzLBhCPARIsALwhxdquhsBlAg_bKJq5CGOPXtiGSHN9oTmcxlIwgH0Oo6MGXvgyCW9ozEQaAsWSEALw_wcB"
-			(at 58.42 77.47 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
 		(property "MFG PN" "MCP6004-I/SL"
 			(at 58.42 77.47 0)
 			(effects
@@ -15580,7 +13239,7 @@
 				(hide yes)
 			)
 		)
-		(property "MFG Name" "Microchip Technology"
+		(property "Digi PN" "MCP6004-I/SL-ND"
 			(at 58.42 77.47 0)
 			(effects
 				(font
@@ -15589,7 +13248,7 @@
 				(hide yes)
 			)
 		)
-		(property "Datasheet #2" ""
+		(property "Digi URL" "https://www.digikey.com/en/products/detail/microchip-technology/MCP6004-I-SL/523061?gclsrc=aw.ds&gad_source=1&gad_campaignid=17922795960&gbraid=0AAAAADrbLlirMt8CnwTpqopm1INQzq2TO&gclid=Cj0KCQiAvtzLBhCPARIsALwhxdquhsBlAg_bKJq5CGOPXtiGSHN9oTmcxlIwgH0Oo6MGXvgyCW9ozEQaAsWSEALw_wcB"
 			(at 58.42 77.47 0)
 			(effects
 				(font
@@ -15598,79 +13257,7 @@
 				(hide yes)
 			)
 		)
-		(property "Description_1" ""
-			(at 58.42 77.47 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Manufacturer" ""
-			(at 58.42 77.47 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Manufacturer_Name" ""
-			(at 58.42 77.47 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Manufacturer_Part_Number" ""
-			(at 58.42 77.47 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "On Line Components Part Number" ""
-			(at 58.42 77.47 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "On Line Components Price/Stock" ""
-			(at 58.42 77.47 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "PN" ""
-			(at 58.42 77.47 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Mouser PN" ""
-			(at 58.42 77.47 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Mouser URL" ""
+		(property "MFG" "Microchip Technology"
 			(at 58.42 77.47 0)
 			(effects
 				(font
@@ -15785,24 +13372,6 @@
 				(hide yes)
 			)
 		)
-		(property "Digikey PN" "RMCF0603FT1K00CT-ND"
-			(at 275.59 128.27 90)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Digikey URL" "https://www.digikey.com/en/products/detail/stackpole-electronics-inc/RMCF0603FT1K00/1761077"
-			(at 275.59 128.27 90)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
 		(property "MFG PN" "RMCF0603FT1K00"
 			(at 275.59 128.27 90)
 			(effects
@@ -15812,88 +13381,7 @@
 				(hide yes)
 			)
 		)
-		(property "MFG Name" "Stackpole Electronics Inc"
-			(at 275.59 128.27 90)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Datasheet #2" ""
-			(at 275.59 128.27 90)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Description_1" ""
-			(at 275.59 128.27 90)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Manufacturer" ""
-			(at 275.59 128.27 90)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Manufacturer_Name" ""
-			(at 275.59 128.27 90)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Manufacturer_Part_Number" ""
-			(at 275.59 128.27 90)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "On Line Components Part Number" ""
-			(at 275.59 128.27 90)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "On Line Components Price/Stock" ""
-			(at 275.59 128.27 90)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "PN" ""
-			(at 275.59 128.27 90)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Mouser PN" ""
+		(property "Digi PN" "RMCF0603FT1K00CT-ND"
 			(at 275.59 128.27 0)
 			(effects
 				(font
@@ -15902,7 +13390,16 @@
 				(hide yes)
 			)
 		)
-		(property "Mouser URL" ""
+		(property "Digi URL" "https://www.digikey.com/en/products/detail/stackpole-electronics-inc/RMCF0603FT1K00/1761077"
+			(at 275.59 128.27 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "MFG" "Stackpole Electronics Inc"
 			(at 275.59 128.27 0)
 			(effects
 				(font
@@ -15981,24 +13478,6 @@
 				(hide yes)
 			)
 		)
-		(property "Digikey PN" "CD0603-B0340RCT-ND"
-			(at 354.33 78.74 90)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Digikey URL" "https://www.digikey.com/en/products/detail/bourns-inc/CD0603-B0340R/7796828"
-			(at 354.33 78.74 90)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
 		(property "MFG PN" "CD0603-B0340R"
 			(at 354.33 78.74 90)
 			(effects
@@ -16028,6 +13507,24 @@
 		)
 		(property "Sim.Pins" "1=K 2=A"
 			(at 354.33 78.74 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Digi PN" "CD0603-B0340RCT-ND"
+			(at 354.33 78.74 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Digi URL" "https://www.digikey.com/en/products/detail/bourns-inc/CD0603-B0340R/7796828"
+			(at 354.33 78.74 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -16105,24 +13602,6 @@
 				(hide yes)
 			)
 		)
-		(property "Digikey PN" "296-ISOM8111DFSRCT-ND"
-			(at 162.56 138.43 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Digikey URL" "https://www.digikey.com/en/products/detail/texas-instruments/ISOM8111DFSR/26692225"
-			(at 162.56 138.43 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
 		(property "MFG PN" "ISOM8111DFSR"
 			(at 162.56 138.43 0)
 			(effects
@@ -16141,7 +13620,7 @@
 				(hide yes)
 			)
 		)
-		(property "Datasheet #2" ""
+		(property "Digi PN" "296-ISOM8111DFSRCT-ND"
 			(at 162.56 138.43 0)
 			(effects
 				(font
@@ -16150,79 +13629,7 @@
 				(hide yes)
 			)
 		)
-		(property "Description_1" ""
-			(at 162.56 138.43 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Manufacturer" ""
-			(at 162.56 138.43 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Manufacturer_Name" ""
-			(at 162.56 138.43 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Manufacturer_Part_Number" ""
-			(at 162.56 138.43 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "On Line Components Part Number" ""
-			(at 162.56 138.43 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "On Line Components Price/Stock" ""
-			(at 162.56 138.43 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "PN" ""
-			(at 162.56 138.43 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Mouser PN" ""
-			(at 162.56 138.43 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Mouser URL" ""
+		(property "Digi URL" "https://www.digikey.com/en/products/detail/texas-instruments/ISOM8111DFSR/26692225"
 			(at 162.56 138.43 0)
 			(effects
 				(font
@@ -16305,24 +13712,6 @@
 				(hide yes)
 			)
 		)
-		(property "Digikey PN" "P2.00KHCT-ND"
-			(at 147.32 134.62 90)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Digikey URL" "https://www.digikey.com/en/products/detail/panasonic-electronic-components/ERJ-3EKF2001V/196183"
-			(at 147.32 134.62 90)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
 		(property "MFG PN" "ERJ-3EKF2001V"
 			(at 147.32 134.62 90)
 			(effects
@@ -16332,7 +13721,7 @@
 				(hide yes)
 			)
 		)
-		(property "MFG Name" "Panasonic Electronic Components"
+		(property "Digi PN" "P2.00KHCT-ND"
 			(at 147.32 134.62 90)
 			(effects
 				(font
@@ -16341,7 +13730,7 @@
 				(hide yes)
 			)
 		)
-		(property "Datasheet #2" ""
+		(property "Digi URL" "https://www.digikey.com/en/products/detail/panasonic-electronic-components/ERJ-3EKF2001V/196183"
 			(at 147.32 134.62 90)
 			(effects
 				(font
@@ -16350,79 +13739,7 @@
 				(hide yes)
 			)
 		)
-		(property "Description_1" ""
-			(at 147.32 134.62 90)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Manufacturer" ""
-			(at 147.32 134.62 90)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Manufacturer_Name" ""
-			(at 147.32 134.62 90)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Manufacturer_Part_Number" ""
-			(at 147.32 134.62 90)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "On Line Components Part Number" ""
-			(at 147.32 134.62 90)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "On Line Components Price/Stock" ""
-			(at 147.32 134.62 90)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "PN" ""
-			(at 147.32 134.62 90)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Mouser PN" ""
-			(at 147.32 134.62 90)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Mouser URL" ""
+		(property "MFG" "Panasonic Electronic Components"
 			(at 147.32 134.62 90)
 			(effects
 				(font
@@ -16516,7 +13833,7 @@
 		(at 134.62 208.28 0)
 		(unit 1)
 		(exclude_from_sim no)
-		(in_bom yes)
+		(in_bom no)
 		(on_board yes)
 		(dnp no)
 		(uuid "79a2e843-fe87-45d1-9837-819054fdad93")
@@ -16555,96 +13872,6 @@
 			)
 		)
 		(property "Description" "test point"
-			(at 134.62 208.28 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Datasheet #2" ""
-			(at 134.62 208.28 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Description_1" ""
-			(at 134.62 208.28 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Manufacturer" ""
-			(at 134.62 208.28 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Manufacturer_Name" ""
-			(at 134.62 208.28 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Manufacturer_Part_Number" ""
-			(at 134.62 208.28 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "On Line Components Part Number" ""
-			(at 134.62 208.28 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "On Line Components Price/Stock" ""
-			(at 134.62 208.28 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "PN" ""
-			(at 134.62 208.28 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Mouser PN" ""
-			(at 134.62 208.28 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Mouser URL" ""
 			(at 134.62 208.28 0)
 			(effects
 				(font
@@ -16851,24 +14078,6 @@
 				(hide yes)
 			)
 		)
-		(property "Digikey PN" "CD0603-B0340RCT-ND"
-			(at 199.39 179.07 90)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Digikey URL" "https://www.digikey.com/en/products/detail/bourns-inc/CD0603-B0340R/7796828"
-			(at 199.39 179.07 90)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
 		(property "MFG PN" "CD0603-B0340R"
 			(at 199.39 179.07 90)
 			(effects
@@ -16898,6 +14107,24 @@
 		)
 		(property "Sim.Pins" "1=K 2=A"
 			(at 199.39 179.07 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Digi PN" "CD0603-B0340RCT-ND"
+			(at 199.39 179.07 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Digi URL" "https://www.digikey.com/en/products/detail/bourns-inc/CD0603-B0340R/7796828"
+			(at 199.39 179.07 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -16972,24 +14199,6 @@
 				(hide yes)
 			)
 		)
-		(property "Digikey PN" "13-RC0603FR-13100KLCT-ND"
-			(at 262.89 76.2 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Digikey URL" "https://www.digikey.com/en/products/detail/yageo/RC0603FR-13100KL/12756433?gclsrc=aw.ds&gad_source=1&gad_campaignid=20232005509&gbraid=0AAAAADrbLlj62eUKefenYV3jNQglQIEk-&gclid=Cj0KCQiAvtzLBhCPARIsALwhxdptvdkdfW_-_1zz0mO6n9rogZ4dIotwJTqh8foL60dNg2CEMbMd6t4aAtgTEALw_wcB"
-			(at 262.89 76.2 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
 		(property "MFG PN" "RC0603FR-13100KL"
 			(at 262.89 76.2 0)
 			(effects
@@ -16999,16 +14208,7 @@
 				(hide yes)
 			)
 		)
-		(property "MFG Name" "YAGEO"
-			(at 262.89 76.2 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Datasheet #2" ""
+		(property "Digi PN" "13-RC0603FR-13100KLCT-ND"
 			(at 262.89 76.2 90)
 			(effects
 				(font
@@ -17017,7 +14217,7 @@
 				(hide yes)
 			)
 		)
-		(property "Description_1" ""
+		(property "Digi URL" "https://www.digikey.com/en/products/detail/yageo/RC0603FR-13100KL/12756433?gclsrc=aw.ds&gad_source=1&gad_campaignid=20232005509&gbraid=0AAAAADrbLlj62eUKefenYV3jNQglQIEk-&gclid=Cj0KCQiAvtzLBhCPARIsALwhxdptvdkdfW_-_1zz0mO6n9rogZ4dIotwJTqh8foL60dNg2CEMbMd6t4aAtgTEALw_wcB"
 			(at 262.89 76.2 90)
 			(effects
 				(font
@@ -17026,70 +14226,7 @@
 				(hide yes)
 			)
 		)
-		(property "Manufacturer" ""
-			(at 262.89 76.2 90)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Manufacturer_Name" ""
-			(at 262.89 76.2 90)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Manufacturer_Part_Number" ""
-			(at 262.89 76.2 90)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "On Line Components Part Number" ""
-			(at 262.89 76.2 90)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "On Line Components Price/Stock" ""
-			(at 262.89 76.2 90)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "PN" ""
-			(at 262.89 76.2 90)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Mouser PN" ""
-			(at 262.89 76.2 90)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Mouser URL" ""
+		(property "MFG" "YAGEO"
 			(at 262.89 76.2 90)
 			(effects
 				(font
@@ -17230,34 +14367,7 @@
 				(hide yes)
 			)
 		)
-		(property "Digikey PN" "F6238-ND"
-			(at 383.54 95.25 90)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Digikey URL" "https://www.digikey.com/en/products/detail/littelfuse-commercial-vehicle-products/01530008LXN/3425426?gclsrc=aw.ds&gad_source=1&gad_campaignid=120565755&gbraid=0AAAAADrbLlhyn7F1Bcct6XChpLrikdgw4&gclid=CjwKCAiAssfLBhBDEiwAcLpwftHcT3qKVuMJj_FOCzZxcp-DSPDQsRMLMfTbMvjFrhiRwpQzlkDKVRoC03wQAvD_BwE"
-			(at 383.54 95.25 90)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
 		(property "MFG PN" "01530008LXN"
-			(at 383.54 95.25 90)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "MFG Name" "Littelfuse/Commercial Vehicle Products"
 			(at 383.54 95.25 90)
 			(effects
 				(font
@@ -17275,7 +14385,7 @@
 				(hide yes)
 			)
 		)
-		(property "Datasheet #2" ""
+		(property "Digi PN" "F6238-ND"
 			(at 383.54 95.25 90)
 			(effects
 				(font
@@ -17284,7 +14394,7 @@
 				(hide yes)
 			)
 		)
-		(property "Description_1" ""
+		(property "Digi URL" "https://www.digikey.com/en/products/detail/littelfuse-commercial-vehicle-products/01530008LXN/3425426?gclsrc=aw.ds&gad_source=1&gad_campaignid=120565755&gbraid=0AAAAADrbLlhyn7F1Bcct6XChpLrikdgw4&gclid=CjwKCAiAssfLBhBDEiwAcLpwftHcT3qKVuMJj_FOCzZxcp-DSPDQsRMLMfTbMvjFrhiRwpQzlkDKVRoC03wQAvD_BwE"
 			(at 383.54 95.25 90)
 			(effects
 				(font
@@ -17293,70 +14403,7 @@
 				(hide yes)
 			)
 		)
-		(property "Manufacturer" ""
-			(at 383.54 95.25 90)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Manufacturer_Name" ""
-			(at 383.54 95.25 90)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Manufacturer_Part_Number" ""
-			(at 383.54 95.25 90)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "On Line Components Part Number" ""
-			(at 383.54 95.25 90)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "On Line Components Price/Stock" ""
-			(at 383.54 95.25 90)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "PN" ""
-			(at 383.54 95.25 90)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Mouser PN" ""
-			(at 383.54 95.25 90)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Mouser URL" ""
+		(property "MFG" "Littelfuse/Commercial Vehicle Products"
 			(at 383.54 95.25 90)
 			(effects
 				(font
@@ -17564,24 +14611,6 @@
 				(hide yes)
 			)
 		)
-		(property "Digikey PN" "296-20903-1-ND"
-			(at 273.05 80.01 90)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Digikey URL" "https://www.digikey.com/en/products/detail/texas-instruments/LM4040D30QDBZR/1216509"
-			(at 273.05 80.01 90)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
 		(property "MFG PN" "LM4040D30QDBZR"
 			(at 273.05 80.01 90)
 			(effects
@@ -17591,7 +14620,7 @@
 				(hide yes)
 			)
 		)
-		(property "MFG Name" "Texas Instruments"
+		(property "Digi PN" "296-20903-1-ND"
 			(at 273.05 80.01 90)
 			(effects
 				(font
@@ -17600,7 +14629,7 @@
 				(hide yes)
 			)
 		)
-		(property "Datasheet #2" ""
+		(property "Digi URL" "https://www.digikey.com/en/products/detail/texas-instruments/LM4040D30QDBZR/1216509"
 			(at 273.05 80.01 90)
 			(effects
 				(font
@@ -17609,79 +14638,7 @@
 				(hide yes)
 			)
 		)
-		(property "Description_1" ""
-			(at 273.05 80.01 90)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Manufacturer" ""
-			(at 273.05 80.01 90)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Manufacturer_Name" ""
-			(at 273.05 80.01 90)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Manufacturer_Part_Number" ""
-			(at 273.05 80.01 90)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "On Line Components Part Number" ""
-			(at 273.05 80.01 90)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "On Line Components Price/Stock" ""
-			(at 273.05 80.01 90)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "PN" ""
-			(at 273.05 80.01 90)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Mouser PN" ""
-			(at 273.05 80.01 90)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Mouser URL" ""
+		(property "MFG" "Texas Instruments"
 			(at 273.05 80.01 90)
 			(effects
 				(font
@@ -17762,24 +14719,6 @@
 				(hide yes)
 			)
 		)
-		(property "Digikey PN" "LM555CMX/NOPBCT-ND"
-			(at 247.65 135.89 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Digikey URL" "https://www.digikey.com/en/products/detail/texas-instruments/LM555CMX-NOPB/334887"
-			(at 247.65 135.89 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
 		(property "MFG PN" "LM555CMX/NOPB"
 			(at 247.65 135.89 0)
 			(effects
@@ -17789,7 +14728,7 @@
 				(hide yes)
 			)
 		)
-		(property "MFG Name" "Texas Instruments"
+		(property "Digi PN" "LM555CMX/NOPBCT-ND"
 			(at 247.65 135.89 0)
 			(effects
 				(font
@@ -17798,7 +14737,7 @@
 				(hide yes)
 			)
 		)
-		(property "Datasheet #2" ""
+		(property "Digi URL" "https://www.digikey.com/en/products/detail/texas-instruments/LM555CMX-NOPB/334887"
 			(at 247.65 135.89 0)
 			(effects
 				(font
@@ -17807,79 +14746,7 @@
 				(hide yes)
 			)
 		)
-		(property "Description_1" ""
-			(at 247.65 135.89 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Manufacturer" ""
-			(at 247.65 135.89 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Manufacturer_Name" ""
-			(at 247.65 135.89 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Manufacturer_Part_Number" ""
-			(at 247.65 135.89 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "On Line Components Part Number" ""
-			(at 247.65 135.89 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "On Line Components Price/Stock" ""
-			(at 247.65 135.89 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "PN" ""
-			(at 247.65 135.89 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Mouser PN" ""
-			(at 247.65 135.89 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Mouser URL" ""
+		(property "MFG" "Texas Instruments"
 			(at 247.65 135.89 0)
 			(effects
 				(font
@@ -17926,7 +14793,7 @@
 		(at 200.66 96.52 0)
 		(unit 1)
 		(exclude_from_sim no)
-		(in_bom yes)
+		(in_bom no)
 		(on_board yes)
 		(dnp no)
 		(uuid "998c65c1-0436-466b-b3d9-b47bcd380dfe")
@@ -17973,96 +14840,6 @@
 				(hide yes)
 			)
 		)
-		(property "Datasheet #2" ""
-			(at 200.66 96.52 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Description_1" ""
-			(at 200.66 96.52 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Manufacturer" ""
-			(at 200.66 96.52 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Manufacturer_Name" ""
-			(at 200.66 96.52 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Manufacturer_Part_Number" ""
-			(at 200.66 96.52 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "On Line Components Part Number" ""
-			(at 200.66 96.52 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "On Line Components Price/Stock" ""
-			(at 200.66 96.52 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "PN" ""
-			(at 200.66 96.52 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Mouser PN" ""
-			(at 200.66 96.52 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Mouser URL" ""
-			(at 200.66 96.52 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
 		(pin "1"
 			(uuid "2b77d128-9392-4726-9860-842ab44baadc")
 		)
@@ -18081,7 +14858,7 @@
 		(mirror y)
 		(unit 1)
 		(exclude_from_sim no)
-		(in_bom yes)
+		(in_bom no)
 		(on_board yes)
 		(dnp no)
 		(uuid "9fefe154-0e48-4c16-bfb1-61092a6049a4")
@@ -18122,96 +14899,6 @@
 			)
 		)
 		(property "Description" "test point"
-			(at 367.03 134.62 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Datasheet #2" ""
-			(at 367.03 134.62 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Description_1" ""
-			(at 367.03 134.62 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Manufacturer" ""
-			(at 367.03 134.62 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Manufacturer_Name" ""
-			(at 367.03 134.62 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Manufacturer_Part_Number" ""
-			(at 367.03 134.62 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "On Line Components Part Number" ""
-			(at 367.03 134.62 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "On Line Components Price/Stock" ""
-			(at 367.03 134.62 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "PN" ""
-			(at 367.03 134.62 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Mouser PN" ""
-			(at 367.03 134.62 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Mouser URL" ""
 			(at 367.03 134.62 0)
 			(effects
 				(font
@@ -18302,7 +14989,7 @@
 		(at 283.21 133.35 0)
 		(unit 1)
 		(exclude_from_sim no)
-		(in_bom yes)
+		(in_bom no)
 		(on_board yes)
 		(dnp no)
 		(uuid "a307dcdd-0a0b-48a8-8ad0-e27556b84f6b")
@@ -18343,96 +15030,6 @@
 			)
 		)
 		(property "Description" "test point"
-			(at 283.21 133.35 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Datasheet #2" ""
-			(at 283.21 133.35 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Description_1" ""
-			(at 283.21 133.35 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Manufacturer" ""
-			(at 283.21 133.35 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Manufacturer_Name" ""
-			(at 283.21 133.35 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Manufacturer_Part_Number" ""
-			(at 283.21 133.35 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "On Line Components Part Number" ""
-			(at 283.21 133.35 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "On Line Components Price/Stock" ""
-			(at 283.21 133.35 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "PN" ""
-			(at 283.21 133.35 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Mouser PN" ""
-			(at 283.21 133.35 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Mouser URL" ""
 			(at 283.21 133.35 0)
 			(effects
 				(font
@@ -18585,24 +15182,6 @@
 				(hide yes)
 			)
 		)
-		(property "Digikey PN" "2449-J115F11A24VDCS6.9-ND"
-			(at 223.52 78.74 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Digikey URL" "https://www.digikey.com/en/products/detail/cit-relay-and-switch/J115F11A24VDCS6-9/12503195"
-			(at 223.52 78.74 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
 		(property "MFG PN" "J115F11A24VDCS6.9"
 			(at 223.52 78.74 0)
 			(effects
@@ -18612,7 +15191,7 @@
 				(hide yes)
 			)
 		)
-		(property "MFG Name" "CIT Relay and Switch"
+		(property "Digi PN" "2449-J115F11A24VDCS6.9-ND"
 			(at 223.52 78.74 0)
 			(effects
 				(font
@@ -18621,7 +15200,7 @@
 				(hide yes)
 			)
 		)
-		(property "Datasheet #2" ""
+		(property "Digi URL" "https://www.digikey.com/en/products/detail/cit-relay-and-switch/J115F11A24VDCS6-9/12503195"
 			(at 223.52 78.74 0)
 			(effects
 				(font
@@ -18630,79 +15209,7 @@
 				(hide yes)
 			)
 		)
-		(property "Description_1" ""
-			(at 223.52 78.74 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Manufacturer" ""
-			(at 223.52 78.74 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Manufacturer_Name" ""
-			(at 223.52 78.74 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Manufacturer_Part_Number" ""
-			(at 223.52 78.74 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "On Line Components Part Number" ""
-			(at 223.52 78.74 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "On Line Components Price/Stock" ""
-			(at 223.52 78.74 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "PN" ""
-			(at 223.52 78.74 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Mouser PN" ""
-			(at 223.52 78.74 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Mouser URL" ""
+		(property "MFG" "CIT Relay and Switch"
 			(at 223.52 78.74 0)
 			(effects
 				(font
@@ -18796,15 +15303,6 @@
 				(hide yes)
 			)
 		)
-		(property "Digikey URL" "https://www.digikey.com/en/products/detail/koa-speer-electronics-inc/RN73H1JTTD1453F100/10685457"
-			(at 73.66 130.81 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
 		(property "MFG PN" "RN73H1JTTD1453F100"
 			(at 73.66 130.81 0)
 			(effects
@@ -18814,7 +15312,7 @@
 				(hide yes)
 			)
 		)
-		(property "MFG Name" "KOA Speer Electronics, Inc."
+		(property "Digi URL" "https://www.digikey.com/en/products/detail/koa-speer-electronics-inc/RN73H1JTTD1453F100/10685457"
 			(at 73.66 130.81 0)
 			(effects
 				(font
@@ -18823,88 +15321,7 @@
 				(hide yes)
 			)
 		)
-		(property "Datasheet #2" ""
-			(at 73.66 130.81 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Description_1" ""
-			(at 73.66 130.81 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Manufacturer" ""
-			(at 73.66 130.81 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Manufacturer_Name" ""
-			(at 73.66 130.81 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Manufacturer_Part_Number" ""
-			(at 73.66 130.81 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "On Line Components Part Number" ""
-			(at 73.66 130.81 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "On Line Components Price/Stock" ""
-			(at 73.66 130.81 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "PN" ""
-			(at 73.66 130.81 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Mouser PN" ""
-			(at 73.66 130.81 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Mouser URL" ""
+		(property "MFG" "KOA Speer Electronics, Inc."
 			(at 73.66 130.81 0)
 			(effects
 				(font
@@ -18984,24 +15401,6 @@
 				(hide yes)
 			)
 		)
-		(property "Digikey PN" "MCP6004-I/SL-ND"
-			(at 287.02 71.12 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Digikey URL" "https://www.digikey.com/en/products/detail/microchip-technology/MCP6004-I-SL/523061?gclsrc=aw.ds&gad_source=1&gad_campaignid=17922795960&gbraid=0AAAAADrbLlirMt8CnwTpqopm1INQzq2TO&gclid=Cj0KCQiAvtzLBhCPARIsALwhxdquhsBlAg_bKJq5CGOPXtiGSHN9oTmcxlIwgH0Oo6MGXvgyCW9ozEQaAsWSEALw_wcB"
-			(at 287.02 71.12 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
 		(property "MFG PN" "MCP6004-I/SL"
 			(at 287.02 71.12 0)
 			(effects
@@ -19011,7 +15410,7 @@
 				(hide yes)
 			)
 		)
-		(property "MFG Name" "Microchip Technology"
+		(property "Digi PN" "MCP6004-I/SL-ND"
 			(at 287.02 71.12 0)
 			(effects
 				(font
@@ -19020,7 +15419,7 @@
 				(hide yes)
 			)
 		)
-		(property "Datasheet #2" ""
+		(property "Digi URL" "https://www.digikey.com/en/products/detail/microchip-technology/MCP6004-I-SL/523061?gclsrc=aw.ds&gad_source=1&gad_campaignid=17922795960&gbraid=0AAAAADrbLlirMt8CnwTpqopm1INQzq2TO&gclid=Cj0KCQiAvtzLBhCPARIsALwhxdquhsBlAg_bKJq5CGOPXtiGSHN9oTmcxlIwgH0Oo6MGXvgyCW9ozEQaAsWSEALw_wcB"
 			(at 287.02 71.12 0)
 			(effects
 				(font
@@ -19029,79 +15428,7 @@
 				(hide yes)
 			)
 		)
-		(property "Description_1" ""
-			(at 287.02 71.12 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Manufacturer" ""
-			(at 287.02 71.12 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Manufacturer_Name" ""
-			(at 287.02 71.12 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Manufacturer_Part_Number" ""
-			(at 287.02 71.12 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "On Line Components Part Number" ""
-			(at 287.02 71.12 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "On Line Components Price/Stock" ""
-			(at 287.02 71.12 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "PN" ""
-			(at 287.02 71.12 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Mouser PN" ""
-			(at 287.02 71.12 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Mouser URL" ""
+		(property "MFG" "Microchip Technology"
 			(at 287.02 71.12 0)
 			(effects
 				(font
@@ -19213,24 +15540,6 @@
 				(hide yes)
 			)
 		)
-		(property "Digikey PN" "MCP6004-I/SL-ND"
-			(at 287.02 71.12 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Digikey URL" "https://www.digikey.com/en/products/detail/microchip-technology/MCP6004-I-SL/523061?gclsrc=aw.ds&gad_source=1&gad_campaignid=17922795960&gbraid=0AAAAADrbLlirMt8CnwTpqopm1INQzq2TO&gclid=Cj0KCQiAvtzLBhCPARIsALwhxdquhsBlAg_bKJq5CGOPXtiGSHN9oTmcxlIwgH0Oo6MGXvgyCW9ozEQaAsWSEALw_wcB"
-			(at 287.02 71.12 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
 		(property "MFG PN" "MCP6004-I/SL"
 			(at 287.02 71.12 0)
 			(effects
@@ -19240,7 +15549,7 @@
 				(hide yes)
 			)
 		)
-		(property "MFG Name" "Microchip Technology"
+		(property "Digi PN" "MCP6004-I/SL-ND"
 			(at 287.02 71.12 0)
 			(effects
 				(font
@@ -19249,7 +15558,7 @@
 				(hide yes)
 			)
 		)
-		(property "Datasheet #2" ""
+		(property "Digi URL" "https://www.digikey.com/en/products/detail/microchip-technology/MCP6004-I-SL/523061?gclsrc=aw.ds&gad_source=1&gad_campaignid=17922795960&gbraid=0AAAAADrbLlirMt8CnwTpqopm1INQzq2TO&gclid=Cj0KCQiAvtzLBhCPARIsALwhxdquhsBlAg_bKJq5CGOPXtiGSHN9oTmcxlIwgH0Oo6MGXvgyCW9ozEQaAsWSEALw_wcB"
 			(at 287.02 71.12 0)
 			(effects
 				(font
@@ -19258,79 +15567,7 @@
 				(hide yes)
 			)
 		)
-		(property "Description_1" ""
-			(at 287.02 71.12 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Manufacturer" ""
-			(at 287.02 71.12 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Manufacturer_Name" ""
-			(at 287.02 71.12 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Manufacturer_Part_Number" ""
-			(at 287.02 71.12 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "On Line Components Part Number" ""
-			(at 287.02 71.12 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "On Line Components Price/Stock" ""
-			(at 287.02 71.12 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "PN" ""
-			(at 287.02 71.12 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Mouser PN" ""
-			(at 287.02 71.12 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Mouser URL" ""
+		(property "MFG" "Microchip Technology"
 			(at 287.02 71.12 0)
 			(effects
 				(font
@@ -19443,24 +15680,6 @@
 				(hide yes)
 			)
 		)
-		(property "Digikey PN" "MCP6004-I/SL-ND"
-			(at 243.84 182.88 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Digikey URL" "https://www.digikey.com/en/products/detail/microchip-technology/MCP6004-I-SL/523061?gclsrc=aw.ds&gad_source=1&gad_campaignid=17922795960&gbraid=0AAAAADrbLlirMt8CnwTpqopm1INQzq2TO&gclid=Cj0KCQiAvtzLBhCPARIsALwhxdquhsBlAg_bKJq5CGOPXtiGSHN9oTmcxlIwgH0Oo6MGXvgyCW9ozEQaAsWSEALw_wcB"
-			(at 243.84 182.88 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
 		(property "MFG PN" "MCP6004-I/SL"
 			(at 243.84 182.88 0)
 			(effects
@@ -19470,7 +15689,7 @@
 				(hide yes)
 			)
 		)
-		(property "MFG Name" "Microchip Technology"
+		(property "Digi PN" "MCP6004-I/SL-ND"
 			(at 243.84 182.88 0)
 			(effects
 				(font
@@ -19479,7 +15698,7 @@
 				(hide yes)
 			)
 		)
-		(property "Datasheet #2" ""
+		(property "Digi URL" "https://www.digikey.com/en/products/detail/microchip-technology/MCP6004-I-SL/523061?gclsrc=aw.ds&gad_source=1&gad_campaignid=17922795960&gbraid=0AAAAADrbLlirMt8CnwTpqopm1INQzq2TO&gclid=Cj0KCQiAvtzLBhCPARIsALwhxdquhsBlAg_bKJq5CGOPXtiGSHN9oTmcxlIwgH0Oo6MGXvgyCW9ozEQaAsWSEALw_wcB"
 			(at 243.84 182.88 0)
 			(effects
 				(font
@@ -19488,79 +15707,7 @@
 				(hide yes)
 			)
 		)
-		(property "Description_1" ""
-			(at 243.84 182.88 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Manufacturer" ""
-			(at 243.84 182.88 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Manufacturer_Name" ""
-			(at 243.84 182.88 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Manufacturer_Part_Number" ""
-			(at 243.84 182.88 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "On Line Components Part Number" ""
-			(at 243.84 182.88 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "On Line Components Price/Stock" ""
-			(at 243.84 182.88 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "PN" ""
-			(at 243.84 182.88 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Mouser PN" ""
-			(at 243.84 182.88 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Mouser URL" ""
+		(property "MFG" "Microchip Technology"
 			(at 243.84 182.88 0)
 			(effects
 				(font
@@ -19673,24 +15820,6 @@
 				(hide yes)
 			)
 		)
-		(property "Digikey PN" "MCP6004-I/SL-ND"
-			(at 227.33 182.88 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Digikey URL" "https://www.digikey.com/en/products/detail/microchip-technology/MCP6004-I-SL/523061?gclsrc=aw.ds&gad_source=1&gad_campaignid=17922795960&gbraid=0AAAAADrbLlirMt8CnwTpqopm1INQzq2TO&gclid=Cj0KCQiAvtzLBhCPARIsALwhxdquhsBlAg_bKJq5CGOPXtiGSHN9oTmcxlIwgH0Oo6MGXvgyCW9ozEQaAsWSEALw_wcB"
-			(at 227.33 182.88 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
 		(property "MFG PN" "MCP6004-I/SL"
 			(at 227.33 182.88 0)
 			(effects
@@ -19700,7 +15829,7 @@
 				(hide yes)
 			)
 		)
-		(property "MFG Name" "Microchip Technology"
+		(property "Digi PN" "MCP6004-I/SL-ND"
 			(at 227.33 182.88 0)
 			(effects
 				(font
@@ -19709,7 +15838,7 @@
 				(hide yes)
 			)
 		)
-		(property "Datasheet #2" ""
+		(property "Digi URL" "https://www.digikey.com/en/products/detail/microchip-technology/MCP6004-I-SL/523061?gclsrc=aw.ds&gad_source=1&gad_campaignid=17922795960&gbraid=0AAAAADrbLlirMt8CnwTpqopm1INQzq2TO&gclid=Cj0KCQiAvtzLBhCPARIsALwhxdquhsBlAg_bKJq5CGOPXtiGSHN9oTmcxlIwgH0Oo6MGXvgyCW9ozEQaAsWSEALw_wcB"
 			(at 227.33 182.88 0)
 			(effects
 				(font
@@ -19718,79 +15847,7 @@
 				(hide yes)
 			)
 		)
-		(property "Description_1" ""
-			(at 227.33 182.88 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Manufacturer" ""
-			(at 227.33 182.88 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Manufacturer_Name" ""
-			(at 227.33 182.88 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Manufacturer_Part_Number" ""
-			(at 227.33 182.88 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "On Line Components Part Number" ""
-			(at 227.33 182.88 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "On Line Components Price/Stock" ""
-			(at 227.33 182.88 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "PN" ""
-			(at 227.33 182.88 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Mouser PN" ""
-			(at 227.33 182.88 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Mouser URL" ""
+		(property "MFG" "Microchip Technology"
 			(at 227.33 182.88 0)
 			(effects
 				(font
@@ -19903,24 +15960,6 @@
 				(hide yes)
 			)
 		)
-		(property "Digikey PN" "MCP6004-I/SL-ND"
-			(at 260.35 182.88 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Digikey URL" "https://www.digikey.com/en/products/detail/microchip-technology/MCP6004-I-SL/523061?gclsrc=aw.ds&gad_source=1&gad_campaignid=17922795960&gbraid=0AAAAADrbLlirMt8CnwTpqopm1INQzq2TO&gclid=Cj0KCQiAvtzLBhCPARIsALwhxdquhsBlAg_bKJq5CGOPXtiGSHN9oTmcxlIwgH0Oo6MGXvgyCW9ozEQaAsWSEALw_wcB"
-			(at 260.35 182.88 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
 		(property "MFG PN" "MCP6004-I/SL"
 			(at 260.35 182.88 0)
 			(effects
@@ -19930,7 +15969,7 @@
 				(hide yes)
 			)
 		)
-		(property "MFG Name" "Microchip Technology"
+		(property "Digi PN" "MCP6004-I/SL-ND"
 			(at 260.35 182.88 0)
 			(effects
 				(font
@@ -19939,7 +15978,7 @@
 				(hide yes)
 			)
 		)
-		(property "Datasheet #2" ""
+		(property "Digi URL" "https://www.digikey.com/en/products/detail/microchip-technology/MCP6004-I-SL/523061?gclsrc=aw.ds&gad_source=1&gad_campaignid=17922795960&gbraid=0AAAAADrbLlirMt8CnwTpqopm1INQzq2TO&gclid=Cj0KCQiAvtzLBhCPARIsALwhxdquhsBlAg_bKJq5CGOPXtiGSHN9oTmcxlIwgH0Oo6MGXvgyCW9ozEQaAsWSEALw_wcB"
 			(at 260.35 182.88 0)
 			(effects
 				(font
@@ -19948,79 +15987,7 @@
 				(hide yes)
 			)
 		)
-		(property "Description_1" ""
-			(at 260.35 182.88 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Manufacturer" ""
-			(at 260.35 182.88 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Manufacturer_Name" ""
-			(at 260.35 182.88 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Manufacturer_Part_Number" ""
-			(at 260.35 182.88 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "On Line Components Part Number" ""
-			(at 260.35 182.88 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "On Line Components Price/Stock" ""
-			(at 260.35 182.88 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "PN" ""
-			(at 260.35 182.88 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Mouser PN" ""
-			(at 260.35 182.88 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Mouser URL" ""
+		(property "MFG" "Microchip Technology"
 			(at 260.35 182.88 0)
 			(effects
 				(font
@@ -20217,7 +16184,7 @@
 		(at 298.45 71.12 0)
 		(unit 1)
 		(exclude_from_sim no)
-		(in_bom yes)
+		(in_bom no)
 		(on_board yes)
 		(dnp no)
 		(uuid "bbb27309-e431-43ab-a8e6-2a20e45d821c")
@@ -20256,96 +16223,6 @@
 			)
 		)
 		(property "Description" "test point"
-			(at 298.45 71.12 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Datasheet #2" ""
-			(at 298.45 71.12 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Description_1" ""
-			(at 298.45 71.12 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Manufacturer" ""
-			(at 298.45 71.12 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Manufacturer_Name" ""
-			(at 298.45 71.12 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Manufacturer_Part_Number" ""
-			(at 298.45 71.12 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "On Line Components Part Number" ""
-			(at 298.45 71.12 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "On Line Components Price/Stock" ""
-			(at 298.45 71.12 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "PN" ""
-			(at 298.45 71.12 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Mouser PN" ""
-			(at 298.45 71.12 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Mouser URL" ""
 			(at 298.45 71.12 0)
 			(effects
 				(font
@@ -20550,24 +16427,6 @@
 				(hide yes)
 			)
 		)
-		(property "Digikey PN" "MCP6004-I/SL-ND"
-			(at 74.93 77.47 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Digikey URL" "https://www.digikey.com/en/products/detail/microchip-technology/MCP6004-I-SL/523061?gclsrc=aw.ds&gad_source=1&gad_campaignid=17922795960&gbraid=0AAAAADrbLlirMt8CnwTpqopm1INQzq2TO&gclid=Cj0KCQiAvtzLBhCPARIsALwhxdquhsBlAg_bKJq5CGOPXtiGSHN9oTmcxlIwgH0Oo6MGXvgyCW9ozEQaAsWSEALw_wcB"
-			(at 74.93 77.47 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
 		(property "MFG PN" "MCP6004-I/SL"
 			(at 74.93 77.47 0)
 			(effects
@@ -20577,7 +16436,7 @@
 				(hide yes)
 			)
 		)
-		(property "MFG Name" "Microchip Technology"
+		(property "Digi PN" "MCP6004-I/SL-ND"
 			(at 74.93 77.47 0)
 			(effects
 				(font
@@ -20586,7 +16445,7 @@
 				(hide yes)
 			)
 		)
-		(property "Datasheet #2" ""
+		(property "Digi URL" "https://www.digikey.com/en/products/detail/microchip-technology/MCP6004-I-SL/523061?gclsrc=aw.ds&gad_source=1&gad_campaignid=17922795960&gbraid=0AAAAADrbLlirMt8CnwTpqopm1INQzq2TO&gclid=Cj0KCQiAvtzLBhCPARIsALwhxdquhsBlAg_bKJq5CGOPXtiGSHN9oTmcxlIwgH0Oo6MGXvgyCW9ozEQaAsWSEALw_wcB"
 			(at 74.93 77.47 0)
 			(effects
 				(font
@@ -20595,79 +16454,7 @@
 				(hide yes)
 			)
 		)
-		(property "Description_1" ""
-			(at 74.93 77.47 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Manufacturer" ""
-			(at 74.93 77.47 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Manufacturer_Name" ""
-			(at 74.93 77.47 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Manufacturer_Part_Number" ""
-			(at 74.93 77.47 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "On Line Components Part Number" ""
-			(at 74.93 77.47 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "On Line Components Price/Stock" ""
-			(at 74.93 77.47 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "PN" ""
-			(at 74.93 77.47 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Mouser PN" ""
-			(at 74.93 77.47 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Mouser URL" ""
+		(property "MFG" "Microchip Technology"
 			(at 74.93 77.47 0)
 			(effects
 				(font
@@ -20783,24 +16570,6 @@
 				(hide yes)
 			)
 		)
-		(property "Digikey PN" "255-2193-ND"
-			(at 162.56 179.07 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Digikey URL" "https://www.digikey.com/en/products/detail/panasonic-electric-works/DS1E-ML-DC12V/647266"
-			(at 162.56 179.07 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
 		(property "MFG PN" "DS1E-ML-DC12V"
 			(at 162.56 179.07 0)
 			(effects
@@ -20819,7 +16588,7 @@
 				(hide yes)
 			)
 		)
-		(property "Datasheet #2" ""
+		(property "Digi PN" "255-2193-ND"
 			(at 162.56 179.07 0)
 			(effects
 				(font
@@ -20828,79 +16597,7 @@
 				(hide yes)
 			)
 		)
-		(property "Description_1" ""
-			(at 162.56 179.07 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Manufacturer" ""
-			(at 162.56 179.07 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Manufacturer_Name" ""
-			(at 162.56 179.07 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Manufacturer_Part_Number" ""
-			(at 162.56 179.07 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "On Line Components Part Number" ""
-			(at 162.56 179.07 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "On Line Components Price/Stock" ""
-			(at 162.56 179.07 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "PN" ""
-			(at 162.56 179.07 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Mouser PN" ""
-			(at 162.56 179.07 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Mouser URL" ""
+		(property "Digi URL" "https://www.digikey.com/en/products/detail/panasonic-electric-works/DS1E-ML-DC12V/647266"
 			(at 162.56 179.07 0)
 			(effects
 				(font
@@ -20986,24 +16683,6 @@
 				(hide yes)
 			)
 		)
-		(property "Digikey PN" "445-2453-ND"
-			(at 161.29 213.36 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Digikey URL" "https://www.digikey.com/en/products/detail/tdk-lambda/CC1R5-1205SR-E/920413"
-			(at 161.29 213.36 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
 		(property "MFG PN" "CC1R5-1205SR-E"
 			(at 161.29 213.36 0)
 			(effects
@@ -21013,7 +16692,7 @@
 				(hide yes)
 			)
 		)
-		(property "MFG Name" "TDK-Lambda "
+		(property "Digi PN" "445-2453-ND"
 			(at 161.29 213.36 0)
 			(effects
 				(font
@@ -21022,7 +16701,7 @@
 				(hide yes)
 			)
 		)
-		(property "Datasheet #2" ""
+		(property "Digi URL" "https://www.digikey.com/en/products/detail/tdk-lambda/CC1R5-1205SR-E/920413"
 			(at 161.29 213.36 0)
 			(effects
 				(font
@@ -21031,79 +16710,7 @@
 				(hide yes)
 			)
 		)
-		(property "Description_1" ""
-			(at 161.29 213.36 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Manufacturer" ""
-			(at 161.29 213.36 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Manufacturer_Name" ""
-			(at 161.29 213.36 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Manufacturer_Part_Number" ""
-			(at 161.29 213.36 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "On Line Components Part Number" ""
-			(at 161.29 213.36 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "On Line Components Price/Stock" ""
-			(at 161.29 213.36 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "PN" ""
-			(at 161.29 213.36 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Mouser PN" ""
-			(at 161.29 213.36 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Mouser URL" ""
+		(property "MFG" "TDK-Lambda "
 			(at 161.29 213.36 0)
 			(effects
 				(font
@@ -21257,24 +16864,6 @@
 				(hide yes)
 			)
 		)
-		(property "Digikey PN" "696-1085-ND"
-			(at 55.88 152.4 90)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Digikey URL" "https://www.digikey.com/en/products/detail/riedon-products-by-bourns/UB5C-5KF1/2176663"
-			(at 55.88 152.4 90)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
 		(property "MFG PN" "UB5C-5KF1"
 			(at 55.88 152.4 90)
 			(effects
@@ -21284,7 +16873,7 @@
 				(hide yes)
 			)
 		)
-		(property "MFG Name" "Riedon products by Bourns"
+		(property "Digi PN" "696-1085-ND"
 			(at 55.88 152.4 90)
 			(effects
 				(font
@@ -21293,7 +16882,7 @@
 				(hide yes)
 			)
 		)
-		(property "Datasheet #2" ""
+		(property "Digi URL" "https://www.digikey.com/en/products/detail/riedon-products-by-bourns/UB5C-5KF1/2176663"
 			(at 55.88 152.4 90)
 			(effects
 				(font
@@ -21302,79 +16891,7 @@
 				(hide yes)
 			)
 		)
-		(property "Description_1" ""
-			(at 55.88 152.4 90)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Manufacturer" ""
-			(at 55.88 152.4 90)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Manufacturer_Name" ""
-			(at 55.88 152.4 90)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Manufacturer_Part_Number" ""
-			(at 55.88 152.4 90)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "On Line Components Part Number" ""
-			(at 55.88 152.4 90)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "On Line Components Price/Stock" ""
-			(at 55.88 152.4 90)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "PN" ""
-			(at 55.88 152.4 90)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Mouser PN" ""
-			(at 55.88 152.4 90)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Mouser URL" ""
+		(property "MFG" "Riedon products by Bourns"
 			(at 55.88 152.4 90)
 			(effects
 				(font
@@ -21591,15 +17108,6 @@
 				(hide yes)
 			)
 		)
-		(property "Digikey URL" "https://www.digikey.com/en/products/detail/yageo/RC0603FR-0710KL/726880"
-			(at 104.14 86.36 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
 		(property "MFG PN" "RC0603FR-0710KL"
 			(at 104.14 86.36 0)
 			(effects
@@ -21609,7 +17117,7 @@
 				(hide yes)
 			)
 		)
-		(property "MFG Name" "YAGEO"
+		(property "Digi URL" "https://www.digikey.com/en/products/detail/yageo/RC0603FR-0710KL/726880"
 			(at 104.14 86.36 0)
 			(effects
 				(font
@@ -21618,88 +17126,7 @@
 				(hide yes)
 			)
 		)
-		(property "Datasheet #2" ""
-			(at 104.14 86.36 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Description_1" ""
-			(at 104.14 86.36 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Manufacturer" ""
-			(at 104.14 86.36 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Manufacturer_Name" ""
-			(at 104.14 86.36 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Manufacturer_Part_Number" ""
-			(at 104.14 86.36 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "On Line Components Part Number" ""
-			(at 104.14 86.36 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "On Line Components Price/Stock" ""
-			(at 104.14 86.36 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "PN" ""
-			(at 104.14 86.36 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Mouser PN" ""
-			(at 104.14 86.36 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Mouser URL" ""
+		(property "MFG" "YAGEO"
 			(at 104.14 86.36 0)
 			(effects
 				(font
@@ -21781,24 +17208,6 @@
 				(hide yes)
 			)
 		)
-		(property "Digikey PN" "785-1000-1-ND"
-			(at 318.77 71.12 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Digikey URL" "https://www.digikey.com/en/products/detail/alpha-omega-semiconductor-inc/AO3400A/1855772"
-			(at 318.77 71.12 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
 		(property "MFG PN" "AO3400A"
 			(at 318.77 71.12 0)
 			(effects
@@ -21808,7 +17217,7 @@
 				(hide yes)
 			)
 		)
-		(property "MFG Name" "Alpha & Omega Semiconductor Inc."
+		(property "Digi PN" "785-1000-1-ND"
 			(at 318.77 71.12 0)
 			(effects
 				(font
@@ -21817,7 +17226,7 @@
 				(hide yes)
 			)
 		)
-		(property "Datasheet #2" ""
+		(property "Digi URL" "https://www.digikey.com/en/products/detail/alpha-omega-semiconductor-inc/AO3400A/1855772"
 			(at 318.77 71.12 0)
 			(effects
 				(font
@@ -21826,79 +17235,7 @@
 				(hide yes)
 			)
 		)
-		(property "Description_1" ""
-			(at 318.77 71.12 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Manufacturer" ""
-			(at 318.77 71.12 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Manufacturer_Name" ""
-			(at 318.77 71.12 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Manufacturer_Part_Number" ""
-			(at 318.77 71.12 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "On Line Components Part Number" ""
-			(at 318.77 71.12 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "On Line Components Price/Stock" ""
-			(at 318.77 71.12 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "PN" ""
-			(at 318.77 71.12 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Mouser PN" ""
-			(at 318.77 71.12 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Mouser URL" ""
+		(property "MFG" "Alpha & Omega Semiconductor Inc."
 			(at 318.77 71.12 0)
 			(effects
 				(font
@@ -21930,7 +17267,7 @@
 		(at 205.74 49.53 0)
 		(unit 1)
 		(exclude_from_sim no)
-		(in_bom yes)
+		(in_bom no)
 		(on_board yes)
 		(dnp no)
 		(uuid "d5c0b36c-98c0-4f45-bd67-36457b55d322")
@@ -21977,96 +17314,6 @@
 				(hide yes)
 			)
 		)
-		(property "Datasheet #2" ""
-			(at 205.74 49.53 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Description_1" ""
-			(at 205.74 49.53 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Manufacturer" ""
-			(at 205.74 49.53 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Manufacturer_Name" ""
-			(at 205.74 49.53 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Manufacturer_Part_Number" ""
-			(at 205.74 49.53 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "On Line Components Part Number" ""
-			(at 205.74 49.53 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "On Line Components Price/Stock" ""
-			(at 205.74 49.53 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "PN" ""
-			(at 205.74 49.53 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Mouser PN" ""
-			(at 205.74 49.53 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Mouser URL" ""
-			(at 205.74 49.53 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
 		(pin "1"
 			(uuid "8e70a46d-1c76-47bb-b843-0c1b9d914517")
 		)
@@ -22084,7 +17331,7 @@
 		(at 138.43 134.62 0)
 		(unit 1)
 		(exclude_from_sim no)
-		(in_bom yes)
+		(in_bom no)
 		(on_board yes)
 		(dnp no)
 		(uuid "d6260aae-8c40-4426-9ddc-1bee38f6efe0")
@@ -22123,96 +17370,6 @@
 			)
 		)
 		(property "Description" "test point"
-			(at 138.43 134.62 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Datasheet #2" ""
-			(at 138.43 134.62 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Description_1" ""
-			(at 138.43 134.62 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Manufacturer" ""
-			(at 138.43 134.62 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Manufacturer_Name" ""
-			(at 138.43 134.62 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Manufacturer_Part_Number" ""
-			(at 138.43 134.62 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "On Line Components Part Number" ""
-			(at 138.43 134.62 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "On Line Components Price/Stock" ""
-			(at 138.43 134.62 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "PN" ""
-			(at 138.43 134.62 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Mouser PN" ""
-			(at 138.43 134.62 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Mouser URL" ""
 			(at 138.43 134.62 0)
 			(effects
 				(font
@@ -22289,96 +17446,6 @@
 		)
 		(property "Sim.Pins" "1=K 2=A"
 			(at 308.61 125.73 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Datasheet #2" ""
-			(at 308.61 125.73 90)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Description_1" ""
-			(at 308.61 125.73 90)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Manufacturer" ""
-			(at 308.61 125.73 90)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Manufacturer_Name" ""
-			(at 308.61 125.73 90)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Manufacturer_Part_Number" ""
-			(at 308.61 125.73 90)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "On Line Components Part Number" ""
-			(at 308.61 125.73 90)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "On Line Components Price/Stock" ""
-			(at 308.61 125.73 90)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "PN" ""
-			(at 308.61 125.73 90)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Mouser PN" ""
-			(at 308.61 125.73 90)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Mouser URL" ""
-			(at 308.61 125.73 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -22464,15 +17531,6 @@
 				(hide yes)
 			)
 		)
-		(property "Digikey URL" "https://www.digikey.com/en/products/detail/yageo/RC0603FR-0710KL/726880"
-			(at 198.12 148.59 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
 		(property "MFG PN" "RC0603FR-0710KL"
 			(at 198.12 148.59 0)
 			(effects
@@ -22482,7 +17540,7 @@
 				(hide yes)
 			)
 		)
-		(property "MFG Name" "YAGEO"
+		(property "Digi URL" "https://www.digikey.com/en/products/detail/yageo/RC0603FR-0710KL/726880"
 			(at 198.12 148.59 0)
 			(effects
 				(font
@@ -22491,88 +17549,7 @@
 				(hide yes)
 			)
 		)
-		(property "Datasheet #2" ""
-			(at 198.12 148.59 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Description_1" ""
-			(at 198.12 148.59 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Manufacturer" ""
-			(at 198.12 148.59 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Manufacturer_Name" ""
-			(at 198.12 148.59 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Manufacturer_Part_Number" ""
-			(at 198.12 148.59 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "On Line Components Part Number" ""
-			(at 198.12 148.59 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "On Line Components Price/Stock" ""
-			(at 198.12 148.59 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "PN" ""
-			(at 198.12 148.59 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Mouser PN" ""
-			(at 198.12 148.59 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Mouser URL" ""
+		(property "MFG" "YAGEO"
 			(at 198.12 148.59 0)
 			(effects
 				(font
@@ -22654,24 +17631,6 @@
 				(hide yes)
 			)
 		)
-		(property "Digikey PN" "785-1000-1-ND"
-			(at 306.07 137.16 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Digikey URL" "https://www.digikey.com/en/products/detail/alpha-omega-semiconductor-inc/AO3400A/1855772"
-			(at 306.07 137.16 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
 		(property "MFG PN" "AO3400A"
 			(at 306.07 137.16 0)
 			(effects
@@ -22681,7 +17640,7 @@
 				(hide yes)
 			)
 		)
-		(property "MFG Name" "Alpha & Omega Semiconductor Inc."
+		(property "Digi PN" "785-1000-1-ND"
 			(at 306.07 137.16 0)
 			(effects
 				(font
@@ -22690,7 +17649,7 @@
 				(hide yes)
 			)
 		)
-		(property "Datasheet #2" ""
+		(property "Digi URL" "https://www.digikey.com/en/products/detail/alpha-omega-semiconductor-inc/AO3400A/1855772"
 			(at 306.07 137.16 0)
 			(effects
 				(font
@@ -22699,79 +17658,7 @@
 				(hide yes)
 			)
 		)
-		(property "Description_1" ""
-			(at 306.07 137.16 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Manufacturer" ""
-			(at 306.07 137.16 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Manufacturer_Name" ""
-			(at 306.07 137.16 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Manufacturer_Part_Number" ""
-			(at 306.07 137.16 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "On Line Components Part Number" ""
-			(at 306.07 137.16 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "On Line Components Price/Stock" ""
-			(at 306.07 137.16 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "PN" ""
-			(at 306.07 137.16 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Mouser PN" ""
-			(at 306.07 137.16 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Mouser URL" ""
+		(property "MFG" "Alpha & Omega Semiconductor Inc."
 			(at 306.07 137.16 0)
 			(effects
 				(font
@@ -22861,15 +17748,6 @@
 				(hide yes)
 			)
 		)
-		(property "Digikey URL" "https://www.digikey.com/en/products/detail/yageo/RC0603FR-0710KL/726880"
-			(at 321.31 58.42 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
 		(property "MFG PN" "RC0603FR-0710KL"
 			(at 321.31 58.42 0)
 			(effects
@@ -22879,7 +17757,7 @@
 				(hide yes)
 			)
 		)
-		(property "MFG Name" "YAGEO"
+		(property "Digi URL" "https://www.digikey.com/en/products/detail/yageo/RC0603FR-0710KL/726880"
 			(at 321.31 58.42 0)
 			(effects
 				(font
@@ -22888,88 +17766,7 @@
 				(hide yes)
 			)
 		)
-		(property "Datasheet #2" ""
-			(at 321.31 58.42 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Description_1" ""
-			(at 321.31 58.42 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Manufacturer" ""
-			(at 321.31 58.42 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Manufacturer_Name" ""
-			(at 321.31 58.42 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Manufacturer_Part_Number" ""
-			(at 321.31 58.42 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "On Line Components Part Number" ""
-			(at 321.31 58.42 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "On Line Components Price/Stock" ""
-			(at 321.31 58.42 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "PN" ""
-			(at 321.31 58.42 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Mouser PN" ""
-			(at 321.31 58.42 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Mouser URL" ""
+		(property "MFG" "YAGEO"
 			(at 321.31 58.42 0)
 			(effects
 				(font
@@ -23151,96 +17948,6 @@
 				(hide yes)
 			)
 		)
-		(property "Datasheet #2" ""
-			(at 218.44 96.52 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Description_1" ""
-			(at 218.44 96.52 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Manufacturer" ""
-			(at 218.44 96.52 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Manufacturer_Name" ""
-			(at 218.44 96.52 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Manufacturer_Part_Number" ""
-			(at 218.44 96.52 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "On Line Components Part Number" ""
-			(at 218.44 96.52 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "On Line Components Price/Stock" ""
-			(at 218.44 96.52 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "PN" ""
-			(at 218.44 96.52 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Mouser PN" ""
-			(at 218.44 96.52 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Mouser URL" ""
-			(at 218.44 96.52 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
 		(pin "3"
 			(uuid "0cffd295-0a3b-4058-ae8d-f7148686e530")
 		)
@@ -23314,24 +18021,6 @@
 				(hide yes)
 			)
 		)
-		(property "Digikey PN" "MCP6004-I/SL-ND"
-			(at 125.73 134.62 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Digikey URL" "https://www.digikey.com/en/products/detail/microchip-technology/MCP6004-I-SL/523061?gclsrc=aw.ds&gad_source=1&gad_campaignid=17922795960&gbraid=0AAAAADrbLlirMt8CnwTpqopm1INQzq2TO&gclid=Cj0KCQiAvtzLBhCPARIsALwhxdquhsBlAg_bKJq5CGOPXtiGSHN9oTmcxlIwgH0Oo6MGXvgyCW9ozEQaAsWSEALw_wcB"
-			(at 125.73 134.62 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
 		(property "MFG PN" "MCP6004-I/SL"
 			(at 125.73 134.62 0)
 			(effects
@@ -23341,7 +18030,7 @@
 				(hide yes)
 			)
 		)
-		(property "MFG Name" "Microchip Technology"
+		(property "Digi PN" "MCP6004-I/SL-ND"
 			(at 125.73 134.62 0)
 			(effects
 				(font
@@ -23350,7 +18039,7 @@
 				(hide yes)
 			)
 		)
-		(property "Datasheet #2" ""
+		(property "Digi URL" "https://www.digikey.com/en/products/detail/microchip-technology/MCP6004-I-SL/523061?gclsrc=aw.ds&gad_source=1&gad_campaignid=17922795960&gbraid=0AAAAADrbLlirMt8CnwTpqopm1INQzq2TO&gclid=Cj0KCQiAvtzLBhCPARIsALwhxdquhsBlAg_bKJq5CGOPXtiGSHN9oTmcxlIwgH0Oo6MGXvgyCW9ozEQaAsWSEALw_wcB"
 			(at 125.73 134.62 0)
 			(effects
 				(font
@@ -23359,79 +18048,7 @@
 				(hide yes)
 			)
 		)
-		(property "Description_1" ""
-			(at 125.73 134.62 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Manufacturer" ""
-			(at 125.73 134.62 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Manufacturer_Name" ""
-			(at 125.73 134.62 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Manufacturer_Part_Number" ""
-			(at 125.73 134.62 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "On Line Components Part Number" ""
-			(at 125.73 134.62 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "On Line Components Price/Stock" ""
-			(at 125.73 134.62 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "PN" ""
-			(at 125.73 134.62 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Mouser PN" ""
-			(at 125.73 134.62 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Mouser URL" ""
+		(property "MFG" "Microchip Technology"
 			(at 125.73 134.62 0)
 			(effects
 				(font
@@ -23493,15 +18110,15 @@
 	)
 	(symbol
 		(lib_id "Amplifier_Operational:MCP6004")
-		(at 124.46 134.62 0)
+		(at 125.73 134.62 0)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
 		(on_board yes)
 		(dnp no)
-		(uuid "de315237-8f34-4384-9fb6-29ba23aa8e20")
+		(uuid "de315237-8f34-4384-9fb6-29ba23aa8e21")
 		(property "Reference" "U6"
-			(at 128.27 137.414 0)
+			(at 129.54 137.414 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -23509,7 +18126,7 @@
 			)
 		)
 		(property "Value" "MCP6004"
-			(at 128.27 139.954 0)
+			(at 129.54 139.954 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -23517,7 +18134,7 @@
 			)
 		)
 		(property "Footprint" "Package_SO:SOIC-14_3.9x8.7mm_P1.27mm"
-			(at 123.19 132.08 0)
+			(at 124.46 132.08 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -23526,7 +18143,7 @@
 			)
 		)
 		(property "Datasheet" "https://ww1.microchip.com/downloads/en/DeviceDoc/MCP6001-1R-1U-2-4-1-MHz-Low-Power-Op-Amp-DS20001733L.pdf"
-			(at 125.73 129.54 0)
+			(at 127 129.54 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -23535,25 +18152,7 @@
 			)
 		)
 		(property "Description" "1MHz, Low-Power Op Amp, DIP-14/SOIC-14/TSSOP-14"
-			(at 124.46 134.62 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Digikey PN" "MCP6004-I/SL-ND"
-			(at 124.46 134.62 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Digikey URL" "https://www.digikey.com/en/products/detail/microchip-technology/MCP6004-I-SL/523061?gclsrc=aw.ds&gad_source=1&gad_campaignid=17922795960&gbraid=0AAAAADrbLlirMt8CnwTpqopm1INQzq2TO&gclid=Cj0KCQiAvtzLBhCPARIsALwhxdquhsBlAg_bKJq5CGOPXtiGSHN9oTmcxlIwgH0Oo6MGXvgyCW9ozEQaAsWSEALw_wcB"
-			(at 124.46 134.62 0)
+			(at 125.73 134.62 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -23562,7 +18161,7 @@
 			)
 		)
 		(property "MFG PN" "MCP6004-I/SL"
-			(at 124.46 134.62 0)
+			(at 125.73 134.62 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -23570,8 +18169,8 @@
 				(hide yes)
 			)
 		)
-		(property "MFG Name" "Microchip Technology"
-			(at 124.46 134.62 0)
+		(property "Digi PN" "MCP6004-I/SL-ND"
+			(at 125.73 134.62 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -23579,8 +18178,8 @@
 				(hide yes)
 			)
 		)
-		(property "Datasheet #2" ""
-			(at 124.46 134.62 0)
+		(property "Digi URL" "https://www.digikey.com/en/products/detail/microchip-technology/MCP6004-I-SL/523061?gclsrc=aw.ds&gad_source=1&gad_campaignid=17922795960&gbraid=0AAAAADrbLlirMt8CnwTpqopm1INQzq2TO&gclid=Cj0KCQiAvtzLBhCPARIsALwhxdquhsBlAg_bKJq5CGOPXtiGSHN9oTmcxlIwgH0Oo6MGXvgyCW9ozEQaAsWSEALw_wcB"
+			(at 125.73 134.62 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -23588,80 +18187,8 @@
 				(hide yes)
 			)
 		)
-		(property "Description_1" ""
-			(at 124.46 134.62 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Manufacturer" ""
-			(at 124.46 134.62 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Manufacturer_Name" ""
-			(at 124.46 134.62 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Manufacturer_Part_Number" ""
-			(at 124.46 134.62 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "On Line Components Part Number" ""
-			(at 124.46 134.62 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "On Line Components Price/Stock" ""
-			(at 124.46 134.62 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "PN" ""
-			(at 124.46 134.62 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Mouser PN" ""
-			(at 124.46 134.62 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Mouser URL" ""
-			(at 124.46 134.62 0)
+		(property "MFG" "Microchip Technology"
+			(at 125.73 134.62 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -23670,46 +18197,46 @@
 			)
 		)
 		(pin "2"
-			(uuid "82c0cef8-0a03-4da7-8081-39817904f680")
+			(uuid "82c0cef8-0a03-4da7-8081-39817904f681")
 		)
 		(pin "6"
-			(uuid "c9076d92-cce1-4bc5-b51d-3d2dd4e52561")
+			(uuid "c9076d92-cce1-4bc5-b51d-3d2dd4e52562")
 		)
 		(pin "11"
-			(uuid "64b3aa43-ca7b-4fab-a374-4aac1b6e570a")
+			(uuid "64b3aa43-ca7b-4fab-a374-4aac1b6e570b")
 		)
 		(pin "1"
-			(uuid "52d7f374-10b9-4dc1-893e-b12c1845d687")
+			(uuid "52d7f374-10b9-4dc1-893e-b12c1845d688")
 		)
 		(pin "5"
-			(uuid "d0f719dd-e231-44fd-b85b-47defc52147e")
+			(uuid "d0f719dd-e231-44fd-b85b-47defc52147f")
 		)
 		(pin "8"
-			(uuid "aa02039e-ba1b-4ea3-98be-74388def71fa")
+			(uuid "aa02039e-ba1b-4ea3-98be-74388def71fb")
 		)
 		(pin "3"
-			(uuid "967454db-1b99-4d57-8076-a95dfbec4a4f")
+			(uuid "967454db-1b99-4d57-8076-a95dfbec4a50")
 		)
 		(pin "9"
-			(uuid "67e09ead-239c-4712-9c5b-43d3bb32b72f")
+			(uuid "67e09ead-239c-4712-9c5b-43d3bb32b730")
 		)
 		(pin "12"
-			(uuid "a46d0e56-4397-4a96-8c8d-7bcaad2494fa")
+			(uuid "a46d0e56-4397-4a96-8c8d-7bcaad2494fb")
 		)
 		(pin "4"
-			(uuid "f3cd24e9-4355-4f39-a53a-9eaee451adb5")
+			(uuid "f3cd24e9-4355-4f39-a53a-9eaee451adb6")
 		)
 		(pin "7"
-			(uuid "977c0311-49ba-4267-be61-528f14e27469")
+			(uuid "977c0311-49ba-4267-be61-528f14e2746a")
 		)
 		(pin "13"
-			(uuid "656441e8-432e-4ae4-a900-4a8955b761cd")
+			(uuid "656441e8-432e-4ae4-a900-4a8955b761ce")
 		)
 		(pin "10"
-			(uuid "b1c016e5-3fe8-4a86-b748-173fe6f75536")
+			(uuid "b1c016e5-3fe8-4a86-b748-173fe6f75537")
 		)
 		(pin "14"
-			(uuid "f9ac6538-d405-40ff-9b91-a90068d81293")
+			(uuid "f9ac6538-d405-40ff-9b91-a90068d81294")
 		)
 		(instances
 			(project ""
@@ -23784,15 +18311,6 @@
 				(hide yes)
 			)
 		)
-		(property "Digikey URL" "https://www.digikey.com/en/products/detail/koa-speer-electronics-inc/RN73H1JTTD1453F100/10685457"
-			(at 73.66 121.92 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
 		(property "MFG PN" "RN73H1JTTD1453F100"
 			(at 73.66 121.92 0)
 			(effects
@@ -23802,7 +18320,7 @@
 				(hide yes)
 			)
 		)
-		(property "MFG Name" "KOA Speer Electronics, Inc."
+		(property "Digi URL" "https://www.digikey.com/en/products/detail/koa-speer-electronics-inc/RN73H1JTTD1453F100/10685457"
 			(at 73.66 121.92 0)
 			(effects
 				(font
@@ -23811,88 +18329,7 @@
 				(hide yes)
 			)
 		)
-		(property "Datasheet #2" ""
-			(at 73.66 121.92 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Description_1" ""
-			(at 73.66 121.92 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Manufacturer" ""
-			(at 73.66 121.92 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Manufacturer_Name" ""
-			(at 73.66 121.92 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Manufacturer_Part_Number" ""
-			(at 73.66 121.92 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "On Line Components Part Number" ""
-			(at 73.66 121.92 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "On Line Components Price/Stock" ""
-			(at 73.66 121.92 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "PN" ""
-			(at 73.66 121.92 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Mouser PN" ""
-			(at 73.66 121.92 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Mouser URL" ""
+		(property "MFG" "KOA Speer Electronics, Inc."
 			(at 73.66 121.92 0)
 			(effects
 				(font
@@ -24005,42 +18442,6 @@
 				(hide yes)
 			)
 		)
-		(property "MANUFACTURER" ""
-			(at 309.88 181.61 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "MAXIMUM_PACKAGE_HEIGHT" ""
-			(at 309.88 181.61 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "PARTREV" ""
-			(at 309.88 181.61 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "STANDARD" ""
-			(at 309.88 181.61 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
 		(property "Sim.Device" ""
 			(at 309.88 181.61 0)
 			(effects
@@ -24060,96 +18461,6 @@
 			)
 		)
 		(property "Sim.Type" ""
-			(at 309.88 181.61 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Datasheet #2" ""
-			(at 309.88 181.61 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Description_1" ""
-			(at 309.88 181.61 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Manufacturer" ""
-			(at 309.88 181.61 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Manufacturer_Name" ""
-			(at 309.88 181.61 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Manufacturer_Part_Number" ""
-			(at 309.88 181.61 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "On Line Components Part Number" ""
-			(at 309.88 181.61 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "On Line Components Price/Stock" ""
-			(at 309.88 181.61 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "PN" ""
-			(at 309.88 181.61 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Mouser PN" ""
-			(at 309.88 181.61 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Mouser URL" ""
 			(at 309.88 181.61 0)
 			(effects
 				(font
@@ -24379,24 +18690,6 @@
 				(hide yes)
 			)
 		)
-		(property "Digikey PN" "1276-1184-1-ND"
-			(at 325.12 185.42 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Digikey URL" "https://www.digikey.com/en/products/detail/samsung-electro-mechanics/CL10B105KA8NNNC/3886842"
-			(at 325.12 185.42 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
 		(property "MFG PN" "CL10B105KA8NNNC"
 			(at 325.12 185.42 0)
 			(effects
@@ -24406,7 +18699,7 @@
 				(hide yes)
 			)
 		)
-		(property "MFG Name" "Samsung Electro-Mechanics"
+		(property "Digi PN" "1276-1184-1-ND"
 			(at 325.12 185.42 0)
 			(effects
 				(font
@@ -24415,7 +18708,7 @@
 				(hide yes)
 			)
 		)
-		(property "Datasheet #2" ""
+		(property "Digi URL" "https://www.digikey.com/en/products/detail/samsung-electro-mechanics/CL10B105KA8NNNC/3886842"
 			(at 325.12 185.42 0)
 			(effects
 				(font
@@ -24424,79 +18717,7 @@
 				(hide yes)
 			)
 		)
-		(property "Description_1" ""
-			(at 325.12 185.42 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Manufacturer" ""
-			(at 325.12 185.42 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Manufacturer_Name" ""
-			(at 325.12 185.42 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Manufacturer_Part_Number" ""
-			(at 325.12 185.42 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "On Line Components Part Number" ""
-			(at 325.12 185.42 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "On Line Components Price/Stock" ""
-			(at 325.12 185.42 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "PN" ""
-			(at 325.12 185.42 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Mouser PN" ""
-			(at 325.12 185.42 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Mouser URL" ""
+		(property "MFG" "Samsung Electro-Mechanics"
 			(at 325.12 185.42 0)
 			(effects
 				(font
@@ -24583,15 +18804,6 @@
 				(hide yes)
 			)
 		)
-		(property "Digikey URL" "https://www.digikey.com/en/products/detail/yageo/RC0603FR-0710KL/726880"
-			(at 290.83 142.24 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
 		(property "MFG PN" "RC0603FR-0710KL"
 			(at 290.83 142.24 0)
 			(effects
@@ -24601,7 +18813,7 @@
 				(hide yes)
 			)
 		)
-		(property "MFG Name" "YAGEO"
+		(property "Digi URL" "https://www.digikey.com/en/products/detail/yageo/RC0603FR-0710KL/726880"
 			(at 290.83 142.24 0)
 			(effects
 				(font
@@ -24610,88 +18822,7 @@
 				(hide yes)
 			)
 		)
-		(property "Datasheet #2" ""
-			(at 290.83 142.24 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Description_1" ""
-			(at 290.83 142.24 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Manufacturer" ""
-			(at 290.83 142.24 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Manufacturer_Name" ""
-			(at 290.83 142.24 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Manufacturer_Part_Number" ""
-			(at 290.83 142.24 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "On Line Components Part Number" ""
-			(at 290.83 142.24 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "On Line Components Price/Stock" ""
-			(at 290.83 142.24 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "PN" ""
-			(at 290.83 142.24 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Mouser PN" ""
-			(at 290.83 142.24 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Mouser URL" ""
+		(property "MFG" "YAGEO"
 			(at 290.83 142.24 0)
 			(effects
 				(font
@@ -24778,15 +18909,6 @@
 				(hide yes)
 			)
 		)
-		(property "Digikey URL" "https://www.digikey.com/en/products/detail/yageo/RC0603FR-0710KL/726880"
-			(at 303.53 78.74 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
 		(property "MFG PN" "RC0603FR-0710KL"
 			(at 303.53 78.74 0)
 			(effects
@@ -24796,7 +18918,7 @@
 				(hide yes)
 			)
 		)
-		(property "MFG Name" "YAGEO"
+		(property "Digi URL" "https://www.digikey.com/en/products/detail/yageo/RC0603FR-0710KL/726880"
 			(at 303.53 78.74 0)
 			(effects
 				(font
@@ -24805,88 +18927,7 @@
 				(hide yes)
 			)
 		)
-		(property "Datasheet #2" ""
-			(at 303.53 78.74 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Description_1" ""
-			(at 303.53 78.74 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Manufacturer" ""
-			(at 303.53 78.74 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Manufacturer_Name" ""
-			(at 303.53 78.74 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Manufacturer_Part_Number" ""
-			(at 303.53 78.74 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "On Line Components Part Number" ""
-			(at 303.53 78.74 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "On Line Components Price/Stock" ""
-			(at 303.53 78.74 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "PN" ""
-			(at 303.53 78.74 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Mouser PN" ""
-			(at 303.53 78.74 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Mouser URL" ""
+		(property "MFG" "YAGEO"
 			(at 303.53 78.74 0)
 			(effects
 				(font
@@ -25030,24 +19071,6 @@
 				(hide yes)
 			)
 		)
-		(property "Digikey PN" "399-17568-1-ND"
-			(at 224.79 121.92 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Digikey URL" "https://www.digikey.com/en/products/detail/kemet/C0603C103J5REC7411/8572403"
-			(at 224.79 121.92 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
 		(property "MFG PN" "C0603C103J5REC7411"
 			(at 224.79 121.92 0)
 			(effects
@@ -25057,7 +19080,7 @@
 				(hide yes)
 			)
 		)
-		(property "MFG Name" "KEMET"
+		(property "Digi PN" "399-17568-1-ND"
 			(at 224.79 121.92 0)
 			(effects
 				(font
@@ -25066,7 +19089,7 @@
 				(hide yes)
 			)
 		)
-		(property "Datasheet #2" ""
+		(property "Digi URL" "https://www.digikey.com/en/products/detail/kemet/C0603C103J5REC7411/8572403"
 			(at 224.79 121.92 0)
 			(effects
 				(font
@@ -25075,79 +19098,7 @@
 				(hide yes)
 			)
 		)
-		(property "Description_1" ""
-			(at 224.79 121.92 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Manufacturer" ""
-			(at 224.79 121.92 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Manufacturer_Name" ""
-			(at 224.79 121.92 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Manufacturer_Part_Number" ""
-			(at 224.79 121.92 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "On Line Components Part Number" ""
-			(at 224.79 121.92 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "On Line Components Price/Stock" ""
-			(at 224.79 121.92 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "PN" ""
-			(at 224.79 121.92 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Mouser PN" ""
-			(at 224.79 121.92 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Mouser URL" ""
+		(property "MFG" "KEMET"
 			(at 224.79 121.92 0)
 			(effects
 				(font
@@ -25451,7 +19402,7 @@
 				(justify left)
 			)
 		)
-		(property "Value" "Conn_01x06"
+		(property "Value" "1054301106"
 			(at 393.7 133.3499 0)
 			(effects
 				(font
@@ -25487,24 +19438,6 @@
 				(hide yes)
 			)
 		)
-		(property "Digikey PN" "WM26094CT-ND"
-			(at 391.16 130.81 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Digikey URL" "https://www.digikey.com/en/products/detail/molex/1054301106/9959380?s=N4IgTCBcDaIIwAYCsAWAzAuiBsIC6AvkA"
-			(at 391.16 130.81 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
 		(property "MFG PN" "1054301106"
 			(at 391.16 130.81 0)
 			(effects
@@ -25515,6 +19448,24 @@
 			)
 		)
 		(property "MFG" "Molex"
+			(at 391.16 130.81 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Digi PN" "WM26094CT-ND"
+			(at 391.16 130.81 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Digi URL" "https://www.digikey.com/en/products/detail/molex/1054301106/9959380?s=N4IgTCBcDaIIwAYCsAWAzAuiBsIC6AvkA"
 			(at 391.16 130.81 0)
 			(effects
 				(font
