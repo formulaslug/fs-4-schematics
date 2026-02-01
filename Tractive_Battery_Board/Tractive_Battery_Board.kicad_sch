@@ -7962,16 +7962,6 @@
 		)
 		(uuid "558a893e-2366-4068-b88e-e1dbbadfc5a1")
 	)
-	(text "change so it has a 1W power rating >>\n\n"
-		(exclude_from_sim no)
-		(at 185.928 63.246 0)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-		)
-		(uuid "5f39d340-3f7b-4643-9daa-9a5e870058fe")
-	)
 	(text "HV Voltage Indicator\n"
 		(exclude_from_sim no)
 		(at 86.614 232.918 0)
@@ -8543,12 +8533,6 @@
 		(uuid "df2e772b-66ba-4a00-9327-36710981c5c8")
 	)
 	(junction
-		(at 208.28 50.8)
-		(diameter 0)
-		(color 0 0 0 0)
-		(uuid "df995061-92a4-4577-912e-a43964edc5aa")
-	)
-	(junction
 		(at 184.15 105.41)
 		(diameter 0)
 		(color 0 0 0 0)
@@ -8583,6 +8567,12 @@
 		(diameter 0)
 		(color 0 0 0 0)
 		(uuid "f4223b30-5248-4757-b1ca-c57a65fc5dfc")
+	)
+	(junction
+		(at 208.28 50.8)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "f86294e9-9eb9-459c-8c47-772088bb300d")
 	)
 	(junction
 		(at 184.15 133.35)
@@ -8643,6 +8633,10 @@
 	(no_connect
 		(at 345.44 195.58)
 		(uuid "6d711909-d518-463c-b127-512a5be21491")
+	)
+	(no_connect
+		(at 73.66 154.94)
+		(uuid "6d981916-ad5f-4e20-b274-ab5ce14fb617")
 	)
 	(no_connect
 		(at 73.66 180.34)
@@ -9534,16 +9528,6 @@
 	)
 	(wire
 		(pts
-			(xy 208.28 50.8) (xy 281.94 50.8)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "4be55703-0f7b-4574-8dc8-b4cde1b6cd6d")
-	)
-	(wire
-		(pts
 			(xy 375.92 110.49) (xy 374.65 110.49)
 		)
 		(stroke
@@ -9944,6 +9928,16 @@
 	)
 	(wire
 		(pts
+			(xy 208.28 50.8) (xy 281.94 50.8)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "8e1b77eb-627a-4a6c-b559-da67631abae2")
+	)
+	(wire
+		(pts
 			(xy 71.12 149.86) (xy 73.66 149.86)
 		)
 		(stroke
@@ -10114,7 +10108,7 @@
 	)
 	(wire
 		(pts
-			(xy 200.66 45.72) (xy 196.85 45.72)
+			(xy 200.66 38.1) (xy 196.85 38.1)
 		)
 		(stroke
 			(width 0)
@@ -10511,16 +10505,6 @@
 			(type default)
 		)
 		(uuid "b5e1faca-b755-483b-b3d5-44047a2aa52a")
-	)
-	(wire
-		(pts
-			(xy 50.8 154.94) (xy 73.66 154.94)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "b6082562-9c75-4d17-ae4e-dd44eff7af3e")
 	)
 	(wire
 		(pts
@@ -11144,7 +11128,7 @@
 	)
 	(wire
 		(pts
-			(xy 196.85 43.18) (xy 208.28 43.18)
+			(xy 196.85 35.56) (xy 208.28 35.56)
 		)
 		(stroke
 			(width 0)
@@ -11161,16 +11145,6 @@
 			(type default)
 		)
 		(uuid "f1d9adba-618b-4e03-abc0-aac972124645")
-	)
-	(wire
-		(pts
-			(xy 50.8 154.94) (xy 50.8 156.21)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "f2911433-b012-4dbd-bb41-4a0c225de824")
 	)
 	(wire
 		(pts
@@ -11543,7 +11517,7 @@
 		(uuid "c9d600b4-90b9-40b4-943e-0fe2616f64c3")
 	)
 	(label "IMD_FAULT_12V"
-		(at 196.85 43.18 0)
+		(at 196.85 35.56 0)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -11563,7 +11537,7 @@
 		(uuid "f1aae6dd-06f5-43eb-b4e1-4e311d6ec882")
 	)
 	(label "nIMD_FAULT_5V"
-		(at 228.6 50.8 180)
+		(at 233.68 50.8 180)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -14931,7 +14905,7 @@
 	)
 	(symbol
 		(lib_id "power:GND")
-		(at 196.85 48.26 0)
+		(at 196.85 40.64 0)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
@@ -14940,7 +14914,7 @@
 		(fields_autoplaced yes)
 		(uuid "19ed7cb0-240e-4d79-87d4-8d54ba0b93bd")
 		(property "Reference" "#PWR022"
-			(at 196.85 54.61 0)
+			(at 196.85 46.99 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -14949,7 +14923,7 @@
 			)
 		)
 		(property "Value" "GND"
-			(at 196.85 53.34 0)
+			(at 196.85 45.72 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -14957,7 +14931,7 @@
 			)
 		)
 		(property "Footprint" ""
-			(at 196.85 48.26 0)
+			(at 196.85 40.64 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -14966,7 +14940,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 196.85 48.26 0)
+			(at 196.85 40.64 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -14975,7 +14949,7 @@
 			)
 		)
 		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
-			(at 196.85 48.26 0)
+			(at 196.85 40.64 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -15227,6 +15201,76 @@
 			(project "Tractive_Battery_Board"
 				(path "/ca333741-5826-495c-b860-5422aa5e17fc"
 					(reference "C27")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Device:R")
+		(at 208.28 46.99 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "27ae0bcb-9294-4602-bf05-f58e6ff92918")
+		(property "Reference" "R11"
+			(at 210.82 45.7199 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Value" "620"
+			(at 210.82 48.2599 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Footprint" ""
+			(at 206.502 46.99 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 208.28 46.99 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Resistor"
+			(at 208.28 46.99 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "2"
+			(uuid "3f617528-cb0f-416d-aa74-41ce276500cf")
+		)
+		(pin "1"
+			(uuid "fda7b6e0-f2e4-4693-b89b-065941dee952")
+		)
+		(instances
+			(project ""
+				(path "/ca333741-5826-495c-b860-5422aa5e17fc"
+					(reference "R11")
 					(unit 1)
 				)
 			)
@@ -15631,8 +15675,8 @@
 		(on_board yes)
 		(dnp no)
 		(uuid "3084c873-255e-44ba-8f4e-4767640ee42f")
-		(property "Reference" "R11"
-			(at 210.82 53.3399 0)
+		(property "Reference" "R12"
+			(at 210.566 53.34 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -15640,7 +15684,7 @@
 				(justify left)
 			)
 		)
-		(property "Value" "270"
+		(property "Value" "330"
 			(at 210.82 55.372 0)
 			(effects
 				(font
@@ -15685,7 +15729,7 @@
 		(instances
 			(project "Tractive_Battery_Board"
 				(path "/ca333741-5826-495c-b860-5422aa5e17fc"
-					(reference "R11")
+					(reference "R12")
 					(unit 1)
 				)
 			)
@@ -16934,7 +16978,7 @@
 	)
 	(symbol
 		(lib_id "Connector_Generic:Conn_01x03")
-		(at 191.77 45.72 0)
+		(at 191.77 38.1 0)
 		(mirror y)
 		(unit 1)
 		(exclude_from_sim no)
@@ -16943,7 +16987,7 @@
 		(dnp no)
 		(uuid "554c676c-8d0f-4ad6-8cb0-a76e2055f985")
 		(property "Reference" "J8"
-			(at 191.77 36.83 0)
+			(at 191.77 29.21 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -16951,7 +16995,7 @@
 			)
 		)
 		(property "Value" "IMD_Connector"
-			(at 191.77 39.37 0)
+			(at 191.77 31.75 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -16959,7 +17003,7 @@
 			)
 		)
 		(property "Footprint" "FS_4_Global_Footprint_Library:1054311103"
-			(at 191.77 45.72 0)
+			(at 191.77 38.1 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -16968,7 +17012,7 @@
 			)
 		)
 		(property "Datasheet" "~"
-			(at 191.77 45.72 0)
+			(at 191.77 38.1 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -16977,7 +17021,7 @@
 			)
 		)
 		(property "Description" "Generic connector, single row, 01x03, script generated (kicad-library-utils/schlib/autogen/connector/)"
-			(at 191.77 45.72 0)
+			(at 191.77 38.1 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -17991,73 +18035,6 @@
 		)
 	)
 	(symbol
-		(lib_id "Device:R")
-		(at 50.8 160.02 180)
-		(unit 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(dnp no)
-		(uuid "6095988b-3ed5-4334-9bd9-67a49a6028e4")
-		(property "Reference" "R12"
-			(at 48.006 160.782 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Value" "10k"
-			(at 47.498 158.496 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Footprint" "Resistor_SMD:R_0603_1608Metric_Pad0.98x0.95mm_HandSolder"
-			(at 52.578 160.02 90)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Datasheet" "~"
-			(at 50.8 160.02 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Description" "Resistor"
-			(at 50.8 160.02 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(pin "1"
-			(uuid "a07c1440-8126-42f9-952e-cd6740bf04fc")
-		)
-		(pin "2"
-			(uuid "1a06018e-4815-4fa9-b420-48094dc736a4")
-		)
-		(instances
-			(project "Tractive_Battery_Board"
-				(path "/ca333741-5826-495c-b860-5422aa5e17fc"
-					(reference "R12")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
 		(lib_id "power:GND")
 		(at 27.94 212.09 0)
 		(unit 1)
@@ -18465,7 +18442,6 @@
 	(symbol
 		(lib_id "Simulation_SPICE:NMOS")
 		(at 257.81 38.1 0)
-		(mirror x)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
@@ -18473,7 +18449,7 @@
 		(dnp no)
 		(uuid "68b72efb-4d6d-4311-b53c-26f93064dfd8")
 		(property "Reference" "Q1"
-			(at 262.89 40.894 0)
+			(at 262.89 35.306 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -18482,7 +18458,7 @@
 			)
 		)
 		(property "Value" "NMOS"
-			(at 262.89 38.354 0)
+			(at 262.89 37.846 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -18491,7 +18467,7 @@
 			)
 		)
 		(property "Footprint" "Package_TO_SOT_SMD:SOT-23_Handsoldering"
-			(at 262.89 40.64 0)
+			(at 262.89 35.56 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -18500,7 +18476,7 @@
 			)
 		)
 		(property "Datasheet" "https://www.onsemi.com/pdf/datasheet/ntb5860nl-d.pdf"
-			(at 257.81 25.4 0)
+			(at 257.81 50.8 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -18518,7 +18494,7 @@
 			)
 		)
 		(property "Sim.Device" "NMOS"
-			(at 257.81 20.955 0)
+			(at 257.81 55.245 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -18527,7 +18503,7 @@
 			)
 		)
 		(property "Sim.Type" "VDMOS"
-			(at 257.81 19.05 0)
+			(at 257.81 57.15 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -18536,7 +18512,7 @@
 			)
 		)
 		(property "Sim.Pins" "1=D 2=G 3=S"
-			(at 257.81 22.86 0)
+			(at 257.81 53.34 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -19325,7 +19301,7 @@
 	)
 	(symbol
 		(lib_id "Device:R")
-		(at 208.28 46.99 0)
+		(at 208.28 39.37 0)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
@@ -19333,7 +19309,7 @@
 		(dnp no)
 		(uuid "7b71a66a-9ae3-4a64-8ffb-081290e0db00")
 		(property "Reference" "R10"
-			(at 210.82 45.7199 0)
+			(at 210.82 38.0999 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -19341,8 +19317,8 @@
 				(justify left)
 			)
 		)
-		(property "Value" "1.2k"
-			(at 210.566 47.752 0)
+		(property "Value" "620"
+			(at 210.566 40.132 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -19351,7 +19327,7 @@
 			)
 		)
 		(property "Footprint" "Resistor_SMD:R_0603_1608Metric_Pad0.98x0.95mm_HandSolder"
-			(at 206.502 46.99 90)
+			(at 206.502 39.37 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -19360,7 +19336,7 @@
 			)
 		)
 		(property "Datasheet" "~"
-			(at 208.28 46.99 0)
+			(at 208.28 39.37 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -19369,7 +19345,7 @@
 			)
 		)
 		(property "Description" "Resistor"
-			(at 208.28 46.99 0)
+			(at 208.28 39.37 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -22005,7 +21981,7 @@
 	)
 	(symbol
 		(lib_id "power:+3.3V")
-		(at 200.66 45.72 270)
+		(at 200.66 38.1 270)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
@@ -22013,7 +21989,7 @@
 		(dnp no)
 		(uuid "a90692ac-1860-4055-8ff5-3e35d7a60935")
 		(property "Reference" "#PWR023"
-			(at 196.85 45.72 0)
+			(at 196.85 38.1 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -22022,7 +21998,7 @@
 			)
 		)
 		(property "Value" "+3.3V"
-			(at 197.358 47.498 90)
+			(at 197.358 39.878 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -22031,7 +22007,7 @@
 			)
 		)
 		(property "Footprint" ""
-			(at 200.66 45.72 0)
+			(at 200.66 38.1 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -22040,7 +22016,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 200.66 45.72 0)
+			(at 200.66 38.1 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -22049,7 +22025,7 @@
 			)
 		)
 		(property "Description" "Power symbol creates a global label with name \"+3.3V\""
-			(at 200.66 45.72 0)
+			(at 200.66 38.1 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -22370,72 +22346,6 @@
 			(project "Tractive_Battery_Board"
 				(path "/ca333741-5826-495c-b860-5422aa5e17fc"
 					(reference "#PWR059")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
-		(lib_id "power:GND")
-		(at 50.8 163.83 0)
-		(unit 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(dnp no)
-		(uuid "b2365a91-0a6a-4e19-a1ae-51b18aeb0dee")
-		(property "Reference" "#PWR042"
-			(at 50.8 170.18 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Value" "GND"
-			(at 52.578 167.64 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify right)
-			)
-		)
-		(property "Footprint" ""
-			(at 50.8 163.83 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Datasheet" ""
-			(at 50.8 163.83 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
-			(at 50.8 163.83 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(pin "1"
-			(uuid "4a09469c-f6e8-44a3-af6b-fa2b4fabe4f2")
-		)
-		(instances
-			(project "Tractive_Battery_Board"
-				(path "/ca333741-5826-495c-b860-5422aa5e17fc"
-					(reference "#PWR042")
 					(unit 1)
 				)
 			)
@@ -25679,7 +25589,7 @@
 			(color 0 0 0 0.0000)
 		)
 		(uuid "f8f7b966-e431-45f1-86cc-b511313b5db4")
-		(property "Sheetname" "Current Sensors"
+		(property "Sheetname" "Current Sensors + Filtering"
 			(at 236.22 215.1884 0)
 			(effects
 				(font
@@ -25688,7 +25598,7 @@
 				(justify left bottom)
 			)
 		)
-		(property "Sheetfile" "untitled.kicad_sch"
+		(property "Sheetfile" "Current_Sensors.kicad_sch"
 			(at 236.22 236.8046 0)
 			(effects
 				(font
