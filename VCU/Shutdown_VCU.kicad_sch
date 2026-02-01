@@ -2195,174 +2195,6 @@
 			)
 			(embedded_fonts no)
 		)
-		(symbol "Device:D"
-			(pin_numbers
-				(hide yes)
-			)
-			(pin_names
-				(offset 1.016)
-				(hide yes)
-			)
-			(exclude_from_sim no)
-			(in_bom yes)
-			(on_board yes)
-			(property "Reference" "D"
-				(at 0 2.54 0)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-				)
-			)
-			(property "Value" "D"
-				(at 0 -2.54 0)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-				)
-			)
-			(property "Footprint" ""
-				(at 0 0 0)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-					(hide yes)
-				)
-			)
-			(property "Datasheet" "~"
-				(at 0 0 0)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-					(hide yes)
-				)
-			)
-			(property "Description" "Diode"
-				(at 0 0 0)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-					(hide yes)
-				)
-			)
-			(property "Sim.Device" "D"
-				(at 0 0 0)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-					(hide yes)
-				)
-			)
-			(property "Sim.Pins" "1=K 2=A"
-				(at 0 0 0)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-					(hide yes)
-				)
-			)
-			(property "ki_keywords" "diode"
-				(at 0 0 0)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-					(hide yes)
-				)
-			)
-			(property "ki_fp_filters" "TO-???* *_Diode_* *SingleDiode* D_*"
-				(at 0 0 0)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-					(hide yes)
-				)
-			)
-			(symbol "D_0_1"
-				(polyline
-					(pts
-						(xy -1.27 1.27) (xy -1.27 -1.27)
-					)
-					(stroke
-						(width 0.254)
-						(type default)
-					)
-					(fill
-						(type none)
-					)
-				)
-				(polyline
-					(pts
-						(xy 1.27 1.27) (xy 1.27 -1.27) (xy -1.27 0) (xy 1.27 1.27)
-					)
-					(stroke
-						(width 0.254)
-						(type default)
-					)
-					(fill
-						(type none)
-					)
-				)
-				(polyline
-					(pts
-						(xy 1.27 0) (xy -1.27 0)
-					)
-					(stroke
-						(width 0)
-						(type default)
-					)
-					(fill
-						(type none)
-					)
-				)
-			)
-			(symbol "D_1_1"
-				(pin passive line
-					(at -3.81 0 0)
-					(length 2.54)
-					(name "K"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-					(number "1"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-				)
-				(pin passive line
-					(at 3.81 0 180)
-					(length 2.54)
-					(name "A"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-					(number "2"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-				)
-			)
-			(embedded_fonts no)
-		)
 		(symbol "Device:R"
 			(pin_numbers
 				(hide yes)
@@ -2634,6 +2466,155 @@
 					(at 3.81 0 180)
 					(length 1.27)
 					(name "2"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "2"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+			)
+			(embedded_fonts no)
+		)
+		(symbol "Diode:PMEG10020ELR"
+			(pin_numbers
+				(hide yes)
+			)
+			(pin_names
+				(hide yes)
+			)
+			(exclude_from_sim no)
+			(in_bom yes)
+			(on_board yes)
+			(property "Reference" "D"
+				(at 0 2.54 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Value" "PMEG10020ELR"
+				(at 0 -2.54 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Footprint" "Diode_SMD:Nexperia_CFP3_SOD-123W"
+				(at 0 -4.445 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "Datasheet" "https://assets.nexperia.com/documents/data-sheet/PMEG10020ELR.pdf"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "Description" "100V, 2A low leakage current MEGA Schottky barrier rectifier, SOD-123W"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "ki_keywords" "ir diode"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "ki_fp_filters" "Nexperia*CFP3*SOD?123W*"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(symbol "PMEG10020ELR_0_1"
+				(polyline
+					(pts
+						(xy -1.905 0.635) (xy -1.905 1.27) (xy -1.27 1.27) (xy -1.27 -1.27) (xy -0.635 -1.27) (xy -0.635 -0.635)
+					)
+					(stroke
+						(width 0.2032)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy 1.27 1.27) (xy 1.27 -1.27) (xy -1.27 0) (xy 1.27 1.27)
+					)
+					(stroke
+						(width 0.2032)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy 1.27 0) (xy -1.27 0)
+					)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+			)
+			(symbol "PMEG10020ELR_1_1"
+				(pin passive line
+					(at -3.81 0 0)
+					(length 2.54)
+					(name "K"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "1"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin passive line
+					(at 3.81 0 180)
+					(length 2.54)
+					(name "A"
 						(effects
 							(font
 								(size 1.27 1.27)
@@ -6616,12 +6597,6 @@
 		(uuid "541233fc-2eb9-4fbc-9821-2bfcb0a2858a")
 	)
 	(junction
-		(at 408.94 147.32)
-		(diameter 0)
-		(color 0 0 0 0)
-		(uuid "568b1b3d-cec6-4e60-a374-6096eea4e4ad")
-	)
-	(junction
 		(at 55.88 248.92)
 		(diameter 0)
 		(color 0 0 0 0)
@@ -6686,6 +6661,12 @@
 		(diameter 0)
 		(color 0 0 0 0)
 		(uuid "95cef84b-700a-4008-9b89-17921f3e64fb")
+	)
+	(junction
+		(at 410.21 153.67)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "9748bf22-8659-40e8-84af-483d88094064")
 	)
 	(junction
 		(at 218.44 252.73)
@@ -7411,16 +7392,6 @@
 	)
 	(wire
 		(pts
-			(xy 411.48 147.32) (xy 408.94 147.32)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "34c48fcb-eb36-41de-a280-38521c7a925c")
-	)
-	(wire
-		(pts
 			(xy 157.48 121.92) (xy 189.23 121.92)
 		)
 		(stroke
@@ -7448,16 +7419,6 @@
 			(type default)
 		)
 		(uuid "36ff6e07-b54c-442e-917c-ce70bac5868f")
-	)
-	(wire
-		(pts
-			(xy 403.86 153.67) (xy 408.94 153.67)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "37329575-92e2-4b46-ae2e-1a3fae51dfde")
 	)
 	(wire
 		(pts
@@ -7551,7 +7512,7 @@
 	)
 	(wire
 		(pts
-			(xy 408.94 147.32) (xy 394.97 147.32)
+			(xy 394.97 147.32) (xy 410.21 147.32)
 		)
 		(stroke
 			(width 0)
@@ -7598,6 +7559,16 @@
 			(type default)
 		)
 		(uuid "46e0b43f-6d34-482c-b5d1-d1926baaa30b")
+	)
+	(wire
+		(pts
+			(xy 405.13 153.67) (xy 410.21 153.67)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "46f4b5c2-d4f6-4e2b-8417-8143c41f19db")
 	)
 	(wire
 		(pts
@@ -7821,7 +7792,7 @@
 	)
 	(wire
 		(pts
-			(xy 408.94 153.67) (xy 408.94 147.32)
+			(xy 410.21 153.67) (xy 410.21 147.32)
 		)
 		(stroke
 			(width 0)
@@ -8351,7 +8322,7 @@
 	)
 	(wire
 		(pts
-			(xy 379.73 153.67) (xy 396.24 153.67)
+			(xy 379.73 153.67) (xy 397.51 153.67)
 		)
 		(stroke
 			(width 0)
@@ -13903,6 +13874,75 @@
 		)
 	)
 	(symbol
+		(lib_id "Diode:PMEG10020ELR")
+		(at 278.13 190.5 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "386664d3-9058-4ee9-abf3-8c0a2765387e")
+		(property "Reference" "D1"
+			(at 279.908 189.484 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Value" "PMEG10020ELR"
+			(at 270.002 187.198 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Footprint" "Diode_SMD:Nexperia_CFP3_SOD-123W"
+			(at 278.13 194.945 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "https://assets.nexperia.com/documents/data-sheet/PMEG10020ELR.pdf"
+			(at 278.13 190.5 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "100V, 2A low leakage current MEGA Schottky barrier rectifier, SOD-123W"
+			(at 278.13 190.5 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "2"
+			(uuid "7fe2b92a-a645-458d-a307-2c157da20f20")
+		)
+		(pin "1"
+			(uuid "dd704257-27f6-490e-a06b-15ef4766a002")
+		)
+		(instances
+			(project "VCU"
+				(path "/d46cfebc-cd32-4ec9-981b-3f67fe44510e/016e8690-8836-4a58-8538-04ec936182e1"
+					(reference "D1")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
 		(lib_id "Device:C")
 		(at 281.94 201.93 0)
 		(mirror x)
@@ -17470,6 +17510,76 @@
 				(path "/d46cfebc-cd32-4ec9-981b-3f67fe44510e/016e8690-8836-4a58-8538-04ec936182e1"
 					(reference "U11")
 					(unit 5)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Diode:PMEG10020ELR")
+		(at 401.32 153.67 0)
+		(mirror x)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "7ea2170d-bfb7-4ab0-9c06-00677ebace87")
+		(property "Reference" "D22"
+			(at 408.178 152.146 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+			)
+		)
+		(property "Value" "PMEG10020ELR"
+			(at 408.178 149.606 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+			)
+		)
+		(property "Footprint" "Diode_SMD:Nexperia_CFP3_SOD-123W"
+			(at 401.32 149.225 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "https://assets.nexperia.com/documents/data-sheet/PMEG10020ELR.pdf"
+			(at 401.32 153.67 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "100V, 2A low leakage current MEGA Schottky barrier rectifier, SOD-123W"
+			(at 401.32 153.67 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "2"
+			(uuid "f953b296-80f9-42e4-b2ef-e9ff330984be")
+		)
+		(pin "1"
+			(uuid "0dcd526c-0f06-4514-91aa-a8ef1c5ee8fb")
+		)
+		(instances
+			(project "VCU"
+				(path "/d46cfebc-cd32-4ec9-981b-3f67fe44510e/016e8690-8836-4a58-8538-04ec936182e1"
+					(reference "D22")
+					(unit 1)
 				)
 			)
 		)
@@ -21113,181 +21223,6 @@
 		)
 	)
 	(symbol
-		(lib_id "Device:D")
-		(at 278.13 190.5 0)
-		(unit 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(dnp no)
-		(uuid "b9837ae2-d8d8-42d7-94c6-3f94c684f044")
-		(property "Reference" "D1"
-			(at 277.622 185.674 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Value" "ACGRAT105L-HF"
-			(at 278.13 187.96 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Footprint" "Diode_SMD:D_2010_5025Metric_Pad1.52x2.65mm_HandSolder"
-			(at 278.13 190.5 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Datasheet" "https://www.comchiptech.com/upload/file/product/product/ACGRAT101L-HF%20Thru%20ACGRAT105L-HF%20RevB850475.pdf"
-			(at 278.13 190.5 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Description" ""
-			(at 278.13 190.5 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Sim.Device" "D"
-			(at 278.13 190.5 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Sim.Pins" "1=K 2=A"
-			(at 278.13 190.5 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Digi PN" "641-1631-1-ND"
-			(at 278.13 190.5 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Digi URL" "https://www.digikey.com/en/products/detail/comchip-technology/ACGRAT105L-HF/5013705"
-			(at 278.13 190.5 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "MFG PN" "ACGRAT105L-HF"
-			(at 278.13 190.5 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "MANUFACTURER" ""
-			(at 278.13 190.5 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Sim.Type" ""
-			(at 278.13 190.5 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "MFG" "Comchip Technology"
-			(at 278.13 190.5 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Digikey Link" ""
-			(at 278.13 190.5 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "MFP PN" ""
-			(at 278.13 190.5 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Manufacturer" ""
-			(at 278.13 190.5 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Part Name" ""
-			(at 278.13 190.5 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(pin "1"
-			(uuid "a454ba6b-2283-4d56-9d2c-70c68eb59e77")
-		)
-		(pin "2"
-			(uuid "c0166c13-ca1a-41bc-b1cc-149d803280ff")
-		)
-		(instances
-			(project "VCU"
-				(path "/d46cfebc-cd32-4ec9-981b-3f67fe44510e/016e8690-8836-4a58-8538-04ec936182e1"
-					(reference "D1")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
 		(lib_id "Switch:SW_Push_Open")
 		(at 50.8 236.22 0)
 		(unit 1)
@@ -21841,7 +21776,7 @@
 	)
 	(symbol
 		(lib_id "power:GND")
-		(at 411.48 147.32 0)
+		(at 410.21 153.67 0)
 		(mirror y)
 		(unit 1)
 		(exclude_from_sim no)
@@ -21851,7 +21786,7 @@
 		(fields_autoplaced yes)
 		(uuid "c6445944-dde2-403e-9be8-2c05e820ef47")
 		(property "Reference" "#PWR0181"
-			(at 411.48 153.67 0)
+			(at 410.21 160.02 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -21860,7 +21795,7 @@
 			)
 		)
 		(property "Value" "GND"
-			(at 411.48 152.4 0)
+			(at 410.21 158.75 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -21868,7 +21803,7 @@
 			)
 		)
 		(property "Footprint" ""
-			(at 411.48 147.32 0)
+			(at 410.21 153.67 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -21877,7 +21812,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 411.48 147.32 0)
+			(at 410.21 153.67 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -21886,7 +21821,7 @@
 			)
 		)
 		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
-			(at 411.48 147.32 0)
+			(at 410.21 153.67 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -22544,181 +22479,6 @@
 			(project "VCU"
 				(path "/d46cfebc-cd32-4ec9-981b-3f67fe44510e/016e8690-8836-4a58-8538-04ec936182e1"
 					(reference "#PWR053")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
-		(lib_id "Device:D")
-		(at 400.05 153.67 0)
-		(unit 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(dnp no)
-		(uuid "d14f6bad-acab-4167-a2db-b3cc2386ddd4")
-		(property "Reference" "D22"
-			(at 399.542 148.844 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Value" "ACGRAT105L-HF"
-			(at 400.05 151.13 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Footprint" "Diode_SMD:D_2010_5025Metric_Pad1.52x2.65mm_HandSolder"
-			(at 400.05 153.67 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Datasheet" "https://www.comchiptech.com/upload/file/product/product/ACGRAT101L-HF%20Thru%20ACGRAT105L-HF%20RevB850475.pdf"
-			(at 400.05 153.67 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Description" ""
-			(at 400.05 153.67 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Sim.Device" "D"
-			(at 400.05 153.67 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Sim.Pins" "1=K 2=A"
-			(at 400.05 153.67 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Digi PN" "641-1631-1-ND"
-			(at 400.05 153.67 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Digi URL" "https://www.digikey.com/en/products/detail/comchip-technology/ACGRAT105L-HF/5013705"
-			(at 400.05 153.67 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "MFG PN" "ACGRAT105L-HF"
-			(at 400.05 153.67 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "MANUFACTURER" ""
-			(at 400.05 153.67 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Sim.Type" ""
-			(at 400.05 153.67 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "MFG" "Comchip Technology"
-			(at 400.05 153.67 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Digikey Link" ""
-			(at 400.05 153.67 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "MFP PN" ""
-			(at 400.05 153.67 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Manufacturer" ""
-			(at 400.05 153.67 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Part Name" ""
-			(at 400.05 153.67 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(pin "1"
-			(uuid "cc021673-2ce6-4d29-8393-73f38f08d784")
-		)
-		(pin "2"
-			(uuid "12c53ca8-4110-4485-a93d-6207285ed768")
-		)
-		(instances
-			(project "VCU"
-				(path "/d46cfebc-cd32-4ec9-981b-3f67fe44510e/016e8690-8836-4a58-8538-04ec936182e1"
-					(reference "D22")
 					(unit 1)
 				)
 			)
