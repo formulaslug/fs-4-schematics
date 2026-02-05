@@ -7092,50 +7092,6 @@
 		)
 		(uuid "ff70f8d4-607c-4499-a48a-553680913095")
 	)
-	(global_label "driver_power_pin"
-		(shape output)
-		(at 58.42 128.27 180)
-		(fields_autoplaced yes)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-			(justify right)
-		)
-		(uuid "0a19a589-ce27-46b3-80bf-46582c7f2aa7")
-		(property "Intersheetrefs" "${INTERSHEET_REFS}"
-			(at 39.7111 128.27 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify right)
-				(hide yes)
-			)
-		)
-	)
-	(global_label "SPI{MOSI,MISO,CS,CLK}"
-		(shape input)
-		(at 62.23 104.14 180)
-		(fields_autoplaced yes)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-			(justify right)
-		)
-		(uuid "1cf8345d-c81c-427c-9577-5f76c814b150")
-		(property "Intersheetrefs" "${INTERSHEET_REFS}"
-			(at 37.4127 104.14 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify right)
-				(hide yes)
-			)
-		)
-	)
 	(global_label "Backlight_PWM"
 		(shape input)
 		(at 44.45 236.22 180)
@@ -7179,6 +7135,28 @@
 				(hide yes)
 			)
 		)
+	)
+	(hierarchical_label "SPI(CLK,MISO,MOSI,CS"
+		(shape input)
+		(at 62.23 104.14 180)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify right)
+		)
+		(uuid "14bf6f84-4fb0-49f8-97dd-9f68dd42fe76")
+	)
+	(hierarchical_label "driver_power_pin"
+		(shape input)
+		(at 58.42 128.27 180)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify right)
+		)
+		(uuid "ef07adc2-6a31-4f1a-a0c0-bfabfd149832")
 	)
 	(symbol
 		(lib_id "Device:C")
