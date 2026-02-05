@@ -51,7 +51,13 @@
           "min_clearance": 0.5
         }
       },
-      "diff_pair_dimensions": [],
+      "diff_pair_dimensions": [
+        {
+          "gap": 0.0,
+          "via_gap": 0.0,
+          "width": 0.0
+        }
+      ],
       "drc_exclusions": [],
       "meta": {
         "version": 2
@@ -180,7 +186,9 @@
           "td_width_to_size_filter_ratio": 0.9
         }
       ],
-      "track_widths": [],
+      "track_widths": [
+        0.0
+      ],
       "tuning_pattern_settings": {
         "diff_pair_defaults": {
           "corner_radius_percentage": 80,
@@ -207,7 +215,12 @@
           "spacing": 0.6
         }
       },
-      "via_dimensions": [],
+      "via_dimensions": [
+        {
+          "diameter": 0.0,
+          "drill": 0.0
+        }
+      ],
       "zones_allow_external_fillets": false
     },
     "ipc2581": {
@@ -458,7 +471,7 @@
     "classes": [
       {
         "bus_width": 12,
-        "clearance": 0.2,
+        "clearance": 0.127,
         "diff_pair_gap": 0.25,
         "diff_pair_via_gap": 0.25,
         "diff_pair_width": 0.2,
@@ -469,17 +482,107 @@
         "pcb_color": "rgba(0, 0, 0, 0.000)",
         "priority": 2147483647,
         "schematic_color": "rgba(0, 0, 0, 0.000)",
-        "track_width": 0.2,
-        "via_diameter": 0.6,
-        "via_drill": 0.3,
+        "track_width": 0.254,
+        "via_diameter": 0.508,
+        "via_drill": 0.254,
         "wire_width": 6
+      },
+      {
+        "bus_width": 12,
+        "clearance": 0.508,
+        "line_style": 0,
+        "name": "HV",
+        "pcb_color": "rgb(255, 121, 27)",
+        "priority": 0,
+        "schematic_color": "rgb(255, 121, 27)",
+        "track_width": 0.254,
+        "via_diameter": 0.508,
+        "via_drill": 0.254,
+        "wire_width": 6
+      },
+      {
+        "bus_width": 12,
+        "clearance": 0.127,
+        "line_style": 0,
+        "name": "Power",
+        "pcb_color": "rgb(255, 28, 110)",
+        "priority": 1,
+        "schematic_color": "rgb(255, 28, 110)",
+        "track_width": 0.508,
+        "via_diameter": 0.762,
+        "via_drill": 0.381,
+        "wire_width": 12
       }
     ],
     "meta": {
       "version": 4
     },
     "net_colors": null,
-    "netclass_assignments": null,
+    "netclass_assignments": {
+      "+12V": [
+        "Power"
+      ],
+      "/HVIL/TS+": [
+        "HV"
+      ],
+      "/HVIL/TS_P": [
+        "HV"
+      ],
+      "GND": [
+        "Power"
+      ],
+      "HVIL+": [
+        "HV"
+      ],
+      "HVIL-": [
+        "HV"
+      ],
+      "HVIL_N": [
+        "HV"
+      ],
+      "HVIL_P": [
+        "HV"
+      ],
+      "IRs_Final": [
+        "Power"
+      ],
+      "Net-(J5-Pin_1)": [
+        "HV"
+      ],
+      "Net-(J5-Pin_2)": [
+        "HV"
+      ],
+      "Net-(J6-Pin_1)": [
+        "Power"
+      ],
+      "Net-(J7-Pin_1)": [
+        "HV"
+      ],
+      "Net-(J7-Pin_2)": [
+        "HV"
+      ],
+      "Net-(L1-Pad1)": [
+        "HV"
+      ],
+      "Net-(L1-Pad3)": [
+        "HV"
+      ],
+      "Net-(PS1-+VOUT)": [
+        "HV"
+      ],
+      "Net-(U14A-+)": [
+        "HV"
+      ],
+      "Net-(U14A--)": [
+        "HV"
+      ],
+      "Shutdown_In": [
+        "Power"
+      ],
+      "Shutdown_Out": [
+        "Power"
+      ]
+    },
     "netclass_patterns": []
   },
   "pcbnew": {

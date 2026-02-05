@@ -1114,6 +1114,16 @@
 	)
 	(wire
 		(pts
+			(xy 36.83 67.31) (xy 45.72 67.31)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "1d74da8b-4863-42ed-aecf-dc300ec3a2fe")
+	)
+	(wire
+		(pts
 			(xy 113.03 40.64) (xy 116.84 40.64)
 		)
 		(stroke
@@ -1264,7 +1274,7 @@
 	)
 	(wire
 		(pts
-			(xy 144.78 52.07) (xy 148.59 52.07)
+			(xy 143.51 52.07) (xy 148.59 52.07)
 		)
 		(stroke
 			(width 0)
@@ -1292,8 +1302,18 @@
 		)
 		(uuid "f0eacc3e-9c8e-47d4-902f-6ac3e8a3fcf8")
 	)
-	(label "TS-"
-		(at 144.78 52.07 0)
+	(wire
+		(pts
+			(xy 36.83 69.85) (xy 45.72 69.85)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "fdbb6715-25bf-4ce5-845c-d739e6e153c5")
+	)
+	(label "TS_N"
+		(at 143.51 52.07 0)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -1302,7 +1322,7 @@
 		)
 		(uuid "2c83969c-826f-4b85-aafa-1bd0cb004152")
 	)
-	(label "TS-"
+	(label "TS_N"
 		(at 99.06 44.45 0)
 		(effects
 			(font
@@ -1312,8 +1332,8 @@
 		)
 		(uuid "3569d2b5-f8e6-4a6f-99af-46b577b333db")
 	)
-	(label "TS+"
-		(at 49.53 67.31 0)
+	(label "TS_P"
+		(at 36.83 67.31 0)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -1322,7 +1342,7 @@
 		)
 		(uuid "59c88a6d-74a7-4fdf-9fa3-a83252871e58")
 	)
-	(label "TS+"
+	(label "TS_P"
 		(at 46.99 34.29 0)
 		(effects
 			(font
@@ -1332,7 +1352,7 @@
 		)
 		(uuid "5bc0182f-3087-47f3-a4c0-1c8abc0dbd6c")
 	)
-	(label "HVIL+"
+	(label "HVIL_P"
 		(at 66.04 67.31 180)
 		(effects
 			(font
@@ -1342,7 +1362,7 @@
 		)
 		(uuid "60004d39-cd8e-4365-bb6a-862496470a72")
 	)
-	(label "HVIL-"
+	(label "HVIL_N"
 		(at 66.04 69.85 180)
 		(effects
 			(font
@@ -1352,7 +1372,7 @@
 		)
 		(uuid "80a5f672-b7de-4f8f-8060-3d2924731ae7")
 	)
-	(label "TS+"
+	(label "TS_P"
 		(at 113.03 40.64 0)
 		(effects
 			(font
@@ -1362,8 +1382,8 @@
 		)
 		(uuid "bbe975d7-857a-4b2b-8f6f-b6a8f0aa1851")
 	)
-	(label "TS-"
-		(at 49.53 69.85 0)
+	(label "TS_N"
+		(at 36.83 69.85 0)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -1372,7 +1392,7 @@
 		)
 		(uuid "e93fbec3-7e7d-444c-9a11-a453b3375434")
 	)
-	(global_label "HVIL+"
+	(global_label "HVIL_P"
 		(shape output)
 		(at 161.29 55.88 0)
 		(fields_autoplaced yes)
@@ -1384,7 +1404,7 @@
 		)
 		(uuid "8973e3e8-f504-4590-bc47-d113aa03fe65")
 		(property "Intersheetrefs" "${INTERSHEET_REFS}"
-			(at 169.8996 55.88 0)
+			(at 170.5648 55.88 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -1394,7 +1414,7 @@
 			)
 		)
 	)
-	(global_label "HVIL-"
+	(global_label "HVIL_N"
 		(shape input)
 		(at 161.29 52.07 0)
 		(fields_autoplaced yes)
@@ -1406,13 +1426,195 @@
 		)
 		(uuid "e6d7d8a9-3777-473b-8eb5-33c69c739ab2")
 		(property "Intersheetrefs" "${INTERSHEET_REFS}"
-			(at 169.8996 52.07 0)
+			(at 170.6253 52.07 0)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
 				(justify left)
 				(hide yes)
+			)
+		)
+	)
+	(netclass_flag ""
+		(length 2.54)
+		(shape round)
+		(at 45.72 69.85 270)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify right bottom)
+		)
+		(uuid "08393419-6d7a-4065-9e53-26ff1b009d98")
+		(property "Netclass" "HV"
+			(at 50.8 69.85 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Component Class" ""
+			(at -123.19 26.67 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+					(italic yes)
+				)
+			)
+		)
+	)
+	(netclass_flag ""
+		(length 2.54)
+		(shape round)
+		(at 118.11 34.29 0)
+		(fields_autoplaced yes)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left bottom)
+		)
+		(uuid "11c5f227-b748-46b0-b7a0-3ade7d6b58e6")
+		(property "Netclass" "HV"
+			(at 118.8085 31.75 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Component Class" ""
+			(at -50.8 -8.89 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+					(italic yes)
+				)
+			)
+		)
+	)
+	(netclass_flag ""
+		(length 2.54)
+		(shape round)
+		(at 105.41 58.42 90)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left bottom)
+		)
+		(uuid "15eb5306-b0d1-4778-b2fa-3fd3d89404fa")
+		(property "Netclass" "HV"
+			(at 99.06 58.674 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+			)
+		)
+		(property "Component Class" ""
+			(at 274.32 101.6 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+					(italic yes)
+				)
+			)
+		)
+	)
+	(netclass_flag ""
+		(length 2.54)
+		(shape round)
+		(at 116.84 53.34 90)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left bottom)
+		)
+		(uuid "28a2cf51-ea0b-4a36-8a9b-29297239831f")
+		(property "Netclass" "HV"
+			(at 112.776 53.34 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+			)
+		)
+		(property "Component Class" ""
+			(at 285.75 96.52 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+					(italic yes)
+				)
+			)
+		)
+	)
+	(netclass_flag ""
+		(length 2.54)
+		(shape round)
+		(at 153.67 55.88 180)
+		(fields_autoplaced yes)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify right bottom)
+		)
+		(uuid "665d9d3d-f4f5-4165-b03b-f666a3e7ec5c")
+		(property "Netclass" "HV"
+			(at 154.3685 58.42 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Component Class" ""
+			(at -15.24 12.7 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+					(italic yes)
+				)
+			)
+		)
+	)
+	(netclass_flag ""
+		(length 2.54)
+		(shape round)
+		(at 45.72 67.31 270)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify right bottom)
+		)
+		(uuid "b1e5c8b4-1076-4ecf-8560-db5e33856e0e")
+		(property "Netclass" "HV"
+			(at 48.006 65.278 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Component Class" ""
+			(at -123.19 24.13 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+					(italic yes)
+				)
 			)
 		)
 	)
@@ -1435,7 +1637,7 @@
 				(hide yes)
 			)
 		)
-		(property "Value" "TS-"
+		(property "Value" "TS_N"
 			(at 46.99 48.26 0)
 			(effects
 				(font
@@ -1865,7 +2067,7 @@
 	)
 	(symbol
 		(lib_id "Connector_Generic:Conn_01x02")
-		(at 44.45 67.31 0)
+		(at 31.75 67.31 0)
 		(mirror y)
 		(unit 1)
 		(exclude_from_sim no)
@@ -1874,7 +2076,7 @@
 		(dnp no)
 		(uuid "678f8f83-b558-4b0b-8f5a-eabaa7df079b")
 		(property "Reference" "J16"
-			(at 37.084 67.31 0)
+			(at 24.384 67.31 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -1882,7 +2084,7 @@
 			)
 		)
 		(property "Value" "TS+/TS-"
-			(at 37.846 69.596 0)
+			(at 25.146 69.596 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -1890,7 +2092,7 @@
 			)
 		)
 		(property "Footprint" "FS_4_Global_Footprint_Library:1054311202 - 2-Pin Molex Nano-fit"
-			(at 44.45 67.31 0)
+			(at 31.75 67.31 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -1899,7 +2101,7 @@
 			)
 		)
 		(property "Datasheet" "https://www.molex.com/en-us/products/part-detail/1054311202?display=pdf"
-			(at 44.45 67.31 0)
+			(at 31.75 67.31 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -1908,7 +2110,7 @@
 			)
 		)
 		(property "Description" "Generic connector, single row, 01x02, script generated (kicad-library-utils/schlib/autogen/connector/)"
-			(at 44.45 67.31 0)
+			(at 31.75 67.31 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -1917,7 +2119,7 @@
 			)
 		)
 		(property "Digi PN" "WM26080CT-ND"
-			(at 44.45 67.31 0)
+			(at 31.75 67.31 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -1926,7 +2128,7 @@
 			)
 		)
 		(property "Digi URL" "https://www.digikey.com/en/products/detail/molex/1054311202/9959366"
-			(at 44.45 67.31 0)
+			(at 31.75 67.31 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -1935,7 +2137,7 @@
 			)
 		)
 		(property "MFG" "Molex"
-			(at 44.45 67.31 0)
+			(at 31.75 67.31 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -1944,7 +2146,7 @@
 			)
 		)
 		(property "MFG PN" "1054311202"
-			(at 44.45 67.31 0)
+			(at 31.75 67.31 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -2665,7 +2867,7 @@
 				(hide yes)
 			)
 		)
-		(property "Value" "TS-"
+		(property "Value" "TS_N"
 			(at 99.06 48.26 0)
 			(effects
 				(font
