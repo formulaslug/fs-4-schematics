@@ -7154,12 +7154,13 @@
 				)
 			)
 		)
-		(property "Value" "https://www.digikey.com/en/products/detail/texas-instruments/INA826AIDR/2833524"
+		(property "Value" "INA826AIDR"
 			(at 0 0 0)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
+				(hide yes)
 			)
 		)
 		(property "Footprint" "Package_SO:JEITA_SOIC-8_3.9x4.9mm_P1.27mm"
@@ -7228,98 +7229,22 @@
 		(symbol "INA826AIDR_0_1"
 			(polyline
 				(pts
-					(xy -10.16 6.35) (xy -3.81 6.35) (xy -3.81 3.81) (xy -2.54 3.81)
+					(xy 7.62 1.27) (xy -5.08 7.62) (xy -5.08 -5.08) (xy 7.62 1.27)
 				)
-				(stroke
-					(width 0)
-					(type default)
-				)
-				(fill
-					(type none)
-				)
-			)
-			(polyline
-				(pts
-					(xy -10.16 3.81) (xy -5.08 3.81) (xy -5.08 1.27) (xy -2.54 1.27) (xy -5.08 1.27) (xy -5.08 -1.27)
-					(xy -10.16 -1.27)
-				)
-				(stroke
-					(width 0)
-					(type default)
-				)
-				(fill
-					(type none)
-				)
-			)
-			(polyline
-				(pts
-					(xy -10.16 -3.81) (xy -3.81 -3.81) (xy -3.81 -1.27) (xy -2.54 -1.27)
-				)
-				(stroke
-					(width 0)
-					(type default)
-				)
-				(fill
-					(type none)
-				)
-			)
-			(polyline
-				(pts
-					(xy -2.54 5.08) (xy -2.54 -2.54) (xy 5.08 1.27) (xy -2.54 5.08)
-				)
-				(stroke
-					(width 0)
-					(type default)
-				)
-				(fill
-					(type none)
-				)
-			)
-			(polyline
-				(pts
-					(xy 5.08 1.27) (xy 7.62 1.27) (xy 7.62 2.54) (xy 10.16 2.54)
-				)
-				(stroke
-					(width 0)
-					(type default)
-				)
-				(fill
-					(type none)
-				)
-			)
-		)
-		(symbol "INA826AIDR_1_1"
-			(rectangle
-				(start -10.16 8.89)
-				(end 10.16 -6.35)
 				(stroke
 					(width 0.254)
-					(type solid)
+					(type default)
 				)
 				(fill
 					(type background)
 				)
 			)
-			(text "-\n"
-				(at -1.524 3.556 0)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-				)
-			)
-			(text "+\n"
-				(at -1.524 -0.762 0)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-				)
-			)
-			(pin power_in line
-				(at -12.7 6.35 0)
+		)
+		(symbol "INA826AIDR_1_1"
+			(pin input line
+				(at -7.62 6.35 0)
 				(length 2.54)
-				(name "V_IN-"
+				(name "+"
 					(effects
 						(font
 							(size 1.27 1.27)
@@ -7334,10 +7259,10 @@
 					)
 				)
 			)
-			(pin bidirectional line
-				(at -12.7 3.81 0)
+			(pin passive line
+				(at -7.62 3.81 0)
 				(length 2.54)
-				(name "R_G"
+				(name "Rg"
 					(effects
 						(font
 							(size 1.27 1.27)
@@ -7352,10 +7277,10 @@
 					)
 				)
 			)
-			(pin bidirectional line
-				(at -12.7 -1.27 0)
+			(pin passive line
+				(at -7.62 -1.27 0)
 				(length 2.54)
-				(name "R_G"
+				(name "Rg"
 					(effects
 						(font
 							(size 1.27 1.27)
@@ -7370,10 +7295,10 @@
 					)
 				)
 			)
-			(pin power_in line
-				(at -12.7 -3.81 0)
+			(pin input line
+				(at -7.62 -3.81 0)
 				(length 2.54)
-				(name "V_IN+"
+				(name "-"
 					(effects
 						(font
 							(size 1.27 1.27)
@@ -7389,9 +7314,9 @@
 				)
 			)
 			(pin power_in line
-				(at 12.7 6.35 180)
-				(length 2.54)
-				(name "VS+"
+				(at 0 8.89 270)
+				(length 3.81)
+				(name "V+"
 					(effects
 						(font
 							(size 1.27 1.27)
@@ -7406,17 +7331,17 @@
 					)
 				)
 			)
-			(pin output line
-				(at 12.7 2.54 180)
-				(length 2.54)
-				(name "V_OUT"
+			(pin power_in line
+				(at 0 -6.35 90)
+				(length 3.81)
+				(name "V-"
 					(effects
 						(font
 							(size 1.27 1.27)
 						)
 					)
 				)
-				(number "7"
+				(number "5"
 					(effects
 						(font
 							(size 1.27 1.27)
@@ -7424,10 +7349,10 @@
 					)
 				)
 			)
-			(pin bidirectional line
-				(at 12.7 0 180)
-				(length 2.54)
-				(name "REF"
+			(pin input line
+				(at 2.54 -6.35 90)
+				(length 5.08)
+				(name "Ref"
 					(effects
 						(font
 							(size 1.27 1.27)
@@ -7442,17 +7367,17 @@
 					)
 				)
 			)
-			(pin power_in line
-				(at 12.7 -3.81 180)
+			(pin output line
+				(at 10.16 1.27 180)
 				(length 2.54)
-				(name "VS-"
+				(name "~"
 					(effects
 						(font
 							(size 1.27 1.27)
 						)
 					)
 				)
-				(number "5"
+				(number "7"
 					(effects
 						(font
 							(size 1.27 1.27)
