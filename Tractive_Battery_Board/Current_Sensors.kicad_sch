@@ -2002,6 +2002,12 @@
 		(uuid "785e0fe1-69ad-48ea-874d-e775210ffe54")
 	)
 	(junction
+		(at 96.52 48.26)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "d37f5294-48b0-481a-8977-c997b7f01fbe")
+	)
+	(junction
 		(at 373.38 48.26)
 		(diameter 0)
 		(color 0 0 0 0)
@@ -2018,12 +2024,6 @@
 		(diameter 0)
 		(color 0 0 0 0)
 		(uuid "fa7016b4-605e-4756-85b6-e5684e019027")
-	)
-	(junction
-		(at 96.52 48.26)
-		(diameter 0)
-		(color 0 0 0 0)
-		(uuid "fe89adc4-e31d-47bc-94e6-58629643a0b3")
 	)
 	(no_connect
 		(at 148.59 119.38)
@@ -3558,7 +3558,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "Resistor_SMD:R_0603_1608Metric_Pad0.98x0.95mm_HandSolder"
 			(at 136.398 111.76 90)
 			(effects
 				(font
@@ -4551,7 +4551,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "Resistor_SMD:R_0603_1608Metric_Pad0.98x0.95mm_HandSolder"
 			(at 136.398 68.58 90)
 			(effects
 				(font
@@ -4589,6 +4589,110 @@
 				(path "/ca333741-5826-495c-b860-5422aa5e17fc/f8f7b966-e431-45f1-86cc-b511313b5db4"
 					(reference "R61")
 					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Amplifier_Operational:MCP6004")
+		(at 90.17 73.66 0)
+		(unit 4)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "72372cfd-d2b4-44dd-8d9a-3c5e1a171e6e")
+		(property "Reference" "U5"
+			(at 90.17 63.5 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "MCP6004"
+			(at 90.17 66.04 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" ""
+			(at 88.9 71.12 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "http://ww1.microchip.com/downloads/en/DeviceDoc/21733j.pdf"
+			(at 91.44 68.58 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "1MHz, Low-Power Op Amp, DIP-14/SOIC-14/TSSOP-14"
+			(at 90.17 73.66 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "2"
+			(uuid "edd8f492-b894-4d32-a2ce-d5658595919e")
+		)
+		(pin "9"
+			(uuid "4dba474b-2cba-4f2b-8443-168bb7fb25ef")
+		)
+		(pin "11"
+			(uuid "b2d0c30d-b88a-4f91-95e7-b8a6f302dde3")
+		)
+		(pin "1"
+			(uuid "1a5b49b3-6a96-40a4-881d-9bf7ca82ad62")
+		)
+		(pin "7"
+			(uuid "f4592199-8c4c-4739-b7ce-92cc63c39bd1")
+		)
+		(pin "12"
+			(uuid "d1e9e4ea-d4ce-45b0-8a9e-bce41ced82bb")
+		)
+		(pin "14"
+			(uuid "dbb24ce9-e878-4448-9042-97ad37efb64a")
+		)
+		(pin "4"
+			(uuid "e19a1e6c-d10e-48eb-8f63-508cb2b1df62")
+		)
+		(pin "5"
+			(uuid "562a24e6-b829-4fb9-bdf7-dbe4622beacd")
+		)
+		(pin "6"
+			(uuid "20be0dee-56b3-4e96-8283-11ba6f19b964")
+		)
+		(pin "13"
+			(uuid "92d2ab8c-8539-4155-827e-19b52cf09aba")
+		)
+		(pin "8"
+			(uuid "fd46fc2a-40c1-4da6-b330-046f854c9368")
+		)
+		(pin "3"
+			(uuid "7872394b-d83e-4443-b9df-8f716e7593fc")
+		)
+		(pin "10"
+			(uuid "364db2d8-a517-4d96-9d02-b6c729215448")
+		)
+		(instances
+			(project "Tractive_Battery_Board"
+				(path "/ca333741-5826-495c-b860-5422aa5e17fc/f8f7b966-e431-45f1-86cc-b511313b5db4"
+					(reference "U5")
+					(unit 4)
 				)
 			)
 		)
@@ -5187,15 +5291,16 @@
 	)
 	(symbol
 		(lib_id "Amplifier_Operational:MCP6004")
-		(at 90.17 73.66 0)
-		(unit 4)
+		(at 88.9 48.26 0)
+		(unit 3)
 		(exclude_from_sim no)
 		(in_bom yes)
 		(on_board yes)
 		(dnp no)
-		(uuid "9bfe6a61-1d1d-4d1d-8d64-7ccbd536e4dd")
+		(fields_autoplaced yes)
+		(uuid "995b721f-a4e5-4d43-a35d-6ab510396f7c")
 		(property "Reference" "U5"
-			(at 90.17 83.82 0)
+			(at 88.9 38.1 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -5203,15 +5308,15 @@
 			)
 		)
 		(property "Value" "MCP6004"
-			(at 90.17 81.28 0)
+			(at 88.9 40.64 0)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
 			)
 		)
-		(property "Footprint" "Package_SO:SOIC-14_3.9x8.7mm_P1.27mm"
-			(at 88.9 71.12 0)
+		(property "Footprint" ""
+			(at 87.63 45.72 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -5219,8 +5324,8 @@
 				(hide yes)
 			)
 		)
-		(property "Datasheet" "https://ww1.microchip.com/downloads/en/DeviceDoc/MCP6001-1R-1U-2-4-1-MHz-Low-Power-Op-Amp-DS20001733L.pdf"
-			(at 91.44 68.58 0)
+		(property "Datasheet" "http://ww1.microchip.com/downloads/en/DeviceDoc/21733j.pdf"
+			(at 90.17 43.18 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -5229,97 +5334,61 @@
 			)
 		)
 		(property "Description" "1MHz, Low-Power Op Amp, DIP-14/SOIC-14/TSSOP-14"
-			(at 90.17 73.66 0)
+			(at 88.9 48.26 0)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
 				(hide yes)
 			)
-		)
-		(property "Digi PN" "MCP6004-I/P-ND"
-			(at 90.17 73.66 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Digi URL" "https://www.digikey.com/en/products/detail/microchip-technology/MCP6004-I-P/523060"
-			(at 90.17 73.66 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "MFG" "Microchip Technology"
-			(at 90.17 73.66 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "MFG PN" "MCP6004-I/P"
-			(at 90.17 73.66 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(pin "12"
-			(uuid "2a590034-94d9-4304-a247-f7d82a1963fe")
-		)
-		(pin "13"
-			(uuid "78d8a7a0-6301-4699-8346-4074e8b8839c")
-		)
-		(pin "14"
-			(uuid "6c2e7035-dce6-4050-91f4-0e4740a7e471")
-		)
-		(pin "4"
-			(uuid "d7a94ab0-0d7b-4ae8-aa2f-2dfe593c392c")
-		)
-		(pin "11"
-			(uuid "0658e3c3-3465-4e1e-8d4d-06d670e229a7")
-		)
-		(pin "3"
-			(uuid "80223311-6aa7-4ff2-9d9e-6247265dec68")
 		)
 		(pin "2"
-			(uuid "59d4c1d7-8175-4db3-9c3d-c780b5cdf549")
-		)
-		(pin "1"
-			(uuid "924d6633-0ba5-4ac2-b517-42901fa7a32b")
-		)
-		(pin "5"
-			(uuid "6b69a101-35bf-4557-a9c1-65d261ac340e")
-		)
-		(pin "6"
-			(uuid "e46e8699-5de1-496e-81f1-6cc8f05a06dd")
-		)
-		(pin "7"
-			(uuid "992c34dd-6d7a-475b-a612-5bdfb189a646")
-		)
-		(pin "10"
-			(uuid "3950af6c-371a-4bc9-8c98-4dd269dc41f8")
+			(uuid "edd8f492-b894-4d32-a2ce-d5658595919f")
 		)
 		(pin "9"
-			(uuid "dab9b861-1e68-4b9f-aaf5-3cbd77b1bc8d")
+			(uuid "3cadb5cd-a5cf-41eb-823e-4ddadc8029b6")
+		)
+		(pin "11"
+			(uuid "b2d0c30d-b88a-4f91-95e7-b8a6f302dde4")
+		)
+		(pin "1"
+			(uuid "1a5b49b3-6a96-40a4-881d-9bf7ca82ad63")
+		)
+		(pin "7"
+			(uuid "f4592199-8c4c-4739-b7ce-92cc63c39bd2")
+		)
+		(pin "12"
+			(uuid "ca9bfb56-6dc5-4b87-bb5b-9a77d496b546")
+		)
+		(pin "14"
+			(uuid "6889bfd4-dd9b-4c1a-b60a-343b3681f6cf")
+		)
+		(pin "4"
+			(uuid "e19a1e6c-d10e-48eb-8f63-508cb2b1df63")
+		)
+		(pin "5"
+			(uuid "562a24e6-b829-4fb9-bdf7-dbe4622beace")
+		)
+		(pin "6"
+			(uuid "20be0dee-56b3-4e96-8283-11ba6f19b965")
+		)
+		(pin "13"
+			(uuid "2edc4316-7b03-4e42-a047-1e9474f09cfc")
 		)
 		(pin "8"
-			(uuid "395ffdf5-c833-4d1c-8fc5-9a35cf88141e")
+			(uuid "2d76a05d-f39d-4840-858b-431a2a12eb3d")
+		)
+		(pin "3"
+			(uuid "7872394b-d83e-4443-b9df-8f716e7593fd")
+		)
+		(pin "10"
+			(uuid "4a63a5ab-92b9-4f01-8bd0-48d0e230c0a8")
 		)
 		(instances
 			(project "Tractive_Battery_Board"
 				(path "/ca333741-5826-495c-b860-5422aa5e17fc/f8f7b966-e431-45f1-86cc-b511313b5db4"
 					(reference "U5")
-					(unit 4)
+					(unit 3)
 				)
 			)
 		)
@@ -6446,146 +6515,6 @@
 				(path "/ca333741-5826-495c-b860-5422aa5e17fc/f8f7b966-e431-45f1-86cc-b511313b5db4"
 					(reference "#PWR0121")
 					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
-		(lib_id "Amplifier_Operational:MCP6004")
-		(at 88.9 48.26 0)
-		(mirror x)
-		(unit 3)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(dnp no)
-		(uuid "db9001df-5d99-433c-afda-5e2ce42837ee")
-		(property "Reference" "U5"
-			(at 88.9 58.42 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Value" "MCP6004"
-			(at 88.9 55.88 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Footprint" "Package_SO:SOIC-14_3.9x8.7mm_P1.27mm"
-			(at 87.63 50.8 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Datasheet" "https://ww1.microchip.com/downloads/en/DeviceDoc/MCP6001-1R-1U-2-4-1-MHz-Low-Power-Op-Amp-DS20001733L.pdf"
-			(at 90.17 53.34 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Description" "1MHz, Low-Power Op Amp, DIP-14/SOIC-14/TSSOP-14"
-			(at 88.9 48.26 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Digi PN" "MCP6004-I/P-ND"
-			(at 88.9 48.26 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Digi URL" "https://www.digikey.com/en/products/detail/microchip-technology/MCP6004-I-P/523060"
-			(at 88.9 48.26 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "MFG" "Microchip Technology"
-			(at 88.9 48.26 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "MFG PN" "MCP6004-I/P"
-			(at 88.9 48.26 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(pin "12"
-			(uuid "2a590034-94d9-4304-a247-f7d82a1963ff")
-		)
-		(pin "13"
-			(uuid "78d8a7a0-6301-4699-8346-4074e8b8839d")
-		)
-		(pin "14"
-			(uuid "6c2e7035-dce6-4050-91f4-0e4740a7e472")
-		)
-		(pin "4"
-			(uuid "d7a94ab0-0d7b-4ae8-aa2f-2dfe593c392d")
-		)
-		(pin "11"
-			(uuid "0658e3c3-3465-4e1e-8d4d-06d670e229a8")
-		)
-		(pin "3"
-			(uuid "80223311-6aa7-4ff2-9d9e-6247265dec69")
-		)
-		(pin "2"
-			(uuid "59d4c1d7-8175-4db3-9c3d-c780b5cdf54a")
-		)
-		(pin "1"
-			(uuid "924d6633-0ba5-4ac2-b517-42901fa7a32c")
-		)
-		(pin "5"
-			(uuid "6b69a101-35bf-4557-a9c1-65d261ac340f")
-		)
-		(pin "6"
-			(uuid "e46e8699-5de1-496e-81f1-6cc8f05a06de")
-		)
-		(pin "7"
-			(uuid "992c34dd-6d7a-475b-a612-5bdfb189a647")
-		)
-		(pin "10"
-			(uuid "3950af6c-371a-4bc9-8c98-4dd269dc41f9")
-		)
-		(pin "9"
-			(uuid "dab9b861-1e68-4b9f-aaf5-3cbd77b1bc8e")
-		)
-		(pin "8"
-			(uuid "395ffdf5-c833-4d1c-8fc5-9a35cf88141f")
-		)
-		(instances
-			(project "Tractive_Battery_Board"
-				(path "/ca333741-5826-495c-b860-5422aa5e17fc/f8f7b966-e431-45f1-86cc-b511313b5db4"
-					(reference "U5")
-					(unit 3)
 				)
 			)
 		)
