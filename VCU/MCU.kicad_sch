@@ -6,8 +6,8 @@
 	(paper "B")
 	(title_block
 		(title "VCU")
-		(date "2026-02-04")
-		(rev "1.4")
+		(date "2026-02-06")
+		(rev "1.5")
 		(company "Formula Slug")
 		(comment 1 "Ronald Zhao")
 	)
@@ -1833,6 +1833,170 @@
 					(at 0 -3.81 90)
 					(length 1.27)
 					(name "~"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "2"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+			)
+			(embedded_fonts no)
+		)
+		(symbol "Device:R_Potentiometer"
+			(pin_names
+				(offset 1.016)
+				(hide yes)
+			)
+			(exclude_from_sim no)
+			(in_bom yes)
+			(on_board yes)
+			(property "Reference" "RV"
+				(at -4.445 0 90)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Value" "R_Potentiometer"
+				(at -2.54 0 90)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Footprint" ""
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "Datasheet" "~"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "Description" "Potentiometer"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "ki_keywords" "resistor variable"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "ki_fp_filters" "Potentiometer*"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(symbol "R_Potentiometer_0_1"
+				(rectangle
+					(start 1.016 2.54)
+					(end -1.016 -2.54)
+					(stroke
+						(width 0.254)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy 1.143 0) (xy 2.286 0.508) (xy 2.286 -0.508) (xy 1.143 0)
+					)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type outline)
+					)
+				)
+				(polyline
+					(pts
+						(xy 2.54 0) (xy 1.524 0)
+					)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+			)
+			(symbol "R_Potentiometer_1_1"
+				(pin passive line
+					(at 0 3.81 270)
+					(length 1.27)
+					(name "1"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "1"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin passive line
+					(at 0 -3.81 90)
+					(length 1.27)
+					(name "3"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "3"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin passive line
+					(at 3.81 0 180)
+					(length 1.27)
+					(name "2"
 						(effects
 							(font
 								(size 1.27 1.27)
@@ -6803,9 +6967,19 @@
 		)
 		(uuid "05cd9505-9c9f-40bd-8583-ffc5e992d7ad")
 	)
-	(text "(120k + 200k)/(2π*120k*200k*4.7*10^-9)\n= 544.119 HZ"
+	(text "(12k + 20k)/(2π*12k*20k*39*10^-9)\n= 544.119 HZ"
 		(exclude_from_sim no)
-		(at 117.602 98.044 0)
+		(at 118.618 54.864 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+		)
+		(uuid "072b2e5f-1df4-4dc9-89f3-3c2f1351adaa")
+	)
+	(text "(12k + 20k)/(2π*12k*20k*39*10^-9)\n= 544.119 HZ"
+		(exclude_from_sim no)
+		(at 117.602 78.994 0)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -6855,7 +7029,7 @@
 	)
 	(text "0-3.125 V"
 		(exclude_from_sim no)
-		(at 97.536 102.108 0)
+		(at 97.536 83.058 0)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -6865,7 +7039,7 @@
 	)
 	(text "0-1.875 V"
 		(exclude_from_sim no)
-		(at 96.266 67.564 0)
+		(at 96.266 59.944 0)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -6892,6 +7066,16 @@
 			)
 		)
 		(uuid "60f89f68-f7ba-4d8f-a93e-d977e735330d")
+	)
+	(text "(12k + 20k)/(2π*12k*20k*39*10^-9)\n= 544.119 HZ"
+		(exclude_from_sim no)
+		(at 118.364 31.496 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+		)
+		(uuid "6167fdd3-985e-44ae-980e-5c38e2a1f682")
 	)
 	(text "CAN Tranceiver"
 		(exclude_from_sim no)
@@ -6935,7 +7119,7 @@
 	)
 	(text "5V Max\n"
 		(exclude_from_sim no)
-		(at 44.958 89.916 0)
+		(at 44.958 70.866 0)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -6963,6 +7147,16 @@
 		)
 		(uuid "80b5324e-88f2-4cb9-ab09-ab5f5d25deb4")
 	)
+	(text "0-3.125 V"
+		(exclude_from_sim no)
+		(at 94.996 104.648 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+		)
+		(uuid "825ea3b1-b73a-4b8d-99a5-5b19f7b4633b")
+	)
 	(text "3.3V\n"
 		(exclude_from_sim no)
 		(at 183.134 230.886 0)
@@ -6983,16 +7177,6 @@
 		)
 		(uuid "8f4cb884-e372-4f6b-aaf1-e328e571085a")
 	)
-	(text "(120k + 200k)/(2π*120k*200k*4.7*10^-9)\n= 544.119 HZ"
-		(exclude_from_sim no)
-		(at 119.126 32.766 0)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-		)
-		(uuid "8fa868c9-6454-47b7-9cac-7a3b396b3597")
-	)
 	(text "ST-Link Programming/Debugging Connector"
 		(exclude_from_sim no)
 		(at 152.146 93.472 0)
@@ -7004,15 +7188,15 @@
 		)
 		(uuid "9e1bfeb0-b26f-4680-9fa5-bef11f093f2b")
 	)
-	(text "(120k + 200k)/(2π*120k*200k*4.7*10^-9)\n= 544.119 HZ"
+	(text "(12k + 20k)/(2π*12k*20k*220*10^-9)\n= 96.458 HZ"
 		(exclude_from_sim no)
-		(at 119.126 63.246 0)
+		(at 119.126 99.822 0)
 		(effects
 			(font
 				(size 1.27 1.27)
 			)
 		)
-		(uuid "a0395c4a-d60e-4849-8da4-248dfea2f9fd")
+		(uuid "a3a4379a-84d1-4a79-8dcd-5906f0d9f06b")
 	)
 	(text "Regenerative Breaking Solenoid\n"
 		(exclude_from_sim no)
@@ -7066,7 +7250,7 @@
 	)
 	(text "5V Max\n\n"
 		(exclude_from_sim no)
-		(at 46.482 56.134 0)
+		(at 46.482 48.514 0)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -7177,12 +7361,6 @@
 		(uuid "10c027a1-0359-4d58-8edf-d34fa9ebac14")
 	)
 	(junction
-		(at 95.25 104.14)
-		(diameter 0)
-		(color 0 0 0 0)
-		(uuid "12a5b647-db01-4d86-ba6e-5870f0a8f929")
-	)
-	(junction
 		(at 123.19 232.41)
 		(diameter 0)
 		(color 0 0 0 0)
@@ -7279,10 +7457,16 @@
 		(uuid "415af71f-4cae-46c5-8ca1-5dfefc144a3e")
 	)
 	(junction
-		(at 78.74 95.25)
+		(at 78.74 76.2)
 		(diameter 0)
 		(color 0 0 0 0)
 		(uuid "48c7fc37-8452-4c7b-9a71-f511d59c467a")
+	)
+	(junction
+		(at 57.15 95.25)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "4a64150b-ca5d-476f-8dd1-2b60332bc355")
 	)
 	(junction
 		(at 314.96 92.71)
@@ -7291,10 +7475,10 @@
 		(uuid "4cb2f4cc-0194-4480-8746-0d1e1c42e1e5")
 	)
 	(junction
-		(at 95.25 68.58)
+		(at 85.09 106.68)
 		(diameter 0)
 		(color 0 0 0 0)
-		(uuid "4f76dff2-077e-4c46-94e5-5dd2762f8b71")
+		(uuid "4fb82b3e-d511-4937-9826-aafa511e9275")
 	)
 	(junction
 		(at 48.26 246.38)
@@ -7369,7 +7553,13 @@
 		(uuid "6be2f6b9-79d3-4299-81d9-469db1a2dd15")
 	)
 	(junction
-		(at 80.01 60.96)
+		(at 92.71 106.68)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "6d49466d-670b-43fa-854e-3ddb2bf359bb")
+	)
+	(junction
+		(at 80.01 53.34)
 		(diameter 0)
 		(color 0 0 0 0)
 		(uuid "6eb66a26-1849-43cc-89d0-59b7fc6be2ae")
@@ -7417,19 +7607,13 @@
 		(uuid "81d22328-fa49-44e0-ab58-a3ef8df95382")
 	)
 	(junction
-		(at 95.25 38.1)
-		(diameter 0)
-		(color 0 0 0 0)
-		(uuid "83e49ba0-28c5-45a2-a58b-e62541826efc")
-	)
-	(junction
 		(at 116.84 158.75)
 		(diameter 0)
 		(color 0 0 0 0)
 		(uuid "8637b13a-6f77-43f4-bfe3-6a3b8ed2a506")
 	)
 	(junction
-		(at 57.15 58.42)
+		(at 57.15 50.8)
 		(diameter 0)
 		(color 0 0 0 0)
 		(uuid "895eec24-a5b2-4c35-a74a-1739d817b5ee")
@@ -7483,6 +7667,12 @@
 		(uuid "abaf409c-42ce-4e14-892f-188c15feed0a")
 	)
 	(junction
+		(at 95.25 85.09)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "abf1ff13-3581-4b8c-9cce-d3f7ecc37ce8")
+	)
+	(junction
 		(at 193.04 233.68)
 		(diameter 0)
 		(color 0 0 0 0)
@@ -7513,7 +7703,7 @@
 		(uuid "bc736b48-318a-4378-9a8c-156d4cdb3753")
 	)
 	(junction
-		(at 87.63 104.14)
+		(at 87.63 85.09)
 		(diameter 0)
 		(color 0 0 0 0)
 		(uuid "c2cb5e66-9f09-4465-8667-f21f74737d61")
@@ -7555,6 +7745,12 @@
 		(uuid "cebd093d-ac6e-4659-b6d6-8dc18f0fead4")
 	)
 	(junction
+		(at 95.25 38.1)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "d4d2e02a-5a28-4764-bca5-3c8413efbde4")
+	)
+	(junction
 		(at 87.63 38.1)
 		(diameter 0)
 		(color 0 0 0 0)
@@ -7571,6 +7767,12 @@
 		(diameter 0)
 		(color 0 0 0 0)
 		(uuid "dcca4c86-c0bd-47c1-81f2-e25bd662e590")
+	)
+	(junction
+		(at 76.2 97.79)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "df79a8c7-2296-4f9e-87c8-0746779f28aa")
 	)
 	(junction
 		(at 274.32 111.76)
@@ -7597,7 +7799,7 @@
 		(uuid "ea6275db-a8b4-45f4-ad88-8077b07986ba")
 	)
 	(junction
-		(at 57.15 92.71)
+		(at 57.15 73.66)
 		(diameter 0)
 		(color 0 0 0 0)
 		(uuid "f2f37b1e-07bf-49d2-aa72-671254380c4d")
@@ -7609,10 +7811,16 @@
 		(uuid "f515dcea-2df3-41b0-a45d-f86b05895441")
 	)
 	(junction
-		(at 87.63 68.58)
+		(at 87.63 60.96)
 		(diameter 0)
 		(color 0 0 0 0)
 		(uuid "f71bd329-fc9d-4035-b534-71abf43875ae")
+	)
+	(junction
+		(at 95.25 60.96)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "fb9aedba-ff7c-4e0e-8b99-2f91f59a31e8")
 	)
 	(junction
 		(at 283.21 100.33)
@@ -7627,7 +7835,7 @@
 		(uuid "fce74168-0d8f-4ece-9a7d-89a2ec6d3267")
 	)
 	(no_connect
-		(at 27.94 73.66)
+		(at 27.94 66.04)
 		(uuid "06460804-df7c-465b-8085-156aba96c166")
 	)
 	(no_connect
@@ -7651,15 +7859,11 @@
 		(uuid "1c529709-6b90-4a68-a471-ca630df85559")
 	)
 	(no_connect
-		(at 24.13 214.63)
-		(uuid "2a0b1842-6158-4b9e-a3dd-a91bf3cec088")
-	)
-	(no_connect
 		(at 223.52 27.94)
 		(uuid "2dac9fe3-f833-46ac-8b7c-3b9022050815")
 	)
 	(no_connect
-		(at 27.94 107.95)
+		(at 27.94 88.9)
 		(uuid "34a1076e-71d1-4da8-86f4-0f7c04338870")
 	)
 	(no_connect
@@ -7671,7 +7875,7 @@
 		(uuid "38461b40-b0d3-410e-86a9-c2164b50daf4")
 	)
 	(no_connect
-		(at 27.94 105.41)
+		(at 27.94 86.36)
 		(uuid "3e031245-9c1f-412c-8ad8-3ab759f49793")
 	)
 	(no_connect
@@ -7703,10 +7907,6 @@
 		(uuid "947109f9-8e85-4c4b-a57f-669b23aebe4a")
 	)
 	(no_connect
-		(at 39.37 212.09)
-		(uuid "95f14eef-944a-475a-b499-c27d6ec8f946")
-	)
-	(no_connect
 		(at 27.94 40.64)
 		(uuid "9fa1174b-0e46-44eb-8276-711bfab8e60a")
 	)
@@ -7723,7 +7923,7 @@
 		(uuid "b5849d27-063b-4d97-92cb-25fc1de81060")
 	)
 	(no_connect
-		(at 27.94 71.12)
+		(at 27.94 63.5)
 		(uuid "bdc278fc-e4c9-49db-b888-e12b97069ab2")
 	)
 	(no_connect
@@ -7751,15 +7951,11 @@
 		(uuid "e3135432-7221-4914-a8e3-505c892e6f84")
 	)
 	(no_connect
-		(at 24.13 209.55)
-		(uuid "f3970b10-3e0d-4b35-8054-ddf2c7a86182")
-	)
-	(no_connect
-		(at 27.94 68.58)
+		(at 27.94 60.96)
 		(uuid "f59c8cc5-daba-44df-aea4-75edd9b5c209")
 	)
 	(no_connect
-		(at 27.94 102.87)
+		(at 27.94 83.82)
 		(uuid "fd9037aa-7635-4ec1-8fbb-efbce61f8511")
 	)
 	(no_connect
@@ -7795,6 +7991,16 @@
 			(type default)
 		)
 		(uuid "0103a07c-37e0-4cf6-8073-36f2638920b1")
+	)
+	(wire
+		(pts
+			(xy 85.09 106.68) (xy 92.71 106.68)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "015e9023-92fa-4401-9a2c-0046565e8bbe")
 	)
 	(wire
 		(pts
@@ -7845,6 +8051,16 @@
 			(type default)
 		)
 		(uuid "055e9797-b08d-4d8d-8b65-980e8b862b4b")
+	)
+	(wire
+		(pts
+			(xy 95.25 85.09) (xy 111.76 85.09)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "0631ca15-f568-4738-8d4d-50c352a599af")
 	)
 	(wire
 		(pts
@@ -7938,7 +8154,7 @@
 	)
 	(wire
 		(pts
-			(xy 64.77 68.58) (xy 80.01 68.58)
+			(xy 64.77 60.96) (xy 80.01 60.96)
 		)
 		(stroke
 			(width 0)
@@ -8008,7 +8224,7 @@
 	)
 	(wire
 		(pts
-			(xy 48.26 107.95) (xy 57.15 107.95)
+			(xy 48.26 88.9) (xy 57.15 88.9)
 		)
 		(stroke
 			(width 0)
@@ -8028,7 +8244,7 @@
 	)
 	(wire
 		(pts
-			(xy 49.53 69.85) (xy 49.53 71.12)
+			(xy 49.53 62.23) (xy 49.53 63.5)
 		)
 		(stroke
 			(width 0)
@@ -8045,6 +8261,16 @@
 			(type default)
 		)
 		(uuid "13b10d44-5239-4eb6-9514-fae275020610")
+	)
+	(wire
+		(pts
+			(xy 60.96 95.25) (xy 57.15 95.25)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "150840fd-1ed1-4e9b-9c1d-8ab7aa3cb50f")
 	)
 	(wire
 		(pts
@@ -8108,7 +8334,7 @@
 	)
 	(wire
 		(pts
-			(xy 80.01 60.96) (xy 80.01 68.58)
+			(xy 80.01 53.34) (xy 80.01 60.96)
 		)
 		(stroke
 			(width 0)
@@ -8138,6 +8364,16 @@
 	)
 	(wire
 		(pts
+			(xy 247.65 158.75) (xy 251.46 158.75)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "1feb2b8c-17c0-4898-aeae-a82e6abd558b")
+	)
+	(wire
+		(pts
 			(xy 259.08 92.71) (xy 264.16 92.71)
 		)
 		(stroke
@@ -8155,16 +8391,6 @@
 			(type default)
 		)
 		(uuid "22192508-6300-4b98-932e-1b6cb448daa2")
-	)
-	(wire
-		(pts
-			(xy 113.03 134.62) (xy 118.11 134.62)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "22983f48-6bb2-412a-9a38-2a5ebbd9685b")
 	)
 	(wire
 		(pts
@@ -8218,7 +8444,7 @@
 	)
 	(wire
 		(pts
-			(xy 53.34 58.42) (xy 57.15 58.42)
+			(xy 53.34 50.8) (xy 57.15 50.8)
 		)
 		(stroke
 			(width 0)
@@ -8338,6 +8564,16 @@
 	)
 	(wire
 		(pts
+			(xy 38.1 101.6) (xy 57.15 101.6)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "328026ce-105f-47e5-a2bc-98ce21624286")
+	)
+	(wire
+		(pts
 			(xy 173.99 27.94) (xy 175.26 27.94)
 		)
 		(stroke
@@ -8358,7 +8594,7 @@
 	)
 	(wire
 		(pts
-			(xy 49.53 69.85) (xy 52.07 69.85)
+			(xy 49.53 62.23) (xy 52.07 62.23)
 		)
 		(stroke
 			(width 0)
@@ -8475,16 +8711,6 @@
 			(type default)
 		)
 		(uuid "3d44420b-1d72-4642-bbe9-1b3da731d414")
-	)
-	(wire
-		(pts
-			(xy 87.63 38.1) (xy 95.25 38.1)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "3eb5487c-e9fa-458a-9099-ca561fafd9a1")
 	)
 	(wire
 		(pts
@@ -8678,7 +8904,7 @@
 	)
 	(wire
 		(pts
-			(xy 63.5 102.87) (xy 78.74 102.87)
+			(xy 63.5 83.82) (xy 78.74 83.82)
 		)
 		(stroke
 			(width 0)
@@ -8778,7 +9004,7 @@
 	)
 	(wire
 		(pts
-			(xy 95.25 104.14) (xy 111.76 104.14)
+			(xy 87.63 85.09) (xy 95.25 85.09)
 		)
 		(stroke
 			(width 0)
@@ -8868,7 +9094,7 @@
 	)
 	(wire
 		(pts
-			(xy 57.15 73.66) (xy 57.15 58.42)
+			(xy 57.15 66.04) (xy 57.15 50.8)
 		)
 		(stroke
 			(width 0)
@@ -8888,7 +9114,7 @@
 	)
 	(wire
 		(pts
-			(xy 64.77 63.5) (xy 64.77 68.58)
+			(xy 64.77 55.88) (xy 64.77 60.96)
 		)
 		(stroke
 			(width 0)
@@ -9028,7 +9254,17 @@
 	)
 	(wire
 		(pts
-			(xy 48.26 73.66) (xy 57.15 73.66)
+			(xy 60.96 105.41) (xy 76.2 105.41)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "671f3ad4-6689-41a2-b25f-7f03cd3e800e")
+	)
+	(wire
+		(pts
+			(xy 48.26 66.04) (xy 57.15 66.04)
 		)
 		(stroke
 			(width 0)
@@ -9048,7 +9284,7 @@
 	)
 	(wire
 		(pts
-			(xy 49.53 105.41) (xy 48.26 105.41)
+			(xy 49.53 86.36) (xy 48.26 86.36)
 		)
 		(stroke
 			(width 0)
@@ -9145,6 +9381,16 @@
 			(type default)
 		)
 		(uuid "6d6a76f8-0d79-42f0-bb00-8ecdfd397525")
+	)
+	(wire
+		(pts
+			(xy 50.8 95.25) (xy 57.15 95.25)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "6e1b001c-6003-47fd-b324-4c05291b705e")
 	)
 	(wire
 		(pts
@@ -9248,7 +9494,7 @@
 	)
 	(wire
 		(pts
-			(xy 57.15 58.42) (xy 64.77 58.42)
+			(xy 57.15 50.8) (xy 64.77 50.8)
 		)
 		(stroke
 			(width 0)
@@ -9408,6 +9654,16 @@
 	)
 	(wire
 		(pts
+			(xy 76.2 97.79) (xy 76.2 105.41)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "89945776-ec9a-4d86-8073-5a9b3924f3b7")
+	)
+	(wire
+		(pts
 			(xy 224.79 110.49) (xy 224.79 115.57)
 		)
 		(stroke
@@ -9498,6 +9754,16 @@
 	)
 	(wire
 		(pts
+			(xy 250.19 179.07) (xy 251.46 179.07)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "8c9e3e85-919e-4e8f-a955-bcece3d96784")
+	)
+	(wire
+		(pts
 			(xy 96.52 195.58) (xy 96.52 199.39)
 		)
 		(stroke
@@ -9518,7 +9784,7 @@
 	)
 	(wire
 		(pts
-			(xy 95.25 38.1) (xy 113.03 38.1)
+			(xy 87.63 38.1) (xy 95.25 38.1)
 		)
 		(stroke
 			(width 0)
@@ -9538,7 +9804,7 @@
 	)
 	(wire
 		(pts
-			(xy 95.25 68.58) (xy 113.03 68.58)
+			(xy 87.63 60.96) (xy 95.25 60.96)
 		)
 		(stroke
 			(width 0)
@@ -9608,7 +9874,7 @@
 	)
 	(wire
 		(pts
-			(xy 57.15 107.95) (xy 57.15 92.71)
+			(xy 57.15 88.9) (xy 57.15 73.66)
 		)
 		(stroke
 			(width 0)
@@ -9665,26 +9931,6 @@
 			(type default)
 		)
 		(uuid "9eca281f-c6d5-4276-8bf4-51cacb0668dd")
-	)
-	(wire
-		(pts
-			(xy 229.87 158.75) (xy 251.46 158.75)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "a0ed4590-b81e-4bbf-8419-1a0b9852fdf2")
-	)
-	(wire
-		(pts
-			(xy 87.63 68.58) (xy 95.25 68.58)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "a2a7e02a-06fb-4f3a-b9ed-bd04ca5caaf3")
 	)
 	(wire
 		(pts
@@ -9808,7 +10054,7 @@
 	)
 	(wire
 		(pts
-			(xy 78.74 95.25) (xy 78.74 102.87)
+			(xy 78.74 76.2) (xy 78.74 83.82)
 		)
 		(stroke
 			(width 0)
@@ -9838,7 +10084,7 @@
 	)
 	(wire
 		(pts
-			(xy 78.74 95.25) (xy 87.63 95.25)
+			(xy 78.74 76.2) (xy 87.63 76.2)
 		)
 		(stroke
 			(width 0)
@@ -9928,7 +10174,7 @@
 	)
 	(wire
 		(pts
-			(xy 49.53 71.12) (xy 48.26 71.12)
+			(xy 49.53 63.5) (xy 48.26 63.5)
 		)
 		(stroke
 			(width 0)
@@ -10048,6 +10294,16 @@
 	)
 	(wire
 		(pts
+			(xy 60.96 100.33) (xy 60.96 105.41)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "ba60fe2e-a99d-419c-aadc-cb20a9bd9e5a")
+	)
+	(wire
+		(pts
 			(xy 48.26 40.64) (xy 57.15 40.64)
 		)
 		(stroke
@@ -10138,7 +10394,7 @@
 	)
 	(wire
 		(pts
-			(xy 57.15 92.71) (xy 63.5 92.71)
+			(xy 57.15 73.66) (xy 63.5 73.66)
 		)
 		(stroke
 			(width 0)
@@ -10158,6 +10414,16 @@
 	)
 	(wire
 		(pts
+			(xy 85.09 97.79) (xy 85.09 99.06)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "c4b0ba96-01d8-4104-a9d5-4dcfdf6a43c6")
+	)
+	(wire
+		(pts
 			(xy 353.06 125.73) (xy 353.06 114.3)
 		)
 		(stroke
@@ -10165,6 +10431,16 @@
 			(type default)
 		)
 		(uuid "c576cb4a-45ac-4425-945a-6413a597b829")
+	)
+	(wire
+		(pts
+			(xy 76.2 97.79) (xy 85.09 97.79)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "c7a24f31-3915-45c9-8bd2-88f06cb6ed37")
 	)
 	(wire
 		(pts
@@ -10278,7 +10554,7 @@
 	)
 	(wire
 		(pts
-			(xy 63.5 97.79) (xy 63.5 102.87)
+			(xy 63.5 78.74) (xy 63.5 83.82)
 		)
 		(stroke
 			(width 0)
@@ -10298,6 +10574,16 @@
 	)
 	(wire
 		(pts
+			(xy 95.25 38.1) (xy 113.03 38.1)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "d218db94-c53c-44b4-b8a9-003997d79239")
+	)
+	(wire
+		(pts
 			(xy 152.4 139.7) (xy 157.48 139.7)
 		)
 		(stroke
@@ -10305,6 +10591,16 @@
 			(type default)
 		)
 		(uuid "d3954600-a7e8-496b-88ef-f25d60dea17b")
+	)
+	(wire
+		(pts
+			(xy 57.15 101.6) (xy 57.15 95.25)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "d4539b8b-853c-4abf-a829-f3f0d380c80e")
 	)
 	(wire
 		(pts
@@ -10328,7 +10624,7 @@
 	)
 	(wire
 		(pts
-			(xy 49.53 104.14) (xy 49.53 105.41)
+			(xy 49.53 85.09) (xy 49.53 86.36)
 		)
 		(stroke
 			(width 0)
@@ -10408,7 +10704,7 @@
 	)
 	(wire
 		(pts
-			(xy 87.63 95.25) (xy 87.63 96.52)
+			(xy 87.63 76.2) (xy 87.63 77.47)
 		)
 		(stroke
 			(width 0)
@@ -10488,16 +10784,6 @@
 	)
 	(wire
 		(pts
-			(xy 87.63 104.14) (xy 95.25 104.14)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "df87ed87-7019-4d83-b6c7-da28a781bf0e")
-	)
-	(wire
-		(pts
 			(xy 80.01 166.37) (xy 80.01 168.91)
 		)
 		(stroke
@@ -10508,7 +10794,7 @@
 	)
 	(wire
 		(pts
-			(xy 49.53 104.14) (xy 52.07 104.14)
+			(xy 49.53 85.09) (xy 52.07 85.09)
 		)
 		(stroke
 			(width 0)
@@ -10565,6 +10851,16 @@
 			(type default)
 		)
 		(uuid "e914b2a7-2691-45d8-8f1e-ba9b84cffcd9")
+	)
+	(wire
+		(pts
+			(xy 95.25 60.96) (xy 113.03 60.96)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "e92f11ed-3842-4d06-8c37-b88354b2300d")
 	)
 	(wire
 		(pts
@@ -10788,7 +11084,7 @@
 	)
 	(wire
 		(pts
-			(xy 80.01 60.96) (xy 87.63 60.96)
+			(xy 80.01 53.34) (xy 87.63 53.34)
 		)
 		(stroke
 			(width 0)
@@ -10848,6 +11144,16 @@
 	)
 	(wire
 		(pts
+			(xy 92.71 106.68) (xy 109.22 106.68)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "fdfd923c-6804-4fa2-a281-4911b1594d60")
+	)
+	(wire
+		(pts
 			(xy 259.08 100.33) (xy 264.16 100.33)
 		)
 		(stroke
@@ -10858,7 +11164,7 @@
 	)
 	(wire
 		(pts
-			(xy 52.07 92.71) (xy 57.15 92.71)
+			(xy 52.07 73.66) (xy 57.15 73.66)
 		)
 		(stroke
 			(width 0)
@@ -10877,7 +11183,7 @@
 		(uuid "ff2154bb-cc63-4398-b399-12fd503e3f1e")
 	)
 	(label "APPS_2_Raw"
-		(at 53.34 58.42 0)
+		(at 53.34 50.8 0)
 		(effects
 			(font
 				(size 1.143 1.143)
@@ -10905,6 +11211,16 @@
 			(justify right bottom)
 		)
 		(uuid "1fb05b5e-cf74-4cc0-81ba-4dfb4aa0bee2")
+	)
+	(label "SPS_1_Raw"
+		(at 50.8 95.25 0)
+		(effects
+			(font
+				(size 1.143 1.143)
+			)
+			(justify left bottom)
+		)
+		(uuid "2956e600-3ffe-4804-86b2-124cc18830e0")
 	)
 	(label "BOOT0"
 		(at 243.84 128.27 0)
@@ -10997,7 +11313,7 @@
 		(uuid "f38a66e7-95c7-4f7f-a4c3-bf2be9ccff99")
 	)
 	(label "BPPS_1_Raw"
-		(at 52.07 92.71 0)
+		(at 52.07 73.66 0)
 		(effects
 			(font
 				(size 1.143 1.143)
@@ -11197,7 +11513,7 @@
 	)
 	(global_label "RTD_Button_3V3"
 		(shape input)
-		(at 251.46 179.07 180)
+		(at 250.19 179.07 180)
 		(fields_autoplaced yes)
 		(effects
 			(font
@@ -11207,7 +11523,7 @@
 		)
 		(uuid "286535ab-280f-4a0b-bcad-d0ad47297aa8")
 		(property "Intersheetrefs" "${INTERSHEET_REFS}"
-			(at 240.5525 179.07 0)
+			(at 239.2825 179.07 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -11489,6 +11805,27 @@
 			)
 		)
 	)
+	(global_label "SPS_1_Buff_Filt"
+		(shape output)
+		(at 109.22 106.68 0)
+		(fields_autoplaced yes)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left)
+		)
+		(uuid "530002f4-1009-4a67-b41b-6dca52345c3a")
+		(property "Intersheetrefs" "${INTERSHEET_REFS}"
+			(at 126.9612 106.68 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+	)
 	(global_label "INT1_3V3"
 		(shape input)
 		(at 295.91 196.85 0)
@@ -11507,6 +11844,27 @@
 					(size 1.27 1.27)
 				)
 				(justify left)
+			)
+		)
+	)
+	(global_label "SPS_1_Buff_Filt"
+		(shape input)
+		(at 247.65 158.75 180)
+		(fields_autoplaced yes)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify right)
+		)
+		(uuid "54293f0e-f62d-427d-bc30-4fe4ac73fa11")
+		(property "Intersheetrefs" "${INTERSHEET_REFS}"
+			(at 229.9088 158.75 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
 			)
 		)
 	)
@@ -11953,7 +12311,7 @@
 	)
 	(global_label "APPS_2_Buff_Filt"
 		(shape output)
-		(at 113.03 68.58 0)
+		(at 113.03 60.96 0)
 		(fields_autoplaced yes)
 		(effects
 			(font
@@ -11963,7 +12321,7 @@
 		)
 		(uuid "abf2ac57-f1c1-4c70-9317-455ba3102e61")
 		(property "Intersheetrefs" "${INTERSHEET_REFS}"
-			(at 131.9203 68.58 0)
+			(at 131.9203 60.96 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -12331,7 +12689,7 @@
 	)
 	(global_label "BPPS_1_Buff_Filt"
 		(shape output)
-		(at 111.76 104.14 0)
+		(at 111.76 85.09 0)
 		(fields_autoplaced yes)
 		(effects
 			(font
@@ -12341,7 +12699,7 @@
 		)
 		(uuid "d6b6bc67-80ae-47fe-a443-fb31cf505512")
 		(property "Intersheetrefs" "${INTERSHEET_REFS}"
-			(at 130.8317 104.14 0)
+			(at 130.8317 85.09 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -12514,7 +12872,7 @@
 	)
 	(hierarchical_label "APPS_2_Raw"
 		(shape input)
-		(at 53.34 58.42 180)
+		(at 53.34 50.8 180)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -12555,6 +12913,17 @@
 			(justify left)
 		)
 		(uuid "6dc73125-daa2-44fb-844f-86c94d812061")
+	)
+	(hierarchical_label "SPS_1_Raw"
+		(shape input)
+		(at 50.8 95.25 180)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify right)
+		)
+		(uuid "71513bf5-2afb-48e0-b387-aadf88407c2f")
 	)
 	(hierarchical_label "APPS_1_Raw"
 		(shape input)
@@ -12613,7 +12982,7 @@
 	)
 	(hierarchical_label "BPPS_1_Raw"
 		(shape input)
-		(at 52.07 92.71 180)
+		(at 52.07 73.66 180)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -13069,118 +13438,6 @@
 			(project "VCU"
 				(path "/d46cfebc-cd32-4ec9-981b-3f67fe44510e/77141324-8e12-4fa0-be8a-c003c15572fb"
 					(reference "R69")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
-		(lib_id "Connector:TestPoint")
-		(at 229.87 158.75 90)
-		(mirror x)
-		(unit 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(dnp no)
-		(uuid "041edc64-5375-44cf-b8ab-db7203302666")
-		(property "Reference" "TP10"
-			(at 225.552 157.226 90)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-		)
-		(property "Value" "TestPoint"
-			(at 225.552 158.75 90)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-		)
-		(property "Footprint" "TestPoint:TestPoint_Pad_D1.0mm"
-			(at 229.87 163.83 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Datasheet" "~"
-			(at 229.87 163.83 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Description" "test point"
-			(at 229.87 158.75 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Sim.Type" ""
-			(at 229.87 158.75 90)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Digikey Link" ""
-			(at 229.87 158.75 90)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "MFP PN" ""
-			(at 229.87 158.75 90)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Manufacturer" ""
-			(at 229.87 158.75 90)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Part Name" ""
-			(at 229.87 158.75 90)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(pin "1"
-			(uuid "8fc85beb-fda7-4af7-8f42-517beb3c6e19")
-		)
-		(instances
-			(project "VCU"
-				(path "/d46cfebc-cd32-4ec9-981b-3f67fe44510e/77141324-8e12-4fa0-be8a-c003c15572fb"
-					(reference "TP10")
 					(unit 1)
 				)
 			)
@@ -13885,6 +14142,71 @@
 		)
 	)
 	(symbol
+		(lib_id "power:GND")
+		(at 92.71 114.3 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "15729add-dcea-4a09-bd5f-d81277aa83ae")
+		(property "Reference" "#PWR0186"
+			(at 92.71 120.65 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Value" "GND"
+			(at 92.71 118.872 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" ""
+			(at 92.71 114.3 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" ""
+			(at 92.71 114.3 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
+			(at 92.71 114.3 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "35291d1f-071b-4ad2-a2a3-dd31134d5a3a")
+		)
+		(instances
+			(project "VCU"
+				(path "/d46cfebc-cd32-4ec9-981b-3f67fe44510e/77141324-8e12-4fa0-be8a-c003c15572fb"
+					(reference "#PWR0186")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
 		(lib_id "Transistor_FET:AO3400A")
 		(at 279.4 34.29 0)
 		(unit 1)
@@ -14507,7 +14829,7 @@
 	)
 	(symbol
 		(lib_id "power:+5V")
-		(at 48.26 102.87 0)
+		(at 48.26 83.82 0)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
@@ -14516,7 +14838,7 @@
 		(fields_autoplaced yes)
 		(uuid "185a5251-174e-40d7-b443-5b18930e3cd8")
 		(property "Reference" "#PWR0110"
-			(at 48.26 106.68 0)
+			(at 48.26 87.63 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -14525,7 +14847,7 @@
 			)
 		)
 		(property "Value" "+5V"
-			(at 48.26 97.79 0)
+			(at 48.26 78.74 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -14533,7 +14855,7 @@
 			)
 		)
 		(property "Footprint" ""
-			(at 48.26 102.87 0)
+			(at 48.26 83.82 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -14542,7 +14864,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 48.26 102.87 0)
+			(at 48.26 83.82 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -14551,7 +14873,7 @@
 			)
 		)
 		(property "Description" "Power symbol creates a global label with name \"+5V\""
-			(at 48.26 102.87 0)
+			(at 48.26 83.82 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -14891,7 +15213,7 @@
 	)
 	(symbol
 		(lib_id "power:GND")
-		(at 52.07 69.85 0)
+		(at 52.07 62.23 0)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
@@ -14899,7 +15221,7 @@
 		(dnp no)
 		(uuid "1a73f6c5-72e2-4777-8908-fdcd9183b048")
 		(property "Reference" "#PWR0112"
-			(at 52.07 76.2 0)
+			(at 52.07 68.58 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -14908,7 +15230,7 @@
 			)
 		)
 		(property "Value" "GND"
-			(at 54.356 70.104 0)
+			(at 54.356 62.484 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -14916,7 +15238,7 @@
 			)
 		)
 		(property "Footprint" ""
-			(at 52.07 69.85 0)
+			(at 52.07 62.23 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -14925,7 +15247,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 52.07 69.85 0)
+			(at 52.07 62.23 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -14934,7 +15256,7 @@
 			)
 		)
 		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
-			(at 52.07 69.85 0)
+			(at 52.07 62.23 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -17091,165 +17413,6 @@
 		)
 	)
 	(symbol
-		(lib_id "Device:C")
-		(at 95.25 107.95 0)
-		(unit 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(dnp no)
-		(uuid "2e9575a8-5ee0-4953-b854-f2f544719d47")
-		(property "Reference" "C30"
-			(at 99.06 107.3149 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-		)
-		(property "Value" "3.9nF"
-			(at 99.06 109.728 0)
-			(effects
-				(font
-					(size 0.762 0.762)
-				)
-				(justify left)
-			)
-		)
-		(property "Footprint" "Capacitor_SMD:C_0603_1608Metric_Pad1.08x0.95mm_HandSolder"
-			(at 96.2152 111.76 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Datasheet" "https://yageogroup.com/download/specsheet/CC0603JRX7R9BB392"
-			(at 95.25 107.95 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Description" "CAP CER 3900PF 50V X7R 0603"
-			(at 95.25 107.95 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Digi PN" "311-4017-1-ND"
-			(at 95.25 107.95 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Digi URL" "https://www.digikey.com/en/products/detail/yageo/CC0603JRX7R9BB392/5883691"
-			(at 95.25 107.95 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "MFG" "Yageo"
-			(at 95.25 107.95 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "MFG PN" "CC0603JRX7R9BB392"
-			(at 95.25 107.95 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "MANUFACTURER" ""
-			(at 95.25 107.95 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Sim.Type" ""
-			(at 95.25 107.95 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Digikey Link" ""
-			(at 95.25 107.95 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "MFP PN" ""
-			(at 95.25 107.95 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Manufacturer" ""
-			(at 95.25 107.95 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Part Name" ""
-			(at 95.25 107.95 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(pin "1"
-			(uuid "e190406b-50f3-4e76-a22c-e942362f0838")
-		)
-		(pin "2"
-			(uuid "46278114-0c69-4ddc-97a4-f33056fc2641")
-		)
-		(instances
-			(project "VCU"
-				(path "/d46cfebc-cd32-4ec9-981b-3f67fe44510e/77141324-8e12-4fa0-be8a-c003c15572fb"
-					(reference "C30")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
 		(lib_id "power:GND")
 		(at 204.47 241.3 0)
 		(unit 1)
@@ -17719,6 +17882,79 @@
 		)
 	)
 	(symbol
+		(lib_id "Device:R_Potentiometer")
+		(at 34.29 101.6 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board no)
+		(dnp yes)
+		(fields_autoplaced yes)
+		(uuid "39465f28-3521-4bad-b60c-e3609a151639")
+		(property "Reference" "RV3"
+			(at 31.75 100.3299 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+			)
+		)
+		(property "Value" "Stearing Position Sensor"
+			(at 31.75 102.8699 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+			)
+		)
+		(property "Footprint" ""
+			(at 34.29 101.6 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 34.29 101.6 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Potentiometer"
+			(at 34.29 101.6 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "3"
+			(uuid "3c3e4b3c-58d0-437f-b67e-e49b026d442b")
+		)
+		(pin "1"
+			(uuid "efec8482-56e2-4788-ab89-4de2e7e3cc4f")
+		)
+		(pin "2"
+			(uuid "96bc2e69-506c-4c01-af5f-aa20930aae44")
+		)
+		(instances
+			(project ""
+				(path "/d46cfebc-cd32-4ec9-981b-3f67fe44510e/77141324-8e12-4fa0-be8a-c003c15572fb"
+					(reference "RV3")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
 		(lib_id "Device:R")
 		(at 350.52 102.87 270)
 		(unit 1)
@@ -17935,6 +18171,71 @@
 			(project "VCU"
 				(path "/d46cfebc-cd32-4ec9-981b-3f67fe44510e/77141324-8e12-4fa0-be8a-c003c15572fb"
 					(reference "#PWR0107")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "power:GND")
+		(at 85.09 114.3 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "41ad3fb3-fbf5-4a67-86bd-7996e2cd90b5")
+		(property "Reference" "#PWR0185"
+			(at 85.09 120.65 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Value" "GND"
+			(at 85.09 119.38 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" ""
+			(at 85.09 114.3 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" ""
+			(at 85.09 114.3 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
+			(at 85.09 114.3 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "168abcc8-ff95-4b1f-a865-093a25aebe19")
+		)
+		(instances
+			(project "VCU"
+				(path "/d46cfebc-cd32-4ec9-981b-3f67fe44510e/77141324-8e12-4fa0-be8a-c003c15572fb"
+					(reference "#PWR0185")
 					(unit 1)
 				)
 			)
@@ -18583,16 +18884,15 @@
 	)
 	(symbol
 		(lib_id "power:GND")
-		(at 87.63 111.76 0)
+		(at 87.63 92.71 0)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
 		(on_board yes)
 		(dnp no)
-		(fields_autoplaced yes)
 		(uuid "487bbe00-73c6-4690-b29a-2381c6601913")
 		(property "Reference" "#PWR0119"
-			(at 87.63 118.11 0)
+			(at 87.63 99.06 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -18601,7 +18901,7 @@
 			)
 		)
 		(property "Value" "GND"
-			(at 87.63 116.84 0)
+			(at 87.63 97.79 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -18609,7 +18909,7 @@
 			)
 		)
 		(property "Footprint" ""
-			(at 87.63 111.76 0)
+			(at 87.63 92.71 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -18618,7 +18918,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 87.63 111.76 0)
+			(at 87.63 92.71 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -18627,7 +18927,7 @@
 			)
 		)
 		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
-			(at 87.63 111.76 0)
+			(at 87.63 92.71 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -19132,6 +19432,165 @@
 		)
 	)
 	(symbol
+		(lib_id "Device:C")
+		(at 92.71 110.49 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "4f4056d8-8bde-478c-b4d1-cc8fb28c195d")
+		(property "Reference" "C23"
+			(at 96.52 109.8549 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Value" "220nF"
+			(at 96.52 112.268 0)
+			(effects
+				(font
+					(size 0.762 0.762)
+				)
+				(justify left)
+			)
+		)
+		(property "Footprint" "Capacitor_SMD:C_0603_1608Metric_Pad1.08x0.95mm_HandSolder"
+			(at 93.6752 114.3 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "https://yageogroup.com/content/datasheet/asset/file/UPY-GPHC_X7R_6_3V-TO-250V"
+			(at 92.71 110.49 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "CAP CER 0.22UF 25V X7R 0603"
+			(at 92.71 110.49 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Digi PN" "311-1803-1-ND"
+			(at 92.71 110.49 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Digi URL" "https://www.digikey.com/en/products/detail/yageo/CC0603KRX7R8BB224/5195211"
+			(at 92.71 110.49 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "MFG" "Yageo"
+			(at 92.71 110.49 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "MFG PN" "CC0603KRX7R8BB224"
+			(at 92.71 110.49 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "MANUFACTURER" ""
+			(at 92.71 110.49 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Sim.Type" ""
+			(at 92.71 110.49 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Digikey Link" ""
+			(at 92.71 110.49 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "MFP PN" ""
+			(at 92.71 110.49 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Manufacturer" ""
+			(at 92.71 110.49 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Part Name" ""
+			(at 92.71 110.49 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "56f4355f-8afc-437a-a9b4-37eb9a3e99d2")
+		)
+		(pin "2"
+			(uuid "87f94a87-ba66-4978-819b-e1ef9fb227ad")
+		)
+		(instances
+			(project "VCU"
+				(path "/d46cfebc-cd32-4ec9-981b-3f67fe44510e/77141324-8e12-4fa0-be8a-c003c15572fb"
+					(reference "C23")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
 		(lib_id "Device:R")
 		(at 102.87 140.97 180)
 		(unit 1)
@@ -19464,7 +19923,7 @@
 	)
 	(symbol
 		(lib_id "Device:R")
-		(at 87.63 64.77 0)
+		(at 87.63 57.15 0)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
@@ -19472,7 +19931,7 @@
 		(dnp no)
 		(uuid "55a4e3f4-a6f8-4ce4-9e98-79b3af4eeaa1")
 		(property "Reference" "R57"
-			(at 84.074 63.754 0)
+			(at 84.074 56.134 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -19480,7 +19939,7 @@
 			)
 		)
 		(property "Value" "20k"
-			(at 84.074 65.786 0)
+			(at 84.074 58.166 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -19488,7 +19947,7 @@
 			)
 		)
 		(property "Footprint" "Resistor_SMD:R_0603_1608Metric_Pad0.98x0.95mm_HandSolder"
-			(at 85.852 64.77 90)
+			(at 85.852 57.15 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -19497,7 +19956,7 @@
 			)
 		)
 		(property "Datasheet" "https://www.yageogroup.com/content/datasheet/asset/file/PYU-AC_51_ROHS_L"
-			(at 87.63 64.77 0)
+			(at 87.63 57.15 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -19506,7 +19965,7 @@
 			)
 		)
 		(property "Description" "Resistor"
-			(at 87.63 64.77 0)
+			(at 87.63 57.15 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -19515,7 +19974,7 @@
 			)
 		)
 		(property "Digi PN" "YAG3577CT-ND"
-			(at 87.63 64.77 0)
+			(at 87.63 57.15 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -19524,7 +19983,7 @@
 			)
 		)
 		(property "Digi URL" "https://www.digikey.com/en/products/detail/yageo/AC0603FR-0720KL/5895907"
-			(at 87.63 64.77 0)
+			(at 87.63 57.15 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -19533,7 +19992,7 @@
 			)
 		)
 		(property "MFG" "Yageo"
-			(at 87.63 64.77 0)
+			(at 87.63 57.15 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -19542,7 +20001,7 @@
 			)
 		)
 		(property "MFG PN" "AC0603FR-0720KL"
-			(at 87.63 64.77 0)
+			(at 87.63 57.15 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -19551,7 +20010,7 @@
 			)
 		)
 		(property "MANUFACTURER" ""
-			(at 87.63 64.77 0)
+			(at 87.63 57.15 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -19560,7 +20019,7 @@
 			)
 		)
 		(property "Sim.Type" ""
-			(at 87.63 64.77 0)
+			(at 87.63 57.15 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -19569,7 +20028,7 @@
 			)
 		)
 		(property "Digikey Link" ""
-			(at 87.63 64.77 0)
+			(at 87.63 57.15 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -19578,7 +20037,7 @@
 			)
 		)
 		(property "MFP PN" ""
-			(at 87.63 64.77 0)
+			(at 87.63 57.15 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -19587,7 +20046,7 @@
 			)
 		)
 		(property "Manufacturer" ""
-			(at 87.63 64.77 0)
+			(at 87.63 57.15 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -19596,7 +20055,7 @@
 			)
 		)
 		(property "Part Name" ""
-			(at 87.63 64.77 0)
+			(at 87.63 57.15 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -19939,165 +20398,6 @@
 			(project "VCU"
 				(path "/d46cfebc-cd32-4ec9-981b-3f67fe44510e/77141324-8e12-4fa0-be8a-c003c15572fb"
 					(reference "Q7")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
-		(lib_id "Device:C")
-		(at 95.25 72.39 0)
-		(unit 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(dnp no)
-		(uuid "5c440d7c-1e7d-40ef-b4e3-6c007f4a75c0")
-		(property "Reference" "C29"
-			(at 99.06 71.7549 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-		)
-		(property "Value" "3.9nF"
-			(at 99.06 74.168 0)
-			(effects
-				(font
-					(size 0.762 0.762)
-				)
-				(justify left)
-			)
-		)
-		(property "Footprint" "Capacitor_SMD:C_0603_1608Metric_Pad1.08x0.95mm_HandSolder"
-			(at 96.2152 76.2 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Datasheet" "https://yageogroup.com/download/specsheet/CC0603JRX7R9BB392"
-			(at 95.25 72.39 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Description" "CAP CER 3900PF 50V X7R 0603"
-			(at 95.25 72.39 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Digi PN" "311-4017-1-ND"
-			(at 95.25 72.39 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Digi URL" "https://www.digikey.com/en/products/detail/yageo/CC0603JRX7R9BB392/5883691"
-			(at 95.25 72.39 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "MFG" "Yageo"
-			(at 95.25 72.39 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "MFG PN" "CC0603JRX7R9BB392"
-			(at 95.25 72.39 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "MANUFACTURER" ""
-			(at 95.25 72.39 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Sim.Type" ""
-			(at 95.25 72.39 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Digikey Link" ""
-			(at 95.25 72.39 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "MFP PN" ""
-			(at 95.25 72.39 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Manufacturer" ""
-			(at 95.25 72.39 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Part Name" ""
-			(at 95.25 72.39 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(pin "1"
-			(uuid "5e3aa060-436c-4a5f-beed-2048926f58bf")
-		)
-		(pin "2"
-			(uuid "1f5481e9-7dae-4579-9803-fdc9ff1ebd16")
-		)
-		(instances
-			(project "VCU"
-				(path "/d46cfebc-cd32-4ec9-981b-3f67fe44510e/77141324-8e12-4fa0-be8a-c003c15572fb"
-					(reference "C29")
 					(unit 1)
 				)
 			)
@@ -20647,7 +20947,7 @@
 	)
 	(symbol
 		(lib_id "FS_4_Global_Symbol_Library:PST360G2-2AA-C0123-ERA040-05K")
-		(at 38.1 72.39 0)
+		(at 38.1 64.77 0)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
@@ -20655,7 +20955,7 @@
 		(dnp yes)
 		(uuid "5f082661-7b7e-4416-a49b-44f63a28b9ea")
 		(property "Reference" "U18"
-			(at 37.846 63.5 0)
+			(at 37.846 55.88 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -20663,7 +20963,7 @@
 			)
 		)
 		(property "Value" "PST360G2"
-			(at 37.846 66.04 0)
+			(at 37.846 58.42 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -20671,7 +20971,7 @@
 			)
 		)
 		(property "Footprint" ""
-			(at 38.1 72.39 0)
+			(at 38.1 64.77 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -20680,7 +20980,7 @@
 			)
 		)
 		(property "Datasheet" "https://www.piher.net/wp-content/uploads/PIHER_PST-360G2.pdf"
-			(at 38.1 72.39 0)
+			(at 38.1 64.77 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -20689,7 +20989,7 @@
 			)
 		)
 		(property "Description" ""
-			(at 38.1 72.39 0)
+			(at 38.1 64.77 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -20698,7 +20998,7 @@
 			)
 		)
 		(property "MFG" "Amphenol Piher Sensing Systems"
-			(at 38.1 72.39 0)
+			(at 38.1 64.77 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -20707,7 +21007,7 @@
 			)
 		)
 		(property "MFG PN" "PST360G2-1A-C0000-ERA360-05K"
-			(at 38.1 72.39 0)
+			(at 38.1 64.77 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -20716,7 +21016,7 @@
 			)
 		)
 		(property "Digi URL" "https://www.digikey.com/en/products/detail/amphenol-piher-sensing-systems/PST360G2-1A-C0000-ERA360-05K/9555849"
-			(at 38.1 72.39 0)
+			(at 38.1 64.77 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -20725,7 +21025,7 @@
 			)
 		)
 		(property "Digi PN" "1993-1011-ND"
-			(at 38.1 72.39 0)
+			(at 38.1 64.77 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -20734,7 +21034,7 @@
 			)
 		)
 		(property "Digikey Link" ""
-			(at 38.1 72.39 0)
+			(at 38.1 64.77 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -20743,7 +21043,7 @@
 			)
 		)
 		(property "MFP PN" ""
-			(at 38.1 72.39 0)
+			(at 38.1 64.77 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -20752,7 +21052,7 @@
 			)
 		)
 		(property "Manufacturer" ""
-			(at 38.1 72.39 0)
+			(at 38.1 64.77 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -20761,7 +21061,7 @@
 			)
 		)
 		(property "Part Name" ""
-			(at 38.1 72.39 0)
+			(at 38.1 64.77 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -21113,6 +21413,71 @@
 		)
 	)
 	(symbol
+		(lib_id "power:GND")
+		(at 34.29 105.41 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "62cf0f04-2c4b-4cbe-9674-6a1e336fd091")
+		(property "Reference" "#PWR0124"
+			(at 34.29 111.76 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Value" "GND"
+			(at 34.29 110.49 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" ""
+			(at 34.29 105.41 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" ""
+			(at 34.29 105.41 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
+			(at 34.29 105.41 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "33c8fbe8-a12a-4056-a05f-9758cc5613d2")
+		)
+		(instances
+			(project "VCU"
+				(path "/d46cfebc-cd32-4ec9-981b-3f67fe44510e/77141324-8e12-4fa0-be8a-c003c15572fb"
+					(reference "#PWR0124")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
 		(lib_id "power:+5V")
 		(at 113.03 134.62 0)
 		(unit 1)
@@ -21333,6 +21698,165 @@
 			(project "VCU"
 				(path "/d46cfebc-cd32-4ec9-981b-3f67fe44510e/77141324-8e12-4fa0-be8a-c003c15572fb"
 					(reference "R65")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Device:C")
+		(at 95.25 88.9 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "685272ae-e720-4ae6-9aa7-09dd7ab3f8df")
+		(property "Reference" "C30"
+			(at 99.06 88.2649 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Value" "39nF"
+			(at 99.06 90.678 0)
+			(effects
+				(font
+					(size 0.762 0.762)
+				)
+				(justify left)
+			)
+		)
+		(property "Footprint" "Capacitor_SMD:C_0603_1608Metric_Pad1.08x0.95mm_HandSolder"
+			(at 96.2152 92.71 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "https://yageogroup.com/content/datasheet/asset/file/UPY-GPHC_X7R_6_3V-TO-250V"
+			(at 95.25 88.9 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "CAP CER 0.039UF 50V X7R 0603"
+			(at 95.25 88.9 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Digi PN" "13-CC0603JRX7R9BB393CT-ND"
+			(at 95.25 88.9 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Digi URL" "https://www.digikey.com/en/products/detail/yageo/CC0603JRX7R9BB393/16797613"
+			(at 95.25 88.9 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "MFG" "Yageo"
+			(at 95.25 88.9 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "MFG PN" "CC0603JRX7R9BB393"
+			(at 95.25 88.9 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "MANUFACTURER" ""
+			(at 95.25 88.9 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Sim.Type" ""
+			(at 95.25 88.9 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Digikey Link" ""
+			(at 95.25 88.9 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "MFP PN" ""
+			(at 95.25 88.9 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Manufacturer" ""
+			(at 95.25 88.9 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Part Name" ""
+			(at 95.25 88.9 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "6a114ae6-9a02-44e4-ac95-4a5a46f299c0")
+		)
+		(pin "2"
+			(uuid "3d4c15ac-c12d-4c36-8050-b78157670c8b")
+		)
+		(instances
+			(project "VCU"
+				(path "/d46cfebc-cd32-4ec9-981b-3f67fe44510e/77141324-8e12-4fa0-be8a-c003c15572fb"
+					(reference "C30")
 					(unit 1)
 				)
 			)
@@ -23451,7 +23975,7 @@
 	)
 	(symbol
 		(lib_id "power:GND")
-		(at 52.07 104.14 0)
+		(at 52.07 85.09 0)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
@@ -23459,7 +23983,7 @@
 		(dnp no)
 		(uuid "7756f136-fe2c-4e70-ab80-451a8b9215b3")
 		(property "Reference" "#PWR0113"
-			(at 52.07 110.49 0)
+			(at 52.07 91.44 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -23468,7 +23992,7 @@
 			)
 		)
 		(property "Value" "GND"
-			(at 54.356 104.394 0)
+			(at 54.356 85.344 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -23476,7 +24000,7 @@
 			)
 		)
 		(property "Footprint" ""
-			(at 52.07 104.14 0)
+			(at 52.07 85.09 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -23485,7 +24009,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 52.07 104.14 0)
+			(at 52.07 85.09 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -23494,7 +24018,7 @@
 			)
 		)
 		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
-			(at 52.07 104.14 0)
+			(at 52.07 85.09 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -24328,7 +24852,7 @@
 	)
 	(symbol
 		(lib_id "Amplifier_Operational:MCP6004")
-		(at 31.75 212.09 0)
+		(at 68.58 97.79 0)
 		(unit 2)
 		(exclude_from_sim no)
 		(in_bom yes)
@@ -24336,7 +24860,7 @@
 		(dnp no)
 		(uuid "8068441f-b0e3-4812-bc3d-c9c1c6514dcf")
 		(property "Reference" "U24"
-			(at 34.29 215.646 0)
+			(at 71.12 101.346 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -24344,7 +24868,7 @@
 			)
 		)
 		(property "Value" "MCP6004"
-			(at 34.29 218.186 0)
+			(at 71.12 103.886 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -24352,7 +24876,7 @@
 			)
 		)
 		(property "Footprint" "Package_SO:SOIC-14_3.9x8.7mm_P1.27mm"
-			(at 30.48 209.55 0)
+			(at 67.31 95.25 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -24361,7 +24885,7 @@
 			)
 		)
 		(property "Datasheet" "https://www.mouser.com/datasheet/2/268/21733e-41017.pdf"
-			(at 33.02 207.01 0)
+			(at 69.85 92.71 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -24370,7 +24894,7 @@
 			)
 		)
 		(property "Description" "1MHz, Low-Power Op Amp, DIP-14/SOIC-14/TSSOP-14"
-			(at 31.75 212.09 0)
+			(at 68.58 97.79 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -24379,7 +24903,7 @@
 			)
 		)
 		(property "Digi PN" "MCP6004T-I/SLCT-ND"
-			(at 31.75 212.09 0)
+			(at 68.58 97.79 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -24388,7 +24912,7 @@
 			)
 		)
 		(property "Digi URL" "https://www.digikey.com/en/products/detail/microchip-technology/MCP6004T-I-SL/523092"
-			(at 31.75 212.09 0)
+			(at 68.58 97.79 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -24397,7 +24921,7 @@
 			)
 		)
 		(property "MFG" "MT"
-			(at 31.75 212.09 0)
+			(at 68.58 97.79 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -24406,7 +24930,7 @@
 			)
 		)
 		(property "MFG PN" "MCP6004T-I/SL"
-			(at 31.75 212.09 0)
+			(at 68.58 97.79 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -24415,7 +24939,7 @@
 			)
 		)
 		(property "MANUFACTURER" ""
-			(at 31.75 212.09 0)
+			(at 68.58 97.79 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -24424,7 +24948,7 @@
 			)
 		)
 		(property "Sim.Type" ""
-			(at 31.75 212.09 0)
+			(at 68.58 97.79 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -24433,7 +24957,7 @@
 			)
 		)
 		(property "Digikey Link" ""
-			(at 31.75 212.09 0)
+			(at 68.58 97.79 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -24442,7 +24966,7 @@
 			)
 		)
 		(property "MFP PN" ""
-			(at 31.75 212.09 0)
+			(at 68.58 97.79 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -24451,7 +24975,7 @@
 			)
 		)
 		(property "Manufacturer" ""
-			(at 31.75 212.09 0)
+			(at 68.58 97.79 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -24460,7 +24984,7 @@
 			)
 		)
 		(property "Part Name" ""
-			(at 31.75 212.09 0)
+			(at 68.58 97.79 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -25021,7 +25545,7 @@
 	)
 	(symbol
 		(lib_id "power:GND")
-		(at 87.63 76.2 0)
+		(at 87.63 68.58 0)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
@@ -25030,7 +25554,7 @@
 		(fields_autoplaced yes)
 		(uuid "87883f71-ec0e-48d5-98b8-227f91c9c8db")
 		(property "Reference" "#PWR0118"
-			(at 87.63 82.55 0)
+			(at 87.63 74.93 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -25039,7 +25563,7 @@
 			)
 		)
 		(property "Value" "GND"
-			(at 87.63 81.28 0)
+			(at 87.63 73.66 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -25047,7 +25571,7 @@
 			)
 		)
 		(property "Footprint" ""
-			(at 87.63 76.2 0)
+			(at 87.63 68.58 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -25056,7 +25580,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 87.63 76.2 0)
+			(at 87.63 68.58 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -25065,7 +25589,7 @@
 			)
 		)
 		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
-			(at 87.63 76.2 0)
+			(at 87.63 68.58 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -25309,165 +25833,6 @@
 		)
 	)
 	(symbol
-		(lib_id "Device:C")
-		(at 95.25 41.91 0)
-		(unit 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(dnp no)
-		(uuid "8d58a249-ead0-4875-be86-96982092c161")
-		(property "Reference" "C28"
-			(at 99.06 41.2749 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-		)
-		(property "Value" "3.9nF"
-			(at 99.06 43.688 0)
-			(effects
-				(font
-					(size 0.762 0.762)
-				)
-				(justify left)
-			)
-		)
-		(property "Footprint" "Capacitor_SMD:C_0603_1608Metric_Pad1.08x0.95mm_HandSolder"
-			(at 96.2152 45.72 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Datasheet" "https://yageogroup.com/download/specsheet/CC0603JRX7R9BB392"
-			(at 95.25 41.91 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Description" "CAP CER 3900PF 50V X7R 0603"
-			(at 95.25 41.91 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Digi PN" "311-4017-1-ND"
-			(at 95.25 41.91 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Digi URL" "https://www.digikey.com/en/products/detail/yageo/CC0603JRX7R9BB392/5883691"
-			(at 95.25 41.91 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "MFG" "Yageo"
-			(at 95.25 41.91 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "MFG PN" "CC0603JRX7R9BB392"
-			(at 95.25 41.91 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "MANUFACTURER" ""
-			(at 95.25 41.91 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Sim.Type" ""
-			(at 95.25 41.91 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Digikey Link" ""
-			(at 95.25 41.91 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "MFP PN" ""
-			(at 95.25 41.91 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Manufacturer" ""
-			(at 95.25 41.91 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Part Name" ""
-			(at 95.25 41.91 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(pin "1"
-			(uuid "50e8434f-f8a6-4fa0-bc83-b0e4f90e80f2")
-		)
-		(pin "2"
-			(uuid "536e8de7-dea9-40c3-a28b-7f5eacb62045")
-		)
-		(instances
-			(project "VCU"
-				(path "/d46cfebc-cd32-4ec9-981b-3f67fe44510e/77141324-8e12-4fa0-be8a-c003c15572fb"
-					(reference "C28")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
 		(lib_id "Device:LED")
 		(at 289.56 240.03 270)
 		(mirror x)
@@ -25697,6 +26062,72 @@
 			(project "VCU"
 				(path "/d46cfebc-cd32-4ec9-981b-3f67fe44510e/77141324-8e12-4fa0-be8a-c003c15572fb"
 					(reference "#PWR0155")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "power:+5V")
+		(at 34.29 97.79 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "9045e541-a89f-4ee4-8514-bd6fe1620431")
+		(property "Reference" "#PWR0187"
+			(at 34.29 101.6 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Value" "+5V"
+			(at 34.29 92.71 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" ""
+			(at 34.29 97.79 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" ""
+			(at 34.29 97.79 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Power symbol creates a global label with name \"+5V\""
+			(at 34.29 97.79 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "85908443-7f22-4b62-b83f-ef796432cdf2")
+		)
+		(instances
+			(project "VCU"
+				(path "/d46cfebc-cd32-4ec9-981b-3f67fe44510e/77141324-8e12-4fa0-be8a-c003c15572fb"
+					(reference "#PWR0187")
 					(unit 1)
 				)
 			)
@@ -25992,7 +26423,7 @@
 	)
 	(symbol
 		(lib_id "Device:R")
-		(at 87.63 107.95 0)
+		(at 87.63 88.9 0)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
@@ -26000,7 +26431,7 @@
 		(dnp no)
 		(uuid "9d5d6b29-547a-41b2-8c5b-75b3747f89cb")
 		(property "Reference" "R60"
-			(at 84.074 106.934 0)
+			(at 84.074 87.884 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -26008,7 +26439,7 @@
 			)
 		)
 		(property "Value" "20k"
-			(at 84.074 108.966 0)
+			(at 84.074 89.916 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -26016,7 +26447,7 @@
 			)
 		)
 		(property "Footprint" "Resistor_SMD:R_0603_1608Metric_Pad0.98x0.95mm_HandSolder"
-			(at 85.852 107.95 90)
+			(at 85.852 88.9 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -26025,7 +26456,7 @@
 			)
 		)
 		(property "Datasheet" "https://www.yageogroup.com/content/datasheet/asset/file/PYU-AC_51_ROHS_L"
-			(at 87.63 107.95 0)
+			(at 87.63 88.9 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -26034,7 +26465,7 @@
 			)
 		)
 		(property "Description" "Resistor"
-			(at 87.63 107.95 0)
+			(at 87.63 88.9 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -26043,7 +26474,7 @@
 			)
 		)
 		(property "Digi PN" "YAG3577CT-ND"
-			(at 87.63 107.95 0)
+			(at 87.63 88.9 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -26052,7 +26483,7 @@
 			)
 		)
 		(property "Digi URL" "https://www.digikey.com/en/products/detail/yageo/AC0603FR-0720KL/5895907"
-			(at 87.63 107.95 0)
+			(at 87.63 88.9 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -26061,7 +26492,7 @@
 			)
 		)
 		(property "MFG" "Yageo"
-			(at 87.63 107.95 0)
+			(at 87.63 88.9 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -26070,7 +26501,7 @@
 			)
 		)
 		(property "MFG PN" "AC0603FR-0720KL"
-			(at 87.63 107.95 0)
+			(at 87.63 88.9 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -26079,7 +26510,7 @@
 			)
 		)
 		(property "MANUFACTURER" ""
-			(at 87.63 107.95 0)
+			(at 87.63 88.9 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -26088,7 +26519,7 @@
 			)
 		)
 		(property "Sim.Type" ""
-			(at 87.63 107.95 0)
+			(at 87.63 88.9 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -26097,7 +26528,7 @@
 			)
 		)
 		(property "Digikey Link" ""
-			(at 87.63 107.95 0)
+			(at 87.63 88.9 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -26106,7 +26537,7 @@
 			)
 		)
 		(property "MFP PN" ""
-			(at 87.63 107.95 0)
+			(at 87.63 88.9 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -26115,7 +26546,7 @@
 			)
 		)
 		(property "Manufacturer" ""
-			(at 87.63 107.95 0)
+			(at 87.63 88.9 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -26124,7 +26555,7 @@
 			)
 		)
 		(property "Part Name" ""
-			(at 87.63 107.95 0)
+			(at 87.63 88.9 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -26214,7 +26645,7 @@
 	)
 	(symbol
 		(lib_id "Amplifier_Operational:MCP6004")
-		(at 72.39 60.96 0)
+		(at 72.39 53.34 0)
 		(unit 4)
 		(exclude_from_sim no)
 		(in_bom yes)
@@ -26222,7 +26653,7 @@
 		(dnp no)
 		(uuid "9f26e028-f8ec-4e32-b3a3-b6d9d4468725")
 		(property "Reference" "U24"
-			(at 74.676 64.516 0)
+			(at 74.676 56.896 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -26230,7 +26661,7 @@
 			)
 		)
 		(property "Value" "MCP6004"
-			(at 74.676 67.056 0)
+			(at 74.676 59.436 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -26238,7 +26669,7 @@
 			)
 		)
 		(property "Footprint" "Package_SO:SOIC-14_3.9x8.7mm_P1.27mm"
-			(at 71.12 58.42 0)
+			(at 71.12 50.8 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -26247,7 +26678,7 @@
 			)
 		)
 		(property "Datasheet" "https://www.mouser.com/datasheet/2/268/21733e-41017.pdf"
-			(at 73.66 55.88 0)
+			(at 73.66 48.26 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -26256,7 +26687,7 @@
 			)
 		)
 		(property "Description" "1MHz, Low-Power Op Amp, DIP-14/SOIC-14/TSSOP-14"
-			(at 72.39 60.96 0)
+			(at 72.39 53.34 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -26265,7 +26696,7 @@
 			)
 		)
 		(property "Digi PN" "MCP6004T-I/SLCT-ND"
-			(at 72.39 60.96 0)
+			(at 72.39 53.34 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -26274,7 +26705,7 @@
 			)
 		)
 		(property "Digi URL" "https://www.digikey.com/en/products/detail/microchip-technology/MCP6004T-I-SL/523092"
-			(at 72.39 60.96 0)
+			(at 72.39 53.34 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -26283,7 +26714,7 @@
 			)
 		)
 		(property "MFG" "MT"
-			(at 72.39 60.96 0)
+			(at 72.39 53.34 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -26292,7 +26723,7 @@
 			)
 		)
 		(property "MFG PN" "MCP6004T-I/SL"
-			(at 72.39 60.96 0)
+			(at 72.39 53.34 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -26301,7 +26732,7 @@
 			)
 		)
 		(property "MANUFACTURER" ""
-			(at 72.39 60.96 0)
+			(at 72.39 53.34 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -26310,7 +26741,7 @@
 			)
 		)
 		(property "Sim.Type" ""
-			(at 72.39 60.96 0)
+			(at 72.39 53.34 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -26319,7 +26750,7 @@
 			)
 		)
 		(property "Digikey Link" ""
-			(at 72.39 60.96 0)
+			(at 72.39 53.34 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -26328,7 +26759,7 @@
 			)
 		)
 		(property "MFP PN" ""
-			(at 72.39 60.96 0)
+			(at 72.39 53.34 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -26337,7 +26768,7 @@
 			)
 		)
 		(property "Manufacturer" ""
-			(at 72.39 60.96 0)
+			(at 72.39 53.34 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -26346,7 +26777,7 @@
 			)
 		)
 		(property "Part Name" ""
-			(at 72.39 60.96 0)
+			(at 72.39 53.34 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -26750,8 +27181,168 @@
 		)
 	)
 	(symbol
+		(lib_id "Device:R")
+		(at 85.09 102.87 0)
+		(mirror x)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "a3c833fb-4b86-4738-a015-b4fedf80bb24")
+		(property "Reference" "R91"
+			(at 83.312 101.6 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+			)
+		)
+		(property "Value" "12k"
+			(at 83.566 103.632 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+			)
+		)
+		(property "Footprint" "Resistor_SMD:R_0603_1608Metric_Pad0.98x0.95mm_HandSolder"
+			(at 83.312 102.87 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "https://yageogroup.com/content/datasheet/asset/file/PYU-AC_51_ROHS_L"
+			(at 85.09 102.87 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Resistor"
+			(at 85.09 102.87 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Digi PN" "13-AC0603FR-1012KLCT-ND"
+			(at 85.09 102.87 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Digi URL" "https://www.digikey.com/en/products/detail/yageo/AC0603FR-1012KL/14008258"
+			(at 85.09 102.87 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "MFG" "Yageo"
+			(at 85.09 102.87 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "MFG PN" "AC0603FR-0AC0603FR-1012KL7120KL"
+			(at 85.09 102.87 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "MANUFACTURER" ""
+			(at 85.09 102.87 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Sim.Type" ""
+			(at 85.09 102.87 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Digikey Link" ""
+			(at 85.09 102.87 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "MFP PN" ""
+			(at 85.09 102.87 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Manufacturer" ""
+			(at 85.09 102.87 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Part Name" ""
+			(at 85.09 102.87 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "7a167035-10d7-4c42-9029-122088399b9a")
+		)
+		(pin "2"
+			(uuid "718c737e-06e6-42f9-94e0-deba14641c41")
+		)
+		(instances
+			(project "VCU"
+				(path "/d46cfebc-cd32-4ec9-981b-3f67fe44510e/77141324-8e12-4fa0-be8a-c003c15572fb"
+					(reference "R91")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
 		(lib_id "power:+5V")
-		(at 48.26 68.58 0)
+		(at 48.26 60.96 0)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
@@ -26760,7 +27351,7 @@
 		(fields_autoplaced yes)
 		(uuid "a86eae4f-d266-494b-bfe9-e4702875abef")
 		(property "Reference" "#PWR0109"
-			(at 48.26 72.39 0)
+			(at 48.26 64.77 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -26769,7 +27360,7 @@
 			)
 		)
 		(property "Value" "+5V"
-			(at 48.26 63.5 0)
+			(at 48.26 55.88 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -26777,7 +27368,7 @@
 			)
 		)
 		(property "Footprint" ""
-			(at 48.26 68.58 0)
+			(at 48.26 60.96 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -26786,7 +27377,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 48.26 68.58 0)
+			(at 48.26 60.96 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -26795,7 +27386,7 @@
 			)
 		)
 		(property "Description" "Power symbol creates a global label with name \"+5V\""
-			(at 48.26 68.58 0)
+			(at 48.26 60.96 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -27238,16 +27829,15 @@
 	)
 	(symbol
 		(lib_id "Amplifier_Operational:MCP6004")
-		(at 71.12 95.25 0)
+		(at 71.12 76.2 0)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
 		(on_board yes)
 		(dnp no)
-		(fields_autoplaced yes)
 		(uuid "aaa41826-4646-4aac-ab17-9fdf29dff9ad")
 		(property "Reference" "U24"
-			(at 71.12 85.09 0)
+			(at 73.66 79.756 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -27255,7 +27845,7 @@
 			)
 		)
 		(property "Value" "MCP6004"
-			(at 71.12 87.63 0)
+			(at 73.66 82.296 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -27263,7 +27853,7 @@
 			)
 		)
 		(property "Footprint" "Package_SO:SOIC-14_3.9x8.7mm_P1.27mm"
-			(at 69.85 92.71 0)
+			(at 69.85 73.66 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -27272,7 +27862,7 @@
 			)
 		)
 		(property "Datasheet" "https://www.mouser.com/datasheet/2/268/21733e-41017.pdf"
-			(at 72.39 90.17 0)
+			(at 72.39 71.12 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -27281,7 +27871,7 @@
 			)
 		)
 		(property "Description" "1MHz, Low-Power Op Amp, DIP-14/SOIC-14/TSSOP-14"
-			(at 71.12 95.25 0)
+			(at 71.12 76.2 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -27290,7 +27880,7 @@
 			)
 		)
 		(property "Digi PN" "MCP6004T-I/SLCT-ND"
-			(at 71.12 95.25 0)
+			(at 71.12 76.2 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -27299,7 +27889,7 @@
 			)
 		)
 		(property "Digi URL" "https://www.digikey.com/en/products/detail/microchip-technology/MCP6004T-I-SL/523092"
-			(at 71.12 95.25 0)
+			(at 71.12 76.2 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -27308,7 +27898,7 @@
 			)
 		)
 		(property "MFG" "MT"
-			(at 71.12 95.25 0)
+			(at 71.12 76.2 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -27317,7 +27907,7 @@
 			)
 		)
 		(property "MFG PN" "MCP6004T-I/SL"
-			(at 71.12 95.25 0)
+			(at 71.12 76.2 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -27326,7 +27916,7 @@
 			)
 		)
 		(property "MANUFACTURER" ""
-			(at 71.12 95.25 0)
+			(at 71.12 76.2 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -27335,7 +27925,7 @@
 			)
 		)
 		(property "Sim.Type" ""
-			(at 71.12 95.25 0)
+			(at 71.12 76.2 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -27344,7 +27934,7 @@
 			)
 		)
 		(property "Digikey Link" ""
-			(at 71.12 95.25 0)
+			(at 71.12 76.2 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -27353,7 +27943,7 @@
 			)
 		)
 		(property "MFP PN" ""
-			(at 71.12 95.25 0)
+			(at 71.12 76.2 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -27362,7 +27952,7 @@
 			)
 		)
 		(property "Manufacturer" ""
-			(at 71.12 95.25 0)
+			(at 71.12 76.2 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -27371,7 +27961,7 @@
 			)
 		)
 		(property "Part Name" ""
-			(at 71.12 95.25 0)
+			(at 71.12 76.2 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -29289,7 +29879,7 @@
 	)
 	(symbol
 		(lib_id "power:GND")
-		(at 95.25 111.76 0)
+		(at 95.25 92.71 0)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
@@ -29297,7 +29887,7 @@
 		(dnp no)
 		(uuid "c7971cd3-87b8-4c3c-886e-fefde08df639")
 		(property "Reference" "#PWR0122"
-			(at 95.25 118.11 0)
+			(at 95.25 99.06 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -29306,7 +29896,7 @@
 			)
 		)
 		(property "Value" "GND"
-			(at 95.25 116.332 0)
+			(at 95.25 97.282 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -29314,7 +29904,7 @@
 			)
 		)
 		(property "Footprint" ""
-			(at 95.25 111.76 0)
+			(at 95.25 92.71 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -29323,7 +29913,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 95.25 111.76 0)
+			(at 95.25 92.71 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -29332,7 +29922,7 @@
 			)
 		)
 		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
-			(at 95.25 111.76 0)
+			(at 95.25 92.71 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -30771,6 +31361,324 @@
 		)
 	)
 	(symbol
+		(lib_id "Device:C")
+		(at 95.25 41.91 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "dbda5c24-b2c6-4e7c-99b8-c1c23dfc2343")
+		(property "Reference" "C28"
+			(at 99.06 41.2749 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Value" "39nF"
+			(at 99.06 43.688 0)
+			(effects
+				(font
+					(size 0.762 0.762)
+				)
+				(justify left)
+			)
+		)
+		(property "Footprint" "Capacitor_SMD:C_0603_1608Metric_Pad1.08x0.95mm_HandSolder"
+			(at 96.2152 45.72 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "https://yageogroup.com/content/datasheet/asset/file/UPY-GPHC_X7R_6_3V-TO-250V"
+			(at 95.25 41.91 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "CAP CER 0.039UF 50V X7R 0603"
+			(at 95.25 41.91 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Digi PN" "13-CC0603JRX7R9BB393CT-ND"
+			(at 95.25 41.91 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Digi URL" "https://www.digikey.com/en/products/detail/yageo/CC0603JRX7R9BB393/16797613"
+			(at 95.25 41.91 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "MFG" "Yageo"
+			(at 95.25 41.91 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "MFG PN" "CC0603JRX7R9BB393"
+			(at 95.25 41.91 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "MANUFACTURER" ""
+			(at 95.25 41.91 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Sim.Type" ""
+			(at 95.25 41.91 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Digikey Link" ""
+			(at 95.25 41.91 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "MFP PN" ""
+			(at 95.25 41.91 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Manufacturer" ""
+			(at 95.25 41.91 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Part Name" ""
+			(at 95.25 41.91 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "8f0a75e0-49e0-47e3-bbf5-36d46db5bb61")
+		)
+		(pin "2"
+			(uuid "18130349-be37-49c2-9fb2-2c72d03d74ae")
+		)
+		(instances
+			(project "VCU"
+				(path "/d46cfebc-cd32-4ec9-981b-3f67fe44510e/77141324-8e12-4fa0-be8a-c003c15572fb"
+					(reference "C28")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Device:C")
+		(at 95.25 64.77 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "dbda5c24-b2c6-4e7c-99b8-c1c23dfc2343")
+		(property "Reference" "C29"
+			(at 99.06 64.1349 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Value" "39nF"
+			(at 99.06 66.548 0)
+			(effects
+				(font
+					(size 0.762 0.762)
+				)
+				(justify left)
+			)
+		)
+		(property "Footprint" "Capacitor_SMD:C_0603_1608Metric_Pad1.08x0.95mm_HandSolder"
+			(at 96.2152 68.58 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "https://yageogroup.com/content/datasheet/asset/file/UPY-GPHC_X7R_6_3V-TO-250V"
+			(at 95.25 64.77 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "CAP CER 0.039UF 50V X7R 0603"
+			(at 95.25 64.77 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Digi PN" "13-CC0603JRX7R9BB393CT-ND"
+			(at 95.25 64.77 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Digi URL" "https://www.digikey.com/en/products/detail/yageo/CC0603JRX7R9BB393/16797613"
+			(at 95.25 64.77 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "MFG" "Yageo"
+			(at 95.25 64.77 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "MFG PN" "CC0603JRX7R9BB393"
+			(at 95.25 64.77 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "MANUFACTURER" ""
+			(at 95.25 64.77 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Sim.Type" ""
+			(at 95.25 64.77 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Digikey Link" ""
+			(at 95.25 64.77 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "MFP PN" ""
+			(at 95.25 64.77 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Manufacturer" ""
+			(at 95.25 64.77 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Part Name" ""
+			(at 95.25 64.77 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "8f0a75e0-49e0-47e3-bbf5-36d46db5bb61")
+		)
+		(pin "2"
+			(uuid "18130349-be37-49c2-9fb2-2c72d03d74ae")
+		)
+		(instances
+			(project "VCU"
+				(path "/d46cfebc-cd32-4ec9-981b-3f67fe44510e/77141324-8e12-4fa0-be8a-c003c15572fb"
+					(reference "C29")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
 		(lib_id "power:+12V")
 		(at 96.52 193.04 0)
 		(mirror y)
@@ -30996,7 +31904,7 @@
 	)
 	(symbol
 		(lib_id "Device:R")
-		(at 87.63 72.39 0)
+		(at 87.63 64.77 0)
 		(mirror x)
 		(unit 1)
 		(exclude_from_sim no)
@@ -31005,7 +31913,7 @@
 		(dnp no)
 		(uuid "e0675e10-49fc-411e-a621-5495d4e86779")
 		(property "Reference" "R58"
-			(at 85.852 71.12 0)
+			(at 85.852 63.5 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -31014,7 +31922,7 @@
 			)
 		)
 		(property "Value" "12k"
-			(at 86.106 73.152 0)
+			(at 86.106 65.532 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -31023,7 +31931,7 @@
 			)
 		)
 		(property "Footprint" "Resistor_SMD:R_0603_1608Metric_Pad0.98x0.95mm_HandSolder"
-			(at 85.852 72.39 90)
+			(at 85.852 64.77 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -31032,7 +31940,7 @@
 			)
 		)
 		(property "Datasheet" "https://yageogroup.com/content/datasheet/asset/file/PYU-AC_51_ROHS_L"
-			(at 87.63 72.39 0)
+			(at 87.63 64.77 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -31041,7 +31949,7 @@
 			)
 		)
 		(property "Description" "Resistor"
-			(at 87.63 72.39 0)
+			(at 87.63 64.77 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -31050,7 +31958,7 @@
 			)
 		)
 		(property "Digi PN" "13-AC0603FR-1012KLCT-ND"
-			(at 87.63 72.39 0)
+			(at 87.63 64.77 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -31059,7 +31967,7 @@
 			)
 		)
 		(property "Digi URL" "https://www.digikey.com/en/products/detail/yageo/AC0603FR-1012KL/14008258"
-			(at 87.63 72.39 0)
+			(at 87.63 64.77 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -31068,7 +31976,7 @@
 			)
 		)
 		(property "MFG" "Yageo"
-			(at 87.63 72.39 0)
+			(at 87.63 64.77 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -31077,7 +31985,7 @@
 			)
 		)
 		(property "MFG PN" "AC0603FR-0AC0603FR-1012KL7120KL"
-			(at 87.63 72.39 0)
+			(at 87.63 64.77 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -31086,7 +31994,7 @@
 			)
 		)
 		(property "MANUFACTURER" ""
-			(at 87.63 72.39 0)
+			(at 87.63 64.77 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -31095,7 +32003,7 @@
 			)
 		)
 		(property "Sim.Type" ""
-			(at 87.63 72.39 0)
+			(at 87.63 64.77 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -31104,7 +32012,7 @@
 			)
 		)
 		(property "Digikey Link" ""
-			(at 87.63 72.39 0)
+			(at 87.63 64.77 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -31113,7 +32021,7 @@
 			)
 		)
 		(property "MFP PN" ""
-			(at 87.63 72.39 0)
+			(at 87.63 64.77 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -31122,7 +32030,7 @@
 			)
 		)
 		(property "Manufacturer" ""
-			(at 87.63 72.39 0)
+			(at 87.63 64.77 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -31131,7 +32039,7 @@
 			)
 		)
 		(property "Part Name" ""
-			(at 87.63 72.39 0)
+			(at 87.63 64.77 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -31221,7 +32129,7 @@
 	)
 	(symbol
 		(lib_id "power:GND")
-		(at 95.25 76.2 0)
+		(at 95.25 68.58 0)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
@@ -31229,7 +32137,7 @@
 		(dnp no)
 		(uuid "e4d9a3e2-7fce-4333-ac34-cac8eca0960d")
 		(property "Reference" "#PWR0121"
-			(at 95.25 82.55 0)
+			(at 95.25 74.93 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -31238,7 +32146,7 @@
 			)
 		)
 		(property "Value" "GND"
-			(at 95.25 81.534 0)
+			(at 95.25 73.914 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -31246,7 +32154,7 @@
 			)
 		)
 		(property "Footprint" ""
-			(at 95.25 76.2 0)
+			(at 95.25 68.58 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -31255,7 +32163,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 95.25 76.2 0)
+			(at 95.25 68.58 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -31264,7 +32172,7 @@
 			)
 		)
 		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
-			(at 95.25 76.2 0)
+			(at 95.25 68.58 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -32053,41 +32961,32 @@
 		)
 	)
 	(symbol
-		(lib_id "FS_4_Global_Symbol_Library:PST360G2-2AA-C0123-ERA040-05K")
-		(at 38.1 106.68 0)
+		(lib_id "Device:R")
+		(at 85.09 110.49 0)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
-		(on_board no)
-		(dnp yes)
-		(uuid "fbadf32d-09f4-4261-a60e-4c722c48e6d2")
-		(property "Reference" "U19"
-			(at 37.846 97.79 0)
+		(on_board yes)
+		(dnp no)
+		(uuid "fb720b26-21a2-4369-898a-686e04661a1a")
+		(property "Reference" "R92"
+			(at 81.534 109.474 0)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
 			)
 		)
-		(property "Value" "PST360G2"
-			(at 37.846 100.33 0)
+		(property "Value" "20k"
+			(at 81.534 111.506 0)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
 			)
 		)
-		(property "Footprint" ""
-			(at 38.1 106.68 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Datasheet" "https://www.piher.net/wp-content/uploads/PIHER_PST-360G2.pdf"
-			(at 38.1 106.68 0)
+		(property "Footprint" "Resistor_SMD:R_0603_1608Metric_Pad0.98x0.95mm_HandSolder"
+			(at 83.312 110.49 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -32095,8 +32994,8 @@
 				(hide yes)
 			)
 		)
-		(property "Description" ""
-			(at 38.1 106.68 0)
+		(property "Datasheet" "https://www.yageogroup.com/content/datasheet/asset/file/PYU-AC_51_ROHS_L"
+			(at 85.09 110.49 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -32104,8 +33003,8 @@
 				(hide yes)
 			)
 		)
-		(property "MFG" "Amphenol Piher Sensing Systems"
-			(at 38.1 106.68 0)
+		(property "Description" "Resistor"
+			(at 85.09 110.49 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -32113,8 +33012,8 @@
 				(hide yes)
 			)
 		)
-		(property "MFG PN" "PST360G2-1A-C0000-ERA360-05K"
-			(at 38.1 106.68 0)
+		(property "Digi PN" "YAG3577CT-ND"
+			(at 85.09 110.49 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -32122,8 +33021,8 @@
 				(hide yes)
 			)
 		)
-		(property "Digi URL" "https://www.digikey.com/en/products/detail/amphenol-piher-sensing-systems/PST360G2-1A-C0000-ERA360-05K/9555849"
-			(at 38.1 106.68 0)
+		(property "Digi URL" "https://www.digikey.com/en/products/detail/yageo/AC0603FR-0720KL/5895907"
+			(at 85.09 110.49 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -32131,8 +33030,35 @@
 				(hide yes)
 			)
 		)
-		(property "Digi PN" "1993-1011-ND"
-			(at 38.1 106.68 0)
+		(property "MFG" "Yageo"
+			(at 85.09 110.49 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "MFG PN" "AC0603FR-0720KL"
+			(at 85.09 110.49 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "MANUFACTURER" ""
+			(at 85.09 110.49 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Sim.Type" ""
+			(at 85.09 110.49 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -32141,7 +33067,7 @@
 			)
 		)
 		(property "Digikey Link" ""
-			(at 38.1 106.68 0)
+			(at 85.09 110.49 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -32150,7 +33076,7 @@
 			)
 		)
 		(property "MFP PN" ""
-			(at 38.1 106.68 0)
+			(at 85.09 110.49 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -32159,7 +33085,7 @@
 			)
 		)
 		(property "Manufacturer" ""
-			(at 38.1 106.68 0)
+			(at 85.09 110.49 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -32168,7 +33094,146 @@
 			)
 		)
 		(property "Part Name" ""
-			(at 38.1 106.68 0)
+			(at 85.09 110.49 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "2"
+			(uuid "60eb9e83-3d4b-46e9-9076-ad0746619c70")
+		)
+		(pin "1"
+			(uuid "2ad8260b-e288-40cb-84f3-2239d94b8863")
+		)
+		(instances
+			(project "VCU"
+				(path "/d46cfebc-cd32-4ec9-981b-3f67fe44510e/77141324-8e12-4fa0-be8a-c003c15572fb"
+					(reference "R92")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "FS_4_Global_Symbol_Library:PST360G2-2AA-C0123-ERA040-05K")
+		(at 38.1 87.63 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board no)
+		(dnp yes)
+		(uuid "fbadf32d-09f4-4261-a60e-4c722c48e6d2")
+		(property "Reference" "U19"
+			(at 37.846 78.74 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "PST360G2"
+			(at 37.846 81.28 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" ""
+			(at 38.1 87.63 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "https://www.piher.net/wp-content/uploads/PIHER_PST-360G2.pdf"
+			(at 38.1 87.63 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" ""
+			(at 38.1 87.63 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "MFG" "Amphenol Piher Sensing Systems"
+			(at 38.1 87.63 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "MFG PN" "PST360G2-1A-C0000-ERA360-05K"
+			(at 38.1 87.63 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Digi URL" "https://www.digikey.com/en/products/detail/amphenol-piher-sensing-systems/PST360G2-1A-C0000-ERA360-05K/9555849"
+			(at 38.1 87.63 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Digi PN" "1993-1011-ND"
+			(at 38.1 87.63 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Digikey Link" ""
+			(at 38.1 87.63 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "MFP PN" ""
+			(at 38.1 87.63 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Manufacturer" ""
+			(at 38.1 87.63 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Part Name" ""
+			(at 38.1 87.63 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -32427,7 +33492,7 @@
 	)
 	(symbol
 		(lib_id "Device:R")
-		(at 87.63 100.33 0)
+		(at 87.63 81.28 0)
 		(mirror x)
 		(unit 1)
 		(exclude_from_sim no)
@@ -32436,7 +33501,7 @@
 		(dnp no)
 		(uuid "feee4e39-e66f-4c94-bb14-1c7997b602c0")
 		(property "Reference" "R59"
-			(at 85.852 99.06 0)
+			(at 85.852 80.01 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -32445,7 +33510,7 @@
 			)
 		)
 		(property "Value" "12k"
-			(at 86.106 101.092 0)
+			(at 86.106 82.042 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -32454,7 +33519,7 @@
 			)
 		)
 		(property "Footprint" "Resistor_SMD:R_0603_1608Metric_Pad0.98x0.95mm_HandSolder"
-			(at 85.852 100.33 90)
+			(at 85.852 81.28 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -32463,7 +33528,7 @@
 			)
 		)
 		(property "Datasheet" "https://yageogroup.com/content/datasheet/asset/file/PYU-AC_51_ROHS_L"
-			(at 87.63 100.33 0)
+			(at 87.63 81.28 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -32472,7 +33537,7 @@
 			)
 		)
 		(property "Description" "Resistor"
-			(at 87.63 100.33 0)
+			(at 87.63 81.28 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -32481,7 +33546,7 @@
 			)
 		)
 		(property "Digi PN" "13-AC0603FR-1012KLCT-ND"
-			(at 87.63 100.33 0)
+			(at 87.63 81.28 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -32490,7 +33555,7 @@
 			)
 		)
 		(property "Digi URL" "https://www.digikey.com/en/products/detail/yageo/AC0603FR-1012KL/14008258"
-			(at 87.63 100.33 0)
+			(at 87.63 81.28 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -32499,7 +33564,7 @@
 			)
 		)
 		(property "MFG" "Yageo"
-			(at 87.63 100.33 0)
+			(at 87.63 81.28 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -32508,7 +33573,7 @@
 			)
 		)
 		(property "MFG PN" "AC0603FR-0AC0603FR-1012KL7120KL"
-			(at 87.63 100.33 0)
+			(at 87.63 81.28 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -32517,7 +33582,7 @@
 			)
 		)
 		(property "MANUFACTURER" ""
-			(at 87.63 100.33 0)
+			(at 87.63 81.28 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -32526,7 +33591,7 @@
 			)
 		)
 		(property "Sim.Type" ""
-			(at 87.63 100.33 0)
+			(at 87.63 81.28 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -32535,7 +33600,7 @@
 			)
 		)
 		(property "Digikey Link" ""
-			(at 87.63 100.33 0)
+			(at 87.63 81.28 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -32544,7 +33609,7 @@
 			)
 		)
 		(property "MFP PN" ""
-			(at 87.63 100.33 0)
+			(at 87.63 81.28 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -32553,7 +33618,7 @@
 			)
 		)
 		(property "Manufacturer" ""
-			(at 87.63 100.33 0)
+			(at 87.63 81.28 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -32562,7 +33627,7 @@
 			)
 		)
 		(property "Part Name" ""
-			(at 87.63 100.33 0)
+			(at 87.63 81.28 0)
 			(effects
 				(font
 					(size 1.27 1.27)
