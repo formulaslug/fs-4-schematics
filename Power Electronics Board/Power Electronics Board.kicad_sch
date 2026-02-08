@@ -902,7 +902,7 @@
 			)
 			(embedded_fonts no)
 		)
-		(symbol "Connector_Generic:Conn_01x06"
+		(symbol "Connector_Generic:Conn_01x08"
 			(pin_names
 				(offset 1.016)
 				(hide yes)
@@ -911,15 +911,15 @@
 			(in_bom yes)
 			(on_board yes)
 			(property "Reference" "J"
-				(at 0 7.62 0)
+				(at 0 10.16 0)
 				(effects
 					(font
 						(size 1.27 1.27)
 					)
 				)
 			)
-			(property "Value" "Conn_01x06"
-				(at 0 -10.16 0)
+			(property "Value" "Conn_01x08"
+				(at 0 -12.7 0)
 				(effects
 					(font
 						(size 1.27 1.27)
@@ -944,7 +944,7 @@
 					(hide yes)
 				)
 			)
-			(property "Description" "Generic connector, single row, 01x06, script generated (kicad-library-utils/schlib/autogen/connector/)"
+			(property "Description" "Generic connector, single row, 01x08, script generated (kicad-library-utils/schlib/autogen/connector/)"
 				(at 0 0 0)
 				(effects
 					(font
@@ -971,16 +971,27 @@
 					(hide yes)
 				)
 			)
-			(symbol "Conn_01x06_1_1"
+			(symbol "Conn_01x08_1_1"
 				(rectangle
-					(start -1.27 6.35)
-					(end 1.27 -8.89)
+					(start -1.27 8.89)
+					(end 1.27 -11.43)
 					(stroke
 						(width 0.254)
 						(type default)
 					)
 					(fill
 						(type background)
+					)
+				)
+				(rectangle
+					(start -1.27 7.747)
+					(end 0 7.493)
+					(stroke
+						(width 0.1524)
+						(type default)
+					)
+					(fill
+						(type none)
 					)
 				)
 				(rectangle
@@ -1049,8 +1060,19 @@
 						(type none)
 					)
 				)
+				(rectangle
+					(start -1.27 -10.033)
+					(end 0 -10.287)
+					(stroke
+						(width 0.1524)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
 				(pin passive line
-					(at -5.08 5.08 0)
+					(at -5.08 7.62 0)
 					(length 3.81)
 					(name "Pin_1"
 						(effects
@@ -1068,7 +1090,7 @@
 					)
 				)
 				(pin passive line
-					(at -5.08 2.54 0)
+					(at -5.08 5.08 0)
 					(length 3.81)
 					(name "Pin_2"
 						(effects
@@ -1086,7 +1108,7 @@
 					)
 				)
 				(pin passive line
-					(at -5.08 0 0)
+					(at -5.08 2.54 0)
 					(length 3.81)
 					(name "Pin_3"
 						(effects
@@ -1104,7 +1126,7 @@
 					)
 				)
 				(pin passive line
-					(at -5.08 -2.54 0)
+					(at -5.08 0 0)
 					(length 3.81)
 					(name "Pin_4"
 						(effects
@@ -1122,7 +1144,7 @@
 					)
 				)
 				(pin passive line
-					(at -5.08 -5.08 0)
+					(at -5.08 -2.54 0)
 					(length 3.81)
 					(name "Pin_5"
 						(effects
@@ -1140,7 +1162,7 @@
 					)
 				)
 				(pin passive line
-					(at -5.08 -7.62 0)
+					(at -5.08 -5.08 0)
 					(length 3.81)
 					(name "Pin_6"
 						(effects
@@ -1150,6 +1172,42 @@
 						)
 					)
 					(number "6"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin passive line
+					(at -5.08 -7.62 0)
+					(length 3.81)
+					(name "Pin_7"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "7"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin passive line
+					(at -5.08 -10.16 0)
+					(length 3.81)
+					(name "Pin_8"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "8"
 						(effects
 							(font
 								(size 1.27 1.27)
@@ -3557,6 +3615,223 @@
 						)
 					)
 					(number "2"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+			)
+			(embedded_fonts no)
+		)
+		(symbol "Fuse_1"
+			(pin_numbers
+				(hide yes)
+			)
+			(pin_names
+				(offset 0)
+			)
+			(exclude_from_sim no)
+			(in_bom yes)
+			(on_board yes)
+			(property "Reference" "F1"
+				(at -2.54 0 90)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Value" "3555-2"
+				(at -5.08 0 90)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Footprint" "FS_4_Global_Footprint_Library:3555-2_KEY"
+				(at -1.778 0 90)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "Datasheet" "https://www.keyelco.com/userAssets/file/M65p40.pdf"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "Description" "FUSE BLOCK BLADE 500V 50A PCB"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "MFG PN" "3555-2"
+				(at 0 0 90)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "Digi PN" "36-3555-2-ND"
+				(at 0 0 90)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "Digi URL" "https://www.digikey.com/en/products/detail/keystone-electronics/3555-2/2137311?_gl=1*10lkv4i*_up*MQ..*_gs*MQ..&gclid=CjwKCAiAssfLBhBDEiwAcLpwftHcT3qKVuMJj_FOCzZxcp-DSPDQsRMLMfTbMvjFrhiRwpQzlkDKVRoC03wQAvD_BwE&gclsrc=aw.ds&gbraid=0AAAAADrbLlhyn7F1Bcct6XChpLrikdgw4"
+				(at 0 0 90)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "MFG" "Keystone Electronics"
+				(at 0 0 90)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "Fuse Digikey" ""
+				(at 0 0 90)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "ki_keywords" "fuse"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "ki_fp_filters" "*Fuse*"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(symbol "Fuse_1_0_1"
+				(rectangle
+					(start -0.762 -2.54)
+					(end 0.762 2.54)
+					(stroke
+						(width 0.254)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy 0 2.54) (xy 0 -2.54)
+					)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+			)
+			(symbol "Fuse_1_1_1"
+				(pin passive line
+					(at 0 3.81 270)
+					(length 1.27)
+					(name "~"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "1"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin passive line
+					(at 0 3.81 270)
+					(length 1.27)
+					(name "~"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "2"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin passive line
+					(at 0 -3.81 90)
+					(length 1.27)
+					(name "~"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "3"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin passive line
+					(at 0 -3.81 90)
+					(length 1.27)
+					(name ""
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "4"
 						(effects
 							(font
 								(size 1.27 1.27)
@@ -6460,7 +6735,7 @@
 	)
 	(rectangle
 		(start 346.71 111.76)
-		(end 407.67 161.29)
+		(end 410.845 161.29)
 		(stroke
 			(width 0.254)
 			(type dot)
@@ -6497,7 +6772,7 @@
 	)
 	(rectangle
 		(start 172.72 33.02)
-		(end 407.67 109.22)
+		(end 410.845 109.22)
 		(stroke
 			(width 0.254)
 			(type dot)
@@ -6553,6 +6828,17 @@
 		)
 		(uuid "05145a0b-65ab-429e-a7a6-c98dc451b8c6")
 	)
+	(text "Reset Button Out\n"
+		(exclude_from_sim no)
+		(at 393.446 142.748 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left bottom)
+		)
+		(uuid "0aa7ca6c-86db-4fb7-a812-f578dd8ec053")
+	)
 	(text "Bat GND\n"
 		(exclude_from_sim no)
 		(at 182.118 52.324 0)
@@ -6606,7 +6892,7 @@
 	)
 	(text "High Current"
 		(exclude_from_sim no)
-		(at 391.16 151.892 0)
+		(at 391.16 155.702 0)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -6634,6 +6920,17 @@
 			)
 		)
 		(uuid "4b24d2b8-d2fa-458d-86d3-c2ec5ef5772c")
+	)
+	(text "RTM_OUT"
+		(exclude_from_sim no)
+		(at 374.396 127 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left bottom)
+		)
+		(uuid "4cf382cd-daa3-43de-9b32-72d256922c91")
 	)
 	(text "RTML Flashing Logic"
 		(exclude_from_sim no)
@@ -6686,7 +6983,7 @@
 		)
 		(uuid "7a3025b6-7cab-4864-95b9-e43b46d2f95c")
 	)
-	(text "GLV Fuse (ev 6.6.1)\nmini BLADE 20A Fuse\n"
+	(text "GLV Fuse (ev 6.6.1)\nMAXI Blade 40A Fuse"
 		(exclude_from_sim no)
 		(at 383.54 105.156 0)
 		(effects
@@ -6791,7 +7088,7 @@
 	)
 	(text "12(10/10+24.9) = 3.438V\n10.47(10/10+24.9) = 3V\n"
 		(exclude_from_sim no)
-		(at 262.382 58.928 0)
+		(at 261.874 58.928 0)
 		(effects
 			(font
 				(size 1.016 1.016)
@@ -6938,16 +7235,16 @@
 		(uuid "1df494aa-aa42-48a5-b497-0eae13db0062")
 	)
 	(junction
+		(at 373.38 124.46)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "1e6a1158-2ae6-4f47-969f-9628a2ed2be3")
+	)
+	(junction
 		(at 262.89 147.32)
 		(diameter 0)
 		(color 0 0 0 0)
 		(uuid "1e707e9b-1c0b-4665-81f1-8f095c288f06")
-	)
-	(junction
-		(at 372.11 125.73)
-		(diameter 0)
-		(color 0 0 0 0)
-		(uuid "1f7f8b8a-5fc3-485c-a33b-34f90dd5cb57")
 	)
 	(junction
 		(at 247.65 118.11)
@@ -7040,13 +7337,19 @@
 		(uuid "79ebe137-216a-4259-ac33-e53772f70434")
 	)
 	(junction
+		(at 365.76 143.51)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "82a08b4b-fcdc-42b5-8117-eac570cb43fb")
+	)
+	(junction
 		(at 135.89 208.28)
 		(diameter 0)
 		(color 0 0 0 0)
 		(uuid "863a53a9-6a44-43e6-955e-6dee79b4f5d8")
 	)
 	(junction
-		(at 384.81 125.73)
+		(at 384.81 124.46)
 		(diameter 0)
 		(color 0 0 0 0)
 		(uuid "934eb534-2bb0-4524-996b-9edd74f5e63b")
@@ -7172,7 +7475,7 @@
 		(uuid "e0e11bef-8017-47e2-9db5-435d25ab25f4")
 	)
 	(junction
-		(at 377.19 153.67)
+		(at 377.19 156.21)
 		(diameter 0)
 		(color 0 0 0 0)
 		(uuid "e108bba7-c50d-47c4-b329-acd65cd9ae4c")
@@ -7206,12 +7509,6 @@
 		(diameter 0)
 		(color 0 0 0 0)
 		(uuid "eff50b5a-1d37-4a46-8c22-dc829c0b718e")
-	)
-	(junction
-		(at 367.03 135.89)
-		(diameter 0)
-		(color 0 0 0 0)
-		(uuid "f3139ce7-2f9e-4dd3-bf37-e9b64840b622")
 	)
 	(junction
 		(at 104.14 81.28)
@@ -7312,6 +7609,10 @@
 		(uuid "c61e0672-5cb0-41be-b4de-7bcd04216beb")
 	)
 	(no_connect
+		(at 386.08 142.24)
+		(uuid "c7d04bed-de97-4b8d-a8fb-67bf4c9a9e43")
+	)
+	(no_connect
 		(at 34.29 80.01)
 		(uuid "c853b1a0-d828-4622-8655-1569073cf80d")
 	)
@@ -7343,7 +7644,7 @@
 	)
 	(wire
 		(pts
-			(xy 377.19 148.59) (xy 377.19 153.67)
+			(xy 377.19 152.4) (xy 377.19 156.21)
 		)
 		(stroke
 			(width 0)
@@ -7353,7 +7654,7 @@
 	)
 	(wire
 		(pts
-			(xy 379.73 130.81) (xy 386.08 130.81)
+			(xy 379.73 129.54) (xy 386.08 129.54)
 		)
 		(stroke
 			(width 0)
@@ -7363,7 +7664,7 @@
 	)
 	(wire
 		(pts
-			(xy 377.19 153.67) (xy 377.19 157.48)
+			(xy 377.19 156.21) (xy 377.19 157.48)
 		)
 		(stroke
 			(width 0)
@@ -7380,16 +7681,6 @@
 			(type default)
 		)
 		(uuid "0342fed0-e5c0-4bde-9020-e890671347d3")
-	)
-	(wire
-		(pts
-			(xy 308.61 121.92) (xy 318.77 121.92)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "046e2ce2-fd79-44e6-84e9-74ec0476bc6a")
 	)
 	(wire
 		(pts
@@ -7443,7 +7734,7 @@
 	)
 	(wire
 		(pts
-			(xy 367.03 135.89) (xy 386.08 135.89)
+			(xy 367.03 139.7) (xy 386.08 139.7)
 		)
 		(stroke
 			(width 0)
@@ -7483,7 +7774,7 @@
 	)
 	(wire
 		(pts
-			(xy 369.57 153.67) (xy 377.19 153.67)
+			(xy 367.03 156.21) (xy 377.19 156.21)
 		)
 		(stroke
 			(width 0)
@@ -7573,16 +7864,6 @@
 	)
 	(wire
 		(pts
-			(xy 384.81 143.51) (xy 384.81 146.05)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "163a285b-ebf6-4ec8-9228-cec044855b0b")
-	)
-	(wire
-		(pts
 			(xy 241.3 55.88) (xy 250.19 55.88)
 		)
 		(stroke
@@ -7600,16 +7881,6 @@
 			(type default)
 		)
 		(uuid "19827a1b-a8b9-4f25-adfd-cd8c420474a6")
-	)
-	(wire
-		(pts
-			(xy 379.73 128.27) (xy 386.08 128.27)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "19a4c0f2-c5e3-4c03-9184-570da5fea58c")
 	)
 	(wire
 		(pts
@@ -7803,16 +8074,6 @@
 	)
 	(wire
 		(pts
-			(xy 367.03 135.89) (xy 365.76 135.89)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "36246dec-f933-472e-bdd5-6363e719436a")
-	)
-	(wire
-		(pts
 			(xy 218.44 68.58) (xy 218.44 71.12)
 		)
 		(stroke
@@ -7993,6 +8254,16 @@
 	)
 	(wire
 		(pts
+			(xy 364.49 143.51) (xy 365.76 143.51)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "4d886e64-7b09-4c43-85c4-05b6ed026640")
+	)
+	(wire
+		(pts
 			(xy 127 213.36) (xy 127 220.98)
 		)
 		(stroke
@@ -8023,7 +8294,7 @@
 	)
 	(wire
 		(pts
-			(xy 368.3 123.19) (xy 368.3 125.73)
+			(xy 368.3 123.19) (xy 368.3 124.46)
 		)
 		(stroke
 			(width 0)
@@ -8043,7 +8314,7 @@
 	)
 	(wire
 		(pts
-			(xy 368.3 125.73) (xy 372.11 125.73)
+			(xy 368.3 124.46) (xy 373.38 124.46)
 		)
 		(stroke
 			(width 0)
@@ -8090,16 +8361,6 @@
 			(type default)
 		)
 		(uuid "5a2c752b-71fc-4281-a360-d863e39c4e6c")
-	)
-	(wire
-		(pts
-			(xy 372.11 125.73) (xy 384.81 125.73)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "5ac20b8b-0474-4470-94c3-3e4775af49bf")
 	)
 	(wire
 		(pts
@@ -8333,13 +8594,33 @@
 	)
 	(wire
 		(pts
-			(xy 384.81 125.73) (xy 386.08 125.73)
+			(xy 384.81 124.46) (xy 386.08 124.46)
 		)
 		(stroke
 			(width 0)
 			(type default)
 		)
 		(uuid "6dc26c8b-10b1-41bb-bfdb-9bda1e5bc871")
+	)
+	(wire
+		(pts
+			(xy 308.61 121.92) (xy 344.17 121.92)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "6e0ab90b-da60-4f66-a4bf-f84acdd01ce3")
+	)
+	(wire
+		(pts
+			(xy 365.76 143.51) (xy 367.03 143.51)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "70f912e9-5533-4fff-94bd-809aef6a7d99")
 	)
 	(wire
 		(pts
@@ -8400,6 +8681,16 @@
 			(type default)
 		)
 		(uuid "78a2fea7-6a43-49e1-828f-605c19105bc3")
+	)
+	(wire
+		(pts
+			(xy 373.38 124.46) (xy 384.81 124.46)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "7918519f-a479-40e3-9e74-2d4870efadb7")
 	)
 	(wire
 		(pts
@@ -8483,7 +8774,7 @@
 	)
 	(wire
 		(pts
-			(xy 381 143.51) (xy 384.81 143.51)
+			(xy 378.46 149.86) (xy 386.08 149.86)
 		)
 		(stroke
 			(width 0)
@@ -8643,6 +8934,16 @@
 	)
 	(wire
 		(pts
+			(xy 367.03 143.51) (xy 367.03 139.7)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "931cd1f9-7d01-4d1b-a773-5c50f3f3c727")
+	)
+	(wire
+		(pts
 			(xy 331.47 69.85) (xy 331.47 68.58)
 		)
 		(stroke
@@ -8660,6 +8961,16 @@
 			(type default)
 		)
 		(uuid "966d7ed6-58fe-45f4-a595-c2ba246e115e")
+	)
+	(wire
+		(pts
+			(xy 344.17 127) (xy 344.17 121.92)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "9b96d737-1185-4f87-befb-4670d04d5445")
 	)
 	(wire
 		(pts
@@ -8883,16 +9194,6 @@
 	)
 	(wire
 		(pts
-			(xy 367.03 134.62) (xy 367.03 135.89)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "aea964f2-a5ba-49e2-ad72-122aa57c9792")
-	)
-	(wire
-		(pts
 			(xy 247.65 120.65) (xy 275.59 120.65)
 		)
 		(stroke
@@ -8973,7 +9274,7 @@
 	)
 	(wire
 		(pts
-			(xy 383.54 133.35) (xy 386.08 133.35)
+			(xy 383.54 132.08) (xy 386.08 132.08)
 		)
 		(stroke
 			(width 0)
@@ -9020,16 +9321,6 @@
 			(type default)
 		)
 		(uuid "bc901c15-6b14-487c-819d-d3a4d25fb788")
-	)
-	(wire
-		(pts
-			(xy 384.81 146.05) (xy 386.08 146.05)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "bf54855e-f3a9-41a0-8033-c5241e76f2bf")
 	)
 	(wire
 		(pts
@@ -9120,6 +9411,16 @@
 			(type default)
 		)
 		(uuid "c5ef6ec4-1796-4f1c-ba32-0844f37ea5bb")
+	)
+	(wire
+		(pts
+			(xy 361.95 134.62) (xy 386.08 134.62)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "c752c6f7-5b37-4bb3-afd5-307b18660858")
 	)
 	(wire
 		(pts
@@ -9293,7 +9594,7 @@
 	)
 	(wire
 		(pts
-			(xy 377.19 148.59) (xy 386.08 148.59)
+			(xy 377.19 152.4) (xy 386.08 152.4)
 		)
 		(stroke
 			(width 0)
@@ -9483,6 +9784,16 @@
 	)
 	(wire
 		(pts
+			(xy 344.17 127) (xy 386.08 127)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "f3bcf654-8086-41ec-a37c-85260b83e3c5")
+	)
+	(wire
+		(pts
 			(xy 241.3 66.04) (xy 241.3 68.58)
 		)
 		(stroke
@@ -9513,7 +9824,7 @@
 	)
 	(wire
 		(pts
-			(xy 379.73 138.43) (xy 386.08 138.43)
+			(xy 379.73 137.16) (xy 386.08 137.16)
 		)
 		(stroke
 			(width 0)
@@ -9593,8 +9904,7 @@
 	)
 	(global_label "RTM_In"
 		(shape output)
-		(at 379.73 130.81 180)
-		(fields_autoplaced yes)
+		(at 379.73 129.54 180)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -9603,7 +9913,7 @@
 		)
 		(uuid "08e873bc-5f85-4f00-8084-ddf2e5b5d4c4")
 		(property "Intersheetrefs" "${INTERSHEET_REFS}"
-			(at 370.3344 130.81 0)
+			(at 370.3344 132.08 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -9657,31 +9967,9 @@
 			)
 		)
 	)
-	(global_label "RTM_Out"
-		(shape input)
-		(at 379.73 128.27 180)
-		(fields_autoplaced yes)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-			(justify right)
-		)
-		(uuid "5356b34e-8f9b-4b1a-b898-17953f82814c")
-		(property "Intersheetrefs" "${INTERSHEET_REFS}"
-			(at 368.883 128.27 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify right)
-				(hide yes)
-			)
-		)
-	)
 	(global_label "GLVMS"
 		(shape input)
-		(at 381 143.51 180)
+		(at 378.46 149.86 180)
 		(fields_autoplaced yes)
 		(effects
 			(font
@@ -9691,7 +9979,7 @@
 		)
 		(uuid "5fabbc25-52bf-4d77-bac6-f4c073815dfc")
 		(property "Intersheetrefs" "${INTERSHEET_REFS}"
-			(at 371.9672 143.51 0)
+			(at 369.4272 149.86 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -9723,7 +10011,7 @@
 			)
 		)
 	)
-	(global_label "Reset_Button"
+	(global_label "Reset_Button_In"
 		(shape input)
 		(at 359.41 50.8 180)
 		(fields_autoplaced yes)
@@ -9735,7 +10023,7 @@
 		)
 		(uuid "8b1ab580-0d54-477a-b726-f996e1e84c9b")
 		(property "Intersheetrefs" "${INTERSHEET_REFS}"
-			(at 344.0878 50.8 0)
+			(at 341.3664 50.8 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -9791,7 +10079,7 @@
 	)
 	(global_label "Shutdown_Final"
 		(shape output)
-		(at 365.76 135.89 180)
+		(at 364.49 143.51 180)
 		(fields_autoplaced yes)
 		(effects
 			(font
@@ -9801,34 +10089,12 @@
 		)
 		(uuid "abe68bd6-4b35-487c-8692-1ee335049ced")
 		(property "Intersheetrefs" "${INTERSHEET_REFS}"
-			(at 348.1399 135.89 0)
+			(at 346.8699 143.51 0)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
 				(justify right)
-				(hide yes)
-			)
-		)
-	)
-	(global_label "RTM_Out"
-		(shape output)
-		(at 318.77 121.92 0)
-		(fields_autoplaced yes)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-			(justify left)
-		)
-		(uuid "bb292e3b-33f1-4541-b176-32597288103d")
-		(property "Intersheetrefs" "${INTERSHEET_REFS}"
-			(at 329.617 121.92 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
 				(hide yes)
 			)
 		)
@@ -9901,8 +10167,7 @@
 	)
 	(global_label "TS_Ready"
 		(shape output)
-		(at 379.73 138.43 180)
-		(fields_autoplaced yes)
+		(at 379.73 137.16 180)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -9911,7 +10176,7 @@
 		)
 		(uuid "dcd55a1a-d42a-4772-ac5c-d0c7bd74c138")
 		(property "Intersheetrefs" "${INTERSHEET_REFS}"
-			(at 367.9759 138.43 0)
+			(at 367.9759 139.7 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -9921,10 +10186,9 @@
 			)
 		)
 	)
-	(global_label "Reset_Button"
+	(global_label "Reset_Button_In"
 		(shape output)
-		(at 383.54 133.35 180)
-		(fields_autoplaced yes)
+		(at 383.54 132.08 180)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -9933,7 +10197,7 @@
 		)
 		(uuid "e4b59145-28b0-430c-b693-f4a697071ed9")
 		(property "Intersheetrefs" "${INTERSHEET_REFS}"
-			(at 368.2178 133.35 0)
+			(at 368.2178 134.62 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -13276,7 +13540,7 @@
 				(hide yes)
 			)
 		)
-		(property "Datasheet" "https://www.littelfuse.com/assetdocs/littelfuse_datasheet_297_mini32v.pdf?assetguid=42c9dd21-a88e-4328-8e67-2f832444faf1"
+		(property "Datasheet" "https://www.littelfuse.com/assetdocs/littelfuse-datasheet-299-maxi32v?assetguid=68B8BBE8-3E51-4C7B-BBDA-3C71667F75F3"
 			(at 383.54 92.71 0)
 			(effects
 				(font
@@ -13294,7 +13558,7 @@
 				(hide yes)
 			)
 		)
-		(property "Digi PN" "F993-ND"
+		(property "Digi PN" "F1037-ND"
 			(at 383.54 92.71 0)
 			(effects
 				(font
@@ -13303,7 +13567,7 @@
 				(hide yes)
 			)
 		)
-		(property "Digi URL" "https://www.digikey.com/en/products/detail/littelfuse-inc/0297020.WXNV/146599?gclsrc=aw.ds&gad_source=1&gad_campaignid=20228387720&gbraid=0AAAAADrbLlg-uUmZsUctgwf_OdSrXEBwX&gclid=CjwKCAiAssfLBhBDEiwAcLpwfo5AFA3IYHuIsHHnNIj4EdMb_f9NYzou173EIpEziGUgRNsUXrhqOxoCy54QAvD_BwE"
+		(property "Digi URL" "https://www.digikey.com/en/products/detail/littelfuse-inc/0299040-ZXNV/146669"
 			(at 383.54 92.71 0)
 			(effects
 				(font
@@ -13321,7 +13585,7 @@
 				(hide yes)
 			)
 		)
-		(property "MFG PN" "0297020.WXNV"
+		(property "MFG PN" "0299040.ZXNV"
 			(at 383.54 92.71 0)
 			(effects
 				(font
@@ -13356,7 +13620,7 @@
 	)
 	(symbol
 		(lib_id "Connector:TestPoint")
-		(at 372.11 125.73 0)
+		(at 373.38 124.46 0)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom no)
@@ -13364,7 +13628,7 @@
 		(dnp no)
 		(uuid "5c25c55d-a895-40b9-ac8b-41ed68d9ccfd")
 		(property "Reference" "TP2"
-			(at 374.65 121.1579 0)
+			(at 375.92 119.8879 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -13373,7 +13637,7 @@
 			)
 		)
 		(property "Value" "12V"
-			(at 374.65 123.6979 0)
+			(at 375.92 122.4279 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -13382,7 +13646,7 @@
 			)
 		)
 		(property "Footprint" "TestPoint:TestPoint_Pad_1.0x1.0mm"
-			(at 377.19 125.73 0)
+			(at 378.46 124.46 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -13391,7 +13655,7 @@
 			)
 		)
 		(property "Datasheet" "~"
-			(at 377.19 125.73 0)
+			(at 378.46 124.46 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -13400,7 +13664,7 @@
 			)
 		)
 		(property "Description" "test point"
-			(at 372.11 125.73 0)
+			(at 373.38 124.46 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -13409,7 +13673,7 @@
 			)
 		)
 		(property "Fuse Digikey" ""
-			(at 372.11 125.73 0)
+			(at 373.38 124.46 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -13496,16 +13760,15 @@
 	)
 	(symbol
 		(lib_id "Connector:TestPoint")
-		(at 369.57 153.67 0)
+		(at 367.03 156.21 0)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom no)
 		(on_board yes)
 		(dnp no)
-		(fields_autoplaced yes)
 		(uuid "5c795f94-b1b8-4f65-a4e4-46d49e0bfbff")
 		(property "Reference" "TP13"
-			(at 372.11 149.0979 0)
+			(at 361.188 152.908 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -13514,7 +13777,7 @@
 			)
 		)
 		(property "Value" "GND"
-			(at 372.11 151.6379 0)
+			(at 361.188 155.448 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -13523,7 +13786,7 @@
 			)
 		)
 		(property "Footprint" "TestPoint:TestPoint_Pad_1.0x1.0mm"
-			(at 374.65 153.67 0)
+			(at 372.11 156.21 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -13532,7 +13795,7 @@
 			)
 		)
 		(property "Datasheet" "~"
-			(at 374.65 153.67 0)
+			(at 372.11 156.21 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -13541,7 +13804,7 @@
 			)
 		)
 		(property "Description" "test point"
-			(at 369.57 153.67 0)
+			(at 367.03 156.21 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -13550,7 +13813,7 @@
 			)
 		)
 		(property "Fuse Digikey" ""
-			(at 369.57 153.67 0)
+			(at 367.03 156.21 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -13832,7 +14095,7 @@
 			)
 		)
 		(property "Value" "+12V_Switched"
-			(at 368.3 118.364 0)
+			(at 368.3 119.38 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -14135,7 +14398,7 @@
 	(symbol
 		(lib_name "Conn_01x02_1")
 		(lib_id "Connector_Generic:Conn_01x02")
-		(at 391.16 146.05 0)
+		(at 391.16 149.86 0)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
@@ -14144,7 +14407,7 @@
 		(fields_autoplaced yes)
 		(uuid "6ad14624-43ef-483f-a9c8-05e23e314770")
 		(property "Reference" "J6"
-			(at 393.7 146.0499 0)
+			(at 393.7 149.8599 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -14153,7 +14416,7 @@
 			)
 		)
 		(property "Value" "42820-2223"
-			(at 393.7 148.5899 0)
+			(at 393.7 152.3999 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -14162,7 +14425,7 @@
 			)
 		)
 		(property "Footprint" "FS_4_Global_Footprint_Library:CONN_SDA-42820-0002_02_RC_MOL (42820-2223)"
-			(at 391.16 146.05 0)
+			(at 391.16 149.86 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -14171,7 +14434,7 @@
 			)
 		)
 		(property "Datasheet" "https://www.molex.com/en-us/products/part-detail-pdf/428202223?display=pdf"
-			(at 391.16 146.05 0)
+			(at 391.16 149.86 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -14180,7 +14443,7 @@
 			)
 		)
 		(property "Description" "Generic connector, single row, 01x02, script generated (kicad-library-utils/schlib/autogen/connector/)"
-			(at 391.16 146.05 0)
+			(at 391.16 149.86 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -14189,7 +14452,7 @@
 			)
 		)
 		(property "MFG PN" "42820-2223 "
-			(at 391.16 146.05 0)
+			(at 391.16 149.86 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -14198,7 +14461,7 @@
 			)
 		)
 		(property "Digi PN" "WM11250-ND"
-			(at 391.16 146.05 0)
+			(at 391.16 149.86 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -14207,7 +14470,7 @@
 			)
 		)
 		(property "Digi URL" "https://www.digikey.com/en/products/detail/molex/0428202223/3310054"
-			(at 391.16 146.05 0)
+			(at 391.16 149.86 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -14216,7 +14479,7 @@
 			)
 		)
 		(property "MFG" "Molex"
-			(at 391.16 146.05 0)
+			(at 391.16 149.86 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -14225,7 +14488,7 @@
 			)
 		)
 		(property "Fuse Digikey" ""
-			(at 391.16 146.05 0)
+			(at 391.16 149.86 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -15184,6 +15447,72 @@
 		)
 	)
 	(symbol
+		(lib_id "power:+12V")
+		(at 361.95 134.62 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "79a23510-6cc3-4a30-a295-f64a7a313965")
+		(property "Reference" "#PWR035"
+			(at 361.95 138.43 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Value" "+12V_BAT"
+			(at 356.87 130.556 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Footprint" ""
+			(at 361.95 134.62 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" ""
+			(at 361.95 134.62 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Power symbol creates a global label with name \"+12V\""
+			(at 361.95 134.62 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "3b1df553-5e67-4143-afc3-2ec7e6509ed9")
+		)
+		(instances
+			(project "Power Electronics Board"
+				(path "/89c18bc7-bebe-4d17-a6e8-3a2f210bf7f7"
+					(reference "#PWR035")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
 		(lib_id "Connector:TestPoint")
 		(at 135.89 208.28 0)
 		(unit 1)
@@ -15698,6 +16027,7 @@
 		)
 	)
 	(symbol
+		(lib_name "Fuse_1")
 		(lib_id "Device:Fuse")
 		(at 383.54 95.25 90)
 		(unit 1)
@@ -15714,7 +16044,7 @@
 				)
 			)
 		)
-		(property "Value" "01530008LXN"
+		(property "Value" "3555-2"
 			(at 383.54 100.33 90)
 			(effects
 				(font
@@ -15722,7 +16052,7 @@
 				)
 			)
 		)
-		(property "Footprint" "FS_4_Global_Footprint_Library:01530008LXN"
+		(property "Footprint" "FS_4_Global_Footprint_Library:3555-2_KEY"
 			(at 383.54 97.028 90)
 			(effects
 				(font
@@ -15731,7 +16061,7 @@
 				(hide yes)
 			)
 		)
-		(property "Datasheet" "https://www.littelfuse.com/assetdocs/mini-153-pc-datasheet?assetguid=e17755be-ccca-4a76-9579-7e7a830e5578"
+		(property "Datasheet" "https://www.keyelco.com/userAssets/file/M65p40.pdf"
 			(at 383.54 95.25 0)
 			(effects
 				(font
@@ -15740,7 +16070,7 @@
 				(hide yes)
 			)
 		)
-		(property "Description" "Fuse"
+		(property "Description" "FUSE BLOCK BLADE 500V 50A PCB"
 			(at 383.54 95.25 0)
 			(effects
 				(font
@@ -15749,7 +16079,7 @@
 				(hide yes)
 			)
 		)
-		(property "MFG PN" "01530008LXN"
+		(property "Digi PN" "36-3555-2-ND"
 			(at 383.54 95.25 90)
 			(effects
 				(font
@@ -15758,7 +16088,7 @@
 				(hide yes)
 			)
 		)
-		(property "Digi PN" "F6238-ND"
+		(property "Digi URL" "https://www.digikey.com/en/products/detail/keystone-electronics/3555-2/2137311?_gl=1*10lkv4i*_up*MQ..*_gs*MQ..&gclid=CjwKCAiAssfLBhBDEiwAcLpwftHcT3qKVuMJj_FOCzZxcp-DSPDQsRMLMfTbMvjFrhiRwpQzlkDKVRoC03wQAvD_BwE&gclsrc=aw.ds&gbraid=0AAAAADrbLlhyn7F1Bcct6XChpLrikdgw4"
 			(at 383.54 95.25 90)
 			(effects
 				(font
@@ -15767,7 +16097,7 @@
 				(hide yes)
 			)
 		)
-		(property "Digi URL" "https://www.digikey.com/en/products/detail/littelfuse-commercial-vehicle-products/01530008LXN/3425426?gclsrc=aw.ds&gad_source=1&gad_campaignid=120565755&gbraid=0AAAAADrbLlhyn7F1Bcct6XChpLrikdgw4&gclid=CjwKCAiAssfLBhBDEiwAcLpwftHcT3qKVuMJj_FOCzZxcp-DSPDQsRMLMfTbMvjFrhiRwpQzlkDKVRoC03wQAvD_BwE"
+		(property "MFG" "Keystone Electronics"
 			(at 383.54 95.25 90)
 			(effects
 				(font
@@ -15776,7 +16106,7 @@
 				(hide yes)
 			)
 		)
-		(property "MFG" "Littelfuse/Commercial Vehicle Products"
+		(property "MFG PN" "3555-2"
 			(at 383.54 95.25 90)
 			(effects
 				(font
@@ -15799,6 +16129,12 @@
 		)
 		(pin "2"
 			(uuid "df13f1d9-5def-427c-94ac-55658f8208cb")
+		)
+		(pin "3"
+			(uuid "fe0f5d93-f26a-4592-b9ac-377e33e8be18")
+		)
+		(pin "4"
+			(uuid "de1788a4-eda8-4698-a526-8689a31f3f69")
 		)
 		(instances
 			(project ""
@@ -16367,7 +16703,7 @@
 	)
 	(symbol
 		(lib_id "Connector:TestPoint")
-		(at 367.03 134.62 0)
+		(at 365.76 143.51 0)
 		(mirror y)
 		(unit 1)
 		(exclude_from_sim no)
@@ -16376,7 +16712,7 @@
 		(dnp no)
 		(uuid "9fefe154-0e48-4c16-bfb1-61092a6049a4")
 		(property "Reference" "TP4"
-			(at 364.49 130.0479 0)
+			(at 363.474 138.43 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -16385,7 +16721,7 @@
 			)
 		)
 		(property "Value" "Shutdown Final"
-			(at 364.49 132.5879 0)
+			(at 363.474 140.462 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -16394,7 +16730,7 @@
 			)
 		)
 		(property "Footprint" "TestPoint:TestPoint_Pad_1.0x1.0mm"
-			(at 361.95 134.62 0)
+			(at 360.68 143.51 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -16403,7 +16739,7 @@
 			)
 		)
 		(property "Datasheet" "~"
-			(at 361.95 134.62 0)
+			(at 360.68 143.51 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -16412,7 +16748,7 @@
 			)
 		)
 		(property "Description" "test point"
-			(at 367.03 134.62 0)
+			(at 365.76 143.51 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -16421,7 +16757,7 @@
 			)
 		)
 		(property "Fuse Digikey" ""
-			(at 367.03 134.62 0)
+			(at 365.76 143.51 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -16443,7 +16779,7 @@
 	)
 	(symbol
 		(lib_id "power:PWR_FLAG")
-		(at 384.81 125.73 0)
+		(at 384.81 124.46 0)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
@@ -16451,7 +16787,7 @@
 		(dnp no)
 		(uuid "a0030f18-4a0b-4f7e-b9ed-0d2aba294a9c")
 		(property "Reference" "#FLG03"
-			(at 384.81 123.825 0)
+			(at 384.81 122.555 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -16460,7 +16796,7 @@
 			)
 		)
 		(property "Value" "PWR_FLAG"
-			(at 384.81 121.412 0)
+			(at 384.81 120.142 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -16468,7 +16804,7 @@
 			)
 		)
 		(property "Footprint" ""
-			(at 384.81 125.73 0)
+			(at 384.81 124.46 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -16477,7 +16813,7 @@
 			)
 		)
 		(property "Datasheet" "~"
-			(at 384.81 125.73 0)
+			(at 384.81 124.46 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -16486,7 +16822,7 @@
 			)
 		)
 		(property "Description" "Special symbol for telling ERC where power comes from"
-			(at 384.81 125.73 0)
+			(at 384.81 124.46 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -21245,17 +21581,16 @@
 		)
 	)
 	(symbol
-		(lib_id "Connector_Generic:Conn_01x06")
-		(at 391.16 130.81 0)
+		(lib_id "Connector_Generic:Conn_01x08")
+		(at 391.16 132.08 0)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
 		(on_board yes)
 		(dnp no)
-		(fields_autoplaced yes)
 		(uuid "fe5e5b94-2209-4207-b5ba-a95b7208607c")
 		(property "Reference" "J7"
-			(at 393.7 130.8099 0)
+			(at 393.7 132.842 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -21263,8 +21598,8 @@
 				(justify left)
 			)
 		)
-		(property "Value" "1054301106"
-			(at 393.7 133.3499 0)
+		(property "Value" "1054301108"
+			(at 393.7 134.6199 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -21272,8 +21607,8 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" "FS_4_Global_Footprint_Library:1054301106"
-			(at 391.16 130.81 0)
+		(property "Footprint" "FS_4_Global_Footprint_Library:CONN_SD-105430-001_08_MOL"
+			(at 391.16 132.08 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -21281,8 +21616,8 @@
 				(hide yes)
 			)
 		)
-		(property "Datasheet" "https://www.literature.molex.com/SQLImages/kelmscott/Molex/PDF_Images/987651-1223.PDF"
-			(at 391.16 130.81 0)
+		(property "Datasheet" "https://www.molex.com/en-us/products/part-detail/1054301108"
+			(at 391.16 132.08 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -21290,8 +21625,8 @@
 				(hide yes)
 			)
 		)
-		(property "Description" "CONN HEADER SMD R/A 6POS 2.5MM"
-			(at 391.16 130.81 0)
+		(property "Description" "Generic connector, single row, 01x08, script generated (kicad-library-utils/schlib/autogen/connector/)"
+			(at 391.16 132.08 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -21299,8 +21634,26 @@
 				(hide yes)
 			)
 		)
-		(property "MFG PN" "1054301106"
-			(at 391.16 130.81 0)
+		(property "Digi PN" "WM26096CT-ND"
+			(at 391.16 132.08 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Digi URL" "https://www.digikey.com/en/products/detail/molex/1054301108/9959382"
+			(at 391.16 132.08 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "MFG PN" "1054301108"
+			(at 391.16 132.08 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -21309,25 +21662,7 @@
 			)
 		)
 		(property "MFG" "Molex"
-			(at 391.16 130.81 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Digi PN" "WM26094CT-ND"
-			(at 391.16 130.81 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Digi URL" "https://www.digikey.com/en/products/detail/molex/1054301106/9959380?s=N4IgTCBcDaIIwAYCsAWAzAuiBsIC6AvkA"
-			(at 391.16 130.81 0)
+			(at 391.16 132.08 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -21336,7 +21671,7 @@
 			)
 		)
 		(property "Fuse Digikey" ""
-			(at 391.16 130.81 0)
+			(at 391.16 132.08 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -21361,6 +21696,12 @@
 		)
 		(pin "6"
 			(uuid "5cfc62f5-a6d3-4007-ae8c-af5da0f45b74")
+		)
+		(pin "7"
+			(uuid "8a6039dd-8bd0-42f7-89a0-75685a05a0df")
+		)
+		(pin "8"
+			(uuid "01b674a0-fd7f-42c3-a7b8-6a8d7037952a")
 		)
 		(instances
 			(project ""
