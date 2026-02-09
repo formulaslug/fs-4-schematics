@@ -1597,6 +1597,192 @@
 			)
 			(embedded_fonts no)
 		)
+		(symbol "Jumper:SolderJumper_2_Open"
+			(pin_numbers
+				(hide yes)
+			)
+			(pin_names
+				(offset 0)
+				(hide yes)
+			)
+			(exclude_from_sim no)
+			(in_bom no)
+			(on_board yes)
+			(property "Reference" "JP"
+				(at 0 2.032 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Value" "SolderJumper_2_Open"
+				(at 0 -2.54 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Footprint" ""
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "Datasheet" "~"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "Description" "Solder Jumper, 2-pole, open"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "ki_keywords" "solder jumper SPST"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "ki_fp_filters" "SolderJumper*Open*"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(symbol "SolderJumper_2_Open_0_1"
+				(polyline
+					(pts
+						(xy -0.254 1.016) (xy -0.254 -1.016)
+					)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(arc
+					(start -0.254 -1.016)
+					(mid -1.2656 0)
+					(end -0.254 1.016)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(arc
+					(start -0.254 -1.016)
+					(mid -1.2656 0)
+					(end -0.254 1.016)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type outline)
+					)
+				)
+				(arc
+					(start 0.254 1.016)
+					(mid 1.2656 0)
+					(end 0.254 -1.016)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(arc
+					(start 0.254 1.016)
+					(mid 1.2656 0)
+					(end 0.254 -1.016)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type outline)
+					)
+				)
+				(polyline
+					(pts
+						(xy 0.254 1.016) (xy 0.254 -1.016)
+					)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+			)
+			(symbol "SolderJumper_2_Open_1_1"
+				(pin passive line
+					(at -3.81 0 0)
+					(length 2.54)
+					(name "A"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "1"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin passive line
+					(at 3.81 0 180)
+					(length 2.54)
+					(name "B"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "2"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+			)
+			(embedded_fonts no)
+		)
 		(symbol "formula_slug_symbol_library:21992304"
 			(pin_names
 				(offset 1.016)
@@ -3093,16 +3279,6 @@
 		)
 		(uuid "52bce51e-bdc8-4f21-89ef-0e25609a8494")
 	)
-	(text "VDDIO: 3.3v"
-		(exclude_from_sim no)
-		(at 54.864 134.874 0)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-		)
-		(uuid "5994bd7f-b8b4-412a-b087-f1d466b54b19")
-	)
 	(text "This is not the same pin->footprint mapping as the datasheet!!\nPin 51 is TOP face on big side, odd pins top, even pins bottom.\nThis is incredibly fucking stupid\n\nFuck you heltec"
 		(exclude_from_sim no)
 		(at 228.092 47.244 0)
@@ -3112,6 +3288,16 @@
 			)
 		)
 		(uuid "8b85fb50-3df6-4c9a-8fd8-4d8861913599")
+	)
+	(text "VDDIO: 3.3v"
+		(exclude_from_sim no)
+		(at 39.624 134.874 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+		)
+		(uuid "ac36534a-c598-4fbb-9197-157791c6b2e3")
 	)
 	(text "Heltec HT-HC01P"
 		(exclude_from_sim no)
@@ -3230,10 +3416,6 @@
 	(no_connect
 		(at 96.52 134.62)
 		(uuid "2c9df46a-0c74-4550-b899-0ed0f38ff86a")
-	)
-	(no_connect
-		(at 96.52 142.24)
-		(uuid "2d4ecf95-a36c-41ca-aa2c-135cc745acd2")
 	)
 	(no_connect
 		(at 173.99 92.71)
@@ -3394,10 +3576,6 @@
 	(no_connect
 		(at 71.12 71.12)
 		(uuid "b7c940b3-7842-40ec-aebd-5042b74e8dda")
-	)
-	(no_connect
-		(at 96.52 60.96)
-		(uuid "b8a7cfa0-e100-4628-9ef1-6e805a77a4ba")
 	)
 	(no_connect
 		(at 173.99 67.31)
@@ -3649,6 +3827,16 @@
 	)
 	(wire
 		(pts
+			(xy 96.52 60.96) (xy 96.52 63.5)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "856fdb89-bbe2-430d-84f9-0db8bf5141e1")
+	)
+	(wire
+		(pts
 			(xy 186.69 107.95) (xy 194.31 107.95)
 		)
 		(stroke
@@ -3659,6 +3847,26 @@
 	)
 	(wire
 		(pts
+			(xy 64.77 134.62) (xy 71.12 134.62)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "9123e617-4680-4c74-8a9d-109c5201ed10")
+	)
+	(wire
+		(pts
+			(xy 57.15 134.62) (xy 55.88 134.62)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "9286e9f1-94e6-4424-9a64-35f6350a0d1f")
+	)
+	(wire
+		(pts
 			(xy 194.31 115.57) (xy 194.31 107.95)
 		)
 		(stroke
@@ -3666,6 +3874,16 @@
 			(type default)
 		)
 		(uuid "a24b26d5-04c0-4e94-8725-3fd3fe08e40a")
+	)
+	(wire
+		(pts
+			(xy 96.52 142.24) (xy 96.52 144.78)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "a58875ef-6e54-4131-a22a-0c724219cb0d")
 	)
 	(wire
 		(pts
@@ -8977,28 +9195,6 @@
 	)
 	(hierarchical_label "3v3"
 		(shape input)
-		(at 71.12 144.78 180)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-			(justify right)
-		)
-		(uuid "30a435be-9997-4a16-999e-8eb7835c0bb9")
-	)
-	(hierarchical_label "VDDIO"
-		(shape input)
-		(at 71.12 134.62 180)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-			(justify right)
-		)
-		(uuid "382eeb50-4827-4c6d-88d9-c4f18d5f0813")
-	)
-	(hierarchical_label "3v3"
-		(shape input)
 		(at 173.99 97.79 180)
 		(effects
 			(font
@@ -9040,6 +9236,17 @@
 			(justify left)
 		)
 		(uuid "6a474ccf-e2b7-449f-8973-78f111ae8663")
+	)
+	(hierarchical_label "VDDIO"
+		(shape input)
+		(at 55.88 134.62 180)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify right)
+		)
+		(uuid "8d6905cc-cece-46b3-90f3-e57347a1a6e3")
 	)
 	(hierarchical_label "HT_WAKEUP"
 		(shape input)
@@ -9161,17 +9368,6 @@
 			(justify left)
 		)
 		(uuid "ea383b81-0871-47dd-83aa-3ec2b66871e9")
-	)
-	(hierarchical_label "3v3"
-		(shape input)
-		(at 71.12 63.5 180)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-			(justify right)
-		)
-		(uuid "ec962edb-36bd-4ef2-bbe4-97a565ddf0f5")
 	)
 	(hierarchical_label "3v3"
 		(shape input)
@@ -9516,6 +9712,74 @@
 			(project "Telemetry-Logging-Board"
 				(path "/5c64cdbc-39cd-49c8-9a12-12e4867a5d0b/d51a50e4-dfa0-462c-86b8-d46c2b4013b3"
 					(reference "#PWR057")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Jumper:SolderJumper_2_Open")
+		(at 60.96 134.62 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom no)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "424d6b54-416d-49b5-a4db-0b252c129900")
+		(property "Reference" "JP2"
+			(at 60.96 128.27 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "SolderJumper_2_Open"
+			(at 60.96 130.81 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" "Jumper:SolderJumper-2_P1.3mm_Bridged_Pad1.0x1.5mm"
+			(at 60.96 134.62 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 60.96 134.62 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Solder Jumper, 2-pole, open"
+			(at 60.96 134.62 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "2"
+			(uuid "68d4cae4-7167-47e0-9430-0d86e1eabb4b")
+		)
+		(pin "1"
+			(uuid "c84b30ae-54a4-4b51-a487-48c08f635eb5")
+		)
+		(instances
+			(project ""
+				(path "/5c64cdbc-39cd-49c8-9a12-12e4867a5d0b/d51a50e4-dfa0-462c-86b8-d46c2b4013b3"
+					(reference "JP2")
 					(unit 1)
 				)
 			)
