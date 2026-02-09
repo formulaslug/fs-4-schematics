@@ -616,7 +616,7 @@
       "exclude_dnp": false,
       "fields_ordered": [
         {
-          "group_by": false,
+          "group_by": true,
           "label": "Reference",
           "name": "Reference",
           "show": true
@@ -628,7 +628,7 @@
           "show": true
         },
         {
-          "group_by": false,
+          "group_by": true,
           "label": "Value",
           "name": "Value",
           "show": true
@@ -652,7 +652,7 @@
           "show": true
         },
         {
-          "group_by": true,
+          "group_by": false,
           "label": "Footprint",
           "name": "Footprint",
           "show": true
@@ -667,19 +667,7 @@
           "group_by": false,
           "label": "Digi URL",
           "name": "Digi URL",
-          "show": false
-        },
-        {
-          "group_by": false,
-          "label": "Digikey Link",
-          "name": "Digikey Link",
-          "show": false
-        },
-        {
-          "group_by": false,
-          "label": "Digikey Part Number",
-          "name": "Digikey Part Number",
-          "show": false
+          "show": true
         },
         {
           "group_by": false,
@@ -751,7 +739,7 @@
           "group_by": false,
           "label": "Digi PN",
           "name": "Digi PN",
-          "show": false
+          "show": true
         },
         {
           "group_by": false,
@@ -764,6 +752,18 @@
           "label": "#",
           "name": "${ITEM_NUMBER}",
           "show": false
+        },
+        {
+          "group_by": false,
+          "label": "Digikey Link",
+          "name": "Digikey Link",
+          "show": false
+        },
+        {
+          "group_by": false,
+          "label": "Digikey Part Number",
+          "name": "Digikey Part Number",
+          "show": false
         }
       ],
       "filter_string": "",
@@ -771,7 +771,7 @@
       "include_excluded_from_bom": true,
       "name": "",
       "sort_asc": false,
-      "sort_field": "${EXCLUDE_FROM_BOM}"
+      "sort_field": "Digi URL"
     },
     "connection_grid_size": 50.0,
     "drawing": {
