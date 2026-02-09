@@ -5060,6 +5060,113 @@
 			)
 			(embedded_fonts no)
 		)
+		(symbol "Mechanical:MountingHole_Pad"
+			(pin_numbers
+				(hide yes)
+			)
+			(pin_names
+				(offset 1.016)
+				(hide yes)
+			)
+			(exclude_from_sim no)
+			(in_bom no)
+			(on_board yes)
+			(property "Reference" "H"
+				(at 0 6.35 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Value" "MountingHole_Pad"
+				(at 0 4.445 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Footprint" ""
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "Datasheet" "~"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "Description" "Mounting Hole with connection"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "ki_keywords" "mounting hole"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "ki_fp_filters" "MountingHole*Pad*"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(symbol "MountingHole_Pad_0_1"
+				(circle
+					(center 0 1.27)
+					(radius 1.27)
+					(stroke
+						(width 1.27)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+			)
+			(symbol "MountingHole_Pad_1_1"
+				(pin input line
+					(at 0 -2.54 90)
+					(length 2.54)
+					(name "1"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "1"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+			)
+			(embedded_fonts no)
+		)
 		(symbol "Reference_Voltage:REF35160QDBVR"
 			(exclude_from_sim no)
 			(in_bom yes)
@@ -6513,6 +6620,18 @@
 		(uuid 37777b3f-9b0e-48ee-ba6b-b6952edaedbc)
 	)
 	(rectangle
+		(start 256.54 227.33)
+		(end 302.26 254)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(fill
+			(type none)
+		)
+		(uuid 4d278156-aa97-4d54-8a6e-23167c9f0cb3)
+	)
+	(rectangle
 		(start 16.51 142.24)
 		(end 191.77 256.54)
 		(stroke
@@ -6627,6 +6746,16 @@
 			)
 		)
 		(uuid "0ca3ac87-4c0f-46d3-a4c3-4ec5be0b848c")
+	)
+	(text "Mouting holes"
+		(exclude_from_sim no)
+		(at 264.16 228.6 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+		)
+		(uuid "0cd84762-620c-49ac-9b1e-d7e5773c250d")
 	)
 	(text "Extra Pins Connector"
 		(exclude_from_sim no)
@@ -6991,6 +7120,16 @@
 			)
 		)
 		(uuid "ac95599b-101e-40e6-94b4-79c2ffe36e34")
+	)
+	(text "these for vdda"
+		(exclude_from_sim no)
+		(at 134.62 162.56 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+		)
+		(uuid "b5131976-9b9a-4e88-8c97-d899c579cc44")
 	)
 	(text "Wheel speed block"
 		(exclude_from_sim no)
@@ -7502,6 +7641,12 @@
 		(uuid "e43281ca-241b-4edb-973f-806a20fae27f")
 	)
 	(junction
+		(at 278.13 243.84)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "e4854c01-abb6-48eb-a775-7c5a8bd1be1b")
+	)
+	(junction
 		(at 309.88 77.47)
 		(diameter 0)
 		(color 0 0 0 0)
@@ -7554,6 +7699,16 @@
 			(type default)
 		)
 		(uuid "00910bec-5023-4d45-add6-6a0a183c1626")
+	)
+	(wire
+		(pts
+			(xy 278.13 243.84) (xy 283.21 243.84)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "00d2d815-6e2b-4498-8a4b-d147b0993d2c")
 	)
 	(wire
 		(pts
@@ -10035,6 +10190,16 @@
 			(type default)
 		)
 		(uuid "f06e836c-068b-496a-82f9-2513b079cea0")
+	)
+	(wire
+		(pts
+			(xy 273.05 243.84) (xy 278.13 243.84)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "f3be81f6-23bd-4546-8117-7b60c2aa51a0")
 	)
 	(wire
 		(pts
@@ -13345,6 +13510,72 @@
 		)
 	)
 	(symbol
+		(lib_id "power:GND")
+		(at 278.13 243.84 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "20d66bcc-01a2-4c9e-a571-edd1ff1062d0")
+		(property "Reference" "#PWR020"
+			(at 278.13 250.19 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Value" "GND"
+			(at 278.13 248.92 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" ""
+			(at 278.13 243.84 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" ""
+			(at 278.13 243.84 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
+			(at 278.13 243.84 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "34272b83-14ba-46d4-b39d-003dc7c6d766")
+		)
+		(instances
+			(project "peripheral-boards"
+				(path "/3ffe4db1-2415-46df-8a68-5537f544061f"
+					(reference "#PWR020")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
 		(lib_id "Device:C")
 		(at 96.52 158.75 0)
 		(mirror x)
@@ -15672,6 +15903,108 @@
 		)
 	)
 	(symbol
+		(lib_id "Mechanical:MountingHole_Pad")
+		(at 273.05 241.3 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom no)
+		(on_board yes)
+		(dnp no)
+		(uuid "62fdec43-4f20-42a0-8e8a-9f663e5c2f6c")
+		(property "Reference" "H1"
+			(at 270.51 234.95 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Value" "MountingHole_Pad"
+			(at 275.59 237.49 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+			)
+		)
+		(property "Footprint" "MountingHole:MountingHole_3.2mm_M3_Pad"
+			(at 273.05 241.3 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 273.05 241.3 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Mounting Hole with connection"
+			(at 273.05 241.3 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Digikey Part Number" ""
+			(at 273.05 241.3 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Name" ""
+			(at 273.05 241.3 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Digikey Link" ""
+			(at 273.05 241.3 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Manufacturer Part Number" ""
+			(at 273.05 241.3 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "7f5bbbf2-e4a9-49ae-b8af-b331cd8d4d95")
+		)
+		(instances
+			(project ""
+				(path "/3ffe4db1-2415-46df-8a68-5537f544061f"
+					(reference "H1")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
 		(lib_id "Amplifier_Instrumentation:INA849D")
 		(at 48.26 87.63 0)
 		(unit 1)
@@ -16219,6 +16552,108 @@
 			(project "peripheral-boards"
 				(path "/3ffe4db1-2415-46df-8a68-5537f544061f"
 					(reference "#PWR019")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Mechanical:MountingHole_Pad")
+		(at 283.21 241.3 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom no)
+		(on_board yes)
+		(dnp no)
+		(uuid "6f112187-2265-4c7b-872a-feada7dd01f3")
+		(property "Reference" "H2"
+			(at 284.48 234.95 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Value" "MountingHole_Pad"
+			(at 281.94 237.49 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Footprint" "MountingHole:MountingHole_3.2mm_M3_Pad"
+			(at 283.21 241.3 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 283.21 241.3 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Mounting Hole with connection"
+			(at 283.21 241.3 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Digikey Part Number" ""
+			(at 283.21 241.3 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Name" ""
+			(at 283.21 241.3 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Digikey Link" ""
+			(at 283.21 241.3 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Manufacturer Part Number" ""
+			(at 283.21 241.3 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "7211cb1e-91ec-4edc-965a-f108e8bc6372")
+		)
+		(instances
+			(project ""
+				(path "/3ffe4db1-2415-46df-8a68-5537f544061f"
+					(reference "H2")
 					(unit 1)
 				)
 			)
@@ -22444,7 +22879,7 @@
 				)
 			)
 		)
-		(property "Footprint" "Package_SO:SOIC-8_3.9x4.9mm_P1.27mm"
+		(property "Footprint" "FS_4_Global_Footprint_Library:SOIC-8_ISO1044BD"
 			(at 304.8 209.55 0)
 			(effects
 				(font
@@ -22482,6 +22917,24 @@
 			)
 		)
 		(property "Manufacturer Part Number" ""
+			(at 304.8 199.39 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Digikey Part Number" ""
+			(at 304.8 199.39 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Digikey Link" ""
 			(at 304.8 199.39 0)
 			(effects
 				(font
