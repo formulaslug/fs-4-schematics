@@ -37,9 +37,9 @@
         "other_text_thickness": 0.15,
         "other_text_upright": false,
         "pads": {
-          "drill": 2.6,
-          "height": 3.2,
-          "width": 3.2
+          "drill": 0.8,
+          "height": 1.27,
+          "width": 2.54
         },
         "silk_line_width": 0.1,
         "silk_text_italic": false,
@@ -51,13 +51,7 @@
           "min_clearance": 0.254
         }
       },
-      "diff_pair_dimensions": [
-        {
-          "gap": 0.0,
-          "via_gap": 0.0,
-          "width": 0.0
-        }
-      ],
+      "diff_pair_dimensions": [],
       "drc_exclusions": [],
       "meta": {
         "version": 2
@@ -129,9 +123,9 @@
         "min_groove_width": 0.0,
         "min_hole_clearance": 0.254,
         "min_hole_to_hole": 0.254,
-        "min_microvia_diameter": 0.254,
-        "min_microvia_drill": 0.127,
-        "min_resolved_spokes": 1,
+        "min_microvia_diameter": 0.2,
+        "min_microvia_drill": 0.1,
+        "min_resolved_spokes": 2,
         "min_silk_clearance": 0.0,
         "min_text_height": 1.016,
         "min_text_thickness": 0.1524,
@@ -186,9 +180,7 @@
           "td_width_to_size_filter_ratio": 0.9
         }
       ],
-      "track_widths": [
-        0.0
-      ],
+      "track_widths": [],
       "tuning_pattern_settings": {
         "diff_pair_defaults": {
           "corner_radius_percentage": 80,
@@ -215,12 +207,7 @@
           "spacing": 0.6
         }
       },
-      "via_dimensions": [
-        {
-          "diameter": 0.0,
-          "drill": 0.0
-        }
-      ],
+      "via_dimensions": [],
       "zones_allow_external_fillets": false
     },
     "ipc2581": {
@@ -443,7 +430,7 @@
       "no_connect_dangling": "warning",
       "pin_not_connected": "error",
       "pin_not_driven": "error",
-      "pin_to_pin": "warning",
+      "pin_to_pin": "error",
       "power_pin_not_driven": "error",
       "same_local_global_label": "warning",
       "similar_label_and_power": "warning",
@@ -464,7 +451,7 @@
     "pinned_symbol_libs": []
   },
   "meta": {
-    "filename": "Tractive_Battery_Board.kicad_pro",
+    "filename": "peripheral-boards.kicad_pro",
     "version": 3
   },
   "net_settings": {
@@ -472,12 +459,12 @@
       {
         "bus_width": 12,
         "clearance": 0.127,
-        "diff_pair_gap": 0.25,
+        "diff_pair_gap": 0.127,
         "diff_pair_via_gap": 0.25,
-        "diff_pair_width": 0.2,
+        "diff_pair_width": 0.254,
         "line_style": 0,
         "microvia_diameter": 0.254,
-        "microvia_drill": 0.1,
+        "microvia_drill": 0.127,
         "name": "Default",
         "pcb_color": "rgba(0, 0, 0, 0.000)",
         "priority": 2147483647,
@@ -486,103 +473,13 @@
         "via_diameter": 0.508,
         "via_drill": 0.254,
         "wire_width": 6
-      },
-      {
-        "bus_width": 12,
-        "clearance": 0.508,
-        "line_style": 0,
-        "name": "HV",
-        "pcb_color": "rgb(255, 121, 27)",
-        "priority": 0,
-        "schematic_color": "rgb(255, 121, 27)",
-        "track_width": 0.254,
-        "via_diameter": 0.508,
-        "via_drill": 0.254,
-        "wire_width": 6
-      },
-      {
-        "bus_width": 12,
-        "clearance": 0.127,
-        "line_style": 0,
-        "name": "Power",
-        "pcb_color": "rgb(255, 28, 110)",
-        "priority": 1,
-        "schematic_color": "rgb(255, 28, 110)",
-        "track_width": 0.508,
-        "via_diameter": 0.762,
-        "via_drill": 0.381,
-        "wire_width": 12
       }
     ],
     "meta": {
       "version": 4
     },
     "net_colors": null,
-    "netclass_assignments": {
-      "+12V": [
-        "Power"
-      ],
-      "/HVIL/TS+": [
-        "HV"
-      ],
-      "/HVIL/TS_P": [
-        "HV"
-      ],
-      "GND": [
-        "Power"
-      ],
-      "HVIL+": [
-        "HV"
-      ],
-      "HVIL-": [
-        "HV"
-      ],
-      "HVIL_N": [
-        "HV"
-      ],
-      "HVIL_P": [
-        "HV"
-      ],
-      "IRs_Final": [
-        "Power"
-      ],
-      "Net-(J5-Pin_1)": [
-        "HV"
-      ],
-      "Net-(J5-Pin_2)": [
-        "HV"
-      ],
-      "Net-(J6-Pin_1)": [
-        "Power"
-      ],
-      "Net-(J7-Pin_1)": [
-        "HV"
-      ],
-      "Net-(J7-Pin_2)": [
-        "HV"
-      ],
-      "Net-(L1-Pad1)": [
-        "HV"
-      ],
-      "Net-(L1-Pad3)": [
-        "HV"
-      ],
-      "Net-(PS1-+VOUT)": [
-        "HV"
-      ],
-      "Net-(U14A-+)": [
-        "HV"
-      ],
-      "Net-(U14A--)": [
-        "HV"
-      ],
-      "Shutdown_In": [
-        "Power"
-      ],
-      "Shutdown_Out": [
-        "Power"
-      ]
-    },
+    "netclass_assignments": null,
     "netclass_patterns": []
   },
   "pcbnew": {
@@ -612,12 +509,114 @@
       "ref_range_delimiter": "",
       "string_delimiter": "\""
     },
-    "bom_presets": [],
+    "bom_presets": [
+      {
+        "exclude_dnp": false,
+        "fields_ordered": [
+          {
+            "group_by": false,
+            "label": "Reference",
+            "name": "Reference",
+            "show": true
+          },
+          {
+            "group_by": false,
+            "label": "Value",
+            "name": "Value",
+            "show": false
+          },
+          {
+            "group_by": false,
+            "label": "Datasheet",
+            "name": "Datasheet",
+            "show": false
+          },
+          {
+            "group_by": false,
+            "label": "Footprint",
+            "name": "Footprint",
+            "show": false
+          },
+          {
+            "group_by": false,
+            "label": "Do Not Place",
+            "name": "${DNP}",
+            "show": false
+          },
+          {
+            "group_by": false,
+            "label": "Exclude from BOM",
+            "name": "${EXCLUDE_FROM_BOM}",
+            "show": false
+          },
+          {
+            "group_by": false,
+            "label": "Exclude from Board",
+            "name": "${EXCLUDE_FROM_BOARD}",
+            "show": false
+          },
+          {
+            "group_by": false,
+            "label": "Exclude from Simulation",
+            "name": "${EXCLUDE_FROM_SIM}",
+            "show": false
+          },
+          {
+            "group_by": false,
+            "label": "Name",
+            "name": "Name",
+            "show": true
+          },
+          {
+            "group_by": false,
+            "label": "Digikey Part Number",
+            "name": "Digikey Part Number",
+            "show": true
+          },
+          {
+            "group_by": false,
+            "label": "Manufacturer Part Number",
+            "name": "Manufacturer Part Number",
+            "show": true
+          },
+          {
+            "group_by": false,
+            "label": "Description",
+            "name": "Description",
+            "show": false
+          },
+          {
+            "group_by": false,
+            "label": "#",
+            "name": "${ITEM_NUMBER}",
+            "show": false
+          },
+          {
+            "group_by": false,
+            "label": "Digikey Link",
+            "name": "Digikey Link",
+            "show": true
+          },
+          {
+            "group_by": false,
+            "label": "Qty",
+            "name": "${QUANTITY}",
+            "show": false
+          }
+        ],
+        "filter_string": "",
+        "group_symbols": true,
+        "include_excluded_from_bom": true,
+        "name": "Digikey Export",
+        "sort_asc": true,
+        "sort_field": "Reference"
+      }
+    ],
     "bom_settings": {
       "exclude_dnp": false,
       "fields_ordered": [
         {
-          "group_by": false,
+          "group_by": true,
           "label": "Reference",
           "name": "Reference",
           "show": true
@@ -629,7 +628,7 @@
           "show": true
         },
         {
-          "group_by": true,
+          "group_by": false,
           "label": "Value",
           "name": "Value",
           "show": true
@@ -644,16 +643,16 @@
           "group_by": true,
           "label": "Exclude from BOM",
           "name": "${EXCLUDE_FROM_BOM}",
-          "show": false
+          "show": true
         },
         {
           "group_by": true,
           "label": "Exclude from Board",
           "name": "${EXCLUDE_FROM_BOARD}",
-          "show": false
+          "show": true
         },
         {
-          "group_by": true,
+          "group_by": false,
           "label": "Footprint",
           "name": "Footprint",
           "show": true
@@ -666,27 +665,75 @@
         },
         {
           "group_by": false,
-          "label": "Description",
-          "name": "Description",
+          "label": "Digi URL",
+          "name": "Digi URL",
+          "show": true
+        },
+        {
+          "group_by": false,
+          "label": "MANUFACTURER",
+          "name": "MANUFACTURER",
           "show": false
         },
         {
           "group_by": false,
-          "label": "#",
-          "name": "${ITEM_NUMBER}",
-          "show": true
+          "label": "MAXIMUM_PACKAGE_HEIGHT",
+          "name": "MAXIMUM_PACKAGE_HEIGHT",
+          "show": false
         },
         {
           "group_by": false,
           "label": "MFG",
           "name": "MFG",
-          "show": true
+          "show": false
         },
         {
           "group_by": false,
           "label": "MFG PN",
           "name": "MFG PN",
-          "show": true
+          "show": false
+        },
+        {
+          "group_by": false,
+          "label": "Manufacturer Part Number",
+          "name": "Manufacturer Part Number",
+          "show": false
+        },
+        {
+          "group_by": false,
+          "label": "Name",
+          "name": "Name",
+          "show": false
+        },
+        {
+          "group_by": false,
+          "label": "PARTREV",
+          "name": "PARTREV",
+          "show": false
+        },
+        {
+          "group_by": false,
+          "label": "STANDARD",
+          "name": "STANDARD",
+          "show": false
+        },
+        {
+          "group_by": false,
+          "label": "Sim.Device",
+          "name": "Sim.Device",
+          "show": false
+        },
+        {
+          "group_by": false,
+          "label": "Sim.Pins",
+          "name": "Sim.Pins",
+          "show": false
+        },
+        {
+          "group_by": false,
+          "label": "Sim.Type",
+          "name": "Sim.Type",
+          "show": false
         },
         {
           "group_by": false,
@@ -696,17 +743,35 @@
         },
         {
           "group_by": false,
-          "label": "Digi URL",
-          "name": "Digi URL",
-          "show": true
+          "label": "Description",
+          "name": "Description",
+          "show": false
+        },
+        {
+          "group_by": false,
+          "label": "#",
+          "name": "${ITEM_NUMBER}",
+          "show": false
+        },
+        {
+          "group_by": false,
+          "label": "Digikey Link",
+          "name": "Digikey Link",
+          "show": false
+        },
+        {
+          "group_by": false,
+          "label": "Digikey Part Number",
+          "name": "Digikey Part Number",
+          "show": false
         }
       ],
       "filter_string": "",
       "group_symbols": true,
-      "include_excluded_from_bom": false,
+      "include_excluded_from_bom": true,
       "name": "",
-      "sort_asc": true,
-      "sort_field": "Footprint"
+      "sort_asc": false,
+      "sort_field": "Digi URL"
     },
     "connection_grid_size": 50.0,
     "drawing": {
@@ -714,10 +779,31 @@
       "dashed_lines_gap_length_ratio": 3.0,
       "default_line_thickness": 6.0,
       "default_text_size": 50.0,
-      "field_names": [],
+      "field_names": [
+        {
+          "name": "Digikey Part Number",
+          "url": false,
+          "visible": false
+        },
+        {
+          "name": "Name",
+          "url": false,
+          "visible": false
+        },
+        {
+          "name": "Digikey Link",
+          "url": true,
+          "visible": false
+        },
+        {
+          "name": "Manufacturer Part Number",
+          "url": false,
+          "visible": false
+        }
+      ],
       "intersheets_ref_own_page": false,
       "intersheets_ref_prefix": "",
-      "intersheets_ref_short": false,
+      "intersheets_ref_short": true,
       "intersheets_ref_show": false,
       "intersheets_ref_suffix": "",
       "junction_size_choice": 3,
@@ -736,7 +822,15 @@
       "version": 1
     },
     "net_format_name": "",
-    "page_layout_descr_file": "",
+    "ngspice": {
+      "fix_include_paths": true,
+      "meta": {
+        "version": 0
+      },
+      "model_mode": 4,
+      "workbook_filename": ""
+    },
+    "page_layout_descr_file": "kicad-embed://FS_Drawing_Sheet_ANSI_B.kicad_wks",
     "plot_directory": "",
     "space_save_all_events": true,
     "spice_current_sheet_as_root": false,
@@ -750,28 +844,8 @@
   },
   "sheets": [
     [
-      "ca333741-5826-495c-b860-5422aa5e17fc",
+      "3ffe4db1-2415-46df-8a68-5537f544061f",
       "Root"
-    ],
-    [
-      "7647dac7-c4f0-4da8-9b50-d60bb9a5b142",
-      "IsoSPI"
-    ],
-    [
-      "f8f7b966-e431-45f1-86cc-b511313b5db4",
-      "Current Sensors + Filtering"
-    ],
-    [
-      "d5ae3636-6e9a-45ed-84fd-517f0c920a36",
-      "Shutdown + IMD Delay"
-    ],
-    [
-      "fa150f42-0d9b-43a1-bf36-032543240a34",
-      "Precharge Circuit"
-    ],
-    [
-      "666b2394-43c5-4dee-9be4-d3190c1cd720",
-      "HVIL"
     ]
   ],
   "text_variables": {}
