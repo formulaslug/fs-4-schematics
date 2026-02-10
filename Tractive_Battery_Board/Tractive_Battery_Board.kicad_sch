@@ -12965,7 +12965,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" "Diode_SMD:D_2010_5025Metric_Pad1.52x2.65mm_HandSolder"
+		(property "Footprint" "Diode_SMD:D_SMF"
 			(at 191.77 226.06 0)
 			(effects
 				(font
@@ -13717,7 +13717,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" "Diode_SMD:D_2010_5025Metric_Pad1.52x2.65mm_HandSolder"
+		(property "Footprint" "Diode_SMD:D_SMF"
 			(at 191.77 196.85 0)
 			(effects
 				(font
@@ -14308,6 +14308,72 @@
 			(project "Tractive_Battery_Board"
 				(path "/ca333741-5826-495c-b860-5422aa5e17fc"
 					(reference "J15")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "power:+12V")
+		(at 200.66 45.72 270)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "1fee2620-6aff-4ea7-92b9-fadc56b9ac78")
+		(property "Reference" "#PWR023"
+			(at 196.85 45.72 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Value" "+12V"
+			(at 200.152 47.498 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Footprint" ""
+			(at 200.66 45.72 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" ""
+			(at 200.66 45.72 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Power symbol creates a global label with name \"+12V\""
+			(at 200.66 45.72 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "8d4b1fd8-10f6-4981-8474-4cb447d8b1b4")
+		)
+		(instances
+			(project ""
+				(path "/ca333741-5826-495c-b860-5422aa5e17fc"
+					(reference "#PWR023")
 					(unit 1)
 				)
 			)
@@ -16964,7 +17030,7 @@
 				(justify right)
 			)
 		)
-		(property "Footprint" "Package_SO:MSOP-8_3x3mm_P0.65mm"
+		(property "Footprint" "Package_SO:SOIC-8_3.9x4.9mm_P1.27mm"
 			(at 289.56 82.55 0)
 			(effects
 				(font
@@ -18426,7 +18492,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" "Diode_SMD:D_2010_5025Metric_Pad1.52x2.65mm_HandSolder"
+		(property "Footprint" "Diode_SMD:D_SMF"
 			(at 236.22 62.23 0)
 			(effects
 				(font
@@ -20362,7 +20428,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" "Diode_SMD:D_2010_5025Metric_Pad1.52x2.65mm_HandSolder"
+		(property "Footprint" "Diode_SMD:D_SMF"
 			(at 190.5 113.03 0)
 			(effects
 				(font
@@ -21997,72 +22063,6 @@
 		)
 	)
 	(symbol
-		(lib_id "power:+3.3V")
-		(at 200.66 45.72 270)
-		(unit 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(dnp no)
-		(uuid "a90692ac-1860-4055-8ff5-3e35d7a60935")
-		(property "Reference" "#PWR023"
-			(at 196.85 45.72 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Value" "+3V3"
-			(at 197.358 47.498 90)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-		)
-		(property "Footprint" ""
-			(at 200.66 45.72 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Datasheet" ""
-			(at 200.66 45.72 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Description" "Power symbol creates a global label with name \"+3.3V\""
-			(at 200.66 45.72 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(pin "1"
-			(uuid "808ea173-9a13-48ae-8872-585b2f457e14")
-		)
-		(instances
-			(project "Tractive_Battery_Board"
-				(path "/ca333741-5826-495c-b860-5422aa5e17fc"
-					(reference "#PWR023")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
 		(lib_id "Device:C")
 		(at 30.48 166.37 270)
 		(mirror x)
@@ -23182,7 +23182,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" "Diode_SMD:D_2010_5025Metric_Pad1.52x2.65mm_HandSolder"
+		(property "Footprint" "Diode_SMD:D_SMF"
 			(at 190.5 140.97 0)
 			(effects
 				(font
@@ -23561,7 +23561,7 @@
 				)
 			)
 		)
-		(property "Footprint" "Package_SO:SOIC-8_3.9x4.9mm_P1.27mm"
+		(property "Footprint" "FS_4_Global_Footprint_Library:SOIC-8_ISO1044BD"
 			(at 132.08 60.96 0)
 			(effects
 				(font
@@ -24870,7 +24870,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" "Diode_SMD:D_2010_5025Metric_Pad1.52x2.65mm_HandSolder"
+		(property "Footprint" "Diode_SMD:D_SMF"
 			(at 190.5 166.37 0)
 			(effects
 				(font
