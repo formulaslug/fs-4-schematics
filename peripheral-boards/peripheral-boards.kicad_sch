@@ -7886,10 +7886,6 @@
 		(uuid "ed8bd265-96b5-4ed7-b193-afd5582c7028")
 	)
 	(no_connect
-		(at 254 40.64)
-		(uuid "00558709-c109-497a-8918-a85d6323a240")
-	)
-	(no_connect
 		(at 44.45 240.03)
 		(uuid "2ec8351a-dddd-4053-a63e-0d80880ebca3")
 	)
@@ -7920,10 +7916,6 @@
 	(no_connect
 		(at 57.15 229.87)
 		(uuid "d1a523e4-dcff-4eb0-ac8e-a7d43de4bce8")
-	)
-	(no_connect
-		(at 378.46 43.18)
-		(uuid "fd87c0b3-c1c3-4cd7-91b3-07fde6b02698")
 	)
 	(wire
 		(pts
@@ -7994,6 +7986,16 @@
 			(type default)
 		)
 		(uuid "03e44820-22b0-4dfe-9e65-9edef73f823e")
+	)
+	(wire
+		(pts
+			(xy 356.87 43.18) (xy 358.14 43.18)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "05adf5e4-9e52-4d3d-aab4-87c9487e5c81")
 	)
 	(wire
 		(pts
@@ -8907,16 +8909,6 @@
 	)
 	(wire
 		(pts
-			(xy 233.68 43.18) (xy 222.25 43.18)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "6601a9fc-e27f-49b9-b8f0-eed001246e53")
-	)
-	(wire
-		(pts
 			(xy 40.64 90.17) (xy 35.56 90.17)
 		)
 		(stroke
@@ -8994,6 +8986,16 @@
 			(type default)
 		)
 		(uuid "6cc2e507-449e-4727-bb38-e96d05976dfe")
+	)
+	(wire
+		(pts
+			(xy 222.25 43.18) (xy 233.68 43.18)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "6dca0bc6-33e0-4096-82d6-3d8c70c4cc05")
 	)
 	(wire
 		(pts
@@ -10385,6 +10387,16 @@
 			(type default)
 		)
 		(uuid "f06e836c-068b-496a-82f9-2513b079cea0")
+	)
+	(wire
+		(pts
+			(xy 232.41 40.64) (xy 233.68 40.64)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "f3712b91-3cd3-4340-806b-0cd4b13a0f67")
 	)
 	(wire
 		(pts
@@ -14530,6 +14542,7 @@
 	(symbol
 		(lib_id "Interface:TCA9406DC")
 		(at 368.3 45.72 0)
+		(mirror y)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
@@ -14537,7 +14550,7 @@
 		(dnp no)
 		(uuid "2a21b3a8-fd5e-44f8-a401-a2107e09046f")
 		(property "Reference" "U2"
-			(at 377.19 54.61 0)
+			(at 375.92 57.15 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -14546,7 +14559,7 @@
 			)
 		)
 		(property "Value" "TCA9406DC"
-			(at 374.65 57.15 0)
+			(at 382.27 59.69 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -14555,7 +14568,7 @@
 			)
 		)
 		(property "Footprint" "Package_SO:SSOP-8_2.95x2.8mm_P0.65mm"
-			(at 358.14 36.83 0)
+			(at 378.46 36.83 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -14564,7 +14577,7 @@
 			)
 		)
 		(property "Datasheet" "www.ti.com/lit/ds/symlink/tca9406.pdf"
-			(at 360.68 34.29 0)
+			(at 375.92 34.29 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -16292,6 +16305,72 @@
 			(project "peripheral-boards"
 				(path "/3ffe4db1-2415-46df-8a68-5537f544061f"
 					(reference "#PWR063")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "power:+5V")
+		(at 356.87 43.18 0)
+		(mirror y)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "5be0eb35-c3a6-41e4-a050-fb19942c4bf9")
+		(property "Reference" "#PWR071"
+			(at 356.87 46.99 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Value" "+3V3"
+			(at 356.87 39.37 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" ""
+			(at 356.87 43.18 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" ""
+			(at 356.87 43.18 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Power symbol creates a global label with name \"+5V\""
+			(at 356.87 43.18 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "f64a1fe4-bb1f-4171-ae7b-d1186e60c8ff")
+		)
+		(instances
+			(project "peripheral-boards"
+				(path "/3ffe4db1-2415-46df-8a68-5537f544061f"
+					(reference "#PWR071")
 					(unit 1)
 				)
 			)
@@ -21562,6 +21641,72 @@
 		)
 	)
 	(symbol
+		(lib_id "power:+5V")
+		(at 232.41 40.64 0)
+		(mirror y)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "bdfb5a98-95e2-4d18-9bdd-4bd4bfba868f")
+		(property "Reference" "#PWR070"
+			(at 232.41 44.45 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Value" "+3V3"
+			(at 232.41 36.83 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" ""
+			(at 232.41 40.64 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" ""
+			(at 232.41 40.64 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Power symbol creates a global label with name \"+5V\""
+			(at 232.41 40.64 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "cb9bce80-c061-4e19-ab11-dfaa0e3526a2")
+		)
+		(instances
+			(project "peripheral-boards"
+				(path "/3ffe4db1-2415-46df-8a68-5537f544061f"
+					(reference "#PWR070")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
 		(lib_id "Device:C")
 		(at 374.65 26.67 270)
 		(unit 1)
@@ -21854,15 +21999,15 @@
 	(symbol
 		(lib_id "Interface:TCA9406DC")
 		(at 243.84 43.18 0)
+		(mirror y)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
 		(on_board yes)
 		(dnp no)
-		(fields_autoplaced yes)
 		(uuid "c2b1289e-38a8-4430-8f43-c2848d9080f9")
 		(property "Reference" "U14"
-			(at 245.9833 55.88 0)
+			(at 251.46 54.61 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -21871,7 +22016,7 @@
 			)
 		)
 		(property "Value" "TCA9406DC"
-			(at 245.9833 58.42 0)
+			(at 259.08 57.15 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -21880,7 +22025,7 @@
 			)
 		)
 		(property "Footprint" "Package_SO:SSOP-8_2.95x2.8mm_P0.65mm"
-			(at 233.68 34.29 0)
+			(at 254 34.29 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -21889,7 +22034,7 @@
 			)
 		)
 		(property "Datasheet" "www.ti.com/lit/ds/symlink/tca9406.pdf"
-			(at 236.22 31.75 0)
+			(at 251.46 31.75 0)
 			(effects
 				(font
 					(size 1.27 1.27)
