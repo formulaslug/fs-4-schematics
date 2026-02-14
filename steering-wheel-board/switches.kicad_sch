@@ -1341,12 +1341,6 @@
 		(uuid "170bad2b-decd-4d5c-9daa-c48235d9c3ea")
 	)
 	(junction
-		(at 283.21 95.25)
-		(diameter 0)
-		(color 0 0 0 0)
-		(uuid "223f4f65-e8e4-4c25-bc9d-28bd56b25c5f")
-	)
-	(junction
 		(at 30.48 38.1)
 		(diameter 0)
 		(color 0 0 0 0)
@@ -1381,6 +1375,18 @@
 		(diameter 0)
 		(color 0 0 0 0)
 		(uuid "52a8be09-74cf-4c59-867a-9b1f538bc219")
+	)
+	(junction
+		(at 283.21 95.25)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "530c7ef1-3123-4a59-b06a-f41a298642b3")
+	)
+	(junction
+		(at 273.0016 69.85)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "608e51e1-0e48-4c6f-895c-e4915d2b9aa8")
 	)
 	(junction
 		(at 85.09 43.18)
@@ -1542,7 +1548,7 @@
 	)
 	(wire
 		(pts
-			(xy 267.97 69.85) (xy 273.05 69.85)
+			(xy 267.97 69.85) (xy 273.0016 69.85)
 		)
 		(stroke
 			(width 0)
@@ -1669,6 +1675,16 @@
 			(type default)
 		)
 		(uuid "54458c27-89ab-4586-959d-dfb371ba1713")
+	)
+	(wire
+		(pts
+			(xy 273.0016 69.85) (xy 273.05 69.85)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "56555c38-99f1-410f-bdde-37fd911ebc6e")
 	)
 	(wire
 		(pts
@@ -2402,7 +2418,7 @@
 				(hide yes)
 			)
 		)
-		(property "Digi PN" "EG2025-ND"
+		(property "Digi PN" "EG5845-ND"
 			(at 279.4 44.45 0)
 			(effects
 				(font
@@ -2411,7 +2427,7 @@
 				(hide yes)
 			)
 		)
-		(property "Digi URL" "https://www.digikey.com/en/products/detail/e-switch/ps1024alred/81539"
+		(property "Digi URL" "https://www.digikey.com/en/products/detail/e-switch/800SP9B9M1QEH/1804308"
 			(at 279.4 44.45 0)
 			(effects
 				(font
@@ -2429,7 +2445,7 @@
 				(hide yes)
 			)
 		)
-		(property "MFG PN" "PS1024ALRED"
+		(property "MFG PN" "800SP9B9M1QEH"
 			(at 279.4 44.45 0)
 			(effects
 				(font
@@ -3357,6 +3373,110 @@
 		)
 	)
 	(symbol
+		(lib_id "Switch:SW_Push")
+		(at 278.0816 69.85 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board no)
+		(dnp yes)
+		(fields_autoplaced yes)
+		(uuid "303dfdf7-0d40-4a1f-b567-80cb548e805b")
+		(property "Reference" "SW3"
+			(at 278.0816 62.23 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "SW_SPST"
+			(at 278.0816 64.77 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" ""
+			(at 278.0816 64.77 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "https://mm.digikey.com/Volume0/opasdata/d220001/medias/docus/6479/E_Switch_PS1024-1165682%20DS.pdf"
+			(at 278.0816 64.77 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Push button switch, generic, two pins"
+			(at 278.0816 69.85 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Digi PN" "EG5845-ND"
+			(at 278.0816 69.85 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Digi URL" "https://www.digikey.com/en/products/detail/e-switch/800SP9B9M1QEH/1804308"
+			(at 278.0816 69.85 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "MFG" "E-Switch"
+			(at 278.0816 69.85 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "MFG PN" "800SP9B9M1QEH"
+			(at 278.0816 69.85 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "95869337-1be7-4808-b68d-600bf7431d1f")
+		)
+		(pin "2"
+			(uuid "1b9932e5-c0bd-4d63-aeb7-f019f495e373")
+		)
+		(instances
+			(project "steering_wheel"
+				(path "/553a23ec-442a-4f98-939d-2d5634a662f5/bd0f64cc-5703-4638-a4e2-f6fb8baa3fa1"
+					(reference "SW3")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
 		(lib_id "Device:R")
 		(at 161.29 104.14 90)
 		(unit 1)
@@ -3845,6 +3965,110 @@
 		)
 	)
 	(symbol
+		(lib_id "Switch:SW_Push")
+		(at 278.13 95.25 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board no)
+		(dnp yes)
+		(fields_autoplaced yes)
+		(uuid "8296460b-766c-4dbf-b617-25558e082bd2")
+		(property "Reference" "SW4"
+			(at 278.13 87.63 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "SW_SPST"
+			(at 278.13 90.17 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" ""
+			(at 278.13 90.17 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "https://mm.digikey.com/Volume0/opasdata/d220001/medias/docus/6479/E_Switch_PS1024-1165682%20DS.pdf"
+			(at 278.13 90.17 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Push button switch, generic, two pins"
+			(at 278.13 95.25 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Digi PN" "EG5845-ND"
+			(at 278.13 95.25 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Digi URL" "https://www.digikey.com/en/products/detail/e-switch/800SP9B9M1QEH/1804308"
+			(at 278.13 95.25 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "MFG" "E-Switch"
+			(at 278.13 95.25 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "MFG PN" "800SP9B9M1QEH"
+			(at 278.13 95.25 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "56f44e69-8d1a-4375-96fe-b3f8ce148c18")
+		)
+		(pin "2"
+			(uuid "48684016-4565-44a8-bb79-b235e1e16503")
+		)
+		(instances
+			(project "steering_wheel"
+				(path "/553a23ec-442a-4f98-939d-2d5634a662f5/bd0f64cc-5703-4638-a4e2-f6fb8baa3fa1"
+					(reference "SW4")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
 		(lib_id "power:GND")
 		(at 167.64 50.8 0)
 		(unit 1)
@@ -4150,110 +4374,6 @@
 			(project ""
 				(path "/553a23ec-442a-4f98-939d-2d5634a662f5/bd0f64cc-5703-4638-a4e2-f6fb8baa3fa1"
 					(reference "#PWR032")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
-		(lib_id "Switch:SW_Push")
-		(at 278.13 69.85 0)
-		(unit 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board no)
-		(dnp yes)
-		(fields_autoplaced yes)
-		(uuid "a40609d5-7843-4ec4-bb95-410516dcb225")
-		(property "Reference" "SW3"
-			(at 278.13 62.23 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Value" "SW_SPST"
-			(at 278.13 64.77 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Footprint" ""
-			(at 278.13 64.77 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Datasheet" "https://mm.digikey.com/Volume0/opasdata/d220001/medias/docus/6479/E_Switch_PS1024-1165682%20DS.pdf"
-			(at 278.13 64.77 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Description" "Push button switch, generic, two pins"
-			(at 278.13 69.85 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Digi PN" "EG2025-ND"
-			(at 278.13 69.85 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Digi URL" "https://www.digikey.com/en/products/detail/e-switch/ps1024alred/81539"
-			(at 278.13 69.85 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "MFG" "E-Switch"
-			(at 278.13 69.85 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "MFG PN" "PS1024ALRED"
-			(at 278.13 69.85 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(pin "1"
-			(uuid "e977df22-49bf-403e-bb6c-591426403aaf")
-		)
-		(pin "2"
-			(uuid "9b98077f-603b-4a27-8434-f5efb9ece5b2")
-		)
-		(instances
-			(project "steering_wheel"
-				(path "/553a23ec-442a-4f98-939d-2d5634a662f5/bd0f64cc-5703-4638-a4e2-f6fb8baa3fa1"
-					(reference "SW3")
 					(unit 1)
 				)
 			)
@@ -4989,110 +5109,6 @@
 			(project "steering_wheel"
 				(path "/553a23ec-442a-4f98-939d-2d5634a662f5/bd0f64cc-5703-4638-a4e2-f6fb8baa3fa1"
 					(reference "#PWR039")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
-		(lib_id "Switch:SW_Push")
-		(at 278.13 95.25 0)
-		(unit 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board no)
-		(dnp yes)
-		(fields_autoplaced yes)
-		(uuid "e9af490f-552f-4d30-8e57-81fc1caa0bb8")
-		(property "Reference" "SW4"
-			(at 278.13 87.63 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Value" "SW_SPST"
-			(at 278.13 90.17 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Footprint" ""
-			(at 278.13 90.17 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Datasheet" "https://mm.digikey.com/Volume0/opasdata/d220001/medias/docus/6479/E_Switch_PS1024-1165682%20DS.pdf"
-			(at 278.13 90.17 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Description" "Push button switch, generic, two pins"
-			(at 278.13 95.25 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Digi PN" "EG2025-ND"
-			(at 278.13 95.25 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Digi URL" "https://www.digikey.com/en/products/detail/e-switch/ps1024alred/81539"
-			(at 278.13 95.25 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "MFG" "E-Switch"
-			(at 278.13 95.25 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "MFG PN" "PS1024ALRED"
-			(at 278.13 95.25 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(pin "1"
-			(uuid "428542aa-552d-43b2-9dc6-12610a67b21b")
-		)
-		(pin "2"
-			(uuid "807283e2-a700-4cfa-8f9f-4e45b4d96abc")
-		)
-		(instances
-			(project "steering_wheel"
-				(path "/553a23ec-442a-4f98-939d-2d5634a662f5/bd0f64cc-5703-4638-a4e2-f6fb8baa3fa1"
-					(reference "SW4")
 					(unit 1)
 				)
 			)
