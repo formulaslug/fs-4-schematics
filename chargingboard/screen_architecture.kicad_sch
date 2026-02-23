@@ -3632,17 +3632,6 @@
 		)
 		(uuid "255e4e1c-8ce2-4882-82e4-00ab1c87fea0")
 	)
-	(text "ohm ±1% 1/2 W"
-		(exclude_from_sim no)
-		(at 105.664 248.92 0)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-			(justify left)
-		)
-		(uuid "46b13295-46c8-4bae-86f9-1e12555b2a94")
-	)
 	(text "Screen"
 		(exclude_from_sim no)
 		(at 30.48 30.48 0)
@@ -7185,7 +7174,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "Capacitor_SMD:C_0603_1608Metric"
 			(at 153.3652 80.01 0)
 			(effects
 				(font
@@ -7194,7 +7183,7 @@
 				(hide yes)
 			)
 		)
-		(property "Datasheet" "~"
+		(property "Datasheet" "https://mm.digikey.com/Volume0/opasdata/d220001/medias/docus/339/CL10A106KO8NQNC_Spec.pdf"
 			(at 152.4 76.2 0)
 			(effects
 				(font
@@ -7212,7 +7201,7 @@
 				(hide yes)
 			)
 		)
-		(property "Digikey Part Number" ""
+		(property "Digikey Part Number" "1276-CL10A106KO8NQNCCT-ND"
 			(at 152.4 76.2 0)
 			(effects
 				(font
@@ -7221,7 +7210,7 @@
 				(hide yes)
 			)
 		)
-		(property "Name" ""
+		(property "MFG " "Samsung Electro-Mechanics"
 			(at 152.4 76.2 0)
 			(effects
 				(font
@@ -7230,7 +7219,7 @@
 				(hide yes)
 			)
 		)
-		(property "Digikey Link" ""
+		(property "Digikey Link" "https://www.digikey.com/en/products/detail/samsung-electro-mechanics/CL10A106KO8NQNC/10479038"
 			(at 152.4 76.2 0)
 			(effects
 				(font
@@ -7239,7 +7228,7 @@
 				(hide yes)
 			)
 		)
-		(property "Manufacturer Part Number" ""
+		(property "Manufacturer Part Number" "CL10A106KO8NQNC"
 			(at 152.4 76.2 0)
 			(effects
 				(font
@@ -7472,75 +7461,6 @@
 		)
 	)
 	(symbol
-		(lib_id "Device:C")
-		(at 110.49 78.74 0)
-		(unit 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(dnp no)
-		(uuid "123bcd03-0ff2-4849-8de3-d08b2442b95c")
-		(property "Reference" "C8"
-			(at 108.204 77.978 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify right)
-			)
-		)
-		(property "Value" "100n"
-			(at 108.712 80.264 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify right)
-			)
-		)
-		(property "Footprint" ""
-			(at 111.4552 82.55 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Datasheet" "~"
-			(at 110.49 78.74 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Description" "Unpolarized capacitor"
-			(at 110.49 78.74 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(pin "1"
-			(uuid "dbc45db6-31b0-49c2-9653-566850cd7ecf")
-		)
-		(pin "2"
-			(uuid "aa6d59d2-5365-4ee7-a2fd-ba17b38ab66f")
-		)
-		(instances
-			(project "chargingboard"
-				(path "/3b7f9d0d-fe78-4ddc-a74a-12564d0be65c/1fb407b6-2fa5-4dbf-a434-4b5bd0ba4814"
-					(reference "C8")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
 		(lib_id "power:GND")
 		(at 182.88 85.09 0)
 		(unit 1)
@@ -7739,6 +7659,111 @@
 		)
 	)
 	(symbol
+		(lib_id "Device:C")
+		(at 110.49 78.74 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "3210db56-aa32-4b02-ab74-4bbca6b79b28")
+		(property "Reference" "C8"
+			(at 106.68 77.4699 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+			)
+		)
+		(property "Value" "100n"
+			(at 106.68 80.0099 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+			)
+		)
+		(property "Footprint" "Capacitor_SMD:C_0603_1608Metric"
+			(at 111.4552 82.55 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "cate=luCeramicCapacitorsSMD&partno=GCJ188R71H104KA12%23"
+			(at 110.49 78.74 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Unpolarized capacitor"
+			(at 110.49 78.74 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "MFG" "YAGEO"
+			(at 110.49 78.74 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Digi PN" "311-1344-1-ND"
+			(at 110.49 78.74 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Digi URL" "https://www.digikey.com/en/products/detail/yageo/CC0603KRX7R9BB104/2103082"
+			(at 110.49 78.74 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "MFG PN" "CC0603KRX7R9BB104"
+			(at 110.49 78.74 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "1b7ff494-1b4d-4930-a1ac-e5f0d1038219")
+		)
+		(pin "2"
+			(uuid "b084299f-4ad7-48be-ad45-9ecc651e6d88")
+		)
+		(instances
+			(project "chargingboard"
+				(path "/3b7f9d0d-fe78-4ddc-a74a-12564d0be65c/1fb407b6-2fa5-4dbf-a434-4b5bd0ba4814"
+					(reference "C8")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
 		(lib_id "power:GND")
 		(at 307.34 153.67 0)
 		(unit 1)
@@ -7831,7 +7856,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "Capacitor_SMD:C_0603_1608Metric"
 			(at 107.6452 227.33 0)
 			(effects
 				(font
@@ -7840,7 +7865,7 @@
 				(hide yes)
 			)
 		)
-		(property "Datasheet" "~"
+		(property "Datasheet" "https://product.tdk.com/system/files/dam/doc/product/capacitor/ceramic/mlcc/catalog/mlcc_commercial_soft_en.pdf"
 			(at 106.68 223.52 0)
 			(effects
 				(font
@@ -7850,6 +7875,42 @@
 			)
 		)
 		(property "Description" "Unpolarized capacitor"
+			(at 106.68 223.52 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Digi PN" "311-1803-1-ND"
+			(at 106.68 223.52 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Digi URL" "https://www.digikey.com/en/products/detail/yageo/CC0603KRX7R8BB224/5195211"
+			(at 106.68 223.52 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "MFG PN" "CC0603KRX7R8BB224"
+			(at 106.68 223.52 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "MFG" "YAGEO"
 			(at 106.68 223.52 0)
 			(effects
 				(font
@@ -8446,7 +8507,7 @@
 				(justify right)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "Capacitor_SMD:C_0603_1608Metric"
 			(at 96.2152 83.82 0)
 			(effects
 				(font
@@ -8455,7 +8516,7 @@
 				(hide yes)
 			)
 		)
-		(property "Datasheet" "~"
+		(property "Datasheet" "cate=luCeramicCapacitorsSMD&partno=GCJ188R71H104KA12%23"
 			(at 95.25 80.01 0)
 			(effects
 				(font
@@ -8465,6 +8526,42 @@
 			)
 		)
 		(property "Description" "Unpolarized capacitor"
+			(at 95.25 80.01 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "MFG" "YAGEO"
+			(at 95.25 80.01 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Digi PN" "311-1344-1-ND"
+			(at 95.25 80.01 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Digi URL" "https://www.digikey.com/en/products/detail/yageo/CC0603KRX7R9BB104/2103082"
+			(at 95.25 80.01 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "MFG PN" "CC0603KRX7R9BB104"
 			(at 95.25 80.01 0)
 			(effects
 				(font
@@ -8685,75 +8782,6 @@
 		)
 	)
 	(symbol
-		(lib_id "Device:C")
-		(at 137.16 78.74 0)
-		(unit 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(dnp no)
-		(uuid "6ad7941c-e8a8-45f6-b606-c876213debcd")
-		(property "Reference" "C10"
-			(at 134.112 77.47 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify right)
-			)
-		)
-		(property "Value" "100n"
-			(at 134.112 79.502 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify right)
-			)
-		)
-		(property "Footprint" ""
-			(at 138.1252 82.55 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Datasheet" "~"
-			(at 137.16 78.74 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Description" "Unpolarized capacitor"
-			(at 137.16 78.74 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(pin "1"
-			(uuid "8fed8a54-33b3-4d54-9ff7-26e6ad8b78c0")
-		)
-		(pin "2"
-			(uuid "59cd8925-5f59-49e3-aa4f-27433a013a1c")
-		)
-		(instances
-			(project "chargingboard"
-				(path "/3b7f9d0d-fe78-4ddc-a74a-12564d0be65c/1fb407b6-2fa5-4dbf-a434-4b5bd0ba4814"
-					(reference "C10")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
 		(lib_id "power:+3V3")
 		(at 313.69 90.17 0)
 		(unit 1)
@@ -8886,34 +8914,33 @@
 	)
 	(symbol
 		(lib_id "Device:C")
-		(at 87.63 213.36 0)
+		(at 137.16 78.74 0)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
 		(on_board yes)
 		(dnp no)
-		(fields_autoplaced yes)
-		(uuid "816174a8-76b8-4a89-bee5-8615d9b9d1e7")
-		(property "Reference" "C28"
-			(at 91.44 212.0899 0)
+		(uuid "81904ff3-2a0c-4ed8-906b-bd04a762d565")
+		(property "Reference" "C10"
+			(at 133.35 77.4699 0)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
-				(justify left)
+				(justify right)
 			)
 		)
-		(property "Value" "1u"
-			(at 91.44 214.6299 0)
+		(property "Value" "100n"
+			(at 133.35 80.0099 0)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
-				(justify left)
+				(justify right)
 			)
 		)
-		(property "Footprint" ""
-			(at 88.5952 217.17 0)
+		(property "Footprint" "Capacitor_SMD:C_0603_1608Metric"
+			(at 138.1252 82.55 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -8921,8 +8948,8 @@
 				(hide yes)
 			)
 		)
-		(property "Datasheet" "~"
-			(at 87.63 213.36 0)
+		(property "Datasheet" "cate=luCeramicCapacitorsSMD&partno=GCJ188R71H104KA12%23"
+			(at 137.16 78.74 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -8931,7 +8958,43 @@
 			)
 		)
 		(property "Description" "Unpolarized capacitor"
-			(at 87.63 213.36 0)
+			(at 137.16 78.74 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "MFG" "YAGEO"
+			(at 137.16 78.74 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Digi PN" "311-1344-1-ND"
+			(at 137.16 78.74 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Digi URL" "https://www.digikey.com/en/products/detail/yageo/CC0603KRX7R9BB104/2103082"
+			(at 137.16 78.74 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "MFG PN" "CC0603KRX7R9BB104"
+			(at 137.16 78.74 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -8940,15 +9003,15 @@
 			)
 		)
 		(pin "1"
-			(uuid "48fb47df-1415-4dc2-807e-66e2bc7a22f1")
+			(uuid "4693ada0-ff7d-40e5-accb-1ec846ce6b53")
 		)
 		(pin "2"
-			(uuid "2eecae1e-2d4a-4819-9ddd-61038934bc81")
+			(uuid "914b2aab-4916-4cb8-b4a5-acacca11bf6d")
 		)
 		(instances
 			(project "chargingboard"
 				(path "/3b7f9d0d-fe78-4ddc-a74a-12564d0be65c/1fb407b6-2fa5-4dbf-a434-4b5bd0ba4814"
-					(reference "C28")
+					(reference "C10")
 					(unit 1)
 				)
 			)
@@ -9440,6 +9503,121 @@
 		)
 	)
 	(symbol
+		(lib_id "Device:C")
+		(at 87.63 213.36 0)
+		(mirror y)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "9625ee7d-df35-4ada-aa1a-d2511360d9b5")
+		(property "Reference" "C16"
+			(at 90.932 214.122 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+			)
+		)
+		(property "Value" "1u"
+			(at 90.678 216.154 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+			)
+		)
+		(property "Footprint" "Capacitor_SMD:C_0603_1608Metric"
+			(at 86.6648 217.17 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "https://mm.digikey.com/Volume0/opasdata/d220001/medias/docus/3584/CL10B105KP8NNNC_Spec.pdf"
+			(at 87.63 213.36 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Unpolarized capacitor"
+			(at 87.63 213.36 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Digi PN" "311-1445-1-ND"
+			(at 87.63 213.36 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Name" "CL10B105KP8NNNC"
+			(at 87.63 213.36 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Digi URL" "https://www.digikey.com/en/products/detail/yageo/CC0603KRX5R8BB105/2833610"
+			(at 87.63 213.36 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "MFG" "YAGEO"
+			(at 87.63 213.36 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "MFG PN" "CC0603KRX5R8BB105"
+			(at 87.63 213.36 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "2"
+			(uuid "617a84a3-4cad-4bd1-a822-c5b227b795a5")
+		)
+		(pin "1"
+			(uuid "06976174-b9f6-42bf-9ac3-6e0498d471f8")
+		)
+		(instances
+			(project "chargingboard"
+				(path "/3b7f9d0d-fe78-4ddc-a74a-12564d0be65c/1fb407b6-2fa5-4dbf-a434-4b5bd0ba4814"
+					(reference "C16")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
 		(lib_id "power:GND")
 		(at 100.33 251.46 0)
 		(unit 1)
@@ -9500,144 +9678,6 @@
 			(project "chargingboard"
 				(path "/3b7f9d0d-fe78-4ddc-a74a-12564d0be65c/1fb407b6-2fa5-4dbf-a434-4b5bd0ba4814"
 					(reference "#PWR064")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
-		(lib_id "Device:C")
-		(at 168.91 69.85 0)
-		(unit 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(dnp no)
-		(uuid "97e90f73-942f-4d68-86f4-12f3fc3cb8f6")
-		(property "Reference" "C25"
-			(at 171.45 67.818 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-		)
-		(property "Value" "100n"
-			(at 171.45 70.104 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-		)
-		(property "Footprint" ""
-			(at 169.8752 73.66 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Datasheet" "~"
-			(at 168.91 69.85 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Description" "Unpolarized capacitor"
-			(at 168.91 69.85 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(pin "1"
-			(uuid "25c340ec-2419-4153-9a5d-78d6ead42ac1")
-		)
-		(pin "2"
-			(uuid "3e2bdc02-8a42-4787-831c-ee323788fd92")
-		)
-		(instances
-			(project "chargingboard"
-				(path "/3b7f9d0d-fe78-4ddc-a74a-12564d0be65c/1fb407b6-2fa5-4dbf-a434-4b5bd0ba4814"
-					(reference "C25")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
-		(lib_id "Device:C")
-		(at 124.46 77.47 0)
-		(unit 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(dnp no)
-		(uuid "9d799990-3ab0-4fa7-9bb0-d1c31027b57e")
-		(property "Reference" "C9"
-			(at 120.396 76.2 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify right)
-			)
-		)
-		(property "Value" "100n"
-			(at 121.412 78.486 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify right)
-			)
-		)
-		(property "Footprint" ""
-			(at 125.4252 81.28 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Datasheet" "~"
-			(at 124.46 77.47 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Description" "Unpolarized capacitor"
-			(at 124.46 77.47 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(pin "1"
-			(uuid "ef933f94-0226-40df-84e2-ff23fccee707")
-		)
-		(pin "2"
-			(uuid "ae0d1026-4312-4f95-8cce-4992d8a99947")
-		)
-		(instances
-			(project "chargingboard"
-				(path "/3b7f9d0d-fe78-4ddc-a74a-12564d0be65c/1fb407b6-2fa5-4dbf-a434-4b5bd0ba4814"
-					(reference "C9")
 					(unit 1)
 				)
 			)
@@ -9768,6 +9808,111 @@
 			(project "chargingboard"
 				(path "/3b7f9d0d-fe78-4ddc-a74a-12564d0be65c/1fb407b6-2fa5-4dbf-a434-4b5bd0ba4814"
 					(reference "#PWR059")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Device:C")
+		(at 124.46 77.47 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "b14d6b1b-89ab-4bcf-8043-cf37b37ab9e2")
+		(property "Reference" "C9"
+			(at 120.65 76.1999 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+			)
+		)
+		(property "Value" "100n"
+			(at 120.65 78.7399 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+			)
+		)
+		(property "Footprint" "Capacitor_SMD:C_0603_1608Metric"
+			(at 125.4252 81.28 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "cate=luCeramicCapacitorsSMD&partno=GCJ188R71H104KA12%23"
+			(at 124.46 77.47 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Unpolarized capacitor"
+			(at 124.46 77.47 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "MFG" "YAGEO"
+			(at 124.46 77.47 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Digi PN" "311-1344-1-ND"
+			(at 124.46 77.47 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Digi URL" "https://www.digikey.com/en/products/detail/yageo/CC0603KRX7R9BB104/2103082"
+			(at 124.46 77.47 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "MFG PN" "CC0603KRX7R9BB104"
+			(at 124.46 77.47 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "c54a32b2-84b9-4d42-b8ec-114429acc0c2")
+		)
+		(pin "2"
+			(uuid "03952ee6-ddfe-40dd-8029-69d495e0f77a")
+		)
+		(instances
+			(project "chargingboard"
+				(path "/3b7f9d0d-fe78-4ddc-a74a-12564d0be65c/1fb407b6-2fa5-4dbf-a434-4b5bd0ba4814"
+					(reference "C9")
 					(unit 1)
 				)
 			)
@@ -9907,6 +10052,111 @@
 	)
 	(symbol
 		(lib_id "Device:C")
+		(at 182.88 81.28 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "bc42d05f-5d80-46c1-a0d6-82329e217105")
+		(property "Reference" "C15"
+			(at 179.07 80.0099 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+			)
+		)
+		(property "Value" "100n"
+			(at 179.07 82.5499 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+			)
+		)
+		(property "Footprint" "Capacitor_SMD:C_0603_1608Metric"
+			(at 183.8452 85.09 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "cate=luCeramicCapacitorsSMD&partno=GCJ188R71H104KA12%23"
+			(at 182.88 81.28 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Unpolarized capacitor"
+			(at 182.88 81.28 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "MFG" "YAGEO"
+			(at 182.88 81.28 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Digi PN" "311-1344-1-ND"
+			(at 182.88 81.28 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Digi URL" "https://www.digikey.com/en/products/detail/yageo/CC0603KRX7R9BB104/2103082"
+			(at 182.88 81.28 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "MFG PN" "CC0603KRX7R9BB104"
+			(at 182.88 81.28 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "3a16e2b3-bdd1-4cba-bfd5-c9af3fc4f583")
+		)
+		(pin "2"
+			(uuid "d0e9114b-1320-47df-92a4-0092c305b219")
+		)
+		(instances
+			(project "chargingboard"
+				(path "/3b7f9d0d-fe78-4ddc-a74a-12564d0be65c/1fb407b6-2fa5-4dbf-a434-4b5bd0ba4814"
+					(reference "C15")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Device:C")
 		(at 168.91 82.55 0)
 		(mirror y)
 		(unit 1)
@@ -9933,7 +10183,7 @@
 				(justify right)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "Capacitor_SMD:C_0603_1608Metric"
 			(at 167.9448 86.36 0)
 			(effects
 				(font
@@ -9942,7 +10192,7 @@
 				(hide yes)
 			)
 		)
-		(property "Datasheet" "~"
+		(property "Datasheet" "https://mm.digikey.com/Volume0/opasdata/d220001/medias/docus/3584/CL10B105KP8NNNC_Spec.pdf"
 			(at 168.91 82.55 0)
 			(effects
 				(font
@@ -9952,6 +10202,51 @@
 			)
 		)
 		(property "Description" "Unpolarized capacitor"
+			(at 168.91 82.55 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Digi PN" "311-1445-1-ND"
+			(at 168.91 82.55 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Name" "CL10B105KP8NNNC"
+			(at 168.91 82.55 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Digi URL" "https://www.digikey.com/en/products/detail/yageo/CC0603KRX5R8BB105/2833610"
+			(at 168.91 82.55 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "MFG" "YAGEO"
+			(at 168.91 82.55 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "MFG PN" "CC0603KRX5R8BB105"
 			(at 168.91 82.55 0)
 			(effects
 				(font
@@ -9970,76 +10265,6 @@
 			(project "chargingboard"
 				(path "/3b7f9d0d-fe78-4ddc-a74a-12564d0be65c/1fb407b6-2fa5-4dbf-a434-4b5bd0ba4814"
 					(reference "C26")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
-		(lib_id "Device:C")
-		(at 182.88 81.28 0)
-		(unit 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(dnp no)
-		(fields_autoplaced yes)
-		(uuid "c49d681b-a9ab-4496-992c-0b58bbf0de38")
-		(property "Reference" "C27"
-			(at 186.69 80.0099 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-		)
-		(property "Value" "100n"
-			(at 186.69 82.5499 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-		)
-		(property "Footprint" ""
-			(at 183.8452 85.09 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Datasheet" "~"
-			(at 182.88 81.28 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Description" "Unpolarized capacitor"
-			(at 182.88 81.28 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(pin "1"
-			(uuid "bb4d9ba5-ce13-49a8-a77e-8dfa7384e3cb")
-		)
-		(pin "2"
-			(uuid "5c88fd84-e4e6-4976-a861-0f20cdf06794")
-		)
-		(instances
-			(project "chargingboard"
-				(path "/3b7f9d0d-fe78-4ddc-a74a-12564d0be65c/1fb407b6-2fa5-4dbf-a434-4b5bd0ba4814"
-					(reference "C27")
 					(unit 1)
 				)
 			)
@@ -10177,6 +10402,111 @@
 		)
 	)
 	(symbol
+		(lib_id "Device:C")
+		(at 168.91 69.85 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "d9b48261-9f97-417a-91df-d4a6d80fac1e")
+		(property "Reference" "C14"
+			(at 165.1 68.5799 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+			)
+		)
+		(property "Value" "100n"
+			(at 165.1 71.1199 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+			)
+		)
+		(property "Footprint" "Capacitor_SMD:C_0603_1608Metric"
+			(at 169.8752 73.66 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "cate=luCeramicCapacitorsSMD&partno=GCJ188R71H104KA12%23"
+			(at 168.91 69.85 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Unpolarized capacitor"
+			(at 168.91 69.85 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "MFG" "YAGEO"
+			(at 168.91 69.85 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Digi PN" "311-1344-1-ND"
+			(at 168.91 69.85 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Digi URL" "https://www.digikey.com/en/products/detail/yageo/CC0603KRX7R9BB104/2103082"
+			(at 168.91 69.85 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "MFG PN" "CC0603KRX7R9BB104"
+			(at 168.91 69.85 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "5d2a1380-8539-4b6e-b02a-a3c59f94f72c")
+		)
+		(pin "2"
+			(uuid "b0c2d9e0-23a3-4a03-b551-55419825f9a1")
+		)
+		(instances
+			(project "chargingboard"
+				(path "/3b7f9d0d-fe78-4ddc-a74a-12564d0be65c/1fb407b6-2fa5-4dbf-a434-4b5bd0ba4814"
+					(reference "C14")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
 		(lib_id "power:GND")
 		(at 82.55 241.3 0)
 		(unit 1)
@@ -10261,7 +10591,7 @@
 				(justify left)
 			)
 		)
-		(property "Value" "5"
+		(property "Value" "4.99"
 			(at 102.87 248.9199 0)
 			(effects
 				(font
@@ -10270,7 +10600,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "Resistor_SMD:R_1210_3225Metric"
 			(at 98.552 247.65 90)
 			(effects
 				(font
@@ -10279,7 +10609,7 @@
 				(hide yes)
 			)
 		)
-		(property "Datasheet" "~"
+		(property "Datasheet" "https://www.koaspeer.com/pdfs/RK73H.pdf"
 			(at 100.33 247.65 0)
 			(effects
 				(font
@@ -10289,6 +10619,42 @@
 			)
 		)
 		(property "Description" "Resistor"
+			(at 100.33 247.65 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Digi PN" "2019-RK73H2ETTD4R99FCT-ND"
+			(at 100.33 247.65 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Digi URL" "https://www.digikey.com/en/products/detail/koa-speer-electronics-inc/RK73H2ETTD4R99F/10314482"
+			(at 100.33 247.65 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "MFG PN" ""
+			(at 100.33 247.65 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "MFG" ""
 			(at 100.33 247.65 0)
 			(effects
 				(font
