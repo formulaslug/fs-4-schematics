@@ -4800,16 +4800,6 @@
 	)
 	(wire
 		(pts
-			(xy 30.48 40.64) (xy 49.53 40.64)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "30a5597e-4954-4e1f-9d0d-4b59e68d2299")
-	)
-	(wire
-		(pts
 			(xy 204.47 123.19) (xy 204.47 127)
 		)
 		(stroke
@@ -4837,6 +4827,16 @@
 			(type default)
 		)
 		(uuid "37cb8a91-8dfb-4a1c-8d32-fac222734355")
+	)
+	(wire
+		(pts
+			(xy 363.22 220.98) (xy 378.46 220.98)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "3823d307-0f45-4674-8d50-c5cefa7c564c")
 	)
 	(wire
 		(pts
@@ -5297,6 +5297,16 @@
 			(type default)
 		)
 		(uuid "7f0281a9-9622-4290-96c9-4d4538629a4e")
+	)
+	(wire
+		(pts
+			(xy 363.22 218.44) (xy 382.27 218.44)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "7f414a4b-3c82-454a-9a44-2e6ac8d77848")
 	)
 	(wire
 		(pts
@@ -5870,16 +5880,6 @@
 	)
 	(wire
 		(pts
-			(xy 30.48 38.1) (xy 49.53 38.1)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "dd32f731-91a7-43d8-b867-52d1205407bd")
-	)
-	(wire
-		(pts
 			(xy 416.56 176.53) (xy 416.56 64.77)
 		)
 		(stroke
@@ -5927,6 +5927,16 @@
 			(type default)
 		)
 		(uuid "e81f29f3-b0fe-409d-b579-8e91c3756ca3")
+	)
+	(wire
+		(pts
+			(xy 361.95 209.55) (xy 381 209.55)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "e9156d87-963e-45f2-b5e8-812f2ac06a68")
 	)
 	(wire
 		(pts
@@ -6218,16 +6228,6 @@
 		)
 		(uuid "34a19cb1-fcdb-4ea4-a374-eda7a38edcbb")
 	)
-	(label "fan_1"
-		(at 49.53 38.1 180)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-			(justify right bottom)
-		)
-		(uuid "3aa0469b-eccf-470f-8440-219f2b35d02a")
-	)
 	(label "Control_Pilot_Filtered"
 		(at 281.94 121.92 180)
 		(effects
@@ -6337,16 +6337,6 @@
 			(justify right bottom)
 		)
 		(uuid "98b303db-baca-4140-b251-12334bc1a39c")
-	)
-	(label "fan_2"
-		(at 49.53 40.64 180)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-			(justify right bottom)
-		)
-		(uuid "9dbd34e7-f16e-48bf-83f8-2847bbe29768")
 	)
 	(label "CAN_L"
 		(at 49.53 55.88 180)
@@ -8564,6 +8554,73 @@
 		)
 	)
 	(symbol
+		(lib_id "power:+12V")
+		(at 381 209.55 270)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "53f88544-58e0-4672-813d-9812ee637a68")
+		(property "Reference" "#PWR031"
+			(at 377.19 209.55 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Value" "3v3"
+			(at 384.81 209.5499 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Footprint" ""
+			(at 381 209.55 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" ""
+			(at 381 209.55 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Power symbol creates a global label with name \"+12V\""
+			(at 381 209.55 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "44eea2b6-d584-43ab-ba03-1fa31881a6c3")
+		)
+		(instances
+			(project "chargingboard"
+				(path "/3b7f9d0d-fe78-4ddc-a74a-12564d0be65c"
+					(reference "#PWR031")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
 		(lib_id "power:GND")
 		(at 220.98 157.48 0)
 		(unit 1)
@@ -9034,7 +9091,7 @@
 	)
 	(symbol
 		(lib_id "power:GND")
-		(at 381 167.64 90)
+		(at 381 167.64 0)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
@@ -9043,7 +9100,7 @@
 		(fields_autoplaced yes)
 		(uuid "6767c34f-0af9-4157-99e6-e805f32bb71c")
 		(property "Reference" "#PWR02"
-			(at 387.35 167.64 0)
+			(at 381 173.99 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -9052,12 +9109,11 @@
 			)
 		)
 		(property "Value" "GND"
-			(at 384.81 167.6399 90)
+			(at 381 172.72 0)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
-				(justify right)
 			)
 		)
 		(property "Footprint" ""
@@ -9738,6 +9794,72 @@
 	)
 	(symbol
 		(lib_id "power:GND")
+		(at 382.27 218.44 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "846559fa-982c-456f-b95a-dda0bd3932c9")
+		(property "Reference" "#PWR032"
+			(at 382.27 224.79 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Value" "GND"
+			(at 382.27 223.52 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" ""
+			(at 382.27 218.44 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" ""
+			(at 382.27 218.44 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
+			(at 382.27 218.44 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "3ac760fd-ff17-4e01-bbe8-f9347863b9fe")
+		)
+		(instances
+			(project "chargingboard"
+				(path "/3b7f9d0d-fe78-4ddc-a74a-12564d0be65c"
+					(reference "#PWR032")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "power:GND")
 		(at 64.77 33.02 0)
 		(unit 1)
 		(exclude_from_sim no)
@@ -10085,6 +10207,81 @@
 		)
 	)
 	(symbol
+		(lib_id "Connector:Conn_01x02_Pin")
+		(at 356.87 209.55 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "9a4ee08d-0d48-4b8e-818f-1e6078edbf64")
+		(property "Reference" "J10"
+			(at 354.838 212.598 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "Screen Button"
+			(at 354.838 215.138 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" "Connector_Molex:Molex_Nano-Fit_105309-xx02_1x02_P2.50mm_Vertical"
+			(at 356.87 209.55 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 356.87 209.55 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Generic connector, single row, 01x02, script generated"
+			(at 356.87 209.55 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "part name" "CONN HEADER VERT 2POS 2.5MM"
+			(at 337.312 211.074 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "2"
+			(uuid "238f256d-1b40-4bca-a6ce-bb17f875df92")
+		)
+		(pin "1"
+			(uuid "cd8db777-c11a-416e-9058-5cd396ef1867")
+		)
+		(instances
+			(project "chargingboard"
+				(path "/3b7f9d0d-fe78-4ddc-a74a-12564d0be65c"
+					(reference "J10")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
 		(lib_id "power:+12V")
 		(at 381 165.1 270)
 		(unit 1)
@@ -10221,6 +10418,72 @@
 			(project "chargingboard"
 				(path "/3b7f9d0d-fe78-4ddc-a74a-12564d0be65c"
 					(reference "J5")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "power:GND")
+		(at 378.46 220.98 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "b65fedd1-3e80-4c50-925a-edb9b6fc5dbc")
+		(property "Reference" "#PWR033"
+			(at 378.46 227.33 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Value" "GND"
+			(at 378.46 226.06 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" ""
+			(at 378.46 220.98 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" ""
+			(at 378.46 220.98 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
+			(at 378.46 220.98 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "32e287cd-cbbe-4973-b509-8fb0f98e2768")
+		)
+		(instances
+			(project "chargingboard"
+				(path "/3b7f9d0d-fe78-4ddc-a74a-12564d0be65c"
+					(reference "#PWR033")
 					(unit 1)
 				)
 			)
@@ -10728,6 +10991,81 @@
 			(project ""
 				(path "/3b7f9d0d-fe78-4ddc-a74a-12564d0be65c"
 					(reference "#PWR03")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Connector:Conn_01x02_Pin")
+		(at 358.14 218.44 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "cc9bd411-e827-47ed-bb05-49c84f045d96")
+		(property "Reference" "J11"
+			(at 356.108 221.488 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "GLVshieldingground"
+			(at 356.108 224.028 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" "Connector_Molex:Molex_Nano-Fit_105309-xx02_1x02_P2.50mm_Vertical"
+			(at 358.14 218.44 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 358.14 218.44 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Generic connector, single row, 01x02, script generated"
+			(at 358.14 218.44 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "part name" "CONN HEADER VERT 2POS 2.5MM"
+			(at 338.582 219.964 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "2"
+			(uuid "a21f4170-e467-486d-8b30-bf0a903b54ee")
+		)
+		(pin "1"
+			(uuid "bb99221e-4bb9-40af-b005-25228a754b84")
+		)
+		(instances
+			(project "chargingboard"
+				(path "/3b7f9d0d-fe78-4ddc-a74a-12564d0be65c"
+					(reference "J11")
 					(unit 1)
 				)
 			)
