@@ -2263,6 +2263,170 @@
 			)
 			(embedded_fonts no)
 		)
+		(symbol "Device:R_Potentiometer_Trim"
+			(pin_names
+				(offset 1.016)
+				(hide yes)
+			)
+			(exclude_from_sim no)
+			(in_bom yes)
+			(on_board yes)
+			(property "Reference" "RV"
+				(at -4.445 0 90)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Value" "R_Potentiometer_Trim"
+				(at -2.54 0 90)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Footprint" ""
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "Datasheet" "~"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "Description" "Trim-potentiometer"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "ki_keywords" "resistor variable trimpot trimmer"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "ki_fp_filters" "Potentiometer*"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(symbol "R_Potentiometer_Trim_0_1"
+				(rectangle
+					(start 1.016 2.54)
+					(end -1.016 -2.54)
+					(stroke
+						(width 0.254)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy 1.524 0.762) (xy 1.524 -0.762)
+					)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy 2.54 0) (xy 1.524 0)
+					)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+			)
+			(symbol "R_Potentiometer_Trim_1_1"
+				(pin passive line
+					(at 0 3.81 270)
+					(length 1.27)
+					(name "1"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "1"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin passive line
+					(at 0 -3.81 90)
+					(length 1.27)
+					(name "3"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "3"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin passive line
+					(at 3.81 0 180)
+					(length 1.27)
+					(name "2"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "2"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+			)
+			(embedded_fonts no)
+		)
 		(symbol "Diode:1N4007"
 			(pin_numbers
 				(hide yes)
@@ -4319,174 +4483,6 @@
 					(at 0 -2.54 90)
 					(length 2.54)
 					(name "1"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-					(number "1"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-				)
-			)
-			(embedded_fonts no)
-		)
-		(symbol "Reference_Voltage:LM4040DBZ-3"
-			(pin_names
-				(offset 0.0254)
-				(hide yes)
-			)
-			(exclude_from_sim no)
-			(in_bom yes)
-			(on_board yes)
-			(property "Reference" "U"
-				(at 0 2.54 0)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-				)
-			)
-			(property "Value" "LM4040DBZ-3"
-				(at 0 -3.175 0)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-				)
-			)
-			(property "Footprint" "Package_TO_SOT_SMD:SOT-23"
-				(at 0 -5.08 0)
-				(effects
-					(font
-						(size 1.27 1.27)
-						(italic yes)
-					)
-					(hide yes)
-				)
-			)
-			(property "Datasheet" "http://www.ti.com/lit/ds/symlink/lm4040-n.pdf"
-				(at 0 0 0)
-				(effects
-					(font
-						(size 1.27 1.27)
-						(italic yes)
-					)
-					(hide yes)
-				)
-			)
-			(property "Description" "3.000V Precision Micropower Shunt Voltage Reference, SOT-23"
-				(at 0 0 0)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-					(hide yes)
-				)
-			)
-			(property "ki_keywords" "diode device voltage reference shunt"
-				(at 0 0 0)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-					(hide yes)
-				)
-			)
-			(property "ki_fp_filters" "SOT?23*"
-				(at 0 0 0)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-					(hide yes)
-				)
-			)
-			(symbol "LM4040DBZ-3_0_1"
-				(polyline
-					(pts
-						(xy -1.27 0) (xy 0 0) (xy 1.27 0)
-					)
-					(stroke
-						(width 0)
-						(type default)
-					)
-					(fill
-						(type none)
-					)
-				)
-				(polyline
-					(pts
-						(xy -1.27 -1.27) (xy 0.635 0) (xy -1.27 1.27) (xy -1.27 -1.27)
-					)
-					(stroke
-						(width 0.2032)
-						(type default)
-					)
-					(fill
-						(type none)
-					)
-				)
-				(polyline
-					(pts
-						(xy 0 -1.27) (xy 0.635 -1.27) (xy 0.635 1.27) (xy 1.27 1.27)
-					)
-					(stroke
-						(width 0.2032)
-						(type default)
-					)
-					(fill
-						(type none)
-					)
-				)
-			)
-			(symbol "LM4040DBZ-3_1_1"
-				(pin passive line
-					(at -3.81 0 0)
-					(length 2.54)
-					(name "A"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-					(number "2"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-				)
-				(pin no_connect line
-					(at -1.27 0 0)
-					(length 2.54)
-					(hide yes)
-					(name "NC"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-					(number "3"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-				)
-				(pin passive line
-					(at 3.81 0 180)
-					(length 2.54)
-					(name "K"
 						(effects
 							(font
 								(size 1.27 1.27)
@@ -7102,16 +7098,6 @@
 		)
 		(uuid "469b6fc2-4fcd-489c-8507-f69f2322c363")
 	)
-	(text "3V Zener"
-		(exclude_from_sim no)
-		(at 273.05 74.422 0)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-		)
-		(uuid "4b24d2b8-d2fa-458d-86d3-c2ec5ef5772c")
-	)
 	(text "RTM_OUT"
 		(exclude_from_sim no)
 		(at 374.396 127 0)
@@ -7468,12 +7454,6 @@
 		(uuid "30ffc7a8-4631-4339-9b08-b4bb63c3cc50")
 	)
 	(junction
-		(at 264.16 83.82)
-		(diameter 0)
-		(color 0 0 0 0)
-		(uuid "313e13d3-a524-4430-8425-20fab8c2adf3")
-	)
-	(junction
 		(at 247.65 120.65)
 		(diameter 0)
 		(color 0 0 0 0)
@@ -7502,12 +7482,6 @@
 		(diameter 0)
 		(color 0 0 0 0)
 		(uuid "4ec02db9-31ec-4c4b-bc99-ca9f1e590a49")
-	)
-	(junction
-		(at 241.3 55.88)
-		(diameter 0)
-		(color 0 0 0 0)
-		(uuid "6c4e2a01-767d-4371-98c1-2e164a7cb1a8")
 	)
 	(junction
 		(at 217.17 54.61)
@@ -7570,7 +7544,7 @@
 		(uuid "9c5ed701-3e64-42e9-ba3c-4b9b60c21f43")
 	)
 	(junction
-		(at 284.48 83.82)
+		(at 284.48 87.63)
 		(diameter 0)
 		(color 0 0 0 0)
 		(uuid "9dc4354e-a323-419d-aa76-896859badc1f")
@@ -7586,6 +7560,12 @@
 		(diameter 0)
 		(color 0 0 0 0)
 		(uuid "aa395cd0-585c-4695-ac9e-5ffcfbafbb38")
+	)
+	(junction
+		(at 266.7 87.63)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "acaff5b1-4170-4e79-b6cb-ca7ba3a931cf")
 	)
 	(junction
 		(at 138.43 134.62)
@@ -7610,6 +7590,12 @@
 		(diameter 0)
 		(color 0 0 0 0)
 		(uuid "c4dde7dd-a255-4da8-8bca-4a9738abc725")
+	)
+	(junction
+		(at 262.89 87.63)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "c55c9af0-afaf-4db2-80ae-488602754619")
 	)
 	(junction
 		(at 48.26 118.11)
@@ -7696,12 +7682,6 @@
 		(uuid "e7b3f3a1-2678-4452-914d-583cdbe56df4")
 	)
 	(junction
-		(at 273.05 76.2)
-		(diameter 0)
-		(color 0 0 0 0)
-		(uuid "ebfb2dba-4d08-4a96-adec-e47ee2ce2987")
-	)
-	(junction
 		(at 388.62 95.25)
 		(diameter 0)
 		(color 0 0 0 0)
@@ -7712,12 +7692,6 @@
 		(diameter 0)
 		(color 0 0 0 0)
 		(uuid "f6032092-be9c-417b-9b2f-52c71f9a1eb5")
-	)
-	(junction
-		(at 273.05 83.82)
-		(diameter 0)
-		(color 0 0 0 0)
-		(uuid "f76e8f85-1230-43d4-9904-2d5a9af2c39b")
 	)
 	(junction
 		(at 331.47 53.34)
@@ -8011,7 +7985,7 @@
 	)
 	(wire
 		(pts
-			(xy 241.3 55.88) (xy 241.3 58.42)
+			(xy 241.3 45.72) (xy 241.3 58.42)
 		)
 		(stroke
 			(width 0)
@@ -8051,7 +8025,7 @@
 	)
 	(wire
 		(pts
-			(xy 241.3 80.01) (xy 241.3 83.82)
+			(xy 241.3 80.01) (xy 241.3 87.63)
 		)
 		(stroke
 			(width 0)
@@ -8071,17 +8045,7 @@
 	)
 	(wire
 		(pts
-			(xy 241.3 55.88) (xy 250.19 55.88)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "18950934-1577-4cbd-b20e-3de6be1acf89")
-	)
-	(wire
-		(pts
-			(xy 264.16 83.82) (xy 241.3 83.82)
+			(xy 241.3 87.63) (xy 262.89 87.63)
 		)
 		(stroke
 			(width 0)
@@ -8091,7 +8055,7 @@
 	)
 	(wire
 		(pts
-			(xy 250.19 76.2) (xy 259.08 76.2)
+			(xy 247.65 71.12) (xy 259.08 71.12)
 		)
 		(stroke
 			(width 0)
@@ -8291,6 +8255,16 @@
 	)
 	(wire
 		(pts
+			(xy 266.7 87.63) (xy 284.48 87.63)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "3977e717-2d9a-40cd-a300-31725166abbf")
+	)
+	(wire
+		(pts
 			(xy 386.08 92.71) (xy 388.62 92.71)
 		)
 		(stroke
@@ -8308,6 +8282,16 @@
 			(type default)
 		)
 		(uuid "3b381574-6c09-40fc-9cf5-e100adca53a4")
+	)
+	(wire
+		(pts
+			(xy 278.13 73.66) (xy 279.4 73.66)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "3b7eafcd-9b63-488f-9257-66d92d6e3c48")
 	)
 	(wire
 		(pts
@@ -8358,16 +8342,6 @@
 			(type default)
 		)
 		(uuid "3e51fe18-1b23-4dbe-9d15-237562e46e1e")
-	)
-	(wire
-		(pts
-			(xy 264.16 83.82) (xy 273.05 83.82)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "3ece7adb-ffb8-471c-9732-060ec254eb10")
 	)
 	(wire
 		(pts
@@ -8468,6 +8442,16 @@
 			(type default)
 		)
 		(uuid "4d886e64-7b09-4c43-85c4-05b6ed026640")
+	)
+	(wire
+		(pts
+			(xy 259.08 71.12) (xy 259.08 72.39)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "4e26cf88-0952-4a79-9ae2-a543ad01967b")
 	)
 	(wire
 		(pts
@@ -8691,7 +8675,7 @@
 	)
 	(wire
 		(pts
-			(xy 284.48 83.82) (xy 298.45 83.82)
+			(xy 284.48 87.63) (xy 298.45 87.63)
 		)
 		(stroke
 			(width 0)
@@ -8718,6 +8702,16 @@
 			(type default)
 		)
 		(uuid "635c7bc6-d4d7-44e3-b7c4-6a0ee6b54c8b")
+	)
+	(wire
+		(pts
+			(xy 259.08 80.01) (xy 259.08 82.55)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "668d1820-e1b2-4e30-9e4f-daabfbdc9515")
 	)
 	(wire
 		(pts
@@ -8841,6 +8835,16 @@
 	)
 	(wire
 		(pts
+			(xy 262.89 87.63) (xy 266.7 87.63)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "75521850-668c-439c-9f1a-6195d53cf65f")
+	)
+	(wire
+		(pts
 			(xy 193.04 77.47) (xy 196.85 77.47)
 		)
 		(stroke
@@ -8871,7 +8875,7 @@
 	)
 	(wire
 		(pts
-			(xy 264.16 83.82) (xy 264.16 86.36)
+			(xy 262.89 87.63) (xy 262.89 90.17)
 		)
 		(stroke
 			(width 0)
@@ -9201,7 +9205,7 @@
 	)
 	(wire
 		(pts
-			(xy 284.48 78.74) (xy 284.48 83.82)
+			(xy 284.48 78.74) (xy 284.48 87.63)
 		)
 		(stroke
 			(width 0)
@@ -9301,7 +9305,7 @@
 	)
 	(wire
 		(pts
-			(xy 250.19 55.88) (xy 250.19 76.2)
+			(xy 247.65 55.88) (xy 247.65 71.12)
 		)
 		(stroke
 			(width 0)
@@ -9358,6 +9362,16 @@
 			(type default)
 		)
 		(uuid "a947b421-f3ae-44f3-bd5f-af9b960e09e0")
+	)
+	(wire
+		(pts
+			(xy 262.89 76.2) (xy 278.13 76.2)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "a9f366cb-50bd-4b12-ba89-1e2b0feaa4d9")
 	)
 	(wire
 		(pts
@@ -9501,7 +9515,7 @@
 	)
 	(wire
 		(pts
-			(xy 298.45 83.82) (xy 298.45 81.28)
+			(xy 298.45 87.63) (xy 298.45 81.28)
 		)
 		(stroke
 			(width 0)
@@ -9541,7 +9555,7 @@
 	)
 	(wire
 		(pts
-			(xy 279.4 76.2) (xy 279.4 73.66)
+			(xy 278.13 76.2) (xy 278.13 73.66)
 		)
 		(stroke
 			(width 0)
@@ -9638,16 +9652,6 @@
 			(type default)
 		)
 		(uuid "c752c6f7-5b37-4bb3-afd5-307b18660858")
-	)
-	(wire
-		(pts
-			(xy 266.7 76.2) (xy 273.05 76.2)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "c7fda866-e9a0-4f8b-87d1-82f1976ca428")
 	)
 	(wire
 		(pts
@@ -9761,16 +9765,6 @@
 	)
 	(wire
 		(pts
-			(xy 241.3 45.72) (xy 241.3 55.88)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "d2e79755-724d-4afa-9daf-b037fdc4071f")
-	)
-	(wire
-		(pts
 			(xy 46.99 123.19) (xy 50.8 123.19)
 		)
 		(stroke
@@ -9831,6 +9825,16 @@
 	)
 	(wire
 		(pts
+			(xy 266.7 82.55) (xy 266.7 87.63)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "dccddec0-34f7-4a5f-817b-fb3a62c6cb64")
+	)
+	(wire
+		(pts
 			(xy 50.8 137.16) (xy 63.5 137.16)
 		)
 		(stroke
@@ -9838,16 +9842,6 @@
 			(type default)
 		)
 		(uuid "dd28ae79-217a-470e-960e-31e0222b7df7")
-	)
-	(wire
-		(pts
-			(xy 273.05 83.82) (xy 284.48 83.82)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "dd54db31-1bc9-4280-b62c-9a536ca1d94a")
 	)
 	(wire
 		(pts
@@ -9878,16 +9872,6 @@
 			(type default)
 		)
 		(uuid "e16d073c-69a8-4a41-904b-b3b9b3de99ed")
-	)
-	(wire
-		(pts
-			(xy 273.05 76.2) (xy 279.4 76.2)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "e2b4b0e8-3254-408e-a082-a394e7abf745")
 	)
 	(wire
 		(pts
@@ -10489,7 +10473,7 @@
 	(netclass_flag ""
 		(length 2.54)
 		(shape round)
-		(at 264.16 95.25 0)
+		(at 281.94 95.25 0)
 		(fields_autoplaced yes)
 		(effects
 			(font
@@ -10499,7 +10483,7 @@
 		)
 		(uuid "ed865c17-fcfd-4126-b3df-77dee07a9801")
 		(property "Netclass" "20A"
-			(at 264.8585 92.71 0)
+			(at 282.6385 92.71 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -10508,7 +10492,7 @@
 			)
 		)
 		(property "Component Class" ""
-			(at -139.7 -10.16 0)
+			(at -121.92 -10.16 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -11658,7 +11642,8 @@
 	)
 	(symbol
 		(lib_id "Device:R")
-		(at 241.3 76.2 180)
+		(at 241.3 76.2 0)
+		(mirror x)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
@@ -11666,7 +11651,7 @@
 		(dnp no)
 		(uuid "099863c6-268d-4736-a584-680a31971d4b")
 		(property "Reference" "R11"
-			(at 243.84 74.9299 0)
+			(at 238.76 74.9299 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -11675,7 +11660,7 @@
 			)
 		)
 		(property "Value" "10k"
-			(at 243.84 77.4699 0)
+			(at 238.76 77.4699 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -11684,7 +11669,7 @@
 			)
 		)
 		(property "Footprint" "Resistor_SMD:R_0603_1608Metric_Pad0.98x0.95mm_HandSolder"
-			(at 243.078 76.2 90)
+			(at 239.522 76.2 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -15472,10 +15457,9 @@
 		(in_bom yes)
 		(on_board yes)
 		(dnp no)
-		(fields_autoplaced yes)
 		(uuid "50b5c5d4-8ce1-4974-b3df-01d99148cea5")
 		(property "Reference" "R1"
-			(at 243.84 60.9599 0)
+			(at 234.188 60.706 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -15483,8 +15467,8 @@
 				(justify left)
 			)
 		)
-		(property "Value" "24.9k"
-			(at 243.84 63.4999 0)
+		(property "Value" "39k"
+			(at 234.188 63.246 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -15519,7 +15503,7 @@
 				(hide yes)
 			)
 		)
-		(property "MFG PN" "RC0603FR-0724K9L"
+		(property "Digi PN" "311-39.0KHRCT-ND"
 			(at 241.3 62.23 0)
 			(effects
 				(font
@@ -15528,7 +15512,7 @@
 				(hide yes)
 			)
 		)
-		(property "Digi PN" "311-24.9KHRCT-ND"
+		(property "Digi URL" "https://www.digikey.com/en/products/detail/yageo/RC0603FR-0739KL/727195"
 			(at 241.3 62.23 0)
 			(effects
 				(font
@@ -15537,7 +15521,7 @@
 				(hide yes)
 			)
 		)
-		(property "Digi URL" "https://www.digikey.com/en/products/detail/yageo/RC0603FR-0724K9L/727080"
+		(property "MFG PN" "RC0603FR-0739KL"
 			(at 241.3 62.23 0)
 			(effects
 				(font
@@ -15547,105 +15531,6 @@
 			)
 		)
 		(property "MFG" "YAGEO"
-			(at 241.3 62.23 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Fuse Digikey" ""
-			(at 241.3 62.23 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Digikey Link" ""
-			(at 241.3 62.23 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "MANUFACTURER" ""
-			(at 241.3 62.23 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "MAXIMUM_PACKAGE_HEIGHT" ""
-			(at 241.3 62.23 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "MFP PN" ""
-			(at 241.3 62.23 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Manufacturer" ""
-			(at 241.3 62.23 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Manufacturer Part Number" ""
-			(at 241.3 62.23 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "PARTREV" ""
-			(at 241.3 62.23 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "PN" ""
-			(at 241.3 62.23 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Part Name" ""
-			(at 241.3 62.23 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "STANDARD" ""
 			(at 241.3 62.23 0)
 			(effects
 				(font
@@ -20021,208 +19906,6 @@
 		)
 	)
 	(symbol
-		(lib_id "Device:R")
-		(at 262.89 76.2 90)
-		(unit 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(dnp no)
-		(uuid "8219638b-732a-4101-ac7b-e7cb27fc1121")
-		(property "Reference" "R3"
-			(at 262.89 71.12 90)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Value" "100k"
-			(at 262.89 73.66 90)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Footprint" "Resistor_SMD:R_0603_1608Metric_Pad0.98x0.95mm_HandSolder"
-			(at 262.89 77.978 90)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Datasheet" "https://yageogroup.com/content/datasheet/asset/file/PYU-RC_GROUP_51_ROHS_L"
-			(at 262.89 76.2 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Description" "Resistor"
-			(at 262.89 76.2 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "MFG PN" "RC0603FR-13100KL"
-			(at 262.89 76.2 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Digi PN" "13-RC0603FR-13100KLCT-ND"
-			(at 262.89 76.2 90)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Digi URL" "https://www.digikey.com/en/products/detail/yageo/RC0603FR-13100KL/12756433?gclsrc=aw.ds&gad_source=1&gad_campaignid=20232005509&gbraid=0AAAAADrbLlj62eUKefenYV3jNQglQIEk-&gclid=Cj0KCQiAvtzLBhCPARIsALwhxdptvdkdfW_-_1zz0mO6n9rogZ4dIotwJTqh8foL60dNg2CEMbMd6t4aAtgTEALw_wcB"
-			(at 262.89 76.2 90)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "MFG" "YAGEO"
-			(at 262.89 76.2 90)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Fuse Digikey" ""
-			(at 262.89 76.2 90)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Digikey Link" ""
-			(at 262.89 76.2 90)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "MANUFACTURER" ""
-			(at 262.89 76.2 90)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "MAXIMUM_PACKAGE_HEIGHT" ""
-			(at 262.89 76.2 90)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "MFP PN" ""
-			(at 262.89 76.2 90)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Manufacturer" ""
-			(at 262.89 76.2 90)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Manufacturer Part Number" ""
-			(at 262.89 76.2 90)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "PARTREV" ""
-			(at 262.89 76.2 90)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "PN" ""
-			(at 262.89 76.2 90)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Part Name" ""
-			(at 262.89 76.2 90)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "STANDARD" ""
-			(at 262.89 76.2 90)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(pin "1"
-			(uuid "89d37798-e9ea-4195-adb9-ce4fc20e7a08")
-		)
-		(pin "2"
-			(uuid "4fb4dfc0-4828-4ec9-9b5c-727e88931933")
-		)
-		(instances
-			(project "Power Electronics Board"
-				(path "/89c18bc7-bebe-4d17-a6e8-3a2f210bf7f7"
-					(reference "R3")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
 		(lib_id "power:GND")
 		(at 193.04 86.36 0)
 		(unit 1)
@@ -20621,213 +20304,6 @@
 			(project ""
 				(path "/89c18bc7-bebe-4d17-a6e8-3a2f210bf7f7"
 					(reference "#PWR02")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
-		(lib_id "Reference_Voltage:LM4040DBZ-3")
-		(at 273.05 80.01 90)
-		(unit 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(dnp no)
-		(uuid "93bcbe91-b550-4644-9e15-2440b87cb5a4")
-		(property "Reference" "U2"
-			(at 275.336 85.598 90)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Value" "LM4040D30QDBZR"
-			(at 275.336 87.884 90)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Footprint" "Package_TO_SOT_SMD:SOT-23_Handsoldering"
-			(at 278.13 80.01 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-					(italic yes)
-				)
-				(hide yes)
-			)
-		)
-		(property "Datasheet" "http://www.ti.com/lit/ds/symlink/lm4040-n.pdf"
-			(at 273.05 80.01 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-					(italic yes)
-				)
-				(hide yes)
-			)
-		)
-		(property "Description" "3.000V Precision Micropower Shunt Voltage Reference, SOT-23"
-			(at 273.05 80.01 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "MFG PN" "LM4040D30QDBZR"
-			(at 273.05 80.01 90)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Digi PN" "296-20903-1-ND"
-			(at 273.05 80.01 90)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Digi URL" "https://www.digikey.com/en/products/detail/texas-instruments/LM4040D30QDBZR/1216509"
-			(at 273.05 80.01 90)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "MFG" "Texas Instruments"
-			(at 273.05 80.01 90)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Fuse Digikey" ""
-			(at 273.05 80.01 90)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Digikey Link" ""
-			(at 273.05 80.01 90)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "MANUFACTURER" ""
-			(at 273.05 80.01 90)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "MAXIMUM_PACKAGE_HEIGHT" ""
-			(at 273.05 80.01 90)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "MFP PN" ""
-			(at 273.05 80.01 90)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Manufacturer" ""
-			(at 273.05 80.01 90)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Manufacturer Part Number" ""
-			(at 273.05 80.01 90)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "PARTREV" ""
-			(at 273.05 80.01 90)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "PN" ""
-			(at 273.05 80.01 90)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Part Name" ""
-			(at 273.05 80.01 90)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "STANDARD" ""
-			(at 273.05 80.01 90)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(pin "1"
-			(uuid "22baafa8-2be7-4c9c-9598-131466d7397a")
-		)
-		(pin "2"
-			(uuid "622087e3-d449-4053-913b-244e53e6c585")
-		)
-		(pin "3"
-			(uuid "9ca4d9b8-1c7c-4897-a64a-198ecf5f76ec")
-		)
-		(instances
-			(project ""
-				(path "/89c18bc7-bebe-4d17-a6e8-3a2f210bf7f7"
-					(reference "U2")
 					(unit 1)
 				)
 			)
@@ -24116,6 +23592,114 @@
 		)
 	)
 	(symbol
+		(lib_id "Device:R_Potentiometer_Trim")
+		(at 259.08 76.2 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "c33a7db5-3d00-49ea-83de-5a3327c912a2")
+		(property "Reference" "RV1"
+			(at 256.54 74.9299 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+			)
+		)
+		(property "Value" "10K"
+			(at 256.54 77.216 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+			)
+		)
+		(property "Footprint" "FS_4_Global_Footprint_Library:TRIM_PV36W103C01B00"
+			(at 259.08 76.2 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "https://www.bourns.com/docs/Product-Datasheets/pv36.pdf"
+			(at 259.08 76.2 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Trim-potentiometer"
+			(at 259.08 76.2 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Digi PN" "118-PV36W103C01B00-ND"
+			(at 259.08 76.2 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Digi URL" "https://www.digikey.com/en/products/detail/bourns-inc/PV36W103C01B00/666502"
+			(at 259.08 76.2 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "MFG PN" "PV36W103C01B00"
+			(at 259.08 76.2 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "MFG" "Bourns Inc."
+			(at 259.08 76.2 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "2861c850-dce1-480b-ade8-76015b7a95b5")
+		)
+		(pin "3"
+			(uuid "fd87bcf1-a481-44f2-93f5-a9fbc33b3130")
+		)
+		(pin "2"
+			(uuid "8c48ae81-77d8-4803-af8e-6171febd5aa6")
+		)
+		(instances
+			(project ""
+				(path "/89c18bc7-bebe-4d17-a6e8-3a2f210bf7f7"
+					(reference "RV1")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
 		(lib_id "Relay:G2RL-1")
 		(at 162.56 177.8 180)
 		(unit 1)
@@ -24881,6 +24465,109 @@
 		)
 	)
 	(symbol
+		(lib_id "Device:R")
+		(at 262.89 82.55 90)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "cc26dead-ab79-4c93-9e9f-204a6373e1be")
+		(property "Reference" "R3"
+			(at 262.89 78.232 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "20k"
+			(at 262.89 80.518 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" "Resistor_SMD:R_0603_1608Metric"
+			(at 262.89 84.328 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "https://yageogroup.com/content/datasheet/asset/file/PYU-RC_GROUP_51_ROHS_L"
+			(at 262.89 82.55 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Resistor"
+			(at 262.89 82.55 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Digi PN" "311-20.0KLRCT-ND"
+			(at 262.89 82.55 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Digi URL" "https://www.digikey.com/en/products/detail/yageo/RC0402FR-0720KL/726557"
+			(at 262.89 82.55 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "MFG PN" "RC0402FR-0720KL"
+			(at 262.89 82.55 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "MFG" "YAGEO"
+			(at 262.89 82.55 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "d933fb16-c489-4a6e-8082-58568676bfda")
+		)
+		(pin "2"
+			(uuid "7cd5a516-f7c0-49ef-9175-30288d751b67")
+		)
+		(instances
+			(project ""
+				(path "/89c18bc7-bebe-4d17-a6e8-3a2f210bf7f7"
+					(reference "R3")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
 		(lib_id "power:GNDD")
 		(at 104.14 90.17 0)
 		(unit 1)
@@ -24940,6 +24627,72 @@
 			(project "Power Electronics Board"
 				(path "/89c18bc7-bebe-4d17-a6e8-3a2f210bf7f7"
 					(reference "#PWR026")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "power:+5V")
+		(at 247.65 55.88 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "d2c9849d-e4d6-4b3e-902a-449fc43dc3da")
+		(property "Reference" "#PWR037"
+			(at 247.65 59.69 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Value" "+5V_LV"
+			(at 244.094 50.8 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Footprint" ""
+			(at 247.65 55.88 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" ""
+			(at 247.65 55.88 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Power symbol creates a global label with name \"+5V\""
+			(at 247.65 55.88 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "3f31d080-974f-4489-89e2-cfa8c7237678")
+		)
+		(instances
+			(project "Power Electronics Board"
+				(path "/89c18bc7-bebe-4d17-a6e8-3a2f210bf7f7"
+					(reference "#PWR037")
 					(unit 1)
 				)
 			)
@@ -26688,7 +26441,7 @@
 	)
 	(symbol
 		(lib_id "power:GND")
-		(at 264.16 86.36 0)
+		(at 262.89 90.17 0)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
@@ -26696,7 +26449,7 @@
 		(dnp no)
 		(uuid "daef567c-f9e7-4a74-b0f2-c5e02fcd653c")
 		(property "Reference" "#PWR04"
-			(at 264.16 92.71 0)
+			(at 262.89 96.52 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -26705,7 +26458,7 @@
 			)
 		)
 		(property "Value" "GND"
-			(at 260.096 88.138 0)
+			(at 258.826 91.948 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -26713,7 +26466,7 @@
 			)
 		)
 		(property "Footprint" ""
-			(at 264.16 86.36 0)
+			(at 262.89 90.17 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -26722,7 +26475,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 264.16 86.36 0)
+			(at 262.89 90.17 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -26731,7 +26484,7 @@
 			)
 		)
 		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
-			(at 264.16 86.36 0)
+			(at 262.89 90.17 0)
 			(effects
 				(font
 					(size 1.27 1.27)
