@@ -178,21 +178,21 @@
 	(net 93 "unconnected-(U1-SPIM_SCLK-Pad14)")
 	(net 94 "/driver_power")
 	(net 95 "/SPI.MOSI")
-	(net 96 "unconnected-(U3-PB0-Pad13)")
-	(net 97 "unconnected-(U3-PB6-Pad29)")
+	(net 96 "Net-(U3-PA15)")
+	(net 97 "Net-(U3-PA10)")
 	(net 98 "/SPI.CLK")
-	(net 99 "unconnected-(U3-PB5-Pad28)")
-	(net 100 "unconnected-(U3-PB4-Pad27)")
-	(net 101 "unconnected-(U3-PA10-Pad20)")
+	(net 99 "Net-(U3-PA8)")
+	(net 100 "Net-(U3-PB6)")
+	(net 101 "Net-(U3-PB5)")
 	(net 102 "STLINK_SWO")
 	(net 103 "STLINK_SWCLK")
 	(net 104 "VCP_UART_TX")
 	(net 105 "/SPI.CS")
-	(net 106 "unconnected-(U3-PA15-Pad25)")
+	(net 106 "Net-(U3-PB4)")
 	(net 107 "/SPI.MISO")
 	(net 108 "VCP_UART_RX")
 	(net 109 "unconnected-(J1-Pin_15-Pad15)")
-	(net 110 "unconnected-(U3-PA8-Pad18)")
+	(net 110 "Net-(U3-PB0)")
 	(net 111 "STLINK_SWDIO")
 	(net 112 "unconnected-(U7-NC-Pad4)")
 	(net 113 "unconnected-(J1-Pin_14-Pad14)")
@@ -214,6 +214,109 @@
 	(net 129 "unconnected-(J1-Pin_22-Pad22)")
 	(net 130 "unconnected-(J1-Pin_23-Pad23)")
 	(net 131 "+3V3")
+	(footprint "TestPoint:TestPoint_Pad_D1.0mm"
+		(layer "F.Cu")
+		(uuid "00221e9e-ff8e-4e3c-bd7a-c6a05f051190")
+		(at 226.625 78.2)
+		(descr "SMD pad as test Point, diameter 1.0mm")
+		(tags "test point SMD pad")
+		(property "Reference" "TP1"
+			(at 0 -1.448 0)
+			(layer "F.SilkS")
+			(uuid "ba5144cc-4bb8-451b-b44a-1c0660e20bba")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "Value" "TestPoint"
+			(at 0 1.55 0)
+			(layer "F.Fab")
+			(uuid "63663c46-4e05-4f1a-972d-2ff88935ebec")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 0 0 0)
+			(unlocked yes)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "bca05f87-79e0-487d-aac4-5665b7532310")
+			(effects
+				(font
+					(size 1.27 1.27)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "Description" "test point"
+			(at 0 0 0)
+			(unlocked yes)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "fb608625-3b73-49bd-b338-5f5106dc7150")
+			(effects
+				(font
+					(size 1.27 1.27)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property ki_fp_filters "Pin* Test*")
+		(path "/0ed4583f-bf76-4111-8577-35b127e47e56")
+		(sheetname "/")
+		(sheetfile "chargingboard.kicad_sch")
+		(attr exclude_from_pos_files)
+		(fp_circle
+			(center 0 0)
+			(end 0 0.7)
+			(stroke
+				(width 0.12)
+				(type solid)
+			)
+			(fill no)
+			(layer "F.SilkS")
+			(uuid "fc47e133-4a80-4dff-ae1b-236904e0c04c")
+		)
+		(fp_circle
+			(center 0 0)
+			(end 1 0)
+			(stroke
+				(width 0.05)
+				(type solid)
+			)
+			(fill no)
+			(layer "F.CrtYd")
+			(uuid "d17484f3-9596-481c-b1dc-82d9d12d494b")
+		)
+		(fp_text user "${REFERENCE}"
+			(at 0 -1.45 0)
+			(layer "F.Fab")
+			(uuid "75168287-d9c7-4f59-9065-092cb76f726d")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
+		(pad "1" smd circle
+			(at 0 0)
+			(size 1 1)
+			(layers "F.Cu" "F.Mask")
+			(net 96 "Net-(U3-PA15)")
+			(pinfunction "1")
+			(pintype "passive")
+			(uuid "28724298-ebd6-4448-b3c5-05ffecf7da7e")
+		)
+		(embedded_fonts no)
+	)
 	(footprint "FS_4_Global_Footprint_Library:CDRH5D28NP-220NC"
 		(layer "F.Cu")
 		(uuid "017565bd-9767-44c3-9027-dc5da2151409")
@@ -232,7 +335,7 @@
 				)
 			)
 		)
-		(property "Value" "22u"
+		(property "Value" "22uF"
 			(at 7 6 90)
 			(unlocked yes)
 			(layer "F.Fab")
@@ -315,6 +418,32 @@
 			(layer "F.Fab")
 			(hide yes)
 			(uuid "0a30d766-4349-483c-9554-3fb9055eff9d")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "Digi PN" "308-2307-1-ND"
+			(at 0 0 90)
+			(unlocked yes)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "92a98662-73de-4693-b1af-ab67eadbe652")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "Digi URL" "https://www.digikey.com/en/products/detail/sumida-america-inc/CDRH5D28NP-220NC/1059509"
+			(at 0 0 90)
+			(unlocked yes)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "6777a277-6c96-49dc-9e40-03f76e6af611")
 			(effects
 				(font
 					(size 1 1)
@@ -1276,7 +1405,7 @@
 	(footprint "Inductor_SMD:L_0603_1608Metric_Pad1.05x0.95mm_HandSolder"
 		(layer "F.Cu")
 		(uuid "0b97eb9a-7815-48ec-a916-990b78198a93")
-		(at 264.125 47)
+		(at 245.375 66.5)
 		(descr "Inductor SMD 0603 (1608 Metric), square (rectangular) end terminal, IPC-7351 nominal with elongated pad for handsoldering. (Body size source: http://www.tortai-tech.com/upload/download/2011102023233369053.pdf), generated with kicad-footprint-generator")
 		(tags "inductor handsolder")
 		(property "Reference" "FB2"
@@ -1469,7 +1598,7 @@
 	(footprint "Connector_PinHeader_1.27mm:PinHeader_2x07_P1.27mm_Vertical_SMD"
 		(layer "F.Cu")
 		(uuid "0e83f83b-2aac-4d9d-bb8f-9fbf93e2206a")
-		(at 239.215 55.94)
+		(at 231.05 54.54)
 		(descr "surface-mounted straight pin header, 2x07, 1.27mm pitch, double rows")
 		(tags "Surface mounted pin header SMD 2x07 1.27mm double row")
 		(property "Reference" "J13"
@@ -2279,7 +2408,7 @@
 	(footprint "Package_TO_SOT_SMD:SOT-23-6"
 		(layer "F.Cu")
 		(uuid "1332f1ea-d769-43c0-963f-752c6358ac3c")
-		(at 187.915 67.195 90)
+		(at 172.5 73.5 90)
 		(descr "SOT, 6 Pin (JEDEC MO-178 Var AB https://www.jedec.org/document_search?search_api_views_fulltext=MO-178), generated with kicad-footprint-generator ipc_gullwing_generator.py")
 		(tags "SOT TO_SOT_SMD")
 		(property "Reference" "U6"
@@ -2324,6 +2453,32 @@
 			(effects
 				(font
 					(size 1.27 1.27)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "Digi PN" "AP3019AKTR-G1DICT-ND"
+			(at 0 0 90)
+			(unlocked yes)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "e3674812-3c44-4f48-a44d-017ffb089aad")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "Digi URL" "https://www.digikey.com/en/products/detail/diodes-incorporated/AP3019AKTR-G1/4470850"
+			(at 0 0 90)
+			(unlocked yes)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "fde20f09-0079-4c9b-9267-a8f9d6389612")
+			(effects
+				(font
+					(size 1 1)
 					(thickness 0.15)
 				)
 			)
@@ -3327,6 +3482,109 @@
 			)
 		)
 	)
+	(footprint "TestPoint:TestPoint_Pad_D1.0mm"
+		(layer "F.Cu")
+		(uuid "1b4830ff-8a23-4e66-a5dd-5c1ea88bc432")
+		(at 226.625 84.3)
+		(descr "SMD pad as test Point, diameter 1.0mm")
+		(tags "test point SMD pad")
+		(property "Reference" "TP3"
+			(at 0 -1.448 0)
+			(layer "F.SilkS")
+			(uuid "063db278-6f47-49b3-b260-e2cf1106f9e3")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "Value" "TestPoint"
+			(at 0 1.55 0)
+			(layer "F.Fab")
+			(uuid "b0732e69-1935-4188-b6da-6734604d273c")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 0 0 0)
+			(unlocked yes)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "925a9bc3-a482-40af-b8d0-f44808d58aaa")
+			(effects
+				(font
+					(size 1.27 1.27)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "Description" "test point"
+			(at 0 0 0)
+			(unlocked yes)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "05401ef8-146a-45cd-9bed-342db1174c97")
+			(effects
+				(font
+					(size 1.27 1.27)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property ki_fp_filters "Pin* Test*")
+		(path "/630ce1c5-2fd4-4e74-9b04-ed92e78c0f67")
+		(sheetname "/")
+		(sheetfile "chargingboard.kicad_sch")
+		(attr exclude_from_pos_files)
+		(fp_circle
+			(center 0 0)
+			(end 0 0.7)
+			(stroke
+				(width 0.12)
+				(type solid)
+			)
+			(fill no)
+			(layer "F.SilkS")
+			(uuid "50f2b8fc-5d95-4834-8b37-70045cf71dc4")
+		)
+		(fp_circle
+			(center 0 0)
+			(end 1 0)
+			(stroke
+				(width 0.05)
+				(type solid)
+			)
+			(fill no)
+			(layer "F.CrtYd")
+			(uuid "1f6d6d69-a520-4326-944b-de1dad74c1a9")
+		)
+		(fp_text user "${REFERENCE}"
+			(at 0 -1.45 0)
+			(layer "F.Fab")
+			(uuid "fab4e379-804b-407e-8918-f89d82a2db3d")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
+		(pad "1" smd circle
+			(at 0 0)
+			(size 1 1)
+			(layers "F.Cu" "F.Mask")
+			(net 99 "Net-(U3-PA8)")
+			(pinfunction "1")
+			(pintype "passive")
+			(uuid "368df7b2-cfb9-4b13-9c11-bfa82d95dab9")
+		)
+		(embedded_fonts no)
+	)
 	(footprint "Capacitor_SMD:C_0805_2012Metric_Pad1.18x1.45mm_HandSolder"
 		(layer "F.Cu")
 		(uuid "1ecf3347-d09f-4048-b774-882afee5d8d3")
@@ -3578,6 +3836,32 @@
 			(layer "F.Fab")
 			(hide yes)
 			(uuid "24901585-4004-4d2a-ad23-ab21486ea369")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "Digi PN" "SRP5030TA-4R7MCT-ND"
+			(at 0 0 270)
+			(unlocked yes)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "6bc72a29-d603-4c74-879b-b439463fd4cb")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "Digi URL" "https://www.digikey.com/en/products/detail/bourns-inc/SRP5030TA-4R7M/5429673"
+			(at 0 0 270)
+			(unlocked yes)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "2d397d54-80ce-4e68-a73c-1e75c28895c7")
 			(effects
 				(font
 					(size 1 1)
@@ -3909,6 +4193,19 @@
 			(layer "F.Fab")
 			(hide yes)
 			(uuid "fd124437-965b-4838-aa47-eedadfd6ca77")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "Digi URL" "https://www.digikey.com/en/products/detail/texas-instruments/ISO1044BDR/15856732"
+			(at 0 0 0)
+			(unlocked yes)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "70e15c22-d579-4a8a-a953-555d79b37a44")
 			(effects
 				(font
 					(size 1 1)
@@ -4425,7 +4722,7 @@
 	(footprint "Resistor_SMD:R_1210_3225Metric"
 		(layer "F.Cu")
 		(uuid "29171f3d-0b8a-4a5b-b281-34c0e00fe7a3")
-		(at 176 63.9625 90)
+		(at 172.5 69 90)
 		(descr "Resistor SMD 1210 (3225 Metric), square (rectangular) end terminal, IPC-7351 nominal, (Body size source: IPC-SM-782 page 72, https://www.pcb-3d.com/wordpress/wp-content/uploads/ipc-sm-782a_amendment_1_and_2.pdf), generated with kicad-footprint-generator")
 		(tags "resistor")
 		(property "Reference" "R2"
@@ -6645,6 +6942,32 @@
 				)
 			)
 		)
+		(property "Digi PN" "AP63205WU-7DICT-ND"
+			(at 0 0 180)
+			(unlocked yes)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "8e7581f8-353a-4b22-b00f-bf54d7a14159")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "Digi URL" "https://www.digikey.com/en/products/detail/diodes-incorporated/AP63205WU-7/9858424?s=N4IgTCBcDaIIIAUBsBmMAGArAdQKogF0BfIA"
+			(at 0 0 180)
+			(unlocked yes)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "8acbb081-89a3-46e0-b78f-cecebdc002f7")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
 		(property ki_fp_filters "TSOT?23*")
 		(path "/9393df9f-e4cb-4ea0-8c6f-0dede8193ab9")
 		(sheetname "/")
@@ -6938,6 +7261,109 @@
 			)
 		)
 	)
+	(footprint "TestPoint:TestPoint_Pad_D1.0mm"
+		(layer "F.Cu")
+		(uuid "43c8a26a-dbe1-4b9f-b5d4-545bdb1f7f26")
+		(at 226.625 81.25)
+		(descr "SMD pad as test Point, diameter 1.0mm")
+		(tags "test point SMD pad")
+		(property "Reference" "TP2"
+			(at 0 -1.448 0)
+			(layer "F.SilkS")
+			(uuid "055824ab-8ce9-4b1c-b5a2-59553a05be9c")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "Value" "TestPoint"
+			(at 0 1.55 0)
+			(layer "F.Fab")
+			(uuid "282f53fd-cae7-48d7-a73e-e1d88d232313")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 0 0 0)
+			(unlocked yes)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "b25d10c9-8d0e-4654-a54a-e9a8af488e70")
+			(effects
+				(font
+					(size 1.27 1.27)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "Description" "test point"
+			(at 0 0 0)
+			(unlocked yes)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "879d8b6c-e7e6-4eeb-8689-ad36d2f5f634")
+			(effects
+				(font
+					(size 1.27 1.27)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property ki_fp_filters "Pin* Test*")
+		(path "/a6470dc4-fa76-48b9-bdcb-54b3b79aba50")
+		(sheetname "/")
+		(sheetfile "chargingboard.kicad_sch")
+		(attr exclude_from_pos_files)
+		(fp_circle
+			(center 0 0)
+			(end 0 0.7)
+			(stroke
+				(width 0.12)
+				(type solid)
+			)
+			(fill no)
+			(layer "F.SilkS")
+			(uuid "7c97483c-c59b-434f-b012-34929e890387")
+		)
+		(fp_circle
+			(center 0 0)
+			(end 1 0)
+			(stroke
+				(width 0.05)
+				(type solid)
+			)
+			(fill no)
+			(layer "F.CrtYd")
+			(uuid "c0c22e40-e85c-49b2-8248-a4a4acc32f65")
+		)
+		(fp_text user "${REFERENCE}"
+			(at 0 -1.45 0)
+			(layer "F.Fab")
+			(uuid "160646b1-1c5b-4546-acc4-d42297d5bc10")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
+		(pad "1" smd circle
+			(at 0 0)
+			(size 1 1)
+			(layers "F.Cu" "F.Mask")
+			(net 97 "Net-(U3-PA10)")
+			(pinfunction "1")
+			(pintype "passive")
+			(uuid "d4e93550-3a01-40ff-911d-2653decf9f35")
+		)
+		(embedded_fonts no)
+	)
 	(footprint "Capacitor_SMD:C_0603_1608Metric"
 		(layer "F.Cu")
 		(uuid "4b3a8469-5cb8-447c-a0c6-e73a73a0d10a")
@@ -7173,7 +7599,7 @@
 	(footprint "Capacitor_SMD:C_0603_1608Metric_Pad1.08x0.95mm_HandSolder"
 		(layer "F.Cu")
 		(uuid "50b8a299-f0a2-4202-b974-21316452e8de")
-		(at 264.125 41.98)
+		(at 245.375 61.48)
 		(descr "Capacitor SMD 0603 (1608 Metric), square (rectangular) end terminal, IPC-7351 nominal with elongated pad for handsoldering. (Body size source: IPC-SM-782 page 76, https://www.pcb-3d.com/wordpress/wp-content/uploads/ipc-sm-782a_amendment_1_and_2.pdf), generated with kicad-footprint-generator")
 		(tags "capacitor handsolder")
 		(property "Reference" "C34"
@@ -7363,6 +7789,109 @@
 			)
 		)
 	)
+	(footprint "TestPoint:TestPoint_Pad_D1.0mm"
+		(layer "F.Cu")
+		(uuid "5da657dc-0328-49ef-adca-c4ddd3aefb80")
+		(at 229.675 81.25)
+		(descr "SMD pad as test Point, diameter 1.0mm")
+		(tags "test point SMD pad")
+		(property "Reference" "TP6"
+			(at 0 -1.448 0)
+			(layer "F.SilkS")
+			(uuid "f9a17f6f-b3cc-4227-95ba-9f81769a23f6")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "Value" "TestPoint"
+			(at 0 1.55 0)
+			(layer "F.Fab")
+			(uuid "48669468-8a61-4a73-91b4-6a490fa8cc33")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 0 0 0)
+			(unlocked yes)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "579851b4-cc02-46c3-80c1-868338c3e5c0")
+			(effects
+				(font
+					(size 1.27 1.27)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "Description" "test point"
+			(at 0 0 0)
+			(unlocked yes)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "276ccb52-83b0-434b-ac48-6982eda193ee")
+			(effects
+				(font
+					(size 1.27 1.27)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property ki_fp_filters "Pin* Test*")
+		(path "/2f5573fa-b83d-4c98-a71e-722dcb1e0a4d")
+		(sheetname "/")
+		(sheetfile "chargingboard.kicad_sch")
+		(attr exclude_from_pos_files)
+		(fp_circle
+			(center 0 0)
+			(end 0 0.7)
+			(stroke
+				(width 0.12)
+				(type solid)
+			)
+			(fill no)
+			(layer "F.SilkS")
+			(uuid "e2ad547d-d364-4589-a697-9ca8eeb51324")
+		)
+		(fp_circle
+			(center 0 0)
+			(end 1 0)
+			(stroke
+				(width 0.05)
+				(type solid)
+			)
+			(fill no)
+			(layer "F.CrtYd")
+			(uuid "893168b8-6680-492c-995d-934da0acb9df")
+		)
+		(fp_text user "${REFERENCE}"
+			(at 0 -1.45 0)
+			(layer "F.Fab")
+			(uuid "2e9b2f1f-30c8-40ce-b84f-cb5b6df6f2cc")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
+		(pad "1" smd circle
+			(at 0 0)
+			(size 1 1)
+			(layers "F.Cu" "F.Mask")
+			(net 106 "Net-(U3-PB4)")
+			(pinfunction "1")
+			(pintype "passive")
+			(uuid "20a55173-5d19-47b0-9851-2609fc19481d")
+		)
+		(embedded_fonts no)
+	)
 	(footprint "Diode_SMD:D_0805_2012Metric_Pad1.15x1.40mm_HandSolder"
 		(layer "F.Cu")
 		(uuid "606cb1ff-1a10-45c0-a394-8b471313e223")
@@ -7391,7 +7920,7 @@
 				)
 			)
 		)
-		(property "Datasheet" "~"
+		(property "Datasheet" "https://www.mccsemi.com/pdf/Products/SMD15PL-SMD1200PL(SOD-123FL).pdf"
 			(at 0 0 90)
 			(layer "F.Fab")
 			(hide yes)
@@ -7434,6 +7963,32 @@
 			(layer "F.Fab")
 			(hide yes)
 			(uuid "615fde7f-5ae9-4265-ba74-817a68e3c824")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "Digi PN" "SMD110PL-TPMSCT-ND"
+			(at 0 0 90)
+			(unlocked yes)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "3149fd34-d5d0-4c4c-b477-01543d7da112")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "Digi URL" "https://www.digikey.com/en/products/detail/mcc-micro-commercial-components/SMD110PL-TP/2698532"
+			(at 0 0 90)
+			(unlocked yes)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "e08281a6-a479-4f33-9369-3e3610d6bbc1")
 			(effects
 				(font
 					(size 1 1)
@@ -7797,6 +8352,32 @@
 			(effects
 				(font
 					(size 1.27 1.27)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "Digi PN" "576-4764-1-ND"
+			(at 0 0 180)
+			(unlocked yes)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "45efec07-4bb4-463c-9052-3ea5baef5f66")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "Digi URL" "https://www.digikey.com/en/products/detail/microchip-technology/MIC5504-3-3YM5-TR/4864018"
+			(at 0 0 180)
+			(unlocked yes)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "42ab1751-f5e3-452e-b235-fb9e03f74aba")
+			(effects
+				(font
+					(size 1 1)
 					(thickness 0.15)
 				)
 			)
@@ -8650,7 +9231,7 @@
 	(footprint "Capacitor_SMD:C_0603_1608Metric_Pad1.08x0.95mm_HandSolder"
 		(layer "F.Cu")
 		(uuid "6a0eb7bf-2812-450c-a0ed-bdbc0588c906")
-		(at 264.125 39.47)
+		(at 245.375 58.97)
 		(descr "Capacitor SMD 0603 (1608 Metric), square (rectangular) end terminal, IPC-7351 nominal with elongated pad for handsoldering. (Body size source: IPC-SM-782 page 76, https://www.pcb-3d.com/wordpress/wp-content/uploads/ipc-sm-782a_amendment_1_and_2.pdf), generated with kicad-footprint-generator")
 		(tags "capacitor handsolder")
 		(property "Reference" "C33"
@@ -9226,10 +9807,113 @@
 			)
 		)
 	)
+	(footprint "TestPoint:TestPoint_Pad_D1.0mm"
+		(layer "F.Cu")
+		(uuid "79e84e04-d55b-479e-bdc7-68c16337f40b")
+		(at 229.675 78.2)
+		(descr "SMD pad as test Point, diameter 1.0mm")
+		(tags "test point SMD pad")
+		(property "Reference" "TP5"
+			(at 0 -1.448 0)
+			(layer "F.SilkS")
+			(uuid "dfc50d49-70f8-432f-bae7-398fd8667b75")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "Value" "TestPoint"
+			(at 0 1.55 0)
+			(layer "F.Fab")
+			(uuid "306a889a-dfe5-442c-b8ff-327ab0541805")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 0 0 0)
+			(unlocked yes)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "fbf1dc7c-6dce-40d6-baea-31bcfe8a9388")
+			(effects
+				(font
+					(size 1.27 1.27)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "Description" "test point"
+			(at 0 0 0)
+			(unlocked yes)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "7fa95b9b-9b4c-4f7d-a3a6-24b5b21a5a26")
+			(effects
+				(font
+					(size 1.27 1.27)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property ki_fp_filters "Pin* Test*")
+		(path "/3657204e-43a7-423d-b6d5-778fdbf8bf82")
+		(sheetname "/")
+		(sheetfile "chargingboard.kicad_sch")
+		(attr exclude_from_pos_files)
+		(fp_circle
+			(center 0 0)
+			(end 0 0.7)
+			(stroke
+				(width 0.12)
+				(type solid)
+			)
+			(fill no)
+			(layer "F.SilkS")
+			(uuid "0a882412-cb3f-48b9-9b19-c5cf7cd75ffa")
+		)
+		(fp_circle
+			(center 0 0)
+			(end 1 0)
+			(stroke
+				(width 0.05)
+				(type solid)
+			)
+			(fill no)
+			(layer "F.CrtYd")
+			(uuid "5695d24d-60d9-4294-a8db-b5b4d7feeecf")
+		)
+		(fp_text user "${REFERENCE}"
+			(at 0 -1.45 0)
+			(layer "F.Fab")
+			(uuid "95d4d526-217b-44d0-a67a-e7917f722fef")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
+		(pad "1" smd circle
+			(at 0 0)
+			(size 1 1)
+			(layers "F.Cu" "F.Mask")
+			(net 101 "Net-(U3-PB5)")
+			(pinfunction "1")
+			(pintype "passive")
+			(uuid "576d28c6-53b6-48ff-8fdd-2f0e7c2a9502")
+		)
+		(embedded_fonts no)
+	)
 	(footprint "Capacitor_SMD:C_0603_1608Metric_Pad1.08x0.95mm_HandSolder"
 		(layer "F.Cu")
 		(uuid "7f21a621-e67e-404e-883c-cbadd3d32e4e")
-		(at 264.125 36.96)
+		(at 245.375 56.46)
 		(descr "Capacitor SMD 0603 (1608 Metric), square (rectangular) end terminal, IPC-7351 nominal with elongated pad for handsoldering. (Body size source: IPC-SM-782 page 76, https://www.pcb-3d.com/wordpress/wp-content/uploads/ipc-sm-782a_amendment_1_and_2.pdf), generated with kicad-footprint-generator")
 		(tags "capacitor handsolder")
 		(property "Reference" "C32"
@@ -9808,7 +10492,7 @@
 	(footprint "Capacitor_SMD:C_0603_1608Metric_Pad1.08x0.95mm_HandSolder"
 		(layer "F.Cu")
 		(uuid "85ab07bc-342b-4daf-83f6-c1ef2ba37299")
-		(at 264.125 34.45)
+		(at 245.375 53.95)
 		(descr "Capacitor SMD 0603 (1608 Metric), square (rectangular) end terminal, IPC-7351 nominal with elongated pad for handsoldering. (Body size source: IPC-SM-782 page 76, https://www.pcb-3d.com/wordpress/wp-content/uploads/ipc-sm-782a_amendment_1_and_2.pdf), generated with kicad-footprint-generator")
 		(tags "capacitor handsolder")
 		(property "Reference" "C31"
@@ -10307,7 +10991,7 @@
 				)
 			)
 		)
-		(property "Datasheet" "~"
+		(property "Datasheet" "https://www.te.com/commerce/DocumentDelivery/DDEController?Action=srchrtrv&DocNm=1773204-3&DocType=Data%20Sheet&DocLang=English&DocFormat=pdf&PartCntxt=4-2176338-3"
 			(at 0 0 90)
 			(layer "F.Fab")
 			(hide yes)
@@ -10327,6 +11011,32 @@
 			(effects
 				(font
 					(size 1.27 1.27)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "Digi PN" "A129840CT-ND"
+			(at 0 0 90)
+			(unlocked yes)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "291033c9-725f-49cd-8846-d07cd6d4aaac")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "Digi URL" "https://www.digikey.com/en/products/detail/te-connectivity-passive-product/CRGCQ1206F330K/8576442"
+			(at 0 0 90)
+			(unlocked yes)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "96d78b6f-29e4-4d4f-b0be-65edbc01c210")
+			(effects
+				(font
+					(size 1 1)
 					(thickness 0.15)
 				)
 			)
@@ -10423,7 +11133,7 @@
 	(footprint "Package_QFP:LQFP-32_7x7mm_P0.8mm"
 		(layer "F.Cu")
 		(uuid "974d9951-ccfa-4663-bb51-69b0be57c6bc")
-		(at 182.5 53.325)
+		(at 181.825 61.325)
 		(descr "LQFP, 32 Pin (https://www.nxp.com/docs/en/package-information/SOT358-1.pdf), generated with kicad-footprint-generator ipc_gullwing_generator.py")
 		(tags "LQFP QFP")
 		(property "Reference" "U3"
@@ -10969,9 +11679,9 @@
 			(size 0.5 1.5)
 			(layers "F.Cu" "F.Mask" "F.Paste")
 			(roundrect_rratio 0.25)
-			(net 96 "unconnected-(U3-PB0-Pad13)")
+			(net 110 "Net-(U3-PB0)")
 			(pinfunction "PB0")
-			(pintype "bidirectional+no_connect")
+			(pintype "bidirectional")
 			(uuid "218f8003-1157-4535-89a3-8072370f5ae1")
 		)
 		(pad "14" smd roundrect
@@ -11019,9 +11729,9 @@
 			(size 1.5 0.5)
 			(layers "F.Cu" "F.Mask" "F.Paste")
 			(roundrect_rratio 0.25)
-			(net 110 "unconnected-(U3-PA8-Pad18)")
+			(net 99 "Net-(U3-PA8)")
 			(pinfunction "PA8")
-			(pintype "bidirectional+no_connect")
+			(pintype "bidirectional")
 			(uuid "e9553413-3740-42c4-8ca6-d2295348ae94")
 		)
 		(pad "19" smd roundrect
@@ -11039,9 +11749,9 @@
 			(size 1.5 0.5)
 			(layers "F.Cu" "F.Mask" "F.Paste")
 			(roundrect_rratio 0.25)
-			(net 101 "unconnected-(U3-PA10-Pad20)")
+			(net 97 "Net-(U3-PA10)")
 			(pinfunction "PA10")
-			(pintype "bidirectional+no_connect")
+			(pintype "bidirectional")
 			(uuid "4d87e121-5df5-4404-956d-8424106f8a27")
 		)
 		(pad "21" smd roundrect
@@ -11089,9 +11799,9 @@
 			(size 0.5 1.5)
 			(layers "F.Cu" "F.Mask" "F.Paste")
 			(roundrect_rratio 0.25)
-			(net 106 "unconnected-(U3-PA15-Pad25)")
+			(net 96 "Net-(U3-PA15)")
 			(pinfunction "PA15")
-			(pintype "bidirectional+no_connect")
+			(pintype "bidirectional")
 			(uuid "9f7d7199-3637-4577-9f36-ee94d127a52b")
 		)
 		(pad "26" smd roundrect
@@ -11109,9 +11819,9 @@
 			(size 0.5 1.5)
 			(layers "F.Cu" "F.Mask" "F.Paste")
 			(roundrect_rratio 0.25)
-			(net 100 "unconnected-(U3-PB4-Pad27)")
+			(net 106 "Net-(U3-PB4)")
 			(pinfunction "PB4")
-			(pintype "bidirectional+no_connect")
+			(pintype "bidirectional")
 			(uuid "39ed7470-a1b1-4c68-b5c7-daf6a441eeaf")
 		)
 		(pad "28" smd roundrect
@@ -11119,9 +11829,9 @@
 			(size 0.5 1.5)
 			(layers "F.Cu" "F.Mask" "F.Paste")
 			(roundrect_rratio 0.25)
-			(net 99 "unconnected-(U3-PB5-Pad28)")
+			(net 101 "Net-(U3-PB5)")
 			(pinfunction "PB5")
-			(pintype "bidirectional+no_connect")
+			(pintype "bidirectional")
 			(uuid "374afd97-d3af-427b-a282-82a275e4a0c0")
 		)
 		(pad "29" smd roundrect
@@ -11129,9 +11839,9 @@
 			(size 0.5 1.5)
 			(layers "F.Cu" "F.Mask" "F.Paste")
 			(roundrect_rratio 0.25)
-			(net 97 "unconnected-(U3-PB6-Pad29)")
+			(net 100 "Net-(U3-PB6)")
 			(pinfunction "PB6")
-			(pintype "bidirectional+no_connect")
+			(pintype "bidirectional")
 			(uuid "246e9c41-e62f-41d0-882c-484d4ec7f861")
 		)
 		(pad "30" smd roundrect
@@ -11873,7 +12583,7 @@
 	(footprint "Capacitor_SMD:C_0603_1608Metric_Pad1.08x0.95mm_HandSolder"
 		(layer "F.Cu")
 		(uuid "9d1bf452-2e43-444b-b286-0362bfae0345")
-		(at 264.125 44.49)
+		(at 245.375 63.99)
 		(descr "Capacitor SMD 0603 (1608 Metric), square (rectangular) end terminal, IPC-7351 nominal with elongated pad for handsoldering. (Body size source: IPC-SM-782 page 76, https://www.pcb-3d.com/wordpress/wp-content/uploads/ipc-sm-782a_amendment_1_and_2.pdf), generated with kicad-footprint-generator")
 		(tags "capacitor handsolder")
 		(property "Reference" "C35"
@@ -12066,7 +12776,7 @@
 	(footprint "Button_Switch_SMD:SW_SPST_PTS647_Sx38"
 		(layer "F.Cu")
 		(uuid "9e8b5dac-3faa-4ddc-8930-577f8bca7153")
-		(at 201.6 76.625 90)
+		(at 203 80.5 90)
 		(descr "C&K Components SPST SMD PTS647 Series 4.5mm Tact Switch, 3.8mm Height, see https://www.ckswitches.com/media/2567/pts647.pdf")
 		(tags "SPST Button Switch")
 		(property "Reference" "SW1"
@@ -12169,7 +12879,6 @@
 				)
 			)
 		)
-		(path "/c5cb4397-1179-41e5-8988-7df53d9a950f")
 		(sheetname "/")
 		(sheetfile "chargingboard.kicad_sch")
 		(attr smd)
@@ -12571,7 +13280,7 @@
 				)
 			)
 		)
-		(property "Datasheet" "~"
+		(property "Datasheet" "https://www.te.com/commerce/DocumentDelivery/DDEController?Action=srchrtrv&DocNm=1773204-3&DocType=Data%20Sheet&DocLang=English&DocFormat=pdf&PartCntxt=4-2176338-3"
 			(at 0 0 90)
 			(layer "F.Fab")
 			(hide yes)
@@ -12591,6 +13300,32 @@
 			(effects
 				(font
 					(size 1.27 1.27)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "Digi PN" "A129840CT-ND"
+			(at 0 0 90)
+			(unlocked yes)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "df4bd9f7-5411-4d1a-ba1f-dce7f7549b9a")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "Digi URL" "https://www.digikey.com/en/products/detail/te-connectivity-passive-product/CRGCQ1206F330K/8576442"
+			(at 0 0 90)
+			(unlocked yes)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "6bd7d043-ded1-456f-966f-1ea8b0c293ea")
+			(effects
+				(font
+					(size 1 1)
 					(thickness 0.15)
 				)
 			)
@@ -13225,7 +13960,7 @@
 				)
 			)
 		)
-		(property "Datasheet" "~"
+		(property "Datasheet" "https://yageogroup.com/content/datasheet/asset/file/PYU-RC_GROUP_51_ROHS_L"
 			(at 0 0 0)
 			(layer "F.Fab")
 			(hide yes)
@@ -13245,6 +13980,32 @@
 			(effects
 				(font
 					(size 1.27 1.27)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "Digi PN" "311-499KFRCT-ND"
+			(at 0 0 0)
+			(unlocked yes)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "d0ce4587-6898-44a2-8794-ff5deec733ef")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "Digi URL" "https://www.digikey.com/en/products/detail/yageo/RC1206FR-07499KL/728945"
+			(at 0 0 0)
+			(unlocked yes)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "9f103125-6f3f-4998-a3e0-3879b970c938")
+			(effects
+				(font
+					(size 1 1)
 					(thickness 0.15)
 				)
 			)
@@ -13778,7 +14539,7 @@
 				)
 			)
 		)
-		(property "Datasheet" "~"
+		(property "Datasheet" "https://yageogroup.com/content/datasheet/asset/file/PYU-RC_GROUP_51_ROHS_L"
 			(at 0 0 90)
 			(layer "F.Fab")
 			(hide yes)
@@ -13798,6 +14559,32 @@
 			(effects
 				(font
 					(size 1.27 1.27)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "Digi PN" "311-866FRCT-ND"
+			(at 0 0 270)
+			(unlocked yes)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "55f9f09e-d2ad-4d3a-a952-9cd3cbf1a98b")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "Digi URL" "https://www.digikey.com/en/products/detail/yageo/RC1206FR-07866RL/729143"
+			(at 0 0 270)
+			(unlocked yes)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "0b346df4-50b5-4f9b-a1cd-f0cdd2fe36f3")
+			(effects
+				(font
+					(size 1 1)
 					(thickness 0.15)
 				)
 			)
@@ -13919,7 +14706,7 @@
 				)
 			)
 		)
-		(property "Datasheet" "~"
+		(property "Datasheet" "https://yageogroup.com/content/datasheet/asset/file/PYU-RC_GROUP_51_ROHS_L"
 			(at 0 0 0)
 			(layer "F.Fab")
 			(hide yes)
@@ -13939,6 +14726,32 @@
 			(effects
 				(font
 					(size 1.27 1.27)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "Digi PN" "311-330GRCT-ND"
+			(at 0 0 0)
+			(unlocked yes)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "faadcc33-9978-42bf-bfab-019bffa5b924")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "Digi URL" "https://www.digikey.com/en/products/detail/yageo/RC0603JR-07330RL/726769"
+			(at 0 0 0)
+			(unlocked yes)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "75391dcc-de03-40f9-a335-0bf62a3f09c7")
+			(effects
+				(font
+					(size 1 1)
 					(thickness 0.15)
 				)
 			)
@@ -14060,7 +14873,7 @@
 				)
 			)
 		)
-		(property "Datasheet" "~"
+		(property "Datasheet" "https://yageogroup.com/content/datasheet/asset/file/PYU-RC_GROUP_51_ROHS_L"
 			(at 0 0 0)
 			(layer "F.Fab")
 			(hide yes)
@@ -14080,6 +14893,32 @@
 			(effects
 				(font
 					(size 1.27 1.27)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "Digi PN" "311-1.6KERCT-ND "
+			(at 0 0 0)
+			(unlocked yes)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "e9ee2fff-1b9b-4f55-a6e8-bf5332898eb6")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "Digi URL" "https://www.digikey.com/en/products/detail/yageo/RC1206JR-071K6L/729201"
+			(at 0 0 0)
+			(unlocked yes)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "57a65e17-a0c8-4426-9d90-452408ff0a0e")
+			(effects
+				(font
+					(size 1 1)
 					(thickness 0.15)
 				)
 			)
@@ -14173,6 +15012,109 @@
 			)
 		)
 	)
+	(footprint "TestPoint:TestPoint_Pad_D1.0mm"
+		(layer "F.Cu")
+		(uuid "ba1f6a34-fdb2-49e7-9e15-e7ba9429cc3d")
+		(at 229.675 84.3)
+		(descr "SMD pad as test Point, diameter 1.0mm")
+		(tags "test point SMD pad")
+		(property "Reference" "TP7"
+			(at 0 -1.448 0)
+			(layer "F.SilkS")
+			(uuid "1cfe720f-f6b9-4d36-86e8-7c1856822062")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "Value" "TestPoint"
+			(at 0 1.55 0)
+			(layer "F.Fab")
+			(uuid "c89b2fa5-9e25-4f44-9376-8bad76342730")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 0 0 0)
+			(unlocked yes)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "a27017ba-29e0-4122-a6ee-c0410ffa1164")
+			(effects
+				(font
+					(size 1.27 1.27)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "Description" "test point"
+			(at 0 0 0)
+			(unlocked yes)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "9ca69529-a622-4aef-98bf-e8ee4642dd75")
+			(effects
+				(font
+					(size 1.27 1.27)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property ki_fp_filters "Pin* Test*")
+		(path "/19cbc8cf-77c2-428b-8b16-d7a74f9ef458")
+		(sheetname "/")
+		(sheetfile "chargingboard.kicad_sch")
+		(attr exclude_from_pos_files)
+		(fp_circle
+			(center 0 0)
+			(end 0 0.7)
+			(stroke
+				(width 0.12)
+				(type solid)
+			)
+			(fill no)
+			(layer "F.SilkS")
+			(uuid "6221115d-619e-4634-8932-aeb99a3a5d85")
+		)
+		(fp_circle
+			(center 0 0)
+			(end 1 0)
+			(stroke
+				(width 0.05)
+				(type solid)
+			)
+			(fill no)
+			(layer "F.CrtYd")
+			(uuid "47490391-2750-4fc1-8b41-d1d7f937b80d")
+		)
+		(fp_text user "${REFERENCE}"
+			(at 0 -1.45 0)
+			(layer "F.Fab")
+			(uuid "b2006029-77d1-4878-8f58-8fa0c0c5f055")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
+		(pad "1" smd circle
+			(at 0 0)
+			(size 1 1)
+			(layers "F.Cu" "F.Mask")
+			(net 110 "Net-(U3-PB0)")
+			(pinfunction "1")
+			(pintype "passive")
+			(uuid "6cbd285d-e251-4d3e-984d-1b1ebc07a66c")
+		)
+		(embedded_fonts no)
+	)
 	(footprint "Resistor_SMD:R_0805_2012Metric_Pad1.20x1.40mm_HandSolder"
 		(layer "F.Cu")
 		(uuid "bcb4f311-dad0-4102-9b06-d95aab7767cd")
@@ -14201,7 +15143,7 @@
 				)
 			)
 		)
-		(property "Datasheet" "~"
+		(property "Datasheet" "https://yageogroup.com/content/datasheet/asset/file/PYU-RC_GROUP_51_ROHS_L"
 			(at 0 0 90)
 			(layer "F.Fab")
 			(hide yes)
@@ -14221,6 +15163,32 @@
 			(effects
 				(font
 					(size 1.27 1.27)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "Digi PN" "311-200KGRCT-ND"
+			(at 0 0 90)
+			(unlocked yes)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "0c0578b5-4c80-4dfe-a44a-0af2b7f31847")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "Digi URL" "https://www.digikey.com/en/products/detail/yageo/RC0603JR-07200KL/726738"
+			(at 0 0 90)
+			(unlocked yes)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "01a49adf-0a0c-4614-9cdb-b4c368ab6da8")
+			(effects
+				(font
+					(size 1 1)
 					(thickness 0.15)
 				)
 			)
@@ -14506,6 +15474,109 @@
 				(xyz 0 0 0)
 			)
 		)
+	)
+	(footprint "TestPoint:TestPoint_Pad_D1.0mm"
+		(layer "F.Cu")
+		(uuid "d53b75dd-8264-4742-83ff-74e9b06ea48f")
+		(at 226.625 87.35)
+		(descr "SMD pad as test Point, diameter 1.0mm")
+		(tags "test point SMD pad")
+		(property "Reference" "TP4"
+			(at 0 -1.448 0)
+			(layer "F.SilkS")
+			(uuid "21c0c594-3f79-4df8-ac72-2bf5dd067f70")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "Value" "TestPoint"
+			(at 0 1.55 0)
+			(layer "F.Fab")
+			(uuid "f41da490-52ff-4d9f-b0ac-1968a382003a")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 0 0 0)
+			(unlocked yes)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "d746839f-5242-4eea-bab2-7ac9de8d0a86")
+			(effects
+				(font
+					(size 1.27 1.27)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "Description" "test point"
+			(at 0 0 0)
+			(unlocked yes)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "e9e09202-b12d-4f41-a1d1-a8bb8af0f337")
+			(effects
+				(font
+					(size 1.27 1.27)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property ki_fp_filters "Pin* Test*")
+		(path "/344dbfca-a279-4eb2-8a4f-1787a4d5a483")
+		(sheetname "/")
+		(sheetfile "chargingboard.kicad_sch")
+		(attr exclude_from_pos_files)
+		(fp_circle
+			(center 0 0)
+			(end 0 0.7)
+			(stroke
+				(width 0.12)
+				(type solid)
+			)
+			(fill no)
+			(layer "F.SilkS")
+			(uuid "1d6a5ae9-4d75-443a-8c79-393a22b2a6cf")
+		)
+		(fp_circle
+			(center 0 0)
+			(end 1 0)
+			(stroke
+				(width 0.05)
+				(type solid)
+			)
+			(fill no)
+			(layer "F.CrtYd")
+			(uuid "f39a0178-11fb-49fe-bbfe-6e170ca1f811")
+		)
+		(fp_text user "${REFERENCE}"
+			(at 0 -1.45 0)
+			(layer "F.Fab")
+			(uuid "dea436bd-6838-48dc-a1c3-4b6cb6e199bd")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
+		(pad "1" smd circle
+			(at 0 0)
+			(size 1 1)
+			(layers "F.Cu" "F.Mask")
+			(net 100 "Net-(U3-PB6)")
+			(pinfunction "1")
+			(pintype "passive")
+			(uuid "1690b20d-999c-4faf-ab95-74941f1a4227")
+		)
+		(embedded_fonts no)
 	)
 	(footprint "Connector_Molex:Molex_Nano-Fit_105309-xx02_1x02_P2.50mm_Vertical"
 		(layer "F.Cu")
@@ -16184,7 +17255,7 @@
 	(footprint "Package_DFN_QFN:VQFN-64-1EP_9x9mm_P0.5mm_EP7.15x7.15mm"
 		(layer "F.Cu")
 		(uuid "e3d8c3ae-940f-4052-b968-d8c8f7d2ebca")
-		(at 184.75 78.4375)
+		(at 177.9375 80.75)
 		(descr "VQFN, 64 Pin (http://ww1.microchip.com/downloads/en/DeviceDoc/64L_QFN_9x9_MR_C04-00149e.pdf), generated with kicad-footprint-generator ipc_noLead_generator.py")
 		(tags "VQFN NoLead")
 		(property "Reference" "U1"
@@ -16278,6 +17349,32 @@
 			(layer "F.Fab")
 			(hide yes)
 			(uuid "cf684093-2ee0-4413-a95f-3cd707077443")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "Digi PN" "2005-BT817Q-RCT-ND"
+			(at 0 0 0)
+			(unlocked yes)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "6ec0dc40-8546-4d88-a63c-22f6337f6615")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "Digi URL" "https://www.digikey.com/en/products/detail/bridgetek-pte-ltd/BT817Q-R/13242741"
+			(at 0 0 0)
+			(unlocked yes)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "bdc2679d-3a9f-4361-8fb9-3ec9b0c016dc")
 			(effects
 				(font
 					(size 1 1)
@@ -17334,7 +18431,7 @@
 	(footprint "Connector_FFC-FPC:Amphenol_F32Q-1A7x1-11040_1x40-1MP_P0.5mm_Horizontal"
 		(layer "F.Cu")
 		(uuid "e832da30-cdb4-496c-be0c-f7f9a0f6cd5b")
-		(at 166.6 80.75 -90)
+		(at 166.1 81.25 -90)
 		(descr "Amphenol F32Q/T FPC connector, 40 top-side contacts, 0.5mm pitch, SMT, https://cdn.amphenol-icc.com/media/wysiwyg/files/drawing/f32q-f32t.pdf")
 		(tags "F32T")
 		(property "Reference" "J9"
@@ -17359,7 +18456,7 @@
 				)
 			)
 		)
-		(property "Datasheet" ""
+		(property "Datasheet" "https://cdn.amphenol-cs.com/media/wysiwyg/files/documentation/datasheet/flex/ffc_fpc_050mm_f32d.pdf"
 			(at 0 0 90)
 			(layer "F.Fab")
 			(hide yes)
@@ -17379,6 +18476,32 @@
 			(effects
 				(font
 					(size 1.27 1.27)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "Digi PN" "609-F32D-1A7Y1-21040CT-ND"
+			(at 0 0 270)
+			(unlocked yes)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "d5225bd8-a2ff-4276-9fec-d9832e1414da")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "Digi URL" "https://www.digikey.com/en/products/detail/amphenol-cs-fci/F32D-1A7Y1-21040/11564657"
+			(at 0 0 270)
+			(unlocked yes)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "89a296a4-de67-4c75-98ed-bbea3ab9bd74")
+			(effects
+				(font
+					(size 1 1)
 					(thickness 0.15)
 				)
 			)
@@ -18097,7 +19220,7 @@
 				)
 			)
 		)
-		(property "Datasheet" "~"
+		(property "Datasheet" "https://yageogroup.com/content/datasheet/asset/file/PYU-RC_GROUP_51_ROHS_L"
 			(at 0 0 90)
 			(layer "F.Fab")
 			(hide yes)
@@ -18117,6 +19240,32 @@
 			(effects
 				(font
 					(size 1.27 1.27)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "Digi PN" "311-120LRCT-ND "
+			(at 0 0 270)
+			(unlocked yes)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "a6737eeb-6f23-49d7-9a07-bc296894e0f1")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "Digi URL" "https://www.digikey.com/en/products/detail/yageo/RC0402FR-07120RL/726535"
+			(at 0 0 270)
+			(unlocked yes)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "6aeb403a-16e7-4228-ba0f-b3c87611d45e")
+			(effects
+				(font
+					(size 1 1)
 					(thickness 0.15)
 				)
 			)
@@ -19271,8 +20420,8 @@
 		(layer "Edge.Cuts")
 		(uuid "8bf2cfba-13a2-4855-a5a6-97dec93c1f02")
 	)
-	(gr_text "${TITLE} ${REVISION}\n${COMPANY}\nFS-4\nDesigned by Mihir Bhagatwala\nAmber Huang \nAtul Pethe\nMathis Delombaerde\nTeddy Li\n"
-		(at 174.5 136 0)
+	(gr_text "${TITLE} ${REVISION}\n${COMPANY}\nFS-4 Charigng Board\nDesigned by Mihir Bhagatwala\nAmber Huang \nAtul Pethe\nMathis Delombaerde\nTeddy Li\n"
+		(at 195 99 0)
 		(layer "F.SilkS")
 		(uuid "566aae3d-2922-4c29-aa4a-2cebbbc25944")
 		(effects
@@ -19327,22 +20476,6 @@
 		(uuid "3b48c732-e074-4877-bebe-5e2d076e6cd9")
 	)
 	(segment
-		(start 186.47 41.8)
-		(end 188.043 43.373)
-		(width 0.2)
-		(layer "F.Cu")
-		(net 1)
-		(uuid "564366fd-b316-41c6-9f5e-5a72dac6aa71")
-	)
-	(segment
-		(start 188.043 43.373)
-		(end 211.2049 43.373)
-		(width 0.2)
-		(layer "F.Cu")
-		(net 1)
-		(uuid "79324d34-2992-4d61-93c8-dd6241bf46a2")
-	)
-	(segment
 		(start 208.5 77.25)
 		(end 212.66595 73.08405)
 		(width 0.2)
@@ -19357,14 +20490,6 @@
 		(layer "F.Cu")
 		(net 1)
 		(uuid "c0191041-2ea0-4eb2-8985-4b0df56af902")
-	)
-	(segment
-		(start 200.855848 44.599)
-		(end 200.3615 45.093348)
-		(width 1)
-		(layer "F.Cu")
-		(net 3)
-		(uuid "08f4ea87-44ee-4f56-9141-e1017aa6ebb9")
 	)
 	(segment
 		(start 208.575 48.75)
@@ -19415,28 +20540,12 @@
 		(uuid "3851d811-ea5f-4f0d-9017-1ded15dc51e3")
 	)
 	(segment
-		(start 186.838214 43.301)
-		(end 185.848265 43.301)
-		(width 1)
-		(layer "F.Cu")
-		(net 3)
-		(uuid "3c7029ef-10c9-4f82-b437-a53c68d4614b")
-	)
-	(segment
 		(start 206.506652 49.493348)
 		(end 206.1385 49.493348)
 		(width 1)
 		(layer "F.Cu")
 		(net 3)
 		(uuid "4e64b3b5-e73a-4816-9c5b-277db095270b")
-	)
-	(segment
-		(start 200.3615 45.093348)
-		(end 200.3615 45.749)
-		(width 1)
-		(layer "F.Cu")
-		(net 3)
-		(uuid "50e9bca7-78ba-4972-a908-dfdff558809e")
 	)
 	(segment
 		(start 203.0885 45.093348)
@@ -19455,28 +20564,12 @@
 		(uuid "789e8806-1264-4360-b60f-670d28d02334")
 	)
 	(segment
-		(start 185.848265 43.301)
-		(end 184.969 42.421735)
-		(width 1)
-		(layer "F.Cu")
-		(net 3)
-		(uuid "7f235933-be32-4dd5-874e-238980412655")
-	)
-	(segment
 		(start 205.576 47.943214)
 		(end 205.3635 47.730714)
 		(width 1)
 		(layer "F.Cu")
 		(net 3)
 		(uuid "81fce1d8-698d-465c-8e0b-60a084459e40")
-	)
-	(segment
-		(start 187.711214 44.174)
-		(end 186.838214 43.301)
-		(width 1)
-		(layer "F.Cu")
-		(net 3)
-		(uuid "82a69916-fa51-436b-bb82-e227b213844a")
 	)
 	(segment
 		(start 203.130848 46.499)
@@ -19519,44 +20612,12 @@
 		(uuid "986e00ea-42ba-4bd5-b8b3-4e97fe62d2c3")
 	)
 	(segment
-		(start 199.375844 44.174)
-		(end 187.711214 44.174)
-		(width 1)
-		(layer "F.Cu")
-		(net 3)
-		(uuid "a370b49e-ec56-4c39-b777-ce402fa749a9")
-	)
-	(segment
-		(start 199.926 45.749)
-		(end 199.926 44.724156)
-		(width 1)
-		(layer "F.Cu")
-		(net 3)
-		(uuid "aa37919c-ee25-4a5e-89dd-741dd3d0dcce")
-	)
-	(segment
 		(start 207.15 49.5)
 		(end 207.15 49.15)
 		(width 1)
 		(layer "F.Cu")
 		(net 3)
 		(uuid "aa60eee1-73bc-4a56-803d-c7a465417d65")
-	)
-	(segment
-		(start 184.969 41.8)
-		(end 184.18 41.8)
-		(width 1)
-		(layer "F.Cu")
-		(net 3)
-		(uuid "b90c759d-f41d-4f47-965f-4e4002a905d1")
-	)
-	(segment
-		(start 199.926 44.724156)
-		(end 199.375844 44.174)
-		(width 1)
-		(layer "F.Cu")
-		(net 3)
-		(uuid "c5219124-dc36-4b98-b03b-63fa891b2666")
 	)
 	(segment
 		(start 203.0885 46.541348)
@@ -19567,36 +20628,12 @@
 		(uuid "d29335eb-10e8-4218-8c30-ef02e0a62d7c")
 	)
 	(segment
-		(start 202.594152 44.599)
-		(end 200.855848 44.599)
-		(width 1)
-		(layer "F.Cu")
-		(net 3)
-		(uuid "dcb3e1c5-5ee0-4ed8-b848-a5c1e461d553")
-	)
-	(segment
-		(start 184.969 42.421735)
-		(end 184.969 41.8)
-		(width 1)
-		(layer "F.Cu")
-		(net 3)
-		(uuid "f325ae6e-3195-4092-885d-ad7a8ce37938")
-	)
-	(segment
 		(start 208.575 48.75)
 		(end 208.575 48.075)
 		(width 0.2)
 		(layer "F.Cu")
 		(net 3)
 		(uuid "f3e59650-4da3-4b72-9e3c-ca884ba245de")
-	)
-	(segment
-		(start 200.3615 45.749)
-		(end 199.926 45.749)
-		(width 1)
-		(layer "F.Cu")
-		(net 3)
-		(uuid "f4c84a07-1418-4f35-b4c5-8529524a8203")
 	)
 	(segment
 		(start 208.325 61)
@@ -19927,6 +20964,14 @@
 		(uuid "824ced81-7a23-4f24-9d66-8a004a6c49b8")
 	)
 	(segment
+		(start 199.926 44.724156)
+		(end 199.375844 44.174)
+		(width 1)
+		(layer "F.Cu")
+		(net 28)
+		(uuid "c5219124-dc36-4b98-b03b-63fa891b2666")
+	)
+	(segment
 		(start 201.725 46.55)
 		(end 199.5875 46.55)
 		(width 0.2)
@@ -19941,14 +20986,6 @@
 		(layer "F.Cu")
 		(net 28)
 		(uuid "ec0ee647-89e4-48bd-96e3-3f4bf817bc6f")
-	)
-	(segment
-		(start 188.76 41.8)
-		(end 189.911 42.951)
-		(width 0.2)
-		(layer "F.Cu")
-		(net 31)
-		(uuid "0a8d45bf-f3f4-4c14-8eec-d41f5e91b6a3")
 	)
 	(segment
 		(start 211.35 42.951)
@@ -19975,20 +21012,20 @@
 		(uuid "a74b7510-25a8-40db-8e77-604989a72ee9")
 	)
 	(segment
-		(start 189.911 42.951)
-		(end 211.35 42.951)
-		(width 0.2)
-		(layer "F.Cu")
-		(net 31)
-		(uuid "e4dbf516-d26c-4a0b-9792-88d65c3aca38")
-	)
-	(segment
 		(start 213.399 45)
 		(end 213.399 76.601)
 		(width 0.2)
 		(layer "F.Cu")
 		(net 31)
 		(uuid "fe141942-8535-4340-9057-d20afd354855")
+	)
+	(segment
+		(start 184.969 41.8)
+		(end 184.18 41.8)
+		(width 1)
+		(layer "F.Cu")
+		(net 124)
+		(uuid "b90c759d-f41d-4f47-965f-4e4002a905d1")
 	)
 	(embedded_fonts no)
 )
