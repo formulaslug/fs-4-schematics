@@ -7011,9 +7011,9 @@
 		)
 		(uuid "b7d1ac89-b115-40e6-a761-3cbaa31fb79f")
 	)
-	(text "12(10/10+24.9) = 3.438V\n10.47(10/10+24.9) = 3V\nCHANGE NOWWWWW\n"
+	(text "Trimmer Max: 5(20/30)=3.33v\nTrimmer Min: 5V"
 		(exclude_from_sim no)
-		(at 261.874 58.928 0)
+		(at 260.096 58.42 0)
 		(effects
 			(font
 				(size 1.016 1.016)
@@ -7184,12 +7184,6 @@
 		(uuid "2089de2c-13d0-4842-9020-f88c45efdd06")
 	)
 	(junction
-		(at 251.46 68.58)
-		(diameter 0)
-		(color 0 0 0 0)
-		(uuid "2c4212a6-3816-4ae2-9b34-ea44ad0836e8")
-	)
-	(junction
 		(at 294.64 181.61)
 		(diameter 0)
 		(color 0 0 0 0)
@@ -7332,6 +7326,12 @@
 		(diameter 0)
 		(color 0 0 0 0)
 		(uuid "ad3a4c15-39b7-405b-b832-21d6318348bd")
+	)
+	(junction
+		(at 250.19 68.58)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "b60bbeca-28fa-4587-949c-5e74fb52f8de")
 	)
 	(junction
 		(at 325.12 181.61)
@@ -8733,6 +8733,16 @@
 	)
 	(wire
 		(pts
+			(xy 250.19 68.58) (xy 279.4 68.58)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "80790ef6-605c-40ec-8ec5-57d08268ea25")
+	)
+	(wire
+		(pts
 			(xy 294.64 181.61) (xy 302.26 181.61)
 		)
 		(stroke
@@ -9283,16 +9293,6 @@
 	)
 	(wire
 		(pts
-			(xy 251.46 68.58) (xy 279.4 68.58)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "bc901c15-6b14-487c-819d-d3a4d25fb788")
-	)
-	(wire
-		(pts
 			(xy 354.33 198.12) (xy 354.33 201.93)
 		)
 		(stroke
@@ -9423,7 +9423,7 @@
 	)
 	(wire
 		(pts
-			(xy 241.3 68.58) (xy 251.46 68.58)
+			(xy 241.3 68.58) (xy 250.19 68.58)
 		)
 		(stroke
 			(width 0)
@@ -12271,7 +12271,7 @@
 	)
 	(symbol
 		(lib_id "Connector:TestPoint")
-		(at 251.46 68.58 0)
+		(at 250.19 68.58 0)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom no)
@@ -12279,7 +12279,7 @@
 		(dnp no)
 		(uuid "18cbfc65-8cfd-4abe-91b4-fc89a920e017")
 		(property "Reference" "TP6"
-			(at 252.984 64.008 0)
+			(at 251.714 64.008 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -12287,8 +12287,8 @@
 				(justify left)
 			)
 		)
-		(property "Value" "3.4V @ 12V ~ 3V @ 10.47V"
-			(at 252.984 66.548 0)
+		(property "Value" "2.44V @ 12V ~ 2.04V @ 10V"
+			(at 251.714 66.548 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -12297,7 +12297,7 @@
 			)
 		)
 		(property "Footprint" "TestPoint:TestPoint_Pad_1.0x1.0mm"
-			(at 256.54 68.58 0)
+			(at 255.27 68.58 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -12306,7 +12306,7 @@
 			)
 		)
 		(property "Datasheet" "~"
-			(at 256.54 68.58 0)
+			(at 255.27 68.58 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -12315,7 +12315,7 @@
 			)
 		)
 		(property "Description" "test point"
-			(at 251.46 68.58 0)
+			(at 250.19 68.58 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -12324,7 +12324,7 @@
 			)
 		)
 		(property "Fuse Digikey" ""
-			(at 251.46 68.58 0)
+			(at 250.19 68.58 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -12333,7 +12333,7 @@
 			)
 		)
 		(property "Digikey Link" ""
-			(at 251.46 68.58 0)
+			(at 250.19 68.58 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -12342,7 +12342,7 @@
 			)
 		)
 		(property "MANUFACTURER" ""
-			(at 251.46 68.58 0)
+			(at 250.19 68.58 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -12351,7 +12351,7 @@
 			)
 		)
 		(property "MAXIMUM_PACKAGE_HEIGHT" ""
-			(at 251.46 68.58 0)
+			(at 250.19 68.58 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -12360,7 +12360,7 @@
 			)
 		)
 		(property "MFP PN" ""
-			(at 251.46 68.58 0)
+			(at 250.19 68.58 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -12369,7 +12369,7 @@
 			)
 		)
 		(property "Manufacturer" ""
-			(at 251.46 68.58 0)
+			(at 250.19 68.58 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -12378,7 +12378,7 @@
 			)
 		)
 		(property "Manufacturer Part Number" ""
-			(at 251.46 68.58 0)
+			(at 250.19 68.58 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -12387,7 +12387,7 @@
 			)
 		)
 		(property "PARTREV" ""
-			(at 251.46 68.58 0)
+			(at 250.19 68.58 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -12396,7 +12396,7 @@
 			)
 		)
 		(property "PN" ""
-			(at 251.46 68.58 0)
+			(at 250.19 68.58 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -12405,7 +12405,7 @@
 			)
 		)
 		(property "Part Name" ""
-			(at 251.46 68.58 0)
+			(at 250.19 68.58 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -12414,7 +12414,7 @@
 			)
 		)
 		(property "STANDARD" ""
-			(at 251.46 68.58 0)
+			(at 250.19 68.58 0)
 			(effects
 				(font
 					(size 1.27 1.27)
