@@ -214,6 +214,169 @@
 			)
 			(embedded_fonts no)
 		)
+		(symbol "Connector:Conn_01x02_Pin"
+			(pin_names
+				(offset 1.016)
+				(hide yes)
+			)
+			(exclude_from_sim no)
+			(in_bom yes)
+			(on_board yes)
+			(property "Reference" "J"
+				(at 0 2.54 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Value" "Conn_01x02_Pin"
+				(at 0 -5.08 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Footprint" ""
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "Datasheet" "~"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "Description" "Generic connector, single row, 01x02, script generated"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "ki_locked" ""
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "ki_keywords" "connector"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "ki_fp_filters" "Connector*:*_1x??_*"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(symbol "Conn_01x02_Pin_1_1"
+				(rectangle
+					(start 0.8636 0.127)
+					(end 0 -0.127)
+					(stroke
+						(width 0.1524)
+						(type default)
+					)
+					(fill
+						(type outline)
+					)
+				)
+				(rectangle
+					(start 0.8636 -2.413)
+					(end 0 -2.667)
+					(stroke
+						(width 0.1524)
+						(type default)
+					)
+					(fill
+						(type outline)
+					)
+				)
+				(polyline
+					(pts
+						(xy 1.27 0) (xy 0.8636 0)
+					)
+					(stroke
+						(width 0.1524)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy 1.27 -2.54) (xy 0.8636 -2.54)
+					)
+					(stroke
+						(width 0.1524)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(pin passive line
+					(at 5.08 0 180)
+					(length 3.81)
+					(name "Pin_1"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "1"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin passive line
+					(at 5.08 -2.54 180)
+					(length 3.81)
+					(name "Pin_2"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "2"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+			)
+			(embedded_fonts no)
+		)
 		(symbol "Connector:Raspberry_Pi_4"
 			(exclude_from_sim no)
 			(in_bom yes)
@@ -4544,7 +4707,7 @@
 	)
 	(text "There ARE two diodes in series in \nthe normal bypass path, but that's\nfine and does not result in current\nflowing through the charger because\nthe maximum charged voltage is lower."
 		(exclude_from_sim no)
-		(at 184.912 29.21 0)
+		(at 171.958 24.384 0)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -4683,7 +4846,7 @@
 		(at 240.03 36.83)
 		(diameter 0)
 		(color 0 0 0 0)
-		(uuid "6f9f33d3-b7d8-4f45-9648-54b63cb94ae5")
+		(uuid "6e9a6371-dd17-492f-9093-4dabdbb8035a")
 	)
 	(junction
 		(at 356.87 40.64)
@@ -4867,7 +5030,7 @@
 	)
 	(wire
 		(pts
-			(xy 205.74 36.83) (xy 228.6 36.83)
+			(xy 205.74 36.83) (xy 217.17 36.83)
 		)
 		(stroke
 			(width 0)
@@ -4927,16 +5090,6 @@
 	)
 	(wire
 		(pts
-			(xy 236.22 36.83) (xy 240.03 36.83)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "10795435-ef1f-4208-a5e9-5f61c80007ad")
-	)
-	(wire
-		(pts
 			(xy 334.01 40.64) (xy 331.47 40.64)
 		)
 		(stroke
@@ -4987,7 +5140,7 @@
 	)
 	(wire
 		(pts
-			(xy 228.6 30.48) (xy 224.79 30.48)
+			(xy 217.17 30.48) (xy 213.36 30.48)
 		)
 		(stroke
 			(width 0)
@@ -5037,7 +5190,7 @@
 	)
 	(wire
 		(pts
-			(xy 236.22 30.48) (xy 240.03 30.48)
+			(xy 224.79 30.48) (xy 240.03 30.48)
 		)
 		(stroke
 			(width 0)
@@ -5247,7 +5400,7 @@
 	)
 	(wire
 		(pts
-			(xy 224.79 30.48) (xy 224.79 29.21)
+			(xy 213.36 30.48) (xy 213.36 29.21)
 		)
 		(stroke
 			(width 0)
@@ -5314,6 +5467,16 @@
 			(type default)
 		)
 		(uuid "52908466-8e53-433f-aa6c-0ad7c1e28688")
+	)
+	(wire
+		(pts
+			(xy 224.79 36.83) (xy 229.87 36.83)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "563dbd27-f66f-41d9-aad9-be2430124a31")
 	)
 	(wire
 		(pts
@@ -6204,6 +6367,16 @@
 			(type default)
 		)
 		(uuid "cfb79d6a-1819-4f45-8274-705d3a3c8490")
+	)
+	(wire
+		(pts
+			(xy 232.41 36.83) (xy 240.03 36.83)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "d2128b06-87c0-4b2c-b538-022b282f91bf")
 	)
 	(wire
 		(pts
@@ -7597,7 +7770,7 @@
 	)
 	(symbol
 		(lib_id "Device:D_Shockley")
-		(at 232.41 36.83 180)
+		(at 220.98 36.83 180)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
@@ -7605,7 +7778,7 @@
 		(dnp no)
 		(uuid "07ca8aa7-afbf-48c9-82f4-4a15c69be165")
 		(property "Reference" "D2"
-			(at 232.41 40.894 0)
+			(at 220.98 40.894 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -7613,7 +7786,7 @@
 			)
 		)
 		(property "Value" "D_Shockley"
-			(at 232.41 38.862 0)
+			(at 220.98 38.862 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -7621,7 +7794,7 @@
 			)
 		)
 		(property "Footprint" "Diode_SMD:D_0805_2012Metric"
-			(at 232.41 36.83 0)
+			(at 220.98 36.83 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -7630,7 +7803,7 @@
 			)
 		)
 		(property "Datasheet" "~"
-			(at 232.41 36.83 0)
+			(at 220.98 36.83 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -7639,7 +7812,7 @@
 			)
 		)
 		(property "Description" "Shockley (PNPN) diode"
-			(at 232.41 36.83 0)
+			(at 220.98 36.83 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -7664,7 +7837,7 @@
 	)
 	(symbol
 		(lib_id "power:+12V")
-		(at 224.79 29.21 0)
+		(at 213.36 29.21 0)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
@@ -7673,7 +7846,7 @@
 		(fields_autoplaced yes)
 		(uuid "0df43174-2152-41dd-a14a-3557649c8537")
 		(property "Reference" "#PWR06"
-			(at 224.79 33.02 0)
+			(at 213.36 33.02 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -7682,7 +7855,7 @@
 			)
 		)
 		(property "Value" "+12V"
-			(at 224.79 24.13 0)
+			(at 213.36 24.13 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -7690,7 +7863,7 @@
 			)
 		)
 		(property "Footprint" ""
-			(at 224.79 29.21 0)
+			(at 213.36 29.21 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -7699,7 +7872,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 224.79 29.21 0)
+			(at 213.36 29.21 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -7708,7 +7881,7 @@
 			)
 		)
 		(property "Description" "Power symbol creates a global label with name \"+12V\""
-			(at 224.79 29.21 0)
+			(at 213.36 29.21 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -8821,6 +8994,75 @@
 			(project "Telemetry-Logging-Board"
 				(path "/5c64cdbc-39cd-49c8-9a12-12e4867a5d0b"
 					(reference "D5")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Connector:Conn_01x02_Pin")
+		(at 229.87 41.91 90)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "5b7f4f07-fb88-4863-8079-bf18a761f1e5")
+		(property "Reference" "J4"
+			(at 233.68 40.0049 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+			)
+		)
+		(property "Value" "BATT_CO"
+			(at 228.854 43.434 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+			)
+		)
+		(property "Footprint" "Connector_PinHeader_2.54mm:PinHeader_1x02_P2.54mm_Vertical"
+			(at 229.87 41.91 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 229.87 41.91 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Generic connector, single row, 01x02, script generated"
+			(at 229.87 41.91 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "faa12494-86dd-4f83-84f3-532ec60c8ab4")
+		)
+		(pin "2"
+			(uuid "458fee9c-c09e-4497-8abd-393f62d815b6")
+		)
+		(instances
+			(project "Telemetry-Logging-Board"
+				(path "/5c64cdbc-39cd-49c8-9a12-12e4867a5d0b"
+					(reference "J4")
 					(unit 1)
 				)
 			)
@@ -10681,7 +10923,7 @@
 	)
 	(symbol
 		(lib_id "Device:D_Shockley")
-		(at 232.41 30.48 180)
+		(at 220.98 30.48 180)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
@@ -10689,7 +10931,7 @@
 		(dnp no)
 		(uuid "d7f671c5-e2ab-4ee9-8582-b600046406aa")
 		(property "Reference" "D3"
-			(at 232.41 34.544 0)
+			(at 220.98 34.544 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -10697,7 +10939,7 @@
 			)
 		)
 		(property "Value" "D_Shockley"
-			(at 232.41 32.512 0)
+			(at 220.98 32.512 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -10705,7 +10947,7 @@
 			)
 		)
 		(property "Footprint" "Diode_SMD:D_0805_2012Metric"
-			(at 232.41 30.48 0)
+			(at 220.98 30.48 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -10714,7 +10956,7 @@
 			)
 		)
 		(property "Datasheet" "~"
-			(at 232.41 30.48 0)
+			(at 220.98 30.48 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -10723,7 +10965,7 @@
 			)
 		)
 		(property "Description" "Shockley (PNPN) diode"
-			(at 232.41 30.48 0)
+			(at 220.98 30.48 0)
 			(effects
 				(font
 					(size 1.27 1.27)
