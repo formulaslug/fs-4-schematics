@@ -7011,9 +7011,9 @@
 		)
 		(uuid "b7d1ac89-b115-40e6-a761-3cbaa31fb79f")
 	)
-	(text "Trimmer Max: 5(20/30)=3.33v\nTrimmer Min: 5V"
+	(text "0V - 5V\n"
 		(exclude_from_sim no)
-		(at 260.096 58.42 0)
+		(at 268.986 72.898 0)
 		(effects
 			(font
 				(size 1.016 1.016)
@@ -7158,6 +7158,12 @@
 		(diameter 0)
 		(color 0 0 0 0)
 		(uuid "1df494aa-aa42-48a5-b497-0eae13db0062")
+	)
+	(junction
+		(at 259.08 87.63)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "1e1e1f36-54ae-4fc7-8b02-b3020a910bb1")
 	)
 	(junction
 		(at 373.38 124.46)
@@ -7314,12 +7320,6 @@
 		(diameter 0)
 		(color 0 0 0 0)
 		(uuid "aa395cd0-585c-4695-ac9e-5ffcfbafbb38")
-	)
-	(junction
-		(at 266.7 87.63)
-		(diameter 0)
-		(color 0 0 0 0)
-		(uuid "acaff5b1-4170-4e79-b6cb-ca7ba3a931cf")
 	)
 	(junction
 		(at 138.43 134.62)
@@ -7743,7 +7743,7 @@
 	)
 	(wire
 		(pts
-			(xy 241.3 87.63) (xy 262.89 87.63)
+			(xy 241.3 87.63) (xy 259.08 87.63)
 		)
 		(stroke
 			(width 0)
@@ -7953,7 +7953,7 @@
 	)
 	(wire
 		(pts
-			(xy 266.7 87.63) (xy 284.48 87.63)
+			(xy 262.89 87.63) (xy 284.48 87.63)
 		)
 		(stroke
 			(width 0)
@@ -8323,6 +8323,16 @@
 	)
 	(wire
 		(pts
+			(xy 259.08 87.63) (xy 262.89 87.63)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "5e91bd0f-72a7-45ec-b07b-dbaaef9e6ebf")
+	)
+	(wire
+		(pts
 			(xy 364.49 55.88) (xy 364.49 59.69)
 		)
 		(stroke
@@ -8433,7 +8443,7 @@
 	)
 	(wire
 		(pts
-			(xy 259.08 80.01) (xy 259.08 82.55)
+			(xy 259.08 80.01) (xy 259.08 87.63)
 		)
 		(stroke
 			(width 0)
@@ -8570,16 +8580,6 @@
 			(type default)
 		)
 		(uuid "745a7311-5da8-474c-bc79-b0d557a3ce37")
-	)
-	(wire
-		(pts
-			(xy 262.89 87.63) (xy 266.7 87.63)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "75521850-668c-439c-9f1a-6195d53cf65f")
 	)
 	(wire
 		(pts
@@ -9573,16 +9573,6 @@
 	)
 	(wire
 		(pts
-			(xy 266.7 82.55) (xy 266.7 87.63)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "dccddec0-34f7-4a5f-817b-fb3a62c6cb64")
-	)
-	(wire
-		(pts
 			(xy 46.99 137.16) (xy 63.5 137.16)
 		)
 		(stroke
@@ -10152,6 +10142,130 @@
 				)
 				(justify right)
 				(hide yes)
+			)
+		)
+	)
+	(netclass_flag ""
+		(length 2.54)
+		(shape round)
+		(at 198.2008 49.53 0)
+		(fields_autoplaced yes)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left bottom)
+		)
+		(uuid "37aaf6b9-122a-45d0-ac8e-3d28fbe8bace")
+		(property "Netclass" "40A"
+			(at 198.8993 46.99 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Component Class" ""
+			(at -142.1592 -3.81 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+					(italic yes)
+				)
+			)
+		)
+	)
+	(netclass_flag ""
+		(length 2.54)
+		(shape round)
+		(at 245.11 95.25 0)
+		(fields_autoplaced yes)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left bottom)
+		)
+		(uuid "49670511-cd14-4f81-b92e-d5cf6f4744c7")
+		(property "Netclass" "40A"
+			(at 245.8085 92.71 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Component Class" ""
+			(at -95.25 41.91 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+					(italic yes)
+				)
+			)
+		)
+	)
+	(netclass_flag ""
+		(length 2.54)
+		(shape round)
+		(at 203.2 60.96 0)
+		(fields_autoplaced yes)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left bottom)
+		)
+		(uuid "a0ecccfa-05a2-4bb5-a1dc-705dc20a24c8")
+		(property "Netclass" "40A"
+			(at 203.8985 58.42 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Component Class" ""
+			(at -137.16 7.62 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+					(italic yes)
+				)
+			)
+		)
+	)
+	(netclass_flag ""
+		(length 2.54)
+		(shape round)
+		(at 391.16 95.25 0)
+		(fields_autoplaced yes)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left bottom)
+		)
+		(uuid "b19e2ab3-fa4a-49da-84b0-6597b6dca33e")
+		(property "Netclass" "40A"
+			(at 391.8585 92.71 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Component Class" ""
+			(at 50.8 41.91 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+					(italic yes)
+				)
 			)
 		)
 	)
@@ -12836,7 +12950,8 @@
 	)
 	(symbol
 		(lib_id "Connector_Generic:Conn_01x02")
-		(at 187.96 80.01 180)
+		(at 187.96 77.47 0)
+		(mirror y)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
@@ -12844,7 +12959,7 @@
 		(dnp no)
 		(uuid "21e08e7a-7b00-40a5-922a-499cecae66b1")
 		(property "Reference" "J2"
-			(at 187.96 71.882 0)
+			(at 187.96 74.676 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -12852,15 +12967,15 @@
 			)
 		)
 		(property "Value" "Conn_01x02"
-			(at 187.96 74.422 0)
+			(at 187.96 72.136 0)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
 			)
 		)
-		(property "Footprint" "Connector_Molex:Molex_Mini-Fit_Sr_42819-22XX_1x02_P10.00mm_Vertical"
-			(at 187.96 80.01 0)
+		(property "Footprint" "FS_4_Global_Footprint_Library:Molex_Mini-Fit_Sr_42819-22XX_1x02_P10.00mm_Vertical"
+			(at 187.96 77.47 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -12869,7 +12984,7 @@
 			)
 		)
 		(property "Datasheet" "~https://www.molex.com/en-us/products/part-detail/428192234?display=pdf"
-			(at 187.96 80.01 0)
+			(at 187.96 77.47 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -12878,7 +12993,7 @@
 			)
 		)
 		(property "Description" "Generic connector, single row, 01x02, script generated (kicad-library-utils/schlib/autogen/connector/)"
-			(at 187.96 80.01 0)
+			(at 187.96 77.47 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -12887,7 +13002,7 @@
 			)
 		)
 		(property "Digi URL" "https://www.digikey.com/en/products/detail/molex/0428192234/5405456"
-			(at 187.96 80.01 0)
+			(at 187.96 77.47 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -12896,7 +13011,7 @@
 			)
 		)
 		(property "Digi PN" "0428192234-ND"
-			(at 187.96 80.01 0)
+			(at 187.96 77.47 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -12905,7 +13020,7 @@
 			)
 		)
 		(property "MFG" "Molex"
-			(at 187.96 80.01 0)
+			(at 187.96 77.47 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -12914,7 +13029,7 @@
 			)
 		)
 		(property "MFG PN" "0428192234"
-			(at 187.96 80.01 0)
+			(at 187.96 77.47 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -14063,7 +14178,8 @@
 	)
 	(symbol
 		(lib_id "Connector_Generic:Conn_01x02")
-		(at 187.96 52.07 180)
+		(at 187.96 49.53 0)
+		(mirror y)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
@@ -14071,14 +14187,6 @@
 		(dnp no)
 		(uuid "46b128aa-ddad-42e0-a9f6-04874f046345")
 		(property "Reference" "J1"
-			(at 187.96 44.196 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Value" "Conn_01x02"
 			(at 187.96 46.736 0)
 			(effects
 				(font
@@ -14086,8 +14194,16 @@
 				)
 			)
 		)
-		(property "Footprint" "Connector_Molex:Molex_Mini-Fit_Sr_42819-22XX_1x02_P10.00mm_Vertical"
-			(at 187.96 52.07 0)
+		(property "Value" "Conn_01x02"
+			(at 187.96 44.196 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" "FS_4_Global_Footprint_Library:Molex_Mini-Fit_Sr_42819-22XX_1x02_P10.00mm_Vertical"
+			(at 187.96 49.53 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -14096,7 +14212,7 @@
 			)
 		)
 		(property "Datasheet" "~https://www.molex.com/en-us/products/part-detail/428192234?display=pdf"
-			(at 187.96 52.07 0)
+			(at 187.96 49.53 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -14105,7 +14221,7 @@
 			)
 		)
 		(property "Description" "Generic connector, single row, 01x02, script generated (kicad-library-utils/schlib/autogen/connector/)"
-			(at 187.96 52.07 0)
+			(at 187.96 49.53 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -14114,7 +14230,7 @@
 			)
 		)
 		(property "Digi URL" "https://www.digikey.com/en/products/detail/molex/0428192234/5405456"
-			(at 187.96 52.07 0)
+			(at 187.96 49.53 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -14123,7 +14239,7 @@
 			)
 		)
 		(property "Digi PN" "0428192234-ND"
-			(at 187.96 52.07 0)
+			(at 187.96 49.53 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -14132,7 +14248,7 @@
 			)
 		)
 		(property "MFG" "Molex"
-			(at 187.96 52.07 0)
+			(at 187.96 49.53 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -14141,7 +14257,7 @@
 			)
 		)
 		(property "MFG PN" "0428192234"
-			(at 187.96 52.07 0)
+			(at 187.96 49.53 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -23325,109 +23441,6 @@
 		)
 	)
 	(symbol
-		(lib_id "Device:R")
-		(at 262.89 82.55 90)
-		(unit 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(dnp no)
-		(uuid "cc26dead-ab79-4c93-9e9f-204a6373e1be")
-		(property "Reference" "R3"
-			(at 262.89 78.232 90)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Value" "20k"
-			(at 262.89 80.518 90)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Footprint" "Resistor_SMD:R_0603_1608Metric"
-			(at 262.89 84.328 90)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Datasheet" "https://yageogroup.com/content/datasheet/asset/file/PYU-RC_GROUP_51_ROHS_L"
-			(at 262.89 82.55 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Description" "Resistor"
-			(at 262.89 82.55 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Digi PN" "311-20.0KLRCT-ND"
-			(at 262.89 82.55 90)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Digi URL" "https://www.digikey.com/en/products/detail/yageo/RC0402FR-0720KL/726557"
-			(at 262.89 82.55 90)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "MFG PN" "RC0402FR-0720KL"
-			(at 262.89 82.55 90)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "MFG" "YAGEO"
-			(at 262.89 82.55 90)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(pin "1"
-			(uuid "d933fb16-c489-4a6e-8082-58568676bfda")
-		)
-		(pin "2"
-			(uuid "7cd5a516-f7c0-49ef-9175-30288d751b67")
-		)
-		(instances
-			(project ""
-				(path "/89c18bc7-bebe-4d17-a6e8-3a2f210bf7f7"
-					(reference "R3")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
 		(lib_id "power:GNDD")
 		(at 104.14 90.17 0)
 		(unit 1)
@@ -23999,7 +24012,7 @@
 				)
 			)
 		)
-		(property "Footprint" "Connector_Molex:Molex_Mini-Fit_Sr_42819-22XX_1x02_P10.00mm_Vertical"
+		(property "Footprint" "FS_4_Global_Footprint_Library:Molex_Mini-Fit_Sr_42819-22XX_1x02_P10.00mm_Vertical"
 			(at 391.16 152.4 0)
 			(effects
 				(font

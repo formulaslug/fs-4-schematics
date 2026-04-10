@@ -493,17 +493,36 @@
         "bus_width": 500,
         "name": "20A",
         "pcb_color": "rgba(0, 0, 0, 0.000)",
-        "priority": 0,
+        "priority": 1,
         "schematic_color": "rgba(0, 0, 0, 0.000)",
         "track_width": 6.35,
         "wire_width": 6
+      },
+      {
+        "name": "40A",
+        "pcb_color": "rgb(64, 59, 255)",
+        "priority": 0,
+        "schematic_color": "rgba(0, 0, 0, 0.000)"
       }
     ],
     "meta": {
       "version": 4
     },
     "net_colors": null,
-    "netclass_assignments": null,
+    "netclass_assignments": {
+      "+12V_BAT": [
+        "40A"
+      ],
+      "GLVMS": [
+        "40A"
+      ],
+      "Net-(J2-Pin_1)": [
+        "40A"
+      ],
+      "Net-(K3-COM_1)": [
+        "40A"
+      ]
+    },
     "netclass_patterns": []
   },
   "pcbnew": {
@@ -514,7 +533,7 @@
       "plot": "",
       "pos_files": "",
       "specctra_dsn": "",
-      "step": "",
+      "step": "Power Electronics Board.step",
       "svg": "",
       "vrml": ""
     },
