@@ -4666,6 +4666,10 @@
 		(uuid "345377fb-a184-4d49-8a07-22bda37f68b5")
 	)
 	(no_connect
+		(at 236.22 81.28)
+		(uuid "5b60a12e-746f-4150-85aa-5dd621785eb0")
+	)
+	(no_connect
 		(at 185.42 96.52)
 		(uuid "5be62b7e-fb4e-443e-983e-9baa7f425efd")
 	)
@@ -4768,16 +4772,6 @@
 			(type default)
 		)
 		(uuid "07729556-10c9-494e-a731-da84faef5a8a")
-	)
-	(wire
-		(pts
-			(xy 255.27 88.9) (xy 254 88.9)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "07dd7555-d2ed-46ea-80ee-41383db86339")
 	)
 	(wire
 		(pts
@@ -6461,16 +6455,6 @@
 	)
 	(wire
 		(pts
-			(xy 260.35 88.9) (xy 259.08 88.9)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "b89f64ab-722d-4f5d-88a0-35611f872fd6")
-	)
-	(wire
-		(pts
 			(xy 316.23 46.99) (xy 321.31 46.99)
 		)
 		(stroke
@@ -6821,16 +6805,6 @@
 	)
 	(wire
 		(pts
-			(xy 236.22 88.9) (xy 250.19 88.9)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "de9b9534-794a-41e7-a930-8670e66c046a")
-	)
-	(wire
-		(pts
 			(xy 356.87 41.91) (xy 356.87 44.45)
 		)
 		(stroke
@@ -6858,16 +6832,6 @@
 			(type default)
 		)
 		(uuid "e378dc28-745d-47b8-9f8a-82571268fe1a")
-	)
-	(wire
-		(pts
-			(xy 260.35 87.63) (xy 260.35 88.9)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "e5ff5e2a-e03e-44ec-866a-d4e960cc5612")
 	)
 	(wire
 		(pts
@@ -7299,18 +7263,18 @@
 			)
 		)
 	)
-	(global_label "6810_GPIO1"
+	(global_label "6810_GPIO4"
 		(shape input)
-		(at 236.22 81.28 0)
+		(at 314.96 184.15 270)
 		(effects
 			(font
 				(size 1.27 1.27)
 			)
-			(justify left)
+			(justify right)
 		)
-		(uuid "0a8eeb58-3a23-42c1-aa89-12419b1ffd43")
+		(uuid "08008b0e-dc5b-47f3-a96f-e048a3087b29")
 		(property "Intersheetrefs" "${INTERSHEET_REFS}"
-			(at 236.22 81.28 90)
+			(at 314.96 184.15 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -7412,26 +7376,6 @@
 		(uuid "3edf666a-885e-428c-ad6b-e4cc1b23b0a4")
 		(property "Intersheetrefs" "${INTERSHEET_REFS}"
 			(at 217.17 138.43 90)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-	)
-	(global_label "6810_GPIO1"
-		(shape output)
-		(at 217.17 140.97 0)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-			(justify left)
-		)
-		(uuid "445a9d3d-3f86-4be3-b51e-99e82204c50a")
-		(property "Intersheetrefs" "${INTERSHEET_REFS}"
-			(at 217.17 140.97 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -7574,6 +7518,26 @@
 		(uuid "87730c44-1f3b-4c89-92cc-50d7b50bca02")
 		(property "Intersheetrefs" "${INTERSHEET_REFS}"
 			(at 236.22 83.82 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+	)
+	(global_label "6810_GPIO4"
+		(shape input)
+		(at 236.22 88.9 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left)
+		)
+		(uuid "9bb56f96-2e31-4993-9bd1-5974a47e9eb7")
+		(property "Intersheetrefs" "${INTERSHEET_REFS}"
+			(at 236.22 88.9 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -7725,6 +7689,26 @@
 			)
 		)
 	)
+	(global_label "6810_GPIO4"
+		(shape output)
+		(at 217.17 140.97 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left)
+		)
+		(uuid "e86be3c1-73ee-420e-856c-258f66aad3a4")
+		(property "Intersheetrefs" "${INTERSHEET_REFS}"
+			(at 217.17 140.97 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+	)
 	(global_label "DQ"
 		(shape input)
 		(at 335.28 129.54 180)
@@ -7759,26 +7743,6 @@
 		(uuid "f21a19b5-c2ca-4595-9e6c-fffa5fa31712")
 		(property "Intersheetrefs" "${INTERSHEET_REFS}"
 			(at 236.22 78.74 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-	)
-	(global_label "6810_GPIO1"
-		(shape input)
-		(at 314.96 184.15 270)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-			(justify right)
-		)
-		(uuid "f5342337-1a80-4888-a66b-34cf14a725a8")
-		(property "Intersheetrefs" "${INTERSHEET_REFS}"
-			(at 314.96 184.15 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -10785,374 +10749,6 @@
 		)
 	)
 	(symbol
-		(lib_id "Device:LED_Small")
-		(at 252.73 88.9 0)
-		(unit 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(dnp no)
-		(uuid "00000000-0000-0000-0000-00005ccfaae0")
-		(property "Reference" "D1"
-			(at 252.73 91.44 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Value" "LH R974-LP-1"
-			(at 252.73 93.98 0)
-			(effects
-				(font
-					(size 0.9652 0.9652)
-				)
-			)
-		)
-		(property "Footprint" "LED_SMD:LED_0805_2012Metric_Pad1.15x1.40mm_HandSolder"
-			(at 252.73 88.9 90)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Datasheet" "https://look.ams-osram.com/m/1c300b267881b82d/original/LH-R974.pdf"
-			(at 252.73 88.9 90)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Description" ""
-			(at 252.73 88.9 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "MFG" "ams-OSRAM USA INC."
-			(at 252.73 88.9 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "MFG PN" "LS R976-NR-1-0-20-R18"
-			(at 252.73 88.9 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Digi PN" "475-LSR976-NR-1CT-ND"
-			(at 252.73 88.9 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Digi URL" "https://www.digikey.com/en/products/detail/ams-osram-usa-inc/LS-R976-NR-1-0-20-R18/1227987"
-			(at 252.73 88.9 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Digikey Link" ""
-			(at 252.73 88.9 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "MFP PN" ""
-			(at 252.73 88.9 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Manufacturer" ""
-			(at 252.73 88.9 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Manufacturer Part Number" ""
-			(at 252.73 88.9 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "PN" ""
-			(at 252.73 88.9 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Part Name" ""
-			(at 252.73 88.9 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Sim.Device" ""
-			(at 252.73 88.9 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Sim.Pins" ""
-			(at 252.73 88.9 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Sim.Type" ""
-			(at 252.73 88.9 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(pin "1"
-			(uuid "09276ee8-22ce-4f22-b1af-59a5e8f92b2a")
-		)
-		(pin "2"
-			(uuid "d9f87291-6b1e-4875-9cd4-27991d29ee75")
-		)
-		(instances
-			(project ""
-				(path "/dc0b64a3-156e-446d-a433-c56b0c761cf1"
-					(reference "D1")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
-		(lib_id "Device:R_Small")
-		(at 256.54 88.9 90)
-		(unit 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(dnp no)
-		(uuid "00000000-0000-0000-0000-00005ccfaaea")
-		(property "Reference" "R4"
-			(at 257.81 91.44 90)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Value" "160"
-			(at 256.54 88.9 90)
-			(effects
-				(font
-					(size 0.9652 0.9652)
-				)
-			)
-		)
-		(property "Footprint" "Resistor_SMD:R_0805_2012Metric_Pad1.20x1.40mm_HandSolder"
-			(at 256.54 88.9 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Datasheet" "~https://yageogroup.com/content/datasheet/asset/file/PYU-RC_GROUP_51_ROHS_L"
-			(at 256.54 88.9 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Description" ""
-			(at 256.54 88.9 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "MFG" "YAGEO"
-			(at 256.54 88.9 90)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "MFG PN" "RC0805FR-07160RL"
-			(at 256.54 88.9 90)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Digi PN" "311-160CRCT-ND"
-			(at 256.54 88.9 90)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Digi URL" "https://www.digikey.com/en/products/detail/yageo/RC0805FR-07160RL/727627"
-			(at 256.54 88.9 90)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Digikey Link" ""
-			(at 256.54 88.9 90)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "MFP PN" ""
-			(at 256.54 88.9 90)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Manufacturer" ""
-			(at 256.54 88.9 90)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Manufacturer Part Number" ""
-			(at 256.54 88.9 90)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "PN" ""
-			(at 256.54 88.9 90)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Part Name" ""
-			(at 256.54 88.9 90)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Sim.Device" ""
-			(at 256.54 88.9 90)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Sim.Pins" ""
-			(at 256.54 88.9 90)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Sim.Type" ""
-			(at 256.54 88.9 90)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(pin "1"
-			(uuid "62370057-dd73-405e-a2ed-03649ec6b7cc")
-		)
-		(pin "2"
-			(uuid "1661b36e-c649-44c9-b199-8a19da3a6afd")
-		)
-		(instances
-			(project ""
-				(path "/dc0b64a3-156e-446d-a433-c56b0c761cf1"
-					(reference "R4")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
 		(lib_name "Conn_01x02_Pin_1")
 		(lib_id "Connector:Conn_01x02_Pin")
 		(at 363.22 87.63 180)
@@ -12316,7 +11912,7 @@
 				)
 			)
 		)
-		(property "Footprint" "FS_4_Global_Footprint_Library:512810598"
+		(property "Footprint" "FS_4_Global_Footprint_Library:849525"
 			(at 92.71 107.95 0)
 			(effects
 				(font
@@ -15787,7 +15383,7 @@
 				)
 			)
 		)
-		(property "Footprint" "FS_4_Global_Footprint_Library:512810598"
+		(property "Footprint" "FS_4_Global_Footprint_Library:849525"
 			(at 90.17 59.69 0)
 			(effects
 				(font
@@ -16156,71 +15752,6 @@
 			(project "BMS"
 				(path "/dc0b64a3-156e-446d-a433-c56b0c761cf1"
 					(reference "J2")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
-		(lib_id "power:+5V")
-		(at 260.35 87.63 0)
-		(unit 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(dnp no)
-		(uuid "d99ad119-a059-4846-ba95-d6b4f9383728")
-		(property "Reference" "#VREG02"
-			(at 260.35 91.44 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Value" "VREG"
-			(at 260.35 83.82 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Footprint" ""
-			(at 260.35 87.63 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Datasheet" ""
-			(at 260.35 87.63 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Description" "Power symbol creates a global label with name \"+5V\""
-			(at 260.35 87.63 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(pin "1"
-			(uuid "89f8f527-b081-4506-830c-3ade24a203c6")
-		)
-		(instances
-			(project "BMS"
-				(path "/dc0b64a3-156e-446d-a433-c56b0c761cf1"
-					(reference "#VREG02")
 					(unit 1)
 				)
 			)
