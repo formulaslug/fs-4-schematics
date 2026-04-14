@@ -6,8 +6,8 @@
 	(paper "B")
 	(title_block
 		(title "TBB")
-		(date "2026-02-09")
-		(rev "1.1")
+		(date "2026-04-14")
+		(rev "2.1")
 		(company "Formula Slug")
 		(comment 4 "Eric Zhang")
 	)
@@ -8857,10 +8857,6 @@
 		(uuid "406f041f-0a6c-4fd6-8eff-20a2b12c1996")
 	)
 	(no_connect
-		(at 332.74 182.88)
-		(uuid "4399fb0c-171b-46cc-a777-73eb2cd99ef3")
-	)
-	(no_connect
 		(at 96.52 62.23)
 		(uuid "54abb58c-c469-43ee-85df-b1874dbb5b18")
 	)
@@ -8925,10 +8921,6 @@
 		(uuid "9d3c081a-2611-4ae2-a73d-938c191c63d0")
 	)
 	(no_connect
-		(at 332.74 187.96)
-		(uuid "a44d3cef-623c-4f02-be54-603878cfefc5")
-	)
-	(no_connect
 		(at 73.66 196.85)
 		(uuid "af469879-d57f-4201-835e-13bea6fde95b")
 	)
@@ -8981,20 +8973,12 @@
 		(uuid "f22b3904-243f-4783-be83-fe5be90a8832")
 	)
 	(no_connect
-		(at 332.74 185.42)
-		(uuid "f3ca77d5-6f05-49ec-b1af-ae1339f7605b")
-	)
-	(no_connect
 		(at 114.3 171.45)
 		(uuid "f56a4caf-3af8-4a3c-9f03-15821f4e045b")
 	)
 	(no_connect
 		(at 96.52 67.31)
 		(uuid "f6a62de7-7528-44ce-9299-972156d750ba")
-	)
-	(no_connect
-		(at 332.74 190.5)
-		(uuid "f6e8cb6f-5572-4839-9fd2-83c8986f2c3b")
 	)
 	(wire
 		(pts
@@ -9045,6 +9029,16 @@
 			(type default)
 		)
 		(uuid "02624fe6-689a-4424-8247-771a9ac3ee01")
+	)
+	(wire
+		(pts
+			(xy 325.12 187.96) (xy 332.74 187.96)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "02ca241c-2825-4c7f-bdaf-d37523b2d3f4")
 	)
 	(wire
 		(pts
@@ -9388,6 +9382,16 @@
 	)
 	(wire
 		(pts
+			(xy 324.485 185.42) (xy 332.74 185.42)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "1a007707-6b61-44d0-8dda-dd59d544ae61")
+	)
+	(wire
+		(pts
 			(xy 160.655 85.09) (xy 164.465 85.09)
 		)
 		(stroke
@@ -9425,6 +9429,16 @@
 			(type default)
 		)
 		(uuid "1c31fd14-b895-4b27-a082-f705496019a0")
+	)
+	(wire
+		(pts
+			(xy 324.485 182.88) (xy 332.74 182.88)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "1cc857a6-5415-4acb-ad77-f9b07c871fa3")
 	)
 	(wire
 		(pts
@@ -9955,6 +9969,16 @@
 			(type default)
 		)
 		(uuid "416c48e0-000e-40cc-b3f8-b82b358b40c9")
+	)
+	(wire
+		(pts
+			(xy 325.12 190.5) (xy 332.74 190.5)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "41f49316-9b4d-42b7-8ef6-7971945e3dc5")
 	)
 	(wire
 		(pts
@@ -12216,6 +12240,28 @@
 		)
 		(uuid "f454aa78-5946-4102-b2f1-15463c00fdf9")
 	)
+	(global_label "CAN_L_2"
+		(shape bidirectional)
+		(at 325.12 187.96 180)
+		(fields_autoplaced yes)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify right)
+		)
+		(uuid "01094de9-ca30-455b-a448-b8c8a70fc4a9")
+		(property "Intersheetrefs" "${INTERSHEET_REFS}"
+			(at 313.1616 187.96 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+				(hide yes)
+			)
+		)
+	)
 	(global_label "CAN_2_RD"
 		(shape input)
 		(at 121.92 222.25 0)
@@ -12234,6 +12280,28 @@
 					(size 1.27 1.27)
 				)
 				(justify left)
+				(hide yes)
+			)
+		)
+	)
+	(global_label "CAN_L_RES_2"
+		(shape bidirectional)
+		(at 324.485 185.42 180)
+		(fields_autoplaced yes)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify right)
+		)
+		(uuid "0800a622-199c-4de0-acb1-9f9008a8b917")
+		(property "Intersheetrefs" "${INTERSHEET_REFS}"
+			(at 307.9305 185.42 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
 				(hide yes)
 			)
 		)
@@ -13338,7 +13406,7 @@
 			)
 		)
 	)
-	(global_label "CAN_L_1"
+	(global_label "CAN_L_2"
 		(shape bidirectional)
 		(at 164.465 85.09 0)
 		(fields_autoplaced yes)
@@ -13532,6 +13600,28 @@
 					(size 1.27 1.27)
 				)
 				(justify left)
+				(hide yes)
+			)
+		)
+	)
+	(global_label "CAN_H_2"
+		(shape bidirectional)
+		(at 325.12 190.5 180)
+		(fields_autoplaced yes)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify right)
+		)
+		(uuid "9e5b7af3-295a-4b41-a09b-f07c74aa9942")
+		(property "Intersheetrefs" "${INTERSHEET_REFS}"
+			(at 312.8592 190.5 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
 				(hide yes)
 			)
 		)
@@ -13855,6 +13945,28 @@
 		(uuid "c618511e-acb6-4b68-84e2-e440731b1890")
 		(property "Intersheetrefs" "${INTERSHEET_REFS}"
 			(at 107.9281 22.86 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+				(hide yes)
+			)
+		)
+	)
+	(global_label "CAN_H_RES_2"
+		(shape bidirectional)
+		(at 324.485 182.88 180)
+		(fields_autoplaced yes)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify right)
+		)
+		(uuid "c6de88b0-4c11-4255-9dad-d2baf00734fa")
+		(property "Intersheetrefs" "${INTERSHEET_REFS}"
+			(at 307.6281 182.88 0)
 			(effects
 				(font
 					(size 1.27 1.27)
