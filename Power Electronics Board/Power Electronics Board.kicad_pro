@@ -37,9 +37,9 @@
         "other_text_thickness": 0.15,
         "other_text_upright": false,
         "pads": {
-          "drill": 0.8,
-          "height": 1.27,
-          "width": 2.54
+          "drill": 0.0,
+          "height": 8.001,
+          "width": 1.0922
         },
         "silk_line_width": 0.1,
         "silk_text_italic": false,
@@ -48,7 +48,7 @@
         "silk_text_thickness": 0.1,
         "silk_text_upright": false,
         "zones": {
-          "min_clearance": 0.254
+          "min_clearance": 0.0
         }
       },
       "diff_pair_dimensions": [
@@ -60,67 +60,15 @@
       ],
       "drc_exclusions": [
         [
-          "silk_edge_clearance|140330000|88900000|20c8b6c6-87fc-4b8e-b37e-7c45ae20f05b|cbe39e87-2409-410b-a6d1-36624a82e826",
+          "silk_edge_clearance|182899002|113030000|31df0ed6-1879-4598-9439-0025f0829691|400891e5-d129-4a63-8def-cde759107887",
           ""
         ],
         [
-          "silk_edge_clearance|144150000|88900000|20c8b6c6-87fc-4b8e-b37e-7c45ae20f05b|e51fa72d-14c8-4b07-a68d-6b149895fb6f",
+          "silk_edge_clearance|182899002|113030000|31df0ed6-1879-4598-9439-0025f0829691|7ddd9ea2-c763-44be-abc5-df5193a1e55b",
           ""
         ],
         [
-          "silk_edge_clearance|145491200|88900000|20c8b6c6-87fc-4b8e-b37e-7c45ae20f05b|a9a05c2e-dc27-4a90-be69-231a63e4cb34",
-          ""
-        ],
-        [
-          "silk_edge_clearance|162356800|88900000|20c8b6c6-87fc-4b8e-b37e-7c45ae20f05b|6171effa-03cc-49d5-b0ef-8b6af61c0fd5",
-          ""
-        ],
-        [
-          "silk_edge_clearance|164338000|88900000|20c8b6c6-87fc-4b8e-b37e-7c45ae20f05b|bd1f7744-cfa1-49f9-ae2f-c631e1174814",
-          ""
-        ],
-        [
-          "silk_edge_clearance|179578000|88900000|20c8b6c6-87fc-4b8e-b37e-7c45ae20f05b|11b26fd4-ea09-4200-9869-52a994d04782",
-          ""
-        ],
-        [
-          "silk_over_copper|148861082|94087116|7def47be-bb0d-421d-be99-b84cb21b3b0d|00000000-0000-0000-0000-000000000000",
-          ""
-        ],
-        [
-          "silk_overlap|116227000|84328000|89ace3a3-fd2c-4c22-975d-7fa382afcfad|fda60db2-5ef7-430c-af42-9e14703fb544",
-          ""
-        ],
-        [
-          "silk_overlap|140330000|89408000|89ace3a3-fd2c-4c22-975d-7fa382afcfad|cbe39e87-2409-410b-a6d1-36624a82e826",
-          ""
-        ],
-        [
-          "silk_overlap|144150000|89408000|89ace3a3-fd2c-4c22-975d-7fa382afcfad|e51fa72d-14c8-4b07-a68d-6b149895fb6f",
-          ""
-        ],
-        [
-          "silk_overlap|145491200|89408000|89ace3a3-fd2c-4c22-975d-7fa382afcfad|a9a05c2e-dc27-4a90-be69-231a63e4cb34",
-          ""
-        ],
-        [
-          "silk_overlap|162356800|89408000|6171effa-03cc-49d5-b0ef-8b6af61c0fd5|89ace3a3-fd2c-4c22-975d-7fa382afcfad",
-          ""
-        ],
-        [
-          "silk_overlap|164338000|89408000|89ace3a3-fd2c-4c22-975d-7fa382afcfad|bd1f7744-cfa1-49f9-ae2f-c631e1174814",
-          ""
-        ],
-        [
-          "silk_overlap|178747598|92456000|6a7b4167-57c5-4d9a-9c7a-ecc96ada60da|7036af65-cade-473d-981a-2b3cfb331e1a",
-          ""
-        ],
-        [
-          "silk_overlap|179578000|89408000|11b26fd4-ea09-4200-9869-52a994d04782|89ace3a3-fd2c-4c22-975d-7fa382afcfad",
-          ""
-        ],
-        [
-          "silk_overlap|95987000|84328000|04734bce-4d39-4af0-8006-c8fd4a36ef83|89ace3a3-fd2c-4c22-975d-7fa382afcfad",
+          "silk_overlap|111962001|125461500|5937d0ff-40e2-45f9-b11a-8f7ea9c10ffb|966cd044-f855-4761-a62f-ece2a8447186",
           ""
         ]
       ],
@@ -558,10 +506,16 @@
         "bus_width": 500,
         "name": "20A",
         "pcb_color": "rgba(0, 0, 0, 0.000)",
-        "priority": 0,
+        "priority": 1,
         "schematic_color": "rgba(0, 0, 0, 0.000)",
         "track_width": 6.35,
         "wire_width": 6
+      },
+      {
+        "name": "40A",
+        "pcb_color": "rgb(64, 59, 255)",
+        "priority": 0,
+        "schematic_color": "rgba(0, 0, 0, 0.000)"
       }
     ],
     "meta": {
@@ -570,28 +524,19 @@
     "net_colors": null,
     "netclass_assignments": {
       "+12V_BAT": [
-        "20A"
-      ],
-      "Bat 12V": [
-        "20A"
+        "40A"
       ],
       "GLVMS": [
-        "20A"
-      ],
-      "GND": [
-        "20A"
+        "40A"
       ],
       "Net-(J2-Pin_1)": [
-        "20A"
+        "40A"
       ],
-      "Net-(J2-Pin_2)": [
-        "20A"
-      ],
-      "Net-(J2-Pin_3)": [
-        "20A"
+      "Net-(J8-Pin_1)": [
+        "40A"
       ],
       "Net-(K3-COM_1)": [
-        "20A"
+        "40A"
       ]
     },
     "netclass_patterns": []
@@ -604,7 +549,7 @@
       "plot": "",
       "pos_files": "",
       "specctra_dsn": "",
-      "step": "",
+      "step": "Power Electronics Board V2.5.step",
       "svg": "",
       "vrml": ""
     },

@@ -6,8 +6,8 @@
 	(paper "B")
 	(title_block
 		(title "Power Electronics Board")
-		(date "2026-1-20")
-		(rev "1.3")
+		(date "2026-3-17")
+		(rev "2.0")
 		(company "Formula Slug")
 		(comment 4 "Edmund Lai")
 	)
@@ -402,7 +402,7 @@
 			)
 			(embedded_fonts no)
 		)
-		(symbol "Conn_01x02_1"
+		(symbol "Connector:Conn_01x01_Pin"
 			(pin_names
 				(offset 1.016)
 				(hide yes)
@@ -410,23 +410,23 @@
 			(exclude_from_sim no)
 			(in_bom yes)
 			(on_board yes)
-			(property "Reference" "J1"
-				(at 0 -8.89 0)
+			(property "Reference" "J"
+				(at 0 2.54 0)
 				(effects
 					(font
 						(size 1.27 1.27)
 					)
 				)
 			)
-			(property "Value" "42820-2223"
-				(at 0 -6.35 0)
+			(property "Value" "Conn_01x01_Pin"
+				(at 0 -2.54 0)
 				(effects
 					(font
 						(size 1.27 1.27)
 					)
 				)
 			)
-			(property "Footprint" "FS_4_Global_Footprint_Library:CONN_SDA-42820-0002_02_RC_MOL (42820-2223)"
+			(property "Footprint" ""
 				(at 0 0 0)
 				(effects
 					(font
@@ -435,7 +435,7 @@
 					(hide yes)
 				)
 			)
-			(property "Datasheet" "https://www.molex.com/en-us/products/part-detail-pdf/428202223?display=pdf"
+			(property "Datasheet" "~"
 				(at 0 0 0)
 				(effects
 					(font
@@ -444,7 +444,7 @@
 					(hide yes)
 				)
 			)
-			(property "Description" "Generic connector, single row, 01x02, script generated (kicad-library-utils/schlib/autogen/connector/)"
+			(property "Description" "Generic connector, single row, 01x01, script generated"
 				(at 0 0 0)
 				(effects
 					(font
@@ -453,49 +453,12 @@
 					(hide yes)
 				)
 			)
-			(property "MFG PN" "42820-2223 "
+			(property "ki_locked" ""
 				(at 0 0 0)
 				(effects
 					(font
 						(size 1.27 1.27)
 					)
-					(hide yes)
-				)
-			)
-			(property "Digi PN" "WM11250-ND"
-				(at 0 0 0)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-					(hide yes)
-				)
-			)
-			(property "Digi URL" "https://www.digikey.com/en/products/detail/molex/0428202223/3310054"
-				(at 0 0 0)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-					(hide yes)
-				)
-			)
-			(property "MFG" "Molex"
-				(at 0 0 0)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-					(hide yes)
-				)
-			)
-			(property "Fuse Digikey" ""
-				(at 0 0 0)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-					(hide yes)
 				)
 			)
 			(property "ki_keywords" "connector"
@@ -516,32 +479,22 @@
 					(hide yes)
 				)
 			)
-			(symbol "Conn_01x02_1_1_1"
+			(symbol "Conn_01x01_Pin_1_1"
 				(rectangle
-					(start -1.27 1.27)
-					(end 1.27 -3.81)
-					(stroke
-						(width 0.254)
-						(type default)
-					)
-					(fill
-						(type background)
-					)
-				)
-				(rectangle
-					(start -1.27 0.127)
+					(start 0.8636 0.127)
 					(end 0 -0.127)
 					(stroke
 						(width 0.1524)
 						(type default)
 					)
 					(fill
-						(type none)
+						(type outline)
 					)
 				)
-				(rectangle
-					(start -1.27 -2.413)
-					(end 0 -2.667)
+				(polyline
+					(pts
+						(xy 1.27 0) (xy 0.8636 0)
+					)
 					(stroke
 						(width 0.1524)
 						(type default)
@@ -551,7 +504,7 @@
 					)
 				)
 				(pin passive line
-					(at -5.08 0 0)
+					(at 5.08 0 180)
 					(length 3.81)
 					(name "Pin_1"
 						(effects
@@ -560,64 +513,10 @@
 							)
 						)
 					)
-					(number "1_1"
-						(effects
-							(font
-								(size 0 0)
-							)
-						)
-					)
-				)
-				(pin passive line
-					(at -5.08 0 0)
-					(length 3.81)
-					(name ""
+					(number "1"
 						(effects
 							(font
 								(size 1.27 1.27)
-							)
-						)
-					)
-					(number "1_2"
-						(effects
-							(font
-								(size 0 0)
-							)
-						)
-					)
-				)
-				(pin passive line
-					(at -5.08 -2.54 0)
-					(length 3.81)
-					(name "Pin_2"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-					(number "2_1"
-						(effects
-							(font
-								(size 0 0)
-							)
-						)
-					)
-				)
-				(pin passive line
-					(at -5.08 -2.54 0)
-					(length 3.81)
-					(name ""
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-					(number "2_2"
-						(effects
-							(font
-								(size 0 0)
 							)
 						)
 					)
@@ -732,7 +631,7 @@
 			)
 			(embedded_fonts no)
 		)
-		(symbol "Connector_Generic:Conn_01x03"
+		(symbol "Connector_Generic:Conn_01x02"
 			(pin_names
 				(offset 1.016)
 				(hide yes)
@@ -741,14 +640,14 @@
 			(in_bom yes)
 			(on_board yes)
 			(property "Reference" "J"
-				(at 0 5.08 0)
+				(at 0 2.54 0)
 				(effects
 					(font
 						(size 1.27 1.27)
 					)
 				)
 			)
-			(property "Value" "Conn_01x03"
+			(property "Value" "Conn_01x02"
 				(at 0 -5.08 0)
 				(effects
 					(font
@@ -774,7 +673,7 @@
 					(hide yes)
 				)
 			)
-			(property "Description" "Generic connector, single row, 01x03, script generated (kicad-library-utils/schlib/autogen/connector/)"
+			(property "Description" "Generic connector, single row, 01x02, script generated (kicad-library-utils/schlib/autogen/connector/)"
 				(at 0 0 0)
 				(effects
 					(font
@@ -801,9 +700,9 @@
 					(hide yes)
 				)
 			)
-			(symbol "Conn_01x03_1_1"
+			(symbol "Conn_01x02_1_1"
 				(rectangle
-					(start -1.27 3.81)
+					(start -1.27 1.27)
 					(end 1.27 -3.81)
 					(stroke
 						(width 0.254)
@@ -811,17 +710,6 @@
 					)
 					(fill
 						(type background)
-					)
-				)
-				(rectangle
-					(start -1.27 2.667)
-					(end 0 2.413)
-					(stroke
-						(width 0.1524)
-						(type default)
-					)
-					(fill
-						(type none)
 					)
 				)
 				(rectangle
@@ -847,7 +735,7 @@
 					)
 				)
 				(pin passive line
-					(at -5.08 2.54 0)
+					(at -5.08 0 0)
 					(length 3.81)
 					(name "Pin_1"
 						(effects
@@ -865,7 +753,7 @@
 					)
 				)
 				(pin passive line
-					(at -5.08 0 0)
+					(at -5.08 -2.54 0)
 					(length 3.81)
 					(name "Pin_2"
 						(effects
@@ -875,24 +763,6 @@
 						)
 					)
 					(number "2"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-				)
-				(pin passive line
-					(at -5.08 -2.54 0)
-					(length 3.81)
-					(name "Pin_3"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-					(number "3"
 						(effects
 							(font
 								(size 1.27 1.27)
@@ -2246,6 +2116,170 @@
 					(at 0 -3.81 90)
 					(length 1.27)
 					(name "~"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "2"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+			)
+			(embedded_fonts no)
+		)
+		(symbol "Device:R_Potentiometer_Trim"
+			(pin_names
+				(offset 1.016)
+				(hide yes)
+			)
+			(exclude_from_sim no)
+			(in_bom yes)
+			(on_board yes)
+			(property "Reference" "RV"
+				(at -4.445 0 90)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Value" "R_Potentiometer_Trim"
+				(at -2.54 0 90)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Footprint" ""
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "Datasheet" "~"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "Description" "Trim-potentiometer"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "ki_keywords" "resistor variable trimpot trimmer"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "ki_fp_filters" "Potentiometer*"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(symbol "R_Potentiometer_Trim_0_1"
+				(rectangle
+					(start 1.016 2.54)
+					(end -1.016 -2.54)
+					(stroke
+						(width 0.254)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy 1.524 0.762) (xy 1.524 -0.762)
+					)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy 2.54 0) (xy 1.524 0)
+					)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+			)
+			(symbol "R_Potentiometer_Trim_1_1"
+				(pin passive line
+					(at 0 3.81 270)
+					(length 1.27)
+					(name "1"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "1"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin passive line
+					(at 0 -3.81 90)
+					(length 1.27)
+					(name "3"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "3"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin passive line
+					(at 3.81 0 180)
+					(length 1.27)
+					(name "2"
 						(effects
 							(font
 								(size 1.27 1.27)
@@ -4319,174 +4353,6 @@
 					(at 0 -2.54 90)
 					(length 2.54)
 					(name "1"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-					(number "1"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-				)
-			)
-			(embedded_fonts no)
-		)
-		(symbol "Reference_Voltage:LM4040DBZ-3"
-			(pin_names
-				(offset 0.0254)
-				(hide yes)
-			)
-			(exclude_from_sim no)
-			(in_bom yes)
-			(on_board yes)
-			(property "Reference" "U"
-				(at 0 2.54 0)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-				)
-			)
-			(property "Value" "LM4040DBZ-3"
-				(at 0 -3.175 0)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-				)
-			)
-			(property "Footprint" "Package_TO_SOT_SMD:SOT-23"
-				(at 0 -5.08 0)
-				(effects
-					(font
-						(size 1.27 1.27)
-						(italic yes)
-					)
-					(hide yes)
-				)
-			)
-			(property "Datasheet" "http://www.ti.com/lit/ds/symlink/lm4040-n.pdf"
-				(at 0 0 0)
-				(effects
-					(font
-						(size 1.27 1.27)
-						(italic yes)
-					)
-					(hide yes)
-				)
-			)
-			(property "Description" "3.000V Precision Micropower Shunt Voltage Reference, SOT-23"
-				(at 0 0 0)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-					(hide yes)
-				)
-			)
-			(property "ki_keywords" "diode device voltage reference shunt"
-				(at 0 0 0)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-					(hide yes)
-				)
-			)
-			(property "ki_fp_filters" "SOT?23*"
-				(at 0 0 0)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-					(hide yes)
-				)
-			)
-			(symbol "LM4040DBZ-3_0_1"
-				(polyline
-					(pts
-						(xy -1.27 0) (xy 0 0) (xy 1.27 0)
-					)
-					(stroke
-						(width 0)
-						(type default)
-					)
-					(fill
-						(type none)
-					)
-				)
-				(polyline
-					(pts
-						(xy -1.27 -1.27) (xy 0.635 0) (xy -1.27 1.27) (xy -1.27 -1.27)
-					)
-					(stroke
-						(width 0.2032)
-						(type default)
-					)
-					(fill
-						(type none)
-					)
-				)
-				(polyline
-					(pts
-						(xy 0 -1.27) (xy 0.635 -1.27) (xy 0.635 1.27) (xy 1.27 1.27)
-					)
-					(stroke
-						(width 0.2032)
-						(type default)
-					)
-					(fill
-						(type none)
-					)
-				)
-			)
-			(symbol "LM4040DBZ-3_1_1"
-				(pin passive line
-					(at -3.81 0 0)
-					(length 2.54)
-					(name "A"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-					(number "2"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-				)
-				(pin no_connect line
-					(at -1.27 0 0)
-					(length 2.54)
-					(hide yes)
-					(name "NC"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-					(number "3"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-				)
-				(pin passive line
-					(at 3.81 0 180)
-					(length 2.54)
-					(name "K"
 						(effects
 							(font
 								(size 1.27 1.27)
@@ -7021,7 +6887,7 @@
 	)
 	(text "Reset Button Out\n"
 		(exclude_from_sim no)
-		(at 393.446 142.748 0)
+		(at 392.684 135.382 0)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -7052,7 +6918,7 @@
 	)
 	(text "5k From ESF\n"
 		(exclude_from_sim no)
-		(at 56.134 161.544 0)
+		(at 54.102 161.036 0)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -7073,7 +6939,7 @@
 	)
 	(text "150V max"
 		(exclude_from_sim no)
-		(at 70.358 126.492 0)
+		(at 64.008 127.762 0)
 		(effects
 			(font
 				(size 0.508 0.508)
@@ -7093,7 +6959,7 @@
 	)
 	(text "TS-"
 		(exclude_from_sim no)
-		(at 38.1 123.444 0)
+		(at 34.036 120.904 0)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -7101,16 +6967,6 @@
 			)
 		)
 		(uuid "469b6fc2-4fcd-489c-8507-f69f2322c363")
-	)
-	(text "3V Zener"
-		(exclude_from_sim no)
-		(at 273.05 74.422 0)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-		)
-		(uuid "4b24d2b8-d2fa-458d-86d3-c2ec5ef5772c")
 	)
 	(text "RTM_OUT"
 		(exclude_from_sim no)
@@ -7145,7 +7001,7 @@
 	)
 	(text "12V After\nFuse Box\n"
 		(exclude_from_sim no)
-		(at 397.764 126.238 0)
+		(at 397.51 124.206 0)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -7166,7 +7022,7 @@
 	)
 	(text "TS Ready\n"
 		(exclude_from_sim no)
-		(at 397.764 138.684 0)
+		(at 397.256 137.668 0)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -7248,7 +7104,7 @@
 	)
 	(text "Discharge+\n"
 		(exclude_from_sim no)
-		(at 37.338 175.514 0)
+		(at 37.338 177.8 0)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -7277,9 +7133,9 @@
 		)
 		(uuid "b7d1ac89-b115-40e6-a761-3cbaa31fb79f")
 	)
-	(text "12(10/10+24.9) = 3.438V\n10.47(10/10+24.9) = 3V\n"
+	(text "0V - 5V\n"
 		(exclude_from_sim no)
-		(at 261.874 58.928 0)
+		(at 268.986 72.898 0)
 		(effects
 			(font
 				(size 1.016 1.016)
@@ -7289,7 +7145,7 @@
 	)
 	(text "TSMP-\n"
 		(exclude_from_sim no)
-		(at 36.83 156.464 0)
+		(at 35.814 153.924 0)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -7311,7 +7167,7 @@
 	)
 	(text "TS+\n"
 		(exclude_from_sim no)
-		(at 37.846 118.11 0)
+		(at 34.036 118.11 0)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -7364,7 +7220,7 @@
 	)
 	(text "TSMP+\n"
 		(exclude_from_sim no)
-		(at 36.83 151.13 0)
+		(at 35.56 151.13 0)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -7426,6 +7282,12 @@
 		(uuid "1df494aa-aa42-48a5-b497-0eae13db0062")
 	)
 	(junction
+		(at 259.08 87.63)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "1e1e1f36-54ae-4fc7-8b02-b3020a910bb1")
+	)
+	(junction
 		(at 373.38 124.46)
 		(diameter 0)
 		(color 0 0 0 0)
@@ -7450,12 +7312,6 @@
 		(uuid "2089de2c-13d0-4842-9020-f88c45efdd06")
 	)
 	(junction
-		(at 251.46 68.58)
-		(diameter 0)
-		(color 0 0 0 0)
-		(uuid "2c4212a6-3816-4ae2-9b34-ea44ad0836e8")
-	)
-	(junction
 		(at 294.64 181.61)
 		(diameter 0)
 		(color 0 0 0 0)
@@ -7466,12 +7322,6 @@
 		(diameter 0)
 		(color 0 0 0 0)
 		(uuid "30ffc7a8-4631-4339-9b08-b4bb63c3cc50")
-	)
-	(junction
-		(at 264.16 83.82)
-		(diameter 0)
-		(color 0 0 0 0)
-		(uuid "313e13d3-a524-4430-8425-20fab8c2adf3")
 	)
 	(junction
 		(at 247.65 120.65)
@@ -7504,10 +7354,10 @@
 		(uuid "4ec02db9-31ec-4c4b-bc99-ca9f1e590a49")
 	)
 	(junction
-		(at 241.3 55.88)
+		(at 44.45 118.11)
 		(diameter 0)
 		(color 0 0 0 0)
-		(uuid "6c4e2a01-767d-4371-98c1-2e164a7cb1a8")
+		(uuid "6ceb94e5-397b-4a32-858d-856a0c1cad22")
 	)
 	(junction
 		(at 217.17 54.61)
@@ -7540,6 +7390,12 @@
 		(uuid "863a53a9-6a44-43e6-955e-6dee79b4f5d8")
 	)
 	(junction
+		(at 46.99 120.65)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "8b552ade-6aff-4ff7-8983-d641f14ba226")
+	)
+	(junction
 		(at 384.81 124.46)
 		(diameter 0)
 		(color 0 0 0 0)
@@ -7570,7 +7426,7 @@
 		(uuid "9c5ed701-3e64-42e9-ba3c-4b9b60c21f43")
 	)
 	(junction
-		(at 284.48 83.82)
+		(at 284.48 87.63)
 		(diameter 0)
 		(color 0 0 0 0)
 		(uuid "9dc4354e-a323-419d-aa76-896859badc1f")
@@ -7594,6 +7450,12 @@
 		(uuid "ad3a4c15-39b7-405b-b832-21d6318348bd")
 	)
 	(junction
+		(at 250.19 68.58)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "b60bbeca-28fa-4587-949c-5e74fb52f8de")
+	)
+	(junction
 		(at 325.12 181.61)
 		(diameter 0)
 		(color 0 0 0 0)
@@ -7612,16 +7474,22 @@
 		(uuid "c4dde7dd-a255-4da8-8bca-4a9738abc725")
 	)
 	(junction
-		(at 48.26 118.11)
+		(at 262.89 87.63)
 		(diameter 0)
 		(color 0 0 0 0)
-		(uuid "cbf7df95-65d3-4d4f-a5c6-6a2fe659ae3c")
+		(uuid "c55c9af0-afaf-4db2-80ae-488602754619")
 	)
 	(junction
 		(at 378.46 95.25)
 		(diameter 0)
 		(color 0 0 0 0)
 		(uuid "cd612003-75c5-4760-a09f-838b11440864")
+	)
+	(junction
+		(at 175.26 218.44)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "cea71061-bc01-4b79-9f25-2767aeb9410d")
 	)
 	(junction
 		(at 321.31 63.5)
@@ -7672,12 +7540,6 @@
 		(uuid "e0e11bef-8017-47e2-9db5-435d25ab25f4")
 	)
 	(junction
-		(at 377.19 156.21)
-		(diameter 0)
-		(color 0 0 0 0)
-		(uuid "e108bba7-c50d-47c4-b329-acd65cd9ae4c")
-	)
-	(junction
 		(at 283.21 133.35)
 		(diameter 0)
 		(color 0 0 0 0)
@@ -7688,18 +7550,6 @@
 		(diameter 0)
 		(color 0 0 0 0)
 		(uuid "e561e4e6-4514-4189-bb0f-15706594cdb1")
-	)
-	(junction
-		(at 50.8 123.19)
-		(diameter 0)
-		(color 0 0 0 0)
-		(uuid "e7b3f3a1-2678-4452-914d-583cdbe56df4")
-	)
-	(junction
-		(at 273.05 76.2)
-		(diameter 0)
-		(color 0 0 0 0)
-		(uuid "ebfb2dba-4d08-4a96-adec-e47ee2ce2987")
 	)
 	(junction
 		(at 388.62 95.25)
@@ -7714,12 +7564,6 @@
 		(uuid "f6032092-be9c-417b-9b2f-52c71f9a1eb5")
 	)
 	(junction
-		(at 273.05 83.82)
-		(diameter 0)
-		(color 0 0 0 0)
-		(uuid "f76e8f85-1230-43d4-9904-2d5a9af2c39b")
-	)
-	(junction
 		(at 331.47 53.34)
 		(diameter 0)
 		(color 0 0 0 0)
@@ -7728,10 +7572,6 @@
 	(no_connect
 		(at 252.73 185.42)
 		(uuid "0d1e31e9-1164-400a-b2cd-ed996c70ed49")
-	)
-	(no_connect
-		(at 46.99 120.65)
-		(uuid "1a5b4d27-13ba-4061-a0b0-affef4ecbb01")
 	)
 	(no_connect
 		(at 236.22 180.34)
@@ -7752,14 +7592,6 @@
 	(no_connect
 		(at 50.8 74.93)
 		(uuid "5c325b15-2e57-4a9f-b86f-96f91f712167")
-	)
-	(no_connect
-		(at 46.99 153.67)
-		(uuid "61449e84-badd-47ed-9c8e-692f17f1b8b1")
-	)
-	(no_connect
-		(at 49.53 177.8)
-		(uuid "61b0957e-b9a3-4346-aab6-9d2b02c54187")
 	)
 	(no_connect
 		(at 251.46 182.88)
@@ -7786,10 +7618,6 @@
 		(uuid "9ad54df8-83a3-4c8c-83cf-f92269a44532")
 	)
 	(no_connect
-		(at 175.26 213.36)
-		(uuid "a23a1740-7bf0-4b1a-92f2-21231c6a16ba")
-	)
-	(no_connect
 		(at 34.29 74.93)
 		(uuid "a44aa18c-ea9d-4c3d-8de1-17084f1a66e9")
 	)
@@ -7804,10 +7632,6 @@
 	(no_connect
 		(at 234.95 135.89)
 		(uuid "c61e0672-5cb0-41be-b4de-7bcd04216beb")
-	)
-	(no_connect
-		(at 386.08 142.24)
-		(uuid "c7d04bed-de97-4b8d-a8fb-67bf4c9a9e43")
 	)
 	(no_connect
 		(at 34.29 80.01)
@@ -7851,7 +7675,7 @@
 	)
 	(wire
 		(pts
-			(xy 377.19 152.4) (xy 377.19 156.21)
+			(xy 377.19 152.4) (xy 377.19 157.48)
 		)
 		(stroke
 			(width 0)
@@ -7868,16 +7692,6 @@
 			(type default)
 		)
 		(uuid "02c513ef-4013-4faa-9afd-157d6bf90f4a")
-	)
-	(wire
-		(pts
-			(xy 377.19 156.21) (xy 377.19 157.48)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "02e9733c-2d54-4a9f-b74b-45c5520aed2f")
 	)
 	(wire
 		(pts
@@ -7961,16 +7775,6 @@
 	)
 	(wire
 		(pts
-			(xy 50.8 123.19) (xy 52.07 123.19)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "0be62560-7221-4ac4-8741-ee53cc0bef75")
-	)
-	(wire
-		(pts
 			(xy 387.35 95.25) (xy 388.62 95.25)
 		)
 		(stroke
@@ -7978,16 +7782,6 @@
 			(type default)
 		)
 		(uuid "0d2ccd06-8826-43f4-aa95-4ab0bbb9d723")
-	)
-	(wire
-		(pts
-			(xy 367.03 156.21) (xy 377.19 156.21)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "0d55d78d-8fb1-46f9-8483-f9a9574efa78")
 	)
 	(wire
 		(pts
@@ -8011,7 +7805,7 @@
 	)
 	(wire
 		(pts
-			(xy 241.3 55.88) (xy 241.3 58.42)
+			(xy 241.3 45.72) (xy 241.3 58.42)
 		)
 		(stroke
 			(width 0)
@@ -8051,7 +7845,7 @@
 	)
 	(wire
 		(pts
-			(xy 241.3 80.01) (xy 241.3 83.82)
+			(xy 241.3 80.01) (xy 241.3 87.63)
 		)
 		(stroke
 			(width 0)
@@ -8071,17 +7865,7 @@
 	)
 	(wire
 		(pts
-			(xy 241.3 55.88) (xy 250.19 55.88)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "18950934-1577-4cbd-b20e-3de6be1acf89")
-	)
-	(wire
-		(pts
-			(xy 264.16 83.82) (xy 241.3 83.82)
+			(xy 241.3 87.63) (xy 259.08 87.63)
 		)
 		(stroke
 			(width 0)
@@ -8091,7 +7875,7 @@
 	)
 	(wire
 		(pts
-			(xy 250.19 76.2) (xy 259.08 76.2)
+			(xy 247.65 71.12) (xy 259.08 71.12)
 		)
 		(stroke
 			(width 0)
@@ -8291,6 +8075,16 @@
 	)
 	(wire
 		(pts
+			(xy 262.89 87.63) (xy 284.48 87.63)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "3977e717-2d9a-40cd-a300-31725166abbf")
+	)
+	(wire
+		(pts
 			(xy 386.08 92.71) (xy 388.62 92.71)
 		)
 		(stroke
@@ -8308,6 +8102,16 @@
 			(type default)
 		)
 		(uuid "3b381574-6c09-40fc-9cf5-e100adca53a4")
+	)
+	(wire
+		(pts
+			(xy 278.13 73.66) (xy 279.4 73.66)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "3b7eafcd-9b63-488f-9257-66d92d6e3c48")
 	)
 	(wire
 		(pts
@@ -8358,16 +8162,6 @@
 			(type default)
 		)
 		(uuid "3e51fe18-1b23-4dbe-9d15-237562e46e1e")
-	)
-	(wire
-		(pts
-			(xy 264.16 83.82) (xy 273.05 83.82)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "3ece7adb-ffb8-471c-9732-060ec254eb10")
 	)
 	(wire
 		(pts
@@ -8431,6 +8225,16 @@
 	)
 	(wire
 		(pts
+			(xy 383.54 142.24) (xy 386.08 142.24)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "4b1b29dc-201a-4e60-bc10-016cba4ffac0")
+	)
+	(wire
+		(pts
 			(xy 359.41 58.42) (xy 354.33 58.42)
 		)
 		(stroke
@@ -8468,6 +8272,26 @@
 			(type default)
 		)
 		(uuid "4d886e64-7b09-4c43-85c4-05b6ed026640")
+	)
+	(wire
+		(pts
+			(xy 46.99 120.65) (xy 52.07 120.65)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "4dffaa20-b249-45c8-838a-b680e69ac0ae")
+	)
+	(wire
+		(pts
+			(xy 259.08 71.12) (xy 259.08 72.39)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "4e26cf88-0952-4a79-9ae2-a543ad01967b")
 	)
 	(wire
 		(pts
@@ -8531,7 +8355,7 @@
 	)
 	(wire
 		(pts
-			(xy 59.69 123.19) (xy 67.31 123.19)
+			(xy 59.69 120.65) (xy 67.31 120.65)
 		)
 		(stroke
 			(width 0)
@@ -8621,6 +8445,16 @@
 	)
 	(wire
 		(pts
+			(xy 259.08 87.63) (xy 262.89 87.63)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "5e91bd0f-72a7-45ec-b07b-dbaaef9e6ebf")
+	)
+	(wire
+		(pts
 			(xy 364.49 55.88) (xy 364.49 59.69)
 		)
 		(stroke
@@ -8641,6 +8475,16 @@
 	)
 	(wire
 		(pts
+			(xy 45.72 153.67) (xy 49.53 153.67)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "5f68a1ad-6ce6-480d-bf2d-1864e8bfb35d")
+	)
+	(wire
+		(pts
 			(xy 284.48 53.34) (xy 284.48 58.42)
 		)
 		(stroke
@@ -8651,7 +8495,7 @@
 	)
 	(wire
 		(pts
-			(xy 66.04 168.91) (xy 66.04 175.26)
+			(xy 66.04 168.91) (xy 66.04 177.8)
 		)
 		(stroke
 			(width 0)
@@ -8691,7 +8535,7 @@
 	)
 	(wire
 		(pts
-			(xy 284.48 83.82) (xy 298.45 83.82)
+			(xy 284.48 87.63) (xy 298.45 87.63)
 		)
 		(stroke
 			(width 0)
@@ -8718,6 +8562,16 @@
 			(type default)
 		)
 		(uuid "635c7bc6-d4d7-44e3-b7c4-6a0ee6b54c8b")
+	)
+	(wire
+		(pts
+			(xy 259.08 80.01) (xy 259.08 87.63)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "668d1820-e1b2-4e30-9e4f-daabfbdc9515")
 	)
 	(wire
 		(pts
@@ -8841,6 +8695,16 @@
 	)
 	(wire
 		(pts
+			(xy 46.99 120.65) (xy 46.99 137.16)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "745a7311-5da8-474c-bc79-b0d557a3ce37")
+	)
+	(wire
+		(pts
 			(xy 193.04 77.47) (xy 196.85 77.47)
 		)
 		(stroke
@@ -8871,7 +8735,7 @@
 	)
 	(wire
 		(pts
-			(xy 264.16 83.82) (xy 264.16 86.36)
+			(xy 262.89 87.63) (xy 262.89 90.17)
 		)
 		(stroke
 			(width 0)
@@ -8991,13 +8855,13 @@
 	)
 	(wire
 		(pts
-			(xy 46.99 156.21) (xy 49.53 156.21)
+			(xy 250.19 68.58) (xy 279.4 68.58)
 		)
 		(stroke
 			(width 0)
 			(type default)
 		)
-		(uuid "82e8d1af-ee07-481c-a4a7-4ea463dffb13")
+		(uuid "80790ef6-605c-40ec-8ec5-57d08268ea25")
 	)
 	(wire
 		(pts
@@ -9191,7 +9055,17 @@
 	)
 	(wire
 		(pts
-			(xy 57.15 156.21) (xy 63.5 156.21)
+			(xy 383.54 143.51) (xy 383.54 142.24)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "9c069f95-39c8-4aae-a111-864c7b3ddfc8")
+	)
+	(wire
+		(pts
+			(xy 57.15 153.67) (xy 63.5 153.67)
 		)
 		(stroke
 			(width 0)
@@ -9201,7 +9075,7 @@
 	)
 	(wire
 		(pts
-			(xy 284.48 78.74) (xy 284.48 83.82)
+			(xy 284.48 78.74) (xy 284.48 87.63)
 		)
 		(stroke
 			(width 0)
@@ -9301,7 +9175,7 @@
 	)
 	(wire
 		(pts
-			(xy 250.19 55.88) (xy 250.19 76.2)
+			(xy 247.65 55.88) (xy 247.65 71.12)
 		)
 		(stroke
 			(width 0)
@@ -9361,6 +9235,16 @@
 	)
 	(wire
 		(pts
+			(xy 262.89 76.2) (xy 278.13 76.2)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "a9f366cb-50bd-4b12-ba89-1e2b0feaa4d9")
+	)
+	(wire
+		(pts
 			(xy 287.02 181.61) (xy 294.64 181.61)
 		)
 		(stroke
@@ -9411,7 +9295,7 @@
 	)
 	(wire
 		(pts
-			(xy 60.96 140.97) (xy 48.26 140.97)
+			(xy 60.96 140.97) (xy 44.45 140.97)
 		)
 		(stroke
 			(width 0)
@@ -9501,7 +9385,7 @@
 	)
 	(wire
 		(pts
-			(xy 298.45 83.82) (xy 298.45 81.28)
+			(xy 298.45 87.63) (xy 298.45 81.28)
 		)
 		(stroke
 			(width 0)
@@ -9521,16 +9405,6 @@
 	)
 	(wire
 		(pts
-			(xy 251.46 68.58) (xy 279.4 68.58)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "bc901c15-6b14-487c-819d-d3a4d25fb788")
-	)
-	(wire
-		(pts
 			(xy 354.33 198.12) (xy 354.33 201.93)
 		)
 		(stroke
@@ -9541,7 +9415,7 @@
 	)
 	(wire
 		(pts
-			(xy 279.4 76.2) (xy 279.4 73.66)
+			(xy 278.13 76.2) (xy 278.13 73.66)
 		)
 		(stroke
 			(width 0)
@@ -9561,7 +9435,7 @@
 	)
 	(wire
 		(pts
-			(xy 67.31 123.19) (xy 67.31 147.32)
+			(xy 67.31 120.65) (xy 67.31 147.32)
 		)
 		(stroke
 			(width 0)
@@ -9571,7 +9445,7 @@
 	)
 	(wire
 		(pts
-			(xy 46.99 151.13) (xy 49.53 151.13)
+			(xy 45.72 151.13) (xy 49.53 151.13)
 		)
 		(stroke
 			(width 0)
@@ -9621,16 +9495,6 @@
 	)
 	(wire
 		(pts
-			(xy 73.66 125.73) (xy 73.66 127)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "c5ef6ec4-1796-4f1c-ba32-0844f37ea5bb")
-	)
-	(wire
-		(pts
 			(xy 361.95 134.62) (xy 386.08 134.62)
 		)
 		(stroke
@@ -9638,16 +9502,6 @@
 			(type default)
 		)
 		(uuid "c752c6f7-5b37-4bb3-afd5-307b18660858")
-	)
-	(wire
-		(pts
-			(xy 266.7 76.2) (xy 273.05 76.2)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "c7fda866-e9a0-4f8b-87d1-82f1976ca428")
 	)
 	(wire
 		(pts
@@ -9681,7 +9535,7 @@
 	)
 	(wire
 		(pts
-			(xy 241.3 68.58) (xy 251.46 68.58)
+			(xy 241.3 68.58) (xy 250.19 68.58)
 		)
 		(stroke
 			(width 0)
@@ -9761,17 +9615,17 @@
 	)
 	(wire
 		(pts
-			(xy 241.3 45.72) (xy 241.3 55.88)
+			(xy 175.26 213.36) (xy 175.26 218.44)
 		)
 		(stroke
 			(width 0)
 			(type default)
 		)
-		(uuid "d2e79755-724d-4afa-9daf-b037fdc4071f")
+		(uuid "d4d93f65-062c-4d49-9cfe-f9200e214ec1")
 	)
 	(wire
 		(pts
-			(xy 46.99 123.19) (xy 50.8 123.19)
+			(xy 43.18 120.65) (xy 46.99 120.65)
 		)
 		(stroke
 			(width 0)
@@ -9801,7 +9655,7 @@
 	)
 	(wire
 		(pts
-			(xy 66.04 175.26) (xy 49.53 175.26)
+			(xy 66.04 177.8) (xy 49.53 177.8)
 		)
 		(stroke
 			(width 0)
@@ -9831,7 +9685,7 @@
 	)
 	(wire
 		(pts
-			(xy 50.8 137.16) (xy 63.5 137.16)
+			(xy 46.99 137.16) (xy 63.5 137.16)
 		)
 		(stroke
 			(width 0)
@@ -9841,17 +9695,7 @@
 	)
 	(wire
 		(pts
-			(xy 273.05 83.82) (xy 284.48 83.82)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "dd54db31-1bc9-4280-b62c-9a536ca1d94a")
-	)
-	(wire
-		(pts
-			(xy 63.5 137.16) (xy 63.5 156.21)
+			(xy 63.5 137.16) (xy 63.5 153.67)
 		)
 		(stroke
 			(width 0)
@@ -9878,16 +9722,6 @@
 			(type default)
 		)
 		(uuid "e16d073c-69a8-4a41-904b-b3b9b3de99ed")
-	)
-	(wire
-		(pts
-			(xy 273.05 76.2) (xy 279.4 76.2)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "e2b4b0e8-3254-408e-a082-a394e7abf745")
 	)
 	(wire
 		(pts
@@ -9921,23 +9755,23 @@
 	)
 	(wire
 		(pts
-			(xy 48.26 118.11) (xy 52.07 118.11)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "e5489bc1-7a47-40e3-bac5-ab91101966cb")
-	)
-	(wire
-		(pts
-			(xy 48.26 140.97) (xy 48.26 118.11)
+			(xy 44.45 140.97) (xy 44.45 118.11)
 		)
 		(stroke
 			(width 0)
 			(type default)
 		)
 		(uuid "e66c286a-7dcb-4014-b630-add65d9056df")
+	)
+	(wire
+		(pts
+			(xy 73.66 125.73) (xy 73.66 127)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "e93a5ee1-3fe7-401d-8854-55a718c14442")
 	)
 	(wire
 		(pts
@@ -10021,7 +9855,17 @@
 	)
 	(wire
 		(pts
-			(xy 46.99 118.11) (xy 48.26 118.11)
+			(xy 44.45 118.11) (xy 52.07 118.11)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "f5234997-bf10-427b-a763-6662905e4d0a")
+	)
+	(wire
+		(pts
+			(xy 43.18 118.11) (xy 44.45 118.11)
 		)
 		(stroke
 			(width 0)
@@ -10071,16 +9915,6 @@
 	)
 	(wire
 		(pts
-			(xy 50.8 123.19) (xy 50.8 137.16)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "fa5bfae0-4812-4c33-833b-47e1427c5c7e")
-	)
-	(wire
-		(pts
 			(xy 312.42 71.12) (xy 313.69 71.12)
 		)
 		(stroke
@@ -10100,7 +9934,7 @@
 		(uuid "fcac10d8-b788-4e5e-af2e-4f25e7cf81ea")
 	)
 	(label "TS-"
-		(at 63.5 123.19 0)
+		(at 63.5 120.65 0)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -10187,7 +10021,6 @@
 	(global_label "GLVMS"
 		(shape input)
 		(at 378.46 149.86 180)
-		(fields_autoplaced yes)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -10196,7 +10029,7 @@
 		)
 		(uuid "5fabbc25-52bf-4d77-bac6-f4c073815dfc")
 		(property "Intersheetrefs" "${INTERSHEET_REFS}"
-			(at 369.4272 149.86 0)
+			(at 369.4272 152.4 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -10427,7 +10260,7 @@
 	(netclass_flag ""
 		(length 2.54)
 		(shape round)
-		(at 374.65 44.45 0)
+		(at 198.2008 49.53 0)
 		(fields_autoplaced yes)
 		(effects
 			(font
@@ -10435,9 +10268,9 @@
 			)
 			(justify left bottom)
 		)
-		(uuid "a6595cb8-6b3f-4139-bf04-6dda05ae5f39")
-		(property "Netclass" "20A"
-			(at 375.3485 41.91 0)
+		(uuid "37aaf6b9-122a-45d0-ac8e-3d28fbe8bace")
+		(property "Netclass" "40A"
+			(at 198.8993 46.99 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -10446,7 +10279,69 @@
 			)
 		)
 		(property "Component Class" ""
-			(at -29.21 -60.96 0)
+			(at -142.1592 -3.81 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+					(italic yes)
+				)
+			)
+		)
+	)
+	(netclass_flag ""
+		(length 2.54)
+		(shape round)
+		(at 245.11 95.25 0)
+		(fields_autoplaced yes)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left bottom)
+		)
+		(uuid "49670511-cd14-4f81-b92e-d5cf6f4744c7")
+		(property "Netclass" "40A"
+			(at 245.8085 92.71 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Component Class" ""
+			(at -95.25 41.91 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+					(italic yes)
+				)
+			)
+		)
+	)
+	(netclass_flag ""
+		(length 2.54)
+		(shape round)
+		(at 203.2 60.96 0)
+		(fields_autoplaced yes)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left bottom)
+		)
+		(uuid "a0ecccfa-05a2-4bb5-a1dc-705dc20a24c8")
+		(property "Netclass" "40A"
+			(at 203.8985 58.42 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Component Class" ""
+			(at -137.16 7.62 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -10466,8 +10361,8 @@
 			)
 			(justify left bottom)
 		)
-		(uuid "d5513d1d-b078-4f13-8794-94a30476e376")
-		(property "Netclass" "20A"
+		(uuid "b19e2ab3-fa4a-49da-84b0-6597b6dca33e")
+		(property "Netclass" "40A"
 			(at 391.8585 92.71 0)
 			(effects
 				(font
@@ -10477,69 +10372,7 @@
 			)
 		)
 		(property "Component Class" ""
-			(at -12.7 -10.16 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-					(italic yes)
-				)
-			)
-		)
-	)
-	(netclass_flag ""
-		(length 2.54)
-		(shape round)
-		(at 264.16 95.25 0)
-		(fields_autoplaced yes)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-			(justify left bottom)
-		)
-		(uuid "ed865c17-fcfd-4126-b3df-77dee07a9801")
-		(property "Netclass" "20A"
-			(at 264.8585 92.71 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-		)
-		(property "Component Class" ""
-			(at -139.7 -10.16 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-					(italic yes)
-				)
-			)
-		)
-	)
-	(netclass_flag ""
-		(length 2.54)
-		(shape round)
-		(at 204.47 60.96 0)
-		(fields_autoplaced yes)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-			(justify left bottom)
-		)
-		(uuid "f9ae2b31-a779-42fb-aabc-87db75a213af")
-		(property "Netclass" "20A"
-			(at 205.1685 58.42 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-		)
-		(property "Component Class" ""
-			(at -199.39 -44.45 0)
+			(at 50.8 41.91 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -10765,421 +10598,6 @@
 			(project ""
 				(path "/89c18bc7-bebe-4d17-a6e8-3a2f210bf7f7"
 					(reference "H1")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
-		(lib_name "Conn_01x02_1")
-		(lib_id "Connector_Generic:Conn_01x02")
-		(at 187.96 52.07 180)
-		(unit 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(dnp no)
-		(fields_autoplaced yes)
-		(uuid "039e2b96-bf38-475d-9e01-5ef156f4b989")
-		(property "Reference" "J1"
-			(at 187.96 43.18 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Value" "42820-2223"
-			(at 187.96 45.72 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Footprint" "FS_4_Global_Footprint_Library:CONN_SDA-42820-0002_02_RC_MOL (42820-2223)"
-			(at 187.96 52.07 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Datasheet" "https://www.molex.com/en-us/products/part-detail-pdf/428202223?display=pdf"
-			(at 187.96 52.07 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Description" "Generic connector, single row, 01x02, script generated (kicad-library-utils/schlib/autogen/connector/)"
-			(at 187.96 52.07 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "MFG PN" "42820-2223 "
-			(at 187.96 52.07 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Digi PN" "WM11250-ND"
-			(at 187.96 52.07 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Digi URL" "https://www.digikey.com/en/products/detail/molex/0428202223/3310054"
-			(at 187.96 52.07 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "MFG" "Molex"
-			(at 187.96 52.07 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Fuse Digikey" ""
-			(at 187.96 52.07 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Digikey Link" ""
-			(at 187.96 52.07 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "MANUFACTURER" ""
-			(at 187.96 52.07 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "MAXIMUM_PACKAGE_HEIGHT" ""
-			(at 187.96 52.07 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "MFP PN" ""
-			(at 187.96 52.07 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Manufacturer" ""
-			(at 187.96 52.07 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Manufacturer Part Number" ""
-			(at 187.96 52.07 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "PARTREV" ""
-			(at 187.96 52.07 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "PN" ""
-			(at 187.96 52.07 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Part Name" ""
-			(at 187.96 52.07 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "STANDARD" ""
-			(at 187.96 52.07 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(pin "1_1"
-			(uuid "4fd57410-3e00-4dea-bc88-d3501bdb8d7e")
-		)
-		(pin "1_2"
-			(uuid "71008106-7297-480a-91e6-bc1faf523bea")
-		)
-		(pin "2_1"
-			(uuid "5acdfee9-c370-43d8-9807-5012327bcd3b")
-		)
-		(pin "2_2"
-			(uuid "555fc70c-cf98-4cc8-8616-385ac34e1c42")
-		)
-		(instances
-			(project "Power Electronics Board"
-				(path "/89c18bc7-bebe-4d17-a6e8-3a2f210bf7f7"
-					(reference "J1")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
-		(lib_id "Connector_Generic:Conn_01x03")
-		(at 41.91 120.65 180)
-		(unit 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(dnp no)
-		(uuid "06d83a1c-460d-48a2-9b81-3e8e986a2097")
-		(property "Reference" "J3"
-			(at 41.91 110.236 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Value" "1054301103"
-			(at 41.91 112.776 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Footprint" "FS_4_Global_Footprint_Library:1054301103"
-			(at 41.91 120.65 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Datasheet" "https://www.molex.com/en-us/products/part-detail/1054301103"
-			(at 41.91 120.65 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Description" "CONN HEADER SMD R/A 3POS 2.5MM"
-			(at 41.91 120.65 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Digi PN" "WM26091CT-ND"
-			(at 41.91 120.65 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "MFG PN" "1054301103"
-			(at 41.91 120.65 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Digi URL" "https://www.digikey.com/en/products/detail/molex/1054301103/9959377"
-			(at 41.91 120.65 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "MFG" "Molex"
-			(at 41.91 120.65 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Fuse Digikey" ""
-			(at 41.91 120.65 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Digikey Link" ""
-			(at 41.91 120.65 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "MANUFACTURER" ""
-			(at 41.91 120.65 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "MAXIMUM_PACKAGE_HEIGHT" ""
-			(at 41.91 120.65 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "MFP PN" ""
-			(at 41.91 120.65 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Manufacturer" ""
-			(at 41.91 120.65 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Manufacturer Part Number" ""
-			(at 41.91 120.65 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "PARTREV" ""
-			(at 41.91 120.65 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "PN" ""
-			(at 41.91 120.65 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Part Name" ""
-			(at 41.91 120.65 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "STANDARD" ""
-			(at 41.91 120.65 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(pin "2"
-			(uuid "d6ff4a04-b423-4acd-b3cc-49208f8676fe")
-		)
-		(pin "1"
-			(uuid "2d1ee10a-c6ce-425b-b1fb-f4e76edcbdd9")
-		)
-		(pin "3"
-			(uuid "c4fbe1a0-5264-4048-9f76-65478d37188b")
-		)
-		(instances
-			(project "Power Electronics Board"
-				(path "/89c18bc7-bebe-4d17-a6e8-3a2f210bf7f7"
-					(reference "J3")
 					(unit 1)
 				)
 			)
@@ -11456,7 +10874,7 @@
 	)
 	(symbol
 		(lib_id "Device:R")
-		(at 53.34 156.21 270)
+		(at 53.34 153.67 270)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
@@ -11464,7 +10882,7 @@
 		(dnp no)
 		(uuid "0772ccde-9fa2-4794-a6e9-d447fc88bb4f")
 		(property "Reference" "R7"
-			(at 56.642 158.496 90)
+			(at 53.34 158.496 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -11472,7 +10890,7 @@
 			)
 		)
 		(property "Value" "5k"
-			(at 53.34 158.75 90)
+			(at 53.34 156.21 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -11480,7 +10898,7 @@
 			)
 		)
 		(property "Footprint" "Resistor_THT:R_Axial_Power_L20.0mm_W6.4mm_P22.40mm"
-			(at 53.34 154.432 90)
+			(at 53.34 151.892 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -11489,7 +10907,7 @@
 			)
 		)
 		(property "Datasheet" "https://www.bourns.com/docs/Product-Datasheets/UB.pdf"
-			(at 53.34 156.21 0)
+			(at 53.34 153.67 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -11498,7 +10916,7 @@
 			)
 		)
 		(property "Description" "Resistor"
-			(at 53.34 156.21 0)
+			(at 53.34 153.67 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -11507,7 +10925,7 @@
 			)
 		)
 		(property "MFG PN" "UB5C-5KF1"
-			(at 53.34 156.21 90)
+			(at 53.34 153.67 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -11516,7 +10934,7 @@
 			)
 		)
 		(property "Digi PN" "696-1085-ND"
-			(at 53.34 156.21 90)
+			(at 53.34 153.67 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -11525,7 +10943,7 @@
 			)
 		)
 		(property "Digi URL" "https://www.digikey.com/en/products/detail/riedon-products-by-bourns/UB5C-5KF1/2176663"
-			(at 53.34 156.21 90)
+			(at 53.34 153.67 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -11534,7 +10952,7 @@
 			)
 		)
 		(property "MFG" "Riedon products by Bourns"
-			(at 53.34 156.21 90)
+			(at 53.34 153.67 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -11543,7 +10961,7 @@
 			)
 		)
 		(property "Fuse Digikey" ""
-			(at 53.34 156.21 90)
+			(at 53.34 153.67 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -11552,7 +10970,7 @@
 			)
 		)
 		(property "Digikey Link" ""
-			(at 53.34 156.21 90)
+			(at 53.34 153.67 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -11561,7 +10979,7 @@
 			)
 		)
 		(property "MANUFACTURER" ""
-			(at 53.34 156.21 90)
+			(at 53.34 153.67 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -11570,7 +10988,7 @@
 			)
 		)
 		(property "MAXIMUM_PACKAGE_HEIGHT" ""
-			(at 53.34 156.21 90)
+			(at 53.34 153.67 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -11579,7 +10997,7 @@
 			)
 		)
 		(property "MFP PN" ""
-			(at 53.34 156.21 90)
+			(at 53.34 153.67 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -11588,7 +11006,7 @@
 			)
 		)
 		(property "Manufacturer" ""
-			(at 53.34 156.21 90)
+			(at 53.34 153.67 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -11597,7 +11015,7 @@
 			)
 		)
 		(property "Manufacturer Part Number" ""
-			(at 53.34 156.21 90)
+			(at 53.34 153.67 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -11606,7 +11024,7 @@
 			)
 		)
 		(property "PARTREV" ""
-			(at 53.34 156.21 90)
+			(at 53.34 153.67 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -11615,7 +11033,7 @@
 			)
 		)
 		(property "PN" ""
-			(at 53.34 156.21 90)
+			(at 53.34 153.67 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -11624,7 +11042,7 @@
 			)
 		)
 		(property "Part Name" ""
-			(at 53.34 156.21 90)
+			(at 53.34 153.67 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -11633,7 +11051,7 @@
 			)
 		)
 		(property "STANDARD" ""
-			(at 53.34 156.21 90)
+			(at 53.34 153.67 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -11658,7 +11076,8 @@
 	)
 	(symbol
 		(lib_id "Device:R")
-		(at 241.3 76.2 180)
+		(at 241.3 76.2 0)
+		(mirror x)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
@@ -11666,7 +11085,7 @@
 		(dnp no)
 		(uuid "099863c6-268d-4736-a584-680a31971d4b")
 		(property "Reference" "R11"
-			(at 243.84 74.9299 0)
+			(at 238.76 74.9299 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -11675,7 +11094,7 @@
 			)
 		)
 		(property "Value" "10k"
-			(at 243.84 77.4699 0)
+			(at 238.76 77.4699 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -11684,7 +11103,7 @@
 			)
 		)
 		(property "Footprint" "Resistor_SMD:R_0603_1608Metric_Pad0.98x0.95mm_HandSolder"
-			(at 243.078 76.2 90)
+			(at 239.522 76.2 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -12026,6 +11445,106 @@
 		)
 	)
 	(symbol
+		(lib_id "Connector:Conn_01x01_Pin")
+		(at 187.96 80.01 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "0a9877fb-641a-42ab-8ddc-2dbfdb487c70")
+		(property "Reference" "J9"
+			(at 186.69 82.042 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "74651173R"
+			(at 186.69 84.582 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" "FS_4_Global_Footprint_Library:74651173R"
+			(at 187.96 80.01 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 187.96 80.01 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Generic connector, single row, 01x01, script generated"
+			(at 187.96 80.01 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Digi PN" "732-74651173RCT-ND"
+			(at 187.96 80.01 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Digi URL" "https://www.digikey.com/en/products/detail/w%C3%BCrth-elektronik/74651173R/6644000"
+			(at 187.96 80.01 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "MFG" "Würth Elektronik"
+			(at 187.96 80.01 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "MFG PN" "74651173R"
+			(at 187.96 80.01 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "bd11297e-b388-4923-9888-983fec1f0e42")
+		)
+		(instances
+			(project "Power Electronics Board"
+				(path "/89c18bc7-bebe-4d17-a6e8-3a2f210bf7f7"
+					(reference "J9")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
 		(lib_id "Connector:TestPoint")
 		(at 325.12 181.61 0)
 		(unit 1)
@@ -12191,41 +11710,32 @@
 		)
 	)
 	(symbol
-		(lib_id "Connector_Generic:Conn_01x03")
-		(at 44.45 177.8 180)
+		(lib_id "Connector_Generic:Conn_01x02")
+		(at 44.45 180.34 180)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
 		(on_board yes)
 		(dnp no)
-		(uuid "0d6446b4-6244-41a0-b17f-bd72c8c2dcb8")
-		(property "Reference" "J5"
-			(at 57.658 176.53 0)
+		(uuid "0ca1811b-51c5-40df-a493-4c8003aff28d")
+		(property "Reference" "J4"
+			(at 44.45 172.72 0)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
 			)
 		)
-		(property "Value" "1054301103"
-			(at 57.658 179.07 0)
+		(property "Value" "1054301102"
+			(at 44.45 175.006 0)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
 			)
 		)
-		(property "Footprint" "FS_4_Global_Footprint_Library:1054301103"
-			(at 44.45 177.8 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Datasheet" "https://www.molex.com/en-us/products/part-detail/1054301103"
-			(at 44.45 177.8 0)
+		(property "Footprint" "FS_4_Global_Footprint_Library:CONN_SD-105430-001_02_MOL"
+			(at 44.45 180.34 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -12233,8 +11743,8 @@
 				(hide yes)
 			)
 		)
-		(property "Description" "CONN HEADER SMD R/A 3POS 2.5MM"
-			(at 44.45 177.8 0)
+		(property "Datasheet" "https://www.literature.molex.com/SQLImages/kelmscott/Molex/PDF_Images/987651-1223.PDF"
+			(at 44.45 180.34 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -12242,8 +11752,8 @@
 				(hide yes)
 			)
 		)
-		(property "Digi PN" "WM26091CT-ND"
-			(at 44.45 177.8 0)
+		(property "Description" "Generic connector, single row, 01x02, script generated (kicad-library-utils/schlib/autogen/connector/)"
+			(at 44.45 180.34 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -12251,8 +11761,8 @@
 				(hide yes)
 			)
 		)
-		(property "MFG PN" "1054301103"
-			(at 44.45 177.8 0)
+		(property "Digi URL" "https://www.digikey.com/en/products/detail/molex/1054301102/9959376"
+			(at 44.45 180.34 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -12260,8 +11770,8 @@
 				(hide yes)
 			)
 		)
-		(property "Digi URL" "https://www.digikey.com/en/products/detail/molex/1054301103/9959377"
-			(at 44.45 177.8 0)
+		(property "Digi PN" "WM26090CT-ND"
+			(at 44.45 180.34 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -12270,7 +11780,7 @@
 			)
 		)
 		(property "MFG" "Molex"
-			(at 44.45 177.8 0)
+			(at 44.45 180.34 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -12278,118 +11788,25 @@
 				(hide yes)
 			)
 		)
-		(property "Fuse Digikey" ""
-			(at 44.45 177.8 0)
+		(property "MFG PN" "1054301102"
+			(at 44.45 180.34 0)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
 				(hide yes)
 			)
-		)
-		(property "Digikey Link" ""
-			(at 44.45 177.8 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "MANUFACTURER" ""
-			(at 44.45 177.8 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "MAXIMUM_PACKAGE_HEIGHT" ""
-			(at 44.45 177.8 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "MFP PN" ""
-			(at 44.45 177.8 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Manufacturer" ""
-			(at 44.45 177.8 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Manufacturer Part Number" ""
-			(at 44.45 177.8 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "PARTREV" ""
-			(at 44.45 177.8 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "PN" ""
-			(at 44.45 177.8 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Part Name" ""
-			(at 44.45 177.8 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "STANDARD" ""
-			(at 44.45 177.8 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(pin "2"
-			(uuid "1b16947c-53a6-48e8-8829-580d73743390")
 		)
 		(pin "1"
-			(uuid "f2c4d790-ecf4-4850-a7f3-89ae0e2416b8")
+			(uuid "6bea9863-e5a7-452f-93b7-3461beeffb4c")
 		)
-		(pin "3"
-			(uuid "e27fd494-ce58-4001-a026-59afdbba0d61")
+		(pin "2"
+			(uuid "b57c3c13-9389-40a0-a825-416352ecfe5c")
 		)
 		(instances
 			(project "Power Electronics Board"
 				(path "/89c18bc7-bebe-4d17-a6e8-3a2f210bf7f7"
-					(reference "J5")
+					(reference "J4")
 					(unit 1)
 				)
 			)
@@ -13113,160 +12530,6 @@
 		)
 	)
 	(symbol
-		(lib_id "Mechanical:MountingHole")
-		(at 40.64 210.82 0)
-		(unit 1)
-		(exclude_from_sim no)
-		(in_bom no)
-		(on_board yes)
-		(dnp no)
-		(fields_autoplaced yes)
-		(uuid "176c70bf-f24f-434c-b981-55f9166f1b24")
-		(property "Reference" "H4"
-			(at 43.18 209.5499 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-		)
-		(property "Value" "MountingHole"
-			(at 43.18 212.0899 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-		)
-		(property "Footprint" "MountingHole:MountingHole_3.2mm_M3"
-			(at 40.64 210.82 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Datasheet" "~"
-			(at 40.64 210.82 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Description" "Mounting Hole without connection"
-			(at 40.64 210.82 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Digikey Link" ""
-			(at 40.64 210.82 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "MANUFACTURER" ""
-			(at 40.64 210.82 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "MAXIMUM_PACKAGE_HEIGHT" ""
-			(at 40.64 210.82 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "MFP PN" ""
-			(at 40.64 210.82 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Manufacturer" ""
-			(at 40.64 210.82 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Manufacturer Part Number" ""
-			(at 40.64 210.82 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "PARTREV" ""
-			(at 40.64 210.82 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "PN" ""
-			(at 40.64 210.82 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Part Name" ""
-			(at 40.64 210.82 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "STANDARD" ""
-			(at 40.64 210.82 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(instances
-			(project "Power Electronics Board"
-				(path "/89c18bc7-bebe-4d17-a6e8-3a2f210bf7f7"
-					(reference "H4")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
 		(lib_id "power:GND")
 		(at 354.33 201.93 0)
 		(unit 1)
@@ -13334,7 +12597,7 @@
 	)
 	(symbol
 		(lib_id "Connector:TestPoint")
-		(at 251.46 68.58 0)
+		(at 250.19 68.58 0)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom no)
@@ -13342,7 +12605,7 @@
 		(dnp no)
 		(uuid "18cbfc65-8cfd-4abe-91b4-fc89a920e017")
 		(property "Reference" "TP6"
-			(at 252.984 64.008 0)
+			(at 251.714 64.008 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -13350,8 +12613,8 @@
 				(justify left)
 			)
 		)
-		(property "Value" "3.4V @ 12V ~ 3V @ 10.47V"
-			(at 252.984 66.548 0)
+		(property "Value" "2.44V @ 12V ~ 2.04V @ 10V"
+			(at 251.714 66.548 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -13360,7 +12623,7 @@
 			)
 		)
 		(property "Footprint" "TestPoint:TestPoint_Pad_1.0x1.0mm"
-			(at 256.54 68.58 0)
+			(at 255.27 68.58 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -13369,7 +12632,7 @@
 			)
 		)
 		(property "Datasheet" "~"
-			(at 256.54 68.58 0)
+			(at 255.27 68.58 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -13378,7 +12641,7 @@
 			)
 		)
 		(property "Description" "test point"
-			(at 251.46 68.58 0)
+			(at 250.19 68.58 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -13387,7 +12650,7 @@
 			)
 		)
 		(property "Fuse Digikey" ""
-			(at 251.46 68.58 0)
+			(at 250.19 68.58 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -13396,7 +12659,7 @@
 			)
 		)
 		(property "Digikey Link" ""
-			(at 251.46 68.58 0)
+			(at 250.19 68.58 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -13405,7 +12668,7 @@
 			)
 		)
 		(property "MANUFACTURER" ""
-			(at 251.46 68.58 0)
+			(at 250.19 68.58 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -13414,7 +12677,7 @@
 			)
 		)
 		(property "MAXIMUM_PACKAGE_HEIGHT" ""
-			(at 251.46 68.58 0)
+			(at 250.19 68.58 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -13423,7 +12686,7 @@
 			)
 		)
 		(property "MFP PN" ""
-			(at 251.46 68.58 0)
+			(at 250.19 68.58 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -13432,7 +12695,7 @@
 			)
 		)
 		(property "Manufacturer" ""
-			(at 251.46 68.58 0)
+			(at 250.19 68.58 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -13441,7 +12704,7 @@
 			)
 		)
 		(property "Manufacturer Part Number" ""
-			(at 251.46 68.58 0)
+			(at 250.19 68.58 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -13450,7 +12713,7 @@
 			)
 		)
 		(property "PARTREV" ""
-			(at 251.46 68.58 0)
+			(at 250.19 68.58 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -13459,7 +12722,7 @@
 			)
 		)
 		(property "PN" ""
-			(at 251.46 68.58 0)
+			(at 250.19 68.58 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -13468,7 +12731,7 @@
 			)
 		)
 		(property "Part Name" ""
-			(at 251.46 68.58 0)
+			(at 250.19 68.58 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -13477,7 +12740,7 @@
 			)
 		)
 		(property "STANDARD" ""
-			(at 251.46 68.58 0)
+			(at 250.19 68.58 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -14029,7 +13292,7 @@
 	)
 	(symbol
 		(lib_id "Device:Fuse")
-		(at 55.88 123.19 270)
+		(at 55.88 120.65 270)
 		(mirror x)
 		(unit 1)
 		(exclude_from_sim no)
@@ -14038,14 +13301,6 @@
 		(dnp no)
 		(uuid "331e5b60-9372-4723-805e-1b74063581e4")
 		(property "Reference" "F3"
-			(at 55.88 128.27 90)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Value" "1812L110/33MR"
 			(at 55.88 125.73 90)
 			(effects
 				(font
@@ -14053,8 +13308,16 @@
 				)
 			)
 		)
+		(property "Value" "1812L110/33MR"
+			(at 55.626 123.19 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
 		(property "Footprint" "Fuse:Fuse_1812_4532Metric_Pad1.30x3.40mm_HandSolder"
-			(at 55.88 124.968 90)
+			(at 55.88 122.428 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -14063,7 +13326,7 @@
 			)
 		)
 		(property "Datasheet" "https://www.littelfuse.com/assetdocs/resettable-ptcs-1812l-datasheet?assetguid=ca5c80cb-504e-4a8a-8e74-0107520a1717"
-			(at 55.88 123.19 0)
+			(at 55.88 120.65 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -14072,7 +13335,7 @@
 			)
 		)
 		(property "Description" "Fuse"
-			(at 55.88 123.19 0)
+			(at 55.88 120.65 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -14081,7 +13344,7 @@
 			)
 		)
 		(property "Digi PN" "F3486CT-ND"
-			(at 55.88 123.19 0)
+			(at 55.88 120.65 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -14090,7 +13353,7 @@
 			)
 		)
 		(property "Digi URL" "https://www.digikey.com/en/products/detail/littelfuse-inc/1812L110-33MR/2023966"
-			(at 55.88 123.19 0)
+			(at 55.88 120.65 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -14099,7 +13362,7 @@
 			)
 		)
 		(property "MFG" "Littelfuse Inc."
-			(at 55.88 123.19 0)
+			(at 55.88 120.65 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -14108,7 +13371,7 @@
 			)
 		)
 		(property "MFG PN" "1812L110/33MR"
-			(at 55.88 123.19 0)
+			(at 55.88 120.65 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -14117,7 +13380,7 @@
 			)
 		)
 		(property "Digikey Link" ""
-			(at 55.88 123.19 90)
+			(at 55.88 120.65 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -14126,7 +13389,7 @@
 			)
 		)
 		(property "MANUFACTURER" ""
-			(at 55.88 123.19 90)
+			(at 55.88 120.65 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -14135,7 +13398,7 @@
 			)
 		)
 		(property "MAXIMUM_PACKAGE_HEIGHT" ""
-			(at 55.88 123.19 90)
+			(at 55.88 120.65 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -14144,7 +13407,7 @@
 			)
 		)
 		(property "MFP PN" ""
-			(at 55.88 123.19 90)
+			(at 55.88 120.65 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -14153,7 +13416,7 @@
 			)
 		)
 		(property "Manufacturer" ""
-			(at 55.88 123.19 90)
+			(at 55.88 120.65 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -14162,7 +13425,7 @@
 			)
 		)
 		(property "Manufacturer Part Number" ""
-			(at 55.88 123.19 90)
+			(at 55.88 120.65 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -14171,7 +13434,7 @@
 			)
 		)
 		(property "PARTREV" ""
-			(at 55.88 123.19 90)
+			(at 55.88 120.65 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -14180,7 +13443,7 @@
 			)
 		)
 		(property "PN" ""
-			(at 55.88 123.19 90)
+			(at 55.88 120.65 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -14189,7 +13452,7 @@
 			)
 		)
 		(property "Part Name" ""
-			(at 55.88 123.19 90)
+			(at 55.88 120.65 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -14198,7 +13461,7 @@
 			)
 		)
 		(property "STANDARD" ""
-			(at 55.88 123.19 90)
+			(at 55.88 120.65 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -14216,6 +13479,109 @@
 			(project "Power Electronics Board"
 				(path "/89c18bc7-bebe-4d17-a6e8-3a2f210bf7f7"
 					(reference "F3")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Connector_Generic:Conn_01x02")
+		(at 40.64 153.67 180)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "369d0098-0d1e-44df-926f-f9792aba44d2")
+		(property "Reference" "J5"
+			(at 40.64 145.542 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "1054311102"
+			(at 40.64 148.082 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" "FS_4_Global_Footprint_Library:CONN_SD-105431-001_02_MOL"
+			(at 40.64 153.67 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "https://www.literature.molex.com/SQLImages/kelmscott/Molex/PDF_Images/987651-1223.PDF"
+			(at 40.64 153.67 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Generic connector, single row, 01x02, script generated (kicad-library-utils/schlib/autogen/connector/)"
+			(at 40.64 153.67 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Digi URL" "https://www.digikey.com/en/products/detail/molex/1054311102/9959359"
+			(at 40.64 153.67 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Digi PN" "WM26073CT-ND"
+			(at 40.64 153.67 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "MFG PN" "1054311102"
+			(at 40.64 153.67 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "MFG" "Molex"
+			(at 40.64 153.67 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "2"
+			(uuid "783fa535-ea50-4f04-a166-a9f7d0073c76")
+		)
+		(pin "1"
+			(uuid "1d3c49a9-0ead-4016-8256-677870f314d2")
+		)
+		(instances
+			(project ""
+				(path "/89c18bc7-bebe-4d17-a6e8-3a2f210bf7f7"
+					(reference "J5")
 					(unit 1)
 				)
 			)
@@ -15472,10 +14838,9 @@
 		(in_bom yes)
 		(on_board yes)
 		(dnp no)
-		(fields_autoplaced yes)
 		(uuid "50b5c5d4-8ce1-4974-b3df-01d99148cea5")
 		(property "Reference" "R1"
-			(at 243.84 60.9599 0)
+			(at 234.188 60.706 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -15483,8 +14848,8 @@
 				(justify left)
 			)
 		)
-		(property "Value" "24.9k"
-			(at 243.84 63.4999 0)
+		(property "Value" "39k"
+			(at 234.188 63.246 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -15519,7 +14884,7 @@
 				(hide yes)
 			)
 		)
-		(property "MFG PN" "RC0603FR-0724K9L"
+		(property "Digi PN" "311-39.0KHRCT-ND"
 			(at 241.3 62.23 0)
 			(effects
 				(font
@@ -15528,7 +14893,7 @@
 				(hide yes)
 			)
 		)
-		(property "Digi PN" "311-24.9KHRCT-ND"
+		(property "Digi URL" "https://www.digikey.com/en/products/detail/yageo/RC0603FR-0739KL/727195"
 			(at 241.3 62.23 0)
 			(effects
 				(font
@@ -15537,7 +14902,7 @@
 				(hide yes)
 			)
 		)
-		(property "Digi URL" "https://www.digikey.com/en/products/detail/yageo/RC0603FR-0724K9L/727080"
+		(property "MFG PN" "RC0603FR-0739KL"
 			(at 241.3 62.23 0)
 			(effects
 				(font
@@ -15547,105 +14912,6 @@
 			)
 		)
 		(property "MFG" "YAGEO"
-			(at 241.3 62.23 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Fuse Digikey" ""
-			(at 241.3 62.23 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Digikey Link" ""
-			(at 241.3 62.23 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "MANUFACTURER" ""
-			(at 241.3 62.23 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "MAXIMUM_PACKAGE_HEIGHT" ""
-			(at 241.3 62.23 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "MFP PN" ""
-			(at 241.3 62.23 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Manufacturer" ""
-			(at 241.3 62.23 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Manufacturer Part Number" ""
-			(at 241.3 62.23 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "PARTREV" ""
-			(at 241.3 62.23 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "PN" ""
-			(at 241.3 62.23 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Part Name" ""
-			(at 241.3 62.23 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "STANDARD" ""
 			(at 241.3 62.23 0)
 			(effects
 				(font
@@ -15664,212 +14930,6 @@
 			(project ""
 				(path "/89c18bc7-bebe-4d17-a6e8-3a2f210bf7f7"
 					(reference "R1")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
-		(lib_id "Connector_Generic:Conn_01x03")
-		(at 41.91 153.67 0)
-		(mirror y)
-		(unit 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(dnp no)
-		(uuid "593d47d3-2c25-4b90-9d85-a22fe78e72bf")
-		(property "Reference" "J4"
-			(at 41.91 148.082 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Value" "1054301103"
-			(at 41.91 145.542 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Footprint" "FS_4_Global_Footprint_Library:1054301103"
-			(at 41.91 153.67 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Datasheet" "https://www.molex.com/en-us/products/part-detail/1054301103"
-			(at 41.91 153.67 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Description" "CONN HEADER SMD R/A 3POS 2.5MM"
-			(at 41.91 153.67 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Digi PN" "WM26091CT-ND"
-			(at 41.91 153.67 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "MFG PN" "1054301103"
-			(at 41.91 153.67 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Digi URL" "https://www.digikey.com/en/products/detail/molex/1054301103/9959377"
-			(at 41.91 153.67 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "MFG" "Molex"
-			(at 41.91 153.67 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Fuse Digikey" ""
-			(at 41.91 153.67 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Digikey Link" ""
-			(at 41.91 153.67 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "MANUFACTURER" ""
-			(at 41.91 153.67 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "MAXIMUM_PACKAGE_HEIGHT" ""
-			(at 41.91 153.67 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "MFP PN" ""
-			(at 41.91 153.67 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Manufacturer" ""
-			(at 41.91 153.67 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Manufacturer Part Number" ""
-			(at 41.91 153.67 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "PARTREV" ""
-			(at 41.91 153.67 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "PN" ""
-			(at 41.91 153.67 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Part Name" ""
-			(at 41.91 153.67 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "STANDARD" ""
-			(at 41.91 153.67 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(pin "2"
-			(uuid "0f09d7ab-903f-455f-83b3-3821e1ae733a")
-		)
-		(pin "1"
-			(uuid "e444b2a4-c65b-4762-9bd1-3ff5f81b539a")
-		)
-		(pin "3"
-			(uuid "bc6dec71-b75c-46f5-b486-e31b7d841f5e")
-		)
-		(instances
-			(project "Power Electronics Board"
-				(path "/89c18bc7-bebe-4d17-a6e8-3a2f210bf7f7"
-					(reference "J4")
 					(unit 1)
 				)
 			)
@@ -16507,171 +15567,6 @@
 			(project "Power Electronics Board"
 				(path "/89c18bc7-bebe-4d17-a6e8-3a2f210bf7f7"
 					(reference "#PWR017")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
-		(lib_id "Connector:TestPoint")
-		(at 367.03 156.21 0)
-		(unit 1)
-		(exclude_from_sim no)
-		(in_bom no)
-		(on_board yes)
-		(dnp no)
-		(uuid "5c795f94-b1b8-4f65-a4e4-46d49e0bfbff")
-		(property "Reference" "TP13"
-			(at 361.188 152.908 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-		)
-		(property "Value" "GND"
-			(at 361.188 155.448 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-		)
-		(property "Footprint" "TestPoint:TestPoint_Pad_1.0x1.0mm"
-			(at 372.11 156.21 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Datasheet" "~"
-			(at 372.11 156.21 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Description" "test point"
-			(at 367.03 156.21 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Fuse Digikey" ""
-			(at 367.03 156.21 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Digikey Link" ""
-			(at 367.03 156.21 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "MANUFACTURER" ""
-			(at 367.03 156.21 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "MAXIMUM_PACKAGE_HEIGHT" ""
-			(at 367.03 156.21 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "MFP PN" ""
-			(at 367.03 156.21 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Manufacturer" ""
-			(at 367.03 156.21 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Manufacturer Part Number" ""
-			(at 367.03 156.21 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "PARTREV" ""
-			(at 367.03 156.21 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "PN" ""
-			(at 367.03 156.21 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Part Name" ""
-			(at 367.03 156.21 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "STANDARD" ""
-			(at 367.03 156.21 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(pin "1"
-			(uuid "01327c3f-d89a-4473-b382-577dd186eb2a")
-		)
-		(instances
-			(project "Power Electronics Board"
-				(path "/89c18bc7-bebe-4d17-a6e8-3a2f210bf7f7"
-					(reference "TP13")
 					(unit 1)
 				)
 			)
@@ -17504,218 +16399,6 @@
 			(project ""
 				(path "/89c18bc7-bebe-4d17-a6e8-3a2f210bf7f7"
 					(reference "K3")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
-		(lib_name "Conn_01x02_1")
-		(lib_id "Connector_Generic:Conn_01x02")
-		(at 391.16 149.86 0)
-		(unit 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(dnp no)
-		(fields_autoplaced yes)
-		(uuid "6ad14624-43ef-483f-a9c8-05e23e314770")
-		(property "Reference" "J6"
-			(at 393.7 149.8599 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-		)
-		(property "Value" "42820-2223"
-			(at 393.7 152.3999 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-		)
-		(property "Footprint" "FS_4_Global_Footprint_Library:CONN_SDA-42820-0002_02_RC_MOL (42820-2223)"
-			(at 391.16 149.86 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Datasheet" "https://www.molex.com/en-us/products/part-detail-pdf/428202223?display=pdf"
-			(at 391.16 149.86 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Description" "Generic connector, single row, 01x02, script generated (kicad-library-utils/schlib/autogen/connector/)"
-			(at 391.16 149.86 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "MFG PN" "42820-2223 "
-			(at 391.16 149.86 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Digi PN" "WM11250-ND"
-			(at 391.16 149.86 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Digi URL" "https://www.digikey.com/en/products/detail/molex/0428202223/3310054"
-			(at 391.16 149.86 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "MFG" "Molex"
-			(at 391.16 149.86 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Fuse Digikey" ""
-			(at 391.16 149.86 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Digikey Link" ""
-			(at 391.16 149.86 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "MANUFACTURER" ""
-			(at 391.16 149.86 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "MAXIMUM_PACKAGE_HEIGHT" ""
-			(at 391.16 149.86 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "MFP PN" ""
-			(at 391.16 149.86 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Manufacturer" ""
-			(at 391.16 149.86 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Manufacturer Part Number" ""
-			(at 391.16 149.86 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "PARTREV" ""
-			(at 391.16 149.86 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "PN" ""
-			(at 391.16 149.86 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Part Name" ""
-			(at 391.16 149.86 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "STANDARD" ""
-			(at 391.16 149.86 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(pin "1_1"
-			(uuid "af2ca0ed-6f7a-4a0f-995c-feb7adcfe580")
-		)
-		(pin "1_2"
-			(uuid "967fbeeb-db2b-4df9-a53f-fc9e3683d7d1")
-		)
-		(pin "2_1"
-			(uuid "5f5e0759-ea81-4fab-98eb-b64e91e1f439")
-		)
-		(pin "2_2"
-			(uuid "f7f627fb-5cdf-48f5-b911-7748f3867c93")
-		)
-		(instances
-			(project "Power Electronics Board"
-				(path "/89c18bc7-bebe-4d17-a6e8-3a2f210bf7f7"
-					(reference "J6")
 					(unit 1)
 				)
 			)
@@ -18804,215 +17487,6 @@
 		)
 	)
 	(symbol
-		(lib_name "Conn_01x02_1")
-		(lib_id "Connector_Generic:Conn_01x02")
-		(at 187.96 80.01 180)
-		(unit 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(dnp no)
-		(uuid "728cce13-95f0-424c-b80b-986f910d8587")
-		(property "Reference" "J2"
-			(at 187.96 71.882 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Value" "42820-2223"
-			(at 187.96 74.422 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Footprint" "FS_4_Global_Footprint_Library:CONN_SDA-42820-0002_02_RC_MOL (42820-2223)"
-			(at 187.96 80.01 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Datasheet" "https://www.molex.com/en-us/products/part-detail-pdf/428202223?display=pdf"
-			(at 187.96 80.01 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Description" "Generic connector, single row, 01x02, script generated (kicad-library-utils/schlib/autogen/connector/)"
-			(at 187.96 80.01 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "MFG PN" "42820-2223 "
-			(at 187.96 80.01 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Digi PN" "WM11250-ND"
-			(at 187.96 80.01 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Digi URL" "https://www.digikey.com/en/products/detail/molex/0428202223/3310054"
-			(at 187.96 80.01 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "MFG" "Molex"
-			(at 187.96 80.01 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Fuse Digikey" ""
-			(at 187.96 80.01 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Digikey Link" ""
-			(at 187.96 80.01 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "MANUFACTURER" ""
-			(at 187.96 80.01 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "MAXIMUM_PACKAGE_HEIGHT" ""
-			(at 187.96 80.01 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "MFP PN" ""
-			(at 187.96 80.01 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Manufacturer" ""
-			(at 187.96 80.01 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Manufacturer Part Number" ""
-			(at 187.96 80.01 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "PARTREV" ""
-			(at 187.96 80.01 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "PN" ""
-			(at 187.96 80.01 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Part Name" ""
-			(at 187.96 80.01 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "STANDARD" ""
-			(at 187.96 80.01 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(pin "1_1"
-			(uuid "2243ee51-6617-4110-85f6-f579ff4ac31a")
-		)
-		(pin "1_2"
-			(uuid "84e97564-2dc8-409e-96d7-532858e39e4e")
-		)
-		(pin "2_1"
-			(uuid "332fc7f6-3150-41eb-bfe4-affc86d2da66")
-		)
-		(pin "2_2"
-			(uuid "2ece2d05-fe77-4aa1-ad60-e1e0f12d28ec")
-		)
-		(instances
-			(project "Power Electronics Board"
-				(path "/89c18bc7-bebe-4d17-a6e8-3a2f210bf7f7"
-					(reference "J2")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
 		(lib_id "Device:R")
 		(at 147.32 134.62 90)
 		(unit 1)
@@ -19641,6 +18115,109 @@
 		)
 	)
 	(symbol
+		(lib_id "Connector_Generic:Conn_01x02")
+		(at 38.1 120.65 180)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "80421959-1751-408f-9b5a-212090699ad4")
+		(property "Reference" "J3"
+			(at 38.1 113.03 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "1054301102"
+			(at 38.1 115.062 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" "FS_4_Global_Footprint_Library:CONN_SD-105430-001_02_MOL"
+			(at 38.1 120.65 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "https://www.literature.molex.com/SQLImages/kelmscott/Molex/PDF_Images/987651-1223.PDF"
+			(at 38.1 120.65 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Generic connector, single row, 01x02, script generated (kicad-library-utils/schlib/autogen/connector/)"
+			(at 38.1 120.65 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Digi URL" "https://www.digikey.com/en/products/detail/molex/1054301102/9959376"
+			(at 38.1 120.65 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Digi PN" "WM26090CT-ND"
+			(at 38.1 120.65 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "MFG" "Molex"
+			(at 38.1 120.65 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "MFG PN" "1054301102"
+			(at 38.1 120.65 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "472a6181-6cce-4eb6-b4c3-b3042e7c3010")
+		)
+		(pin "2"
+			(uuid "3020e7f7-baf5-466f-9398-c7200c957168")
+		)
+		(instances
+			(project ""
+				(path "/89c18bc7-bebe-4d17-a6e8-3a2f210bf7f7"
+					(reference "J3")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
 		(lib_id "Mechanical:MountingHole_Pad")
 		(at 356.87 198.12 270)
 		(unit 1)
@@ -20021,208 +18598,6 @@
 		)
 	)
 	(symbol
-		(lib_id "Device:R")
-		(at 262.89 76.2 90)
-		(unit 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(dnp no)
-		(uuid "8219638b-732a-4101-ac7b-e7cb27fc1121")
-		(property "Reference" "R3"
-			(at 262.89 71.12 90)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Value" "100k"
-			(at 262.89 73.66 90)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Footprint" "Resistor_SMD:R_0603_1608Metric_Pad0.98x0.95mm_HandSolder"
-			(at 262.89 77.978 90)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Datasheet" "https://yageogroup.com/content/datasheet/asset/file/PYU-RC_GROUP_51_ROHS_L"
-			(at 262.89 76.2 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Description" "Resistor"
-			(at 262.89 76.2 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "MFG PN" "RC0603FR-13100KL"
-			(at 262.89 76.2 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Digi PN" "13-RC0603FR-13100KLCT-ND"
-			(at 262.89 76.2 90)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Digi URL" "https://www.digikey.com/en/products/detail/yageo/RC0603FR-13100KL/12756433?gclsrc=aw.ds&gad_source=1&gad_campaignid=20232005509&gbraid=0AAAAADrbLlj62eUKefenYV3jNQglQIEk-&gclid=Cj0KCQiAvtzLBhCPARIsALwhxdptvdkdfW_-_1zz0mO6n9rogZ4dIotwJTqh8foL60dNg2CEMbMd6t4aAtgTEALw_wcB"
-			(at 262.89 76.2 90)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "MFG" "YAGEO"
-			(at 262.89 76.2 90)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Fuse Digikey" ""
-			(at 262.89 76.2 90)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Digikey Link" ""
-			(at 262.89 76.2 90)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "MANUFACTURER" ""
-			(at 262.89 76.2 90)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "MAXIMUM_PACKAGE_HEIGHT" ""
-			(at 262.89 76.2 90)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "MFP PN" ""
-			(at 262.89 76.2 90)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Manufacturer" ""
-			(at 262.89 76.2 90)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Manufacturer Part Number" ""
-			(at 262.89 76.2 90)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "PARTREV" ""
-			(at 262.89 76.2 90)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "PN" ""
-			(at 262.89 76.2 90)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Part Name" ""
-			(at 262.89 76.2 90)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "STANDARD" ""
-			(at 262.89 76.2 90)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(pin "1"
-			(uuid "89d37798-e9ea-4195-adb9-ce4fc20e7a08")
-		)
-		(pin "2"
-			(uuid "4fb4dfc0-4828-4ec9-9b5c-727e88931933")
-		)
-		(instances
-			(project "Power Electronics Board"
-				(path "/89c18bc7-bebe-4d17-a6e8-3a2f210bf7f7"
-					(reference "R3")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
 		(lib_id "power:GND")
 		(at 193.04 86.36 0)
 		(unit 1)
@@ -20282,6 +18657,71 @@
 			(project "Power Electronics Board"
 				(path "/89c18bc7-bebe-4d17-a6e8-3a2f210bf7f7"
 					(reference "#PWR023")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "power:GND")
+		(at 383.54 143.51 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "85a798df-5c9a-421c-9e8d-95aedbbcdd23")
+		(property "Reference" "#PWR038"
+			(at 383.54 149.86 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Value" "GND"
+			(at 379.222 145.034 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" ""
+			(at 383.54 143.51 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" ""
+			(at 383.54 143.51 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
+			(at 383.54 143.51 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "2ee06e91-e66f-4daa-82a0-ddf3ff08388d")
+		)
+		(instances
+			(project "Power Electronics Board"
+				(path "/89c18bc7-bebe-4d17-a6e8-3a2f210bf7f7"
+					(reference "#PWR038")
 					(unit 1)
 				)
 			)
@@ -20621,213 +19061,6 @@
 			(project ""
 				(path "/89c18bc7-bebe-4d17-a6e8-3a2f210bf7f7"
 					(reference "#PWR02")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
-		(lib_id "Reference_Voltage:LM4040DBZ-3")
-		(at 273.05 80.01 90)
-		(unit 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(dnp no)
-		(uuid "93bcbe91-b550-4644-9e15-2440b87cb5a4")
-		(property "Reference" "U2"
-			(at 275.336 85.598 90)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Value" "LM4040D30QDBZR"
-			(at 275.336 87.884 90)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Footprint" "Package_TO_SOT_SMD:SOT-23_Handsoldering"
-			(at 278.13 80.01 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-					(italic yes)
-				)
-				(hide yes)
-			)
-		)
-		(property "Datasheet" "http://www.ti.com/lit/ds/symlink/lm4040-n.pdf"
-			(at 273.05 80.01 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-					(italic yes)
-				)
-				(hide yes)
-			)
-		)
-		(property "Description" "3.000V Precision Micropower Shunt Voltage Reference, SOT-23"
-			(at 273.05 80.01 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "MFG PN" "LM4040D30QDBZR"
-			(at 273.05 80.01 90)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Digi PN" "296-20903-1-ND"
-			(at 273.05 80.01 90)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Digi URL" "https://www.digikey.com/en/products/detail/texas-instruments/LM4040D30QDBZR/1216509"
-			(at 273.05 80.01 90)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "MFG" "Texas Instruments"
-			(at 273.05 80.01 90)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Fuse Digikey" ""
-			(at 273.05 80.01 90)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Digikey Link" ""
-			(at 273.05 80.01 90)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "MANUFACTURER" ""
-			(at 273.05 80.01 90)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "MAXIMUM_PACKAGE_HEIGHT" ""
-			(at 273.05 80.01 90)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "MFP PN" ""
-			(at 273.05 80.01 90)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Manufacturer" ""
-			(at 273.05 80.01 90)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Manufacturer Part Number" ""
-			(at 273.05 80.01 90)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "PARTREV" ""
-			(at 273.05 80.01 90)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "PN" ""
-			(at 273.05 80.01 90)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Part Name" ""
-			(at 273.05 80.01 90)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "STANDARD" ""
-			(at 273.05 80.01 90)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(pin "1"
-			(uuid "22baafa8-2be7-4c9c-9598-131466d7397a")
-		)
-		(pin "2"
-			(uuid "622087e3-d449-4053-913b-244e53e6c585")
-		)
-		(pin "3"
-			(uuid "9ca4d9b8-1c7c-4897-a64a-198ecf5f76ec")
-		)
-		(instances
-			(project ""
-				(path "/89c18bc7-bebe-4d17-a6e8-3a2f210bf7f7"
-					(reference "U2")
 					(unit 1)
 				)
 			)
@@ -21644,6 +19877,106 @@
 		)
 	)
 	(symbol
+		(lib_id "Connector:Conn_01x01_Pin")
+		(at 187.96 77.47 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "a0fec130-55e7-4717-a47f-0d8fa31719c6")
+		(property "Reference" "J8"
+			(at 187.96 72.136 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "74651173R"
+			(at 187.96 74.676 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" "FS_4_Global_Footprint_Library:74651173R"
+			(at 187.96 77.47 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 187.96 77.47 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Generic connector, single row, 01x01, script generated"
+			(at 187.96 77.47 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Digi PN" "732-74651173RCT-ND"
+			(at 187.96 77.47 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Digi URL" "https://www.digikey.com/en/products/detail/w%C3%BCrth-elektronik/74651173R/6644000"
+			(at 187.96 77.47 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "MFG" "Würth Elektronik"
+			(at 187.96 77.47 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "MFG PN" "74651173R"
+			(at 187.96 77.47 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "a30aa53c-cb21-4ab2-bc17-29ed33990733")
+		)
+		(instances
+			(project "Power Electronics Board"
+				(path "/89c18bc7-bebe-4d17-a6e8-3a2f210bf7f7"
+					(reference "J8")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
 		(lib_id "Connector:TestPoint")
 		(at 283.21 133.35 0)
 		(unit 1)
@@ -21922,7 +20255,7 @@
 				(hide yes)
 			)
 		)
-		(property "Datasheet" "https://www.digikey.com/en/products/detail/american-zettler/AZ2150-1A-12DEF/12171657"
+		(property "Datasheet" "https://www.azettler.com/pdfs/AZ2150.pdf"
 			(at 223.52 78.74 0)
 			(effects
 				(font
@@ -24116,6 +22449,114 @@
 		)
 	)
 	(symbol
+		(lib_id "Device:R_Potentiometer_Trim")
+		(at 259.08 76.2 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "c33a7db5-3d00-49ea-83de-5a3327c912a2")
+		(property "Reference" "RV1"
+			(at 256.54 74.9299 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+			)
+		)
+		(property "Value" "10K"
+			(at 256.54 77.216 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+			)
+		)
+		(property "Footprint" "FS_4_Global_Footprint_Library:TRIM_PV36W103C01B00"
+			(at 259.08 76.2 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "https://www.bourns.com/docs/Product-Datasheets/pv36.pdf"
+			(at 259.08 76.2 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Trim-potentiometer"
+			(at 259.08 76.2 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Digi PN" "118-PV36W103C01B00-ND"
+			(at 259.08 76.2 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Digi URL" "https://www.digikey.com/en/products/detail/bourns-inc/PV36W103C01B00/666502"
+			(at 259.08 76.2 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "MFG PN" "PV36W103C01B00"
+			(at 259.08 76.2 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "MFG" "Bourns Inc."
+			(at 259.08 76.2 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "2861c850-dce1-480b-ade8-76015b7a95b5")
+		)
+		(pin "3"
+			(uuid "fd87bcf1-a481-44f2-93f5-a9fbc33b3130")
+		)
+		(pin "2"
+			(uuid "8c48ae81-77d8-4803-af8e-6171febd5aa6")
+		)
+		(instances
+			(project ""
+				(path "/89c18bc7-bebe-4d17-a6e8-3a2f210bf7f7"
+					(reference "RV1")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
 		(lib_id "Relay:G2RL-1")
 		(at 162.56 177.8 180)
 		(unit 1)
@@ -24946,6 +23387,72 @@
 		)
 	)
 	(symbol
+		(lib_id "power:+5V")
+		(at 247.65 55.88 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "d2c9849d-e4d6-4b3e-902a-449fc43dc3da")
+		(property "Reference" "#PWR037"
+			(at 247.65 59.69 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Value" "+5V_LV"
+			(at 244.094 50.8 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Footprint" ""
+			(at 247.65 55.88 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" ""
+			(at 247.65 55.88 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Power symbol creates a global label with name \"+5V\""
+			(at 247.65 55.88 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "3f31d080-974f-4489-89e2-cfa8c7237678")
+		)
+		(instances
+			(project "Power Electronics Board"
+				(path "/89c18bc7-bebe-4d17-a6e8-3a2f210bf7f7"
+					(reference "#PWR037")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
 		(lib_id "Device:R")
 		(at 104.14 86.36 180)
 		(unit 1)
@@ -25355,6 +23862,109 @@
 			(project ""
 				(path "/89c18bc7-bebe-4d17-a6e8-3a2f210bf7f7"
 					(reference "Q2")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Connector_Generic:Conn_01x02")
+		(at 391.16 149.86 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "d4e5101a-76b3-4371-9993-f1ce51c6f379")
+		(property "Reference" "J6"
+			(at 399.034 152.654 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "Conn_01x02"
+			(at 399.034 150.114 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" "FS_4_Global_Footprint_Library:Molex_Mini-Fit_Sr_42820-22XX_1x02_P10.00mm_Horizontal"
+			(at 391.16 149.86 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "https://www.molex.com/en-us/products/part-detail/428202223?display=pdf"
+			(at 391.16 149.86 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "CONN HEADER R/A 2POS 10MM"
+			(at 391.16 149.86 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Digi URL" "https://www.digikey.com/en/products/detail/molex/0428202223/3310054"
+			(at 391.16 149.86 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Digi PN" "WM11250-ND"
+			(at 391.16 149.86 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "MFG" "Molex"
+			(at 391.16 149.86 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "MFG PN" "0428202223"
+			(at 391.16 149.86 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "acf46779-ce4b-4a01-a96c-151efb32a78e")
+		)
+		(pin "2"
+			(uuid "5d95a663-8122-44cf-ab61-5ff49ff3b943")
+		)
+		(instances
+			(project "Power Electronics Board"
+				(path "/89c18bc7-bebe-4d17-a6e8-3a2f210bf7f7"
+					(reference "J6")
 					(unit 1)
 				)
 			)
@@ -26483,6 +25093,110 @@
 		)
 	)
 	(symbol
+		(lib_id "Connector_Generic:Conn_01x02")
+		(at 187.96 49.53 0)
+		(mirror y)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "da082064-79e5-4aa0-aa9f-f5b156ec8acc")
+		(property "Reference" "J10"
+			(at 187.96 46.736 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "Conn_01x02"
+			(at 187.96 44.196 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" "FS_4_Global_Footprint_Library:Molex_Mini-Fit_Sr_42819-22XX_1x02_P10.00mm_Vertical"
+			(at 187.96 49.53 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "https://www.molex.com/en-us/products/part-detail/428192234?display=pdf"
+			(at 187.96 49.53 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Generic connector, single row, 01x02, script generated (kicad-library-utils/schlib/autogen/connector/)"
+			(at 187.96 49.53 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Digi URL" "https://www.digikey.com/en/products/detail/molex/0428192234/5405456"
+			(at 187.96 49.53 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Digi PN" "0428192234-ND"
+			(at 187.96 49.53 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "MFG" "Molex"
+			(at 187.96 49.53 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "MFG PN" "0428192234"
+			(at 187.96 49.53 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "0e6a38b8-9cdf-4071-bf0a-2903d368a646")
+		)
+		(pin "2"
+			(uuid "cb549103-201b-4824-b899-e622470b03d5")
+		)
+		(instances
+			(project "Power Electronics Board"
+				(path "/89c18bc7-bebe-4d17-a6e8-3a2f210bf7f7"
+					(reference "J10")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
 		(lib_id "Device:R")
 		(at 321.31 58.42 180)
 		(unit 1)
@@ -26688,7 +25402,7 @@
 	)
 	(symbol
 		(lib_id "power:GND")
-		(at 264.16 86.36 0)
+		(at 262.89 90.17 0)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
@@ -26696,7 +25410,7 @@
 		(dnp no)
 		(uuid "daef567c-f9e7-4a74-b0f2-c5e02fcd653c")
 		(property "Reference" "#PWR04"
-			(at 264.16 92.71 0)
+			(at 262.89 96.52 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -26705,7 +25419,7 @@
 			)
 		)
 		(property "Value" "GND"
-			(at 260.096 88.138 0)
+			(at 258.826 91.948 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -26713,7 +25427,7 @@
 			)
 		)
 		(property "Footprint" ""
-			(at 264.16 86.36 0)
+			(at 262.89 90.17 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -26722,7 +25436,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 264.16 86.36 0)
+			(at 262.89 90.17 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -26731,7 +25445,7 @@
 			)
 		)
 		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
-			(at 264.16 86.36 0)
+			(at 262.89 90.17 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -27448,10 +26162,9 @@
 		(in_bom yes)
 		(on_board yes)
 		(dnp no)
-		(fields_autoplaced yes)
 		(uuid "e0dcdc27-42d3-4181-bd45-b3d2fe915459")
 		(property "Reference" "R5"
-			(at 76.2 120.6499 0)
+			(at 76.2 121.412 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -29245,7 +27958,7 @@
 		(dnp no)
 		(uuid "fe5e5b94-2209-4207-b5ba-a95b7208607c")
 		(property "Reference" "J7"
-			(at 393.7 132.842 0)
+			(at 393.192 128.5241 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -29254,7 +27967,7 @@
 			)
 		)
 		(property "Value" "1054301108"
-			(at 393.7 134.6199 0)
+			(at 393.192 130.302 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -29262,7 +27975,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" "FS_4_Global_Footprint_Library:CONN_SD-105430-001_08_MOL"
+		(property "Footprint" "FS_4_Global_Footprint_Library:Molex-Nano-Fit_2x04_SMD_Vertical"
 			(at 391.16 132.08 0)
 			(effects
 				(font
@@ -29271,7 +27984,7 @@
 				(hide yes)
 			)
 		)
-		(property "Datasheet" "https://www.molex.com/en-us/products/part-detail/1054301108"
+		(property "Datasheet" "https://tools.molex.com/pdm_docs/ps/PS-105405-001-001.pdf"
 			(at 391.16 132.08 0)
 			(effects
 				(font
@@ -29280,7 +27993,7 @@
 				(hide yes)
 			)
 		)
-		(property "Description" "Generic connector, single row, 01x08, script generated (kicad-library-utils/schlib/autogen/connector/)"
+		(property "Description" "CONN HEADER SMD 8POS 2.5MM"
 			(at 391.16 132.08 0)
 			(effects
 				(font
@@ -29289,7 +28002,7 @@
 				(hide yes)
 			)
 		)
-		(property "Digi PN" "WM26096CT-ND"
+		(property "Digi PN" "WM26116CT-ND"
 			(at 391.16 132.08 0)
 			(effects
 				(font
@@ -29298,7 +28011,7 @@
 				(hide yes)
 			)
 		)
-		(property "Digi URL" "https://www.digikey.com/en/products/detail/molex/1054301108/9959382"
+		(property "Digi URL" "https://www.digikey.com/en/products/detail/molex/1054291208/9958228"
 			(at 391.16 132.08 0)
 			(effects
 				(font
@@ -29307,7 +28020,7 @@
 				(hide yes)
 			)
 		)
-		(property "MFG PN" "1054301108"
+		(property "MFG PN" "1054291208"
 			(at 391.16 132.08 0)
 			(effects
 				(font
@@ -29317,105 +28030,6 @@
 			)
 		)
 		(property "MFG" "Molex"
-			(at 391.16 132.08 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Fuse Digikey" ""
-			(at 391.16 132.08 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Digikey Link" ""
-			(at 391.16 132.08 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "MANUFACTURER" ""
-			(at 391.16 132.08 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "MAXIMUM_PACKAGE_HEIGHT" ""
-			(at 391.16 132.08 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "MFP PN" ""
-			(at 391.16 132.08 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Manufacturer" ""
-			(at 391.16 132.08 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Manufacturer Part Number" ""
-			(at 391.16 132.08 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "PARTREV" ""
-			(at 391.16 132.08 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "PN" ""
-			(at 391.16 132.08 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Part Name" ""
-			(at 391.16 132.08 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "STANDARD" ""
 			(at 391.16 132.08 0)
 			(effects
 				(font
