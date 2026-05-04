@@ -7,7 +7,7 @@
 	(title_block
 		(title "BMS Board")
 		(date "2026-04-17")
-		(rev "2.1.1")
+		(rev "3.0.0")
 		(company "Formula Slug")
 	)
 	(lib_symbols
@@ -133,6 +133,156 @@
 					(at 0 -3.81 90)
 					(length 2.794)
 					(name "~"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "2"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+			)
+			(embedded_fonts no)
+		)
+		(symbol "Device:D_Zener"
+			(pin_numbers
+				(hide yes)
+			)
+			(pin_names
+				(offset 1.016)
+				(hide yes)
+			)
+			(exclude_from_sim no)
+			(in_bom yes)
+			(on_board yes)
+			(property "Reference" "D"
+				(at 0 2.54 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Value" "D_Zener"
+				(at 0 -2.54 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Footprint" ""
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "Datasheet" "~"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "Description" "Zener diode"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "ki_keywords" "diode"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "ki_fp_filters" "TO-???* *_Diode_* *SingleDiode* D_*"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(symbol "D_Zener_0_1"
+				(polyline
+					(pts
+						(xy -1.27 -1.27) (xy -1.27 1.27) (xy -0.762 1.27)
+					)
+					(stroke
+						(width 0.254)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy 1.27 0) (xy -1.27 0)
+					)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy 1.27 -1.27) (xy 1.27 1.27) (xy -1.27 0) (xy 1.27 -1.27)
+					)
+					(stroke
+						(width 0.254)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+			)
+			(symbol "D_Zener_1_1"
+				(pin passive line
+					(at -3.81 0 0)
+					(length 2.54)
+					(name "K"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "1"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin passive line
+					(at 3.81 0 180)
+					(length 2.54)
+					(name "A"
 						(effects
 							(font
 								(size 1.27 1.27)
@@ -577,8 +727,9 @@
 			)
 			(embedded_fonts no)
 		)
-		(symbol "Transistor_FET:BSS84"
+		(symbol "Transistor_FET:AO3400A"
 			(pin_names
+				(offset 0)
 				(hide yes)
 			)
 			(exclude_from_sim no)
@@ -593,7 +744,7 @@
 					(justify left)
 				)
 			)
-			(property "Value" "BSS84"
+			(property "Value" "AO3400A"
 				(at 5.08 0 0)
 				(effects
 					(font
@@ -613,7 +764,7 @@
 					(hide yes)
 				)
 			)
-			(property "Datasheet" "http://assets.nexperia.com/documents/data-sheet/BSS84.pdf"
+			(property "Datasheet" "http://www.aosmd.com/pdfs/datasheet/AO3400A.pdf"
 				(at 5.08 -3.81 0)
 				(effects
 					(font
@@ -623,7 +774,7 @@
 					(hide yes)
 				)
 			)
-			(property "Description" "-0.13A Id, -50V Vds, P-Channel MOSFET, SOT-23"
+			(property "Description" "30V Vds, 5.7A Id, N-Channel MOSFET, SOT-23"
 				(at 0 0 0)
 				(effects
 					(font
@@ -632,7 +783,7 @@
 					(hide yes)
 				)
 			)
-			(property "ki_keywords" "P-Channel MOSFET"
+			(property "ki_keywords" "N-Channel MOSFET"
 				(at 0 0 0)
 				(effects
 					(font
@@ -650,7 +801,7 @@
 					(hide yes)
 				)
 			)
-			(symbol "BSS84_0_1"
+			(symbol "AO3400A_0_1"
 				(polyline
 					(pts
 						(xy 0.254 1.905) (xy 0.254 -1.905)
@@ -689,18 +840,6 @@
 				)
 				(polyline
 					(pts
-						(xy 0.762 1.778) (xy 3.302 1.778) (xy 3.302 -1.778) (xy 0.762 -1.778)
-					)
-					(stroke
-						(width 0)
-						(type default)
-					)
-					(fill
-						(type none)
-					)
-				)
-				(polyline
-					(pts
 						(xy 0.762 0.508) (xy 0.762 -0.508)
 					)
 					(stroke
@@ -723,6 +862,30 @@
 						(type none)
 					)
 				)
+				(polyline
+					(pts
+						(xy 0.762 -1.778) (xy 3.302 -1.778) (xy 3.302 1.778) (xy 0.762 1.778)
+					)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy 1.016 0) (xy 2.032 0.381) (xy 2.032 -0.381) (xy 1.016 0)
+					)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type outline)
+					)
+				)
 				(circle
 					(center 1.651 0)
 					(radius 2.794)
@@ -732,18 +895,6 @@
 					)
 					(fill
 						(type none)
-					)
-				)
-				(polyline
-					(pts
-						(xy 2.286 0) (xy 1.27 0.381) (xy 1.27 -0.381) (xy 2.286 0)
-					)
-					(stroke
-						(width 0)
-						(type default)
-					)
-					(fill
-						(type outline)
 					)
 				)
 				(polyline
@@ -794,7 +945,7 @@
 				)
 				(polyline
 					(pts
-						(xy 2.794 -0.508) (xy 2.921 -0.381) (xy 3.683 -0.381) (xy 3.81 -0.254)
+						(xy 2.921 0.381) (xy 3.683 0.381)
 					)
 					(stroke
 						(width 0)
@@ -806,7 +957,7 @@
 				)
 				(polyline
 					(pts
-						(xy 3.302 -0.381) (xy 2.921 0.254) (xy 3.683 0.254) (xy 3.302 -0.381)
+						(xy 3.302 0.381) (xy 2.921 -0.254) (xy 3.683 -0.254) (xy 3.302 0.381)
 					)
 					(stroke
 						(width 0)
@@ -817,7 +968,7 @@
 					)
 				)
 			)
-			(symbol "BSS84_1_1"
+			(symbol "AO3400A_1_1"
 				(pin input line
 					(at -5.08 0 0)
 					(length 2.54)
@@ -878,18 +1029,7 @@
 	)
 	(text "Balance Block"
 		(exclude_from_sim no)
-		(at 135.89 116.84 0)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-			(justify left bottom)
-		)
-		(uuid "a25293a0-01b8-4497-affb-f68ad9b92bed")
-	)
-	(text "Balance Block"
-		(exclude_from_sim no)
-		(at 135.89 116.84 0)
+		(at 124.46 89.916 0)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -899,10 +1039,34 @@
 		(uuid "a25293a0-01b8-4497-affb-f68ad9b92bee")
 	)
 	(junction
-		(at 139.7 86.36)
+		(at 144.78 86.36)
 		(diameter 0)
 		(color 0 0 0 0)
-		(uuid "24c35004-952b-4de7-86a0-e7c6fab6c73c")
+		(uuid "06376a3c-452b-474c-9396-f22e074a18f5")
+	)
+	(junction
+		(at 144.78 93.98)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "21b179b5-299e-418c-b487-baad5a039e63")
+	)
+	(junction
+		(at 144.78 118.11)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "3d91f116-5033-4f27-ad4f-f264a0e0ca72")
+	)
+	(junction
+		(at 144.78 102.87)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "6a46f9f5-71a1-44d6-857a-f68365edf7e9")
+	)
+	(junction
+		(at 144.78 123.19)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "9ab1227e-5964-40d0-8af4-59cfa77bc1f2")
 	)
 	(junction
 		(at 173.99 86.36)
@@ -911,40 +1075,40 @@
 		(uuid "9ec74d8f-a784-42e1-a065-21c59352076a")
 	)
 	(junction
-		(at 127 113.03)
+		(at 160.02 110.49)
 		(diameter 0)
 		(color 0 0 0 0)
-		(uuid "adc61b03-9852-4a4d-a565-842320bc5c08")
+		(uuid "bc348953-4260-436c-ac2f-2f2d8c63f3e9")
 	)
 	(junction
-		(at 139.7 104.14)
+		(at 160.02 118.11)
 		(diameter 0)
 		(color 0 0 0 0)
-		(uuid "e13096ab-bbab-4a62-b362-e46c6c4982ac")
+		(uuid "e6f7b12c-51d1-4961-9ece-900590ec0b0d")
 	)
 	(wire
 		(pts
-			(xy 173.99 86.36) (xy 173.99 96.52)
+			(xy 156.21 123.19) (xy 160.02 123.19)
 		)
 		(stroke
 			(width 0)
 			(type default)
 		)
-		(uuid "130a9e62-e431-449d-a10c-4580a2a8a91d")
+		(uuid "0a80e4e9-e67b-40f4-81c7-9f4cc794e91d")
 	)
 	(wire
 		(pts
-			(xy 139.7 111.76) (xy 139.7 113.03)
+			(xy 132.08 93.98) (xy 130.81 93.98)
 		)
 		(stroke
 			(width 0)
 			(type default)
 		)
-		(uuid "152bc8a8-3a89-4396-9fdc-9aac4924e723")
+		(uuid "153d4e00-3be2-4354-b8d3-1ad6a2140cf3")
 	)
 	(polyline
 		(pts
-			(xy 163.83 92.71) (xy 123.19 92.71)
+			(xy 163.83 90.17) (xy 124.46 90.17)
 		)
 		(stroke
 			(width 0)
@@ -954,7 +1118,7 @@
 	)
 	(polyline
 		(pts
-			(xy 163.83 92.71) (xy 123.19 92.71)
+			(xy 163.83 90.17) (xy 124.46 90.17)
 		)
 		(stroke
 			(width 0)
@@ -964,17 +1128,27 @@
 	)
 	(wire
 		(pts
-			(xy 139.7 104.14) (xy 137.16 104.14)
+			(xy 144.78 86.36) (xy 163.83 86.36)
 		)
 		(stroke
 			(width 0)
 			(type default)
 		)
-		(uuid "2cbef009-974b-4e81-aed1-9cbb80646f08")
+		(uuid "230d989e-e4ab-411e-b5e8-43fb02c3d134")
 	)
 	(wire
 		(pts
-			(xy 119.38 86.36) (xy 139.7 86.36)
+			(xy 156.21 118.11) (xy 160.02 118.11)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "272aedbf-6acb-4ec1-baec-6233b48269e8")
+	)
+	(wire
+		(pts
+			(xy 119.38 86.36) (xy 144.78 86.36)
 		)
 		(stroke
 			(width 0)
@@ -982,19 +1156,9 @@
 		)
 		(uuid "30c7d66f-f61d-4fee-9eee-7a23166906f8")
 	)
-	(wire
-		(pts
-			(xy 127 113.03) (xy 139.7 113.03)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "318f9713-2fec-465b-880c-0c1767274f29")
-	)
 	(polyline
 		(pts
-			(xy 123.19 118.11) (xy 163.83 118.11)
+			(xy 124.46 129.54) (xy 163.83 129.54)
 		)
 		(stroke
 			(width 0)
@@ -1004,7 +1168,7 @@
 	)
 	(polyline
 		(pts
-			(xy 123.19 118.11) (xy 163.83 118.11)
+			(xy 124.46 129.54) (xy 163.83 129.54)
 		)
 		(stroke
 			(width 0)
@@ -1014,7 +1178,7 @@
 	)
 	(wire
 		(pts
-			(xy 156.21 86.36) (xy 173.99 86.36)
+			(xy 171.45 86.36) (xy 173.99 86.36)
 		)
 		(stroke
 			(width 0)
@@ -1024,17 +1188,17 @@
 	)
 	(wire
 		(pts
-			(xy 132.08 104.14) (xy 127 104.14)
+			(xy 173.99 86.36) (xy 173.99 90.17)
 		)
 		(stroke
 			(width 0)
 			(type default)
 		)
-		(uuid "46d676f7-3ce5-45bc-9a1d-a92339360436")
+		(uuid "414a651b-02ec-46de-b51b-6f3be3a64cf4")
 	)
 	(polyline
 		(pts
-			(xy 123.19 92.71) (xy 123.19 118.11)
+			(xy 124.46 90.17) (xy 124.46 129.54)
 		)
 		(stroke
 			(width 0)
@@ -1044,7 +1208,7 @@
 	)
 	(polyline
 		(pts
-			(xy 123.19 92.71) (xy 123.19 118.11)
+			(xy 124.46 90.17) (xy 124.46 129.54)
 		)
 		(stroke
 			(width 0)
@@ -1054,17 +1218,47 @@
 	)
 	(wire
 		(pts
-			(xy 127 104.14) (xy 127 105.41)
+			(xy 144.78 118.11) (xy 144.78 115.57)
 		)
 		(stroke
 			(width 0)
 			(type default)
 		)
-		(uuid "6c9c0453-62e5-41df-b275-2ca9fc26ce4b")
+		(uuid "5bac84dd-fa30-4b9f-8b3c-869a1e5d3ef0")
 	)
 	(wire
 		(pts
-			(xy 173.99 106.68) (xy 182.88 106.68)
+			(xy 137.16 93.98) (xy 144.78 93.98)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "67779e47-159d-401f-a84b-1c4cad53441d")
+	)
+	(wire
+		(pts
+			(xy 148.59 123.19) (xy 144.78 123.19)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "6e79df16-df8d-4452-852d-b33808090f0f")
+	)
+	(wire
+		(pts
+			(xy 144.78 101.6) (xy 144.78 102.87)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "741da7e2-dc7b-4d32-8935-84fd8bab67c2")
+	)
+	(wire
+		(pts
+			(xy 173.99 100.33) (xy 182.88 100.33)
 		)
 		(stroke
 			(width 0)
@@ -1074,7 +1268,67 @@
 	)
 	(wire
 		(pts
-			(xy 139.7 86.36) (xy 139.7 93.98)
+			(xy 160.02 110.49) (xy 177.8 110.49)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "7eaba9e2-b680-4eb6-83bc-e43b95783a22")
+	)
+	(wire
+		(pts
+			(xy 160.02 123.19) (xy 160.02 118.11)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "7f89429f-7600-4816-b36b-4f464a647ff5")
+	)
+	(wire
+		(pts
+			(xy 148.59 118.11) (xy 144.78 118.11)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "90676bd0-7a4d-48c5-b9ba-663828fa147f")
+	)
+	(wire
+		(pts
+			(xy 119.38 123.19) (xy 144.78 123.19)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "95204a69-8e68-4414-9202-6d99522e6e7f")
+	)
+	(wire
+		(pts
+			(xy 137.16 102.87) (xy 144.78 102.87)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "9c5ce8ae-ac48-4556-9c93-3c3999c521c5")
+	)
+	(wire
+		(pts
+			(xy 152.4 110.49) (xy 160.02 110.49)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "9d1f1e38-8938-49f2-88ae-7a49632feb5c")
+	)
+	(wire
+		(pts
+			(xy 144.78 86.36) (xy 144.78 93.98)
 		)
 		(stroke
 			(width 0)
@@ -1084,7 +1338,7 @@
 	)
 	(polyline
 		(pts
-			(xy 163.83 118.11) (xy 163.83 92.71)
+			(xy 163.83 129.54) (xy 163.83 90.17)
 		)
 		(stroke
 			(width 0)
@@ -1094,7 +1348,7 @@
 	)
 	(polyline
 		(pts
-			(xy 163.83 118.11) (xy 163.83 92.71)
+			(xy 163.83 129.54) (xy 163.83 90.17)
 		)
 		(stroke
 			(width 0)
@@ -1114,17 +1368,17 @@
 	)
 	(wire
 		(pts
-			(xy 119.38 113.03) (xy 127 113.03)
+			(xy 130.81 93.98) (xy 130.81 102.87)
 		)
 		(stroke
 			(width 0)
 			(type default)
 		)
-		(uuid "ac268a6f-d1be-4a4a-a685-3afcf25924fb")
+		(uuid "a9c523f8-a922-4ba4-a798-aa8f801cc558")
 	)
 	(wire
 		(pts
-			(xy 173.99 104.14) (xy 173.99 106.68)
+			(xy 173.99 97.79) (xy 173.99 100.33)
 		)
 		(stroke
 			(width 0)
@@ -1134,23 +1388,43 @@
 	)
 	(wire
 		(pts
-			(xy 139.7 86.36) (xy 148.59 86.36)
+			(xy 160.02 110.49) (xy 160.02 118.11)
 		)
 		(stroke
 			(width 0)
 			(type default)
 		)
-		(uuid "d980e69e-d9e4-4433-a6b3-18c1be770db0")
+		(uuid "e9f825fc-ac84-412e-aea1-550a336eb08c")
 	)
 	(wire
 		(pts
-			(xy 127 110.49) (xy 127 113.03)
+			(xy 144.78 123.19) (xy 144.78 118.11)
 		)
 		(stroke
 			(width 0)
 			(type default)
 		)
-		(uuid "f5330b1b-a2dc-4291-bb58-ccdf9e987d8b")
+		(uuid "f2ee65f1-e266-48a4-b9dc-9697f668ff75")
+	)
+	(wire
+		(pts
+			(xy 144.78 102.87) (xy 144.78 105.41)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "f965ec39-297a-4b13-9d54-04f84419fe31")
+	)
+	(wire
+		(pts
+			(xy 130.81 102.87) (xy 132.08 102.87)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "fb2abe21-29ba-4a5a-8410-e12daf397162")
 	)
 	(hierarchical_label "B#+1"
 		(shape input)
@@ -1176,7 +1450,7 @@
 	)
 	(hierarchical_label "C#"
 		(shape output)
-		(at 182.88 106.68 0)
+		(at 182.88 100.33 0)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -1187,7 +1461,7 @@
 	)
 	(hierarchical_label "B#"
 		(shape input)
-		(at 119.38 113.03 180)
+		(at 119.38 123.19 180)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -1209,7 +1483,7 @@
 	)
 	(hierarchical_label "S#+1"
 		(shape output)
-		(at 154.94 99.06 0)
+		(at 177.8 110.49 0)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -1220,7 +1494,7 @@
 	)
 	(hierarchical_label "C#"
 		(shape output)
-		(at 182.88 106.68 0)
+		(at 182.88 100.33 0)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -1242,7 +1516,7 @@
 	)
 	(hierarchical_label "B#"
 		(shape input)
-		(at 119.38 113.03 180)
+		(at 119.38 123.19 180)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -1251,21 +1525,10 @@
 		)
 		(uuid "edc96e93-db10-4064-b916-f2c72e28a75c")
 	)
-	(hierarchical_label "S#+1"
-		(shape output)
-		(at 154.94 99.06 0)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-			(justify left)
-		)
-		(uuid "f88fa459-9c0c-446c-b913-543a404400c4")
-	)
 	(netclass_flag ""
 		(length 2.54)
 		(shape round)
-		(at 139.7 104.14 270)
+		(at 144.78 102.87 270)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -1274,7 +1537,7 @@
 		)
 		(uuid "17190023-9bad-427b-8963-55ad8ea6eb60")
 		(property "Netclass" "Balance"
-			(at 143.51 103.886 0)
+			(at 148.59 102.616 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -1283,7 +1546,7 @@
 			)
 		)
 		(property "Component Class" ""
-			(at -41.91 7.62 0)
+			(at -36.83 6.35 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -1292,7 +1555,7 @@
 			)
 		)
 		(property "Balance" ""
-			(at 139.7 104.14 0)
+			(at 144.78 102.87 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -1342,228 +1605,16 @@
 		)
 	)
 	(symbol
-		(lib_id "Transistor_FET:BSS84")
-		(at 142.24 99.06 180)
-		(unit 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(dnp no)
-		(uuid "00000000-0000-0000-0000-00005f7befc1")
-		(property "Reference" "Q2"
-			(at 137.0076 97.8916 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-		)
-		(property "Value" "BSS308PE"
-			(at 137.0076 100.203 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-		)
-		(property "Footprint" "Package_TO_SOT_SMD:SOT-23"
-			(at 137.16 97.155 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-					(italic yes)
-				)
-				(justify left)
-				(hide yes)
-			)
-		)
-		(property "Datasheet" "http://assets.nexperia.com/documents/data-sheet/BSS84.pdf"
-			(at 142.24 99.06 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-				(hide yes)
-			)
-		)
-		(property "Description" ""
-			(at 142.24 99.06 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "MFG" "onsemi"
-			(at 142.24 99.06 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "MFG PN" "BSS84"
-			(at 142.24 99.06 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Digi PN" "BSS84CT-ND"
-			(at 142.24 99.06 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Digi URL" "https://www.digikey.com/en/products/detail/onsemi/BSS84/244213"
-			(at 142.24 99.06 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Digikey Link" ""
-			(at 142.24 99.06 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "MFP PN" ""
-			(at 142.24 99.06 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Manufacturer" ""
-			(at 142.24 99.06 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Manufacturer Part Number" ""
-			(at 142.24 99.06 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "PN" ""
-			(at 142.24 99.06 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Part Name" ""
-			(at 142.24 99.06 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Sim.Device" ""
-			(at 142.24 99.06 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Sim.Pins" ""
-			(at 142.24 99.06 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Sim.Type" ""
-			(at 142.24 99.06 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(pin "1"
-			(uuid "7e4a91b7-d739-4327-945d-ab70e9421d76")
-		)
-		(pin "3"
-			(uuid "231178db-597e-4bad-9785-418981c14b06")
-		)
-		(pin "2"
-			(uuid "ee1fb765-ef47-4535-83e6-d8edf96b48ce")
-		)
-		(instances
-			(project "BMS"
-				(path "/dc0b64a3-156e-446d-a433-c56b0c761cf1/00000000-0000-0000-0000-00005f95bba1"
-					(reference "Q8")
-					(unit 1)
-				)
-				(path "/dc0b64a3-156e-446d-a433-c56b0c761cf1/00000000-0000-0000-0000-00005f95bba8"
-					(reference "Q10")
-					(unit 1)
-				)
-				(path "/dc0b64a3-156e-446d-a433-c56b0c761cf1/00000000-0000-0000-0000-00005f9a2363"
-					(reference "Q12")
-					(unit 1)
-				)
-				(path "/dc0b64a3-156e-446d-a433-c56b0c761cf1/6f027dca-8315-4f5d-8fbc-38fa2ec270b5"
-					(reference "Q6")
-					(unit 1)
-				)
-				(path "/dc0b64a3-156e-446d-a433-c56b0c761cf1/8a13ff47-9856-4e08-93e6-510a1f5baf09"
-					(reference "Q4")
-					(unit 1)
-				)
-				(path "/dc0b64a3-156e-446d-a433-c56b0c761cf1/a3eaddb3-ad3f-4304-be91-79ec42000d12"
-					(reference "Q2")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
 		(lib_id "Device:R")
-		(at 152.4 86.36 270)
+		(at 167.64 86.36 270)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
 		(on_board yes)
 		(dnp no)
 		(uuid "00000000-0000-0000-0000-00005f7befd3")
-		(property "Reference" "R18"
-			(at 152.4 83.82 90)
+		(property "Reference" "R21"
+			(at 167.64 83.82 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -1571,7 +1622,7 @@
 			)
 		)
 		(property "Value" "100"
-			(at 152.4 86.36 90)
+			(at 167.64 86.36 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -1579,7 +1630,7 @@
 			)
 		)
 		(property "Footprint" "Resistor_SMD:R_0805_2012Metric_Pad1.20x1.40mm_HandSolder"
-			(at 152.4 84.582 90)
+			(at 167.64 84.582 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -1588,7 +1639,7 @@
 			)
 		)
 		(property "Datasheet" "~https://yageogroup.com/content/datasheet/asset/file/PYU-RC_GROUP_51_ROHS_L"
-			(at 152.4 86.36 0)
+			(at 167.64 86.36 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -1597,7 +1648,7 @@
 			)
 		)
 		(property "Description" ""
-			(at 152.4 86.36 0)
+			(at 167.64 86.36 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -1606,7 +1657,7 @@
 			)
 		)
 		(property "MFG" "YAGEO"
-			(at 152.4 86.36 90)
+			(at 167.64 86.36 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -1615,7 +1666,7 @@
 			)
 		)
 		(property "MFG PN" "RC0805FR-07100RL"
-			(at 152.4 86.36 90)
+			(at 167.64 86.36 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -1624,7 +1675,7 @@
 			)
 		)
 		(property "Digi PN" "311-100CRCT-ND"
-			(at 152.4 86.36 90)
+			(at 167.64 86.36 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -1633,7 +1684,7 @@
 			)
 		)
 		(property "Digi URL" "https://www.digikey.com/en/products/detail/yageo/RC0805FR-07100RL/727543?s=N4IgTCBcDaIMwEYEFoEAY0GEBKmAqyAcgCIgC6AvkA"
-			(at 152.4 86.36 90)
+			(at 167.64 86.36 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -1642,7 +1693,7 @@
 			)
 		)
 		(property "Digikey Link" ""
-			(at 152.4 86.36 90)
+			(at 167.64 86.36 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -1651,7 +1702,7 @@
 			)
 		)
 		(property "MFP PN" ""
-			(at 152.4 86.36 90)
+			(at 167.64 86.36 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -1660,7 +1711,7 @@
 			)
 		)
 		(property "Manufacturer" ""
-			(at 152.4 86.36 90)
+			(at 167.64 86.36 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -1669,7 +1720,7 @@
 			)
 		)
 		(property "Manufacturer Part Number" ""
-			(at 152.4 86.36 90)
+			(at 167.64 86.36 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -1678,7 +1729,7 @@
 			)
 		)
 		(property "PN" ""
-			(at 152.4 86.36 90)
+			(at 167.64 86.36 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -1687,7 +1738,7 @@
 			)
 		)
 		(property "Part Name" ""
-			(at 152.4 86.36 90)
+			(at 167.64 86.36 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -1696,7 +1747,7 @@
 			)
 		)
 		(property "Sim.Device" ""
-			(at 152.4 86.36 90)
+			(at 167.64 86.36 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -1705,7 +1756,7 @@
 			)
 		)
 		(property "Sim.Pins" ""
-			(at 152.4 86.36 90)
+			(at 167.64 86.36 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -1714,7 +1765,7 @@
 			)
 		)
 		(property "Sim.Type" ""
-			(at 152.4 86.36 90)
+			(at 167.64 86.36 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -1731,27 +1782,27 @@
 		(instances
 			(project "BMS"
 				(path "/dc0b64a3-156e-446d-a433-c56b0c761cf1/00000000-0000-0000-0000-00005f95bba1"
-					(reference "R42")
+					(reference "R33")
 					(unit 1)
 				)
 				(path "/dc0b64a3-156e-446d-a433-c56b0c761cf1/00000000-0000-0000-0000-00005f95bba8"
-					(reference "R50")
+					(reference "R37")
 					(unit 1)
 				)
 				(path "/dc0b64a3-156e-446d-a433-c56b0c761cf1/00000000-0000-0000-0000-00005f9a2363"
-					(reference "R58")
+					(reference "R41")
 					(unit 1)
 				)
 				(path "/dc0b64a3-156e-446d-a433-c56b0c761cf1/6f027dca-8315-4f5d-8fbc-38fa2ec270b5"
-					(reference "R34")
+					(reference "R29")
 					(unit 1)
 				)
 				(path "/dc0b64a3-156e-446d-a433-c56b0c761cf1/8a13ff47-9856-4e08-93e6-510a1f5baf09"
-					(reference "R26")
+					(reference "R25")
 					(unit 1)
 				)
 				(path "/dc0b64a3-156e-446d-a433-c56b0c761cf1/a3eaddb3-ad3f-4304-be91-79ec42000d12"
-					(reference "R18")
+					(reference "R21")
 					(unit 1)
 				)
 			)
@@ -1759,15 +1810,15 @@
 	)
 	(symbol
 		(lib_id "Device:R_Small")
-		(at 134.62 104.14 270)
+		(at 134.62 93.98 270)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
 		(on_board yes)
 		(dnp no)
 		(uuid "00000000-0000-0000-0000-00005f7bf000")
-		(property "Reference" "R12"
-			(at 130.81 102.87 90)
+		(property "Reference" "R18"
+			(at 134.62 96.266 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -1775,7 +1826,7 @@
 			)
 		)
 		(property "Value" "120"
-			(at 134.62 104.14 90)
+			(at 134.62 93.98 90)
 			(effects
 				(font
 					(size 0.9652 0.9652)
@@ -1783,7 +1834,7 @@
 			)
 		)
 		(property "Footprint" "Resistor_SMD:R_0805_2012Metric_Pad1.20x1.40mm_HandSolder"
-			(at 134.62 104.14 0)
+			(at 134.62 93.98 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -1792,7 +1843,7 @@
 			)
 		)
 		(property "Datasheet" "~https://yageogroup.com/content/datasheet/asset/file/PYU-RC_GROUP_51_ROHS_L"
-			(at 134.62 104.14 0)
+			(at 134.62 93.98 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -1801,7 +1852,7 @@
 			)
 		)
 		(property "Description" ""
-			(at 134.62 104.14 0)
+			(at 134.62 93.98 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -1810,7 +1861,7 @@
 			)
 		)
 		(property "MFG" "YAGEO"
-			(at 134.62 104.14 90)
+			(at 134.62 93.98 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -1819,7 +1870,7 @@
 			)
 		)
 		(property "MFG PN" "RC0805FR-07120RL"
-			(at 134.62 104.14 90)
+			(at 134.62 93.98 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -1828,7 +1879,7 @@
 			)
 		)
 		(property "Digi PN" "311-120CRCT-ND"
-			(at 134.62 104.14 90)
+			(at 134.62 93.98 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -1837,7 +1888,7 @@
 			)
 		)
 		(property "Digi URL" "https://www.digikey.com/en/products/detail/yageo/RC0805FR-07120RL/727575?s=N4IgTCBcDaIMwEYEFoFgAwGEBKmAqyAcgCIgC6AvkA"
-			(at 134.62 104.14 90)
+			(at 134.62 93.98 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -1846,7 +1897,7 @@
 			)
 		)
 		(property "Digikey Link" ""
-			(at 134.62 104.14 90)
+			(at 134.62 93.98 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -1855,7 +1906,7 @@
 			)
 		)
 		(property "MFP PN" ""
-			(at 134.62 104.14 90)
+			(at 134.62 93.98 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -1864,7 +1915,7 @@
 			)
 		)
 		(property "Manufacturer" ""
-			(at 134.62 104.14 90)
+			(at 134.62 93.98 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -1873,7 +1924,7 @@
 			)
 		)
 		(property "Manufacturer Part Number" ""
-			(at 134.62 104.14 90)
+			(at 134.62 93.98 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -1882,7 +1933,7 @@
 			)
 		)
 		(property "PN" ""
-			(at 134.62 104.14 90)
+			(at 134.62 93.98 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -1891,7 +1942,7 @@
 			)
 		)
 		(property "Part Name" ""
-			(at 134.62 104.14 90)
+			(at 134.62 93.98 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -1900,7 +1951,7 @@
 			)
 		)
 		(property "Sim.Device" ""
-			(at 134.62 104.14 90)
+			(at 134.62 93.98 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -1909,7 +1960,7 @@
 			)
 		)
 		(property "Sim.Pins" ""
-			(at 134.62 104.14 90)
+			(at 134.62 93.98 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -1918,7 +1969,7 @@
 			)
 		)
 		(property "Sim.Type" ""
-			(at 134.62 104.14 90)
+			(at 134.62 93.98 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -1935,27 +1986,27 @@
 		(instances
 			(project "BMS"
 				(path "/dc0b64a3-156e-446d-a433-c56b0c761cf1/00000000-0000-0000-0000-00005f95bba1"
-					(reference "R36")
+					(reference "R30")
 					(unit 1)
 				)
 				(path "/dc0b64a3-156e-446d-a433-c56b0c761cf1/00000000-0000-0000-0000-00005f95bba8"
-					(reference "R44")
+					(reference "R34")
 					(unit 1)
 				)
 				(path "/dc0b64a3-156e-446d-a433-c56b0c761cf1/00000000-0000-0000-0000-00005f9a2363"
-					(reference "R52")
+					(reference "R38")
 					(unit 1)
 				)
 				(path "/dc0b64a3-156e-446d-a433-c56b0c761cf1/6f027dca-8315-4f5d-8fbc-38fa2ec270b5"
-					(reference "R28")
+					(reference "R26")
 					(unit 1)
 				)
 				(path "/dc0b64a3-156e-446d-a433-c56b0c761cf1/8a13ff47-9856-4e08-93e6-510a1f5baf09"
-					(reference "R20")
+					(reference "R22")
 					(unit 1)
 				)
 				(path "/dc0b64a3-156e-446d-a433-c56b0c761cf1/a3eaddb3-ad3f-4304-be91-79ec42000d12"
-					(reference "R12")
+					(reference "R18")
 					(unit 1)
 				)
 			)
@@ -1963,7 +2014,7 @@
 	)
 	(symbol
 		(lib_id "Device:C")
-		(at 173.99 100.33 0)
+		(at 173.99 93.98 0)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
@@ -1971,7 +2022,7 @@
 		(dnp no)
 		(uuid "2191bf79-cc75-4122-bc40-13ec247be07f")
 		(property "Reference" "C9"
-			(at 176.911 99.1616 0)
+			(at 176.911 92.8116 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -1980,7 +2031,7 @@
 			)
 		)
 		(property "Value" "10nF"
-			(at 176.911 101.473 0)
+			(at 176.911 95.123 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -1989,7 +2040,7 @@
 			)
 		)
 		(property "Footprint" "Capacitor_SMD:C_0805_2012Metric_Pad1.18x1.45mm_HandSolder"
-			(at 174.9552 104.14 0)
+			(at 174.9552 97.79 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -1998,7 +2049,7 @@
 			)
 		)
 		(property "Datasheet" "https://yageogroup.com/content/datasheet/asset/file/UPY-AC_NP0X7RX7S_6_3V-TO-2KV"
-			(at 173.99 100.33 0)
+			(at 173.99 93.98 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -2007,7 +2058,7 @@
 			)
 		)
 		(property "Description" ""
-			(at 173.99 100.33 0)
+			(at 173.99 93.98 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -2016,7 +2067,7 @@
 			)
 		)
 		(property "MFG" "YAGEO"
-			(at 173.99 100.33 0)
+			(at 173.99 93.98 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -2025,7 +2076,7 @@
 			)
 		)
 		(property "MFG PN" "AC0805KRX7R9BB103"
-			(at 173.99 100.33 0)
+			(at 173.99 93.98 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -2034,7 +2085,7 @@
 			)
 		)
 		(property "Digi PN" "311-3174-1-ND"
-			(at 173.99 100.33 0)
+			(at 173.99 93.98 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -2043,7 +2094,7 @@
 			)
 		)
 		(property "Digi URL" "https://www.digikey.com/en/products/detail/yageo/AC0805KRX7R9BB103/6643160"
-			(at 173.99 100.33 0)
+			(at 173.99 93.98 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -2052,7 +2103,7 @@
 			)
 		)
 		(property "Digikey Link" ""
-			(at 173.99 100.33 0)
+			(at 173.99 93.98 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -2061,7 +2112,7 @@
 			)
 		)
 		(property "MFP PN" ""
-			(at 173.99 100.33 0)
+			(at 173.99 93.98 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -2070,7 +2121,7 @@
 			)
 		)
 		(property "Manufacturer" ""
-			(at 173.99 100.33 0)
+			(at 173.99 93.98 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -2079,7 +2130,7 @@
 			)
 		)
 		(property "Manufacturer Part Number" ""
-			(at 173.99 100.33 0)
+			(at 173.99 93.98 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -2088,7 +2139,7 @@
 			)
 		)
 		(property "PN" ""
-			(at 173.99 100.33 0)
+			(at 173.99 93.98 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -2097,7 +2148,7 @@
 			)
 		)
 		(property "Part Name" ""
-			(at 173.99 100.33 0)
+			(at 173.99 93.98 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -2106,7 +2157,7 @@
 			)
 		)
 		(property "Sim.Device" ""
-			(at 173.99 100.33 0)
+			(at 173.99 93.98 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -2115,7 +2166,7 @@
 			)
 		)
 		(property "Sim.Pins" ""
-			(at 173.99 100.33 0)
+			(at 173.99 93.98 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -2124,7 +2175,7 @@
 			)
 		)
 		(property "Sim.Type" ""
-			(at 173.99 100.33 0)
+			(at 173.99 93.98 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -2141,23 +2192,23 @@
 		(instances
 			(project "BMS"
 				(path "/dc0b64a3-156e-446d-a433-c56b0c761cf1/00000000-0000-0000-0000-00005f95bba1"
-					(reference "C15")
+					(reference "C12")
 					(unit 1)
 				)
 				(path "/dc0b64a3-156e-446d-a433-c56b0c761cf1/00000000-0000-0000-0000-00005f95bba8"
-					(reference "C17")
-					(unit 1)
-				)
-				(path "/dc0b64a3-156e-446d-a433-c56b0c761cf1/00000000-0000-0000-0000-00005f9a2363"
-					(reference "C19")
-					(unit 1)
-				)
-				(path "/dc0b64a3-156e-446d-a433-c56b0c761cf1/6f027dca-8315-4f5d-8fbc-38fa2ec270b5"
 					(reference "C13")
 					(unit 1)
 				)
-				(path "/dc0b64a3-156e-446d-a433-c56b0c761cf1/8a13ff47-9856-4e08-93e6-510a1f5baf09"
+				(path "/dc0b64a3-156e-446d-a433-c56b0c761cf1/00000000-0000-0000-0000-00005f9a2363"
+					(reference "C14")
+					(unit 1)
+				)
+				(path "/dc0b64a3-156e-446d-a433-c56b0c761cf1/6f027dca-8315-4f5d-8fbc-38fa2ec270b5"
 					(reference "C11")
+					(unit 1)
+				)
+				(path "/dc0b64a3-156e-446d-a433-c56b0c761cf1/8a13ff47-9856-4e08-93e6-510a1f5baf09"
+					(reference "C10")
 					(unit 1)
 				)
 				(path "/dc0b64a3-156e-446d-a433-c56b0c761cf1/a3eaddb3-ad3f-4304-be91-79ec42000d12"
@@ -2168,16 +2219,139 @@
 		)
 	)
 	(symbol
+		(lib_id "Device:R")
+		(at 152.4 118.11 90)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "304edd74-c46c-4f9a-a809-b91db7c339f8")
+		(property "Reference" "R20"
+			(at 152.654 115.316 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "1K"
+			(at 152.4 118.11 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" "Resistor_SMD:R_0603_1608Metric_Pad0.98x0.95mm_HandSolder"
+			(at 152.4 119.888 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "https://yageogroup.com/content/datasheet/asset/file/PYU-AC_51_ROHS_L"
+			(at 152.4 118.11 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Resistor"
+			(at 152.4 118.11 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Digi PN" "311-1KLDCT-ND"
+			(at 152.4 118.11 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Digi URL" "https://www.digikey.com/en/products/detail/yageo/AC0603FR-071KL/2827819"
+			(at 152.4 118.11 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "MFG" "YAGEO"
+			(at 152.4 118.11 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "MFG PN" "AC0603FR-071KL"
+			(at 152.4 118.11 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "225e1cb1-0714-4931-92a6-735c119ec025")
+		)
+		(pin "2"
+			(uuid "a1a22645-c14e-44f0-aec1-438fab2afd38")
+		)
+		(instances
+			(project "BMS"
+				(path "/dc0b64a3-156e-446d-a433-c56b0c761cf1/00000000-0000-0000-0000-00005f95bba1"
+					(reference "R32")
+					(unit 1)
+				)
+				(path "/dc0b64a3-156e-446d-a433-c56b0c761cf1/00000000-0000-0000-0000-00005f95bba8"
+					(reference "R36")
+					(unit 1)
+				)
+				(path "/dc0b64a3-156e-446d-a433-c56b0c761cf1/00000000-0000-0000-0000-00005f9a2363"
+					(reference "R40")
+					(unit 1)
+				)
+				(path "/dc0b64a3-156e-446d-a433-c56b0c761cf1/6f027dca-8315-4f5d-8fbc-38fa2ec270b5"
+					(reference "R28")
+					(unit 1)
+				)
+				(path "/dc0b64a3-156e-446d-a433-c56b0c761cf1/8a13ff47-9856-4e08-93e6-510a1f5baf09"
+					(reference "R24")
+					(unit 1)
+				)
+				(path "/dc0b64a3-156e-446d-a433-c56b0c761cf1/a3eaddb3-ad3f-4304-be91-79ec42000d12"
+					(reference "R20")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
 		(lib_id "Device:LED_Small")
-		(at 127 107.95 90)
+		(at 134.62 102.87 180)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
 		(on_board yes)
 		(dnp no)
 		(uuid "956e9097-6346-4336-bd8c-9cc6d72e918a")
-		(property "Reference" "D4"
-			(at 129.54 107.95 90)
+		(property "Reference" "D3"
+			(at 135.128 100.584 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -2185,15 +2359,16 @@
 			)
 		)
 		(property "Value" "LH R974-LP-1"
-			(at 133.35 111.76 90)
+			(at 138.43 96.52 90)
 			(effects
 				(font
 					(size 0.9652 0.9652)
 				)
+				(hide yes)
 			)
 		)
 		(property "Footprint" "LED_SMD:LED_0805_2012Metric_Pad1.15x1.40mm_HandSolder"
-			(at 127 107.95 90)
+			(at 134.62 102.87 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -2202,7 +2377,7 @@
 			)
 		)
 		(property "Datasheet" "https://look.ams-osram.com/m/1c300b267881b82d/original/LH-R974.pdf"
-			(at 127 107.95 90)
+			(at 134.62 102.87 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -2211,7 +2386,7 @@
 			)
 		)
 		(property "Description" ""
-			(at 127 107.95 0)
+			(at 134.62 102.87 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -2220,7 +2395,7 @@
 			)
 		)
 		(property "MFG" "ams-OSRAM USA INC."
-			(at 127 107.95 90)
+			(at 134.62 102.87 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -2229,7 +2404,7 @@
 			)
 		)
 		(property "MFG PN" "LS R976-NR-1-0-20-R18"
-			(at 127 107.95 90)
+			(at 134.62 102.87 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -2238,7 +2413,7 @@
 			)
 		)
 		(property "Digi PN" "475-LSR976-NR-1CT-ND"
-			(at 127 107.95 90)
+			(at 134.62 102.87 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -2247,7 +2422,7 @@
 			)
 		)
 		(property "Digi URL" "https://www.digikey.com/en/products/detail/ams-osram-usa-inc/LS-R976-NR-1-0-20-R18/1227987"
-			(at 127 107.95 90)
+			(at 134.62 102.87 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -2256,7 +2431,7 @@
 			)
 		)
 		(property "Digikey Link" ""
-			(at 127 107.95 90)
+			(at 134.62 102.87 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -2265,7 +2440,7 @@
 			)
 		)
 		(property "MFP PN" ""
-			(at 127 107.95 90)
+			(at 134.62 102.87 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -2274,7 +2449,7 @@
 			)
 		)
 		(property "Manufacturer" ""
-			(at 127 107.95 90)
+			(at 134.62 102.87 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -2283,7 +2458,7 @@
 			)
 		)
 		(property "Manufacturer Part Number" ""
-			(at 127 107.95 90)
+			(at 134.62 102.87 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -2292,7 +2467,7 @@
 			)
 		)
 		(property "PN" ""
-			(at 127 107.95 90)
+			(at 134.62 102.87 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -2301,7 +2476,7 @@
 			)
 		)
 		(property "Part Name" ""
-			(at 127 107.95 90)
+			(at 134.62 102.87 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -2310,7 +2485,7 @@
 			)
 		)
 		(property "Sim.Device" ""
-			(at 127 107.95 90)
+			(at 134.62 102.87 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -2319,7 +2494,7 @@
 			)
 		)
 		(property "Sim.Pins" ""
-			(at 127 107.95 90)
+			(at 134.62 102.87 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -2328,7 +2503,7 @@
 			)
 		)
 		(property "Sim.Type" ""
-			(at 127 107.95 90)
+			(at 134.62 102.87 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -2341,6 +2516,335 @@
 		)
 		(pin "1"
 			(uuid "df962bfa-cf51-499b-aa5c-028602efb373")
+		)
+		(instances
+			(project "BMS"
+				(path "/dc0b64a3-156e-446d-a433-c56b0c761cf1/00000000-0000-0000-0000-00005f95bba1"
+					(reference "D9")
+					(unit 1)
+				)
+				(path "/dc0b64a3-156e-446d-a433-c56b0c761cf1/00000000-0000-0000-0000-00005f95bba8"
+					(reference "D11")
+					(unit 1)
+				)
+				(path "/dc0b64a3-156e-446d-a433-c56b0c761cf1/00000000-0000-0000-0000-00005f9a2363"
+					(reference "D13")
+					(unit 1)
+				)
+				(path "/dc0b64a3-156e-446d-a433-c56b0c761cf1/6f027dca-8315-4f5d-8fbc-38fa2ec270b5"
+					(reference "D7")
+					(unit 1)
+				)
+				(path "/dc0b64a3-156e-446d-a433-c56b0c761cf1/8a13ff47-9856-4e08-93e6-510a1f5baf09"
+					(reference "D5")
+					(unit 1)
+				)
+				(path "/dc0b64a3-156e-446d-a433-c56b0c761cf1/a3eaddb3-ad3f-4304-be91-79ec42000d12"
+					(reference "D3")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Device:R")
+		(at 144.78 97.79 180)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "9689c0cf-3091-4bf7-81e6-ad20b7fddda7")
+		(property "Reference" "R19"
+			(at 142.24 96.52 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Value" "33"
+			(at 144.78 96.52 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Footprint" "Resistor_SMD:R_2512_6332Metric_Pad1.40x3.35mm_HandSolder"
+			(at 146.558 97.79 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "https://yageogroup.com/content/datasheet/asset/file/PYU-RC_GROUP_51_ROHS_L"
+			(at 144.78 97.79 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" ""
+			(at 144.78 97.79 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "MFG" "YAGEO"
+			(at 144.78 97.79 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "MFG PN" "RC2512FK-0733RL"
+			(at 144.78 97.79 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Digi PN" "13-RC2512FK-0733RLCT-ND"
+			(at 144.78 97.79 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Digi URL" "https://www.digikey.com/en/products/detail/yageo/RC2512FK-0733RL/5922127"
+			(at 144.78 97.79 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Digikey Link" ""
+			(at 144.78 97.79 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "MFP PN" ""
+			(at 144.78 97.79 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Manufacturer" ""
+			(at 144.78 97.79 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Manufacturer Part Number" ""
+			(at 144.78 97.79 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "PN" ""
+			(at 144.78 97.79 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Part Name" ""
+			(at 144.78 97.79 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Sim.Device" ""
+			(at 144.78 97.79 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Sim.Pins" ""
+			(at 144.78 97.79 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Sim.Type" ""
+			(at 144.78 97.79 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "2"
+			(uuid "18aa8d53-7e6e-462d-9906-2a5edc7a9585")
+		)
+		(pin "1"
+			(uuid "3efda2a6-6155-438f-ab40-e11a433047ff")
+		)
+		(instances
+			(project "BMS"
+				(path "/dc0b64a3-156e-446d-a433-c56b0c761cf1/00000000-0000-0000-0000-00005f95bba1"
+					(reference "R31")
+					(unit 1)
+				)
+				(path "/dc0b64a3-156e-446d-a433-c56b0c761cf1/00000000-0000-0000-0000-00005f95bba8"
+					(reference "R35")
+					(unit 1)
+				)
+				(path "/dc0b64a3-156e-446d-a433-c56b0c761cf1/00000000-0000-0000-0000-00005f9a2363"
+					(reference "R39")
+					(unit 1)
+				)
+				(path "/dc0b64a3-156e-446d-a433-c56b0c761cf1/6f027dca-8315-4f5d-8fbc-38fa2ec270b5"
+					(reference "R27")
+					(unit 1)
+				)
+				(path "/dc0b64a3-156e-446d-a433-c56b0c761cf1/8a13ff47-9856-4e08-93e6-510a1f5baf09"
+					(reference "R23")
+					(unit 1)
+				)
+				(path "/dc0b64a3-156e-446d-a433-c56b0c761cf1/a3eaddb3-ad3f-4304-be91-79ec42000d12"
+					(reference "R19")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Device:D_Zener")
+		(at 152.4 123.19 180)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "c425ab69-8d84-4dac-8cb9-3b5fe3e37e73")
+		(property "Reference" "D4"
+			(at 156.972 127.508 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "9.1V"
+			(at 157.734 125.222 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" "Diode_SMD:D_SOD-523"
+			(at 152.4 123.19 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "https://www.diodes.com/assets/Datasheets/ds30553.pdf"
+			(at 152.4 123.19 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Zener diode 9.1V"
+			(at 152.4 123.19 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Digi PN" "31-DDZ9696T-7CT-ND"
+			(at 152.4 123.19 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Digi URL" "https://www.digikey.com/en/products/detail/diodes-incorporated/DDZ9696T-7/1934833"
+			(at 152.4 123.19 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "MFG" "  Diodes Incorporated"
+			(at 152.4 123.19 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "MFG PN" "DDZ9696T-7"
+			(at 152.4 123.19 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "2"
+			(uuid "50a9b09f-5b85-48d7-86ab-627c99ae97fb")
+		)
+		(pin "1"
+			(uuid "5718f558-dada-4bbe-9cd5-a08ce7ea985a")
 		)
 		(instances
 			(project "BMS"
@@ -2372,16 +2876,17 @@
 		)
 	)
 	(symbol
-		(lib_id "Device:R")
-		(at 139.7 107.95 180)
+		(lib_id "Transistor_FET:AO3400A")
+		(at 147.32 110.49 0)
+		(mirror y)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
 		(on_board yes)
 		(dnp no)
-		(uuid "9689c0cf-3091-4bf7-81e6-ad20b7fddda7")
-		(property "Reference" "R15"
-			(at 137.16 106.68 90)
+		(uuid "d49050fc-8218-4b07-8c59-097bdcee83e6")
+		(property "Reference" "Q2"
+			(at 142.494 106.172 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -2389,8 +2894,8 @@
 				(justify left)
 			)
 		)
-		(property "Value" "33"
-			(at 139.7 106.68 90)
+		(property "Value" "AO3400A"
+			(at 142.494 108.712 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -2398,8 +2903,29 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" "Resistor_SMD:R_2512_6332Metric_Pad1.40x3.35mm_HandSolder"
-			(at 141.478 107.95 90)
+		(property "Footprint" "Package_TO_SOT_SMD:SOT-23-3"
+			(at 142.24 112.395 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+					(italic yes)
+				)
+				(justify left)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "http://www.aosmd.com/pdfs/datasheet/AO3400A.pdf"
+			(at 142.24 114.3 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+				(hide yes)
+			)
+		)
+		(property "Description" "30V Vds, 5.7A Id, N-Channel MOSFET, SOT-23"
+			(at 147.32 110.49 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -2407,8 +2933,8 @@
 				(hide yes)
 			)
 		)
-		(property "Datasheet" "https://yageogroup.com/content/datasheet/asset/file/PYU-RC_GROUP_51_ROHS_L"
-			(at 139.7 107.95 0)
+		(property "MFG PN" "AO3400A"
+			(at 147.32 110.49 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -2416,8 +2942,8 @@
 				(hide yes)
 			)
 		)
-		(property "Description" ""
-			(at 139.7 107.95 0)
+		(property "Digi PN" "785-1000-1-ND"
+			(at 147.32 110.49 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -2425,8 +2951,8 @@
 				(hide yes)
 			)
 		)
-		(property "MFG" "YAGEO"
-			(at 139.7 107.95 90)
+		(property "Digi URL" "https://www.digikey.com/en/products/detail/alpha-omega-semiconductor-inc/AO3400A/1855772"
+			(at 147.32 110.49 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -2434,8 +2960,8 @@
 				(hide yes)
 			)
 		)
-		(property "MFG PN" "RC2512FK-0733RL"
-			(at 139.7 107.95 90)
+		(property "MFG" "Alpha & Omega Semiconductor Inc."
+			(at 147.32 110.49 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -2443,17 +2969,8 @@
 				(hide yes)
 			)
 		)
-		(property "Digi PN" "13-RC2512FK-0733RLCT-ND"
-			(at 139.7 107.95 90)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Digi URL" "https://www.digikey.com/en/products/detail/yageo/RC2512FK-0733RL/5922127"
-			(at 139.7 107.95 90)
+		(property "Fuse Digikey" ""
+			(at 147.32 110.49 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -2462,7 +2979,25 @@
 			)
 		)
 		(property "Digikey Link" ""
-			(at 139.7 107.95 90)
+			(at 147.32 110.49 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "MANUFACTURER" ""
+			(at 147.32 110.49 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "MAXIMUM_PACKAGE_HEIGHT" ""
+			(at 147.32 110.49 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -2471,7 +3006,7 @@
 			)
 		)
 		(property "MFP PN" ""
-			(at 139.7 107.95 90)
+			(at 147.32 110.49 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -2480,7 +3015,7 @@
 			)
 		)
 		(property "Manufacturer" ""
-			(at 139.7 107.95 90)
+			(at 147.32 110.49 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -2489,7 +3024,16 @@
 			)
 		)
 		(property "Manufacturer Part Number" ""
-			(at 139.7 107.95 90)
+			(at 147.32 110.49 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "PARTREV" ""
+			(at 147.32 110.49 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -2498,7 +3042,7 @@
 			)
 		)
 		(property "PN" ""
-			(at 139.7 107.95 90)
+			(at 147.32 110.49 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -2507,7 +3051,7 @@
 			)
 		)
 		(property "Part Name" ""
-			(at 139.7 107.95 90)
+			(at 147.32 110.49 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -2515,8 +3059,8 @@
 				(hide yes)
 			)
 		)
-		(property "Sim.Device" ""
-			(at 139.7 107.95 90)
+		(property "STANDARD" ""
+			(at 147.32 110.49 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -2524,258 +3068,39 @@
 				(hide yes)
 			)
 		)
-		(property "Sim.Pins" ""
-			(at 139.7 107.95 90)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Sim.Type" ""
-			(at 139.7 107.95 90)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(pin "2"
-			(uuid "18aa8d53-7e6e-462d-9906-2a5edc7a9585")
+		(pin "3"
+			(uuid "02f5b096-5aa4-46fb-9b32-6f72e3a9d18e")
 		)
 		(pin "1"
-			(uuid "3efda2a6-6155-438f-ab40-e11a433047ff")
+			(uuid "00c29d9e-a649-42cf-b38c-7b6ac44ac0fd")
+		)
+		(pin "2"
+			(uuid "e14e491a-1380-460d-aff6-3bd390b367b9")
 		)
 		(instances
 			(project "BMS"
 				(path "/dc0b64a3-156e-446d-a433-c56b0c761cf1/00000000-0000-0000-0000-00005f95bba1"
-					(reference "R39")
+					(reference "Q5")
 					(unit 1)
 				)
 				(path "/dc0b64a3-156e-446d-a433-c56b0c761cf1/00000000-0000-0000-0000-00005f95bba8"
-					(reference "R47")
+					(reference "Q6")
 					(unit 1)
 				)
 				(path "/dc0b64a3-156e-446d-a433-c56b0c761cf1/00000000-0000-0000-0000-00005f9a2363"
-					(reference "R55")
+					(reference "Q7")
 					(unit 1)
 				)
 				(path "/dc0b64a3-156e-446d-a433-c56b0c761cf1/6f027dca-8315-4f5d-8fbc-38fa2ec270b5"
-					(reference "R31")
+					(reference "Q4")
 					(unit 1)
 				)
 				(path "/dc0b64a3-156e-446d-a433-c56b0c761cf1/8a13ff47-9856-4e08-93e6-510a1f5baf09"
-					(reference "R23")
+					(reference "Q3")
 					(unit 1)
 				)
 				(path "/dc0b64a3-156e-446d-a433-c56b0c761cf1/a3eaddb3-ad3f-4304-be91-79ec42000d12"
-					(reference "R15")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
-		(lib_id "Device:R")
-		(at 151.13 99.06 270)
-		(unit 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(dnp no)
-		(uuid "f4f58a2b-767a-47b9-9df1-7ef5c7280843")
-		(property "Reference" "R17"
-			(at 151.13 96.52 90)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Value" "3.3k"
-			(at 151.13 99.06 90)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Footprint" "Resistor_SMD:R_0805_2012Metric_Pad1.20x1.40mm_HandSolder"
-			(at 151.13 97.282 90)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Datasheet" "https://yageogroup.com/content/datasheet/asset/file/PYU-RC_GROUP_51_ROHS_L"
-			(at 151.13 99.06 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Description" ""
-			(at 151.13 99.06 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "MFG" "YAGEO"
-			(at 151.13 99.06 90)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "MFG PN" "RC0805FR-133K3L"
-			(at 151.13 99.06 90)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Digi PN" "13-RC0805FR-133K3LCT-ND"
-			(at 151.13 99.06 90)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Digi URL" "https://www.digikey.com/en/products/detail/yageo/RC0805FR-133K3L/14008213?s=N4IgTCBcDaIIwGYC0AlAwgBgBwYKwDEUlEEBpBAGTQBUkA5AERAF0BfIA"
-			(at 151.13 99.06 90)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Digikey Link" ""
-			(at 151.13 99.06 90)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "MFP PN" ""
-			(at 151.13 99.06 90)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Manufacturer" ""
-			(at 151.13 99.06 90)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Manufacturer Part Number" ""
-			(at 151.13 99.06 90)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "PN" ""
-			(at 151.13 99.06 90)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Part Name" ""
-			(at 151.13 99.06 90)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Sim.Device" ""
-			(at 151.13 99.06 90)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Sim.Pins" ""
-			(at 151.13 99.06 90)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Sim.Type" ""
-			(at 151.13 99.06 90)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(pin "1"
-			(uuid "6ea8876b-3bde-4fbc-8bb2-cd70eacae92e")
-		)
-		(pin "2"
-			(uuid "88631ac9-b977-4b0f-85de-6402fd1b3ec9")
-		)
-		(instances
-			(project "BMS"
-				(path "/dc0b64a3-156e-446d-a433-c56b0c761cf1/00000000-0000-0000-0000-00005f95bba1"
-					(reference "R41")
-					(unit 1)
-				)
-				(path "/dc0b64a3-156e-446d-a433-c56b0c761cf1/00000000-0000-0000-0000-00005f95bba8"
-					(reference "R49")
-					(unit 1)
-				)
-				(path "/dc0b64a3-156e-446d-a433-c56b0c761cf1/00000000-0000-0000-0000-00005f9a2363"
-					(reference "R57")
-					(unit 1)
-				)
-				(path "/dc0b64a3-156e-446d-a433-c56b0c761cf1/6f027dca-8315-4f5d-8fbc-38fa2ec270b5"
-					(reference "R33")
-					(unit 1)
-				)
-				(path "/dc0b64a3-156e-446d-a433-c56b0c761cf1/8a13ff47-9856-4e08-93e6-510a1f5baf09"
-					(reference "R25")
-					(unit 1)
-				)
-				(path "/dc0b64a3-156e-446d-a433-c56b0c761cf1/a3eaddb3-ad3f-4304-be91-79ec42000d12"
-					(reference "R17")
+					(reference "Q2")
 					(unit 1)
 				)
 			)
