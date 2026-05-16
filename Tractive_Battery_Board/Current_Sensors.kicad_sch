@@ -864,12 +864,12 @@
 			)
 			(embedded_fonts no)
 		)
-		(symbol "FS_4_Global_Symbol_Library:INA826AIDR"
+		(symbol "INA826AIDR_1"
 			(exclude_from_sim no)
 			(in_bom yes)
 			(on_board yes)
-			(property "Reference" "U"
-				(at 0 10.414 0)
+			(property "Reference" "U10"
+				(at -8.382 11.176 0)
 				(effects
 					(font
 						(size 1.27 1.27)
@@ -877,15 +877,14 @@
 				)
 			)
 			(property "Value" "INA826AIDR"
-				(at 0 0 0)
+				(at -7.62 9.398 0)
 				(effects
 					(font
 						(size 1.27 1.27)
 					)
-					(hide yes)
 				)
 			)
-			(property "Footprint" "Package_SO:JEITA_SOIC-8_3.9x4.9mm_P1.27mm"
+			(property "Footprint" "Package_SO:SOIC-8_3.9x4.9mm_P1.27mm"
 				(at 0 0 0)
 				(effects
 					(font
@@ -948,7 +947,97 @@
 					(hide yes)
 				)
 			)
-			(symbol "INA826AIDR_0_1"
+			(property "Digikey Link" ""
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "MAXIMUM_PACKAGE_HEIGHT" ""
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "MFP PN" ""
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "Manufacturer" ""
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "Manufacturer Part Number" ""
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "PN" ""
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "Part Name" ""
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "Sim.Device" ""
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "Sim.Pins" ""
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "Sim.Type" ""
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(symbol "INA826AIDR_1_0_1"
 				(polyline
 					(pts
 						(xy 7.62 1.27) (xy -5.08 7.62) (xy -5.08 -5.08) (xy 7.62 1.27)
@@ -962,11 +1051,11 @@
 					)
 				)
 			)
-			(symbol "INA826AIDR_1_1"
+			(symbol "INA826AIDR_1_1_1"
 				(pin input line
 					(at -7.62 6.35 0)
 					(length 2.54)
-					(name "+"
+					(name "-"
 						(effects
 							(font
 								(size 1.27 1.27)
@@ -1020,7 +1109,7 @@
 				(pin input line
 					(at -7.62 -3.81 0)
 					(length 2.54)
-					(name "-"
+					(name "+"
 						(effects
 							(font
 								(size 1.27 1.27)
@@ -2163,7 +2252,7 @@
 		)
 		(uuid "fc34a0a8-85df-4c5f-9721-9e3c6f61c062")
 	)
-	(hierarchical_label "V_Out_Positive"
+	(hierarchical_label "V_Out_Negative"
 		(shape output)
 		(at 156.21 111.76 0)
 		(effects
@@ -2185,7 +2274,7 @@
 		)
 		(uuid "4c297651-7718-49de-a4e5-cb4327a1c125")
 	)
-	(hierarchical_label "V_Out_Negative"
+	(hierarchical_label "V_Out_Positive"
 		(shape output)
 		(at 156.21 68.58 0)
 		(effects
@@ -2732,6 +2821,7 @@
 		)
 	)
 	(symbol
+		(lib_name "INA826AIDR_1")
 		(lib_id "FS_4_Global_Symbol_Library:INA826AIDR")
 		(at 146.05 69.85 0)
 		(unit 1)
@@ -3206,15 +3296,15 @@
 	(symbol
 		(lib_id "Amplifier_Operational:MCP6004")
 		(at 90.17 73.66 0)
+		(mirror x)
 		(unit 4)
 		(exclude_from_sim no)
 		(in_bom yes)
 		(on_board yes)
 		(dnp no)
-		(fields_autoplaced yes)
 		(uuid "72372cfd-d2b4-44dd-8d9a-3c5e1a171e6e")
 		(property "Reference" "U9"
-			(at 90.17 63.5 0)
+			(at 90.17 83.82 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -3222,7 +3312,7 @@
 			)
 		)
 		(property "Value" "MCP6004"
-			(at 90.17 66.04 0)
+			(at 90.17 81.28 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -3230,7 +3320,7 @@
 			)
 		)
 		(property "Footprint" "Package_SO:SOIC-14_3.9x8.7mm_P1.27mm"
-			(at 88.9 71.12 0)
+			(at 88.9 76.2 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -3239,7 +3329,7 @@
 			)
 		)
 		(property "Datasheet" "Package_SO:SOIC-14_3.9x8.7mm_P1.27mm"
-			(at 91.44 68.58 0)
+			(at 91.44 78.74 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -3894,15 +3984,15 @@
 	(symbol
 		(lib_id "Amplifier_Operational:MCP6004")
 		(at 88.9 48.26 0)
+		(mirror x)
 		(unit 3)
 		(exclude_from_sim no)
 		(in_bom yes)
 		(on_board yes)
 		(dnp no)
-		(fields_autoplaced yes)
 		(uuid "995b721f-a4e5-4d43-a35d-6ab510396f7c")
 		(property "Reference" "U9"
-			(at 88.9 38.1 0)
+			(at 88.9 58.42 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -3910,7 +4000,7 @@
 			)
 		)
 		(property "Value" "MCP6004"
-			(at 88.9 40.64 0)
+			(at 88.9 55.88 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -3918,7 +4008,7 @@
 			)
 		)
 		(property "Footprint" "Package_SO:SOIC-14_3.9x8.7mm_P1.27mm"
-			(at 87.63 45.72 0)
+			(at 87.63 50.8 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -3927,7 +4017,7 @@
 			)
 		)
 		(property "Datasheet" "Package_SO:SOIC-14_3.9x8.7mm_P1.27mm"
-			(at 90.17 43.18 0)
+			(at 90.17 53.34 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -4578,217 +4668,6 @@
 		)
 	)
 	(symbol
-		(lib_id "FS_4_Global_Symbol_Library:INA826AIDR")
-		(at 146.05 113.03 0)
-		(unit 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(dnp no)
-		(uuid "b5634d68-41ea-4394-a11e-b3d10f9c70b8")
-		(property "Reference" "U11"
-			(at 136.652 101.6 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Value" "INA826AIDR"
-			(at 137.414 103.632 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Footprint" "Package_SO:SOIC-8_3.9x4.9mm_P1.27mm"
-			(at 146.05 113.03 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Datasheet" "https://www.ti.com/lit/ds/symlink/ina826.pdf?HQS=dis-dk-null-digikeymode-dsf-pf-null-wwe&ts=1770264405400&ref_url=https%253A%252F%252Fwww.ti.com%252Fgeneral%252Fdocs%252Fsuppproductinfo.tsp%253FdistId%253D10%2526gotoUrl%253Dhttps%253A%252F%252Fwww.ti.com%252Flit%252Fgpn%252Fina826"
-			(at 146.05 113.03 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Description" ""
-			(at 146.05 113.03 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Digi PN" "296-30238-1-ND"
-			(at 146.05 113.03 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "MFG" "Texas Instruments"
-			(at 146.05 113.03 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "MFG PN" "INA826AIDR"
-			(at 146.05 113.03 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Digi URL" "https://www.digikey.com/en/products/detail/texas-instruments/INA826AIDR/2833524"
-			(at 146.05 113.03 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Digikey Link" ""
-			(at 146.05 113.03 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "MAXIMUM_PACKAGE_HEIGHT" ""
-			(at 146.05 113.03 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "MFP PN" ""
-			(at 146.05 113.03 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Manufacturer" ""
-			(at 146.05 113.03 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Manufacturer Part Number" ""
-			(at 146.05 113.03 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "PN" ""
-			(at 146.05 113.03 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Part Name" ""
-			(at 146.05 113.03 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Sim.Device" ""
-			(at 146.05 113.03 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Sim.Pins" ""
-			(at 146.05 113.03 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Sim.Type" ""
-			(at 146.05 113.03 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(pin "3"
-			(uuid "80012800-e528-4419-a266-19ae88154db0")
-		)
-		(pin "1"
-			(uuid "fcbd90a2-db2e-4d11-af97-ab16526c052e")
-		)
-		(pin "6"
-			(uuid "45268d7f-1e33-4f6d-9904-4bba16f9be36")
-		)
-		(pin "2"
-			(uuid "e563c447-3408-4277-88e6-56cac44a3318")
-		)
-		(pin "8"
-			(uuid "d67a04cf-cb71-4db5-9704-dec66b29f65b")
-		)
-		(pin "4"
-			(uuid "35f11e30-4d60-4f44-9b44-e17de09c4563")
-		)
-		(pin "7"
-			(uuid "3082857d-8c17-445c-b319-c6c267b16c2c")
-		)
-		(pin "5"
-			(uuid "69d7d5f1-660d-4d82-8fdd-535581b04bd3")
-		)
-		(instances
-			(project "Tractive_Battery_Board"
-				(path "/ca333741-5826-495c-b860-5422aa5e17fc/f8f7b966-e431-45f1-86cc-b511313b5db4"
-					(reference "U11")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
 		(lib_id "Device:R")
 		(at 62.23 50.8 270)
 		(unit 1)
@@ -5178,6 +5057,218 @@
 			(project "Tractive_Battery_Board"
 				(path "/ca333741-5826-495c-b860-5422aa5e17fc/f8f7b966-e431-45f1-86cc-b511313b5db4"
 					(reference "J9")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_name "INA826AIDR_1")
+		(lib_id "FS_4_Global_Symbol_Library:INA826AIDR")
+		(at 146.05 113.03 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "c7ce907f-8ccf-4cfc-9afe-1f661d65e764")
+		(property "Reference" "U11"
+			(at 137.668 101.854 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "INA826AIDR"
+			(at 138.43 103.632 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" "Package_SO:SOIC-8_3.9x4.9mm_P1.27mm"
+			(at 146.05 113.03 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "https://www.ti.com/lit/ds/symlink/ina826.pdf?HQS=dis-dk-null-digikeymode-dsf-pf-null-wwe&ts=1770264405400&ref_url=https%253A%252F%252Fwww.ti.com%252Fgeneral%252Fdocs%252Fsuppproductinfo.tsp%253FdistId%253D10%2526gotoUrl%253Dhttps%253A%252F%252Fwww.ti.com%252Flit%252Fgpn%252Fina826"
+			(at 146.05 113.03 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" ""
+			(at 146.05 113.03 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Digi PN" "296-30238-1-ND"
+			(at 146.05 113.03 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "MFG" "Texas Instruments"
+			(at 146.05 113.03 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "MFG PN" "INA826AIDR"
+			(at 146.05 113.03 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Digi URL" "https://www.digikey.com/en/products/detail/texas-instruments/INA826AIDR/2833524"
+			(at 146.05 113.03 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Digikey Link" ""
+			(at 146.05 113.03 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "MAXIMUM_PACKAGE_HEIGHT" ""
+			(at 146.05 113.03 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "MFP PN" ""
+			(at 146.05 113.03 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Manufacturer" ""
+			(at 146.05 113.03 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Manufacturer Part Number" ""
+			(at 146.05 113.03 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "PN" ""
+			(at 146.05 113.03 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Part Name" ""
+			(at 146.05 113.03 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Sim.Device" ""
+			(at 146.05 113.03 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Sim.Pins" ""
+			(at 146.05 113.03 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Sim.Type" ""
+			(at 146.05 113.03 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "3"
+			(uuid "75ccb9aa-087a-41ea-a698-9eb2a8070eb7")
+		)
+		(pin "1"
+			(uuid "e803c715-8523-4e63-bcd8-92b4bfd0258b")
+		)
+		(pin "6"
+			(uuid "8bf8da3c-a0df-4580-8627-4638aa304fc9")
+		)
+		(pin "2"
+			(uuid "a09602b6-e3b3-418f-af40-a5f96e2de9bc")
+		)
+		(pin "8"
+			(uuid "33cee9cc-9066-44c6-9e2d-7adbcb053b88")
+		)
+		(pin "4"
+			(uuid "438cd438-16c6-4c1a-9f9b-2b78e2f563dd")
+		)
+		(pin "7"
+			(uuid "6a1d2d70-c05a-4164-b257-15b43004d64e")
+		)
+		(pin "5"
+			(uuid "56a2f0d1-8b40-474a-b0dd-e8d8c4139d3f")
+		)
+		(instances
+			(project "Tractive_Battery_Board"
+				(path "/ca333741-5826-495c-b860-5422aa5e17fc/f8f7b966-e431-45f1-86cc-b511313b5db4"
+					(reference "U11")
 					(unit 1)
 				)
 			)
