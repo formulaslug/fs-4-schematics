@@ -1199,131 +1199,6 @@
 			)
 			(embedded_fonts no)
 		)
-		(symbol "power:+3.3V"
-			(power)
-			(pin_numbers
-				(hide yes)
-			)
-			(pin_names
-				(offset 0)
-				(hide yes)
-			)
-			(exclude_from_sim no)
-			(in_bom yes)
-			(on_board yes)
-			(property "Reference" "#PWR"
-				(at 0 -3.81 0)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-					(hide yes)
-				)
-			)
-			(property "Value" "+3.3V"
-				(at 0 3.556 0)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-				)
-			)
-			(property "Footprint" ""
-				(at 0 0 0)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-					(hide yes)
-				)
-			)
-			(property "Datasheet" ""
-				(at 0 0 0)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-					(hide yes)
-				)
-			)
-			(property "Description" "Power symbol creates a global label with name \"+3.3V\""
-				(at 0 0 0)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-					(hide yes)
-				)
-			)
-			(property "ki_keywords" "global power"
-				(at 0 0 0)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-					(hide yes)
-				)
-			)
-			(symbol "+3.3V_0_1"
-				(polyline
-					(pts
-						(xy -0.762 1.27) (xy 0 2.54)
-					)
-					(stroke
-						(width 0)
-						(type default)
-					)
-					(fill
-						(type none)
-					)
-				)
-				(polyline
-					(pts
-						(xy 0 2.54) (xy 0.762 1.27)
-					)
-					(stroke
-						(width 0)
-						(type default)
-					)
-					(fill
-						(type none)
-					)
-				)
-				(polyline
-					(pts
-						(xy 0 0) (xy 0 2.54)
-					)
-					(stroke
-						(width 0)
-						(type default)
-					)
-					(fill
-						(type none)
-					)
-				)
-			)
-			(symbol "+3.3V_1_1"
-				(pin power_in line
-					(at 0 0 90)
-					(length 0)
-					(name "~"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-					(number "1"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-				)
-			)
-			(embedded_fonts no)
-		)
 		(symbol "power:+5V"
 			(power)
 			(pin_numbers
@@ -1563,7 +1438,7 @@
 	)
 	(text "Document and ideal gain. \nnote down theoretical resistor error\n\n+- 1% Resistors for the 62k resistor\n\n\n"
 		(exclude_from_sim no)
-		(at 126.238 164.592 0)
+		(at 39.624 189.23 0)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -1573,13 +1448,23 @@
 	)
 	(text "GAIN = 1.78 \n\nGAIN  = 1 + 49.4k/R_G\n\nR_G = ~63.333k ohms\n"
 		(exclude_from_sim no)
-		(at 151.638 88.9 0)
+		(at 193.802 91.186 0)
 		(effects
 			(font
 				(size 1.27 1.27)
 			)
 		)
 		(uuid "ac90f2ee-7a4f-4231-8e56-1febf4078226")
+	)
+	(text "0.2 VREF\n"
+		(exclude_from_sim no)
+		(at 154.178 130.556 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+		)
+		(uuid "b45b399e-d86e-4cb8-9b87-f73647fe6a6e")
 	)
 	(text "10x R, C/10"
 		(exclude_from_sim no)
@@ -1593,7 +1478,7 @@
 	)
 	(text "V_out = 0 < V < 3V3\n\nA = gain = V_out/(V_ref-V_curr_out) = 3.3 / 1.875 = 1.76 (minimum current)\n\nV_curr_out = 2.5V + (0.625 * 900A/300A) = 4.375V OR  2.5V + (0.625 * -900A/300A) = 0.625V\nV_ref = 2.5V + (0.625 * 0A/300A) = 2.5V\n\n"
 		(exclude_from_sim no)
-		(at 105.918 147.32 0)
+		(at 19.304 171.958 0)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -1615,16 +1500,22 @@
 		(uuid "1a7645a1-c15c-40ad-862b-67bf32716cb7")
 	)
 	(junction
-		(at 146.05 121.92)
+		(at 107.95 78.74)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "27bac89c-e287-462c-adcb-47a7601963b8")
+	)
+	(junction
+		(at 97.79 78.74)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "27d594f9-6408-4ee0-a631-af0631c6c065")
+	)
+	(junction
+		(at 146.05 133.35)
 		(diameter 0)
 		(color 0 0 0 0)
 		(uuid "27e5264d-cd02-41f4-9b5a-d73c4832b798")
-	)
-	(junction
-		(at 146.05 58.42)
-		(diameter 0)
-		(color 0 0 0 0)
-		(uuid "2875f144-31c3-4044-bb35-91221c35acfb")
 	)
 	(junction
 		(at 43.18 50.8)
@@ -1633,40 +1524,70 @@
 		(uuid "2963b1bf-dfd3-41a4-86e7-d3b3e0dca129")
 	)
 	(junction
+		(at 148.59 152.4)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "47505407-7a18-4715-a623-337b80a21692")
+	)
+	(junction
+		(at 153.67 144.78)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "495c096c-4901-44fd-aa0f-8b251bd4ef1f")
+	)
+	(junction
+		(at 146.05 113.03)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "4b3a1bdb-2a0f-4ffd-86ba-73b35ba1b9a8")
+	)
+	(junction
 		(at 68.58 76.2)
 		(diameter 0)
 		(color 0 0 0 0)
-		(uuid "376d4e7f-9b05-4c99-beec-dcdf3b9382ce")
+		(uuid "77ecee6d-1006-4c28-96ae-b191b6260900")
+	)
+	(junction
+		(at 102.87 53.34)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "819f33ae-4b67-4b3a-802f-33d93d80e494")
+	)
+	(junction
+		(at 96.52 53.34)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "a4d4b251-7473-49d9-989f-b6a2c54a7e10")
+	)
+	(junction
+		(at 119.38 95.25)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "a740fb35-7c8e-49d6-b27a-05bf60f9e384")
 	)
 	(junction
 		(at 68.58 50.8)
 		(diameter 0)
 		(color 0 0 0 0)
-		(uuid "519cfe64-83dc-434b-b38f-fcf432790fae")
+		(uuid "c0653bb2-efa6-4993-a7b5-71f4d1f124ab")
 	)
 	(junction
-		(at 102.87 48.26)
+		(at 146.05 58.42)
 		(diameter 0)
 		(color 0 0 0 0)
-		(uuid "55c7d338-53bb-4e24-8374-4454340ed0ae")
+		(uuid "c7403c6b-b914-4f54-bc25-777bb77b4878")
 	)
 	(junction
-		(at 146.05 101.6)
+		(at 148.59 97.79)
 		(diameter 0)
 		(color 0 0 0 0)
-		(uuid "5d2d1175-7a07-4cab-979f-4354d3918016")
+		(uuid "c7e529a3-eff7-4674-a795-546fa4b925b3")
 	)
 	(junction
-		(at 99.06 73.66)
+		(at 119.38 149.86)
 		(diameter 0)
 		(color 0 0 0 0)
-		(uuid "66d54584-0cbc-4332-87a7-2bc5931a0951")
-	)
-	(junction
-		(at 96.52 48.26)
-		(diameter 0)
-		(color 0 0 0 0)
-		(uuid "d37f5294-48b0-481a-8977-c997b7f01fbe")
+		(uuid "e06e189f-4a64-49b7-b633-52e210c3a677")
 	)
 	(junction
 		(at 146.05 78.74)
@@ -1674,13 +1595,11 @@
 		(color 0 0 0 0)
 		(uuid "f0671b57-d28d-41f2-aaa6-45c9a9d31027")
 	)
-	(no_connect
-		(at 148.59 119.38)
-		(uuid "94e05762-bc25-4c28-bfb4-3daaa22fd8a5")
-	)
-	(no_connect
-		(at 148.59 76.2)
-		(uuid "a18abc05-ae44-4f94-b90f-c822666afd1e")
+	(junction
+		(at 153.67 160.02)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "fd5216b6-cd63-4da6-add8-0ea673eabcce")
 	)
 	(wire
 		(pts
@@ -1704,7 +1623,7 @@
 	)
 	(wire
 		(pts
-			(xy 146.05 121.92) (xy 146.05 119.38)
+			(xy 146.05 133.35) (xy 146.05 130.81)
 		)
 		(stroke
 			(width 0)
@@ -1714,7 +1633,7 @@
 	)
 	(wire
 		(pts
-			(xy 146.05 101.6) (xy 146.05 104.14)
+			(xy 146.05 113.03) (xy 146.05 115.57)
 		)
 		(stroke
 			(width 0)
@@ -1734,17 +1653,27 @@
 	)
 	(wire
 		(pts
-			(xy 102.87 31.75) (xy 102.87 48.26)
+			(xy 119.38 149.86) (xy 133.35 149.86)
 		)
 		(stroke
 			(width 0)
 			(type default)
 		)
-		(uuid "111d3377-b70f-4620-8bf7-d8e3c0d25d58")
+		(uuid "10daa3c7-5d05-4a1b-8398-d5673a3cca3f")
 	)
 	(wire
 		(pts
-			(xy 138.43 107.95) (xy 138.43 109.22)
+			(xy 119.38 95.25) (xy 133.35 95.25)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "11819619-3b30-4a77-8bb7-e69183be4cf1")
+	)
+	(wire
+		(pts
+			(xy 138.43 119.38) (xy 138.43 120.65)
 		)
 		(stroke
 			(width 0)
@@ -1764,7 +1693,47 @@
 	)
 	(wire
 		(pts
-			(xy 175.26 121.92) (xy 146.05 121.92)
+			(xy 148.59 97.79) (xy 148.59 105.41)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "1677542d-ce14-4d0b-b636-ed594af7e394")
+	)
+	(wire
+		(pts
+			(xy 133.35 154.94) (xy 133.35 160.02)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "16b2816d-bce2-40ed-bed8-55ce9ec9f598")
+	)
+	(wire
+		(pts
+			(xy 82.55 85.09) (xy 97.79 85.09)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "1c8a3ac3-26a8-4744-9b39-5c2b16150756")
+	)
+	(wire
+		(pts
+			(xy 102.87 53.34) (xy 102.87 63.5)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "1e815bf1-9c5e-484b-a1c5-8cba857e5f0b")
+	)
+	(wire
+		(pts
+			(xy 175.26 133.35) (xy 146.05 133.35)
 		)
 		(stroke
 			(width 0)
@@ -1781,16 +1750,6 @@
 			(type default)
 		)
 		(uuid "22382469-751a-4587-aa96-f0d5bc65a170")
-	)
-	(wire
-		(pts
-			(xy 99.06 73.66) (xy 107.95 73.66)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "2481e801-f749-44f5-a051-2efb97adb0b2")
 	)
 	(wire
 		(pts
@@ -1814,47 +1773,7 @@
 	)
 	(wire
 		(pts
-			(xy 81.28 45.72) (xy 81.28 40.64)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "262d5c6e-ad4a-46de-b58f-5ff96de7a486")
-	)
-	(wire
-		(pts
-			(xy 82.55 71.12) (xy 82.55 66.04)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "27039e99-f649-468a-9be6-4956851fd74b")
-	)
-	(wire
-		(pts
-			(xy 102.87 48.26) (xy 102.87 63.5)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "2b5638e7-4585-42f0-89d3-45476785a8ea")
-	)
-	(wire
-		(pts
-			(xy 96.52 40.64) (xy 81.28 40.64)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "2e51424e-8f0b-4672-bf30-fd3b3a472507")
-	)
-	(wire
-		(pts
-			(xy 175.26 101.6) (xy 175.26 107.95)
+			(xy 175.26 113.03) (xy 175.26 119.38)
 		)
 		(stroke
 			(width 0)
@@ -1864,13 +1783,33 @@
 	)
 	(wire
 		(pts
-			(xy 68.58 50.8) (xy 81.28 50.8)
+			(xy 133.35 100.33) (xy 133.35 105.41)
 		)
 		(stroke
 			(width 0)
 			(type default)
 		)
-		(uuid "3f9a4bc0-3145-4109-ade0-4382ef19dced")
+		(uuid "340ab460-d3ce-4b82-a860-5eb00e27d074")
+	)
+	(wire
+		(pts
+			(xy 81.28 59.69) (xy 96.52 59.69)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "35cfc1b7-d631-4467-9763-7df123562d26")
+	)
+	(wire
+		(pts
+			(xy 148.59 130.81) (xy 148.59 152.4)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "3e04566c-d283-419b-ac04-1d3ef182c60e")
 	)
 	(wire
 		(pts
@@ -1881,6 +1820,56 @@
 			(type default)
 		)
 		(uuid "412435e4-c8fc-4d51-8fb9-0e64ebeb7ee4")
+	)
+	(wire
+		(pts
+			(xy 166.37 144.78) (xy 166.37 148.59)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "45e6652a-caea-4d43-bbab-e619ee4734b5")
+	)
+	(wire
+		(pts
+			(xy 107.95 78.74) (xy 107.95 73.66)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "4b528287-9226-4fef-b0e9-e8370a600199")
+	)
+	(wire
+		(pts
+			(xy 68.58 50.8) (xy 81.28 50.8)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "4ba39385-d677-49a0-bf34-16f86ce9f267")
+	)
+	(wire
+		(pts
+			(xy 107.95 78.74) (xy 107.95 118.11)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "4cc2decf-c1c6-4661-a32f-9ce8b7341a30")
+	)
+	(wire
+		(pts
+			(xy 81.28 55.88) (xy 81.28 59.69)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "4ea2a624-76c0-4d6d-9529-ed79815c35a7")
 	)
 	(wire
 		(pts
@@ -1924,17 +1913,7 @@
 	)
 	(wire
 		(pts
-			(xy 107.95 73.66) (xy 107.95 106.68)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "62fdf606-c2c8-4a61-a2d1-ea352d8ad293")
-	)
-	(wire
-		(pts
-			(xy 138.43 116.84) (xy 102.87 116.84)
+			(xy 138.43 128.27) (xy 102.87 128.27)
 		)
 		(stroke
 			(width 0)
@@ -1954,6 +1933,26 @@
 	)
 	(wire
 		(pts
+			(xy 166.37 156.21) (xy 166.37 160.02)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "69e72ef1-b838-40d2-824a-88706a237685")
+	)
+	(wire
+		(pts
+			(xy 97.79 85.09) (xy 97.79 78.74)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "6f97e161-7a6e-40ea-a66c-a102f1bfba9b")
+	)
+	(wire
+		(pts
 			(xy 146.05 58.42) (xy 146.05 60.96)
 		)
 		(stroke
@@ -1964,7 +1963,27 @@
 	)
 	(wire
 		(pts
-			(xy 102.87 63.5) (xy 102.87 116.84)
+			(xy 68.58 76.2) (xy 82.55 76.2)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "81642a60-aee0-44d0-a4f8-c3528569b063")
+	)
+	(wire
+		(pts
+			(xy 133.35 105.41) (xy 148.59 105.41)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "84ed39cc-3e49-4036-b7e2-9fdf15fc3ae2")
+	)
+	(wire
+		(pts
+			(xy 102.87 63.5) (xy 102.87 128.27)
 		)
 		(stroke
 			(width 0)
@@ -1974,17 +1993,7 @@
 	)
 	(wire
 		(pts
-			(xy 96.52 48.26) (xy 96.52 40.64)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "8f77b250-d27a-4336-b7bd-3001d467eec1")
-	)
-	(wire
-		(pts
-			(xy 107.95 106.68) (xy 138.43 106.68)
+			(xy 107.95 118.11) (xy 138.43 118.11)
 		)
 		(stroke
 			(width 0)
@@ -1994,7 +2003,7 @@
 	)
 	(wire
 		(pts
-			(xy 146.05 101.6) (xy 175.26 101.6)
+			(xy 146.05 113.03) (xy 175.26 113.03)
 		)
 		(stroke
 			(width 0)
@@ -2004,7 +2013,7 @@
 	)
 	(wire
 		(pts
-			(xy 175.26 115.57) (xy 175.26 121.92)
+			(xy 175.26 127) (xy 175.26 133.35)
 		)
 		(stroke
 			(width 0)
@@ -2014,13 +2023,13 @@
 	)
 	(wire
 		(pts
-			(xy 99.06 66.04) (xy 99.06 73.66)
+			(xy 96.52 59.69) (xy 96.52 53.34)
 		)
 		(stroke
 			(width 0)
 			(type default)
 		)
-		(uuid "a0ad6f4d-558c-4e89-9716-18ba568bdcf4")
+		(uuid "9d8fa60a-a1cc-417e-ac21-f068794ca47b")
 	)
 	(wire
 		(pts
@@ -2044,13 +2053,23 @@
 	)
 	(wire
 		(pts
-			(xy 134.62 107.95) (xy 138.43 107.95)
+			(xy 134.62 119.38) (xy 138.43 119.38)
 		)
 		(stroke
 			(width 0)
 			(type default)
 		)
 		(uuid "a7e315ac-50df-4088-afa4-3b2a232f9f65")
+	)
+	(wire
+		(pts
+			(xy 153.67 144.78) (xy 166.37 144.78)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "aac537a2-c578-4a32-9513-41afbf746be3")
 	)
 	(wire
 		(pts
@@ -2074,6 +2093,16 @@
 	)
 	(wire
 		(pts
+			(xy 148.59 76.2) (xy 148.59 97.79)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "bd380e7c-6552-48b8-8669-cfab6772192b")
+	)
+	(wire
+		(pts
 			(xy 138.43 64.77) (xy 138.43 66.04)
 		)
 		(stroke
@@ -2084,7 +2113,7 @@
 	)
 	(wire
 		(pts
-			(xy 96.52 48.26) (xy 102.87 48.26)
+			(xy 96.52 53.34) (xy 102.87 53.34)
 		)
 		(stroke
 			(width 0)
@@ -2094,7 +2123,7 @@
 	)
 	(wire
 		(pts
-			(xy 134.62 115.57) (xy 138.43 115.57)
+			(xy 134.62 127) (xy 138.43 127)
 		)
 		(stroke
 			(width 0)
@@ -2104,13 +2133,23 @@
 	)
 	(wire
 		(pts
-			(xy 68.58 76.2) (xy 82.55 76.2)
+			(xy 102.87 31.75) (xy 102.87 53.34)
 		)
 		(stroke
 			(width 0)
 			(type default)
 		)
-		(uuid "c644328f-6365-4f66-8442-150524e2ad07")
+		(uuid "cfe676ab-de31-4b45-a5b0-8e17b187d59a")
+	)
+	(wire
+		(pts
+			(xy 82.55 81.28) (xy 82.55 85.09)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "d3c4383a-7018-450b-8049-4fbea5c1d1c9")
 	)
 	(wire
 		(pts
@@ -2124,7 +2163,7 @@
 	)
 	(wire
 		(pts
-			(xy 99.06 73.66) (xy 97.79 73.66)
+			(xy 107.95 78.74) (xy 97.79 78.74)
 		)
 		(stroke
 			(width 0)
@@ -2134,13 +2173,43 @@
 	)
 	(wire
 		(pts
-			(xy 138.43 115.57) (xy 138.43 114.3)
+			(xy 133.35 160.02) (xy 148.59 160.02)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "e3afaffb-e763-4869-8c49-9c8d51cd2a1c")
+	)
+	(wire
+		(pts
+			(xy 138.43 127) (xy 138.43 125.73)
 		)
 		(stroke
 			(width 0)
 			(type default)
 		)
 		(uuid "e4f33a6f-1747-4650-ac28-1a35caab19ce")
+	)
+	(wire
+		(pts
+			(xy 148.59 152.4) (xy 148.59 160.02)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "e57ca987-65e5-4047-a9e9-b2c6df21893e")
+	)
+	(wire
+		(pts
+			(xy 166.37 160.02) (xy 153.67 160.02)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "f097d9fa-b52c-425d-9f7d-5f00041b5c3b")
 	)
 	(wire
 		(pts
@@ -2181,16 +2250,6 @@
 			(type default)
 		)
 		(uuid "f67bfd81-f65b-4f0f-bc3a-3ae2df4bbb74")
-	)
-	(wire
-		(pts
-			(xy 82.55 66.04) (xy 99.06 66.04)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "fe89854c-cc6e-4bde-8422-40d5fa4e9128")
 	)
 	(label "V_Curr_VRef"
 		(at 113.03 73.66 0)
@@ -2233,7 +2292,7 @@
 		(uuid "a3d28c44-d2f3-4946-b165-7bc5adff8d15")
 	)
 	(label "V_Curr_Out"
-		(at 113.03 116.84 0)
+		(at 113.03 128.27 0)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -2243,7 +2302,7 @@
 		(uuid "cec1cf3f-d997-4884-b7a6-9b4010ca5f0e")
 	)
 	(label "V_Curr_VRef"
-		(at 113.03 106.68 0)
+		(at 113.03 118.11 0)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -2254,7 +2313,7 @@
 	)
 	(hierarchical_label "V_Out_Negative"
 		(shape output)
-		(at 156.21 111.76 0)
+		(at 156.21 123.19 0)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -2295,6 +2354,202 @@
 			(justify left)
 		)
 		(uuid "85be9952-9117-4c9b-bf38-77354cb5d40b")
+	)
+	(symbol
+		(lib_id "Device:R")
+		(at 119.38 91.44 0)
+		(mirror y)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "00d6923c-669f-4094-ab19-806bf574c09f")
+		(property "Reference" "R57"
+			(at 116.84 90.1699 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Value" "10k"
+			(at 116.84 92.7099 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Footprint" "Resistor_SMD:R_0603_1608Metric_Pad0.98x0.95mm_HandSolder"
+			(at 121.158 91.44 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "https://yageogroup.com/content/datasheet/asset/file/PYU-RC_GROUP_51_ROHS_L"
+			(at 119.38 91.44 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Resistor"
+			(at 119.38 91.44 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Digi PN" "311-10.0KHRCT-ND"
+			(at 119.38 91.44 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Digi URL" "https://www.digikey.com/en/products/detail/yageo/RC0603FR-0710KL/726880"
+			(at 119.38 91.44 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "MFG" "YAGEO"
+			(at 119.38 91.44 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "MFG PN" "RC0603FR-0710KL"
+			(at 119.38 91.44 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Digikey Link" ""
+			(at 119.38 91.44 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "MAXIMUM_PACKAGE_HEIGHT" ""
+			(at 119.38 91.44 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "MFP PN" ""
+			(at 119.38 91.44 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Manufacturer" ""
+			(at 119.38 91.44 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Manufacturer Part Number" ""
+			(at 119.38 91.44 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "PN" ""
+			(at 119.38 91.44 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Part Name" ""
+			(at 119.38 91.44 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Sim.Device" ""
+			(at 119.38 91.44 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Sim.Pins" ""
+			(at 119.38 91.44 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Sim.Type" ""
+			(at 119.38 91.44 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "2"
+			(uuid "b31a29f1-ade8-4be3-a7ea-0ef22ee80b68")
+		)
+		(pin "1"
+			(uuid "74e801bb-24a0-444f-a56c-14cbff2ec17f")
+		)
+		(instances
+			(project "Tractive_Battery_Board"
+				(path "/ca333741-5826-495c-b860-5422aa5e17fc/f8f7b966-e431-45f1-86cc-b511313b5db4"
+					(reference "R57")
+					(unit 1)
+				)
+			)
+		)
 	)
 	(symbol
 		(lib_id "power:GND")
@@ -2429,17 +2684,82 @@
 		)
 	)
 	(symbol
-		(lib_id "Device:R")
-		(at 134.62 111.76 0)
-		(mirror y)
+		(lib_id "power:GND")
+		(at 119.38 102.87 0)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
 		(on_board yes)
 		(dnp no)
-		(uuid "3c7986c7-22a2-4452-bfb7-c62bc519dfed")
-		(property "Reference" "R41"
-			(at 132.08 110.4899 0)
+		(uuid "18e44d99-3ea0-4916-aae8-6cae274442c6")
+		(property "Reference" "#PWR0130"
+			(at 119.38 109.22 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Value" "GND"
+			(at 115.316 106.172 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" ""
+			(at 119.38 102.87 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" ""
+			(at 119.38 102.87 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
+			(at 119.38 102.87 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "38c9fc8d-01c6-483f-8209-3d24f965a4d8")
+		)
+		(instances
+			(project "Tractive_Battery_Board"
+				(path "/ca333741-5826-495c-b860-5422aa5e17fc/f8f7b966-e431-45f1-86cc-b511313b5db4"
+					(reference "#PWR0130")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Amplifier_Operational:MCP6004")
+		(at 156.21 152.4 0)
+		(unit 5)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "27208ac9-8ced-4f70-b3a5-b683782848e6")
+		(property "Reference" "U18"
+			(at 154.94 151.1299 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -2447,8 +2767,8 @@
 				(justify left)
 			)
 		)
-		(property "Value" "62k"
-			(at 132.08 113.0299 0)
+		(property "Value" "MCP6004"
+			(at 154.94 153.6699 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -2456,8 +2776,8 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" "Resistor_SMD:R_0603_1608Metric_Pad0.98x0.95mm_HandSolder"
-			(at 136.398 111.76 90)
+		(property "Footprint" "Package_SO:SOIC-14_3.9x8.7mm_P1.27mm"
+			(at 154.94 149.86 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -2465,8 +2785,8 @@
 				(hide yes)
 			)
 		)
-		(property "Datasheet" "https://www.seielect.com/catalog/SEI-RMCF_RMCP.pdf"
-			(at 134.62 111.76 0)
+		(property "Datasheet" "Package_SO:SOIC-14_3.9x8.7mm_P1.27mm"
+			(at 157.48 147.32 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -2474,8 +2794,8 @@
 				(hide yes)
 			)
 		)
-		(property "Description" "Resistor"
-			(at 134.62 111.76 0)
+		(property "Description" "1MHz, Low-Power Op Amp, DIP-14/SOIC-14/TSSOP-14"
+			(at 156.21 152.4 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -2483,8 +2803,8 @@
 				(hide yes)
 			)
 		)
-		(property "Digi PN" "RMCF0603FT62K0CT-ND"
-			(at 134.62 111.76 0)
+		(property "Digi PN" "MCP6004T-I/SLCT-ND"
+			(at 156.21 152.4 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -2492,8 +2812,8 @@
 				(hide yes)
 			)
 		)
-		(property "Digi URL" "https://www.digikey.com/en/products/detail/stackpole-electronics-inc/RMCF0603FT62K0/1714175"
-			(at 134.62 111.76 0)
+		(property "Digi URL" "https://www.digikey.com/en/products/detail/microchip-technology/MCP6004T-I-SL/523092"
+			(at 156.21 152.4 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -2501,8 +2821,8 @@
 				(hide yes)
 			)
 		)
-		(property "MFG" "Stackpole Electronics Inc"
-			(at 134.62 111.76 0)
+		(property "MFG" "Microchip Technology"
+			(at 156.21 152.4 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -2510,8 +2830,8 @@
 				(hide yes)
 			)
 		)
-		(property "MFG PN" "RMCF0603FT62K0"
-			(at 134.62 111.76 0)
+		(property "MFG PN" "MCP6004T-I/SL"
+			(at 156.21 152.4 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -2520,7 +2840,7 @@
 			)
 		)
 		(property "Digikey Link" ""
-			(at 134.62 111.76 0)
+			(at 156.21 152.4 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -2529,7 +2849,7 @@
 			)
 		)
 		(property "MAXIMUM_PACKAGE_HEIGHT" ""
-			(at 134.62 111.76 0)
+			(at 156.21 152.4 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -2538,7 +2858,7 @@
 			)
 		)
 		(property "MFP PN" ""
-			(at 134.62 111.76 0)
+			(at 156.21 152.4 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -2547,7 +2867,7 @@
 			)
 		)
 		(property "Manufacturer" ""
-			(at 134.62 111.76 0)
+			(at 156.21 152.4 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -2556,7 +2876,7 @@
 			)
 		)
 		(property "Manufacturer Part Number" ""
-			(at 134.62 111.76 0)
+			(at 156.21 152.4 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -2565,7 +2885,7 @@
 			)
 		)
 		(property "PN" ""
-			(at 134.62 111.76 0)
+			(at 156.21 152.4 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -2574,7 +2894,7 @@
 			)
 		)
 		(property "Part Name" ""
-			(at 134.62 111.76 0)
+			(at 156.21 152.4 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -2583,7 +2903,7 @@
 			)
 		)
 		(property "Sim.Device" ""
-			(at 134.62 111.76 0)
+			(at 156.21 152.4 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -2592,7 +2912,7 @@
 			)
 		)
 		(property "Sim.Pins" ""
-			(at 134.62 111.76 0)
+			(at 156.21 152.4 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -2601,7 +2921,699 @@
 			)
 		)
 		(property "Sim.Type" ""
-			(at 134.62 111.76 0)
+			(at 156.21 152.4 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "7"
+			(uuid "e538cae5-778d-4b62-84a5-8384d1e7d0b1")
+		)
+		(pin "12"
+			(uuid "1057d716-b6b0-4aa8-a5e2-7e7167345ee2")
+		)
+		(pin "10"
+			(uuid "ef2b48b0-6ec8-4c63-a80e-bfd9e6a1aebc")
+		)
+		(pin "14"
+			(uuid "c36a8a19-0fe5-4e20-aab7-fa7c9ef4e050")
+		)
+		(pin "3"
+			(uuid "b717d565-706a-4bd9-94cb-9e2182a2712a")
+		)
+		(pin "11"
+			(uuid "a4826342-0546-4151-a466-95a1e0b07259")
+		)
+		(pin "6"
+			(uuid "7c55129d-cb24-4c33-b317-3d41a94c6f67")
+		)
+		(pin "9"
+			(uuid "39674d7b-a6f9-4e33-a3db-bf83c689dc50")
+		)
+		(pin "8"
+			(uuid "b719c578-c0fb-4e6e-9267-5487ef5acf56")
+		)
+		(pin "13"
+			(uuid "17d3eafd-7d16-40a5-87d9-3c206a8b7c78")
+		)
+		(pin "5"
+			(uuid "d7b3bd2c-8219-4c90-adb2-83142232b751")
+		)
+		(pin "4"
+			(uuid "86b181fd-5d55-4571-a2c7-3308b1b76645")
+		)
+		(pin "1"
+			(uuid "844a3328-7cb2-4c1a-a44b-c4fb8ccda18d")
+		)
+		(pin "2"
+			(uuid "26d1461a-b168-4191-b824-ad781f696b85")
+		)
+		(instances
+			(project "Tractive_Battery_Board"
+				(path "/ca333741-5826-495c-b860-5422aa5e17fc/f8f7b966-e431-45f1-86cc-b511313b5db4"
+					(reference "U18")
+					(unit 5)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Amplifier_Operational:MCP6004")
+		(at 140.97 152.4 0)
+		(unit 2)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "27208ac9-8ced-4f70-b3a5-b683782848e6")
+		(property "Reference" "U18"
+			(at 140.97 142.24 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "MCP6004"
+			(at 140.97 144.78 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" "Package_SO:SOIC-14_3.9x8.7mm_P1.27mm"
+			(at 139.7 149.86 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "Package_SO:SOIC-14_3.9x8.7mm_P1.27mm"
+			(at 142.24 147.32 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "1MHz, Low-Power Op Amp, DIP-14/SOIC-14/TSSOP-14"
+			(at 140.97 152.4 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Digi PN" "MCP6004T-I/SLCT-ND"
+			(at 140.97 152.4 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Digi URL" "https://www.digikey.com/en/products/detail/microchip-technology/MCP6004T-I-SL/523092"
+			(at 140.97 152.4 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "MFG" "Microchip Technology"
+			(at 140.97 152.4 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "MFG PN" "MCP6004T-I/SL"
+			(at 140.97 152.4 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Digikey Link" ""
+			(at 140.97 152.4 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "MAXIMUM_PACKAGE_HEIGHT" ""
+			(at 140.97 152.4 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "MFP PN" ""
+			(at 140.97 152.4 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Manufacturer" ""
+			(at 140.97 152.4 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Manufacturer Part Number" ""
+			(at 140.97 152.4 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "PN" ""
+			(at 140.97 152.4 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Part Name" ""
+			(at 140.97 152.4 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Sim.Device" ""
+			(at 140.97 152.4 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Sim.Pins" ""
+			(at 140.97 152.4 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Sim.Type" ""
+			(at 140.97 152.4 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "7"
+			(uuid "e538cae5-778d-4b62-84a5-8384d1e7d0b1")
+		)
+		(pin "12"
+			(uuid "1057d716-b6b0-4aa8-a5e2-7e7167345ee2")
+		)
+		(pin "10"
+			(uuid "ef2b48b0-6ec8-4c63-a80e-bfd9e6a1aebc")
+		)
+		(pin "14"
+			(uuid "c36a8a19-0fe5-4e20-aab7-fa7c9ef4e050")
+		)
+		(pin "3"
+			(uuid "b717d565-706a-4bd9-94cb-9e2182a2712a")
+		)
+		(pin "11"
+			(uuid "a4826342-0546-4151-a466-95a1e0b07259")
+		)
+		(pin "6"
+			(uuid "7c55129d-cb24-4c33-b317-3d41a94c6f67")
+		)
+		(pin "9"
+			(uuid "39674d7b-a6f9-4e33-a3db-bf83c689dc50")
+		)
+		(pin "8"
+			(uuid "b719c578-c0fb-4e6e-9267-5487ef5acf56")
+		)
+		(pin "13"
+			(uuid "17d3eafd-7d16-40a5-87d9-3c206a8b7c78")
+		)
+		(pin "5"
+			(uuid "d7b3bd2c-8219-4c90-adb2-83142232b751")
+		)
+		(pin "4"
+			(uuid "86b181fd-5d55-4571-a2c7-3308b1b76645")
+		)
+		(pin "1"
+			(uuid "844a3328-7cb2-4c1a-a44b-c4fb8ccda18d")
+		)
+		(pin "2"
+			(uuid "26d1461a-b168-4191-b824-ad781f696b85")
+		)
+		(instances
+			(project "Tractive_Battery_Board"
+				(path "/ca333741-5826-495c-b860-5422aa5e17fc/f8f7b966-e431-45f1-86cc-b511313b5db4"
+					(reference "U18")
+					(unit 2)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Amplifier_Operational:MCP6004")
+		(at 140.97 97.79 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "27208ac9-8ced-4f70-b3a5-b683782848e6")
+		(property "Reference" "U18"
+			(at 140.97 87.63 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "MCP6004"
+			(at 140.97 90.17 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" "Package_SO:SOIC-14_3.9x8.7mm_P1.27mm"
+			(at 139.7 95.25 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "Package_SO:SOIC-14_3.9x8.7mm_P1.27mm"
+			(at 142.24 92.71 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "1MHz, Low-Power Op Amp, DIP-14/SOIC-14/TSSOP-14"
+			(at 140.97 97.79 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Digi PN" "MCP6004T-I/SLCT-ND"
+			(at 140.97 97.79 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Digi URL" "https://www.digikey.com/en/products/detail/microchip-technology/MCP6004T-I-SL/523092"
+			(at 140.97 97.79 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "MFG" "Microchip Technology"
+			(at 140.97 97.79 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "MFG PN" "MCP6004T-I/SL"
+			(at 140.97 97.79 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Digikey Link" ""
+			(at 140.97 97.79 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "MAXIMUM_PACKAGE_HEIGHT" ""
+			(at 140.97 97.79 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "MFP PN" ""
+			(at 140.97 97.79 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Manufacturer" ""
+			(at 140.97 97.79 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Manufacturer Part Number" ""
+			(at 140.97 97.79 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "PN" ""
+			(at 140.97 97.79 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Part Name" ""
+			(at 140.97 97.79 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Sim.Device" ""
+			(at 140.97 97.79 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Sim.Pins" ""
+			(at 140.97 97.79 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Sim.Type" ""
+			(at 140.97 97.79 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "7"
+			(uuid "e538cae5-778d-4b62-84a5-8384d1e7d0b1")
+		)
+		(pin "12"
+			(uuid "1057d716-b6b0-4aa8-a5e2-7e7167345ee2")
+		)
+		(pin "10"
+			(uuid "ef2b48b0-6ec8-4c63-a80e-bfd9e6a1aebc")
+		)
+		(pin "14"
+			(uuid "c36a8a19-0fe5-4e20-aab7-fa7c9ef4e050")
+		)
+		(pin "3"
+			(uuid "b717d565-706a-4bd9-94cb-9e2182a2712a")
+		)
+		(pin "11"
+			(uuid "a4826342-0546-4151-a466-95a1e0b07259")
+		)
+		(pin "6"
+			(uuid "7c55129d-cb24-4c33-b317-3d41a94c6f67")
+		)
+		(pin "9"
+			(uuid "39674d7b-a6f9-4e33-a3db-bf83c689dc50")
+		)
+		(pin "8"
+			(uuid "b719c578-c0fb-4e6e-9267-5487ef5acf56")
+		)
+		(pin "13"
+			(uuid "17d3eafd-7d16-40a5-87d9-3c206a8b7c78")
+		)
+		(pin "5"
+			(uuid "d7b3bd2c-8219-4c90-adb2-83142232b751")
+		)
+		(pin "4"
+			(uuid "86b181fd-5d55-4571-a2c7-3308b1b76645")
+		)
+		(pin "1"
+			(uuid "844a3328-7cb2-4c1a-a44b-c4fb8ccda18d")
+		)
+		(pin "2"
+			(uuid "26d1461a-b168-4191-b824-ad781f696b85")
+		)
+		(instances
+			(project "Tractive_Battery_Board"
+				(path "/ca333741-5826-495c-b860-5422aa5e17fc/f8f7b966-e431-45f1-86cc-b511313b5db4"
+					(reference "U18")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Device:R")
+		(at 134.62 123.19 0)
+		(mirror y)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "3c7986c7-22a2-4452-bfb7-c62bc519dfed")
+		(property "Reference" "R41"
+			(at 132.08 121.9199 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Value" "62k"
+			(at 132.08 124.4599 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Footprint" "Resistor_SMD:R_0603_1608Metric_Pad0.98x0.95mm_HandSolder"
+			(at 136.398 123.19 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "https://www.seielect.com/catalog/SEI-RMCF_RMCP.pdf"
+			(at 134.62 123.19 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Resistor"
+			(at 134.62 123.19 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Digi PN" "RMCF0603FT62K0CT-ND"
+			(at 134.62 123.19 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Digi URL" "https://www.digikey.com/en/products/detail/stackpole-electronics-inc/RMCF0603FT62K0/1714175"
+			(at 134.62 123.19 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "MFG" "Stackpole Electronics Inc"
+			(at 134.62 123.19 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "MFG PN" "RMCF0603FT62K0"
+			(at 134.62 123.19 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Digikey Link" ""
+			(at 134.62 123.19 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "MAXIMUM_PACKAGE_HEIGHT" ""
+			(at 134.62 123.19 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "MFP PN" ""
+			(at 134.62 123.19 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Manufacturer" ""
+			(at 134.62 123.19 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Manufacturer Part Number" ""
+			(at 134.62 123.19 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "PN" ""
+			(at 134.62 123.19 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Part Name" ""
+			(at 134.62 123.19 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Sim.Device" ""
+			(at 134.62 123.19 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Sim.Pins" ""
+			(at 134.62 123.19 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Sim.Type" ""
+			(at 134.62 123.19 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -3024,7 +4036,7 @@
 			(uuid "d02e96aa-e83d-43d7-a0a2-fb5fff3d0608")
 		)
 		(instances
-			(project ""
+			(project "Tractive_Battery_Board"
 				(path "/ca333741-5826-495c-b860-5422aa5e17fc/f8f7b966-e431-45f1-86cc-b511313b5db4"
 					(reference "U10")
 					(unit 1)
@@ -3034,7 +4046,7 @@
 	)
 	(symbol
 		(lib_id "power:GND")
-		(at 146.05 121.92 0)
+		(at 146.05 133.35 0)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
@@ -3042,7 +4054,7 @@
 		(dnp no)
 		(uuid "52bb2c8f-0f53-4ccd-a160-c7b8cdffd318")
 		(property "Reference" "#PWR092"
-			(at 146.05 128.27 0)
+			(at 146.05 139.7 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -3051,7 +4063,7 @@
 			)
 		)
 		(property "Value" "GND"
-			(at 141.986 125.222 0)
+			(at 141.986 136.652 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -3059,7 +4071,7 @@
 			)
 		)
 		(property "Footprint" ""
-			(at 146.05 121.92 0)
+			(at 146.05 133.35 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -3068,7 +4080,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 146.05 121.92 0)
+			(at 146.05 133.35 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -3077,7 +4089,7 @@
 			)
 		)
 		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
-			(at 146.05 121.92 0)
+			(at 146.05 133.35 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -3092,6 +4104,72 @@
 			(project "Tractive_Battery_Board"
 				(path "/ca333741-5826-495c-b860-5422aa5e17fc/f8f7b966-e431-45f1-86cc-b511313b5db4"
 					(reference "#PWR092")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "power:+5V")
+		(at 119.38 142.24 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "693235a6-cdd6-4351-a187-5041fe2d395d")
+		(property "Reference" "#PWR0127"
+			(at 119.38 146.05 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Value" "+5V"
+			(at 119.38 137.16 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" ""
+			(at 119.38 142.24 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" ""
+			(at 119.38 142.24 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Power symbol creates a global label with name \"+5V\""
+			(at 119.38 142.24 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "1b31c1f0-b821-4c13-b00d-3c6c302dea17")
+		)
+		(instances
+			(project "Tractive_Battery_Board"
+				(path "/ca333741-5826-495c-b860-5422aa5e17fc/f8f7b966-e431-45f1-86cc-b511313b5db4"
+					(reference "#PWR0127")
 					(unit 1)
 				)
 			)
@@ -3295,8 +4373,7 @@
 	)
 	(symbol
 		(lib_id "Amplifier_Operational:MCP6004")
-		(at 90.17 73.66 0)
-		(mirror x)
+		(at 90.17 78.74 0)
 		(unit 4)
 		(exclude_from_sim no)
 		(in_bom yes)
@@ -3304,7 +4381,7 @@
 		(dnp no)
 		(uuid "72372cfd-d2b4-44dd-8d9a-3c5e1a171e6e")
 		(property "Reference" "U9"
-			(at 90.17 83.82 0)
+			(at 90.17 68.58 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -3312,7 +4389,7 @@
 			)
 		)
 		(property "Value" "MCP6004"
-			(at 90.17 81.28 0)
+			(at 90.17 71.12 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -3329,7 +4406,7 @@
 			)
 		)
 		(property "Datasheet" "Package_SO:SOIC-14_3.9x8.7mm_P1.27mm"
-			(at 91.44 78.74 0)
+			(at 91.44 73.66 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -3338,7 +4415,7 @@
 			)
 		)
 		(property "Description" "1MHz, Low-Power Op Amp, DIP-14/SOIC-14/TSSOP-14"
-			(at 90.17 73.66 0)
+			(at 90.17 78.74 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -3347,7 +4424,7 @@
 			)
 		)
 		(property "Digi PN" "MCP6004T-I/SLCT-ND"
-			(at 90.17 73.66 0)
+			(at 90.17 78.74 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -3356,7 +4433,7 @@
 			)
 		)
 		(property "Digi URL" "https://www.digikey.com/en/products/detail/microchip-technology/MCP6004T-I-SL/523092"
-			(at 90.17 73.66 0)
+			(at 90.17 78.74 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -3365,7 +4442,7 @@
 			)
 		)
 		(property "MFG" "Microchip Technology"
-			(at 90.17 73.66 0)
+			(at 90.17 78.74 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -3374,7 +4451,7 @@
 			)
 		)
 		(property "MFG PN" "MCP6004T-I/SL"
-			(at 90.17 73.66 0)
+			(at 90.17 78.74 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -3383,7 +4460,7 @@
 			)
 		)
 		(property "Digikey Link" ""
-			(at 90.17 73.66 0)
+			(at 90.17 78.74 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -3392,7 +4469,7 @@
 			)
 		)
 		(property "MAXIMUM_PACKAGE_HEIGHT" ""
-			(at 90.17 73.66 0)
+			(at 90.17 78.74 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -3401,7 +4478,7 @@
 			)
 		)
 		(property "MFP PN" ""
-			(at 90.17 73.66 0)
+			(at 90.17 78.74 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -3410,7 +4487,7 @@
 			)
 		)
 		(property "Manufacturer" ""
-			(at 90.17 73.66 0)
+			(at 90.17 78.74 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -3419,7 +4496,7 @@
 			)
 		)
 		(property "Manufacturer Part Number" ""
-			(at 90.17 73.66 0)
+			(at 90.17 78.74 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -3428,7 +4505,7 @@
 			)
 		)
 		(property "PN" ""
-			(at 90.17 73.66 0)
+			(at 90.17 78.74 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -3437,7 +4514,7 @@
 			)
 		)
 		(property "Part Name" ""
-			(at 90.17 73.66 0)
+			(at 90.17 78.74 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -3446,7 +4523,7 @@
 			)
 		)
 		(property "Sim.Device" ""
-			(at 90.17 73.66 0)
+			(at 90.17 78.74 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -3455,7 +4532,7 @@
 			)
 		)
 		(property "Sim.Pins" ""
-			(at 90.17 73.66 0)
+			(at 90.17 78.74 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -3464,7 +4541,7 @@
 			)
 		)
 		(property "Sim.Type" ""
-			(at 90.17 73.66 0)
+			(at 90.17 78.74 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -3713,6 +4790,72 @@
 			(project "Tractive_Battery_Board"
 				(path "/ca333741-5826-495c-b860-5422aa5e17fc/f8f7b966-e431-45f1-86cc-b511313b5db4"
 					(reference "C32")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "power:+5V")
+		(at 153.67 144.78 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "7ec3be21-2a7a-4377-915d-d1cc3b8985c0")
+		(property "Reference" "#PWR0131"
+			(at 153.67 148.59 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Value" "+5V"
+			(at 153.67 139.7 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" ""
+			(at 153.67 144.78 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" ""
+			(at 153.67 144.78 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Power symbol creates a global label with name \"+5V\""
+			(at 153.67 144.78 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "b9a440f6-de8f-4fe6-842e-7f46ac1265a6")
+		)
+		(instances
+			(project "Tractive_Battery_Board"
+				(path "/ca333741-5826-495c-b860-5422aa5e17fc/f8f7b966-e431-45f1-86cc-b511313b5db4"
+					(reference "#PWR0131")
 					(unit 1)
 				)
 			)
@@ -3982,9 +5125,269 @@
 		)
 	)
 	(symbol
+		(lib_id "power:GND")
+		(at 119.38 157.48 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "89ee4b66-0132-46bf-9cac-325ae80b279b")
+		(property "Reference" "#PWR0128"
+			(at 119.38 163.83 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Value" "GND"
+			(at 115.316 160.782 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" ""
+			(at 119.38 157.48 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" ""
+			(at 119.38 157.48 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
+			(at 119.38 157.48 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "5760a62c-6fb4-4659-b4bc-ef7b809742be")
+		)
+		(instances
+			(project "Tractive_Battery_Board"
+				(path "/ca333741-5826-495c-b860-5422aa5e17fc/f8f7b966-e431-45f1-86cc-b511313b5db4"
+					(reference "#PWR0128")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Device:C")
+		(at 166.37 152.4 0)
+		(mirror y)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "8c9dec4b-9e6e-4666-a8d6-077df718019b")
+		(property "Reference" "C42"
+			(at 170.18 151.1299 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+			)
+		)
+		(property "Value" "100nF"
+			(at 170.18 153.6699 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+			)
+		)
+		(property "Footprint" "Capacitor_SMD:C_0603_1608Metric_Pad1.08x0.95mm_HandSolder"
+			(at 165.4048 156.21 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "https://mm.digikey.com/Volume0/opasdata/d220001/medias/docus/503/CL05A104KA5NNNC.pdf"
+			(at 166.37 152.4 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Unpolarized capacitor"
+			(at 166.37 152.4 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Digi PN" "311-1341-1-ND"
+			(at 166.37 152.4 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Digi URL" "https://www.digikey.com/en/products/detail/yageo/CC0603KRX7R8BB104/2103079"
+			(at 166.37 152.4 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "MFG" "YAGEO"
+			(at 166.37 152.4 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "MFG PN" "CC0603KRX7R8BB104"
+			(at 166.37 152.4 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Digikey Link" ""
+			(at 166.37 152.4 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "MAXIMUM_PACKAGE_HEIGHT" ""
+			(at 166.37 152.4 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "MFP PN" ""
+			(at 166.37 152.4 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Manufacturer" ""
+			(at 166.37 152.4 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Manufacturer Part Number" ""
+			(at 166.37 152.4 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "PN" ""
+			(at 166.37 152.4 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Part Name" ""
+			(at 166.37 152.4 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Sim.Device" ""
+			(at 166.37 152.4 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Sim.Pins" ""
+			(at 166.37 152.4 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Sim.Type" ""
+			(at 166.37 152.4 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "79f61f1f-9e54-47d9-a62d-2a398714e0ae")
+		)
+		(pin "2"
+			(uuid "7a953d6b-7c1d-42cc-a68c-e65067285223")
+		)
+		(instances
+			(project "Tractive_Battery_Board"
+				(path "/ca333741-5826-495c-b860-5422aa5e17fc/f8f7b966-e431-45f1-86cc-b511313b5db4"
+					(reference "C42")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
 		(lib_id "Amplifier_Operational:MCP6004")
-		(at 88.9 48.26 0)
-		(mirror x)
+		(at 88.9 53.34 0)
 		(unit 3)
 		(exclude_from_sim no)
 		(in_bom yes)
@@ -3992,7 +5395,7 @@
 		(dnp no)
 		(uuid "995b721f-a4e5-4d43-a35d-6ab510396f7c")
 		(property "Reference" "U9"
-			(at 88.9 58.42 0)
+			(at 88.9 43.18 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -4000,7 +5403,7 @@
 			)
 		)
 		(property "Value" "MCP6004"
-			(at 88.9 55.88 0)
+			(at 88.9 45.72 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -4017,7 +5420,7 @@
 			)
 		)
 		(property "Datasheet" "Package_SO:SOIC-14_3.9x8.7mm_P1.27mm"
-			(at 90.17 53.34 0)
+			(at 90.17 48.26 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -4026,7 +5429,7 @@
 			)
 		)
 		(property "Description" "1MHz, Low-Power Op Amp, DIP-14/SOIC-14/TSSOP-14"
-			(at 88.9 48.26 0)
+			(at 88.9 53.34 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -4035,7 +5438,7 @@
 			)
 		)
 		(property "Digi PN" "MCP6004T-I/SLCT-ND"
-			(at 88.9 48.26 0)
+			(at 88.9 53.34 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -4044,7 +5447,7 @@
 			)
 		)
 		(property "Digi URL" "https://www.digikey.com/en/products/detail/microchip-technology/MCP6004T-I-SL/523092"
-			(at 88.9 48.26 0)
+			(at 88.9 53.34 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -4053,7 +5456,7 @@
 			)
 		)
 		(property "MFG" "Microchip Technology"
-			(at 88.9 48.26 0)
+			(at 88.9 53.34 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -4062,7 +5465,7 @@
 			)
 		)
 		(property "MFG PN" "MCP6004T-I/SL"
-			(at 88.9 48.26 0)
+			(at 88.9 53.34 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -4071,7 +5474,7 @@
 			)
 		)
 		(property "Digikey Link" ""
-			(at 88.9 48.26 0)
+			(at 88.9 53.34 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -4080,7 +5483,7 @@
 			)
 		)
 		(property "MAXIMUM_PACKAGE_HEIGHT" ""
-			(at 88.9 48.26 0)
+			(at 88.9 53.34 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -4089,7 +5492,7 @@
 			)
 		)
 		(property "MFP PN" ""
-			(at 88.9 48.26 0)
+			(at 88.9 53.34 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -4098,7 +5501,7 @@
 			)
 		)
 		(property "Manufacturer" ""
-			(at 88.9 48.26 0)
+			(at 88.9 53.34 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -4107,7 +5510,7 @@
 			)
 		)
 		(property "Manufacturer Part Number" ""
-			(at 88.9 48.26 0)
+			(at 88.9 53.34 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -4116,7 +5519,7 @@
 			)
 		)
 		(property "PN" ""
-			(at 88.9 48.26 0)
+			(at 88.9 53.34 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -4125,7 +5528,7 @@
 			)
 		)
 		(property "Part Name" ""
-			(at 88.9 48.26 0)
+			(at 88.9 53.34 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -4134,7 +5537,7 @@
 			)
 		)
 		(property "Sim.Device" ""
-			(at 88.9 48.26 0)
+			(at 88.9 53.34 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -4143,7 +5546,7 @@
 			)
 		)
 		(property "Sim.Pins" ""
-			(at 88.9 48.26 0)
+			(at 88.9 53.34 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -4152,7 +5555,7 @@
 			)
 		)
 		(property "Sim.Type" ""
-			(at 88.9 48.26 0)
+			(at 88.9 53.34 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -4278,7 +5681,7 @@
 	)
 	(symbol
 		(lib_id "Device:C")
-		(at 175.26 111.76 0)
+		(at 175.26 123.19 0)
 		(mirror y)
 		(unit 1)
 		(exclude_from_sim no)
@@ -4287,7 +5690,7 @@
 		(dnp no)
 		(uuid "9fb4cefe-3b14-445c-ad1e-02e54dd040c2")
 		(property "Reference" "C35"
-			(at 179.07 110.4899 0)
+			(at 179.07 121.9199 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -4296,7 +5699,7 @@
 			)
 		)
 		(property "Value" "100nF"
-			(at 179.07 113.0299 0)
+			(at 179.07 124.4599 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -4305,7 +5708,7 @@
 			)
 		)
 		(property "Footprint" "Capacitor_SMD:C_0603_1608Metric_Pad1.08x0.95mm_HandSolder"
-			(at 174.2948 115.57 0)
+			(at 174.2948 127 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -4314,7 +5717,7 @@
 			)
 		)
 		(property "Datasheet" "https://mm.digikey.com/Volume0/opasdata/d220001/medias/docus/503/CL05A104KA5NNNC.pdf"
-			(at 175.26 111.76 0)
+			(at 175.26 123.19 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -4323,7 +5726,7 @@
 			)
 		)
 		(property "Description" "Unpolarized capacitor"
-			(at 175.26 111.76 0)
+			(at 175.26 123.19 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -4332,7 +5735,7 @@
 			)
 		)
 		(property "Digi PN" "311-1341-1-ND"
-			(at 175.26 111.76 0)
+			(at 175.26 123.19 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -4341,7 +5744,7 @@
 			)
 		)
 		(property "Digi URL" "https://www.digikey.com/en/products/detail/yageo/CC0603KRX7R8BB104/2103079"
-			(at 175.26 111.76 0)
+			(at 175.26 123.19 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -4350,7 +5753,7 @@
 			)
 		)
 		(property "MFG" "YAGEO"
-			(at 175.26 111.76 0)
+			(at 175.26 123.19 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -4359,7 +5762,7 @@
 			)
 		)
 		(property "MFG PN" "CC0603KRX7R8BB104"
-			(at 175.26 111.76 0)
+			(at 175.26 123.19 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -4368,7 +5771,7 @@
 			)
 		)
 		(property "Digikey Link" ""
-			(at 175.26 111.76 0)
+			(at 175.26 123.19 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -4377,7 +5780,7 @@
 			)
 		)
 		(property "MAXIMUM_PACKAGE_HEIGHT" ""
-			(at 175.26 111.76 0)
+			(at 175.26 123.19 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -4386,7 +5789,7 @@
 			)
 		)
 		(property "MFP PN" ""
-			(at 175.26 111.76 0)
+			(at 175.26 123.19 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -4395,7 +5798,7 @@
 			)
 		)
 		(property "Manufacturer" ""
-			(at 175.26 111.76 0)
+			(at 175.26 123.19 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -4404,7 +5807,7 @@
 			)
 		)
 		(property "Manufacturer Part Number" ""
-			(at 175.26 111.76 0)
+			(at 175.26 123.19 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -4413,7 +5816,7 @@
 			)
 		)
 		(property "PN" ""
-			(at 175.26 111.76 0)
+			(at 175.26 123.19 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -4422,7 +5825,7 @@
 			)
 		)
 		(property "Part Name" ""
-			(at 175.26 111.76 0)
+			(at 175.26 123.19 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -4431,7 +5834,7 @@
 			)
 		)
 		(property "Sim.Device" ""
-			(at 175.26 111.76 0)
+			(at 175.26 123.19 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -4440,7 +5843,7 @@
 			)
 		)
 		(property "Sim.Pins" ""
-			(at 175.26 111.76 0)
+			(at 175.26 123.19 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -4449,7 +5852,7 @@
 			)
 		)
 		(property "Sim.Type" ""
-			(at 175.26 111.76 0)
+			(at 175.26 123.19 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -4467,6 +5870,202 @@
 			(project "Tractive_Battery_Board"
 				(path "/ca333741-5826-495c-b860-5422aa5e17fc/f8f7b966-e431-45f1-86cc-b511313b5db4"
 					(reference "C35")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Device:R")
+		(at 119.38 153.67 0)
+		(mirror y)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "af7a671c-bfb8-4caf-83e1-e6d1d3957a77")
+		(property "Reference" "R56"
+			(at 116.84 152.3999 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Value" "237k"
+			(at 116.84 154.9399 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Footprint" "Resistor_SMD:R_0603_1608Metric_Pad0.98x0.95mm_HandSolder"
+			(at 121.158 153.67 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "https://yageogroup.com/content/datasheet/asset/file/PYU-RC_GROUP_51_ROHS_L"
+			(at 119.38 153.67 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Resistor"
+			(at 119.38 153.67 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Digi PN" "311-237KHRCT-ND"
+			(at 119.38 153.67 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Digi URL" "https://www.digikey.com/en/products/detail/yageo/RC0603FR-07237KL/727074"
+			(at 119.38 153.67 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "MFG" "YAGEO"
+			(at 119.38 153.67 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "MFG PN" "RC0603FR-07237KL"
+			(at 119.38 153.67 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Digikey Link" ""
+			(at 119.38 153.67 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "MAXIMUM_PACKAGE_HEIGHT" ""
+			(at 119.38 153.67 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "MFP PN" ""
+			(at 119.38 153.67 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Manufacturer" ""
+			(at 119.38 153.67 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Manufacturer Part Number" ""
+			(at 119.38 153.67 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "PN" ""
+			(at 119.38 153.67 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Part Name" ""
+			(at 119.38 153.67 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Sim.Device" ""
+			(at 119.38 153.67 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Sim.Pins" ""
+			(at 119.38 153.67 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Sim.Type" ""
+			(at 119.38 153.67 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "2"
+			(uuid "b86f0c8e-e541-46d9-9c5c-e85f5d18b62c")
+		)
+		(pin "1"
+			(uuid "1a616c09-1e64-4a55-814d-b4f363e8a094")
+		)
+		(instances
+			(project "Tractive_Battery_Board"
+				(path "/ca333741-5826-495c-b860-5422aa5e17fc/f8f7b966-e431-45f1-86cc-b511313b5db4"
+					(reference "R56")
 					(unit 1)
 				)
 			)
@@ -5065,7 +6664,7 @@
 	(symbol
 		(lib_name "INA826AIDR_1")
 		(lib_id "FS_4_Global_Symbol_Library:INA826AIDR")
-		(at 146.05 113.03 0)
+		(at 146.05 124.46 0)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
@@ -5073,7 +6672,7 @@
 		(dnp no)
 		(uuid "c7ce907f-8ccf-4cfc-9afe-1f661d65e764")
 		(property "Reference" "U11"
-			(at 137.668 101.854 0)
+			(at 137.668 113.284 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -5081,7 +6680,7 @@
 			)
 		)
 		(property "Value" "INA826AIDR"
-			(at 138.43 103.632 0)
+			(at 138.43 115.062 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -5089,7 +6688,7 @@
 			)
 		)
 		(property "Footprint" "Package_SO:SOIC-8_3.9x4.9mm_P1.27mm"
-			(at 146.05 113.03 0)
+			(at 146.05 124.46 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -5098,7 +6697,7 @@
 			)
 		)
 		(property "Datasheet" "https://www.ti.com/lit/ds/symlink/ina826.pdf?HQS=dis-dk-null-digikeymode-dsf-pf-null-wwe&ts=1770264405400&ref_url=https%253A%252F%252Fwww.ti.com%252Fgeneral%252Fdocs%252Fsuppproductinfo.tsp%253FdistId%253D10%2526gotoUrl%253Dhttps%253A%252F%252Fwww.ti.com%252Flit%252Fgpn%252Fina826"
-			(at 146.05 113.03 0)
+			(at 146.05 124.46 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -5107,7 +6706,7 @@
 			)
 		)
 		(property "Description" ""
-			(at 146.05 113.03 0)
+			(at 146.05 124.46 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -5116,7 +6715,7 @@
 			)
 		)
 		(property "Digi PN" "296-30238-1-ND"
-			(at 146.05 113.03 0)
+			(at 146.05 124.46 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -5125,7 +6724,7 @@
 			)
 		)
 		(property "MFG" "Texas Instruments"
-			(at 146.05 113.03 0)
+			(at 146.05 124.46 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -5134,7 +6733,7 @@
 			)
 		)
 		(property "MFG PN" "INA826AIDR"
-			(at 146.05 113.03 0)
+			(at 146.05 124.46 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -5143,7 +6742,7 @@
 			)
 		)
 		(property "Digi URL" "https://www.digikey.com/en/products/detail/texas-instruments/INA826AIDR/2833524"
-			(at 146.05 113.03 0)
+			(at 146.05 124.46 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -5152,7 +6751,7 @@
 			)
 		)
 		(property "Digikey Link" ""
-			(at 146.05 113.03 0)
+			(at 146.05 124.46 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -5161,7 +6760,7 @@
 			)
 		)
 		(property "MAXIMUM_PACKAGE_HEIGHT" ""
-			(at 146.05 113.03 0)
+			(at 146.05 124.46 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -5170,7 +6769,7 @@
 			)
 		)
 		(property "MFP PN" ""
-			(at 146.05 113.03 0)
+			(at 146.05 124.46 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -5179,7 +6778,7 @@
 			)
 		)
 		(property "Manufacturer" ""
-			(at 146.05 113.03 0)
+			(at 146.05 124.46 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -5188,7 +6787,7 @@
 			)
 		)
 		(property "Manufacturer Part Number" ""
-			(at 146.05 113.03 0)
+			(at 146.05 124.46 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -5197,7 +6796,7 @@
 			)
 		)
 		(property "PN" ""
-			(at 146.05 113.03 0)
+			(at 146.05 124.46 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -5206,7 +6805,7 @@
 			)
 		)
 		(property "Part Name" ""
-			(at 146.05 113.03 0)
+			(at 146.05 124.46 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -5215,7 +6814,7 @@
 			)
 		)
 		(property "Sim.Device" ""
-			(at 146.05 113.03 0)
+			(at 146.05 124.46 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -5224,7 +6823,7 @@
 			)
 		)
 		(property "Sim.Pins" ""
-			(at 146.05 113.03 0)
+			(at 146.05 124.46 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -5233,7 +6832,7 @@
 			)
 		)
 		(property "Sim.Type" ""
-			(at 146.05 113.03 0)
+			(at 146.05 124.46 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -5275,17 +6874,35 @@
 		)
 	)
 	(symbol
-		(lib_id "power:+3.3V")
-		(at 146.05 58.42 0)
+		(lib_id "Device:R")
+		(at 119.38 99.06 0)
+		(mirror y)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
 		(on_board yes)
 		(dnp no)
-		(fields_autoplaced yes)
-		(uuid "d8c4c186-ac4a-4b65-87bb-b14b38531cf4")
-		(property "Reference" "#PWR089"
-			(at 146.05 62.23 0)
+		(uuid "d6776738-3690-4a7a-8243-fd927637b93a")
+		(property "Reference" "R58"
+			(at 116.84 97.7899 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Value" "237k"
+			(at 116.84 100.3299 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Footprint" "Resistor_SMD:R_0603_1608Metric_Pad0.98x0.95mm_HandSolder"
+			(at 121.158 99.06 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -5293,8 +6910,382 @@
 				(hide yes)
 			)
 		)
-		(property "Value" "+3V3"
-			(at 146.05 53.34 0)
+		(property "Datasheet" "https://yageogroup.com/content/datasheet/asset/file/PYU-RC_GROUP_51_ROHS_L"
+			(at 119.38 99.06 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Resistor"
+			(at 119.38 99.06 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Digi PN" "311-237KHRCT-ND"
+			(at 119.38 99.06 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Digi URL" "https://www.digikey.com/en/products/detail/yageo/RC0603FR-07237KL/727074"
+			(at 119.38 99.06 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "MFG" "YAGEO"
+			(at 119.38 99.06 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "MFG PN" "RC0603FR-07237KL"
+			(at 119.38 99.06 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Digikey Link" ""
+			(at 119.38 99.06 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "MAXIMUM_PACKAGE_HEIGHT" ""
+			(at 119.38 99.06 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "MFP PN" ""
+			(at 119.38 99.06 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Manufacturer" ""
+			(at 119.38 99.06 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Manufacturer Part Number" ""
+			(at 119.38 99.06 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "PN" ""
+			(at 119.38 99.06 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Part Name" ""
+			(at 119.38 99.06 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Sim.Device" ""
+			(at 119.38 99.06 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Sim.Pins" ""
+			(at 119.38 99.06 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Sim.Type" ""
+			(at 119.38 99.06 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "2"
+			(uuid "ed561cac-900c-4128-a44e-9144e309ad45")
+		)
+		(pin "1"
+			(uuid "c673474b-1726-442d-ad19-1246afcb8324")
+		)
+		(instances
+			(project "Tractive_Battery_Board"
+				(path "/ca333741-5826-495c-b860-5422aa5e17fc/f8f7b966-e431-45f1-86cc-b511313b5db4"
+					(reference "R58")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Device:R")
+		(at 119.38 146.05 0)
+		(mirror y)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "d95a4c73-eff1-4586-bc17-b5e035b6de3b")
+		(property "Reference" "R55"
+			(at 116.84 144.7799 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Value" "10k"
+			(at 116.84 147.3199 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Footprint" "Resistor_SMD:R_0603_1608Metric_Pad0.98x0.95mm_HandSolder"
+			(at 121.158 146.05 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "https://yageogroup.com/content/datasheet/asset/file/PYU-RC_GROUP_51_ROHS_L"
+			(at 119.38 146.05 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Resistor"
+			(at 119.38 146.05 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Digi PN" "311-10.0KHRCT-ND"
+			(at 119.38 146.05 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Digi URL" "https://www.digikey.com/en/products/detail/yageo/RC0603FR-0710KL/726880"
+			(at 119.38 146.05 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "MFG" "YAGEO"
+			(at 119.38 146.05 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "MFG PN" "RC0603FR-0710KL"
+			(at 119.38 146.05 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Digikey Link" ""
+			(at 119.38 146.05 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "MAXIMUM_PACKAGE_HEIGHT" ""
+			(at 119.38 146.05 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "MFP PN" ""
+			(at 119.38 146.05 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Manufacturer" ""
+			(at 119.38 146.05 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Manufacturer Part Number" ""
+			(at 119.38 146.05 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "PN" ""
+			(at 119.38 146.05 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Part Name" ""
+			(at 119.38 146.05 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Sim.Device" ""
+			(at 119.38 146.05 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Sim.Pins" ""
+			(at 119.38 146.05 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Sim.Type" ""
+			(at 119.38 146.05 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "2"
+			(uuid "1ca4b3c8-851d-4935-8046-5251a96941be")
+		)
+		(pin "1"
+			(uuid "9441d879-1338-452e-b21d-6502d877594a")
+		)
+		(instances
+			(project "Tractive_Battery_Board"
+				(path "/ca333741-5826-495c-b860-5422aa5e17fc/f8f7b966-e431-45f1-86cc-b511313b5db4"
+					(reference "R55")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "power:+5V")
+		(at 119.38 87.63 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "e0949d6b-7af6-46bf-bfd0-454f6eaf9e90")
+		(property "Reference" "#PWR0129"
+			(at 119.38 91.44 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Value" "+5V"
+			(at 119.38 82.55 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -5302,7 +7293,7 @@
 			)
 		)
 		(property "Footprint" ""
-			(at 146.05 58.42 0)
+			(at 119.38 87.63 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -5311,7 +7302,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 146.05 58.42 0)
+			(at 119.38 87.63 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -5319,8 +7310,8 @@
 				(hide yes)
 			)
 		)
-		(property "Description" "Power symbol creates a global label with name \"+3.3V\""
-			(at 146.05 58.42 0)
+		(property "Description" "Power symbol creates a global label with name \"+5V\""
+			(at 119.38 87.63 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -5329,12 +7320,12 @@
 			)
 		)
 		(pin "1"
-			(uuid "6297708c-b4c2-4fcd-9bc8-0617a5fdca10")
+			(uuid "4b10be99-482b-4184-a075-f2843ce7e3c0")
 		)
 		(instances
 			(project "Tractive_Battery_Board"
 				(path "/ca333741-5826-495c-b860-5422aa5e17fc/f8f7b966-e431-45f1-86cc-b511313b5db4"
-					(reference "#PWR089")
+					(reference "#PWR0129")
 					(unit 1)
 				)
 			)
@@ -5402,6 +7393,72 @@
 			(project "Tractive_Battery_Board"
 				(path "/ca333741-5826-495c-b860-5422aa5e17fc/f8f7b966-e431-45f1-86cc-b511313b5db4"
 					(reference "#PWR084")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "power:+5V")
+		(at 146.05 113.03 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "ec2601b1-b5fc-4ed5-89a0-1a617be0f18e")
+		(property "Reference" "#PWR091"
+			(at 146.05 116.84 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Value" "+5V"
+			(at 146.05 107.95 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" ""
+			(at 146.05 113.03 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" ""
+			(at 146.05 113.03 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Power symbol creates a global label with name \"+5V\""
+			(at 146.05 113.03 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "cdc237c2-eea1-4137-aef0-23117f3860b9")
+		)
+		(instances
+			(project "Tractive_Battery_Board"
+				(path "/ca333741-5826-495c-b860-5422aa5e17fc/f8f7b966-e431-45f1-86cc-b511313b5db4"
+					(reference "#PWR091")
 					(unit 1)
 				)
 			)
@@ -5603,17 +7660,17 @@
 		)
 	)
 	(symbol
-		(lib_id "power:+3.3V")
-		(at 146.05 101.6 0)
+		(lib_id "power:+5V")
+		(at 146.05 58.42 0)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
 		(on_board yes)
 		(dnp no)
 		(fields_autoplaced yes)
-		(uuid "f3976080-8c67-4105-8a6b-8bcdf774d66d")
-		(property "Reference" "#PWR091"
-			(at 146.05 105.41 0)
+		(uuid "ecbed723-c42c-4e6c-ab09-2fd2d9faa773")
+		(property "Reference" "#PWR089"
+			(at 146.05 62.23 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -5621,8 +7678,8 @@
 				(hide yes)
 			)
 		)
-		(property "Value" "+3V3"
-			(at 146.05 96.52 0)
+		(property "Value" "+5V"
+			(at 146.05 53.34 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -5630,7 +7687,7 @@
 			)
 		)
 		(property "Footprint" ""
-			(at 146.05 101.6 0)
+			(at 146.05 58.42 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -5639,7 +7696,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 146.05 101.6 0)
+			(at 146.05 58.42 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -5647,8 +7704,8 @@
 				(hide yes)
 			)
 		)
-		(property "Description" "Power symbol creates a global label with name \"+3.3V\""
-			(at 146.05 101.6 0)
+		(property "Description" "Power symbol creates a global label with name \"+5V\""
+			(at 146.05 58.42 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -5657,12 +7714,77 @@
 			)
 		)
 		(pin "1"
-			(uuid "f155243b-4a81-446f-9463-a5eff55a21f7")
+			(uuid "ece1c846-c945-45c6-a9f0-ec5968077736")
 		)
 		(instances
 			(project "Tractive_Battery_Board"
 				(path "/ca333741-5826-495c-b860-5422aa5e17fc/f8f7b966-e431-45f1-86cc-b511313b5db4"
-					(reference "#PWR091")
+					(reference "#PWR089")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "power:GND")
+		(at 153.67 160.02 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "fb4ca70b-5370-4ccc-9274-2e75aac1f81c")
+		(property "Reference" "#PWR0132"
+			(at 153.67 166.37 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Value" "GND"
+			(at 149.606 163.322 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" ""
+			(at 153.67 160.02 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" ""
+			(at 153.67 160.02 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
+			(at 153.67 160.02 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "7861ad47-a5ec-4885-b63a-44b4bc95a88a")
+		)
+		(instances
+			(project "Tractive_Battery_Board"
+				(path "/ca333741-5826-495c-b860-5422aa5e17fc/f8f7b966-e431-45f1-86cc-b511313b5db4"
+					(reference "#PWR0132")
 					(unit 1)
 				)
 			)
