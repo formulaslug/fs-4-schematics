@@ -7,7 +7,7 @@
 	(title_block
 		(title "BMS Temp Sense Board")
 		(date "2026-04-28")
-		(rev "1.1")
+		(rev "2.0")
 		(company "Formula Slug")
 		(comment 4 "Victor Kalastirsky")
 	)
@@ -251,50 +251,31 @@
 			)
 			(embedded_fonts no)
 		)
-		(symbol "2026-01-19_04-40-15:5019510550"
+		(symbol "Connector_Generic:Conn_01x05"
 			(pin_names
-				(offset 0.254)
+				(offset 1.016)
+				(hide yes)
 			)
 			(exclude_from_sim no)
 			(in_bom yes)
 			(on_board yes)
 			(property "Reference" "J"
-				(at 9.398 5.588 0)
-				(effects
-					(font
-						(size 1.524 1.524)
-					)
-				)
-			)
-			(property "Value" "5019510550"
-				(at 9.652 3.556 0)
-				(effects
-					(font
-						(size 1.524 1.524)
-					)
-				)
-			)
-			(property "Footprint" "CON_5019510550"
-				(at -7.366 2.032 0)
+				(at 0 7.62 0)
 				(effects
 					(font
 						(size 1.27 1.27)
-						(italic yes)
 					)
-					(hide yes)
 				)
 			)
-			(property "Datasheet" "https://www.molex.com/en-us/products/part-detail-pdf/5019510550?display=pdf"
-				(at 0.508 4.318 0)
+			(property "Value" "Conn_01x05"
+				(at 0 -7.62 0)
 				(effects
 					(font
 						(size 1.27 1.27)
-						(italic yes)
 					)
-					(hide yes)
 				)
 			)
-			(property "Description" ""
+			(property "Footprint" ""
 				(at 0 0 0)
 				(effects
 					(font
@@ -303,15 +284,7 @@
 					(hide yes)
 				)
 			)
-			(property "ki_locked" ""
-				(at 0 0 0)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-				)
-			)
-			(property "ki_keywords" "5019510550"
+			(property "Datasheet" "~"
 				(at 0 0 0)
 				(effects
 					(font
@@ -320,7 +293,7 @@
 					(hide yes)
 				)
 			)
-			(property "ki_fp_filters" "CON_5019510550"
+			(property "Description" "Generic connector, single row, 01x05, script generated (kicad-library-utils/schlib/autogen/connector/)"
 				(at 0 0 0)
 				(effects
 					(font
@@ -329,13 +302,41 @@
 					(hide yes)
 				)
 			)
-			(symbol "5019510550_1_1"
-				(polyline
-					(pts
-						(xy 5.08 2.54) (xy 5.08 -12.7)
+			(property "ki_keywords" "connector"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
 					)
+					(hide yes)
+				)
+			)
+			(property "ki_fp_filters" "Connector*:*_1x??_*"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(symbol "Conn_01x05_1_1"
+				(rectangle
+					(start -1.27 6.35)
+					(end 1.27 -6.35)
 					(stroke
-						(width 0.127)
+						(width 0.254)
+						(type default)
+					)
+					(fill
+						(type background)
+					)
+				)
+				(rectangle
+					(start -1.27 5.207)
+					(end 0 4.953)
+					(stroke
+						(width 0.1524)
 						(type default)
 					)
 					(fill
@@ -343,225 +344,53 @@
 					)
 				)
 				(rectangle
-					(start 5.08 2.54)
-					(end 13.97 -12.7)
+					(start -1.27 2.667)
+					(end 0 2.413)
 					(stroke
-						(width 0)
-						(type solid)
-					)
-					(fill
-						(type color)
-						(color 255 255 194 1)
-					)
-				)
-				(polyline
-					(pts
-						(xy 5.08 -12.7) (xy 12.7 -12.7)
-					)
-					(stroke
-						(width 0.127)
+						(width 0.1524)
 						(type default)
 					)
 					(fill
 						(type none)
 					)
 				)
-				(polyline
-					(pts
-						(xy 10.16 0) (xy 5.08 0)
-					)
+				(rectangle
+					(start -1.27 0.127)
+					(end 0 -0.127)
 					(stroke
-						(width 0.127)
+						(width 0.1524)
 						(type default)
 					)
 					(fill
 						(type none)
 					)
 				)
-				(polyline
-					(pts
-						(xy 10.16 0) (xy 8.89 0.8467)
-					)
+				(rectangle
+					(start -1.27 -2.413)
+					(end 0 -2.667)
 					(stroke
-						(width 0.127)
+						(width 0.1524)
 						(type default)
 					)
 					(fill
 						(type none)
 					)
 				)
-				(polyline
-					(pts
-						(xy 10.16 0) (xy 8.89 -0.8467)
-					)
+				(rectangle
+					(start -1.27 -4.953)
+					(end 0 -5.207)
 					(stroke
-						(width 0.127)
+						(width 0.1524)
 						(type default)
 					)
 					(fill
 						(type none)
 					)
 				)
-				(polyline
-					(pts
-						(xy 10.16 -2.54) (xy 5.08 -2.54)
-					)
-					(stroke
-						(width 0.127)
-						(type default)
-					)
-					(fill
-						(type none)
-					)
-				)
-				(polyline
-					(pts
-						(xy 10.16 -2.54) (xy 8.89 -1.6933)
-					)
-					(stroke
-						(width 0.127)
-						(type default)
-					)
-					(fill
-						(type none)
-					)
-				)
-				(polyline
-					(pts
-						(xy 10.16 -2.54) (xy 8.89 -3.3867)
-					)
-					(stroke
-						(width 0.127)
-						(type default)
-					)
-					(fill
-						(type none)
-					)
-				)
-				(polyline
-					(pts
-						(xy 10.16 -5.08) (xy 5.08 -5.08)
-					)
-					(stroke
-						(width 0.127)
-						(type default)
-					)
-					(fill
-						(type none)
-					)
-				)
-				(polyline
-					(pts
-						(xy 10.16 -5.08) (xy 8.89 -4.2333)
-					)
-					(stroke
-						(width 0.127)
-						(type default)
-					)
-					(fill
-						(type none)
-					)
-				)
-				(polyline
-					(pts
-						(xy 10.16 -5.08) (xy 8.89 -5.9267)
-					)
-					(stroke
-						(width 0.127)
-						(type default)
-					)
-					(fill
-						(type none)
-					)
-				)
-				(polyline
-					(pts
-						(xy 10.16 -7.62) (xy 5.08 -7.62)
-					)
-					(stroke
-						(width 0.127)
-						(type default)
-					)
-					(fill
-						(type none)
-					)
-				)
-				(polyline
-					(pts
-						(xy 10.16 -7.62) (xy 8.89 -6.7733)
-					)
-					(stroke
-						(width 0.127)
-						(type default)
-					)
-					(fill
-						(type none)
-					)
-				)
-				(polyline
-					(pts
-						(xy 10.16 -7.62) (xy 8.89 -8.4667)
-					)
-					(stroke
-						(width 0.127)
-						(type default)
-					)
-					(fill
-						(type none)
-					)
-				)
-				(polyline
-					(pts
-						(xy 10.16 -10.16) (xy 5.08 -10.16)
-					)
-					(stroke
-						(width 0.127)
-						(type default)
-					)
-					(fill
-						(type none)
-					)
-				)
-				(polyline
-					(pts
-						(xy 10.16 -10.16) (xy 8.89 -9.3133)
-					)
-					(stroke
-						(width 0.127)
-						(type default)
-					)
-					(fill
-						(type none)
-					)
-				)
-				(polyline
-					(pts
-						(xy 10.16 -10.16) (xy 8.89 -11.0067)
-					)
-					(stroke
-						(width 0.127)
-						(type default)
-					)
-					(fill
-						(type none)
-					)
-				)
-				(polyline
-					(pts
-						(xy 12.7 2.54) (xy 5.08 2.54)
-					)
-					(stroke
-						(width 0.127)
-						(type default)
-					)
-					(fill
-						(type none)
-					)
-				)
-				(pin unspecified line
-					(at 0 0 0)
-					(length 5.08)
-					(name "1"
+				(pin passive line
+					(at -5.08 5.08 0)
+					(length 3.81)
+					(name "Pin_1"
 						(effects
 							(font
 								(size 1.27 1.27)
@@ -576,10 +405,10 @@
 						)
 					)
 				)
-				(pin unspecified line
-					(at 0 -2.54 0)
-					(length 5.08)
-					(name "2"
+				(pin passive line
+					(at -5.08 2.54 0)
+					(length 3.81)
+					(name "Pin_2"
 						(effects
 							(font
 								(size 1.27 1.27)
@@ -594,10 +423,10 @@
 						)
 					)
 				)
-				(pin unspecified line
-					(at 0 -5.08 0)
-					(length 5.08)
-					(name "3"
+				(pin passive line
+					(at -5.08 0 0)
+					(length 3.81)
+					(name "Pin_3"
 						(effects
 							(font
 								(size 1.27 1.27)
@@ -612,10 +441,10 @@
 						)
 					)
 				)
-				(pin unspecified line
-					(at 0 -7.62 0)
-					(length 5.08)
-					(name "4"
+				(pin passive line
+					(at -5.08 -2.54 0)
+					(length 3.81)
+					(name "Pin_4"
 						(effects
 							(font
 								(size 1.27 1.27)
@@ -630,330 +459,10 @@
 						)
 					)
 				)
-				(pin unspecified line
-					(at 0 -10.16 0)
-					(length 5.08)
-					(name "5"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-					(number "5"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-				)
-			)
-			(symbol "5019510550_1_2"
-				(polyline
-					(pts
-						(xy 5.08 2.54) (xy 5.08 -12.7)
-					)
-					(stroke
-						(width 0.127)
-						(type default)
-					)
-					(fill
-						(type none)
-					)
-				)
-				(polyline
-					(pts
-						(xy 5.08 -12.7) (xy 12.7 -12.7)
-					)
-					(stroke
-						(width 0.127)
-						(type default)
-					)
-					(fill
-						(type none)
-					)
-				)
-				(polyline
-					(pts
-						(xy 7.62 0) (xy 5.08 0)
-					)
-					(stroke
-						(width 0.127)
-						(type default)
-					)
-					(fill
-						(type none)
-					)
-				)
-				(polyline
-					(pts
-						(xy 7.62 0) (xy 8.89 0.8467)
-					)
-					(stroke
-						(width 0.127)
-						(type default)
-					)
-					(fill
-						(type none)
-					)
-				)
-				(polyline
-					(pts
-						(xy 7.62 0) (xy 8.89 -0.8467)
-					)
-					(stroke
-						(width 0.127)
-						(type default)
-					)
-					(fill
-						(type none)
-					)
-				)
-				(polyline
-					(pts
-						(xy 7.62 -2.54) (xy 5.08 -2.54)
-					)
-					(stroke
-						(width 0.127)
-						(type default)
-					)
-					(fill
-						(type none)
-					)
-				)
-				(polyline
-					(pts
-						(xy 7.62 -2.54) (xy 8.89 -1.6933)
-					)
-					(stroke
-						(width 0.127)
-						(type default)
-					)
-					(fill
-						(type none)
-					)
-				)
-				(polyline
-					(pts
-						(xy 7.62 -2.54) (xy 8.89 -3.3867)
-					)
-					(stroke
-						(width 0.127)
-						(type default)
-					)
-					(fill
-						(type none)
-					)
-				)
-				(polyline
-					(pts
-						(xy 7.62 -5.08) (xy 5.08 -5.08)
-					)
-					(stroke
-						(width 0.127)
-						(type default)
-					)
-					(fill
-						(type none)
-					)
-				)
-				(polyline
-					(pts
-						(xy 7.62 -5.08) (xy 8.89 -4.2333)
-					)
-					(stroke
-						(width 0.127)
-						(type default)
-					)
-					(fill
-						(type none)
-					)
-				)
-				(polyline
-					(pts
-						(xy 7.62 -5.08) (xy 8.89 -5.9267)
-					)
-					(stroke
-						(width 0.127)
-						(type default)
-					)
-					(fill
-						(type none)
-					)
-				)
-				(polyline
-					(pts
-						(xy 7.62 -7.62) (xy 5.08 -7.62)
-					)
-					(stroke
-						(width 0.127)
-						(type default)
-					)
-					(fill
-						(type none)
-					)
-				)
-				(polyline
-					(pts
-						(xy 7.62 -7.62) (xy 8.89 -6.7733)
-					)
-					(stroke
-						(width 0.127)
-						(type default)
-					)
-					(fill
-						(type none)
-					)
-				)
-				(polyline
-					(pts
-						(xy 7.62 -7.62) (xy 8.89 -8.4667)
-					)
-					(stroke
-						(width 0.127)
-						(type default)
-					)
-					(fill
-						(type none)
-					)
-				)
-				(polyline
-					(pts
-						(xy 7.62 -10.16) (xy 5.08 -10.16)
-					)
-					(stroke
-						(width 0.127)
-						(type default)
-					)
-					(fill
-						(type none)
-					)
-				)
-				(polyline
-					(pts
-						(xy 7.62 -10.16) (xy 8.89 -9.3133)
-					)
-					(stroke
-						(width 0.127)
-						(type default)
-					)
-					(fill
-						(type none)
-					)
-				)
-				(polyline
-					(pts
-						(xy 7.62 -10.16) (xy 8.89 -11.0067)
-					)
-					(stroke
-						(width 0.127)
-						(type default)
-					)
-					(fill
-						(type none)
-					)
-				)
-				(polyline
-					(pts
-						(xy 12.7 2.54) (xy 5.08 2.54)
-					)
-					(stroke
-						(width 0.127)
-						(type default)
-					)
-					(fill
-						(type none)
-					)
-				)
-				(polyline
-					(pts
-						(xy 12.7 -12.7) (xy 12.7 2.54)
-					)
-					(stroke
-						(width 0.127)
-						(type default)
-					)
-					(fill
-						(type none)
-					)
-				)
-				(pin unspecified line
-					(at 0 0 0)
-					(length 5.08)
-					(name "1"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-					(number "1"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-				)
-				(pin unspecified line
-					(at 0 -2.54 0)
-					(length 5.08)
-					(name "2"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-					(number "2"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-				)
-				(pin unspecified line
-					(at 0 -5.08 0)
-					(length 5.08)
-					(name "3"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-					(number "3"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-				)
-				(pin unspecified line
-					(at 0 -7.62 0)
-					(length 5.08)
-					(name "4"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-					(number "4"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-				)
-				(pin unspecified line
-					(at 0 -10.16 0)
-					(length 5.08)
-					(name "5"
+				(pin passive line
+					(at -5.08 -5.08 0)
+					(length 3.81)
+					(name "Pin_5"
 						(effects
 							(font
 								(size 1.27 1.27)
@@ -2282,15 +1791,15 @@
 		(uuid "fe00889c-aeb0-47bc-8d69-fcc311fe6117")
 	)
 	(no_connect
-		(at 30.48 154.94)
+		(at 31.75 157.48)
 		(uuid "0a8d2671-a84f-47d8-a132-e1e4176bf539")
 	)
 	(no_connect
-		(at 30.48 160.02)
+		(at 31.75 162.56)
 		(uuid "4536aec4-27df-49ad-8147-716c0673b7b3")
 	)
 	(no_connect
-		(at 30.48 157.48)
+		(at 31.75 160.02)
 		(uuid "6789a6e0-6057-4408-b806-921c03ead058")
 	)
 	(wire
@@ -2515,7 +2024,7 @@
 	)
 	(wire
 		(pts
-			(xy 40.64 157.48) (xy 40.64 152.4)
+			(xy 41.91 160.02) (xy 41.91 154.94)
 		)
 		(stroke
 			(width 0)
@@ -2935,7 +2444,7 @@
 	)
 	(wire
 		(pts
-			(xy 43.18 157.48) (xy 40.64 157.48)
+			(xy 44.45 160.02) (xy 41.91 160.02)
 		)
 		(stroke
 			(width 0)
@@ -3985,7 +3494,7 @@
 	)
 	(wire
 		(pts
-			(xy 40.64 152.4) (xy 30.48 152.4)
+			(xy 41.91 154.94) (xy 31.75 154.94)
 		)
 		(stroke
 			(width 0)
@@ -4635,7 +4144,7 @@
 	)
 	(wire
 		(pts
-			(xy 30.48 162.56) (xy 53.34 162.56)
+			(xy 31.75 165.1) (xy 54.61 165.1)
 		)
 		(stroke
 			(width 0)
@@ -4882,6 +4391,16 @@
 			(justify right bottom)
 		)
 		(uuid "3f6727cd-1dbb-4028-abe1-32339746080b")
+	)
+	(label "DQ"
+		(at 36.83 165.1 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left bottom)
+		)
+		(uuid "42f50fe7-78dc-429b-9c6d-a0a2fb8650cd")
 	)
 	(label "SDA"
 		(at 36.83 58.42 0)
@@ -6072,123 +5591,8 @@
 		)
 	)
 	(symbol
-		(lib_id "2026-01-19_04-40-15:5019510550")
-		(at 30.48 152.4 0)
-		(mirror y)
-		(unit 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(dnp no)
-		(uuid "60f7c277-5ee8-407f-bfd9-cb9bac1d9fde")
-		(property "Reference" "J3"
-			(at 21.082 146.558 0)
-			(effects
-				(font
-					(size 1.524 1.524)
-				)
-			)
-		)
-		(property "Value" "5019510550"
-			(at 21.59 148.59 0)
-			(effects
-				(font
-					(size 1.524 1.524)
-				)
-			)
-		)
-		(property "Footprint" "FS_4_Global_Footprint_Library:CON_5019510550"
-			(at 37.846 150.368 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-					(italic yes)
-				)
-				(hide yes)
-			)
-		)
-		(property "Datasheet" "https://www.molex.com/en-us/products/part-detail-pdf/5019510550?display=pdf"
-			(at 29.972 148.082 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-					(italic yes)
-				)
-				(hide yes)
-			)
-		)
-		(property "Description" ""
-			(at 30.48 152.4 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Digi PN" "900-5019510550TR-ND"
-			(at 30.48 152.4 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Digi URL" "https://www.digikey.com/en/products/detail/molex/5019510550/13538887"
-			(at 30.48 152.4 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "MFG" "Molex"
-			(at 30.48 152.4 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "MFG PN" "5019510550"
-			(at 30.48 152.4 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(pin "3"
-			(uuid "b3bbe235-5b8e-44c4-b728-c1582e859587")
-		)
-		(pin "5"
-			(uuid "ade308ac-b97a-4c46-867d-e7cb878fd7b9")
-		)
-		(pin "4"
-			(uuid "99d7936b-ccbe-4800-942a-fc45018709c1")
-		)
-		(pin "2"
-			(uuid "08d0a5a3-311d-4db4-8ef8-8695a2b19205")
-		)
-		(pin "1"
-			(uuid "d9996810-96da-4509-9ff0-8489b88eaaea")
-		)
-		(instances
-			(project "TempSenseBoard"
-				(path "/b0623524-8cdb-4c88-bc4f-0ef41f06a22b"
-					(reference "J3")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
 		(lib_id "2026-01-10_01-54-57:DS18B20Z+")
-		(at 25.4 151.13 0)
+		(at 26.67 153.67 0)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
@@ -6197,7 +5601,7 @@
 		(fields_autoplaced yes)
 		(uuid "63c39160-3401-4944-8542-27b8fc1dec8a")
 		(property "Reference" "U13"
-			(at 55.4833 144.78 0)
+			(at 56.7533 147.32 0)
 			(effects
 				(font
 					(size 1.524 1.524)
@@ -6206,7 +5610,7 @@
 			)
 		)
 		(property "Value" "DS18B20Z+"
-			(at 55.4833 147.32 0)
+			(at 56.7533 149.86 0)
 			(effects
 				(font
 					(size 1.524 1.524)
@@ -6215,7 +5619,7 @@
 			)
 		)
 		(property "Footprint" "FS_4_Global_Footprint_Library:21-0041B_8_MXM"
-			(at 25.4 151.13 0)
+			(at 26.67 153.67 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -6225,7 +5629,7 @@
 			)
 		)
 		(property "Datasheet" "https://www.analog.com/media/en/technical-documentation/data-sheets/ds18b20.pdf"
-			(at 25.4 151.13 0)
+			(at 26.67 153.67 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -6235,7 +5639,7 @@
 			)
 		)
 		(property "Description" ""
-			(at 25.4 151.13 0)
+			(at 26.67 153.67 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -6244,7 +5648,7 @@
 			)
 		)
 		(property "Digi PN" "DS18B20Z+-ND"
-			(at 25.4 151.13 0)
+			(at 26.67 153.67 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -6253,7 +5657,7 @@
 			)
 		)
 		(property "Digi URL" "https://www.digikey.com/en/products/detail/analog-devices-inc-maxim-integrated/DS18B20Z/956982"
-			(at 25.4 151.13 0)
+			(at 26.67 153.67 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -6262,7 +5666,7 @@
 			)
 		)
 		(property "MFG" "Analog Devices"
-			(at 25.4 151.13 0)
+			(at 26.67 153.67 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -6271,7 +5675,7 @@
 			)
 		)
 		(property "MFG PN" "DS18B20Z+"
-			(at 25.4 151.13 0)
+			(at 26.67 153.67 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -7380,6 +6784,85 @@
 			(project "TempSenseBoard"
 				(path "/b0623524-8cdb-4c88-bc4f-0ef41f06a22b"
 					(reference "#PWR029")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Connector_Generic:Conn_01x05")
+		(at 26.67 160.02 0)
+		(mirror y)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "8ce4e1bb-95a5-4c12-bdb6-76f02d8b37f8")
+		(property "Reference" "J4"
+			(at 24.13 158.7499 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Value" "512810598"
+			(at 24.13 161.2899 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Footprint" "FS_4_Footprint_Library:512810598"
+			(at 26.67 160.02 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "https://www.molex.com/pdm_docs/sd/512810598_sd.pdf"
+			(at 26.67 160.02 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Generic connector, single row, 01x05, script generated (kicad-library-utils/schlib/autogen/connector/)"
+			(at 26.67 160.02 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "3"
+			(uuid "95f7ff01-5562-4f5a-9556-b00e96632c34")
+		)
+		(pin "5"
+			(uuid "00899f44-d1bc-40d3-b643-f2e7ca10140a")
+		)
+		(pin "2"
+			(uuid "2b766390-ae95-4ea2-b90e-43e55c554460")
+		)
+		(pin "1"
+			(uuid "5323e4a8-02b4-4357-a5e0-8f721efa0cbc")
+		)
+		(pin "4"
+			(uuid "f941570f-3af3-441a-9589-785b415d2496")
+		)
+		(instances
+			(project "TempSenseBoard"
+				(path "/b0623524-8cdb-4c88-bc4f-0ef41f06a22b"
+					(reference "J4")
 					(unit 1)
 				)
 			)
@@ -9190,52 +8673,34 @@
 		)
 	)
 	(symbol
-		(lib_id "2026-01-19_04-40-15:5019510550")
-		(at 29.21 63.5 180)
+		(lib_id "Connector_Generic:Conn_01x05")
+		(at 24.13 58.42 180)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
 		(on_board yes)
 		(dnp no)
-		(uuid "e20a5136-17ff-49ee-b4fc-52ed330d17f5")
-		(property "Reference" "J1"
-			(at 19.558 46.99 0)
-			(effects
-				(font
-					(size 1.524 1.524)
-				)
-			)
-		)
-		(property "Value" "5019510550"
-			(at 19.558 49.53 0)
-			(effects
-				(font
-					(size 1.524 1.524)
-				)
-			)
-		)
-		(property "Footprint" "FS_4_Global_Footprint_Library:CON_5019510550"
-			(at 36.576 65.532 0)
+		(uuid "e37efb73-a8eb-4d77-9388-5fceb0d0eab8")
+		(property "Reference" "J2"
+			(at 21.59 59.6901 0)
 			(effects
 				(font
 					(size 1.27 1.27)
-					(italic yes)
 				)
-				(hide yes)
+				(justify left)
 			)
 		)
-		(property "Datasheet" "https://www.molex.com/en-us/products/part-detail-pdf/5019510550?display=pdf"
-			(at 28.702 67.818 0)
+		(property "Value" "512810598"
+			(at 21.59 57.1501 0)
 			(effects
 				(font
 					(size 1.27 1.27)
-					(italic yes)
 				)
-				(hide yes)
+				(justify left)
 			)
 		)
-		(property "Description" ""
-			(at 29.21 63.5 0)
+		(property "Footprint" "FS_4_Footprint_Library:512810598"
+			(at 24.13 58.42 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -9243,8 +8708,8 @@
 				(hide yes)
 			)
 		)
-		(property "Digi PN" "900-5019510550TR-ND"
-			(at 29.21 63.5 0)
+		(property "Datasheet" "https://www.molex.com/pdm_docs/sd/512810598_sd.pdf"
+			(at 24.13 58.42 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -9252,26 +8717,8 @@
 				(hide yes)
 			)
 		)
-		(property "Digi URL" "https://www.digikey.com/en/products/detail/molex/5019510550/13538887"
-			(at 29.21 63.5 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "MFG" "Molex"
-			(at 29.21 63.5 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "MFG PN" "5019510550"
-			(at 29.21 63.5 0)
+		(property "Description" "Generic connector, single row, 01x05, script generated (kicad-library-utils/schlib/autogen/connector/)"
+			(at 24.13 58.42 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -9280,24 +8727,24 @@
 			)
 		)
 		(pin "3"
-			(uuid "5e5a2646-9756-4171-9058-1c5afb01cf12")
+			(uuid "20faf8ce-3bb8-4132-a62d-569dc73778cc")
 		)
 		(pin "5"
-			(uuid "afbbe0b6-0e7f-4a46-ab03-d6d0daaa75de")
-		)
-		(pin "4"
-			(uuid "8f32c89f-9d2c-4676-b717-cb093b588a87")
+			(uuid "6eb83a96-fcf4-47d3-8259-40c2fb39ea3c")
 		)
 		(pin "2"
-			(uuid "6520eaef-6faa-4daf-a000-5ca82ae77c5e")
+			(uuid "d0c7df54-aaa4-4faa-94cc-1fa01fd4133c")
 		)
 		(pin "1"
-			(uuid "bae8faa3-79e7-41f2-b744-cefddf7f2b5f")
+			(uuid "fcad0fef-60b3-461a-b12e-994adb4a0ac3")
+		)
+		(pin "4"
+			(uuid "9b8f5c5c-5a8e-45da-b9a3-ec7cbc40f36e")
 		)
 		(instances
 			(project "TempSenseBoard"
 				(path "/b0623524-8cdb-4c88-bc4f-0ef41f06a22b"
-					(reference "J1")
+					(reference "J2")
 					(unit 1)
 				)
 			)
