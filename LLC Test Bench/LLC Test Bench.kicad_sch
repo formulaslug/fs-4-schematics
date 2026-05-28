@@ -1074,6 +1074,131 @@
 			)
 			(embedded_fonts no)
 		)
+		(symbol "power:+48V"
+			(power)
+			(pin_numbers
+				(hide yes)
+			)
+			(pin_names
+				(offset 0)
+				(hide yes)
+			)
+			(exclude_from_sim no)
+			(in_bom yes)
+			(on_board yes)
+			(property "Reference" "#PWR"
+				(at 0 -3.81 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "Value" "+48V"
+				(at 0 3.556 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Footprint" ""
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "Datasheet" ""
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "Description" "Power symbol creates a global label with name \"+48V\""
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "ki_keywords" "global power"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(symbol "+48V_0_1"
+				(polyline
+					(pts
+						(xy -0.762 1.27) (xy 0 2.54)
+					)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy 0 2.54) (xy 0.762 1.27)
+					)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy 0 0) (xy 0 2.54)
+					)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+			)
+			(symbol "+48V_1_1"
+				(pin power_in line
+					(at 0 0 90)
+					(length 0)
+					(name "~"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "1"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+			)
+			(embedded_fonts no)
+		)
 		(symbol "power:GND"
 			(power)
 			(pin_numbers
@@ -1401,6 +1526,16 @@
 	)
 	(wire
 		(pts
+			(xy 222.25 153.67) (xy 224.79 153.67)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "14a4ac3a-1337-48b6-9a8a-dbe1f355d102")
+	)
+	(wire
+		(pts
 			(xy 134.62 130.81) (xy 135.89 130.81)
 		)
 		(stroke
@@ -1631,6 +1766,36 @@
 	)
 	(wire
 		(pts
+			(xy 222.25 138.43) (xy 224.79 138.43)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "a8aa5b07-cd19-4e70-a4a8-527f207772fc")
+	)
+	(wire
+		(pts
+			(xy 245.11 115.57) (xy 248.92 115.57)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "af1379dc-d319-45a0-b4aa-5a35b62de3d9")
+	)
+	(wire
+		(pts
+			(xy 213.36 138.43) (xy 213.36 133.35)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "b2ab261c-511f-4468-a650-9f2566134adb")
+	)
+	(wire
+		(pts
 			(xy 130.81 135.89) (xy 134.62 135.89)
 		)
 		(stroke
@@ -1648,6 +1813,16 @@
 			(type default)
 		)
 		(uuid "ca8bc308-fdcf-46b6-85e5-264ec8e295e0")
+	)
+	(wire
+		(pts
+			(xy 213.36 148.59) (xy 232.41 148.59)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "cc527e7e-5d53-49eb-b615-13f0de9118e3")
 	)
 	(wire
 		(pts
@@ -1691,6 +1866,26 @@
 	)
 	(wire
 		(pts
+			(xy 245.11 111.76) (xy 248.92 111.76)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "f7136f19-d5bb-4e93-97f6-7f2f3b94581e")
+	)
+	(wire
+		(pts
+			(xy 213.36 133.35) (xy 232.41 133.35)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "f85bd9d0-13c3-4ca0-822f-53f5f983712b")
+	)
+	(wire
+		(pts
 			(xy 143.51 123.19) (xy 97.79 123.19)
 		)
 		(stroke
@@ -1698,6 +1893,94 @@
 			(type default)
 		)
 		(uuid "faea1886-6606-41a9-aaf0-df6d52145dea")
+	)
+	(global_label "SRG2"
+		(shape input)
+		(at 222.25 153.67 180)
+		(fields_autoplaced yes)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify right)
+		)
+		(uuid "48db6bd9-eadf-407b-8932-5996ff644a23")
+		(property "Intersheetrefs" "${INTERSHEET_REFS}"
+			(at 214.3058 153.67 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+				(hide yes)
+			)
+		)
+	)
+	(global_label "SRG1"
+		(shape output)
+		(at 248.92 111.76 0)
+		(fields_autoplaced yes)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left)
+		)
+		(uuid "4e0faba9-bd60-4e04-a244-19b58ad60d4d")
+		(property "Intersheetrefs" "${INTERSHEET_REFS}"
+			(at 256.8642 111.76 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+				(hide yes)
+			)
+		)
+	)
+	(global_label "SRG1"
+		(shape input)
+		(at 222.25 138.43 180)
+		(fields_autoplaced yes)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify right)
+		)
+		(uuid "6ca0f9b7-c1f3-4429-a4ae-02d591b7acad")
+		(property "Intersheetrefs" "${INTERSHEET_REFS}"
+			(at 214.3058 138.43 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+				(hide yes)
+			)
+		)
+	)
+	(global_label "SRG2"
+		(shape output)
+		(at 248.92 115.57 0)
+		(fields_autoplaced yes)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left)
+		)
+		(uuid "9b816701-50ff-42da-b34f-cffead7978d5")
+		(property "Intersheetrefs" "${INTERSHEET_REFS}"
+			(at 256.8642 115.57 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+				(hide yes)
+			)
+		)
 	)
 	(symbol
 		(lib_id "power:GNDPWR")
@@ -1766,6 +2049,106 @@
 		)
 	)
 	(symbol
+		(lib_id "Simulation_SPICE:NMOS")
+		(at 229.87 138.43 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "415ddcc4-096d-4a39-9ed8-97a18d901b4a")
+		(property "Reference" "Q3"
+			(at 236.22 137.1599 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Value" "NMOS"
+			(at 236.22 139.6999 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Footprint" ""
+			(at 234.95 135.89 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "https://ngspice.sourceforge.io/docs/ngspice-html-manual/manual.xhtml#cha_MOSFETs"
+			(at 229.87 151.13 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "N-MOSFET transistor, drain/source/gate"
+			(at 229.87 138.43 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Sim.Device" "NMOS"
+			(at 229.87 155.575 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Sim.Type" "VDMOS"
+			(at 229.87 157.48 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Sim.Pins" "1=D 2=G 3=S"
+			(at 229.87 153.67 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "495adf01-aae2-4d89-91ed-50f24631b3fa")
+		)
+		(pin "2"
+			(uuid "f0f6db80-8514-4349-9f43-19addbca4f58")
+		)
+		(pin "3"
+			(uuid "506f9bbc-4d92-428e-a9f0-f3c0b7820aac")
+		)
+		(instances
+			(project "LLC Test Bench"
+				(path "/7abb3fa5-98ae-49c0-a1ab-5c244bba5721"
+					(reference "Q3")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
 		(lib_id "power:GND")
 		(at 219.71 144.78 0)
 		(unit 1)
@@ -1826,6 +2209,172 @@
 			(project ""
 				(path "/7abb3fa5-98ae-49c0-a1ab-5c244bba5721"
 					(reference "#PWR04")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Simulation_SPICE:NMOS")
+		(at 229.87 153.67 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "6c030a53-7a53-47b1-b899-8ef371dc5c68")
+		(property "Reference" "Q4"
+			(at 236.22 152.3999 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Value" "NMOS"
+			(at 236.22 154.9399 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Footprint" ""
+			(at 234.95 151.13 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "https://ngspice.sourceforge.io/docs/ngspice-html-manual/manual.xhtml#cha_MOSFETs"
+			(at 229.87 166.37 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "N-MOSFET transistor, drain/source/gate"
+			(at 229.87 153.67 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Sim.Device" "NMOS"
+			(at 229.87 170.815 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Sim.Type" "VDMOS"
+			(at 229.87 172.72 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Sim.Pins" "1=D 2=G 3=S"
+			(at 229.87 168.91 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "00a60bd0-0245-4ebe-92ea-a99f0f36c759")
+		)
+		(pin "2"
+			(uuid "ad073a1e-14f7-4596-ad42-bb7bbcec971c")
+		)
+		(pin "3"
+			(uuid "e581f0f5-2e73-400a-bc52-fdf64657dc12")
+		)
+		(instances
+			(project "LLC Test Bench"
+				(path "/7abb3fa5-98ae-49c0-a1ab-5c244bba5721"
+					(reference "Q4")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "power:+48V")
+		(at 251.46 142.24 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "700da767-de72-45e2-a088-7bf2d9458175")
+		(property "Reference" "#PWR05"
+			(at 251.46 146.05 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Value" "+13.4"
+			(at 251.46 137.16 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" ""
+			(at 251.46 142.24 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" ""
+			(at 251.46 142.24 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Power symbol creates a global label with name \"+48V\""
+			(at 251.46 142.24 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "256d50ca-b848-4aee-9c8d-8f601bfc7733")
+		)
+		(instances
+			(project ""
+				(path "/7abb3fa5-98ae-49c0-a1ab-5c244bba5721"
+					(reference "#PWR05")
 					(unit 1)
 				)
 			)
@@ -2376,7 +2925,7 @@
 		)
 	)
 	(sheet
-		(at 226.695 136.525)
+		(at 216.535 108.585)
 		(size 27.94 14.605)
 		(exclude_from_sim no)
 		(in_bom yes)
@@ -2392,7 +2941,7 @@
 		)
 		(uuid "2fccb57f-ea66-4e62-88d5-0ad434290536")
 		(property "Sheetname" "Synchronous Rectifier"
-			(at 226.695 135.8134 0)
+			(at 216.535 107.8734 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -2401,12 +2950,32 @@
 			)
 		)
 		(property "Sheetfile" "SynchronousRectifier.kicad_sch"
-			(at 226.695 151.7146 0)
+			(at 216.535 123.7746 0)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
 				(justify left top)
+			)
+		)
+		(pin "SRG1" output
+			(at 244.475 111.76 0)
+			(uuid "f83d8413-5a3e-4d1e-b482-e945d1175f4e")
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+			)
+		)
+		(pin "SRG2" output
+			(at 244.475 115.57 0)
+			(uuid "33ef5cd4-5b1c-4f2d-a5d1-d80272f5bfc8")
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
 			)
 		)
 		(instances
