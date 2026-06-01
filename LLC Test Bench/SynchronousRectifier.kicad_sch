@@ -2,9 +2,148 @@
 	(version 20250114)
 	(generator "eeschema")
 	(generator_version "9.0")
-	(uuid "25870f39-099a-4f2c-8cec-add2d0860612")
+	(uuid "e2fabf70-63cb-4302-93cf-294e85e09664")
 	(paper "A4")
 	(lib_symbols
+		(symbol "Device:C"
+			(pin_numbers
+				(hide yes)
+			)
+			(pin_names
+				(offset 0.254)
+			)
+			(exclude_from_sim no)
+			(in_bom yes)
+			(on_board yes)
+			(property "Reference" "C"
+				(at 0.635 2.54 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(justify left)
+				)
+			)
+			(property "Value" "C"
+				(at 0.635 -2.54 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(justify left)
+				)
+			)
+			(property "Footprint" ""
+				(at 0.9652 -3.81 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "Datasheet" "~"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "Description" "Unpolarized capacitor"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "ki_keywords" "cap capacitor"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "ki_fp_filters" "C_*"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(symbol "C_0_1"
+				(polyline
+					(pts
+						(xy -2.032 0.762) (xy 2.032 0.762)
+					)
+					(stroke
+						(width 0.508)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy -2.032 -0.762) (xy 2.032 -0.762)
+					)
+					(stroke
+						(width 0.508)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+			)
+			(symbol "C_1_1"
+				(pin passive line
+					(at 0 3.81 270)
+					(length 2.794)
+					(name "~"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "1"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin passive line
+					(at 0 -3.81 90)
+					(length 2.794)
+					(name "~"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "2"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+			)
+			(embedded_fonts no)
+		)
 		(symbol "FS_4_Global_Symbol_Library:UCC24624DR"
 			(exclude_from_sim no)
 			(in_bom yes)
@@ -248,10 +387,117 @@
 			)
 			(embedded_fonts no)
 		)
+		(symbol "power:GND"
+			(power)
+			(pin_numbers
+				(hide yes)
+			)
+			(pin_names
+				(offset 0)
+				(hide yes)
+			)
+			(exclude_from_sim no)
+			(in_bom yes)
+			(on_board yes)
+			(property "Reference" "#PWR"
+				(at 0 -6.35 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "Value" "GND"
+				(at 0 -3.81 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Footprint" ""
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "Datasheet" ""
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "ki_keywords" "global power"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(symbol "GND_0_1"
+				(polyline
+					(pts
+						(xy 0 0) (xy 0 -1.27) (xy 1.27 -1.27) (xy 0 -2.54) (xy -1.27 -1.27) (xy 0 -1.27)
+					)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+			)
+			(symbol "GND_1_1"
+				(pin power_in line
+					(at 0 0 270)
+					(length 0)
+					(name "~"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "1"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+			)
+			(embedded_fonts no)
+		)
+	)
+	(junction
+		(at 144.78 109.22)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "ef076d15-b585-45f2-9dca-4899f319d2ed")
 	)
 	(wire
 		(pts
-			(xy 114.3 102.87) (xy 118.11 102.87)
+			(xy 153.67 97.79) (xy 157.48 97.79)
 		)
 		(stroke
 			(width 0)
@@ -261,7 +507,7 @@
 	)
 	(wire
 		(pts
-			(xy 114.3 99.06) (xy 118.11 99.06)
+			(xy 153.67 93.98) (xy 157.48 93.98)
 		)
 		(stroke
 			(width 0)
@@ -269,9 +515,109 @@
 		)
 		(uuid "384a37d1-e4da-4309-9f11-e105a06ece2f")
 	)
-	(hierarchical_label "SRG2"
+	(wire
+		(pts
+			(xy 132.08 102.87) (xy 135.89 102.87)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "489d01c9-505f-4ab7-a600-c40510e38ccc")
+	)
+	(wire
+		(pts
+			(xy 144.78 109.22) (xy 157.48 109.22)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "6049785c-f220-496a-bc12-5290718f287d")
+	)
+	(wire
+		(pts
+			(xy 144.78 107.95) (xy 144.78 109.22)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "606db0d5-753d-47f4-98e7-aaa2891bdb96")
+	)
+	(wire
+		(pts
+			(xy 134.62 109.22) (xy 144.78 109.22)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "7e47242b-2be6-4f71-b71d-5c00e3468ce5")
+	)
+	(wire
+		(pts
+			(xy 132.08 93.98) (xy 135.89 93.98)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "889f102a-5065-4ad8-9d73-681205473b2b")
+	)
+	(wire
+		(pts
+			(xy 153.67 101.6) (xy 157.48 101.6)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "97e8d231-22ff-420c-af9f-e18c1d2b4806")
+	)
+	(wire
+		(pts
+			(xy 135.89 97.79) (xy 134.62 97.79)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "b103b368-8877-4bb6-9185-e50c4697ee11")
+	)
+	(wire
+		(pts
+			(xy 144.78 109.22) (xy 144.78 110.49)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "d1cbd9b5-056c-4066-ba2e-3723d72f8036")
+	)
+	(wire
+		(pts
+			(xy 134.62 97.79) (xy 134.62 109.22)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "d1f843f1-57af-41d5-a903-cb71d5b6abbc")
+	)
+	(wire
+		(pts
+			(xy 144.78 85.09) (xy 144.78 87.63)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "fec36eee-c99a-47dc-bc30-b713b7c44e96")
+	)
+	(hierarchical_label "VG2"
 		(shape output)
-		(at 118.11 102.87 0)
+		(at 157.48 97.79 0)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -280,9 +626,42 @@
 		)
 		(uuid "51a74d61-71f4-4680-9ccd-ee98d5ca7d61")
 	)
-	(hierarchical_label "SRG1"
+	(hierarchical_label "VDD"
+		(shape input)
+		(at 144.78 85.09 90)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left)
+		)
+		(uuid "5c9ec893-d25b-4376-bc93-9e3cd63f7274")
+	)
+	(hierarchical_label "VD1"
 		(shape output)
-		(at 118.11 99.06 0)
+		(at 132.08 93.98 180)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify right)
+		)
+		(uuid "8e76133e-35af-47fd-9601-abf1b1b7c424")
+	)
+	(hierarchical_label "VD2"
+		(shape output)
+		(at 132.08 102.87 180)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify right)
+		)
+		(uuid "97334b18-33b8-4ea8-b74c-e488ae3304da")
+	)
+	(hierarchical_label "VG1"
+		(shape output)
+		(at 157.48 93.98 0)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -293,7 +672,7 @@
 	)
 	(symbol
 		(lib_id "FS_4_Global_Symbol_Library:UCC24624DR")
-		(at 105.41 100.33 0)
+		(at 144.78 95.25 0)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
@@ -302,7 +681,7 @@
 		(fields_autoplaced yes)
 		(uuid "3eac35dd-76e3-4939-b053-8292e4dc2aaa")
 		(property "Reference" "U2"
-			(at 107.5533 90.17 0)
+			(at 146.9233 85.09 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -311,7 +690,7 @@
 			)
 		)
 		(property "Value" "UCC24624DR"
-			(at 107.5533 92.71 0)
+			(at 146.9233 87.63 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -320,7 +699,7 @@
 			)
 		)
 		(property "Footprint" "Package_SO:SOIC-8-1EP_3.9x4.9mm_P1.27mm_EP2.29x3mm_ThermalVias"
-			(at 105.41 100.33 0)
+			(at 144.78 95.25 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -329,7 +708,7 @@
 			)
 		)
 		(property "Datasheet" "https://www.ti.com/lit/ds/symlink/ucc24624.pdf?HQS=dis-dk-null-digikeymode-dsf-pf-null-wwe&ts=1779739005956&ref_url=https%253A%252F%252Fwww.ti.com%252Fgeneral%252Fdocs%252Fsuppproductinfo.tsp%253FdistId%253D10%2526gotoUrl%253Dhttps%253A%252F%252Fwww.ti.com%252Flit%252Fgpn%252Fucc24624"
-			(at 105.41 100.33 0)
+			(at 144.78 95.25 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -338,7 +717,7 @@
 			)
 		)
 		(property "Description" "IC GATE DRVR LOW-SIDE 8SOIC"
-			(at 105.41 100.33 0)
+			(at 144.78 95.25 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -347,7 +726,7 @@
 			)
 		)
 		(property "Digi URL" "https://www.digikey.com/en/products/detail/texas-instruments/UCC24624DR/10820444"
-			(at 105.41 100.33 0)
+			(at 144.78 95.25 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -356,7 +735,7 @@
 			)
 		)
 		(property "Digi PN" "296-UCC24624DRCT-ND"
-			(at 105.41 100.33 0)
+			(at 144.78 95.25 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -365,7 +744,7 @@
 			)
 		)
 		(property "MFG" "Texas Instruments"
-			(at 105.41 100.33 0)
+			(at 144.78 95.25 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -374,7 +753,7 @@
 			)
 		)
 		(property "MFG PN" "UCC24624DR"
-			(at 105.41 100.33 0)
+			(at 144.78 95.25 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -410,6 +789,142 @@
 			(project ""
 				(path "/7abb3fa5-98ae-49c0-a1ab-5c244bba5721/2fccb57f-ea66-4e62-88d5-0ad434290536"
 					(reference "U2")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "power:GND")
+		(at 144.78 110.49 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "d93105ef-7e38-4a9b-8d11-9c7f4d5ce13a")
+		(property "Reference" "#PWR010"
+			(at 144.78 116.84 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Value" "GND"
+			(at 144.78 115.57 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" ""
+			(at 144.78 110.49 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" ""
+			(at 144.78 110.49 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
+			(at 144.78 110.49 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "78441099-ec68-4b9e-bc0a-e49d2603b96c")
+		)
+		(instances
+			(project ""
+				(path "/7abb3fa5-98ae-49c0-a1ab-5c244bba5721/2fccb57f-ea66-4e62-88d5-0ad434290536"
+					(reference "#PWR010")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Device:C")
+		(at 157.48 105.41 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "ec511135-9cff-4ec9-acfd-3e6a98d62296")
+		(property "Reference" "C5"
+			(at 161.29 104.1399 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Value" "2.2uF"
+			(at 161.29 106.6799 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Footprint" ""
+			(at 158.4452 109.22 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 157.48 105.41 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Unpolarized capacitor"
+			(at 157.48 105.41 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "2"
+			(uuid "16f35409-189c-47ab-9ce9-f966bea98e66")
+		)
+		(pin "1"
+			(uuid "426c2e4e-de9b-4f72-8e4a-8b5bf74312e0")
+		)
+		(instances
+			(project ""
+				(path "/7abb3fa5-98ae-49c0-a1ab-5c244bba5721/2fccb57f-ea66-4e62-88d5-0ad434290536"
+					(reference "C5")
 					(unit 1)
 				)
 			)
