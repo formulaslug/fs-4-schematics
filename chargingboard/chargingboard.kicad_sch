@@ -6462,10 +6462,6 @@
 		(uuid "3c9d9b45-9212-448d-8f4d-584ef7587a65")
 	)
 	(no_connect
-		(at 24.13 31.75)
-		(uuid "46df8979-f2b0-41e6-ad62-624e2bc3da09")
-	)
-	(no_connect
 		(at 24.13 36.83)
 		(uuid "554a1b25-e3fb-40d3-aa63-d4e722ffa44d")
 	)
@@ -6504,6 +6500,10 @@
 	(no_connect
 		(at 36.83 39.37)
 		(uuid "cb26da26-38b9-411b-b258-34d2f36aae02")
+	)
+	(no_connect
+		(at 27.94 73.66)
+		(uuid "cc0404c3-a10c-4506-bd13-74ae6fcd9062")
 	)
 	(no_connect
 		(at 24.13 44.45)
@@ -6841,7 +6841,7 @@
 	)
 	(wire
 		(pts
-			(xy 358.14 167.64) (xy 381 167.64)
+			(xy 358.14 170.18) (xy 383.54 170.18)
 		)
 		(stroke
 			(width 0)
@@ -7311,7 +7311,7 @@
 	)
 	(wire
 		(pts
-			(xy 359.41 173.99) (xy 435.61 173.99)
+			(xy 359.41 173.99) (xy 419.1 173.99)
 		)
 		(stroke
 			(width 0)
@@ -7511,16 +7511,6 @@
 	)
 	(wire
 		(pts
-			(xy 381 170.18) (xy 383.54 170.18)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "696989a8-27b5-4e9e-b6fc-7cbd48a9acca")
-	)
-	(wire
-		(pts
 			(xy 278.13 87.63) (xy 278.13 124.46)
 		)
 		(stroke
@@ -7618,6 +7608,16 @@
 			(type default)
 		)
 		(uuid "782d284a-d690-4e79-a649-37beb8bc2be8")
+	)
+	(wire
+		(pts
+			(xy 19.05 73.66) (xy 27.94 73.66)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "7831c457-b04d-4b72-b01f-1f3c580791b1")
 	)
 	(wire
 		(pts
@@ -7728,16 +7728,6 @@
 			(type default)
 		)
 		(uuid "837a3043-f9fe-438b-bb6f-6cee82198298")
-	)
-	(wire
-		(pts
-			(xy 381 167.64) (xy 381 170.18)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "83993770-7974-4296-86f1-1fa1cf696219")
 	)
 	(wire
 		(pts
@@ -8251,7 +8241,7 @@
 	)
 	(wire
 		(pts
-			(xy 358.14 167.64) (xy 358.14 200.66)
+			(xy 358.14 170.18) (xy 358.14 200.66)
 		)
 		(stroke
 			(width 0)
@@ -8431,7 +8421,7 @@
 	)
 	(wire
 		(pts
-			(xy 120.65 71.12) (xy 435.61 71.12)
+			(xy 120.65 71.12) (xy 419.1 71.12)
 		)
 		(stroke
 			(width 0)
@@ -8461,7 +8451,7 @@
 	)
 	(wire
 		(pts
-			(xy 435.61 173.99) (xy 435.61 71.12)
+			(xy 419.1 173.99) (xy 419.1 71.12)
 		)
 		(stroke
 			(width 0)
@@ -9241,6 +9231,28 @@
 			)
 		)
 	)
+	(global_label "PWM"
+		(shape input)
+		(at 24.13 31.75 180)
+		(fields_autoplaced yes)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify right)
+		)
+		(uuid "3387f665-7cec-483c-a14b-187c44bfcc5b")
+		(property "Intersheetrefs" "${INTERSHEET_REFS}"
+			(at 16.972 31.75 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+				(hide yes)
+			)
+		)
+	)
 	(global_label "VCP_UART_TX"
 		(shape output)
 		(at 275.59 127 0)
@@ -9457,6 +9469,28 @@
 					(size 1.27 1.27)
 				)
 				(justify left)
+				(hide yes)
+			)
+		)
+	)
+	(global_label "PWM"
+		(shape input)
+		(at 19.05 73.66 180)
+		(fields_autoplaced yes)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify right)
+		)
+		(uuid "e244bd3e-15d7-43f5-ad2e-47c86cf161ca")
+		(property "Intersheetrefs" "${INTERSHEET_REFS}"
+			(at 11.892 73.66 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
 				(hide yes)
 			)
 		)
@@ -12833,7 +12867,7 @@
 				)
 			)
 		)
-		(property "Value" "4.7uF"
+		(property "Value" "4.7uH"
 			(at 243.84 29.21 90)
 			(effects
 				(font
