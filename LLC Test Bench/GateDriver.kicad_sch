@@ -433,6 +433,179 @@
 			)
 			(embedded_fonts no)
 		)
+		(symbol "Device:R_US"
+			(pin_numbers
+				(hide yes)
+			)
+			(pin_names
+				(offset 0)
+			)
+			(exclude_from_sim no)
+			(in_bom yes)
+			(on_board yes)
+			(property "Reference" "R"
+				(at 2.54 0 90)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Value" "R_US"
+				(at -2.54 0 90)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Footprint" ""
+				(at 1.016 -0.254 90)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "Datasheet" "~"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "Description" "Resistor, US symbol"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "ki_keywords" "R res resistor"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "ki_fp_filters" "R_*"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(symbol "R_US_0_1"
+				(polyline
+					(pts
+						(xy 0 2.286) (xy 0 2.54)
+					)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy 0 2.286) (xy 1.016 1.905) (xy 0 1.524) (xy -1.016 1.143) (xy 0 0.762)
+					)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy 0 0.762) (xy 1.016 0.381) (xy 0 0) (xy -1.016 -0.381) (xy 0 -0.762)
+					)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy 0 -0.762) (xy 1.016 -1.143) (xy 0 -1.524) (xy -1.016 -1.905) (xy 0 -2.286)
+					)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy 0 -2.286) (xy 0 -2.54)
+					)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+			)
+			(symbol "R_US_1_1"
+				(pin passive line
+					(at 0 3.81 270)
+					(length 1.27)
+					(name "~"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "1"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin passive line
+					(at 0 -3.81 90)
+					(length 1.27)
+					(name "~"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "2"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+			)
+			(embedded_fonts no)
+		)
 		(symbol "Device:Thermistor_NTC_US"
 			(pin_numbers
 				(hide yes)
@@ -1158,19 +1331,19 @@
 			(embedded_fonts no)
 		)
 	)
-	(text "HV Input Bulk Cap"
+	(text "100uA Internal Current Source flows out of OVP/OTP pin down to GND"
 		(exclude_from_sim no)
-		(at 78.994 84.582 0)
+		(at 48.26 185.928 0)
 		(effects
 			(font
 				(size 1.27 1.27)
 			)
 		)
-		(uuid "567c1572-3c4b-4929-b3f3-2f89cdc556a3")
+		(uuid "0c7c3055-d2a1-4179-ba1b-bd8a78e2eccb")
 	)
 	(text "BLK, LL, TSET\nMin V: -0.55V\nMax V: 5.5V\n"
 		(exclude_from_sim no)
-		(at 39.878 68.834 0)
+		(at 53.086 17.272 0)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -1180,7 +1353,7 @@
 	)
 	(text "HV/HB \nMin V: -0.3V \nMax V: 700V"
 		(exclude_from_sim no)
-		(at 40.386 56.896 0)
+		(at 20.828 17.272 0)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -1190,7 +1363,7 @@
 	)
 	(text "ISNS\nMin V: -6.5V\nMax V: 6.5V\n"
 		(exclude_from_sim no)
-		(at 59.944 57.15 0)
+		(at 36.83 17.018 0)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -1208,6 +1381,16 @@
 		)
 		(uuid "adda94ad-e87a-45f0-86b7-784458db591d")
 	)
+	(text "OTP Fault @ 85C"
+		(exclude_from_sim no)
+		(at 22.352 193.04 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+		)
+		(uuid "b3ccf422-eff8-49ce-8ee7-20493b15a133")
+	)
 	(text "Cboot\nMin 0.1uF\nCalculate as described in Section 8.3.2\n"
 		(exclude_from_sim no)
 		(at 148.336 93.98 0)
@@ -1218,7 +1401,7 @@
 		)
 		(uuid "c564c7fe-37d4-4e31-b479-aafd358c91e2")
 	)
-	(text "OVP Trip: VCCP > 3.5V\nOTP Trip: NTC pulls down below 0.8V"
+	(text "OVP Trip: VCCP > 3.5V\nOTP Trip: NTC pulls pin down below 0.8V"
 		(exclude_from_sim no)
 		(at 76.454 141.224 0)
 		(effects
@@ -1227,6 +1410,16 @@
 			)
 		)
 		(uuid "c6694d1c-f4a7-45de-a324-cdb42ee50fc4")
+	)
+	(text "Target Resistance for OTP trip: 0.8/100uA = 8kOhms\n"
+		(exclude_from_sim no)
+		(at 40.132 189.484 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+		)
+		(uuid "d009b2a2-aa5a-40c5-a7dd-f53e8e61fc46")
 	)
 	(text "Low ESR ceramic 2.2uF decoupling cap\n"
 		(exclude_from_sim no)
@@ -1238,9 +1431,19 @@
 		)
 		(uuid "e6a9de74-5fba-41fe-b9e1-65a09520f358")
 	)
+	(text "Calculations with ERT-JZEG103FA NTC Thermistor\nR @ 25C = 10kOhms\nB25/85 = 3435k\n\nR @ 85C = 1451Ohms\nSolution: Place R in series to make up the difference\n\nTotal R = R @ 85C + ~6.5kOhms\n\nNormal Operation @ 25 : 16.5kOhms, pin voltage set to 1.65V"
+		(exclude_from_sim no)
+		(at 117.856 184.912 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+		)
+		(uuid "ec69a350-d2ee-458c-b79b-e1dff69f8a3c")
+	)
 	(text "VCCP\n(min based on UVLO specs)\nUVLO Rising : 7.5V nom\nUVLO Falling : 6.8 nom\nnom 15V\nmax 18.5V\n\n"
 		(exclude_from_sim no)
-		(at 94.742 61.722 0)
+		(at 28.194 33.02 0)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -1429,6 +1632,16 @@
 			(type default)
 		)
 		(uuid "6855ad06-cb5c-4a08-a428-bd14ffba6b49")
+	)
+	(wire
+		(pts
+			(xy 46.99 162.56) (xy 46.99 165.1)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "6d5b01c1-9a8c-49ec-b124-6f9586df866e")
 	)
 	(wire
 		(pts
@@ -2719,7 +2932,7 @@
 	)
 	(symbol
 		(lib_id "power:GND")
-		(at 46.99 154.94 0)
+		(at 46.99 165.1 0)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
@@ -2728,7 +2941,7 @@
 		(fields_autoplaced yes)
 		(uuid "9e3bb62f-ad90-4773-82e8-0fc1f64c5665")
 		(property "Reference" "#PWR07"
-			(at 46.99 161.29 0)
+			(at 46.99 171.45 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -2737,7 +2950,7 @@
 			)
 		)
 		(property "Value" "GND"
-			(at 46.99 160.02 0)
+			(at 46.99 170.18 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -2745,7 +2958,7 @@
 			)
 		)
 		(property "Footprint" ""
-			(at 46.99 154.94 0)
+			(at 46.99 165.1 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -2754,7 +2967,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 46.99 154.94 0)
+			(at 46.99 165.1 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -2763,7 +2976,7 @@
 			)
 		)
 		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
-			(at 46.99 154.94 0)
+			(at 46.99 165.1 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -3023,6 +3236,76 @@
 			(project "LLC Test Bench"
 				(path "/7abb3fa5-98ae-49c0-a1ab-5c244bba5721/8386f46e-cab6-47d2-9440-121b271fbf29"
 					(reference "R4")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Device:R_US")
+		(at 46.99 158.75 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "fff594c9-3257-4c1c-9e79-8da5f236e29d")
+		(property "Reference" "R11"
+			(at 49.53 157.4799 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Value" "6.5k"
+			(at 49.53 160.0199 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Footprint" ""
+			(at 48.006 159.004 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 46.99 158.75 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Resistor, US symbol"
+			(at 46.99 158.75 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "7129abca-bb30-4b25-880c-9945ea3d453a")
+		)
+		(pin "2"
+			(uuid "85d206e4-79fb-45ea-8c5a-4b8b761b9128")
+		)
+		(instances
+			(project ""
+				(path "/7abb3fa5-98ae-49c0-a1ab-5c244bba5721/8386f46e-cab6-47d2-9440-121b271fbf29"
+					(reference "R11")
 					(unit 1)
 				)
 			)
