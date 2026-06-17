@@ -1341,6 +1341,16 @@
 		)
 		(uuid "0c7c3055-d2a1-4179-ba1b-bd8a78e2eccb")
 	)
+	(text "Light Load Entry is determined if FBReplica equals HFBurstEntry"
+		(exclude_from_sim no)
+		(at 46.99 67.564 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+		)
+		(uuid "1dd78e11-8ee8-43b0-92a8-c2d03bd6da6b")
+	)
 	(text "BLK, LL, TSET\nMin V: -0.55V\nMax V: 5.5V\n"
 		(exclude_from_sim no)
 		(at 53.086 17.272 0)
@@ -1360,6 +1370,26 @@
 			)
 		)
 		(uuid "5d1b36fe-4a01-4811-9bbe-51180f38ee17")
+	)
+	(text "Light Load Activation: say 10% of max load -> 10% of 50A = 5A"
+		(exclude_from_sim no)
+		(at 48.006 64.008 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+		)
+		(uuid "686da101-6563-4a1e-8d6a-0f4f29c30966")
+	)
+	(text "FBReplica: 0 to 8V\nGiven by FBReplica = (I_FB-I_OPTO) * R_FBInternal\nwhere I_OPTO is 0 at full load"
+		(exclude_from_sim no)
+		(at 42.672 56.388 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+		)
+		(uuid "6beac635-38ed-480d-96f0-18ca4a04d692")
 	)
 	(text "ISNS\nMin V: -6.5V\nMax V: 6.5V\n"
 		(exclude_from_sim no)
