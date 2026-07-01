@@ -576,144 +576,6 @@
 			)
 			(embedded_fonts no)
 		)
-		(symbol "Device:R_Small_US"
-			(pin_numbers
-				(hide yes)
-			)
-			(pin_names
-				(offset 0.254)
-				(hide yes)
-			)
-			(exclude_from_sim no)
-			(in_bom yes)
-			(on_board yes)
-			(property "Reference" "R"
-				(at 0.762 0.508 0)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-					(justify left)
-				)
-			)
-			(property "Value" "R_Small_US"
-				(at 0.762 -1.016 0)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-					(justify left)
-				)
-			)
-			(property "Footprint" ""
-				(at 0 0 0)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-					(hide yes)
-				)
-			)
-			(property "Datasheet" "~"
-				(at 0 0 0)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-					(hide yes)
-				)
-			)
-			(property "Description" "Resistor, small US symbol"
-				(at 0 0 0)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-					(hide yes)
-				)
-			)
-			(property "ki_keywords" "r resistor"
-				(at 0 0 0)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-					(hide yes)
-				)
-			)
-			(property "ki_fp_filters" "R_*"
-				(at 0 0 0)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-					(hide yes)
-				)
-			)
-			(symbol "R_Small_US_1_1"
-				(polyline
-					(pts
-						(xy 0 1.524) (xy 1.016 1.143) (xy 0 0.762) (xy -1.016 0.381) (xy 0 0)
-					)
-					(stroke
-						(width 0)
-						(type default)
-					)
-					(fill
-						(type none)
-					)
-				)
-				(polyline
-					(pts
-						(xy 0 0) (xy 1.016 -0.381) (xy 0 -0.762) (xy -1.016 -1.143) (xy 0 -1.524)
-					)
-					(stroke
-						(width 0)
-						(type default)
-					)
-					(fill
-						(type none)
-					)
-				)
-				(pin passive line
-					(at 0 2.54 270)
-					(length 1.016)
-					(name "~"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-					(number "1"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-				)
-				(pin passive line
-					(at 0 -2.54 90)
-					(length 1.016)
-					(name "~"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-					(number "2"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-				)
-			)
-			(embedded_fonts no)
-		)
 		(symbol "Device:R_US"
 			(pin_numbers
 				(hide yes)
@@ -2738,16 +2600,6 @@
 		)
 		(uuid "0508b236-f1e0-4843-bb8e-bf89f55179e2")
 	)
-	(text "Hys_Voltage/I_BLK_Hys = 2MOhms"
-		(exclude_from_sim no)
-		(at 91.948 201.168 0)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-		)
-		(uuid "0ed17e8c-4643-430e-8363-fd5f0e814a50")
-	)
 	(text "n = 4.03 turns ratio"
 		(exclude_from_sim no)
 		(at 176.276 187.198 0)
@@ -2768,16 +2620,6 @@
 		)
 		(uuid "1b0ba970-7b36-4042-9da1-2aafd23f4f45")
 	)
-	(text "V_BLK_Start = V_BLK_Stop + V_BLK_StartHys\n= 1.1V Nom"
-		(exclude_from_sim no)
-		(at 97.536 174.244 0)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-		)
-		(uuid "1eff08f0-95fc-42e2-a8ce-441f2bb72022")
-	)
 	(text "Vref: Configure Voltage Divider to program Shunt Regulator"
 		(exclude_from_sim no)
 		(at 297.688 192.024 0)
@@ -2787,36 +2629,6 @@
 			)
 		)
 		(uuid "3df91846-ec86-424f-b495-8cc8f3f81b41")
-	)
-	(text "Rlower = 29.79k"
-		(exclude_from_sim no)
-		(at 82.804 205.232 0)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-		)
-		(uuid "445ce0a6-1500-42f3-ac9a-3388ee9e605b")
-	)
-	(text "Hysteresis Voltage Window (may be changed later) = 10V"
-		(exclude_from_sim no)
-		(at 103.378 190.5 0)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-		)
-		(uuid "4620ada4-b711-4d63-af41-934563394605")
-	)
-	(text "V_entry = 74.9V\nV_exit = 84.9"
-		(exclude_from_sim no)
-		(at 83.058 210.058 0)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-		)
-		(uuid "563acd90-6f05-4954-9b23-60522673b255")
 	)
 	(text "drain voltage\nsense pins\n"
 		(exclude_from_sim no)
@@ -2838,17 +2650,17 @@
 		)
 		(uuid "6d62f82c-cc80-4831-b55c-a9ded6e3e450")
 	)
-	(text "Vin_min = 75\nSelect Voltage Divider for 75V -> 1.1V"
+	(text "BLK Start Voltage : 77V\nBLK Stop Voltage : 65V\n"
 		(exclude_from_sim no)
-		(at 93.726 179.324 0)
+		(at 87.884 118.364 0)
 		(effects
 			(font
 				(size 1.27 1.27)
 			)
 		)
-		(uuid "6fea6a17-ac3e-4804-ad77-6d2c5cf60fbb")
+		(uuid "828974a7-a540-4656-a28a-bfb126e3debb")
 	)
-	(text "Lr = 2.5uH\nLm = 4.8uH\nTotal 7.3uH\n"
+	(text "Lr = 1.126uH\nLm = 6uH\n"
 		(exclude_from_sim no)
 		(at 176.53 181.864 0)
 		(effects
@@ -2888,16 +2700,6 @@
 		)
 		(uuid "bdca6514-27f8-4f8e-915d-2deecafd33d4")
 	)
-	(text "I_BLK_Hys = 5uA\n"
-		(exclude_from_sim no)
-		(at 83.312 196.088 0)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-		)
-		(uuid "ce4d6a05-9124-4f67-8ad8-9d186e9c6fda")
-	)
 	(text "Current flows out of FB pin"
 		(exclude_from_sim no)
 		(at 222.504 179.578 0)
@@ -2908,26 +2710,6 @@
 		)
 		(uuid "d769992c-cf33-47ac-bbbf-86b09720e7e6")
 	)
-	(text "Select Voltage Divider for VBlk"
-		(exclude_from_sim no)
-		(at 90.17 161.036 0)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-		)
-		(uuid "dc3854fc-d41b-43a7-bafa-0e820c1023a9")
-	)
-	(text "V_BLK_Start_Hys = 0.1V Nom\n"
-		(exclude_from_sim no)
-		(at 89.408 165.1 0)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-		)
-		(uuid "dd86c1ab-52eb-4345-96c0-0506a5e658ee")
-	)
 	(text "Use Tertiary winding to supply VCCP\n- will also implement OVP\n"
 		(exclude_from_sim no)
 		(at 179.07 101.6 0)
@@ -2937,16 +2719,6 @@
 			)
 		)
 		(uuid "f7cbcb23-907c-4219-9849-e3c2204ab1bb")
-	)
-	(text "V_BLK_Stop = 1V Nom\n"
-		(exclude_from_sim no)
-		(at 86.36 169.164 0)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-		)
-		(uuid "fd73cf11-db95-4c54-a6a9-ce9cd68451a6")
 	)
 	(junction
 		(at 267.97 196.85)
@@ -3227,16 +2999,6 @@
 			(type default)
 		)
 		(uuid "2a77cf8a-861d-49f5-8b95-60331049f675")
-	)
-	(wire
-		(pts
-			(xy 83.82 143.51) (xy 83.82 147.32)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "2c429ed4-4936-4643-b8d9-7af36ae1bb74")
 	)
 	(wire
 		(pts
@@ -3540,7 +3302,7 @@
 	)
 	(wire
 		(pts
-			(xy 83.82 152.4) (xy 83.82 153.67)
+			(xy 83.82 148.59) (xy 83.82 153.67)
 		)
 		(stroke
 			(width 0)
@@ -3637,6 +3399,16 @@
 			(type default)
 		)
 		(uuid "7d569f34-9474-44d5-a906-e8c924d7cd39")
+	)
+	(wire
+		(pts
+			(xy 83.82 135.89) (xy 83.82 140.97)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "7d8ced76-0e25-49c7-8389-05c8f5a2fbe1")
 	)
 	(wire
 		(pts
@@ -4007,16 +3779,6 @@
 			(type default)
 		)
 		(uuid "cec30ab7-942d-41fb-9878-6cd0ee1730d9")
-	)
-	(wire
-		(pts
-			(xy 83.82 135.89) (xy 83.82 138.43)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "cfcf3b90-c5eb-4d5d-9c9f-c5637c51314c")
 	)
 	(wire
 		(pts
@@ -4513,76 +4275,6 @@
 				)
 				(justify right)
 				(hide yes)
-			)
-		)
-	)
-	(symbol
-		(lib_id "Device:R_Small_US")
-		(at 83.82 140.97 0)
-		(unit 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(dnp no)
-		(fields_autoplaced yes)
-		(uuid "01523116-ebfb-42be-813d-5e1c8d12bdaf")
-		(property "Reference" "R10"
-			(at 86.36 139.6999 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-		)
-		(property "Value" "29.4k"
-			(at 86.36 142.2399 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-		)
-		(property "Footprint" ""
-			(at 83.82 140.97 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Datasheet" "~"
-			(at 83.82 140.97 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Description" "Resistor, small US symbol"
-			(at 83.82 140.97 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(pin "1"
-			(uuid "34cdc65c-11c3-4429-aed5-1593fd300372")
-		)
-		(pin "2"
-			(uuid "9efba622-51ad-462c-9315-e8c064194c97")
-		)
-		(instances
-			(project "LLC Test Bench"
-				(path "/7abb3fa5-98ae-49c0-a1ab-5c244bba5721"
-					(reference "R10")
-					(unit 1)
-				)
 			)
 		)
 	)
@@ -5896,7 +5588,6 @@
 		(in_bom yes)
 		(on_board yes)
 		(dnp no)
-		(fields_autoplaced yes)
 		(uuid "8aa5e961-c84d-498f-9e2f-15b2c68a6f25")
 		(property "Reference" "R8"
 			(at 86.36 128.2699 0)
@@ -5907,7 +5598,7 @@
 				(justify left)
 			)
 		)
-		(property "Value" "2M"
+		(property "Value" "1.15M"
 			(at 86.36 130.8099 0)
 			(effects
 				(font
@@ -6596,6 +6287,75 @@
 	)
 	(symbol
 		(lib_id "Device:R_US")
+		(at 83.82 144.78 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "c4009ddf-035d-4307-8d61-9f0362354fbd")
+		(property "Reference" "R9"
+			(at 86.36 143.5099 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Value" "18k"
+			(at 86.36 146.0499 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Footprint" ""
+			(at 84.836 145.034 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 83.82 144.78 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Resistor, US symbol"
+			(at 83.82 144.78 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "2"
+			(uuid "4415f4b9-3ddf-442e-a186-5e40646e561c")
+		)
+		(pin "1"
+			(uuid "702621a6-c652-4613-b982-2e51e7137d72")
+		)
+		(instances
+			(project "LLC Test Bench"
+				(path "/7abb3fa5-98ae-49c0-a1ab-5c244bba5721"
+					(reference "R9")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Device:R_US")
 		(at 259.08 175.26 270)
 		(unit 1)
 		(exclude_from_sim no)
@@ -6729,76 +6489,6 @@
 		)
 	)
 	(symbol
-		(lib_id "Device:R_Small_US")
-		(at 83.82 149.86 0)
-		(unit 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(dnp no)
-		(fields_autoplaced yes)
-		(uuid "df98170a-beca-458e-9591-b1c6d329e5e4")
-		(property "Reference" "R9"
-			(at 86.36 148.5899 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-		)
-		(property "Value" "390"
-			(at 86.36 151.1299 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-		)
-		(property "Footprint" ""
-			(at 83.82 149.86 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Datasheet" "~"
-			(at 83.82 149.86 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Description" "Resistor, small US symbol"
-			(at 83.82 149.86 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(pin "1"
-			(uuid "9308152d-54af-4719-a241-3b724b02750b")
-		)
-		(pin "2"
-			(uuid "5d79f411-713a-4ee9-9502-505a09bdc94d")
-		)
-		(instances
-			(project ""
-				(path "/7abb3fa5-98ae-49c0-a1ab-5c244bba5721"
-					(reference "R9")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
 		(lib_id "Device:C")
 		(at 168.91 146.05 90)
 		(unit 1)
@@ -6816,7 +6506,7 @@
 				)
 			)
 		)
-		(property "Value" "500nF"
+		(property "Value" "1uF"
 			(at 168.91 140.97 90)
 			(effects
 				(font
