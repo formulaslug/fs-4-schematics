@@ -440,142 +440,6 @@
 			)
 			(embedded_fonts no)
 		)
-		(symbol "Device:Fuse"
-			(pin_numbers
-				(hide yes)
-			)
-			(pin_names
-				(offset 0)
-			)
-			(exclude_from_sim no)
-			(in_bom yes)
-			(on_board yes)
-			(property "Reference" "F"
-				(at 2.032 0 90)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-				)
-			)
-			(property "Value" "Fuse"
-				(at -1.905 0 90)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-				)
-			)
-			(property "Footprint" ""
-				(at -1.778 0 90)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-					(hide yes)
-				)
-			)
-			(property "Datasheet" "~"
-				(at 0 0 0)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-					(hide yes)
-				)
-			)
-			(property "Description" "Fuse"
-				(at 0 0 0)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-					(hide yes)
-				)
-			)
-			(property "ki_keywords" "fuse"
-				(at 0 0 0)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-					(hide yes)
-				)
-			)
-			(property "ki_fp_filters" "*Fuse*"
-				(at 0 0 0)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-					(hide yes)
-				)
-			)
-			(symbol "Fuse_0_1"
-				(rectangle
-					(start -0.762 -2.54)
-					(end 0.762 2.54)
-					(stroke
-						(width 0.254)
-						(type default)
-					)
-					(fill
-						(type none)
-					)
-				)
-				(polyline
-					(pts
-						(xy 0 2.54) (xy 0 -2.54)
-					)
-					(stroke
-						(width 0)
-						(type default)
-					)
-					(fill
-						(type none)
-					)
-				)
-			)
-			(symbol "Fuse_1_1"
-				(pin passive line
-					(at 0 3.81 270)
-					(length 1.27)
-					(name "~"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-					(number "1"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-				)
-				(pin passive line
-					(at 0 -3.81 90)
-					(length 1.27)
-					(name "~"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-					(number "2"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-				)
-			)
-			(embedded_fonts no)
-		)
 		(symbol "Device:R_US"
 			(pin_numbers
 				(hide yes)
@@ -2642,7 +2506,7 @@
 	)
 	(text "Operation Principle:\nVout exceeds Vref -> allows Optocoupler to conduct more -> BJT conducts more\nFB pin voltage drops"
 		(exclude_from_sim no)
-		(at 259.588 213.36 0)
+		(at 259.842 221.234 0)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -2680,7 +2544,7 @@
 		)
 		(uuid "9aa2e885-301f-4df6-a1ae-569aaee9e115")
 	)
-	(text "Select Tertiary winding ratio"
+	(text "Tertiary Winding Ratio = 3.6\n"
 		(exclude_from_sim no)
 		(at 178.054 105.918 0)
 		(effects
@@ -2809,6 +2673,12 @@
 		(diameter 0)
 		(color 0 0 0 0)
 		(uuid "898b24bf-3124-4e69-9035-0a7a728cde5d")
+	)
+	(junction
+		(at 250.19 207.01)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "90771923-90a6-4c8a-8a8c-a9ad05b40894")
 	)
 	(junction
 		(at 71.12 153.67)
@@ -3212,6 +3082,16 @@
 	)
 	(wire
 		(pts
+			(xy 250.19 207.01) (xy 250.19 208.28)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "51efa0cd-34e8-49c0-8c36-25d58069d1b8")
+	)
+	(wire
+		(pts
 			(xy 224.79 166.37) (xy 251.46 166.37)
 		)
 		(stroke
@@ -3289,16 +3169,6 @@
 			(type default)
 		)
 		(uuid "656b1ebd-c872-4806-83ff-ba5540a516bf")
-	)
-	(wire
-		(pts
-			(xy 52.07 133.35) (xy 69.85 133.35)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "65a36214-1cf9-4322-bca2-cd955392f0c2")
 	)
 	(wire
 		(pts
@@ -3432,7 +3302,7 @@
 	)
 	(wire
 		(pts
-			(xy 19.05 133.35) (xy 20.32 133.35)
+			(xy 49.53 133.35) (xy 69.85 133.35)
 		)
 		(stroke
 			(width 0)
@@ -3712,7 +3582,7 @@
 	)
 	(wire
 		(pts
-			(xy 27.94 143.51) (xy 30.48 143.51)
+			(xy 49.53 143.51) (xy 69.85 143.51)
 		)
 		(stroke
 			(width 0)
@@ -3932,16 +3802,6 @@
 	)
 	(wire
 		(pts
-			(xy 52.07 143.51) (xy 69.85 143.51)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "f55ace77-da25-4f24-be79-a50857612d60")
-	)
-	(wire
-		(pts
 			(xy 180.34 166.37) (xy 180.34 168.91)
 		)
 		(stroke
@@ -3969,16 +3829,6 @@
 			(type default)
 		)
 		(uuid "fc7dd258-cdcd-4eef-a1d4-4f852145c003")
-	)
-	(wire
-		(pts
-			(xy 27.94 133.35) (xy 30.48 133.35)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "ffbb1538-560c-49dc-843c-09fd7b12b77f")
 	)
 	(global_label "FB"
 		(shape output)
@@ -4353,6 +4203,72 @@
 			(project ""
 				(path "/7abb3fa5-98ae-49c0-a1ab-5c244bba5721"
 					(reference "C7")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "power:GND")
+		(at 250.19 208.28 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "0b8e91df-e1d4-4c3a-a408-fe7f2283d4e4")
+		(property "Reference" "#PWR011"
+			(at 250.19 214.63 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Value" "GND"
+			(at 250.19 213.36 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" ""
+			(at 250.19 208.28 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" ""
+			(at 250.19 208.28 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
+			(at 250.19 208.28 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "e2c44188-0778-4649-9585-7bc13542199c")
+		)
+		(instances
+			(project "LLC Test Bench"
+				(path "/7abb3fa5-98ae-49c0-a1ab-5c244bba5721"
+					(reference "#PWR011")
 					(unit 1)
 				)
 			)
@@ -5528,7 +5444,7 @@
 	)
 	(symbol
 		(lib_id "Connector:Conn_01x01_Pin")
-		(at 13.97 133.35 0)
+		(at 44.45 133.35 0)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
@@ -5536,7 +5452,7 @@
 		(dnp no)
 		(uuid "8876dfe9-80dc-4a3c-ac2b-dfe1689c5776")
 		(property "Reference" "J1"
-			(at 14.605 128.27 0)
+			(at 45.085 128.27 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -5544,7 +5460,7 @@
 			)
 		)
 		(property "Value" "+HV"
-			(at 14.732 130.556 0)
+			(at 45.212 130.556 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -5552,7 +5468,7 @@
 			)
 		)
 		(property "Footprint" ""
-			(at 13.97 133.35 0)
+			(at 44.45 133.35 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -5561,7 +5477,7 @@
 			)
 		)
 		(property "Datasheet" "~"
-			(at 13.97 133.35 0)
+			(at 44.45 133.35 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -5570,7 +5486,7 @@
 			)
 		)
 		(property "Description" "Generic connector, single row, 01x01, script generated"
-			(at 13.97 133.35 0)
+			(at 44.45 133.35 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -5985,7 +5901,7 @@
 	)
 	(symbol
 		(lib_id "Connector:Conn_01x01_Pin")
-		(at 22.86 143.51 0)
+		(at 44.45 143.51 0)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
@@ -5994,7 +5910,7 @@
 		(fields_autoplaced yes)
 		(uuid "ab159a5a-b8b9-46e3-aacc-d87abbe169e4")
 		(property "Reference" "J2"
-			(at 23.495 138.43 0)
+			(at 45.085 138.43 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -6002,7 +5918,7 @@
 			)
 		)
 		(property "Value" "-HV"
-			(at 23.495 140.97 0)
+			(at 45.085 140.97 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -6010,7 +5926,7 @@
 			)
 		)
 		(property "Footprint" ""
-			(at 22.86 143.51 0)
+			(at 44.45 143.51 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -6019,7 +5935,7 @@
 			)
 		)
 		(property "Datasheet" "~"
-			(at 22.86 143.51 0)
+			(at 44.45 143.51 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -6028,7 +5944,7 @@
 			)
 		)
 		(property "Description" "Generic connector, single row, 01x01, script generated"
-			(at 22.86 143.51 0)
+			(at 44.45 143.51 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -6632,74 +6548,6 @@
 			)
 		)
 	)
-	(symbol
-		(lib_id "Device:Fuse")
-		(at 24.13 133.35 90)
-		(unit 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(dnp no)
-		(fields_autoplaced yes)
-		(uuid "fac0fd2f-1094-4345-ba88-74c97d537ac5")
-		(property "Reference" "F1"
-			(at 24.13 127 90)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Value" "Fuse"
-			(at 24.13 129.54 90)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Footprint" ""
-			(at 24.13 135.128 90)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Datasheet" "~"
-			(at 24.13 133.35 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Description" "Fuse"
-			(at 24.13 133.35 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(pin "2"
-			(uuid "39f8d98e-dd83-48e3-8e31-c8e36805c6ff")
-		)
-		(pin "1"
-			(uuid "eac1dcd3-a958-4498-88e6-152c954ab828")
-		)
-		(instances
-			(project ""
-				(path "/7abb3fa5-98ae-49c0-a1ab-5c244bba5721"
-					(reference "F1")
-					(unit 1)
-				)
-			)
-		)
-	)
 	(sheet
 		(at 226.06 118.11)
 		(size 15.24 15.24)
@@ -6909,88 +6757,6 @@
 			(project "LLC Test Bench"
 				(path "/7abb3fa5-98ae-49c0-a1ab-5c244bba5721"
 					(page "2")
-				)
-			)
-		)
-	)
-	(sheet
-		(at 30.48 130.81)
-		(size 21.59 15.24)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(dnp no)
-		(fields_autoplaced yes)
-		(stroke
-			(width 0.1524)
-			(type solid)
-		)
-		(fill
-			(color 0 0 0 0.0000)
-		)
-		(uuid "9829c9a2-25f8-4e9a-baa9-8b9e2e658283")
-		(property "Sheetname" "Precharge"
-			(at 30.48 130.0984 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left bottom)
-			)
-		)
-		(property "Sheetfile" "Precharge.kicad_sch"
-			(at 30.48 146.6346 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left top)
-			)
-		)
-		(pin "+HV" input
-			(at 30.48 133.35 180)
-			(uuid "51825d2d-7f0c-4a78-be19-a38939e05041")
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-		)
-		(pin "+HV_PC" output
-			(at 52.07 133.35 0)
-			(uuid "1642ff3e-9aa5-4a84-bbe1-7c8fe5dffac3")
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify right)
-			)
-		)
-		(pin "-HV" input
-			(at 30.48 143.51 180)
-			(uuid "1fff111b-4f32-4f1b-a3cc-290a5d2fe6e9")
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-		)
-		(pin "-HV_PC" output
-			(at 52.07 143.51 0)
-			(uuid "ece6ba54-8131-4ce5-8f26-a2b479477937")
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify right)
-			)
-		)
-		(instances
-			(project "LLC Test Bench"
-				(path "/7abb3fa5-98ae-49c0-a1ab-5c244bba5721"
-					(page "4")
 				)
 			)
 		)
