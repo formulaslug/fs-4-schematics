@@ -1331,16 +1331,6 @@
 			(embedded_fonts no)
 		)
 	)
-	(text "100uA Internal Current Source flows out of OVP/OTP pin down to GND"
-		(exclude_from_sim no)
-		(at 48.26 185.928 0)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-		)
-		(uuid "0c7c3055-d2a1-4179-ba1b-bd8a78e2eccb")
-	)
 	(text "Light Load Entry is determined if FBReplica equals HFBurstEntry"
 		(exclude_from_sim no)
 		(at 122.682 26.162 0)
@@ -1370,6 +1360,16 @@
 			)
 		)
 		(uuid "4a57cceb-c463-412b-b58f-f8aed64d315e")
+	)
+	(text "OTP Trip at 85C\nOVP Trip at 110% of Vout"
+		(exclude_from_sim no)
+		(at 37.846 166.37 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+		)
+		(uuid "564f9c4c-552c-4ae4-8bd8-b58800721a74")
 	)
 	(text "BLK, LL, TSET\nMin V: -0.55V\nMax V: 5.5V\n"
 		(exclude_from_sim no)
@@ -1431,16 +1431,6 @@
 		)
 		(uuid "adda94ad-e87a-45f0-86b7-784458db591d")
 	)
-	(text "OTP Fault @ 85C"
-		(exclude_from_sim no)
-		(at 22.352 193.04 0)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-		)
-		(uuid "b3ccf422-eff8-49ce-8ee7-20493b15a133")
-	)
 	(text "Cboot\nMin 0.1uF\nCalculate as described in Section 8.3.2\n"
 		(exclude_from_sim no)
 		(at 148.336 93.98 0)
@@ -1461,16 +1451,6 @@
 		)
 		(uuid "c6694d1c-f4a7-45de-a324-cdb42ee50fc4")
 	)
-	(text "Target Resistance for OTP trip: 0.8/100uA = 8kOhms\n"
-		(exclude_from_sim no)
-		(at 40.132 189.484 0)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-		)
-		(uuid "d009b2a2-aa5a-40c5-a7dd-f53e8e61fc46")
-	)
 	(text "Low ESR ceramic 2.2uF decoupling cap\n"
 		(exclude_from_sim no)
 		(at 88.138 125.984 0)
@@ -1480,16 +1460,6 @@
 			)
 		)
 		(uuid "e6a9de74-5fba-41fe-b9e1-65a09520f358")
-	)
-	(text "Calculations with ERT-JZEG103FA NTC Thermistor\nR @ 25C = 10kOhms\nB25/85 = 3435k\n\nR @ 85C = 1451Ohms\nSolution: Place R in series to make up the difference\n\nTotal R = R @ 85C + ~6.5kOhms\n\nNormal Operation @ 25 : 16.5kOhms, pin voltage set to 1.65V"
-		(exclude_from_sim no)
-		(at 117.856 184.912 0)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-		)
-		(uuid "ec69a350-d2ee-458c-b79b-e1dff69f8a3c")
 	)
 	(text "VCCP\n(min based on UVLO specs)\nUVLO Rising : 7.5V nom\nUVLO Falling : 6.8 nom\nnom 15V\nmax 18.5V\n\n"
 		(exclude_from_sim no)
@@ -1502,10 +1472,22 @@
 		(uuid "eea712e2-5869-4343-a03e-25fc8439a3b1")
 	)
 	(junction
+		(at 36.83 153.67)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "16c09629-8ac7-420e-a4fe-76484eec2d7e")
+	)
+	(junction
 		(at 96.52 80.01)
 		(diameter 0)
 		(color 0 0 0 0)
 		(uuid "1e639bc1-c3d2-45a2-8445-7f086b42e230")
+	)
+	(junction
+		(at 46.99 143.51)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "6df1387e-1162-422a-bc76-b32f183f3e1e")
 	)
 	(junction
 		(at 130.81 88.9)
@@ -1585,6 +1567,16 @@
 	)
 	(wire
 		(pts
+			(xy 36.83 143.51) (xy 46.99 143.51)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "0dff997b-1d61-43a8-b812-7cc565ebc0e8")
+	)
+	(wire
+		(pts
 			(xy 107.95 113.03) (xy 107.95 111.76)
 		)
 		(stroke
@@ -1632,6 +1624,16 @@
 			(type default)
 		)
 		(uuid "42f45472-81ee-4052-a74d-a3aa982f5f95")
+	)
+	(wire
+		(pts
+			(xy 36.83 152.4) (xy 36.83 153.67)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "460b6c29-72b6-4158-a84a-cf6431e65311")
 	)
 	(wire
 		(pts
@@ -1685,16 +1687,6 @@
 	)
 	(wire
 		(pts
-			(xy 46.99 162.56) (xy 46.99 165.1)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "6d5b01c1-9a8c-49ec-b124-6f9586df866e")
-	)
-	(wire
-		(pts
 			(xy 96.52 113.03) (xy 96.52 114.3)
 		)
 		(stroke
@@ -1712,6 +1704,16 @@
 			(type default)
 		)
 		(uuid "7646cb97-65a2-4a75-b400-8362dbf078ed")
+	)
+	(wire
+		(pts
+			(xy 46.99 152.4) (xy 46.99 153.67)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "7b3cfd13-76f4-4ddb-832f-ef0574b508dc")
 	)
 	(wire
 		(pts
@@ -1765,6 +1767,16 @@
 	)
 	(wire
 		(pts
+			(xy 46.99 153.67) (xy 36.83 153.67)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "82df4250-2ba7-4fd9-86f4-8616a75586e6")
+	)
+	(wire
+		(pts
 			(xy 137.16 88.9) (xy 130.81 88.9)
 		)
 		(stroke
@@ -1792,6 +1804,16 @@
 			(type default)
 		)
 		(uuid "92450a21-fc99-4923-a33b-a067d5153e86")
+	)
+	(wire
+		(pts
+			(xy 46.99 144.78) (xy 46.99 143.51)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "994a9b60-dc65-4dd7-a8d1-33fb6f8f66a4")
 	)
 	(wire
 		(pts
@@ -1835,16 +1857,6 @@
 	)
 	(wire
 		(pts
-			(xy 46.99 151.13) (xy 46.99 154.94)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "d1f96390-60b6-4c1d-a32a-ac823554c0d3")
-	)
-	(wire
-		(pts
 			(xy 46.99 140.97) (xy 46.99 143.51)
 		)
 		(stroke
@@ -1882,6 +1894,16 @@
 			(type default)
 		)
 		(uuid "e52369b2-b815-4af0-aa92-9a43083d6397")
+	)
+	(wire
+		(pts
+			(xy 36.83 144.78) (xy 36.83 143.51)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "e536c3bb-a967-4ab1-91c9-84843913131f")
 	)
 	(wire
 		(pts
@@ -2433,7 +2455,7 @@
 	)
 	(symbol
 		(lib_id "Device:Thermistor_NTC_US")
-		(at 46.99 147.32 0)
+		(at 46.99 148.59 0)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
@@ -2442,7 +2464,7 @@
 		(fields_autoplaced yes)
 		(uuid "12682453-4200-4bb9-b4e9-ac0265246076")
 		(property "Reference" "TH1"
-			(at 49.53 146.3674 0)
+			(at 49.53 147.6374 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -2450,8 +2472,8 @@
 				(justify left)
 			)
 		)
-		(property "Value" "ERT-JZEG103FA"
-			(at 49.53 148.9074 0)
+		(property "Value" "NTCS0402E3104JHT"
+			(at 49.53 150.1774 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -2459,8 +2481,8 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" ""
-			(at 46.99 146.05 0)
+		(property "Footprint" "Resistor_SMD:R_0402_1005Metric_Pad0.72x0.64mm_HandSolder"
+			(at 46.99 147.32 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -2468,8 +2490,8 @@
 				(hide yes)
 			)
 		)
-		(property "Datasheet" "https://industrial.panasonic.com/cdbs/www-data/pdf/AUA0000/AUA0000C8.pdf"
-			(at 46.99 146.05 0)
+		(property "Datasheet" "https://www.vishay.com/docs/29003/ntcs0402e3t.pdf"
+			(at 46.99 147.32 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -2478,7 +2500,7 @@
 			)
 		)
 		(property "Description" "Temperature dependent resistor, negative temperature coefficient, US symbol"
-			(at 46.99 147.32 0)
+			(at 46.99 148.59 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -2982,7 +3004,7 @@
 	)
 	(symbol
 		(lib_id "power:GND")
-		(at 46.99 165.1 0)
+		(at 36.83 153.67 0)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
@@ -2991,7 +3013,7 @@
 		(fields_autoplaced yes)
 		(uuid "9e3bb62f-ad90-4773-82e8-0fc1f64c5665")
 		(property "Reference" "#PWR07"
-			(at 46.99 171.45 0)
+			(at 36.83 160.02 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -3000,7 +3022,7 @@
 			)
 		)
 		(property "Value" "GND"
-			(at 46.99 170.18 0)
+			(at 36.83 158.75 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -3008,7 +3030,7 @@
 			)
 		)
 		(property "Footprint" ""
-			(at 46.99 165.1 0)
+			(at 36.83 153.67 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -3017,7 +3039,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 46.99 165.1 0)
+			(at 36.83 153.67 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -3026,7 +3048,7 @@
 			)
 		)
 		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
-			(at 46.99 165.1 0)
+			(at 36.83 153.67 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -3293,7 +3315,7 @@
 	)
 	(symbol
 		(lib_id "Device:R_US")
-		(at 46.99 158.75 0)
+		(at 36.83 148.59 0)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
@@ -3302,7 +3324,7 @@
 		(fields_autoplaced yes)
 		(uuid "fff594c9-3257-4c1c-9e79-8da5f236e29d")
 		(property "Reference" "R11"
-			(at 49.53 157.4799 0)
+			(at 39.37 147.3199 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -3310,8 +3332,8 @@
 				(justify left)
 			)
 		)
-		(property "Value" "6.5k"
-			(at 49.53 160.0199 0)
+		(property "Value" "25k"
+			(at 39.37 149.8599 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -3320,7 +3342,7 @@
 			)
 		)
 		(property "Footprint" "Resistor_SMD:R_0603_1608Metric_Pad0.98x0.95mm_HandSolder"
-			(at 48.006 159.004 90)
+			(at 37.846 148.844 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -3329,7 +3351,7 @@
 			)
 		)
 		(property "Datasheet" "~"
-			(at 46.99 158.75 0)
+			(at 36.83 148.59 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -3338,7 +3360,7 @@
 			)
 		)
 		(property "Description" "Resistor, US symbol"
-			(at 46.99 158.75 0)
+			(at 36.83 148.59 0)
 			(effects
 				(font
 					(size 1.27 1.27)
